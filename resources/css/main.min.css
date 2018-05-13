@@ -1,0 +1,1 @@
+#table-container{display:grid;grid-template-columns:repeat(18, 40px);grid-template-rows:repeat(7, 60px)}#a1{grid-column-start:1;grid-column-end:2;grid-row-start:1;grid-row-end:2;background-color:green}#a2{grid-column-start:2;grid-column-end:3;background-color:blue}

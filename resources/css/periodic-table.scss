@@ -1,0 +1,30 @@
+//main: ./main.scss
+
+// The width and height of each element in the periodic table
+$element-width: 40px;
+$element-height: 60px;
+
+// Groups are columns and periods are rows
+$total-groups: 18;
+$total-periods: 7;
+
+#table-container {
+  //grid-template-columns: [1] 30px [2] 30px [3] 30px [4] 30px [5] 40px;
+  display: grid;
+  grid-template-columns: repeat($total-groups, $element-width);
+  grid-template-rows: repeat($total-periods, $element-height)
+}
+
+#a1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: green;
+}
+
+#a2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: blue;
+}
