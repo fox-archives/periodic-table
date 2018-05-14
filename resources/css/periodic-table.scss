@@ -19,8 +19,9 @@ $total-periods: 7;
 }
 
 #table-container > div {
-  margin-left: auto;
-  margin-right: auto;
+  background-color: $oc-gray-2;
+  border-radius: 4px;
+  margin: 2px 2px 2px 2px;
 }
 
 //SCSS for loop from 1 to the total number of periods in the periodic table (columns)

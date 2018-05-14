@@ -1,2 +1,9 @@
+@import "./open-color.scss";
+@import "./fonts.scss";
+
 @import "./periodic-table.scss";
 @import "./vue.scss";
+
+h1 {
+  font-family: latolight;
+}
