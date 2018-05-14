@@ -1,7 +1,9 @@
 @import "./open-color.scss";
 @import "./fonts.scss";
 
+@import "./navigation.scss";
 @import "./periodic-table.scss";
+@import "./element-overview.scss";
 @import "./vue.scss";
 
 * {
@@ -15,11 +17,12 @@ h1 {
 }
 
 h2 {
-
+  font-family: robotoregular;
+  font-size: 2em;
 }
 
 h3 {
-  font-family: robotolight;
+  font-family: latolight;
   font-size: 1.4em;
 }
 
@@ -31,4 +34,9 @@ h4 {
 h5 {
   font-family: latolight;
   font-size: 0.9em;
+}
+
+.formatContent {
+  width: 97%;
+  margin: auto;
 }

@@ -1,10 +1,10 @@
 var app = new Vue({
   el: '#table-container',
   data: {
-    id: "thes",
     elements: [
-      { atomicNumber: 1,   name: "Hydrogen",     abbreviation: "H",   id: "h",   group: "g-1",   period: "p-1",  block: "s",  atomicMass: 1.008,  boilingPoint: 20.271,  Meltingpoint: 13.99},
-      { atomicNumber: 2,   name: "Helium",       abbreviation: "He",  id: "he",  group: "g-18",  period: "p-1" },
+      { atomicNumber: 1,   name: "Hydrogen",     abbreviation: "H",   id: "h",   group: "g-1",   period: "p-1",  block: "s",  atomicMass: 1.008,  boilingPoint: 20.271,  meltingPoint: 13.99, discoveryDate: 1766 },
+      { atomicNumber: 2,   name: "Helium",       abbreviation: "He",  id: "he",  group: "g-18",  period: "p-1",  block: "s",  atomicMass: 4.003, boilingPoint: 4.222,   meltingPoint: -1,    discoveryDate: 1895 },
+      //Double checked until this point. From rsc.org
       { atomicNumber: 3,   name: "Lithium",      abbreviation: "Li",  id: "li",  group: "g-1",   period: "p-2" },
       { atomicNumber: 4,   name: "Beryllium",    abbreviation: "Be",  id: "be",  group: "g-2",   period: "p-2" },
       { atomicNumber: 5,   name: "Boron",        abbreviation: "B",   id: "b",   group: "g-13",  period: "p-2" },
@@ -39,6 +39,13 @@ var app = new Vue({
       { atomicNumber: 34,  name: "Selenium",     abbreviation: "Se",  id: "se",  group: "g-16",  period: "p-4" },
       { atomicNumber: 35,  name: "Bromine",      abbreviation: "Br",  id: "br",  group: "g-17",  period: "p-4" },
       { atomicNumber: 36,  name: "Krypton",      abbreviation: "Kr",  id: "kr",  group: "g-18",  period: "p-4" },
+      { atomicNumber: 37,  name: "Rubidium",     abbreviation: "Rb",  id: "rb",  group: "g-1",   period: "p-5" },
+      { atomicNumber: 38,  name: "Strontium",    abbreviation: "Sr",  id: "sr",  group: "g-2",   period: "p-5" },
+      { atomicNumber: 39,  name: "Yttrium",      abbreviation: "Y",   id: "y",   group: "g-3",   period: "p-5" },
+      { atomicNumber: 40,  name: "Zirconium",    abbreviation: "Zr",  id: "zr",  group: "g-4",   period: "p-5" },
+      { atomicNumber: 41,  name: "Niobium",      abbreviation: "Nb",  id: "nb",  group: "g-5",   period: "p-5" },
+      { atomicNumber: 42,  name: "Molydbenum",   abbreviation: "Mo",  id: "mo",  group: "g-6",   period: "p-5" },
+
 
       //Skipping some elements (will write in later)
 
