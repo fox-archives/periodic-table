@@ -16,9 +16,11 @@
     </nav>
     <div id="table-container-outer" class="formatContent">
       <main id="table-container">
-        <div id="element-large">
-
-        </div>
+        <section id="element-large-outer">
+          <!--<div id="element-large-inner">
+            <h2 id="element-name">Hydrogen</h2>
+          </div>-->
+        </section>
         <div v-for="element in elements" v-bind:id="element.id" v-bind:class="[element.group, element.period]">
           <div id="element-inner">
             <h3>{{ element.abbreviation }}</h3>

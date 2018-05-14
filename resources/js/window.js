@@ -1,7 +1,7 @@
 function redrawHeight()
 {
   var viewportHeight = document.documentElement.clientHeight;
-  table-container 
+  // TODO: Change the height of each element in table container 
 
 }
 

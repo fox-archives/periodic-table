@@ -27,6 +27,16 @@ $element-height: 75px;
   border-radius: 5px;
   margin: 2px 2px 2px 2px;
   box-shadow: 3px 3px 3px $oc-gray-3;
+  transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+#table-container > div:hover {
+  background-color: $oc-gray-5;
+  box-shadow: 5px 5px 5px $oc-gray-3;
+  transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 #element-inner {
@@ -41,6 +51,29 @@ $element-height: 75px;
   padding-bottom: 2px + 4px;
   position: absolute;
   bottom: 0px;
+}
+
+
+// Large element with larger and more information
+#element-large-outer {
+  height: 100%;
+  background-color: $oc-gray-1;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+#element-large-inner {
+  //position: relative;
+  //margin-left: 15px;
+  //margin-bottom: 15px;
+  //background-color: $oc-gray-4;
+  //border-radius: 5px;
+}
+
+#element-name {
+  margin-left: 6px;
 }
 
 //SCSS for loop from 1 to the total number of groups in the periodic table (columns)
