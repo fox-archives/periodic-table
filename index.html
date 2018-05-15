@@ -10,9 +10,18 @@
 <body>
     <h1 class="formatContent">The Periodic Table of the Elements</h1>
     <nav class="formatContent">
-      <div id="generic"><p>Generic</p></div>
-      <div id="properties"><p>Properties</p></div>
-      <div id="orbitals"><p>Orbitals</p></div>
+      <div id="left-side">
+        <div id="generic"><h2>Generic</h2></div>
+        <div id="properties"><h2>Properties</h2></div>
+        <div id="orbitals"><h2>Orbitals</h2></div>
+        <div id="explore"><h2>Explore</h2></div>
+        <div id="convert"><h2>Convert</h2></div>
+        <div id="quiz"><h2>Quiz</h2></div>
+      </div>
+      <div id="right-side">
+        <div id="info"><span class="ti-info"></span></div>
+        <div id="question"><span class="ti-help"></span></div>
+      </div>
     </nav>
     <div id="table-container-outer" class="formatContent">
       <main id="table-container">
@@ -22,10 +31,11 @@
           </div>-->
         </section>
         <div v-for="element in elements" v-bind:id="element.id" v-bind:class="[element.group, element.period]">
-          <div id="element-inner">
-            <h3>{{ element.abbreviation }}</h3>
-            <h4>{{ element.name }}</h4>
-            <h5>{{ element.atomicNumber }}</h5>
+          <div v-cloak id="element-inner">
+            <h4 class="atomicNumber">{{ element.atomicNumber }}</h4>
+            <h3 class="abbreviation">{{ element.abbreviation }}</h3>
+            <h4 class="name">{{ element.name }}</h4>
+            <h4 class="atomicMass">{{ element.atomicMass }}</h4>
           </div>
         </div>
       </main>

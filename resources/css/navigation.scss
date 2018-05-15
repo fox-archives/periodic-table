@@ -3,28 +3,53 @@
 nav {
   display: flex;
   background-color: $oc-gray-1;
-  border-radius: 20px;
+  border-radius: $border-radius;
+  justify-content: space-between;
 }
 
-nav > div {
+// Left side
+#left-side, #right-side {
+  display: flex;
+}
+
+// Each div element in nav bar
+#left-side > div, #right-side > div {
   padding: 15px 30px 15px 30px;
+  align-self: center;
+
+  // No highlighting when trying to select
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
-nav > div > p {
-  font-family: robotolight;
-  font-size: 1.25em;
+// Left and right inside divs hover
+#left-side > div:hover, #right-side > div:hover {
+  background-color: $oc-gray-3;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
 }
 
+// Left and right inside divs click
+#left-side > div:active, #right-side > div:active {
+  background-color: $oc-gray-4;
+  transition: background-color 0.15s ease-in-out;
+}
+
+// Rounded corners for the navbar on the left-end
 #generic:hover {
-  background-color: $oc-gray-2;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  transition: background-color 0.15s ease-in-out;
-  cursor: pointer;
-
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
 }
-nav > div:hover {
-  background-color: $oc-gray-2;
-  transition: background-color 0.15s ease-in-out;
-  cursor: pointer;
+
+// Rounded corners for the navbar on the right-end
+#question:hover {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+#question > span, #info > span {
+  font-size: 30px;
 }

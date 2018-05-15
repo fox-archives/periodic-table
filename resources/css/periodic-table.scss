@@ -6,14 +6,17 @@ $total-periods: 7;
 
 // The width and height of each element in the periodic table
 $element-width: 100% / $total-groups;
-$element-height: 75px;
+$element-height: 80px;
 
+// Div outisde of the grid
 #table-container-outer {
   background-color: $oc-gray-1;
-  border-radius: 20px;
+  border-radius: $border-radius;
   margin-top: 20px;
+  min-width: $minimum-width;
 }
 
+// The grid itself
 #table-container {
   display: grid;
   grid-template-columns: repeat($total-groups, $element-width);
@@ -21,7 +24,7 @@ $element-height: 75px;
   padding: 10px 10px 10px 10px;
 }
 
-// Outer Element
+// Outer Element, what is being duplicated
 #table-container > div {
   background-color: $oc-gray-4;
   border-radius: 5px;
@@ -42,17 +45,15 @@ $element-height: 75px;
 #element-inner {
   height: 100%;
   position: relative;
-  padding: 2px 2px 2px 2px;
+  padding: 2px 2px 2px 3px;
   overflow: hidden;
 }
 
-#element-inner > h5 {
-  padding-left: 2px;
-  padding-bottom: 2px + 4px;
-  position: absolute;
-  bottom: 0px;
+// The text inside each element
+.atomicMass {
+  position: relative;
+  bottom: -3px;
 }
-
 
 // Large element with larger and more information
 #element-large-outer {
@@ -70,10 +71,6 @@ $element-height: 75px;
   //margin-bottom: 15px;
   //background-color: $oc-gray-4;
   //border-radius: 5px;
-}
-
-#element-name {
-  margin-left: 6px;
 }
 
 //SCSS for loop from 1 to the total number of groups in the periodic table (columns)
