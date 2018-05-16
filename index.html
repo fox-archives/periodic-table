@@ -25,13 +25,14 @@
     </nav>
     <div id="table-container-outer" class="formatContent">
       <main id="table-container">
-        <section id="element-large-outer">
-          <!--<div id="element-large-inner">
-            <h2 id="element-name">Hydrogen</h2>
-          </div>-->
+        <section id="element-overview" v-cloak>
+            <h2 id="element-name">{{ hoveredAtomicNumber }}</h2>
+            <h2 id="element-abbreviation">{{ hoveredAbbreviation }}</h2>
+            <h2 id="element-name">{{ hoveredName }}</h2>
+            <h2 id="element-mass">{{ hoveredAtomicMass }}</h2>
         </section>
-        <div v-for="element in elements" v-bind:id="element.id" v-bind:class="[element.group, element.period]">
-          <div v-cloak id="element-inner">
+        <div class="element-outer" v-for="element in elements" v-bind:title="element.atomicNumber + ' ' + element.name" v-bind:id="element.id" v-bind:class="[element.group, element.period]">
+          <div class="element-inner" v-on:mousemove="updateElementOverview" v-cloak> <!--Event for mousemove automatically passed through method-->
             <h4 class="atomicNumber">{{ element.atomicNumber }}</h4>
             <h3 class="abbreviation">{{ element.abbreviation }}</h3>
             <h4 class="name">{{ element.name }}</h4>
@@ -41,6 +42,7 @@
       </main>
   </div>
   <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="./resources/js/tests.js"></script>
   <script src="./resources/vue/main.vue"></script>
 </body>
 </html>
