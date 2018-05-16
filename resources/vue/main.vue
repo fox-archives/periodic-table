@@ -58,7 +58,6 @@ var app = new Vue({
       { atomicNumber: 54,        name: "Xenon",        abbreviation: "Xe",      id: "xe",  group: "g-18",  period: "p-5",  block: "p",  atomicMass: 131.293,  meltingPoint: 161.4,     boilingPoint: 165.051,   discoveryDate: 1898,           discoveredBy: "Sir William Ramsay and Morris Travers" },
       { atomicNumber: 55,        name: "Caesium",      abbreviation: "Cs",      id: "cs",  group: "g-1",   period: "p-6",  block: "s",  atomicMass: 132.905,  meltingPoint: 301.7,     boilingPoint: 944,       discoveryDate: 1860,           discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
       { atomicNumber: 56,        name: "Barium",       abbreviation: "Ba",      id: "ba",  group: "g-2",   period: "p-6",  block: "s",  atomicMass: 137.327,  meltingPoint: 1000,      boilingPoint: 2118,      discoveryDate: 1808,           discoveredBy: "Humphry Davy" },
-      { atomicNumber: "57-71",   name: "Lanthanides",  abbreviation: "Lan.",  id: "z1",  group: "g-3",   period: "p-6",  block: "d",  atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
       { atomicNumber: 72,        name: "Hafnium",      abbreviation: "Hf",      id: "hf",  group: "g-4",   period: "p-6",  block: "d",  atomicMass: 178.49,   meltingPoint: 2506,      boilingPoint: 4873,      discoveryDate: 1923,           discoveredBy: "George Charles de Hevesy and Dirk Coster" },
       { atomicNumber: 73,        name: "Tantalum",     abbreviation: "Ta",      id: "ta",  group: "g-5",   period: "p-6",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
       { atomicNumber: 74,        name: "Tungsten",     abbreviation: "W",       id: "w",   group: "g-6",   period: "p-6",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
@@ -66,63 +65,31 @@ var app = new Vue({
 
       { atomicNumber: 87,        name: "Francium",     abbreviation: "Fr",      id: "fr",  group: "g-1",   period: "p-7",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,       boilingPoint: 923,       discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
       { atomicNumber: 88,        name: "Radium",       abbreviation: "Ra",      id: "ra",  group: "g-2",   period: "p-7",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,       boilingPoint: 1773,      discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
-      { atomicNumber: "89-103",  name: "Actinides",    abbreviation: "Act.",  id: "z1",  period: "p-7", group: "g-3",  block: "f",    atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
       { atomicNumber: 118,       name: "Oganesson",    abbreviation: "Og",      id: "z2",  period: "p-7", group: "g-18" },
+
+      // Currently, the atomicNumber must be exactly the same as the index in the array (this helps get the object that the user hovers over)
+      { atomicNumber: /*"57-71"*/119,   name: "Lanthanides",  abbreviation: "Lan.",  id: "z1",  group: "g-3",   period: "p-6",  block: "d",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
+      { atomicNumber: /*"89-103"*/120,  name: "Actinides",    abbreviation: "Act.",  id: "z1",  period: "p-7", group: "g-3",  block: "f",    atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
     ],
     hoverAtomicNumber: "1",
     hoverAbbreviation: "H",
     hoverName: "Hydrogen",
     hoverAtomicMass: 1.008,
 
-    DDiscoveryDate: "1766",
-    DDiscoverer: "Henry Cavendish"
+    hoverDiscoveryDate: "1766",
+    hoverDiscoveredBy: "Henry Cavendish"
   },
   methods: {
-    // Update element overview and description
     updateElementInfo: function(event) {
-
-      // Atomic Number
-      if(isNumber(event.srcElement.parentNode.children[0].innerHTML) || atomicNumIsRange(event.srcElement.parentNode.children[0].innerHTML))
-      {
-        var atomicNumberDiv = event.srcElement.parentNode.children[0];
-        this.hoverAtomicNumber = atomicNumberDiv.innerHTML;
-        console.log(event);
-      }
-      else if (event.srcElement.classList[0] == "element-outer")
-      {
-        var atomicNumberDiv = event.srcElement.firstChild.children[0];
-        this.hoverAtomicNumber = atomicNumberDiv.innerHTML
-      }
-      else if (event.srcElement.classList[0] == "element-inner")
-      {
-        var atomicNumberDiv = event.srcElement.children[0]
-        this.hoverAtomicNumber = atomicNumberDiv.innerHTML
-      }
-      else
-      {
-        console.log("updateElementInfo method in main.vue returned an event not accounted for.");
-      }
-
-      // Abbreviation
-      /*if(event.srcElement.parentNode.children[1] != undefined)
-      {
-        this.hoverAbbreviation = event.srcElement.parentNode.children[1].innerHTML;
-      }*/
-
-      /*
-      // Name
-      if(nameDiv != undefined)
-      {
-        this.hoverName = nameDiv.innerHTML;
-      }
-
-      //Atomic Mass
-      // For some reason checking if atomicMass.innerHTML is a number does not work and throws errors in javascript
-      if(atomicMassDiv != undefined)
-      {
-        this.hoverAtomicMass = atomicMassDiv.innerHTML;
-      }
-      */
+        // getIndexOfElementInElements(event) returns index of element (in above array) that was just hovered over
+        // this.elements[] takes that index and returns the actual object (at that index)
+        // .abbreviation gets the property of that Element (that was just hovered over)
+        this.hoverAtomicNumber = this.elements[getIndexOfElementInElements(event)].atomicNumber;
+        this.hoverAbbreviation = this.elements[getIndexOfElementInElements(event)].abbreviation;
+        this.hoverName = this.elements[getIndexOfElementInElements(event)].name;
+        this.hoverAtomicMass = this.elements[getIndexOfElementInElements(event)].atomicMass;
+        this.hoverDiscoveryDate = this.elements[getIndexOfElementInElements(event)].discoveryDate;
+        this.hoverDiscoveredBy = this.elements[getIndexOfElementInElements(event)].discoveredBy;
     }
   }
 })

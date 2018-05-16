@@ -37,9 +37,9 @@
         <section id="element-desc">
           <div id="element-desc-inner">
             <h5 id="element-d-discovery-date">Discovery Date</h5>
-            <p>{{ DDiscoveryDate }}</p>
+            <p>{{ hoverDiscoveryDate }}</p>
             <h5 id="element-d-discoverer">Discovered By </h5>
-            <p>{{ DDiscoverer }}</p>
+            <p>{{ hoverDiscoveredBy }}</p>
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
@@ -51,7 +51,6 @@
             <h5 class="abbreviation">{{ element.abbreviation }}</h5>
             <h6 class="name">{{ element.name }}</h6>
             <h6 class="atomicMass">{{ element.atomicMass }}</h6>
-            <h6 class="atomicElement" style="display: none">{{ element }}</h6>
           </div>
         </div>
       </main>

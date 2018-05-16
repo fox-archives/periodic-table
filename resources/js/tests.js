@@ -28,26 +28,25 @@ function atomicNumIsRange(value)
   }
 }
 
-function getPropertyOneHoverEvent(event, property)
+// @returns the index (which is exactly the same as the atomic number) of the Element object that is being hovered over ()
+// -1 because array starts at 0 and element atomic numbers start at 0
+function getIndexOfElementInElements(event)
 {
-  // Should not be "atomicNumberDiv", but rather "elementObject"
-  var elementObject;
+  var elementObjectIndex;
   if(isNumber(event.srcElement.parentNode.children[0].innerHTML) || atomicNumIsRange(event.srcElement.parentNode.children[0].innerHTML))
   {
-    elementObject = event.srcElement.parentNode.children[0];
-    console.log(event);
+    return event.srcElement.parentNode.children[0].innerHTML-1;
   }
   else if (event.srcElement.classList[0] == "element-outer")
   {
-    elementObject = event.srcElement.firstChild.children[0];
+    return event.srcElement.firstChild.children[0].innerHTML-1;
   }
   else if (event.srcElement.classList[0] == "element-inner")
   {
-    elementObject = event.srcElement.children[0]
+    return event.srcElement.children[0].innerHTML-1;
   }
   else
   {
-    console.log("updateElementInfo method in main.vue returned an event not accounted for.");
+    console.log("Unexpected event passed through getIndexOfElementOnElements method in tests.js.");
   }
-  console.log(elementObject);
 }
