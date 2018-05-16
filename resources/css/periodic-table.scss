@@ -57,29 +57,59 @@ $element-height: 40px;
 
 // Large element with larger information about each element
 #element-overview {
-  border-radius: 5px;
   background-color: $oc-gray-3;
+  box-shadow: 4px 4px 4px $oc-gray-2;
+  border-radius: $border-radius/2;
   grid-column-start: 6;
   grid-column-end: 12;
   grid-row-start: 1;
   grid-row-end: 6;
+  transition: box-shadow 0.15s ease-in-out;
 }
 
+// This sets how wide the inner element should be, relative to the element outside of it
+// Then, it sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
 #element-overview-inner {
-  $element-view-inner-width: 85%;
   justify-self: center;
-  width: $element-view-inner-width;
+  $element-view-inner-width: 85%;
   $element-view-margin: (100% - $element-view-inner-width)/2;
+  width: $element-view-inner-width;
   margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
+  transition: box-shadow 0.15s ease-in-out;
 }
 
 // Description with more info of the element (right of #element-overview)
 #element-desc {
-
+  background-color: $oc-gray-3;
+  box-shadow: 4px 4px 4px $oc-gray-2;
+  border-radius: $border-radius/2;
+  grid-column-start: 13;
+  grid-column-end: 24;
+  grid-row-start: 1;
+  grid-row-end: 6;
 }
 
+// This sets how wide the inner element should be, relative to the element outside of it
+// Then, it sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
 #element-desc-inner {
+  justify-self: center;
+  $element-view-inner-width: 95%;
+  $element-view-margin: (100% - $element-view-inner-width)/2;
+  width: $element-view-inner-width;
+  margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
+  transition: box-shadow 0.15s ease-in-out;
+}
 
+#element-desc-inner > h5 {
+  font-family: latolight;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+#element-desc-inner > p {
+  font-family: latolight;
+  font-size: 1.666em;
+  margin-bottom: 15px;
 }
 //SCSS for loop from 1 to the total number of groups in the periodic table (columns)
 // Each element is on a 2 by 2 grid, which is why $i * 2.(Want it to start every two columns/rows)

@@ -66,38 +66,46 @@ var app = new Vue({
       { atomicNumber: "89-103",  name: "Actinides",    abbreviation: "Actin.",  id: "z1",  period: "p-7", group: "g-3",  block: "f",    atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
       { atomicNumber: 118,       name: "Oganesson",    abbreviation: "Og",      id: "z2",  period: "p-7", group: "g-18" },
     ],
-    hoveredAtomicNumber: "1",
-    hoveredAbbreviation: "H",
-    hoveredName: "Hydrogen",
-    hoveredAtomicMass: 1.008,
+    OVAtomicNumber: "1",
+    OVAbbreviation: "H",
+    OVName: "Hydrogen",
+    OVAtomicMass: 1.008,
+
+    DDiscoveryDate: "1766",
+    DDiscoverer: "Henry Cavendish"
   },
   methods: {
     updateElementOverview: function(event) {
+      // Variables that equal the html element at which a certain property is showed
       var atomicNumberDiv = event.srcElement.parentNode.children[0];
       var abbreviationDiv = event.srcElement.parentNode.children[1];
-      var nameDiv = event.srcElement.parentNode.children[3];
-      var atomicMassDiv = event.srcElement.parentNode.children[0];
+      var nameDiv = event.srcElement.parentNode.children[2];
+      var atomicMassDiv = event.srcElement.parentNode.children[3];
 
+      // Testing if the contents of the atomicNumberDiv is a real number
+      // (Sometimes Vue will return an event from the parent element; this makes the declared vars above undefined,
+      // or ot a number, which should not be displayed)
       if(isNumber(atomicNumberDiv.innerHTML))
       {
-        this.hoveredAtomicNumber = atomicNumberDiv.innerHTML;
+        this.OVAtomicNumber = atomicNumberDiv.innerHTML;
       }
 
       if(abbreviationDiv != undefined)
       {
-        this.hoveredAbbreviation = abbreviationDiv.innerHTML;
+        this.OVAbbreviation = abbreviationDiv.innerHTML;
       }
 
       if(nameDiv != undefined)
       {
-        this.hoveredName = nameDiv.innerHTML;
+        this.OVName = nameDiv.innerHTML;
       }
 
-      if(isNumber(atomicMassDiv.innerHTML))
+      if(atomicMassDiv != undefined)
       {
-        this.hoveredAtomicMass = atomicMassDiv.innerHTML;
+        this.OVAtomicMass = atomicMassDiv.innerHTML;
       }
-
+    },
+    updateElementDescription: function(event) {
     }
   }
 })
