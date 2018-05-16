@@ -27,10 +27,10 @@
         <!-- ELEMENT OVERVIEW PANNEL -->
         <section id="element-overview" v-cloak>
             <div id="element-overview-inner">
-              <h4 id="element-ov-name">{{ OVAtomicNumber }}</h4>
-              <h3 id="element-ov-abbreviation">{{ OVAbbreviation }}</h3>
-              <h4 id="element-ov-name">{{ OVName }}</h4>
-              <h4 id="element-ov-mass">{{ OVAtomicMass }}</h4>
+              <h4 id="element-ov-name">{{ hoverAtomicNumber }}</h4>
+              <h3 id="element-ov-abbreviation">{{ hoverAbbreviation }}</h3>
+              <h4 id="element-ov-name">{{ hoverName }}</h4>
+              <h4 id="element-ov-mass">{{ hoverAtomicMass }}</h4>
             </div>
         </section>
         <!-- ELEMENT DESCRIPTIONS -->
@@ -43,14 +43,15 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <!-- v-for creates a div with class="element-outer" for everyy element in the elements array (defined in main.vue file)
+        <!-- v-for creates a div with class="element-outer" for every element in the elements array (defined in main.vue file)
              v:bind:id and v-bind:class binds each (now duplicated) element with certain id from a property of an element (in the elements array) -->
-        <div class="element-outer" v-for="element in elements" v-bind:class="[element.group, element.period, element.block]" v-bind:id="element.id">
-          <div v-cloak class="element-inner" v-on:mousemove="[updateElementOverview, updateElementDescription]"> <!--Event for mousemove automatically passed through method updateElementOverview-->
+        <div class="element-outer" v-for="element in elements" v-bind:class="[element.group, element.period, element.block]" v-bind:id="element.id" v-on:mousemove= "updateElementInfo">
+          <div v-cloak class="element-inner"> <!--Event for mousemove automatically passed through method updateElementOverview-->
             <h6 class="atomicNumber">{{ element.atomicNumber }}</h6>
             <h5 class="abbreviation">{{ element.abbreviation }}</h5>
             <h6 class="name">{{ element.name }}</h6>
             <h6 class="atomicMass">{{ element.atomicMass }}</h6>
+            <h6 class="atomicElement" style="display: none">{{ element }}</h6>
           </div>
         </div>
       </main>

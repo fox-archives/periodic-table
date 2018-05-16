@@ -58,54 +58,71 @@ var app = new Vue({
       { atomicNumber: 54,        name: "Xenon",        abbreviation: "Xe",      id: "xe",  group: "g-18",  period: "p-5",  block: "p",  atomicMass: 131.293,  meltingPoint: 161.4,     boilingPoint: 165.051,   discoveryDate: 1898,           discoveredBy: "Sir William Ramsay and Morris Travers" },
       { atomicNumber: 55,        name: "Caesium",      abbreviation: "Cs",      id: "cs",  group: "g-1",   period: "p-6",  block: "s",  atomicMass: 132.905,  meltingPoint: 301.7,     boilingPoint: 944,       discoveryDate: 1860,           discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
       { atomicNumber: 56,        name: "Barium",       abbreviation: "Ba",      id: "ba",  group: "g-2",   period: "p-6",  block: "s",  atomicMass: 137.327,  meltingPoint: 1000,      boilingPoint: 2118,      discoveryDate: 1808,           discoveredBy: "Humphry Davy" },
-      { atomicNumber: "57-71",   name: "Lanthanides",  abbreviation: "Lanth.",  id: "z1",  group: "g-3",   period: "p-6",  block: "d",  actomicMass: "",      meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
+      { atomicNumber: "57-71",   name: "Lanthanides",  abbreviation: "Lan.",  id: "z1",  group: "g-3",   period: "p-6",  block: "d",  atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
+      { atomicNumber: 72,        name: "Hafnium",      abbreviation: "Hf",      id: "hf",  group: "g-4",   period: "p-6",  block: "d",  atomicMass: 178.49,   meltingPoint: 2506,      boilingPoint: 4873,      discoveryDate: 1923,           discoveredBy: "George Charles de Hevesy and Dirk Coster" },
+      { atomicNumber: 73,        name: "Tantalum",     abbreviation: "Ta",      id: "ta",  group: "g-5",   period: "p-6",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
+      { atomicNumber: 74,        name: "Tungsten",     abbreviation: "W",       id: "w",   group: "g-6",   period: "p-6",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
 
 
       { atomicNumber: 87,        name: "Francium",     abbreviation: "Fr",      id: "fr",  group: "g-1",   period: "p-7",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,       boilingPoint: 923,       discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
       { atomicNumber: 88,        name: "Radium",       abbreviation: "Ra",      id: "ra",  group: "g-2",   period: "p-7",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,       boilingPoint: 1773,      discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
-      { atomicNumber: "89-103",  name: "Actinides",    abbreviation: "Actin.",  id: "z1",  period: "p-7", group: "g-3",  block: "f",    atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
+      { atomicNumber: "89-103",  name: "Actinides",    abbreviation: "Act.",  id: "z1",  period: "p-7", group: "g-3",  block: "f",    atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
       { atomicNumber: 118,       name: "Oganesson",    abbreviation: "Og",      id: "z2",  period: "p-7", group: "g-18" },
     ],
-    OVAtomicNumber: "1",
-    OVAbbreviation: "H",
-    OVName: "Hydrogen",
-    OVAtomicMass: 1.008,
+    hoverAtomicNumber: "1",
+    hoverAbbreviation: "H",
+    hoverName: "Hydrogen",
+    hoverAtomicMass: 1.008,
 
     DDiscoveryDate: "1766",
     DDiscoverer: "Henry Cavendish"
   },
   methods: {
-    updateElementOverview: function(event) {
-      // Variables that equal the html element at which a certain property is showed
-      var atomicNumberDiv = event.srcElement.parentNode.children[0];
-      var abbreviationDiv = event.srcElement.parentNode.children[1];
-      var nameDiv = event.srcElement.parentNode.children[2];
-      var atomicMassDiv = event.srcElement.parentNode.children[3];
+    // Update element overview and description
+    updateElementInfo: function(event) {
 
-      // Testing if the contents of the atomicNumberDiv is a real number
-      // (Sometimes Vue will return an event from the parent element; this makes the declared vars above undefined,
-      // or ot a number, which should not be displayed)
-      if(isNumber(atomicNumberDiv.innerHTML))
+      // Atomic Number
+      if(isNumber(event.srcElement.parentNode.children[0].innerHTML) || atomicNumIsRange(event.srcElement.parentNode.children[0].innerHTML))
       {
-        this.OVAtomicNumber = atomicNumberDiv.innerHTML;
+        var atomicNumberDiv = event.srcElement.parentNode.children[0];
+        this.hoverAtomicNumber = atomicNumberDiv.innerHTML;
+        console.log(event);
+      }
+      else if (event.srcElement.classList[0] == "element-outer")
+      {
+        var atomicNumberDiv = event.srcElement.firstChild.children[0];
+        this.hoverAtomicNumber = atomicNumberDiv.innerHTML
+      }
+      else if (event.srcElement.classList[0] == "element-inner")
+      {
+        var atomicNumberDiv = event.srcElement.children[0]
+        this.hoverAtomicNumber = atomicNumberDiv.innerHTML
+      }
+      else
+      {
+        console.log("updateElementInfo method in main.vue returned an event not accounted for.");
       }
 
-      if(abbreviationDiv != undefined)
+      // Abbreviation
+      /*if(event.srcElement.parentNode.children[1] != undefined)
       {
-        this.OVAbbreviation = abbreviationDiv.innerHTML;
-      }
+        this.hoverAbbreviation = event.srcElement.parentNode.children[1].innerHTML;
+      }*/
 
+      /*
+      // Name
       if(nameDiv != undefined)
       {
-        this.OVName = nameDiv.innerHTML;
+        this.hoverName = nameDiv.innerHTML;
       }
 
+      //Atomic Mass
+      // For some reason checking if atomicMass.innerHTML is a number does not work and throws errors in javascript
       if(atomicMassDiv != undefined)
       {
-        this.OVAtomicMass = atomicMassDiv.innerHTML;
+        this.hoverAtomicMass = atomicMassDiv.innerHTML;
       }
-    },
-    updateElementDescription: function(event) {
+      */
     }
   }
 })
