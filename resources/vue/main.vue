@@ -61,8 +61,8 @@ var app = new Vue({
       { atomicNumber: "57-71",   name: "Lanthanides",  abbreviation: "Lanth.",  id: "z1",  group: "g-3",   period: "p-6",  block: "d",  actomicMass: "",      meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
 
 
-      { atomicNumber: 87,        name: "Francium",     abbreviation: "Fr",      id: "fr",  period: "p-7", group: "g-1" },
-      { atomicNumber: 88,        name: "Radium",       abbreviation: "Ra",      id: "ra",  period: "p-7", group: "g-2" },
+      { atomicNumber: 87,        name: "Francium",     abbreviation: "Fr",      id: "fr",  group: "g-1",   period: "p-7",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,       boilingPoint: 923,       discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
+      { atomicNumber: 88,        name: "Radium",       abbreviation: "Ra",      id: "ra",  group: "g-2",   period: "p-7",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,       boilingPoint: 1773,      discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
       { atomicNumber: "89-103",  name: "Actinides",    abbreviation: "Actin.",  id: "z1",  period: "p-7", group: "g-3",  block: "f",    atomicMass: "",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",             discoveredBy: "" },
       { atomicNumber: 118,       name: "Oganesson",    abbreviation: "Og",      id: "z2",  period: "p-7", group: "g-18" },
     ],
@@ -73,19 +73,29 @@ var app = new Vue({
   },
   methods: {
     updateElementOverview: function(event) {
-      atomicNumberDiv = event.srcElement.parentNode.children[0];
-      abbreviationDiv = event.srcElement.parentNode.children[1];
-      nameDiv = event.srcElement.parentNode.children[3];
-      atomicMassDiv = event.srcElement.parentNode.children[0];
+      var atomicNumberDiv = event.srcElement.parentNode.children[0];
+      var abbreviationDiv = event.srcElement.parentNode.children[1];
+      var nameDiv = event.srcElement.parentNode.children[3];
+      var atomicMassDiv = event.srcElement.parentNode.children[0];
 
       if(isNumber(atomicNumberDiv.innerHTML))
       {
         this.hoveredAtomicNumber = atomicNumberDiv.innerHTML;
       }
 
-      if(abbreviationDiv.innerHTML != undefined)
+      if(abbreviationDiv != undefined)
       {
         this.hoveredAbbreviation = abbreviationDiv.innerHTML;
+      }
+
+      if(nameDiv != undefined)
+      {
+        this.hoveredName = nameDiv.innerHTML;
+      }
+
+      if(isNumber(atomicMassDiv.innerHTML))
+      {
+        this.hoveredAtomicMass = atomicMassDiv.innerHTML;
       }
 
     }
