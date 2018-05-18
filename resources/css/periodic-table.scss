@@ -112,7 +112,7 @@ $element-height: 40px;
   // Note, p-$i classes were created using v-bind, in a for loop for each element
   // Note, p-$i stands for the ith period, or the nth period in which the elment is located on the periodic table
   .r-#{$i} {
-    grid-row-start: #{$i};
-    grid-row-end: #{$i+2};
+    grid-row-start: #{$i - 1};
+    grid-row-end: #{$i + 1};
   }
 }
