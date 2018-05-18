@@ -8,7 +8,7 @@
   <title>Periodic Table</title>
 </head>
 <body>
-    <h1 class="formatContent">The Periodic Table of the Elements</h1>
+    <h1 class="formatContent">Succinct Periodic Table of the Elements</h1>
     <nav class="formatContent">
       <div id="left-side">
         <div id="generic"><h2>Generic</h2></div>
@@ -25,7 +25,7 @@
     <div id="table-container-outer" class="formatContent">
       <main id="table-container">
         <!-- ELEMENT OVERVIEW PANNEL -->
-        <section id="element-overview" v-cloak>
+        <section id="element-overview" v-bind:class="hoverBlock" v-cloak>
             <div id="element-overview-inner">
               <h4 id="element-ov-name">{{ hoverAtomicNumber }}</h4>
               <h3 id="element-ov-abbreviation">{{ hoverAbbreviation }}</h3>
@@ -34,18 +34,19 @@
             </div>
         </section>
         <!-- ELEMENT DESCRIPTIONS -->
-        <section id="element-desc">
+        <section id="element-desc" v-bind:class="hoverBlock" v-cloak>
           <div id="element-desc-inner">
             <h5 id="element-d-discovery-date">Discovery Date</h5>
             <p>{{ hoverDiscoveryDate }}</p>
             <h5 id="element-d-discoverer">Discovered By </h5>
             <p>{{ hoverDiscoveredBy }}</p>
+          </div>
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
         <!-- v-for creates a div with class="element-outer" for every element in the elements array (defined in main.vue file)
              v:bind:id and v-bind:class binds each (now duplicated) element with certain id from a property of an element (in the elements array) -->
-        <div class="element-outer" v-for="element in elements" v-bind:class="[element.group, element.period, element.block]" v-bind:id="element.id" v-on:mousemove= "updateElementInfo">
+        <div class="element-outer" v-for="element in elements" v-bind:class="[element.column, element.row, element.block]" v-bind:id="element.id" v-on:mousemove= "updateElementInfo($event)">
           <div v-cloak class="element-inner"> <!--Event for mousemove automatically passed through method updateElementOverview-->
             <h6 class="atomicNumber">{{ element.atomicNumber }}</h6>
             <h5 class="abbreviation">{{ element.abbreviation }}</h5>

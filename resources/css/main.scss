@@ -1,5 +1,5 @@
 $minimum-width: 1000px;
-$border-radius: 20px;
+$border-radius: 15px;
 
 @import "./open-color.scss";
 @import "./fonts.scss";
@@ -7,6 +7,8 @@ $border-radius: 20px;
 
 @import "./navigation.scss";
 @import "./periodic-table.scss";
+@import "./elements.scss";
+@import "./generic-elements.scss";
 @import "./vue.scss";
 
 
@@ -54,6 +56,7 @@ h6 {
   min-width: $minimum-width;
 }
 
+// Shadow of the navigation bar
 nav, #table-container-outer {
   box-shadow: 3px 3px 5px $oc-gray-3;
 }

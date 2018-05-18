@@ -3,7 +3,7 @@
 // Groups are columns and periods are rows
 // Extra 1 for labeling the rows and columns
 $total-groups: (18*2);
-$total-periods: (7*2);
+$total-rows: (7*2)+5;
 
 // The width and height of each element in the periodic table
 $element-width: 100% / $total-groups;
@@ -14,50 +14,20 @@ $element-height: 40px;
   background-color: $oc-gray-1;
   border-radius: $border-radius;
   margin-top: 20px;
+  margin-bottom: 20px;
   min-width: $minimum-width;
 }
 
-// The grid itself
+// The grid itself (plus 5 for the block f elements)
 #table-container {
   display: grid;
   grid-template-columns: repeat($total-groups, $element-width);
-  grid-template-rows: repeat($total-periods, $element-height);
+  grid-template-rows: repeat($total-rows, $element-height);
   padding: 10px 10px 10px 10px;
-}
-
-// The actual element, (what is being duplicated) (same as selector .element-outer {})
-#table-container > div {
-  background-color: $oc-gray-4;
-  border-radius: 5px;
-  margin: 2px 2px 2px 2px;
-  box-shadow: 3px 3px 3px $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-  overflow: hidden;
-}
-
-#table-container > div:hover {
-  background-color: $oc-gray-5;
-  box-shadow: 5px 5px 5px $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-  cursor: pointer;
-}
-
-.element-inner {
-  justify-self: center; //Center horizontally
-  margin: 2px 2px 2px 4px;
-}
-
-// The text inside each element
-.atomicMass {
-  position: relative;
-  bottom: -3px;
 }
 
 // Large element with larger information about each element
 #element-overview {
-  background-color: $oc-gray-3;
   box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius/2;
   grid-column-start: 6;
@@ -65,6 +35,7 @@ $element-height: 40px;
   grid-row-start: 1;
   grid-row-end: 6;
   transition: box-shadow 0.15s ease-in-out;
+
 }
 
 // This sets how wide the inner element should be, relative to the element outside of it
@@ -80,7 +51,6 @@ $element-height: 40px;
 
 // Description with more info of the element (right of #element-overview)
 #element-desc {
-  background-color: $oc-gray-3;
   box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius/2;
   grid-column-start: 13;
@@ -111,6 +81,12 @@ $element-height: 40px;
   font-size: 1.666em;
   margin-bottom: 15px;
 }
+
+// Color transitions on hover of element-overview and element-desc
+#element-overview, #element-desc {
+  transition: background-color 0.15s ease-in-out;
+}
+
 //SCSS for loop from 1 to the total number of groups in the periodic table (columns)
 // Each element is on a 2 by 2 grid, which is why $i * 2.(Want it to start every two columns/rows)
 // ($i * 2) - 1 because for loop starts at 1, and 1 * 2 is 2, but CSS grids start at 1
@@ -122,21 +98,21 @@ $element-height: 40px;
   // Note, all g-$i classes are div elements
   // Note, g-$i classes were created using v-bind, in a for loop for each element
   // Note, g-$i stands for the ith group, or the nth group in which the elment is located on the periodic table
-  .g-#{$i} {
+  .c-#{$i} {
     grid-column-start: #{($i * 2) - 1};
     grid-column-end: #{($i * 2) + 1};
   }
 }
 
 //SCSS for loop from 1 to the total number of periods in the periodic table (rows)
-@for $i from 1 through $total-periods {
+@for $i from 1 through $total-rows {
   // For each DOM element with the p-$i class, place it starting at a certain row,
   // and end it before the very next row
   // Note, all p-$i classes are div elements
   // Note, p-$i classes were created using v-bind, in a for loop for each element
   // Note, p-$i stands for the ith period, or the nth period in which the elment is located on the periodic table
-  .p-#{$i} {
-    grid-row-start: #{($i * 2) - 1};
-    grid-row-end: #{($i * 2) + 1};
+  .r-#{$i} {
+    grid-row-start: #{$i};
+    grid-row-end: #{$i+2};
   }
 }

@@ -33,17 +33,17 @@ function atomicNumIsRange(value)
 function getIndexOfElementInElements(event)
 {
   var elementObjectIndex;
-  if(isNumber(event.srcElement.parentNode.children[0].innerHTML) || atomicNumIsRange(event.srcElement.parentNode.children[0].innerHTML))
+  if(isNumber(event.target.parentNode.children[0].innerHTML) || atomicNumIsRange(event.target.parentNode.children[0].innerHTML))
   {
-    return event.srcElement.parentNode.children[0].innerHTML-1;
+    return event.target.parentNode.children[0].innerHTML-1;
   }
-  else if (event.srcElement.classList[0] == "element-outer")
+  else if (event.target.classList[0] == "element-outer")
   {
-    return event.srcElement.firstChild.children[0].innerHTML-1;
+    return event.target.firstChild.children[0].innerHTML-1;
   }
-  else if (event.srcElement.classList[0] == "element-inner")
+  else if (event.target.classList[0] == "element-inner")
   {
-    return event.srcElement.children[0].innerHTML-1;
+    return event.target.children[0].innerHTML-1;
   }
   else
   {
