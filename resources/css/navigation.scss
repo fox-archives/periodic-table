@@ -1,5 +1,6 @@
 //main: ./main.scss
 
+//First flebox, separating left and right sides of nav
 nav {
   display: flex;
   background-color: $oc-gray-1;
@@ -7,33 +8,27 @@ nav {
   justify-content: space-between;
 }
 
-// Left side
-#left-side, #right-side {
+// Second flex, separating highlightable elements
+#nav-left-side, #nav-right-side {
   display: flex;
 }
 
 // Each div element in nav bar
-#left-side > div, #right-side > div {
+#nav-left-side > div, #nav-right-side > div {
   padding: 15px 30px 15px 30px;
   align-self: center;
-
-  // No highlighting when trying to select
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  user-select: none;  // No highlighting when trying to select
 }
 
-// Left and right inside divs hover
-#left-side > div:hover, #right-side > div:hover {
+// Each div element in nav bar hover
+#nav-left-side > div:hover, #nav-right-side > div:hover {
   background-color: $oc-gray-3;
   transition: background-color 0.15s ease-in-out;
   cursor: pointer;
 }
 
-// Left and right inside divs click
-#left-side > div:active, #right-side > div:active {
+// Each div element in nav bar active
+#nav-left-side > div:active, #nav-right-side > div:active {
   background-color: $oc-gray-4;
   transition: background-color 0.15s ease-in-out;
 }
@@ -50,6 +45,24 @@ nav {
   border-bottom-right-radius: $border-radius;
 }
 
-#question > span, #info > span {
+// Cannot do a class selector because icons need to be different sizes across the whole website
+#nav-right-side > div > span {
   font-size: 30px;
+}
+
+
+// Third flexbox, separating highlightable elements on right side only
+#nav-left-side > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-left-side > div > span {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+#nav-left-side > div > h2 {
+
 }
