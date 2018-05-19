@@ -99,8 +99,8 @@ $element-height: 40px;
   // Note, g-$i classes were created using v-bind, in a for loop for each element
   // Note, g-$i stands for the ith group, or the nth group in which the elment is located on the periodic table
   .c-#{$i} {
-    grid-column-start: #{($i * 2) - 1};
-    grid-column-end: #{($i * 2) + 1};
+    grid-column-start: #{$i - 1};
+    grid-column-end: #{$i + 1};
   }
 }
 
