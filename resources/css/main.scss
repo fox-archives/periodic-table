@@ -7,7 +7,6 @@ $border-radius: 15px;
 
 @import "./navigation.scss";
 @import "./periodic-table.scss";
-@import "./elements.scss";
 @import "./generic-elements.scss";
 @import "./vue.scss";
 
@@ -50,6 +49,10 @@ h6 {
   font-size: 0.8em;
 }
 
+p {
+  font-family: latolight;
+}
+
 .formatContent {
   width: 97%;
   margin: auto;
@@ -57,6 +60,6 @@ h6 {
 }
 
 // Shadow of the navigation bar
-nav, #table-container-outer {
+nav, #grid-container-outer {
   box-shadow: 3px 3px 5px $oc-gray-3;
 }

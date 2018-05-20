@@ -30,20 +30,20 @@ function atomicNumIsRange(value)
 
 // @returns the index (which is exactly the same as the atomic number) of the Element object that is being hovered over ()
 // -1 because array starts at 0 and element atomic numbers start at 0
-function getIndexOfElementInElements(event)
+function getIndexOfElementInElements(e)
 {
   var elementObjectIndex;
-  if(isNumber(event.target.parentNode.children[0].innerHTML) || atomicNumIsRange(event.target.parentNode.children[0].innerHTML))
+  if(isNumber(e.target.parentNode.children[0].innerHTML) || atomicNumIsRange(e.target.parentNode.children[0].innerHTML))
   {
-    return event.target.parentNode.children[0].innerHTML-1;
+    return e.target.parentNode.children[0].innerHTML - 1;
   }
-  else if (event.target.classList[0] == "element-outer")
+  else if (e.target.classList[0] == "element-outer")
   {
-    return event.target.firstChild.children[0].innerHTML-1;
+    return e.target.firstChild.children[0].innerHTML - 1;
   }
-  else if (event.target.classList[0] == "element-inner")
+  else if (e.target.classList[0] == "element-inner")
   {
-    return event.target.children[0].innerHTML-1;
+    return e.target.children[0].innerHTML - 1;
   }
   else
   {

@@ -1,5 +1,5 @@
 var app = new Vue({
-  el: '#table-container',
+  el: '#grid-container',
   data: {
     elements: [
       { atomicNumber: 1,         name: "Hydrogen",      abbreviation: "H",       id: "h",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,     boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },
@@ -62,22 +62,22 @@ var app = new Vue({
       // Extended portion of periodic table.
       { atomicNumber: 57,        name: "Lanthanum",     abbreviation: "La",      id: "la",  column: "c-6",   row: "r-17",  block: "f",  atomicMass: 138.905,  meltingPoint: 1193,      boilingPoint: 3737,      discoveryDate: 1839,           discoveredBy: "Carl Gustav Mosander" },
       { atomicNumber: 58,        name: "Cerium",        abbreviation: "Ce",      id: "ce",  column: "c-8",   row: "r-17",  block: "f",  atomicMass: 140.116,  meltingPoint: 1072,      boilingPoint: 3716,      discoveryDate: 1803,           discoveredBy: "Jo..ns Jacob Berzelius and Wilhelm Hisinger" },
-      { atomicNumber: 59,        name: "Praseodymium",  abbreviation: "Pr",      id: "pr",  column: "c-10",   row: "r-17",  block: "f",  atomicMass: 140.908,  meltingPoint: 1204,      boilingPoint: 3793,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
-      { atomicNumber: 60,        name: "Neodymium",     abbreviation: "Nd",      id: "nd",  column: "c-12",   row: "r-17",  block: "f",  atomicMass: 144.242,  meltingPoint: 1289,      boilingPoint: 3347,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
-      { atomicNumber: 61,        name: "Promethium",    abbreviation: "Pm",      id: "pm",  column: "c-14",   row: "r-17",  block: "f",  atomicMass: "(145)",  meltingPoint: 1315,      boilingPoint: 3273,      discoveryDate: 1945,           discoveredBy: "Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell" },
-      { atomicNumber: 62,        name: "Samarium",      abbreviation: "Sm",      id: "sm",  column: "c-16",   row: "r-17",  block: "f",  atomicMass: 150.36,   meltingPoint: 1345,      boilingPoint: 2067,      discoveryDate: 1879,           discoveredBy: "Paul-E`mile Lecoq de Boisbaudran" },
-      { atomicNumber: 63,        name: "Europium",      abbreviation: "Eu",      id: "eu",  column: "c-18",   row: "r-17",  block: "f",  atomicMass: 151.964,  meltingPoint: 1095,      boilingPoint: 1802,      discoveryDate: 1901,           discoveredBy: "Euge'ne-Anatole Demarc'ay" },
+      { atomicNumber: 59,        name: "Praseodymium",  abbreviation: "Pr",      id: "pr",  column: "c-10",  row: "r-17",  block: "f",  atomicMass: 140.908,  meltingPoint: 1204,      boilingPoint: 3793,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
+      { atomicNumber: 60,        name: "Neodymium",     abbreviation: "Nd",      id: "nd",  column: "c-12",  row: "r-17",  block: "f",  atomicMass: 144.242,  meltingPoint: 1289,      boilingPoint: 3347,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
+      { atomicNumber: 61,        name: "Promethium",    abbreviation: "Pm",      id: "pm",  column: "c-14",  row: "r-17",  block: "f",  atomicMass: "(145)",  meltingPoint: 1315,      boilingPoint: 3273,      discoveryDate: 1945,           discoveredBy: "Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell" },
+      { atomicNumber: 62,        name: "Samarium",      abbreviation: "Sm",      id: "sm",  column: "c-16",  row: "r-17",  block: "f",  atomicMass: 150.36,   meltingPoint: 1345,      boilingPoint: 2067,      discoveryDate: 1879,           discoveredBy: "Paul-E`mile Lecoq de Boisbaudran" },
+      { atomicNumber: 63,        name: "Europium",      abbreviation: "Eu",      id: "eu",  column: "c-18",  row: "r-17",  block: "f",  atomicMass: 151.964,  meltingPoint: 1095,      boilingPoint: 1802,      discoveryDate: 1901,           discoveredBy: "Euge'ne-Anatole Demarc'ay" },
       { atomicNumber: 64,        name: "Gadolinium",    abbreviation: "Gd",      id: "gd",  column: "c-20",  row: "r-17",  block: "f",  atomicMass: 157.25,   meltingPoint: 1586,      boilingPoint: 3546,      discoveryDate: 1880,           discoveredBy: "Jean Charles Galissard de Marignac"},
       { atomicNumber: 65,        name: "Terbium",       abbreviation: "Tb",      id: "tb",  column: "c-22",  row: "r-17",  block: "f",  atomicMass: 158.925,  meltingPoint: 1632,      boilingPoint: 3503,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
       { atomicNumber: 66,        name: "Dysprosium",    abbreviation: "Dy",      id: "dy",  column: "c-24",  row: "r-17",  block: "f",  atomicMass: 162.500,  meltingPoint: 1685,      boilingPoint: 2840,      discoveryDate: 1886,           discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
 
 
       { atomicNumber: 72,        name: "Hafnium",       abbreviation: "Hf",      id: "hf",  column: "c-8",   row: "r-12",  block: "d",  atomicMass: 178.49,   meltingPoint: 2506,      boilingPoint: 4873,      discoveryDate: 1923,           discoveredBy: "George Charles de Hevesy and Dirk Coster" },
-      { atomicNumber: 73,        name: "Tantalum",      abbreviation: "Ta",      id: "ta",  column: "c-10",   row: "r-12",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
-      { atomicNumber: 74,        name: "Tungsten",      abbreviation: "W",       id: "w",   column: "c-12",   row: "r-12",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
-      { atomicNumber: 75,        name: "Rhenium",       abbreviation: "Re",      id: "re",  column: "c-14",   row: "r-12",  block: "d",  atomicMass: 186.207,  meltingPoint: 3458,      boilingPoint: 5863,      discoveryDate: 1925,           discoveredBy: "Walter Noddack, Ida Tacke, and Otto Berg" },
-      { atomicNumber: 76,        name: "Osmium",        abbreviation: "Os",      id: "os",  column: "c-16",   row: "r-12",  block: "d",  atomicMass: 190.23,   meltingPoint: 3306,      boilingPoint: 5281,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
-      { atomicNumber: 77,        name: "Iridium",       abbreviation: "Ir",      id: "ir",  column: "c-18",   row: "r-12",  block: "d",  atomicMass: 192.217,  meltingPoint: 2719,      boilingPoint: 4701,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
+      { atomicNumber: 73,        name: "Tantalum",      abbreviation: "Ta",      id: "ta",  column: "c-10",  row: "r-12",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
+      { atomicNumber: 74,        name: "Tungsten",      abbreviation: "W",       id: "w",   column: "c-12",  row: "r-12",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
+      { atomicNumber: 75,        name: "Rhenium",       abbreviation: "Re",      id: "re",  column: "c-14",  row: "r-12",  block: "d",  atomicMass: 186.207,  meltingPoint: 3458,      boilingPoint: 5863,      discoveryDate: 1925,           discoveredBy: "Walter Noddack, Ida Tacke, and Otto Berg" },
+      { atomicNumber: 76,        name: "Osmium",        abbreviation: "Os",      id: "os",  column: "c-16",  row: "r-12",  block: "d",  atomicMass: 190.23,   meltingPoint: 3306,      boilingPoint: 5281,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
+      { atomicNumber: 77,        name: "Iridium",       abbreviation: "Ir",      id: "ir",  column: "c-18",  row: "r-12",  block: "d",  atomicMass: 192.217,  meltingPoint: 2719,      boilingPoint: 4701,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
       { atomicNumber: 78,        name: "Platinum",      abbreviation: "Pt",      id: "pt",  column: "c-20",  row: "r-12",  block: "d",  atomicMass: 195.084,  meltingPoint: 2041.4,    boilingPoint: 4098,      discoveryDate: "Unknown",      discoveredBy: "South Americans before Colombus" },
       { atomicNumber: 79,        name: "Gold",          abbreviation: "Au",      id: "au",  column: "c-22",  row: "r-12",  block: "d",  atomicMass: 196.967,  meltingPoint: 1337.33,   boilingPoint: 3109,      discoveryDate: "~ 3000 B.C.",  discoveredBy: "N / A"},
       { atomicNumber: 80,        name: "Mercury",       abbreviation: "Hg",      id: "hg",  column: "c-24",  row: "r-12",  block: "d",  atomicMass: 200.592,  meltingPoint: 234.321,   boilingPoint: 629.769,   discoveryDate: "~ 1500 B.C.",  discoveredBy: "N / A" },
@@ -86,33 +86,285 @@ var app = new Vue({
 
       { atomicNumber: 87,        name: "Francium",      abbreviation: "Fr",      id: "fr",  column: "c-2",   row: "r-14",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,       boilingPoint: 923,       discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
       { atomicNumber: 88,        name: "Radium",        abbreviation: "Ra",      id: "ra",  column: "c-4",   row: "r-14",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,       boilingPoint: 1773,      discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
-      { atomicNumber: 118,       name: "Oganesson",     abbreviation: "Og",      id: "zz",  column: "c-36",  row: "r-14",  block: "p" },
+      { atomicNumber: 118,       name: "Oganesson",     abbreviation: "Og",      id: "og",  column: "c-36",  row: "r-14",  block: "p"},
 
       // Currently, the atomicNumber must be exactly the same as the index in the array (this helps get the object that the user hovers over)
-      { atomicNumber: /*"57-71"*/119,   name: "Lanthanides",  abbreviation: "Lan.",  id: "z1",  column: "c-6",   row: "r-12",  block: "g",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
-      { atomicNumber: /*"89-103"*/120,  name: "Actinides",    abbreviation: "Act.",  id: "z1",  column: "c-6",   row: "r-14",  block: "g",    atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
+      { atomicNumber: 119,      name: "Lanthanides",    abbreviation: "Lan.",    id: "z1",  column: "c-6",   row: "r-12",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
+      { atomicNumber: 120,      name: "Actinides",      abbreviation: "Act.",    id: "z1",  column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
+    ],
+    labels: [
+      // Row labels
+      { display: 1,   type: "row",     column: "cc-1",   row: "rr-2" },
+      { display: 2,   type: "row",     column: "cc-1",   row: "rr-4" },
+      { display: 3,   type: "row",     column: "cc-1",   row: "rr-6" },
+      { display: 4,   type: "row",     column: "cc-1",   row: "rr-8" },
+      { display: 5,   type: "row",     column: "cc-1",   row: "rr-10" },
+      { display: 6,   type: "row",     column: "cc-1",   row: "rr-12" },
+      { display: 7,   type: "row",     column: "cc-1",   row: "rr-14" },
+      // Column labels
+      { display: " 1",   type: "column",  column: "cc-2",   row: "rr-1" },
+      { display: " 2",   type: "column",  column: "cc-4",   row: "rr-1" },
+      { display: " 3",   type: "column",  column: "cc-6",   row: "rr-1" },
+      { display: " 4",   type: "column",  column: "cc-8",   row: "rr-1" },
+      { display: " 5",   type: "column",  column: "cc-10",  row: "rr-1" },
+      { display: " 6",   type: "column",  column: "cc-12",  row: "rr-1" },
+      { display: " 7",   type: "column",  column: "cc-14",  row: "rr-1" },
+      { display: " 8",   type: "column",  column: "cc-16",  row: "rr-1" },
+      { display: " 9",   type: "column",  column: "cc-18",  row: "rr-1" },
+      { display: "10",   type: "column",  column: "cc-20",  row: "rr-1" },
+      { display: "11",   type: "column",  column: "cc-22",  row: "rr-1" },
+      { display: "12",   type: "column",  column: "cc-24",  row: "rr-1" },
+      { display: "13",   type: "column",  column: "cc-26",  row: "rr-1" },
+      { display: "14",   type: "column",  column: "cc-28",  row: "rr-1" },
+      { display: "15",   type: "column",  column: "cc-30",  row: "rr-1" },
+      { display: "16",   type: "column",  column: "cc-32",  row: "rr-1" },
+      { display: "17",   type: "column",  column: "cc-34",  row: "rr-1" },
+      { display: "18",   type: "column",  column: "cc-36",  row: "rr-1" }
+    ],
+    elementsDefaultColor: [
+      "blue",
+      "blue",
+      "blue",
+      "blue",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red", //54 Xenon
+      "blue",
+      "blue",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+
+      "blue",
+      "blue",
+      "red",
+
+      "orange",
+      "orange"
+  ],
+  elementColors: [
+      "blue",
+      "blue",
+      "blue",
+      "blue",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "blue",
+      "blue",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red", //54 Xenon
+      "blue",
+      "blue",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
+
+      "blue",
+      "blue",
+      "red",
+
+      "orange",
+      "orange"
     ],
     hoverAtomicNumber: "1",
     hoverAbbreviation: "H",
     hoverName: "Hydrogen",
     hoverAtomicMass: 1.008,
-    hoverBlock: "s", // This helps change the color
+    hoverBlock: "s",
+    hoverColor: "blue", //This actually changes the color
 
     hoverDiscoveryDate: "1766",
     hoverDiscoveredBy: "Henry Cavendish"
   },
   methods: {
-    updateElementInfo: function(event) {
-        // getIndexOfElementInElements(event) returns index of element (in above array) that was just hovered over
+    updateElementInfo: function(e) {
+        // getIndexOfElementInElements(e) returns index of element (in above array) that was just hovered over
         // this.elements[] takes that index and returns the actual object (at that index)
         // .abbreviation gets the property of that Element (that was just hovered over)
-        this.hoverAtomicNumber = this.elements[getIndexOfElementInElements(event)].atomicNumber;
-        this.hoverAbbreviation = this.elements[getIndexOfElementInElements(event)].abbreviation;
-        this.hoverName = this.elements[getIndexOfElementInElements(event)].name;
-        this.hoverAtomicMass = this.elements[getIndexOfElementInElements(event)].atomicMass;
-        this.hoverBlock = this.elements[getIndexOfElementInElements(event)].block;
-        this.hoverDiscoveryDate = this.elements[getIndexOfElementInElements(event)].discoveryDate;
-        this.hoverDiscoveredBy = this.elements[getIndexOfElementInElements(event)].discoveredBy;
+
+        var elementIndex = getIndexOfElementInElements(e);
+        this.hoverAtomicNumber = this.elements[elementIndex].atomicNumber;
+        this.hoverAbbreviation = this.elements[elementIndex].abbreviation;
+        this.hoverName = this.elements[elementIndex].name;
+        this.hoverAtomicMass = this.elements[elementIndex].atomicMass;
+        this.hoverBlock = this.elements[elementIndex].block;
+        this.hoverDiscoveryDate = this.elements[elementIndex].discoveryDate;
+        this.hoverDiscoveredBy = this.elements[elementIndex].discoveredBy;
+        this.hoverColor = this.elementsDefaultColor[elementIndex];
+    },
+    shadeElementOnHover: function(e) {
+      var elementIndex = getIndexOfElementInElements(e);
+      //console.log(e);
+      //console.log(document.querySelector('.element-outer:hover'));
+
+
+      var defaultColor = this.elementColors[elementIndex];
+      if(defaultColor == "blue" || defaultColor == "green" || defaultColor == "red" || defaultColor == "orange")
+      {
+        Vue.set(this.elementColors, elementIndex, ("dark-" + this.elementColors[elementIndex]));
+      }
+
+    },
+    lightenElementOnHover: function(e) {
+      var elementIndex = getIndexOfElementInElements(e);
+        Vue.set(this.elementColors, elementIndex, (this.elementColors[elementIndex].substring(5)));
+    },
+    darkenCurrentElementOnHover: function(e) {
+
+    },
+    highlightRowCol: function(e) {
+      console.log(e);
     }
   }
+})
+
+Vue.component("greeting", {
+  template: ""
 })

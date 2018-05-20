@@ -6,45 +6,64 @@
   bottom: -3px;
 }
 
-// Element no-hover
-.s {
+// ELEMENT COLOR
+.blue {
   background-color: $oc-blue-2;
 }
 
-.p {
+.red {
   background-color: $oc-red-2;
 }
 
-.d {
+.green {
   background-color: $oc-green-2;
 }
 
-.f {
+.orange {
   background-color: $oc-orange-2;
 }
 
-.g {
-  background-color: $oc-gray-3;
+.violet {
+  background-color: $oc-violet-2;
 }
 
-// Element hover
-.element-outer ~ .s:hover {
+.dark-blue {
   background-color: $oc-blue-3;
 }
 
-.element-outer ~ .p:hover {
+.dark-red {
   background-color: $oc-red-3;
 }
 
-.element-outer ~ .d:hover {
+.dark-green {
   background-color: $oc-green-3;
 }
 
-.element-outer ~ .f:hover {
+.dark-orange {
   background-color: $oc-orange-3;
 }
 
-// g is not an actual block, but Lanth. and Actin. category
-.element-outer ~ .g:hover {
-  background-color: $oc-gray-4;
+.dark-violet {
+  background-color: $oc-violet-3
 }
+
+// Hover not needed. Hover detected by JavaScript event and the classname of the elemnet being hovered over on is changed
+// This classname is always the color of the current element
+/*
+// Element hover
+.element-outer ~ .blue:hover {
+  background-color: $oc-blue-3;
+}
+
+.element-outer ~ .red:hover {
+  background-color: $oc-red-3;
+}
+
+.element-outer ~ .green:hover {
+  background-color: $oc-green-3;
+}
+
+.element-outer ~ .orange:hover {
+  background-color: $oc-orange-3;
+}
+*/
