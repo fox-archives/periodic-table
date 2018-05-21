@@ -6,16 +6,16 @@ var one = new Vue({
   el: '#grid-container',
   data: {
     elements: [
-      { atomicNumber: 1,         name: "Hydrogen",      abbreviation: "H",       id: "h",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,     boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },
-      { atomicNumber: 2,         name: "Helium",        abbreviation: "He",      id: "he",  column: "c-36",  row: "r-2",   block: "s",  atomicMass: 4.003,    meltingPoint: -1,        boilingPoint: 4.222,     discoveryDate: 1895,            discoveredBy: "Sir William Ramsay, Per Teodor Cleve, and Nils Abraham" },
-      { atomicNumber: 3,         name: "Lithium",       abbreviation: "Li",      id: "li",  column: "c-2",   row: "r-4",   block: "s",  atomicMass: 6.940,    meltingPoint: 453.65,    boilingPoint: 1615,      discoveryDate: 1817,            discoveredBy: "Johan August Arfvedson" },
-      { atomicNumber: 4,         name: "Beryllium",     abbreviation: "Be",      id: "be",  column: "c-4",   row: "r-4",   block: "s",  atomicMass: 9.012,    meltingPoint: 1560,      boilingPoint: 2741,      discoveryDate: 1797,            discoveredBy: "Nicholas Louis Vauquelin" },
-      { atomicNumber: 5,         name: "Boron",         abbreviation: "B",       id: "b",   column: "c-26",  row: "r-4",   block: "p",  atomicMass: 10.810,   meltingPoint: 2350,      boilingPoint: 4273,      discoveryDate: 1808,            discoveredBy: "Louis-Josef Gay-Lussac, Louis-Jacques Thénard, and Humphry Davy" },
-      { atomicNumber: 6,         name: "Carbon",        abbreviation: "C",       id: "c",   column: "c-28",  row: "r-4",   block: "p",  atomicMass: 12.011,   meltingPoint: 4098,      boilingPoint: 4098,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
-      { atomicNumber: 7,         name: "Nitrogen",      abbreviation: "N",       id: "n",   column: "c-30",  row: "r-4",   block: "p",  atomicMass: 14.007,   meltingPoint: 63.2,      boilingPoint: 77.355,    discoveryDate: 1772,            discoveredBy: "Daniel Rutherford" },
-      { atomicNumber: 8,         name: "Oxygen",        abbreviation: "O",       id: "o",   column: "c-32",  row: "r-4",   block: "p",  atomicMass: 15.999,   meltingPoint: 54.36,     boilingPoint: 90.188,    discoveryDate: 1774,            discoveredBy: "Joseph Priestley and Carl Wilhelm Scheele" },
-      { atomicNumber: 9,         name: "Flourine",      abbreviation: "F",       id: "f",   column: "c-34",  row: "r-4",    block: "p",  atomicMass: 18.998,   meltingPoint: 53.48,     boilingPoint: 85.04,     discoveryDate: 1886,            discoveredBy: "Henri Moissan" },
-      { atomicNumber: 10,        name: "Neon",          abbreviation: "Ne",      id: "ne",  column: "c-36",  row: "r-4",   block: "p",  atomicMass: 20.180,   meltingPoint: 24.56,     boilingPoint: 27.104,    discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
+      { atomicNumber: 1,         name: "Hydrogen",      abbreviation: "H",       id: "h",   period: "1",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,     boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },
+      { atomicNumber: 2,         name: "Helium",        abbreviation: "He",      id: "he",  period: "1",   column: "c-36",  row: "r-2",   block: "s",  atomicMass: 4.003,    meltingPoint: -1,        boilingPoint: 4.222,     discoveryDate: 1895,            discoveredBy: "Sir William Ramsay, Per Teodor Cleve, and Nils Abraham" },
+      { atomicNumber: 3,         name: "Lithium",       abbreviation: "Li",      id: "li",  period: "2",   column: "c-2",   row: "r-4",   block: "s",  atomicMass: 6.940,    meltingPoint: 453.65,    boilingPoint: 1615,      discoveryDate: 1817,            discoveredBy: "Johan August Arfvedson" },
+      { atomicNumber: 4,         name: "Beryllium",     abbreviation: "Be",      id: "be",  period: "2",   column: "c-4",   row: "r-4",   block: "s",  atomicMass: 9.012,    meltingPoint: 1560,      boilingPoint: 2741,      discoveryDate: 1797,            discoveredBy: "Nicholas Louis Vauquelin" },
+      { atomicNumber: 5,         name: "Boron",         abbreviation: "B",       id: "b",   period: "2",   column: "c-26",  row: "r-4",   block: "p",  atomicMass: 10.810,   meltingPoint: 2350,      boilingPoint: 4273,      discoveryDate: 1808,            discoveredBy: "Louis-Josef Gay-Lussac, Louis-Jacques Thénard, and Humphry Davy" },
+      { atomicNumber: 6,         name: "Carbon",        abbreviation: "C",       id: "c",   period: "2",   column: "c-28",  row: "r-4",   block: "p",  atomicMass: 12.011,   meltingPoint: 4098,      boilingPoint: 4098,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
+      { atomicNumber: 7,         name: "Nitrogen",      abbreviation: "N",       id: "n",   period: "2",   column: "c-30",  row: "r-4",   block: "p",  atomicMass: 14.007,   meltingPoint: 63.2,      boilingPoint: 77.355,    discoveryDate: 1772,            discoveredBy: "Daniel Rutherford" },
+      { atomicNumber: 8,         name: "Oxygen",        abbreviation: "O",       id: "o",   period: "2",   column: "c-32",  row: "r-4",   block: "p",  atomicMass: 15.999,   meltingPoint: 54.36,     boilingPoint: 90.188,    discoveryDate: 1774,            discoveredBy: "Joseph Priestley and Carl Wilhelm Scheele" },
+      { atomicNumber: 9,         name: "Flourine",      abbreviation: "F",       id: "f",   period: "2",   column: "c-34",  row: "r-4",   block: "p",  atomicMass: 18.998,   meltingPoint: 53.48,     boilingPoint: 85.04,     discoveryDate: 1886,            discoveredBy: "Henri Moissan" },
+      { atomicNumber: 10,        name: "Neon",          abbreviation: "Ne",      id: "ne",  period: "2",   column: "c-36",  row: "r-4",   block: "p",  atomicMass: 20.180,   meltingPoint: 24.56,     boilingPoint: 27.104,    discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
       { atomicNumber: 11,        name: "Sodium",        abbreviation: "Na",      id: "na",  column: "c-2",   row: "r-6",   block: "s",  atomicMass: 22.990,   meltingPoint: 370.944,   boilingPoint: 1156.090,  discoveryDate: 1807,            discoveredBy: "Humphry Davy" },
       { atomicNumber: 12,        name: "Magnesium",     abbreviation: "Mg",      id: "mg",  column: "c-4",   row: "r-6",   block: "s",  atomicMass: 24.305,   meltingPoint: 923,       boilingPoint: 1363,      discoveryDate: 1755,            discoveredBy: "Joseph Black" },
       { atomicNumber: 13,        name: "Aluminium",     abbreviation: "Al",      id: "al",  column: "c-26",  row: "r-6",   block: "p",  atomicMass: 26.982,   meltingPoint: 933.473,   boilingPoint: 2792,      discoveryDate: 1825,            discoveredBy: "Hans Oersted" },
@@ -62,8 +62,7 @@ var one = new Vue({
       { atomicNumber: 54,        name: "Xenon",         abbreviation: "Xe",      id: "xe",  column: "c-36",  row: "r-10",  block: "p",  atomicMass: 131.293,  meltingPoint: 161.4,     boilingPoint: 165.051,  discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
       { atomicNumber: 55,        name: "Caesium",       abbreviation: "Cs",      id: "cs",  column: "c-2",   row: "r-12",  block: "s",  atomicMass: 132.905,  meltingPoint: 301.7,     boilingPoint: 944,      discoveryDate: 1860,            discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
       { atomicNumber: 56,        name: "Barium",        abbreviation: "Ba",      id: "ba",  column: "c-4",   row: "r-12",  block: "s",  atomicMass: 137.327,  meltingPoint: 1000,      boilingPoint: 2118,     discoveryDate: 1808,            discoveredBy: "Humphry Davy" },
-
-      // Extended portion of periodic table.
+      // Extended portion of periodic table
       { atomicNumber: 57,        name: "Lanthanum",     abbreviation: "La",      id: "la",  column: "c-6",   row: "r-17",  block: "f",  atomicMass: 138.905,  meltingPoint: 1193,      boilingPoint: 3737,      discoveryDate: 1839,           discoveredBy: "Carl Gustav Mosander" },
       { atomicNumber: 58,        name: "Cerium",        abbreviation: "Ce",      id: "ce",  column: "c-8",   row: "r-17",  block: "f",  atomicMass: 140.116,  meltingPoint: 1072,      boilingPoint: 3716,      discoveryDate: 1803,           discoveredBy: "Jo..ns Jacob Berzelius and Wilhelm Hisinger" },
       { atomicNumber: 59,        name: "Praseodymium",  abbreviation: "Pr",      id: "pr",  column: "c-10",  row: "r-17",  block: "f",  atomicMass: 140.908,  meltingPoint: 1204,      boilingPoint: 3793,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
@@ -74,8 +73,12 @@ var one = new Vue({
       { atomicNumber: 64,        name: "Gadolinium",    abbreviation: "Gd",      id: "gd",  column: "c-20",  row: "r-17",  block: "f",  atomicMass: 157.25,   meltingPoint: 1586,      boilingPoint: 3546,      discoveryDate: 1880,           discoveredBy: "Jean Charles Galissard de Marignac"},
       { atomicNumber: 65,        name: "Terbium",       abbreviation: "Tb",      id: "tb",  column: "c-22",  row: "r-17",  block: "f",  atomicMass: 158.925,  meltingPoint: 1632,      boilingPoint: 3503,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
       { atomicNumber: 66,        name: "Dysprosium",    abbreviation: "Dy",      id: "dy",  column: "c-24",  row: "r-17",  block: "f",  atomicMass: 162.500,  meltingPoint: 1685,      boilingPoint: 2840,      discoveryDate: 1886,           discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
-
-
+      { atomicNumber: 67,        name: "Holmium",       abbreviation: "Ho",      id: "ho",  column: "cc-26", row: "r-17",  block: "f",  atomicMass: 164.930,  meltingPoint: 1745,      boilingPoint: 2973,      discoveryDate: 1878,           discoveredBy: "Per Teodor Cleve, Marc Delafontaine, and Louis Soret" },
+      { atomicNumber: 68,        name: "Erbium",        abbreviation: "Er",      id: "er",  column: "cc-28", row: "r-17",  block: "f",  atomicMass: 167.259,  meltingPoint: 1802,      boilingPoint: 3141,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
+      { atomicNumber: 69,        name: "Thulium",       abbreviation: "Tm",      id: "tm",  column: "cc-30", row: "r-17",  block: "f",  atomicMass: 168.934,  meltingPoint: 1818,      boilingPoint: 2223,      discoveryDate: 1879,           discoveredBy: "Per Teodor Cleve" },
+      { atomicNumber: 70,        name: "Ytterbium",     abbreviation: "Yb",      id: "yb",  column: "cc-32", row: "r-17",  block: "f",  atomicMass: 173.045,  meltingPoint: 1097,      boilingPoint: 1469,      discoveryDate: 1878,           discoveredBy: "Jean Charles Galissard de Marignac" },
+      { atomicNumber: 71,        name: "Lutetium",      abbreviation: "Lu",      id: "lu",  column: "cc-34", row: "r-17",  block: "f",  atomicMass: 174.967,  meltingPoint: 1936,      boilingPoint: 3675,      discoveryDate: 1907,           discoveredBy: "Georges Urbain, Charles James" },
+      // End first extension portion of the periodic table
       { atomicNumber: 72,        name: "Hafnium",       abbreviation: "Hf",      id: "hf",  column: "c-8",   row: "r-12",  block: "d",  atomicMass: 178.49,   meltingPoint: 2506,      boilingPoint: 4873,      discoveryDate: 1923,           discoveredBy: "George Charles de Hevesy and Dirk Coster" },
       { atomicNumber: 73,        name: "Tantalum",      abbreviation: "Ta",      id: "ta",  column: "c-10",  row: "r-12",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
       { atomicNumber: 74,        name: "Tungsten",      abbreviation: "W",       id: "w",   column: "c-12",  row: "r-12",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
@@ -96,7 +99,7 @@ var one = new Vue({
       { atomicNumber: 119,      name: "Lanthanides",    abbreviation: "Lan.",    id: "z1",  column: "c-6",   row: "r-12",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
       { atomicNumber: 120,      name: "Actinides",      abbreviation: "Act.",    id: "z2",  column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
     ],
-    rowLabels: [
+    periodLabels: [
       // Row labels
       { display: 1,   column: "cc-1",   row: "rr-2" },
       { display: 2,   column: "cc-1",   row: "rr-4" },
@@ -106,7 +109,7 @@ var one = new Vue({
       { display: 6,   column: "cc-1",   row: "rr-12" },
       { display: 7,   column: "cc-1",   row: "rr-14" }
     ],
-    colLabels: [
+    groupLabels: [
       // Column labels
       { display: " 1",   column: "cc-2",   row: "rr-1" },
       { display: " 2",   column: "cc-4",   row: "rr-1" },
@@ -195,12 +198,11 @@ var one = new Vue({
       "orange",
       "orange",
       "orange",
-
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
       "green",
       "green",
       "green",
@@ -292,12 +294,11 @@ var one = new Vue({
       "orange",
       "orange",
       "orange",
-
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
       "green",
       "green",
       "green",
@@ -360,7 +361,32 @@ var one = new Vue({
         Vue.set(this.elementColors, index, (this.elementsDefaultColor[index]));
     },
 
-    highlightRowCol: function(index, rowOrCol) {
+    highlightPeriod: function(index) {
+      var i;
+      for(i = 0; i < this.elements.length; i++)
+      {
+        if(this.elements[i].period == index)
+        {
+          var defaultColor = this.elementColors[index];
+          // If the element is in its default state, prefix "dark-" to it. (There is a dark-blue, dark-red etc. CSS property for all colors)
+          if(defaultColor == "blue" || defaultColor == "green" || defaultColor == "red" || defaultColor == "orange") {
+            Vue.set(this.elementColors, index, ("dark-" + this.elementColors[index]));
+          }
+        }
+      }
+    },
+    unhighlightPeriod: function(index) {
+      var i;
+      for(i = 0; i < this.elements.length; i++)
+      {
+        if(this.elements[i].period == index)
+        {
+          Vue.set(this.elementColors, index, (this.elementsDefaultColor[index]));
+        }
+      }
+    },
+
+    highlightGroup: function(index) {
       console.log(index + 1);
     }
   },

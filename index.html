@@ -22,6 +22,9 @@
         <div id="question"><span class="ti-help"></span></div>
       </div>
     </nav>
+    <aside id="display-options" class="formatContent">
+      <!-- Options for how the main grid container and elemetns are displayed -->
+    </aside>
     <div id="grid-container-outer" class="formatContent">
       <main id="grid-container">
         <!-- ELEMENT OVERVIEW PANNEL -->
@@ -54,32 +57,19 @@
           </div>
         </div>
 
-        <!-- ROW LABELS -->
-        <div v-for="(rowLabel, index) in rowLabels" v-bind:class="[rowLabel.row, rowLabel.column]" v-on:mouseover="highlightRowCol(index)">
-          <div v-cloak class="label-row-inner">
-            <p class="label-text">{{ rowLabel.display }}</p>
+        <!-- PERIOD LABELS -->
+        <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]" v-on:mouseover="highlightPeriod(index)" v-on:mouesleave="unhighlightPeriod(index)">
+          <div v-cloak class="label-period-inner">
+            <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
-        <!-- COL LABELS -->
-        <div v-for="(colLabel, index) in colLabels" v-bind:class="[colLabel.col, colLabel.column]" v-on:mouseover="highlightRowCol(index)">
-          <div v-cloak class="label-col-inner">
-            <p class="label-text">{{ colLabel.display }}</p>
+        <!-- GROUP LABELS -->
+        <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
+          <div v-cloak class="label-group-inner">
+            <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
-        <!-- ROW LABELS -->
-        <!--<div class="label-row-outer" v-for="(rowLabel, index) in rowLabels" v-bind:class="[rowLabel.row, rowLabel.column]" v-on:mouseover="highlightRowCol(index, "row")">
-          <div v-cloak class="label-row-inner"
-            <p class="label-text">{{ rowLabel.display }}</p>
-          </div>
-        </div>-->
-        <!-- COL LABELS -->
-        <!--<div class="label-col-outer" v-for="(colLabel, index) in colLabels" v-bind:class="[colLabel.row, colLabel.column]" v-on:mouseover="highlightRowCol(index, "column")">
-          <div v-cloak class="label-col-inner"
-            <p class="label-text">{{ colLabel.display }}</p>
-          </div>
-        </div>-->
-
       </main>
   </div>
   <script src="./node_modules/vue/dist/vue.js"></script>

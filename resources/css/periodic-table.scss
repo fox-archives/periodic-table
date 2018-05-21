@@ -112,18 +112,18 @@ $element-height: 40px;
 }
 
 // ROW AND COLUMN LABELS
-.label-row-outer, .label-col-outer {
+.label-period-outer, .label-group-outer {
   z-index: 0;
   user-select: none;
 }
 
-.label-row-inner {
+.label-period-inner {
   margin-top: 50%;
   transform: translateY(50%);
   margin-left: 10px;
 }
 
-.label-col-inner {
+.label-group-inner {
   margin-left: 50%;
   transform: translateX(-50%);
   padding-left: 7px;

@@ -6,6 +6,7 @@ $border-radius: 15px;
 @import "../assets/icons/themify-icons.css";
 
 @import "./navigation.scss";
+@import "./options.scss";
 @import "./periodic-table.scss";
 @import "./generic-elements.scss";
 @import "./vue.scss";
@@ -60,6 +61,6 @@ p {
 }
 
 // Shadow of the navigation bar
-nav, #grid-container-outer {
+nav, #grid-container-outer, #display-options {
   box-shadow: 3px 3px 5px $oc-gray-3;
 }
