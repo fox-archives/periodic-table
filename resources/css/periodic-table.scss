@@ -112,31 +112,22 @@ $element-height: 40px;
 }
 
 // ROW AND COLUMN LABELS
-.label-outer {
+.label-row-outer, .label-col-outer {
   z-index: 0;
   user-select: none;
 }
 
-.label-outer:hover {
-
-}
-
-.label-inner {
-
-}
-
-// All .row elements are also .label-inner
-.label-outer > .row {
+.label-row-inner {
   margin-top: 50%;
   transform: translateY(50%);
   margin-left: 10px;
 }
 
-// All  .column elements are also .label-inner
-.label-outer > .column {
+.label-col-inner {
   margin-left: 50%;
   transform: translateX(-50%);
   padding-left: 7px;
+  padding-top: 5px;
 }
 
 .label-text {

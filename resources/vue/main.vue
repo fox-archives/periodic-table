@@ -1,4 +1,8 @@
-var app = new Vue({
+Vue.component("periodic-table", {
+  template: "<p>I am a reusable component</p>"
+})
+
+var one = new Vue({
   el: '#grid-container',
   data: {
     elements: [
@@ -10,8 +14,8 @@ var app = new Vue({
       { atomicNumber: 6,         name: "Carbon",        abbreviation: "C",       id: "c",   column: "c-28",  row: "r-4",   block: "p",  atomicMass: 12.011,   meltingPoint: 4098,      boilingPoint: 4098,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
       { atomicNumber: 7,         name: "Nitrogen",      abbreviation: "N",       id: "n",   column: "c-30",  row: "r-4",   block: "p",  atomicMass: 14.007,   meltingPoint: 63.2,      boilingPoint: 77.355,    discoveryDate: 1772,            discoveredBy: "Daniel Rutherford" },
       { atomicNumber: 8,         name: "Oxygen",        abbreviation: "O",       id: "o",   column: "c-32",  row: "r-4",   block: "p",  atomicMass: 15.999,   meltingPoint: 54.36,     boilingPoint: 90.188,    discoveryDate: 1774,            discoveredBy: "Joseph Priestley and Carl Wilhelm Scheele" },
-      { atomicNumber: 9,         name: "Flourine",      abbreviation: "F",       id: "f",  column: "c-34",  row: "r-4",    block: "p",  atomicMass: 18.998,   meltingPoint: 53.48,     boilingPoint: 85.04,     discoveryDate: 1886,            discoveredBy: "Henri Moissan" },
-      { atomicNumber: 10,        name: "Neon",          abbreviation: "N",       id: "n",   column: "c-36",  row: "r-4",   block: "p",  atomicMass: 20.180,   meltingPoint: 24.56,     boilingPoint: 27.104,    discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
+      { atomicNumber: 9,         name: "Flourine",      abbreviation: "F",       id: "f",   column: "c-34",  row: "r-4",    block: "p",  atomicMass: 18.998,   meltingPoint: 53.48,     boilingPoint: 85.04,     discoveryDate: 1886,            discoveredBy: "Henri Moissan" },
+      { atomicNumber: 10,        name: "Neon",          abbreviation: "Ne",      id: "ne",  column: "c-36",  row: "r-4",   block: "p",  atomicMass: 20.180,   meltingPoint: 24.56,     boilingPoint: 27.104,    discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
       { atomicNumber: 11,        name: "Sodium",        abbreviation: "Na",      id: "na",  column: "c-2",   row: "r-6",   block: "s",  atomicMass: 22.990,   meltingPoint: 370.944,   boilingPoint: 1156.090,  discoveryDate: 1807,            discoveredBy: "Humphry Davy" },
       { atomicNumber: 12,        name: "Magnesium",     abbreviation: "Mg",      id: "mg",  column: "c-4",   row: "r-6",   block: "s",  atomicMass: 24.305,   meltingPoint: 923,       boilingPoint: 1363,      discoveryDate: 1755,            discoveredBy: "Joseph Black" },
       { atomicNumber: 13,        name: "Aluminium",     abbreviation: "Al",      id: "al",  column: "c-26",  row: "r-6",   block: "p",  atomicMass: 26.982,   meltingPoint: 933.473,   boilingPoint: 2792,      discoveryDate: 1825,            discoveredBy: "Hans Oersted" },
@@ -90,37 +94,40 @@ var app = new Vue({
 
       // Currently, the atomicNumber must be exactly the same as the index in the array (this helps get the object that the user hovers over)
       { atomicNumber: 119,      name: "Lanthanides",    abbreviation: "Lan.",    id: "z1",  column: "c-6",   row: "r-12",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
-      { atomicNumber: 120,      name: "Actinides",      abbreviation: "Act.",    id: "z1",  column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
+      { atomicNumber: 120,      name: "Actinides",      abbreviation: "Act.",    id: "z2",  column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
     ],
-    labels: [
+    rowLabels: [
       // Row labels
-      { display: 1,   type: "row",     column: "cc-1",   row: "rr-2" },
-      { display: 2,   type: "row",     column: "cc-1",   row: "rr-4" },
-      { display: 3,   type: "row",     column: "cc-1",   row: "rr-6" },
-      { display: 4,   type: "row",     column: "cc-1",   row: "rr-8" },
-      { display: 5,   type: "row",     column: "cc-1",   row: "rr-10" },
-      { display: 6,   type: "row",     column: "cc-1",   row: "rr-12" },
-      { display: 7,   type: "row",     column: "cc-1",   row: "rr-14" },
-      // Column labels
-      { display: " 1",   type: "column",  column: "cc-2",   row: "rr-1" },
-      { display: " 2",   type: "column",  column: "cc-4",   row: "rr-1" },
-      { display: " 3",   type: "column",  column: "cc-6",   row: "rr-1" },
-      { display: " 4",   type: "column",  column: "cc-8",   row: "rr-1" },
-      { display: " 5",   type: "column",  column: "cc-10",  row: "rr-1" },
-      { display: " 6",   type: "column",  column: "cc-12",  row: "rr-1" },
-      { display: " 7",   type: "column",  column: "cc-14",  row: "rr-1" },
-      { display: " 8",   type: "column",  column: "cc-16",  row: "rr-1" },
-      { display: " 9",   type: "column",  column: "cc-18",  row: "rr-1" },
-      { display: "10",   type: "column",  column: "cc-20",  row: "rr-1" },
-      { display: "11",   type: "column",  column: "cc-22",  row: "rr-1" },
-      { display: "12",   type: "column",  column: "cc-24",  row: "rr-1" },
-      { display: "13",   type: "column",  column: "cc-26",  row: "rr-1" },
-      { display: "14",   type: "column",  column: "cc-28",  row: "rr-1" },
-      { display: "15",   type: "column",  column: "cc-30",  row: "rr-1" },
-      { display: "16",   type: "column",  column: "cc-32",  row: "rr-1" },
-      { display: "17",   type: "column",  column: "cc-34",  row: "rr-1" },
-      { display: "18",   type: "column",  column: "cc-36",  row: "rr-1" }
+      { display: 1,   column: "cc-1",   row: "rr-2" },
+      { display: 2,   column: "cc-1",   row: "rr-4" },
+      { display: 3,   column: "cc-1",   row: "rr-6" },
+      { display: 4,   column: "cc-1",   row: "rr-8" },
+      { display: 5,   column: "cc-1",   row: "rr-10" },
+      { display: 6,   column: "cc-1",   row: "rr-12" },
+      { display: 7,   column: "cc-1",   row: "rr-14" }
     ],
+    colLabels: [
+      // Column labels
+      { display: " 1",   column: "cc-2",   row: "rr-1" },
+      { display: " 2",   column: "cc-4",   row: "rr-1" },
+      { display: " 3",   column: "cc-6",   row: "rr-1" },
+      { display: " 4",   column: "cc-8",   row: "rr-1" },
+      { display: " 5",   column: "cc-10",  row: "rr-1" },
+      { display: " 6",   column: "cc-12",  row: "rr-1" },
+      { display: " 7",   column: "cc-14",  row: "rr-1" },
+      { display: " 8",   column: "cc-16",  row: "rr-1" },
+      { display: " 9",   column: "cc-18",  row: "rr-1" },
+      { display: "10",   column: "cc-20",  row: "rr-1" },
+      { display: "11",   column: "cc-22",  row: "rr-1" },
+      { display: "12",   column: "cc-24",  row: "rr-1" },
+      { display: "13",   column: "cc-26",  row: "rr-1" },
+      { display: "14",   column: "cc-28",  row: "rr-1" },
+      { display: "15",   column: "cc-30",  row: "rr-1" },
+      { display: "16",   column: "cc-32",  row: "rr-1" },
+      { display: "17",   column: "cc-34",  row: "rr-1" },
+      { display: "18",   column: "cc-36",  row: "rr-1" }
+    ],
+    // These elements are the defaults. Should only change when  user clicks on a different tab like "orbitals", "properties", etc.
     elementsDefaultColor: [
       "blue",
       "blue",
@@ -217,6 +224,7 @@ var app = new Vue({
       "orange",
       "orange"
   ],
+  // These colors should be displayed
   elementColors: [
       "blue",
       "blue",
@@ -324,47 +332,39 @@ var app = new Vue({
     hoverDiscoveredBy: "Henry Cavendish"
   },
   methods: {
-    updateElementInfo: function(e) {
-        // getIndexOfElementInElements(e) returns index of element (in above array) that was just hovered over
-        // this.elements[] takes that index and returns the actual object (at that index)
-        // .abbreviation gets the property of that Element (that was just hovered over)
+    updateElementInfoAndDesc: function(index) {
+      // Update element overview
+      this.hoverAtomicNumber = this.$refs.elementIndexDOM[index].innerHTML;
+      this.hoverAbbreviation = this.$refs.elementAbbreviationDOM[index].innerHTML;
+      this.hoverName = this.$refs.elementNameDOM[index].innerHTML;
+      this.hoverAtomicMass = this.$refs.elementAtomicMassDOM[index].innerHTML;
 
-        var elementIndex = getIndexOfElementInElements(e);
-        this.hoverAtomicNumber = this.elements[elementIndex].atomicNumber;
-        this.hoverAbbreviation = this.elements[elementIndex].abbreviation;
-        this.hoverName = this.elements[elementIndex].name;
-        this.hoverAtomicMass = this.elements[elementIndex].atomicMass;
-        this.hoverBlock = this.elements[elementIndex].block;
-        this.hoverDiscoveryDate = this.elements[elementIndex].discoveryDate;
-        this.hoverDiscoveredBy = this.elements[elementIndex].discoveredBy;
-        this.hoverColor = this.elementsDefaultColor[elementIndex];
+      // Update element description
+      this.hoverDiscoveryDate = this.elements[index].discoveryDate;
+      this.hoverDiscoveredBy = this.elements[index].discoveredBy;
+      this.hoverColor = this.elementsDefaultColor[index];
     },
-    shadeElementOnHover: function(e) {
-      var elementIndex = getIndexOfElementInElements(e);
-      //console.log(e);
-      //console.log(document.querySelector('.element-outer:hover'));
 
+    shadeElementOnHover: function(index) {
+      // Gets the default color of the hovered over element
+      var defaultColor = this.elementColors[index];
 
-      var defaultColor = this.elementColors[elementIndex];
-      if(defaultColor == "blue" || defaultColor == "green" || defaultColor == "red" || defaultColor == "orange")
-      {
-        Vue.set(this.elementColors, elementIndex, ("dark-" + this.elementColors[elementIndex]));
+      // If the element is in its default state, prefix "dark-" to it. (There is a dark-blue, dark-red etc. CSS property for all colors)
+      if(defaultColor == "blue" || defaultColor == "green" || defaultColor == "red" || defaultColor == "orange") {
+        Vue.set(this.elementColors, index, ("dark-" + this.elementColors[index]));
       }
+    },
 
+    lightenElementOnHover: function(index) {
+        // Saves the default color of the element to the hovered over element
+        Vue.set(this.elementColors, index, (this.elementsDefaultColor[index]));
     },
-    lightenElementOnHover: function(e) {
-      var elementIndex = getIndexOfElementInElements(e);
-        Vue.set(this.elementColors, elementIndex, (this.elementColors[elementIndex].substring(5)));
-    },
-    darkenCurrentElementOnHover: function(e) {
 
-    },
-    highlightRowCol: function(e) {
-      console.log(e);
+    highlightRowCol: function(index, rowOrCol) {
+      console.log(index + 1);
     }
-  }
-})
+  },
+  computed: {
 
-Vue.component("greeting", {
-  template: ""
+  }
 })

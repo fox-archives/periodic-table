@@ -44,22 +44,42 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <!-- v-for creates a div with class="element-outer" for every element in the elements array (defined in main.vue file)
-             v:bind:id and v-bind:class binds each (now duplicated) element with certain id from a property of an element (in the elements array) -->
-        <div class="element-outer" v-for="element in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1]]" v-bind:id="element.id" v-on:mousemove="updateElementInfo($event)" v-on:mouseover="shadeElementOnHover($event)" v-on:mouseleave="lightenElementOnHover($event)">
-          <div v-cloak class="element-inner"> <!--Event for mousemove automatically passed through method updateElementOverview-->
-            <h6 class="atomicNumber">{{ element.atomicNumber }}</h6>
-            <h5 class="abbreviation">{{ element.abbreviation }}</h5>
-            <h6 class="name">{{ element.name }}</h6>
-            <h6 class="atomicMass">{{ element.atomicMass }}</h6>
+        <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1]]" v-bind:id="element.id" v-on:mousemove="updateElementInfoAndDesc(index)" v-on:mouseover="shadeElementOnHover(index)" v-on:mouseleave="lightenElementOnHover(index)">
+          <div v-cloak class="element-inner">
+            <h6>{{ index + 1 }}</h6>
+            <h6 class="atomicNumber" ref="elementIndexDOM">{{ element.atomicNumber }}</h6>
+            <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
+            <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
+            <h6 class="atomicMass" ref="elementAtomicMassDOM">{{ element.atomicMass }}</h6>
           </div>
         </div>
-        <!-- ROW AND COLUMN -->
-        <div class="label-outer" v-for="label in labels" v-bind:class="[label.row, label.column]" v-on:mouseover="highlightRowCol($event)">
-          <div v-cloak class="label-inner" v-bind:class="label.type">
-            <p class="label-text">{{ label.display }}</p>
+
+        <!-- ROW LABELS -->
+        <div v-for="(rowLabel, index) in rowLabels" v-bind:class="[rowLabel.row, rowLabel.column]" v-on:mouseover="highlightRowCol(index)">
+          <div v-cloak class="label-row-inner">
+            <p class="label-text">{{ rowLabel.display }}</p>
           </div>
         </div>
+
+        <!-- COL LABELS -->
+        <div v-for="(colLabel, index) in colLabels" v-bind:class="[colLabel.col, colLabel.column]" v-on:mouseover="highlightRowCol(index)">
+          <div v-cloak class="label-col-inner">
+            <p class="label-text">{{ colLabel.display }}</p>
+          </div>
+        </div>
+        <!-- ROW LABELS -->
+        <!--<div class="label-row-outer" v-for="(rowLabel, index) in rowLabels" v-bind:class="[rowLabel.row, rowLabel.column]" v-on:mouseover="highlightRowCol(index, "row")">
+          <div v-cloak class="label-row-inner"
+            <p class="label-text">{{ rowLabel.display }}</p>
+          </div>
+        </div>-->
+        <!-- COL LABELS -->
+        <!--<div class="label-col-outer" v-for="(colLabel, index) in colLabels" v-bind:class="[colLabel.row, colLabel.column]" v-on:mouseover="highlightRowCol(index, "column")">
+          <div v-cloak class="label-col-inner"
+            <p class="label-text">{{ colLabel.display }}</p>
+          </div>
+        </div>-->
+
       </main>
   </div>
   <script src="./node_modules/vue/dist/vue.js"></script>
