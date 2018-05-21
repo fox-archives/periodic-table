@@ -117,20 +117,47 @@ $element-height: 40px;
   user-select: none;
 }
 
+// PERIOD
 .label-period-inner {
-  margin-top: 50%;
-  transform: translateY(50%);
-  margin-left: 10px;
+  height: 100%;
+  width: 75%;
+  border-radius: $border-radius / 2;
+  transition: background-color 0.15s ease-in-out;
 }
 
+.label-period-inner:hover {
+  background-color: $oc-gray-3;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.label-period-inner > .label-text {
+  text-align: center;
+  padding-top: 50%;
+  transform: translateY(40%);
+  font-size: 1.33em;
+}
+
+// GROUP
 .label-group-inner {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  padding-left: 7px;
-  padding-top: 5px;
+  height: 70%;
+  width: 100%;
+  //margin-left: 50%;
+  //transform: translateX(-50%);
+  //padding-left: 7px;
+  //padding-right: 7px;
+  //padding-top: 5px;
+  border-radius: $border-radius / 2;
+  transition: background-color 0.15s ease-in-out;
 }
 
-.label-text {
+.label-group-inner:hover {
+  background-color: $oc-gray-3;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.label-group-inner > .label-text {
+  padding-top: 2px;
+  text-align: center;
   font-size: 1.33em;
 }
 

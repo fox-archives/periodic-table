@@ -49,7 +49,7 @@
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
         <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1]]" v-bind:id="element.id" v-on:mousemove="updateElementInfoAndDesc(index)" v-on:mouseover="shadeElementOnHover(index)" v-on:mouseleave="lightenElementOnHover(index)">
           <div v-cloak class="element-inner">
-            <h6>{{ index + 1 }}</h6>
+            <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
             <h6 class="atomicNumber" ref="elementIndexDOM">{{ element.atomicNumber }}</h6>
             <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
             <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
