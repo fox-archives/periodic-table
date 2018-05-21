@@ -128,6 +128,7 @@ $element-height: 40px;
 .label-period-inner:hover {
   background-color: $oc-gray-3;
   transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .label-period-inner > .label-text {
@@ -153,6 +154,7 @@ $element-height: 40px;
 .label-group-inner:hover {
   background-color: $oc-gray-3;
   transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .label-group-inner > .label-text {
