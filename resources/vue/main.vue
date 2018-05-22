@@ -411,6 +411,7 @@ var one = new Vue({
       this.hoverColor = this.elementsDefaultColor[index];
     },
 
+    // Changing color of single elements
     shadeElementOnHover: function(index) {
       // Do not add one to index because v-for array starts at 0 and elementsDefaultColor array starts at 0
       // Gets the default color of the hovered over element
@@ -427,45 +428,87 @@ var one = new Vue({
         // Saves the default color of the element to the hovered over element
       Vue.set(this.elementColors, index, (defaultColor));
     },
-    highlightOrUnHighlightGroupOrPeriod: function(index, isPeriod, isHighlight) {
+
+    // Changing color of groups and periods
+    darkenGroupOrPeriod: function(index, isPeriod, colorTo) {
+      // The period number is one more than the position the v-for loop
       var period = index + 1;
       var group = index + 1;
 
-      // className are the classes that need to be highlighted "p" stands for period
-      if(isPeriod == "true")
-      {
-      var className = "p-" + (period);
+      // className are the classes that need to be highlighted "p" stands for period, "g", stands for group
+      if(isPeriod == "true") {
+        var className = "p-" + (period);
       }
-      else if (isPeriod == "false")
-      {
+      else if (isPeriod == "false") {
         var className = "g-" + (group);
       }
       else {
-        console.log("Unexpected isPeriod parameter passed through highlightOrUnHighlightGroupOrPeriod function in main.vue");
+        console.log("Unexpected isPeriod parameter passed through darkenGroupOrPeriod function in main.vue");
       }
 
-      // elementsInPeriod is array of all elements that need to be highlighted
-      var elementsInPeriod = document.getElementsByClassName(className);
+      this.lightenOtherGroupsOrPeriods(isPeriod, className, colorTo);
+      // elements is array of all elements that need to be highlighted
+      var elements = document.getElementsByClassName(className);
 
       // For each element in the array, highlight it
       var i;
-      for(i = 0; i < elementsInPeriod.length; i++)
-      {
+      for(i = 0; i < elements.length; i++) {
         // Get the atomicNumber of the element
-        var elementInPeriod = elementsInPeriod[i].firstChild.children[0].innerText;
-        var defaultColor = this.elementsDefaultColor[elementInPeriod - 1];
+        var element = elements[i].firstChild.children[0].innerText;
+        var defaultColor = this.elementsDefaultColor[element - 1];
 
-        if(isHighlight == "true")
-        {
-          Vue.set(this.elementColors, elementInPeriod - 1, ("dark-" + defaultColor));
+        if(colorTo == "darken") {
+          Vue.set(this.elementColors, element - 1, ("dark-" + defaultColor));
         }
-        else if(isHighlight == "false")
-        {
-          Vue.set(this.elementColors, elementInPeriod - 1, (defaultColor));
+        else if(colorTo == "normal") {
+          Vue.set(this.elementColors, element - 1, (defaultColor));
         }
-        else
+        else {
+          console.log("Unexpected colorTo parameter passed through darkenGroupOrPeriod function in main.vue");
+        }
+      }
+    },
+    lightenOtherGroupsOrPeriods: function(isPeriod, className, colorTo) {
+      if(isPeriod == "true") {
+        var upper = 7;
+        var isPOrG = "p";
+      }
+      else if (isPeriod == "false") {
+        var upper = 18;
+        var isPOrG = "g"
+      }
+      else {
+        console.log("Unexpected isPeriod parameter passed through lightenOtherGroupsOrPeriods functionin main.vue");
+      }
+
+      var i;
+      var elementToChangeColor = [];
+      // For every single period or group, check if the class we are darkening is the same as the one we want to lighten.
+      // If not, then add that group of elements to the array
+      for(i = 1; i <= upper; i++) {
+        var AClassName = (isPOrG + "-" + i);
+        var ithElements = [];
+        if(AClassName != className)
         {
-          console.log("Unexpected isHighlight parameter passed through highlightOrUnHighlightGroupOrPeriod function in main.vue");
+          ithElements = document.getElementsByClassName(AClassName)
+        }
+        var j;
+        for(j = 0; j < ithElements.length; j++) {
+          var temp = [];
+          // Adding all the atomicNumbers of nums that will lighten to an array
+          temp = ithElements[j].firstChild.children[0].innerText;
+          elementToChangeColor = elementToChangeColor.concat(temp);
+        }
+      }
+
+      for(i = 0; i < elementToChangeColor.length; i++) {
+        var element = elementToChangeColor[i];
+        var defaultColor = this.elementsDefaultColor[element - 1];
+        if(colorTo == "darken") {
+          Vue.set(this.elementColors, element - 1, ("light-" + defaultColor));
+        }
+        else if(colorTo == "normal") {
+          Vue.set(this.elementColors, element - 1, (defaultColor));
         }
       }
     }

@@ -16,4 +16,4 @@ VueJS     | 16+     | 58+     | 65+       | 8+       | 10.12+
 TODO:
 * Import periodic table data from multiple JSON files
 * Make the periodic table always within the height or width bounds of the document
-* Highlight all row or column elements when column or row element is hovered over
+* When column or row label is hovered over, dim all elements not in that particular column or label (dim background and text color)
