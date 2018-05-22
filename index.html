@@ -47,7 +47,7 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, elementIndex) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period]" v-bind:id="element.id" v-on:mousemove="updateElementInfoAndDesc(elementIndex)" v-on:mouseover="shadeElementOnHover(elementIndex)" v-on:mouseleave="lightenElementOnHover(elementIndex)">
+        <div class="element-outer" v-for="(element, elementIndex) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="updateElementInfoAndDesc(elementIndex)" v-on:mouseover="shadeElementOnHover(elementIndex)" v-on:mouseleave="lightenElementOnHover(elementIndex)">
           <div v-cloak class="element-inner">
             <!--<h6>{{ elementIndex + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
             <h6 class="atomicNumber" ref="elementIndexDOM">{{ element.atomicNumber }}</h6>
