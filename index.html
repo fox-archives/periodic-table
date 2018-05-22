@@ -59,14 +59,14 @@
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner"  v-on:mouseover="highlightPeriod(index)" v-on:mouseleave="unhighlightPeriod(index)">
+          <div v-cloak class="label-period-inner"  v-on:mouseover="highlightOrUnHighlightGroupOrPeriod(index, 'true', 'true')" v-on:mouseleave="highlightOrUnHighlightGroupOrPeriod(index, 'true', 'false')">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-on:mouseover="highlightGroup(index)" v-on:mouseleave="unhighlightGroup(index)">
+          <div v-cloak class="label-group-inner" v-on:mouseover="highlightOrUnHighlightGroupOrPeriod(index, 'false', 'true')" v-on:mouseleave="highlightOrUnHighlightGroupOrPeriod(index, 'false', 'false')">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>

@@ -6,95 +6,105 @@ var one = new Vue({
   el: '#grid-container',
   data: {
     elements: [
-      { atomicNumber: 1,         name: "Hydrogen",      abbreviation: "H",       id: "h",   group: "g-1",    period: "p-1",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,     boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },
-      { atomicNumber: 2,         name: "Helium",        abbreviation: "He",      id: "he",  group: "g-18",   period: "p-1",   column: "c-36",  row: "r-2",   block: "s",  atomicMass: 4.003,    meltingPoint: -1,        boilingPoint: 4.222,     discoveryDate: 1895,            discoveredBy: "Sir William Ramsay, Per Teodor Cleve, and Nils Abraham" },
-      { atomicNumber: 3,         name: "Lithium",       abbreviation: "Li",      id: "li",  group: "g-1",    period: "p-2",   column: "c-2",   row: "r-4",   block: "s",  atomicMass: 6.940,    meltingPoint: 453.65,    boilingPoint: 1615,      discoveryDate: 1817,            discoveredBy: "Johan August Arfvedson" },
-      { atomicNumber: 4,         name: "Beryllium",     abbreviation: "Be",      id: "be",  group: "g-2",    period: "p-2",   column: "c-4",   row: "r-4",   block: "s",  atomicMass: 9.012,    meltingPoint: 1560,      boilingPoint: 2741,      discoveryDate: 1797,            discoveredBy: "Nicholas Louis Vauquelin" },
-      { atomicNumber: 5,         name: "Boron",         abbreviation: "B",       id: "b",   group: "g-13",   period: "p-2",   column: "c-26",  row: "r-4",   block: "p",  atomicMass: 10.810,   meltingPoint: 2350,      boilingPoint: 4273,      discoveryDate: 1808,            discoveredBy: "Louis-Josef Gay-Lussac, Louis-Jacques Thénard, and Humphry Davy" },
-      { atomicNumber: 6,         name: "Carbon",        abbreviation: "C",       id: "c",   group: "g-14",   period: "p-2",   column: "c-28",  row: "r-4",   block: "p",  atomicMass: 12.011,   meltingPoint: 4098,      boilingPoint: 4098,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
-      { atomicNumber: 7,         name: "Nitrogen",      abbreviation: "N",       id: "n",   group: "g-15",   period: "p-2",   column: "c-30",  row: "r-4",   block: "p",  atomicMass: 14.007,   meltingPoint: 63.2,      boilingPoint: 77.355,    discoveryDate: 1772,            discoveredBy: "Daniel Rutherford" },
-      { atomicNumber: 8,         name: "Oxygen",        abbreviation: "O",       id: "o",   group: "g-16",   period: "p-2",   column: "c-32",  row: "r-4",   block: "p",  atomicMass: 15.999,   meltingPoint: 54.36,     boilingPoint: 90.188,    discoveryDate: 1774,            discoveredBy: "Joseph Priestley and Carl Wilhelm Scheele" },
-      { atomicNumber: 9,         name: "Flourine",      abbreviation: "F",       id: "f",   group: "g-17",   period: "p-2",   column: "c-34",  row: "r-4",   block: "p",  atomicMass: 18.998,   meltingPoint: 53.48,     boilingPoint: 85.04,     discoveryDate: 1886,            discoveredBy: "Henri Moissan" },
-      { atomicNumber: 10,        name: "Neon",          abbreviation: "Ne",      id: "ne",  group: "g-18",   period: "p-2",   column: "c-36",  row: "r-4",   block: "p",  atomicMass: 20.180,   meltingPoint: 24.56,     boilingPoint: 27.104,    discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
-      { atomicNumber: 11,        name: "Sodium",        abbreviation: "Na",      id: "na",  group: "g-1",    period: "p-3",   column: "c-2",   row: "r-6",   block: "s",  atomicMass: 22.990,   meltingPoint: 370.944,   boilingPoint: 1156.090,  discoveryDate: 1807,            discoveredBy: "Humphry Davy" },
-      { atomicNumber: 12,        name: "Magnesium",     abbreviation: "Mg",      id: "mg",  group: "g-2",    period: "p-3",   column: "c-4",   row: "r-6",   block: "s",  atomicMass: 24.305,   meltingPoint: 923,       boilingPoint: 1363,      discoveryDate: 1755,            discoveredBy: "Joseph Black" },
-      { atomicNumber: 13,        name: "Aluminium",     abbreviation: "Al",      id: "al",  group: "g-13",   period: "p-3",   column: "c-26",  row: "r-6",   block: "p",  atomicMass: 26.982,   meltingPoint: 933.473,   boilingPoint: 2792,      discoveryDate: 1825,            discoveredBy: "Hans Oersted" },
-      { atomicNumber: 14,        name: "Silicon",       abbreviation: "Si",      id: "si",  group: "g-14",   period: "p-3",   column: "c-28",  row: "r-6",   block: "p",  atomicMass: 28.085,   meltingPoint: 1687,      boilingPoint: 3538,      discoveryDate: 1824,            discoveredBy: "Jöns Jacob Berzelius" },
-      { atomicNumber: 15,        name: "Phosphorous",   abbreviation: "P",       id: "p",   group: "g-15",   period: "p-3",   column: "c-30",  row: "r-6",   block: "p",  atomicMass: 30.974,   meltingPoint: 317.3,     boilingPoint: 553.7,     discoveryDate: 1669,            discoveredBy: "Hennig Brandt" },
-      { atomicNumber: 16,        name: "Sulfur",        abbreviation: "S",       id: "s",   group: "g-16",   period: "p-3",   column: "c-32",  row: "r-6",   block: "p",  atomicMass: 32.060,   meltingPoint: 388.36,    boilingPoint: 717.76,    discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
-      { atomicNumber: 17,        name: "Chlorine",      abbreviation: "Cl",      id: "cl",  group: "g-17",   period: "p-3",   column: "c-34",  row: "r-6",   block: "p",  atomicMass: 35.450,   meltingPoint: 171.7,     boilingPoint: 239.11,    discoveryDate: 1774,            discoveredBy: "Carl Wilhelm Scheele" },
-      { atomicNumber: 18,        name: "Argon",         abbreviation: "Ar",      id: "ar",  group: "g-18",   period: "p-3",   column: "c-36",  row: "r-6",   block: "p",  atomicMass: 39.948,   meltingPoint: 83.81,     boilingPoint: 87.302,    discoveryDate: 1894,            discoveredBy: "Lord Rayleigh and Sir William Ramsay" },
-      { atomicNumber: 19,        name: "Potassium",     abbreviation: "K",       id: "k",   group: "g-1",    period: "p-4",   column: "c-2",   row: "r-8",   block: "s",  atomicMass: 39.098,   meltingPoint: 336.7,     boilingPoint: 1032,      discoveryDate: 1807,            discoveredBy: "Humphry Davy" },
-      { atomicNumber: 20,        name: "Calcium",       abbreviation: "Ca",      id: "ca",  group: "g-2",    period: "p-4",   column: "c-4",   row: "r-8",   block: "s",  atomicMass: 40.078,   meltingPoint: 1115,      boilingPoint: 1757,      discoveryDate: 1808,            discoveredBy: "Humphry Davy" },
-      { atomicNumber: 21,        name: "Scandium",      abbreviation: "Sc",      id: "sc",  group: "g-3",    period: "p-4",   column: "c-6",   row: "r-8",   block: "d",  atomicMass: 44.956,   meltingPoint: 1814,      boilingPoint: 3109,      discoveryDate: 1879,            discoveredBy: "Lars Frederik Nilson" },
-      { atomicNumber: 22,        name: "Titanium",      abbreviation: "Ti",      id: "ti",  group: "g-4",    period: "p-4",   column: "c-8",   row: "r-8",   block: "d",  atomicMass: 47.867,   meltingPoint: 1943,      boilingPoint: 3560,      discoveryDate: 1791,            discoveredBy: "William Gregor" },
-      { atomicNumber: 23,        name: "Vanadium",      abbreviation: "V",       id: "v",   group: "g-5",    period: "p-4",   column: "c-10",  row: "r-8",   block: "d",  atomicMass: 50.942,   meltingPoint: 2183,      boilingPoint: 3680,      discoveryDate: 1801,            discoveredBy: "Andrés Manuel del Río" },
-      { atomicNumber: 24,        name: "Chromium",      abbreviation: "Cr",      id: "cr",  group: "g-6",    period: "p-4",   column: "c-12",  row: "r-8",   block: "d",  atomicMass: 51.996,   meltingPoint: 2180,      boilingPoint: 2944,      discoveryDate: 1798,            discoveredBy: "Nicholas Louis Vauquelin" },
-      { atomicNumber: 25,        name: "Manganese",     abbreviation: "Mn",      id: "mn",  group: "g-7",    period: "p-4",   column: "c-14",  row: "r-8",   block: "d",  atomicMass: 54.938,   meltingPoint: 1519,      boilingPoint: 2334,      discoveryDate: 1774,            discoveredBy: "Johan Gottlieb Gahn" },
-      { atomicNumber: 26,        name: "Iron",          abbreviation: "Fe",      id: "fe",  group: "g-8",    period: "p-4",   column: "c-16",  row: "r-8",   block: "d",  atomicMass: 55.845,   meltingPoint: 1811,      boilingPoint: 3134,      discoveryDate: "~ 3500 B.C.",   discoveredBy: "N / A" },
-      { atomicNumber: 27,        name: "Cobalt",        abbreviation: "Co",      id: "co",  group: "g-9",    period: "p-4",   column: "c-18",  row: "r-8",   block: "d",  atomicMass: 58.933,   meltingPoint: 1768,      boilingPoint: 3200,      discoveryDate: 1739,            discoveredBy: "Georg Brandt" },
-      { atomicNumber: 28,        name: "Nickel",        abbreviation: "Ni",      id: "ni",  group: "g-10",    period: "p-4",   column: "c-20",  row: "r-8",   block: "d",  atomicMass: 58.693,   meltingPoint: 1728,      boilingPoint: 3186,      discoveryDate: 1751,            discoveredBy: "Axel Fredrik Cronstedt" },
-      { atomicNumber: 29,        name: "Copper",        abbreviation: "Cu",      id: "cu",  group: "g-11",    period: "p-4",   column: "c-22",  row: "r-8",   block: "d",  atomicMass: 63.546,   meltingPoint: 1357.77,   boilingPoint: 2833,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
-      { atomicNumber: 30,        name: "Zinc",          abbreviation: "Zn",      id: "zn",  group: "g-12",    period: "p-4",   column: "c-24",  row: "r-8",   block: "d",  atomicMass: 65.380,   meltingPoint: 692.677,   boilingPoint: 1180,      discoveryDate: 1746,            discoveredBy: "Andreas Marggraf" },  //discoveryDate as "Zinc" was 1746, but Greeks and Romans knew about element before -20
-      { atomicNumber: 31,        name: "Gallium",       abbreviation: "Ga",      id: "ga",  group: "g-13",    period: "p-4",   column: "c-26",  row: "r-8",   block: "p",  atomicMass: 69.723,   meltingPoint: 302.9146,  boilingPoint: 2502,      discoveryDate: 1875,            discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
-      { atomicNumber: 32,        name: "Germanium",     abbreviation: "Ge",      id: "ge",  group: "g-14",    period: "p-4",   column: "c-28",  row: "r-8",   block: "p",  atomicMass: 72.630,   meltingPoint: 1211.4,    boilingPoint: 3106,      discoveryDate: 1886,            discoveredBy: "Clemens Winkler" },
-      { atomicNumber: 33,        name: "Arsenic",       abbreviation: "As",      id: "as",  group: "g-15",    period: "p-4",   column: "c-30",  row: "r-8",   block: "p",  atomicMass: 74.922,   meltingPoint: 889,       boilingPoint: 889,       discoveryDate: "~1250",         discoveredBy: "Albertus Magnus" },
-      { atomicNumber: 34,        name: "Selenium",      abbreviation: "Se",      id: "se",  group: "g-16",    period: "p-4",   column: "c-32",  row: "r-8",   block: "p",  atomicMass: 78.971,   meltingPoint: 494,       boilingPoint: 958,       discoveryDate: 1817,            discoveredBy: "Jöns Jacob Berzelius" },
-      { atomicNumber: 35,        name: "Bromine",       abbreviation: "Br",      id: "br",  group: "g-17",    period: "p-4",   column: "c-34",  row: "r-8",   block: "p",  atomicMass: 79.904,   meltingPoint: 266,       boilingPoint: 322,       discoveryDate: 1826,            discoveredBy: "Antoine-Jérôme Balard and Carl Löwig" },
-      { atomicNumber: 36,        name: "Krypton",       abbreviation: "Kr",      id: "kr",  group: "g-18",    period: "p-4",   column: "c-36",  row: "r-8",   block: "p",  atomicMass: 83.798,   meltingPoint: 115.78,    boilingPoint: 119.735,   discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
-      { atomicNumber: 37,        name: "Rubidium",      abbreviation: "Rb",      id: "rb",  group: "g-1",    period: "p-5",   column: "c-2",   row: "r-10",  block: "s",  atomicMass: 85.468,   meltingPoint: 312.45,    boilingPoint: 961,      discoveryDate: 1861,            discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
-      { atomicNumber: 38,        name: "Strontium",     abbreviation: "Sr",      id: "sr",  group: "g-2",    period: "p-5",   column: "c-4",   row: "r-10",  block: "s",  atomicMass: 87.620,   meltingPoint: 1050,      boilingPoint: 1650,     discoveryDate: 1790,            discoveredBy: "Adair Crawford" },
-      { atomicNumber: 39,        name: "Yttrium",       abbreviation: "Y",       id: "y",   group: "g-3",    period: "p-5",   column: "c-6",   row: "r-10",  block: "d",  atomicMass: 88.906,   meltingPoint: 1795,      boilingPoint: 3618,     discoveryDate: 1794,            discoveredBy: "Johan Gadolin" },
-      { atomicNumber: 40,        name: "Zirconium",     abbreviation: "Zr",      id: "zr",  group: "g-4",    period: "p-5",   column: "c-8",   row: "r-10",  block: "d",  atomicMass: 91.224,   meltingPoint: 2127,      boilingPoint: 4679,     discoveryDate: 1789,            discoveredBy: "Martin Heinrich Klaproth"},
-      { atomicNumber: 41,        name: "Niobium",       abbreviation: "Nb",      id: "nb",  group: "g-5",    period: "p-5",   column: "c-10",  row: "r-10",  block: "d",  atomicMass: 92.906,   meltingPoint: 2750,      boilingPoint: 5014,     discoveryDate: 1801,            discoveredBy: "Charles Hatchett" },
-      { atomicNumber: 42,        name: "Molybdenum",    abbreviation: "Mo",      id: "mo",  group: "g-6",    period: "p-5",   column: "c-12",  row: "r-10",  block: "d",  atomicMass: 95.950,   meltingPoint: 2895,      boilingPoint: 4912,     discoveryDate: 1781,            discoveredBy: "Peter Jacob Hjelm" },
-      { atomicNumber: 43,        name: "Technetium",    abbreviation: "Tc",      id: "tc",  group: "g-7",    period: "p-5",   column: "c-14",  row: "r-10",  block: "d",  atomicMass: "(98)",   meltingPoint: 2430,      boilingPoint: 4535,     discoveryDate: 1937,            discoveredBy: "Carlo Perrier and Emilio Segre`" },
-      { atomicNumber: 44,        name: "Ruthenium",     abbreviation: "Ru",      id: "ru",  group: "g-8",    period: "p-5",   column: "c-16",  row: "r-10",  block: "d",  atomicMass: 101.07,   meltingPoint: 2606,      boilingPoint: 4420,     discoveryDate: 1844,            discoveredBy: "Karl Karlovich Klaus" },
-      { atomicNumber: 45,        name: "Rhodium",       abbreviation: "Rh",      id: "rh",  group: "g-9",    period: "p-5",   column: "c-18",  row: "r-10",  block: "d",  atomicMass: 102.906,  meltingPoint: 2236,      boilingPoint: 3968,     discoveryDate: 1803,            discoveredBy: "William Hyde Wollaston" },
-      { atomicNumber: 46,        name: "Palladium",     abbreviation: "Pd",      id: "pd",  group: "g-10",    period: "p-5",   column: "c-20",  row: "r-10",  block: "d",  atomicMass: 106.42,   meltingPoint: 1828,      boilingPoint: 3236,     discoveryDate: 1803,            discoveredBy: "William Hyde Wollastom" },
-      { atomicNumber: 47,        name: "Silver",        abbreviation: "Ag",      id: "ag",  group: "g-11",    period: "p-5",   column: "c-22",  row: "r-10",  block: "d",  atomicMass: 107.868,  meltingPoint: 1234.93,   boilingPoint: 2435,     discoveryDate: "~ 3000 B.C.",   discoveredBy: "N/A"},
-      { atomicNumber: 48,        name: "Cadmium",       abbreviation: "Cd",      id: "cd",  group: "g-12",    period: "p-5",   column: "c-24",  row: "r-10",  block: "d",  atomicMass: 112.414,  meltingPoint: 594.219,   boilingPoint: 1040,     discoveryDate: 1817,            discoveredBy: "Friedrich Stromeyer" },
-      { atomicNumber: 49,        name: "Indium",        abbreviation: "In",      id: "in",  group: "g-13",    period: "p-5",   column: "c-26",  row: "r-10",  block: "p",  atomicMass: 114.818,  meltingPoint: 429.75,    boilingPoint: 2300,     discoveryDate: 1863,            discoveredBy: "Ferdinand Reich and Hieronymous Richter" },
-      { atomicNumber: 50,        name: "Tin",           abbreviation: "Sn",      id: "sn",  group: "g-14",    period: "p-5",   column: "c-28",  row: "r-10",  block: "p",  atomicMass: 118.710,  meltingPoint: 505.078,   boilingPoint: 2859,     discoveryDate: "~ 2100 B.C.",   discoveredBy: "N / A" },
-      { atomicNumber: 51,        name: "Antmony",       abbreviation: "Sb",      id: "sb",  group: "g-15",    period: "p-5",   column: "c-30",  row: "r-10",  block: "p",  atomicMass: 121.760,  meltingPoint: 903.778,   boilingPoint: 1860,     discoveryDate: "~ 1600 B.C.",   discoveredBy: "N / A" },
-      { atomicNumber: 52,        name: "Tellurium",     abbreviation: "Te",      id: "te",  group: "g-16",    period: "p-5",   column: "c-32",  row: "r-10",  block: "p",  atomicMass: 127.60,   meltingPoint: 722.66,    boilingPoint: 1261,     discoveryDate: 1783,            discoveredBy: "Franz-Joseph Müler von Reichenstein" },
-      { atomicNumber: 53,        name: "Iodine",        abbreviation: "I",       id: "i",   group: "g-17",    period: "p-5",   column: "c-34",  row: "r-10",  block: "p",  atomicMass: 126.904,  meltingPoint: 386.9,     boilingPoint: 457.6,    discoveryDate: 1811,            discoveredBy: "Bernard Courtois" },
-      { atomicNumber: 54,        name: "Xenon",         abbreviation: "Xe",      id: "xe",  group: "g-18",    period: "p-5",   column: "c-36",  row: "r-10",  block: "p",  atomicMass: 131.293,  meltingPoint: 161.4,     boilingPoint: 165.051,  discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
-      { atomicNumber: 55,        name: "Caesium",       abbreviation: "Cs",      id: "cs",  group: "g-1",    period: "p-6",   column: "c-2",   row: "r-12",  block: "s",  atomicMass: 132.905,  meltingPoint: 301.7,     boilingPoint: 944,      discoveryDate: 1860,            discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
-      { atomicNumber: 56,        name: "Barium",        abbreviation: "Ba",      id: "ba",  group: "g-2",    period: "p-6",   column: "c-4",   row: "r-12",  block: "s",  atomicMass: 137.327,  meltingPoint: 1000,      boilingPoint: 2118,     discoveryDate: 1808,            discoveredBy: "Humphry Davy" },
-      // Extended portion of periodic table
-      { atomicNumber: 57,        name: "Lanthanum",     abbreviation: "La",      id: "la",  period: "p-6",   column: "c-6",   row: "r-17",  block: "f",  atomicMass: 138.905,  meltingPoint: 1193,      boilingPoint: 3737,      discoveryDate: 1839,           discoveredBy: "Carl Gustav Mosander" },
-      { atomicNumber: 58,        name: "Cerium",        abbreviation: "Ce",      id: "ce",  period: "p-6",   column: "c-8",   row: "r-17",  block: "f",  atomicMass: 140.116,  meltingPoint: 1072,      boilingPoint: 3716,      discoveryDate: 1803,           discoveredBy: "Jo..ns Jacob Berzelius and Wilhelm Hisinger" },
-      { atomicNumber: 59,        name: "Praseodymium",  abbreviation: "Pr",      id: "pr",  period: "p-6",   column: "c-10",  row: "r-17",  block: "f",  atomicMass: 140.908,  meltingPoint: 1204,      boilingPoint: 3793,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
-      { atomicNumber: 60,        name: "Neodymium",     abbreviation: "Nd",      id: "nd",  period: "p-6",   column: "c-12",  row: "r-17",  block: "f",  atomicMass: 144.242,  meltingPoint: 1289,      boilingPoint: 3347,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
-      { atomicNumber: 61,        name: "Promethium",    abbreviation: "Pm",      id: "pm",  period: "p-6",   column: "c-14",  row: "r-17",  block: "f",  atomicMass: "(145)",  meltingPoint: 1315,      boilingPoint: 3273,      discoveryDate: 1945,           discoveredBy: "Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell" },
-      { atomicNumber: 62,        name: "Samarium",      abbreviation: "Sm",      id: "sm",  period: "p-6",   column: "c-16",  row: "r-17",  block: "f",  atomicMass: 150.36,   meltingPoint: 1345,      boilingPoint: 2067,      discoveryDate: 1879,           discoveredBy: "Paul-E`mile Lecoq de Boisbaudran" },
-      { atomicNumber: 63,        name: "Europium",      abbreviation: "Eu",      id: "eu",  period: "p-6",   column: "c-18",  row: "r-17",  block: "f",  atomicMass: 151.964,  meltingPoint: 1095,      boilingPoint: 1802,      discoveryDate: 1901,           discoveredBy: "Euge'ne-Anatole Demarc'ay" },
-      { atomicNumber: 64,        name: "Gadolinium",    abbreviation: "Gd",      id: "gd",  period: "p-6",   column: "c-20",  row: "r-17",  block: "f",  atomicMass: 157.25,   meltingPoint: 1586,      boilingPoint: 3546,      discoveryDate: 1880,           discoveredBy: "Jean Charles Galissard de Marignac"},
-      { atomicNumber: 65,        name: "Terbium",       abbreviation: "Tb",      id: "tb",  period: "p-6",   column: "c-22",  row: "r-17",  block: "f",  atomicMass: 158.925,  meltingPoint: 1632,      boilingPoint: 3503,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
-      { atomicNumber: 66,        name: "Dysprosium",    abbreviation: "Dy",      id: "dy",  period: "p-6",   column: "c-24",  row: "r-17",  block: "f",  atomicMass: 162.500,  meltingPoint: 1685,      boilingPoint: 2840,      discoveryDate: 1886,           discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
-      { atomicNumber: 67,        name: "Holmium",       abbreviation: "Ho",      id: "ho",  period: "p-6",   column: "cc-26", row: "r-17",  block: "f",  atomicMass: 164.930,  meltingPoint: 1745,      boilingPoint: 2973,      discoveryDate: 1878,           discoveredBy: "Per Teodor Cleve, Marc Delafontaine, and Louis Soret" },
-      { atomicNumber: 68,        name: "Erbium",        abbreviation: "Er",      id: "er",  period: "p-6",   column: "cc-28", row: "r-17",  block: "f",  atomicMass: 167.259,  meltingPoint: 1802,      boilingPoint: 3141,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
-      { atomicNumber: 69,        name: "Thulium",       abbreviation: "Tm",      id: "tm",  period: "p-6",   column: "cc-30", row: "r-17",  block: "f",  atomicMass: 168.934,  meltingPoint: 1818,      boilingPoint: 2223,      discoveryDate: 1879,           discoveredBy: "Per Teodor Cleve" },
-      { atomicNumber: 70,        name: "Ytterbium",     abbreviation: "Yb",      id: "yb",  period: "p-6",   column: "cc-32", row: "r-17",  block: "f",  atomicMass: 173.045,  meltingPoint: 1097,      boilingPoint: 1469,      discoveryDate: 1878,           discoveredBy: "Jean Charles Galissard de Marignac" },
-      { atomicNumber: 71,        name: "Lutetium",      abbreviation: "Lu",      id: "lu",  period: "p-6",   column: "cc-34", row: "r-17",  block: "f",  atomicMass: 174.967,  meltingPoint: 1936,      boilingPoint: 3675,      discoveryDate: 1907,           discoveredBy: "Georges Urbain, Charles James" },
-      // End first extension portion of the periodic table
-      { atomicNumber: 72,        name: "Hafnium",       abbreviation: "Hf",      id: "hf",  group: "g-4",    period: "p-6",   column: "c-8",   row: "r-12",  block: "d",  atomicMass: 178.49,   meltingPoint: 2506,      boilingPoint: 4873,      discoveryDate: 1923,           discoveredBy: "George Charles de Hevesy and Dirk Coster" },
-      { atomicNumber: 73,        name: "Tantalum",      abbreviation: "Ta",      id: "ta",  group: "g-5",    period: "p-6",   column: "c-10",  row: "r-12",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
-      { atomicNumber: 74,        name: "Tungsten",      abbreviation: "W",       id: "w",   group: "g-6",    period: "p-6",   column: "c-12",  row: "r-12",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
-      { atomicNumber: 75,        name: "Rhenium",       abbreviation: "Re",      id: "re",  group: "g-7",    period: "p-6",   column: "c-14",  row: "r-12",  block: "d",  atomicMass: 186.207,  meltingPoint: 3458,      boilingPoint: 5863,      discoveryDate: 1925,           discoveredBy: "Walter Noddack, Ida Tacke, and Otto Berg" },
-      { atomicNumber: 76,        name: "Osmium",        abbreviation: "Os",      id: "os",  group: "g-8",    period: "p-6",   column: "c-16",  row: "r-12",  block: "d",  atomicMass: 190.23,   meltingPoint: 3306,      boilingPoint: 5281,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
-      { atomicNumber: 77,        name: "Iridium",       abbreviation: "Ir",      id: "ir",  group: "g-9",    period: "p-6",   column: "c-18",  row: "r-12",  block: "d",  atomicMass: 192.217,  meltingPoint: 2719,      boilingPoint: 4701,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
-      { atomicNumber: 78,        name: "Platinum",      abbreviation: "Pt",      id: "pt",  group: "g-10",    period: "p-6",   column: "c-20",  row: "r-12",  block: "d",  atomicMass: 195.084,  meltingPoint: 2041.4,    boilingPoint: 4098,      discoveryDate: "Unknown",      discoveredBy: "South Americans before Colombus" },
-      { atomicNumber: 79,        name: "Gold",          abbreviation: "Au",      id: "au",  group: "g-11",    period: "p-6",   column: "c-22",  row: "r-12",  block: "d",  atomicMass: 196.967,  meltingPoint: 1337.33,   boilingPoint: 3109,      discoveryDate: "~ 3000 B.C.",  discoveredBy: "N / A"},
-      { atomicNumber: 80,        name: "Mercury",       abbreviation: "Hg",      id: "hg",  group: "g-12",    period: "p-6",   column: "c-24",  row: "r-12",  block: "d",  atomicMass: 200.592,  meltingPoint: 234.321,   boilingPoint: 629.769,   discoveryDate: "~ 1500 B.C.",  discoveredBy: "N / A" },
-      { atomicNumber: 81,        name: "Thallium",      abbreviation: "Tl",      id: "tl",  group: "g-13",    period: "p-6",   column: "c-26",  row: "r-12",  block: "p",  atomicMass: 204.38,   meltingPoint: 577,       boilingPoint: 1746,      discoveryDate: 1861,           discoveredBy: "William Crookes" },
-      { atomicNumber: 82,        name: "Lead",          abbreviation: "Pb",      id: "pb",  group: "g-14",    period: "p-6",   column: "c-28",  row: "r-12",  block: "p",  atomicMass: 207.2,    meltingPoint: 600.612,   boilingPoint: 2022,      discoveryDate: "Ancient",      discoveredBy: "N / A"},
+      { atomicNumber: 1,         name: "Hydrogen",      abbreviation: "H",       id: "h",    group: "g-1",    period: "p-1",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,     boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },
+      { atomicNumber: 2,         name: "Helium",        abbreviation: "He",      id: "he",   group: "g-18",   period: "p-1",   column: "c-36",  row: "r-2",   block: "s",  atomicMass: 4.003,    meltingPoint: -1,        boilingPoint: 4.222,     discoveryDate: 1895,            discoveredBy: "Sir William Ramsay, Per Teodor Cleve, and Nils Abraham" },
+      { atomicNumber: 3,         name: "Lithium",       abbreviation: "Li",      id: "li",   group: "g-1",    period: "p-2",   column: "c-2",   row: "r-4",   block: "s",  atomicMass: 6.940,    meltingPoint: 453.65,    boilingPoint: 1615,      discoveryDate: 1817,            discoveredBy: "Johan August Arfvedson" },
+      { atomicNumber: 4,         name: "Beryllium",     abbreviation: "Be",      id: "be",   group: "g-2",    period: "p-2",   column: "c-4",   row: "r-4",   block: "s",  atomicMass: 9.012,    meltingPoint: 1560,      boilingPoint: 2741,      discoveryDate: 1797,            discoveredBy: "Nicholas Louis Vauquelin" },
+      { atomicNumber: 5,         name: "Boron",         abbreviation: "B",       id: "b",    group: "g-13",   period: "p-2",   column: "c-26",  row: "r-4",   block: "p",  atomicMass: 10.810,   meltingPoint: 2350,      boilingPoint: 4273,      discoveryDate: 1808,            discoveredBy: "Louis-Josef Gay-Lussac, Louis-Jacques Thénard, and Humphry Davy" },
+      { atomicNumber: 6,         name: "Carbon",        abbreviation: "C",       id: "c",    group: "g-14",   period: "p-2",   column: "c-28",  row: "r-4",   block: "p",  atomicMass: 12.011,   meltingPoint: 4098,      boilingPoint: 4098,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
+      { atomicNumber: 7,         name: "Nitrogen",      abbreviation: "N",       id: "n",    group: "g-15",   period: "p-2",   column: "c-30",  row: "r-4",   block: "p",  atomicMass: 14.007,   meltingPoint: 63.2,      boilingPoint: 77.355,    discoveryDate: 1772,            discoveredBy: "Daniel Rutherford" },
+      { atomicNumber: 8,         name: "Oxygen",        abbreviation: "O",       id: "o",    group: "g-16",   period: "p-2",   column: "c-32",  row: "r-4",   block: "p",  atomicMass: 15.999,   meltingPoint: 54.36,     boilingPoint: 90.188,    discoveryDate: 1774,            discoveredBy: "Joseph Priestley and Carl Wilhelm Scheele" },
+      { atomicNumber: 9,         name: "Flourine",      abbreviation: "F",       id: "f",    group: "g-17",   period: "p-2",   column: "c-34",  row: "r-4",   block: "p",  atomicMass: 18.998,   meltingPoint: 53.48,     boilingPoint: 85.04,     discoveryDate: 1886,            discoveredBy: "Henri Moissan" },
+      { atomicNumber: 10,        name: "Neon",          abbreviation: "Ne",      id: "ne",   group: "g-18",   period: "p-2",   column: "c-36",  row: "r-4",   block: "p",  atomicMass: 20.180,   meltingPoint: 24.56,     boilingPoint: 27.104,    discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
+      { atomicNumber: 11,        name: "Sodium",        abbreviation: "Na",      id: "na",   group: "g-1",    period: "p-3",   column: "c-2",   row: "r-6",   block: "s",  atomicMass: 22.990,   meltingPoint: 370.944,   boilingPoint: 1156.090,  discoveryDate: 1807,            discoveredBy: "Humphry Davy" },
+      { atomicNumber: 12,        name: "Magnesium",     abbreviation: "Mg",      id: "mg",   group: "g-2",    period: "p-3",   column: "c-4",   row: "r-6",   block: "s",  atomicMass: 24.305,   meltingPoint: 923,       boilingPoint: 1363,      discoveryDate: 1755,            discoveredBy: "Joseph Black" },
+      { atomicNumber: 13,        name: "Aluminium",     abbreviation: "Al",      id: "al",   group: "g-13",   period: "p-3",   column: "c-26",  row: "r-6",   block: "p",  atomicMass: 26.982,   meltingPoint: 933.473,   boilingPoint: 2792,      discoveryDate: 1825,            discoveredBy: "Hans Oersted" },
+      { atomicNumber: 14,        name: "Silicon",       abbreviation: "Si",      id: "si",   group: "g-14",   period: "p-3",   column: "c-28",  row: "r-6",   block: "p",  atomicMass: 28.085,   meltingPoint: 1687,      boilingPoint: 3538,      discoveryDate: 1824,            discoveredBy: "Jöns Jacob Berzelius" },
+      { atomicNumber: 15,        name: "Phosphorous",   abbreviation: "P",       id: "p",    group: "g-15",   period: "p-3",   column: "c-30",  row: "r-6",   block: "p",  atomicMass: 30.974,   meltingPoint: 317.3,     boilingPoint: 553.7,     discoveryDate: 1669,            discoveredBy: "Hennig Brandt" },
+      { atomicNumber: 16,        name: "Sulfur",        abbreviation: "S",       id: "s",    group: "g-16",   period: "p-3",   column: "c-32",  row: "r-6",   block: "p",  atomicMass: 32.060,   meltingPoint: 388.36,    boilingPoint: 717.76,    discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
+      { atomicNumber: 17,        name: "Chlorine",      abbreviation: "Cl",      id: "cl",   group: "g-17",   period: "p-3",   column: "c-34",  row: "r-6",   block: "p",  atomicMass: 35.450,   meltingPoint: 171.7,     boilingPoint: 239.11,    discoveryDate: 1774,            discoveredBy: "Carl Wilhelm Scheele" },
+      { atomicNumber: 18,        name: "Argon",         abbreviation: "Ar",      id: "ar",   group: "g-18",   period: "p-3",   column: "c-36",  row: "r-6",   block: "p",  atomicMass: 39.948,   meltingPoint: 83.81,     boilingPoint: 87.302,    discoveryDate: 1894,            discoveredBy: "Lord Rayleigh and Sir William Ramsay" },
+      { atomicNumber: 19,        name: "Potassium",     abbreviation: "K",       id: "k",    group: "g-1",    period: "p-4",   column: "c-2",   row: "r-8",   block: "s",  atomicMass: 39.098,   meltingPoint: 336.7,     boilingPoint: 1032,      discoveryDate: 1807,            discoveredBy: "Humphry Davy" },
+      { atomicNumber: 20,        name: "Calcium",       abbreviation: "Ca",      id: "ca",   group: "g-2",    period: "p-4",   column: "c-4",   row: "r-8",   block: "s",  atomicMass: 40.078,   meltingPoint: 1115,      boilingPoint: 1757,      discoveryDate: 1808,            discoveredBy: "Humphry Davy" },
+      { atomicNumber: 21,        name: "Scandium",      abbreviation: "Sc",      id: "sc",   group: "g-3",    period: "p-4",   column: "c-6",   row: "r-8",   block: "d",  atomicMass: 44.956,   meltingPoint: 1814,      boilingPoint: 3109,      discoveryDate: 1879,            discoveredBy: "Lars Frederik Nilson" },
+      { atomicNumber: 22,        name: "Titanium",      abbreviation: "Ti",      id: "ti",   group: "g-4",    period: "p-4",   column: "c-8",   row: "r-8",   block: "d",  atomicMass: 47.867,   meltingPoint: 1943,      boilingPoint: 3560,      discoveryDate: 1791,            discoveredBy: "William Gregor" },
+      { atomicNumber: 23,        name: "Vanadium",      abbreviation: "V",       id: "v",    group: "g-5",    period: "p-4",   column: "c-10",  row: "r-8",   block: "d",  atomicMass: 50.942,   meltingPoint: 2183,      boilingPoint: 3680,      discoveryDate: 1801,            discoveredBy: "Andrés Manuel del Río" },
+      { atomicNumber: 24,        name: "Chromium",      abbreviation: "Cr",      id: "cr",   group: "g-6",    period: "p-4",   column: "c-12",  row: "r-8",   block: "d",  atomicMass: 51.996,   meltingPoint: 2180,      boilingPoint: 2944,      discoveryDate: 1798,            discoveredBy: "Nicholas Louis Vauquelin" },
+      { atomicNumber: 25,        name: "Manganese",     abbreviation: "Mn",      id: "mn",   group: "g-7",    period: "p-4",   column: "c-14",  row: "r-8",   block: "d",  atomicMass: 54.938,   meltingPoint: 1519,      boilingPoint: 2334,      discoveryDate: 1774,            discoveredBy: "Johan Gottlieb Gahn" },
+      { atomicNumber: 26,        name: "Iron",          abbreviation: "Fe",      id: "fe",   group: "g-8",    period: "p-4",   column: "c-16",  row: "r-8",   block: "d",  atomicMass: 55.845,   meltingPoint: 1811,      boilingPoint: 3134,      discoveryDate: "~ 3500 B.C.",   discoveredBy: "N / A" },
+      { atomicNumber: 27,        name: "Cobalt",        abbreviation: "Co",      id: "co",   group: "g-9",    period: "p-4",   column: "c-18",  row: "r-8",   block: "d",  atomicMass: 58.933,   meltingPoint: 1768,      boilingPoint: 3200,      discoveryDate: 1739,            discoveredBy: "Georg Brandt" },
+      { atomicNumber: 28,        name: "Nickel",        abbreviation: "Ni",      id: "ni",   group: "g-10",   period: "p-4",   column: "c-20",  row: "r-8",   block: "d",  atomicMass: 58.693,   meltingPoint: 1728,      boilingPoint: 3186,      discoveryDate: 1751,            discoveredBy: "Axel Fredrik Cronstedt" },
+      { atomicNumber: 29,        name: "Copper",        abbreviation: "Cu",      id: "cu",   group: "g-11",   period: "p-4",   column: "c-22",  row: "r-8",   block: "d",  atomicMass: 63.546,   meltingPoint: 1357.77,   boilingPoint: 2833,      discoveryDate: "Prehistoric",   discoveredBy: "Prehistoric" },
+      { atomicNumber: 30,        name: "Zinc",          abbreviation: "Zn",      id: "zn",   group: "g-12",   period: "p-4",   column: "c-24",  row: "r-8",   block: "d",  atomicMass: 65.380,   meltingPoint: 692.677,   boilingPoint: 1180,      discoveryDate: 1746,            discoveredBy: "Andreas Marggraf" },  //discoveryDate as "Zinc" was 1746, but Greeks and Romans knew about element before -20
+      { atomicNumber: 31,        name: "Gallium",       abbreviation: "Ga",      id: "ga",   group: "g-13",   period: "p-4",   column: "c-26",  row: "r-8",   block: "p",  atomicMass: 69.723,   meltingPoint: 302.9146,  boilingPoint: 2502,      discoveryDate: 1875,            discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
+      { atomicNumber: 32,        name: "Germanium",     abbreviation: "Ge",      id: "ge",   group: "g-14",   period: "p-4",   column: "c-28",  row: "r-8",   block: "p",  atomicMass: 72.630,   meltingPoint: 1211.4,    boilingPoint: 3106,      discoveryDate: 1886,            discoveredBy: "Clemens Winkler" },
+      { atomicNumber: 33,        name: "Arsenic",       abbreviation: "As",      id: "as",   group: "g-15",   period: "p-4",   column: "c-30",  row: "r-8",   block: "p",  atomicMass: 74.922,   meltingPoint: 889,       boilingPoint: 889,       discoveryDate: "~1250",         discoveredBy: "Albertus Magnus" },
+      { atomicNumber: 34,        name: "Selenium",      abbreviation: "Se",      id: "se",   group: "g-16",   period: "p-4",   column: "c-32",  row: "r-8",   block: "p",  atomicMass: 78.971,   meltingPoint: 494,       boilingPoint: 958,       discoveryDate: 1817,            discoveredBy: "Jöns Jacob Berzelius" },
+      { atomicNumber: 35,        name: "Bromine",       abbreviation: "Br",      id: "br",   group: "g-17",   period: "p-4",   column: "c-34",  row: "r-8",   block: "p",  atomicMass: 79.904,   meltingPoint: 266,       boilingPoint: 322,       discoveryDate: 1826,            discoveredBy: "Antoine-Jérôme Balard and Carl Löwig" },
+      { atomicNumber: 36,        name: "Krypton",       abbreviation: "Kr",      id: "kr",   group: "g-18",   period: "p-4",   column: "c-36",  row: "r-8",   block: "p",  atomicMass: 83.798,   meltingPoint: 115.78,    boilingPoint: 119.735,   discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
+      { atomicNumber: 37,        name: "Rubidium",      abbreviation: "Rb",      id: "rb",   group: "g-1",    period: "p-5",   column: "c-2",   row: "r-10",  block: "s",  atomicMass: 85.468,   meltingPoint: 312.45,    boilingPoint: 961,      discoveryDate: 1861,            discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
+      { atomicNumber: 38,        name: "Strontium",     abbreviation: "Sr",      id: "sr",   group: "g-2",    period: "p-5",   column: "c-4",   row: "r-10",  block: "s",  atomicMass: 87.620,   meltingPoint: 1050,      boilingPoint: 1650,     discoveryDate: 1790,            discoveredBy: "Adair Crawford" },
+      { atomicNumber: 39,        name: "Yttrium",       abbreviation: "Y",       id: "y",    group: "g-3",    period: "p-5",   column: "c-6",   row: "r-10",  block: "d",  atomicMass: 88.906,   meltingPoint: 1795,      boilingPoint: 3618,     discoveryDate: 1794,            discoveredBy: "Johan Gadolin" },
+      { atomicNumber: 40,        name: "Zirconium",     abbreviation: "Zr",      id: "zr",   group: "g-4",    period: "p-5",   column: "c-8",   row: "r-10",  block: "d",  atomicMass: 91.224,   meltingPoint: 2127,      boilingPoint: 4679,     discoveryDate: 1789,            discoveredBy: "Martin Heinrich Klaproth"},
+      { atomicNumber: 41,        name: "Niobium",       abbreviation: "Nb",      id: "nb",   group: "g-5",    period: "p-5",   column: "c-10",  row: "r-10",  block: "d",  atomicMass: 92.906,   meltingPoint: 2750,      boilingPoint: 5014,     discoveryDate: 1801,            discoveredBy: "Charles Hatchett" },
+      { atomicNumber: 42,        name: "Molybdenum",    abbreviation: "Mo",      id: "mo",   group: "g-6",    period: "p-5",   column: "c-12",  row: "r-10",  block: "d",  atomicMass: 95.950,   meltingPoint: 2895,      boilingPoint: 4912,     discoveryDate: 1781,            discoveredBy: "Peter Jacob Hjelm" },
+      { atomicNumber: 43,        name: "Technetium",    abbreviation: "Tc",      id: "tc",   group: "g-7",    period: "p-5",   column: "c-14",  row: "r-10",  block: "d",  atomicMass: "(98)",   meltingPoint: 2430,      boilingPoint: 4535,     discoveryDate: 1937,            discoveredBy: "Carlo Perrier and Emilio Segre`" },
+      { atomicNumber: 44,        name: "Ruthenium",     abbreviation: "Ru",      id: "ru",   group: "g-8",    period: "p-5",   column: "c-16",  row: "r-10",  block: "d",  atomicMass: 101.07,   meltingPoint: 2606,      boilingPoint: 4420,     discoveryDate: 1844,            discoveredBy: "Karl Karlovich Klaus" },
+      { atomicNumber: 45,        name: "Rhodium",       abbreviation: "Rh",      id: "rh",   group: "g-9",    period: "p-5",   column: "c-18",  row: "r-10",  block: "d",  atomicMass: 102.906,  meltingPoint: 2236,      boilingPoint: 3968,     discoveryDate: 1803,            discoveredBy: "William Hyde Wollaston" },
+      { atomicNumber: 46,        name: "Palladium",     abbreviation: "Pd",      id: "pd",   group: "g-10",   period: "p-5",   column: "c-20",  row: "r-10",  block: "d",  atomicMass: 106.42,   meltingPoint: 1828,      boilingPoint: 3236,     discoveryDate: 1803,            discoveredBy: "William Hyde Wollastom" },
+      { atomicNumber: 47,        name: "Silver",        abbreviation: "Ag",      id: "ag",   group: "g-11",   period: "p-5",   column: "c-22",  row: "r-10",  block: "d",  atomicMass: 107.868,  meltingPoint: 1234.93,   boilingPoint: 2435,     discoveryDate: "~ 3000 B.C.",   discoveredBy: "N/A"},
+      { atomicNumber: 48,        name: "Cadmium",       abbreviation: "Cd",      id: "cd",   group: "g-12",   period: "p-5",   column: "c-24",  row: "r-10",  block: "d",  atomicMass: 112.414,  meltingPoint: 594.219,   boilingPoint: 1040,     discoveryDate: 1817,            discoveredBy: "Friedrich Stromeyer" },
+      { atomicNumber: 49,        name: "Indium",        abbreviation: "In",      id: "in",   group: "g-13",   period: "p-5",   column: "c-26",  row: "r-10",  block: "p",  atomicMass: 114.818,  meltingPoint: 429.75,    boilingPoint: 2300,     discoveryDate: 1863,            discoveredBy: "Ferdinand Reich and Hieronymous Richter" },
+      { atomicNumber: 50,        name: "Tin",           abbreviation: "Sn",      id: "sn",   group: "g-14",   period: "p-5",   column: "c-28",  row: "r-10",  block: "p",  atomicMass: 118.710,  meltingPoint: 505.078,   boilingPoint: 2859,     discoveryDate: "~ 2100 B.C.",   discoveredBy: "N / A" },
+      { atomicNumber: 51,        name: "Antmony",       abbreviation: "Sb",      id: "sb",   group: "g-15",   period: "p-5",   column: "c-30",  row: "r-10",  block: "p",  atomicMass: 121.760,  meltingPoint: 903.778,   boilingPoint: 1860,     discoveryDate: "~ 1600 B.C.",   discoveredBy: "N / A" },
+      { atomicNumber: 52,        name: "Tellurium",     abbreviation: "Te",      id: "te",   group: "g-16",   period: "p-5",   column: "c-32",  row: "r-10",  block: "p",  atomicMass: 127.60,   meltingPoint: 722.66,    boilingPoint: 1261,     discoveryDate: 1783,            discoveredBy: "Franz-Joseph Müler von Reichenstein" },
+      { atomicNumber: 53,        name: "Iodine",        abbreviation: "I",       id: "i",    group: "g-17",   period: "p-5",   column: "c-34",  row: "r-10",  block: "p",  atomicMass: 126.904,  meltingPoint: 386.9,     boilingPoint: 457.6,    discoveryDate: 1811,            discoveredBy: "Bernard Courtois" },
+      { atomicNumber: 54,        name: "Xenon",         abbreviation: "Xe",      id: "xe",   group: "g-18",   period: "p-5",   column: "c-36",  row: "r-10",  block: "p",  atomicMass: 131.293,  meltingPoint: 161.4,     boilingPoint: 165.051,  discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
+      { atomicNumber: 55,        name: "Caesium",       abbreviation: "Cs",      id: "cs",   group: "g-1",    period: "p-6",   column: "c-2",   row: "r-12",  block: "s",  atomicMass: 132.905,  meltingPoint: 301.7,     boilingPoint: 944,      discoveryDate: 1860,            discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
+      { atomicNumber: 56,        name: "Barium",        abbreviation: "Ba",      id: "ba",   group: "g-2",    period: "p-6",   column: "c-4",   row: "r-12",  block: "s",  atomicMass: 137.327,  meltingPoint: 1000,      boilingPoint: 2118,     discoveryDate: 1808,            discoveredBy: "Humphry Davy" },
+      // Start first extended portion of periodic table
+      { atomicNumber: 57,        name: "Lanthanum",     abbreviation: "La",      id: "la",                    period: "p-6",   column: "c-6",   row: "r-17",  block: "f",  atomicMass: 138.905,  meltingPoint: 1193,      boilingPoint: 3737,      discoveryDate: 1839,           discoveredBy: "Carl Gustav Mosander" },
+      { atomicNumber: 58,        name: "Cerium",        abbreviation: "Ce",      id: "ce",                    period: "p-6",   column: "c-8",   row: "r-17",  block: "f",  atomicMass: 140.116,  meltingPoint: 1072,      boilingPoint: 3716,      discoveryDate: 1803,           discoveredBy: "Jo..ns Jacob Berzelius and Wilhelm Hisinger" },
+      { atomicNumber: 59,        name: "Praseodymium",  abbreviation: "Pr",      id: "pr",                    period: "p-6",   column: "c-10",  row: "r-17",  block: "f",  atomicMass: 140.908,  meltingPoint: 1204,      boilingPoint: 3793,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
+      { atomicNumber: 60,        name: "Neodymium",     abbreviation: "Nd",      id: "nd",                    period: "p-6",   column: "c-12",  row: "r-17",  block: "f",  atomicMass: 144.242,  meltingPoint: 1289,      boilingPoint: 3347,      discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
+      { atomicNumber: 61,        name: "Promethium",    abbreviation: "Pm",      id: "pm",                    period: "p-6",   column: "c-14",  row: "r-17",  block: "f",  atomicMass: "(145)",  meltingPoint: 1315,      boilingPoint: 3273,      discoveryDate: 1945,           discoveredBy: "Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell" },
+      { atomicNumber: 62,        name: "Samarium",      abbreviation: "Sm",      id: "sm",                    period: "p-6",   column: "c-16",  row: "r-17",  block: "f",  atomicMass: 150.36,   meltingPoint: 1345,      boilingPoint: 2067,      discoveryDate: 1879,           discoveredBy: "Paul-E`mile Lecoq de Boisbaudran" },
+      { atomicNumber: 63,        name: "Europium",      abbreviation: "Eu",      id: "eu",                    period: "p-6",   column: "c-18",  row: "r-17",  block: "f",  atomicMass: 151.964,  meltingPoint: 1095,      boilingPoint: 1802,      discoveryDate: 1901,           discoveredBy: "Euge'ne-Anatole Demarc'ay" },
+      { atomicNumber: 64,        name: "Gadolinium",    abbreviation: "Gd",      id: "gd",                    period: "p-6",   column: "c-20",  row: "r-17",  block: "f",  atomicMass: 157.25,   meltingPoint: 1586,      boilingPoint: 3546,      discoveryDate: 1880,           discoveredBy: "Jean Charles Galissard de Marignac"},
+      { atomicNumber: 65,        name: "Terbium",       abbreviation: "Tb",      id: "tb",                    period: "p-6",   column: "c-22",  row: "r-17",  block: "f",  atomicMass: 158.925,  meltingPoint: 1632,      boilingPoint: 3503,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
+      { atomicNumber: 66,        name: "Dysprosium",    abbreviation: "Dy",      id: "dy",                    period: "p-6",   column: "c-24",  row: "r-17",  block: "f",  atomicMass: 162.500,  meltingPoint: 1685,      boilingPoint: 2840,      discoveryDate: 1886,           discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
+      { atomicNumber: 67,        name: "Holmium",       abbreviation: "Ho",      id: "ho",                    period: "p-6",   column: "cc-26", row: "r-17",  block: "f",  atomicMass: 164.930,  meltingPoint: 1745,      boilingPoint: 2973,      discoveryDate: 1878,           discoveredBy: "Per Teodor Cleve, Marc Delafontaine, and Louis Soret" },
+      { atomicNumber: 68,        name: "Erbium",        abbreviation: "Er",      id: "er",                    period: "p-6",   column: "cc-28", row: "r-17",  block: "f",  atomicMass: 167.259,  meltingPoint: 1802,      boilingPoint: 3141,      discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
+      { atomicNumber: 69,        name: "Thulium",       abbreviation: "Tm",      id: "tm",                    period: "p-6",   column: "cc-30", row: "r-17",  block: "f",  atomicMass: 168.934,  meltingPoint: 1818,      boilingPoint: 2223,      discoveryDate: 1879,           discoveredBy: "Per Teodor Cleve" },
+      { atomicNumber: 70,        name: "Ytterbium",     abbreviation: "Yb",      id: "yb",                    period: "p-6",   column: "cc-32", row: "r-17",  block: "f",  atomicMass: 173.045,  meltingPoint: 1097,      boilingPoint: 1469,      discoveryDate: 1878,           discoveredBy: "Jean Charles Galissard de Marignac" },
+      { atomicNumber: 71,        name: "Lutetium",      abbreviation: "Lu",      id: "lu",                    period: "p-6",   column: "cc-34", row: "r-17",  block: "f",  atomicMass: 174.967,  meltingPoint: 1936,      boilingPoint: 3675,      discoveryDate: 1907,           discoveredBy: "Georges Urbain, Charles James" },
+      // End first extended portion of the periodic table
+      { atomicNumber: 72,        name: "Hafnium",       abbreviation: "Hf",      id: "hf",   group: "g-4",    period: "p-6",   column: "c-8",   row: "r-12",  block: "d",  atomicMass: 178.49,   meltingPoint: 2506,      boilingPoint: 4873,      discoveryDate: 1923,           discoveredBy: "George Charles de Hevesy and Dirk Coster" },
+      { atomicNumber: 73,        name: "Tantalum",      abbreviation: "Ta",      id: "ta",   group: "g-5",    period: "p-6",   column: "c-10",  row: "r-12",  block: "d",  atomicMass: 180.948,  meltingPoint: 3290,      boilingPoint: 5728,      discoveryDate: 1802,           discoveredBy: "Anders Gustav Ekeberg" },
+      { atomicNumber: 74,        name: "Tungsten",      abbreviation: "W",       id: "w",    group: "g-6",    period: "p-6",   column: "c-12",  row: "r-12",  block: "d",  atomicMass: 183.84,   meltingPoint: 3687,      boilingPoint: 5828,      discoveryDate: 1783,           discoveredBy: "Juan Elhuyar and Fausto Elhuyar" },
+      { atomicNumber: 75,        name: "Rhenium",       abbreviation: "Re",      id: "re",   group: "g-7",    period: "p-6",   column: "c-14",  row: "r-12",  block: "d",  atomicMass: 186.207,  meltingPoint: 3458,      boilingPoint: 5863,      discoveryDate: 1925,           discoveredBy: "Walter Noddack, Ida Tacke, and Otto Berg" },
+      { atomicNumber: 76,        name: "Osmium",        abbreviation: "Os",      id: "os",   group: "g-8",    period: "p-6",   column: "c-16",  row: "r-12",  block: "d",  atomicMass: 190.23,   meltingPoint: 3306,      boilingPoint: 5281,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
+      { atomicNumber: 77,        name: "Iridium",       abbreviation: "Ir",      id: "ir",   group: "g-9",    period: "p-6",   column: "c-18",  row: "r-12",  block: "d",  atomicMass: 192.217,  meltingPoint: 2719,      boilingPoint: 4701,      discoveryDate: 1803,           discoveredBy: "Smithson Tennant" },
+      { atomicNumber: 78,        name: "Platinum",      abbreviation: "Pt",      id: "pt",   group: "g-10",   period: "p-6",   column: "c-20",  row: "r-12",  block: "d",  atomicMass: 195.084,  meltingPoint: 2041.4,    boilingPoint: 4098,      discoveryDate: "Unknown",      discoveredBy: "South Americans before Colombus" },
+      { atomicNumber: 79,        name: "Gold",          abbreviation: "Au",      id: "au",   group: "g-11",   period: "p-6",   column: "c-22",  row: "r-12",  block: "d",  atomicMass: 196.967,  meltingPoint: 1337.33,   boilingPoint: 3109,      discoveryDate: "~ 3000 B.C.",  discoveredBy: "N / A"},
+      { atomicNumber: 80,        name: "Mercury",       abbreviation: "Hg",      id: "hg",   group: "g-12",   period: "p-6",   column: "c-24",  row: "r-12",  block: "d",  atomicMass: 200.592,  meltingPoint: 234.321,   boilingPoint: 629.769,   discoveryDate: "~ 1500 B.C.",  discoveredBy: "N / A" },
+      { atomicNumber: 81,        name: "Thallium",      abbreviation: "Tl",      id: "tl",   group: "g-13",   period: "p-6",   column: "c-26",  row: "r-12",  block: "p",  atomicMass: 204.38,   meltingPoint: 577,       boilingPoint: 1746,      discoveryDate: 1861,           discoveredBy: "William Crookes" },
+      { atomicNumber: 82,        name: "Lead",          abbreviation: "Pb",      id: "pb",   group: "g-14",   period: "p-6",   column: "c-28",  row: "r-12",  block: "p",  atomicMass: 207.2,    meltingPoint: 600.612,   boilingPoint: 2022,      discoveryDate: "Ancient",      discoveredBy: "N / A"},
+      { atomicNumber: 83,        name: "Bismuth",       abbreviation: "Bi",      id: "bi",   group: "g-15",   period: "p-6",   column: "c-30",  row: "r-12",  block: "p",  atomicMass: 208.980,  meltingPoint: 544.556,   boilingPoint: 1837,      discoveryDate: "~1500 A.D.",   discoveredBy: "N / A" },
+      { atomicNumber: 84,        name: "Polonium",      abbreviation: "Po",      id: "po",   group: "g-16",   period: "p-6",   column: "c-32",  row: "r-12",  block: "p",  atomicMass: "(209)",  meltingPoint: 527,       boilingPoint: 1235,      discoveryDate: 1898,           discoveredBy: "Marie Curie" },
+      { atomicNumber: 85,        name: "Astatine",      abbreviation: "At",      id: "at",   group: "g-17",   period: "p-6",   column: "c-34",  row: "r-12",  block: "p",  atomicMass: "(210)",  meltingPoint: 573,       boilingPoint: 623,       discoveryDate: 1940,           discoveredBy: "Dale Corson, Kenneth MacKenzie, and Emillo Segre`" },
+      { atomicNumber: 86,        name: "Radon",         abbreviation: "Rn",      id: "rn",   group: "g-18",   period: "p-6",   column: "c-36",  row: "r-12",  block: "p",  atomicMass: "(222)",  meltingPoint: 202,       boilingPoint: 211.5,     discoveryDate: 1900,           discoveredBy: "Friedrich Ernst Dorn" },
+      { atomicNumber: 87,        name: "Francium",      abbreviation: "Fr",      id: "fr",   group: "g-1",    period: "p-7",   column: "c-2",   row: "r-14",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,       boilingPoint: 923,       discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
+      { atomicNumber: 88,        name: "Radium",        abbreviation: "Ra",      id: "ra",   group: "g-2",    period: "p-7",   column: "c-4",   row: "r-14",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,       boilingPoint: 1773,      discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
+      // Start second portion of the periodict table
+      { atomicNumber: 89,        name: "Actinium",      abbreviation: "Fr",      id: "fr",                    period: "p-7",   column: "c-6",   row: "r-19",  block: "f",  atomicMass: "(227)",  meltingPoint: 1323,      boilingPoint: 3473,      discoveryDate: 1899,          discoveredBy: "Andrew Debierne" },
+      { atomicNumber: 90,        name: "Thorium",       abbreviation: "Th",      id: "th",                    period: "p-7",   column: "c-8",   row: "r-19",  block: "f",  atomicMass: 232.038,  meltingPoint: 2023,      boilingPoint: 5058,      discoveryDate: 1829,          discoveredBy: "Jo..ns Jacob Berzelius" },
+      { atomicNumber: 91,        name: "Protactinium",  abbreviation: "Pa",      id: "pa",                    period: "p-7",   column: "c-10",  row: "r-19",  block: "f",  atomicMass: 231.036,  meltingPoint: 1845,      boilingPoint: 4273,      discoveryDate: 1913,          discoveredBy: "Kasimir Fajans and Otto Go..hring" },
+      { atomicNumber: 92,        name: "Uranium",       abbreviation: "U",       id: "u",                     period: "p-7",   column: "c-12",  row: "r-19",  block: "f",  atomicMass: 238.029,  meltingPoint: 1408,      boilingPoint: 4404,      discoveryDate: 1789,          discoveredBy: "Martin Heinrich Klaproth" },
 
-      { atomicNumber: 87,        name: "Francium",      abbreviation: "Fr",      id: "fr",  group: "g-1",     period: "p-7",   column: "c-2",   row: "r-14",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,       boilingPoint: 923,       discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
-      { atomicNumber: 88,        name: "Radium",        abbreviation: "Ra",      id: "ra",  group: "g-2",     period: "p-7",   column: "c-4",   row: "r-14",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,       boilingPoint: 1773,      discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
-      { atomicNumber: 118,       name: "Oganesson",     abbreviation: "Og",      id: "og",  group: "g-18",     period: "p-7",   column: "c-36",  row: "r-14",  block: "p"},
 
+      //End second extented portion of the periodict table
+      { atomicNumber: 118,       name: "Oganesson",     abbreviation: "Og",      id: "og",   group: "g-18",   period: "p-7",   column: "c-36",  row: "r-14",  block: "p"},
       // Currently, the atomicNumber must be exactly the same as the index in the array (this helps get the object that the user hovers over)
       { atomicNumber: 119,      name: "Lanthanides",    abbreviation: "Lan.",    id: "z1",  column: "c-6",   row: "r-12",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
       { atomicNumber: 120,      name: "Actinides",      abbreviation: "Act.",    id: "z2",  column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "2",             discoveredBy: "3" },
@@ -218,11 +228,38 @@ var one = new Vue({
       "red",
       "red",
       "red",
-
       "blue",
       "blue",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
       "red",
-
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
       "orange",
       "orange"
   ],
@@ -314,11 +351,38 @@ var one = new Vue({
       "red",
       "red",
       "red",
-
       "blue",
       "blue",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "orange",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
+      "green",
       "red",
-
+      "red",
+      "red",
+      "red",
+      "red",
+      "red",
       "orange",
       "orange"
     ],
@@ -363,12 +427,22 @@ var one = new Vue({
         // Saves the default color of the element to the hovered over element
       Vue.set(this.elementColors, index, (defaultColor));
     },
-
-    highlightPeriod: function(index) {
+    highlightOrUnHighlightGroupOrPeriod: function(index, isPeriod, isHighlight) {
       var period = index + 1;
+      var group = index + 1;
 
       // className are the classes that need to be highlighted "p" stands for period
+      if(isPeriod == "true")
+      {
       var className = "p-" + (period);
+      }
+      else if (isPeriod == "false")
+      {
+        var className = "g-" + (group);
+      }
+      else {
+        console.log("Unexpected isPeriod parameter passed through highlightOrUnHighlightGroupOrPeriod function in main.vue");
+      }
 
       // elementsInPeriod is array of all elements that need to be highlighted
       var elementsInPeriod = document.getElementsByClassName(className);
@@ -379,71 +453,20 @@ var one = new Vue({
       {
         // Get the atomicNumber of the element
         var elementInPeriod = elementsInPeriod[i].firstChild.children[0].innerText;
-
         var defaultColor = this.elementsDefaultColor[elementInPeriod - 1];
-        Vue.set(this.elementColors, elementInPeriod - 1, ("dark-" + defaultColor));
-      }
-    },
-    unhighlightPeriod: function(index) {
-      var period = index + 1;
 
-      // className are the classes that need to be highlighted "p" stands for period
-      var className = "p-" + (period);
-
-      // elementsInPeriod is array of all elements that need to be highlighted
-      var elementsInPeriod = document.getElementsByClassName(className);
-
-      // For each element in the array, unhighlight it
-      var i;
-      for(i = 0; i < elementsInPeriod.length; i++)
-      {
-        // Get the atomicNumber of the element
-        var elementInPeriod = elementsInPeriod[i].firstChild.children[0].innerText;
-
-        var defaultColor = this.elementsDefaultColor[elementInPeriod - 1];
-        Vue.set(this.elementColors, elementInPeriod - 1, (defaultColor));
-      }
-
-    },
-
-    highlightGroup: function(index) {
-      var group = index + 1;
-
-      // className are the classes that need to be highlighted "p" stands for group
-      var className = "g-" + (group);
-
-      // elementsInGroup is array of all elements that need to be highlighted
-      var elementsInGroup = document.getElementsByClassName(className);
-      console.log(elementsInGroup);
-      // For each element in the array, highlight it
-      var i;
-      for(i = 0; i < elementsInGroup.length; i++)
-      {
-        // Get the atomicNumber of the element
-        var elementInPeriod = elementsInGroup[i].firstChild.children[0].innerText;
-
-        var defaultColor = this.elementsDefaultColor[elementInPeriod - 1];
-        Vue.set(this.elementColors, elementInPeriod - 1, ("dark-" + defaultColor));
-      }
-    },
-    unhighlightGroup: function(index) {
-      var group = index + 1;
-
-      // className are the classes that need to be highlighted "p" stands for group
-      var className = "g-" + (group);
-
-      // elementsInGroup is array of all elements that need to be highlighted
-      var elementsInGroup = document.getElementsByClassName(className);
-      console.log(elementsInGroup);
-      // For each element in the array, highlight it
-      var i;
-      for(i = 0; i < elementsInGroup.length; i++)
-      {
-        // Get the atomicNumber of the element
-        var elementInPeriod = elementsInGroup[i].firstChild.children[0].innerText;
-
-        var defaultColor = this.elementsDefaultColor[elementInPeriod - 1];
-        Vue.set(this.elementColors, elementInPeriod - 1, (defaultColor));
+        if(isHighlight == "true")
+        {
+          Vue.set(this.elementColors, elementInPeriod - 1, ("dark-" + defaultColor));
+        }
+        else if(isHighlight == "false")
+        {
+          Vue.set(this.elementColors, elementInPeriod - 1, (defaultColor));
+        }
+        else
+        {
+          console.log("Unexpected isHighlight parameter passed through highlightOrUnHighlightGroupOrPeriod function in main.vue");
+        }
       }
     }
   },
