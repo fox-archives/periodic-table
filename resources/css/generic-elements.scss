@@ -6,6 +6,10 @@
   bottom: -3px;
 }
 
+.atomicNumber, .abbreviation, .name, .atomicMass {
+  transition: color 0.15s ease-in-out;
+}
+
 // REGULAR ELEMENT COLOR
 .blue {
   background-color: $oc-blue-2;
@@ -53,18 +57,58 @@
   background-color: $oc-blue-1;
 }
 
+.light-blue > div > h5 {
+  color: $oc-gray-6;
+}
+
+.light-blue > div > h6 {
+  color: $oc-gray-6;
+}
+
 .light-red {
   background-color: $oc-red-1;
+}
+
+.light-red > div > h5 {
+  color: $oc-gray-6;
+}
+
+.light-red > div > h6 {
+  color: $oc-gray-6;
 }
 
 .light-green {
   background-color: $oc-green-1;
 }
 
+.light-green > div > h5 {
+  color: $oc-gray-6;
+}
+
+.light-green > div > h6 {
+  color: $oc-gray-6;
+}
+
 .light-orange {
   background-color: $oc-orange-1;
 }
 
+.light-orange > div > h5 {
+  color: $oc-gray-6;
+}
+
+.light-orange > div > h6 {
+  color: $oc-gray-6;
+}
+
 .light-violet {
   background-color: $oc-violet-1;
+}
+
+.light-violet > div > h5 {
+  color: $oc-gray-6;
+}
+
+.light-violet > div > h6 {
+  color: $oc-gray-6;
 }
