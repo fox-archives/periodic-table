@@ -13,7 +13,10 @@ VueJS     | 16+     | 58+     | 65+       | 8+       | 10.12+
 
 \* With extension -moz, -webkit, etc.</br>
 
-TODO:
+TO DO:
 * Import periodic table data from multiple JSON files
-* Make the periodic table always within the height or width bounds of the document
-* When column or row label is hovered over, dim all elements not in that particular column or label (dim background and text color)
+* Make the periodic table always within the height or width bounds of the document (keep aspect ratio constant)
+  * Have option for making the periodic table 100% width, even if have to scroll down
+* ~~On highlight of element, highlight the row / column label it is in~~
+* Make information and question buttons operational
+* Add logo to replace part of, or all of, "Succinct Periodic Table of the Elements"

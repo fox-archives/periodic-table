@@ -1,5 +1,17 @@
 //main: main.scss
 
+// The group and period labels
+.light {
+  background-color: $oc-gray-1;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.dark {
+  background-color: $oc-gray-3;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
 // The text inside each element
 .atomicMass {
   position: relative;
@@ -57,11 +69,7 @@
   background-color: $oc-blue-1;
 }
 
-.light-blue > div > h5 {
-  color: $oc-gray-6;
-}
-
-.light-blue > div > h6 {
+.light-blue p, .light-blue h6, .light-blue h5, .light-blue h4, .light-blue h3, {
   color: $oc-gray-6;
 }
 
@@ -69,11 +77,7 @@
   background-color: $oc-red-1;
 }
 
-.light-red > div > h5 {
-  color: $oc-gray-6;
-}
-
-.light-red > div > h6 {
+.light-red p, .light-red h6, .light-red h5, .light-red h4, .light-red h3 {
   color: $oc-gray-6;
 }
 
@@ -81,11 +85,7 @@
   background-color: $oc-green-1;
 }
 
-.light-green > div > h5 {
-  color: $oc-gray-6;
-}
-
-.light-green > div > h6 {
+.light-green p, .light-green h6, .light-green h5, .light-green h4, .light-green h3 {
   color: $oc-gray-6;
 }
 
@@ -93,11 +93,7 @@
   background-color: $oc-orange-1;
 }
 
-.light-orange > div > h5 {
-  color: $oc-gray-6;
-}
-
-.light-orange > div > h6 {
+.light-orange p, .light-orange h6, .light-orange h5, .light-orange h4, .light-orange h3 {
   color: $oc-gray-6;
 }
 
@@ -105,10 +101,6 @@
   background-color: $oc-violet-1;
 }
 
-.light-violet > div > h5 {
-  color: $oc-gray-6;
-}
-
-.light-violet > div > h6 {
+.light-violet p, .light-violet h6, .light-violet h5, .light-violet h4, .light-violet h3 {
   color: $oc-gray-6;
 }

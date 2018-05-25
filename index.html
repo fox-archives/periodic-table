@@ -11,8 +11,9 @@
     <h1 class="formatContent">Succinct Periodic Table of the Elements</h1>
     <nav class="formatContent">
       <div id="nav-left-side">
-        <div id="generic"><span class="ti-menu-alt"></span><h2>Generic</h2></div>
+        <div id="simple"><span class="ti-menu-alt"></span><h2>Simple</h2></div>
         <div id="properties"><span class="ti-eye"></span><h2>Properties</h2></div>
+        <div id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></div>
         <div id="orbitals"><span class="ti-link"></span><h2>Orbitals</h2></div>
         <div id="explore"><span class="ti-search"></span><h2>Explore</h2></div>
         <div id="quiz"><span class="ti-check"></span><h2>Quiz</h2></div>
@@ -47,10 +48,10 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, elementIndex) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="updateElementInfoAndDesc(elementIndex)" v-on:mouseover="shadeElementOnHover(elementIndex)" v-on:mouseleave="lightenElementOnHover(elementIndex)">
+        <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="[updateElementInfoAndDesc(index)]" v-on:mouseover="[shadeElementOnHover(index), changeLabelColor(index, 'true')]" v-on:mouseleave="[lightenElementOnHover(index), changeLabelColor(index, 'false')]">
           <div v-cloak class="element-inner">
-            <!--<h6>{{ elementIndex + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-            <h6 class="atomicNumber" ref="elementIndexDOM">{{ element.atomicNumber }}</h6>
+            <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
+            <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
             <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
             <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
             <h6 class="atomicMass" ref="elementAtomicMassDOM">{{ element.atomicMass }}</h6>
@@ -59,14 +60,14 @@
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner"  v-on:mouseover="darkenGroupOrPeriod(index, 'true', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'true', 'normal')">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color"  v-on:mouseover="darkenGroupOrPeriod(index, 'true', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'true', 'normal')">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-on:mouseover="darkenGroupOrPeriod(index, 'false', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'false', 'normal')">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="darkenGroupOrPeriod(index, 'false', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'false', 'normal')">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
