@@ -1,0 +1,17 @@
+//main: main.scss
+
+footer {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+footer > p, footer > a {
+  font-family: robotoregular;
+}
+
+footer p, footer a {
+  padding-left: 10px;
+  padding-right: 10px;
+}

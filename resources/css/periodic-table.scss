@@ -14,16 +14,18 @@ $element-height: 40px;
   background-color: $oc-gray-1;
   border-radius: $border-radius;
   margin-top: 20px;
-  margin-bottom: 20px;
   min-width: $minimum-width;
+  //max-width: $maximum-width;
 }
 
 // The grid itself (plus 5 for the block f elements)
 #grid-container {
+  // The 40px on column and row are for the row / column labels
   display: grid;
   grid-template-columns: 40px repeat($total-columns, 1fr);
   grid-template-rows: 40px repeat($total-rows, $element-height);
   padding: 10px 10px 10px 10px;
+
 }
 
 // ELEMENTS
@@ -51,7 +53,7 @@ $element-height: 40px;
 // Large element with larger information about each element
 #element-overview {
   box-shadow: 4px 4px 4px $oc-gray-2;
-  border-radius: $border-radius/2;
+  border-radius: $border-radius / 2;
   grid-column-start: 7;
   grid-column-end: 13;
   grid-row-start: 2;
@@ -66,7 +68,7 @@ $element-height: 40px;
 #element-overview-inner {
   justify-self: center;
   $element-view-inner-width: 85%;
-  $element-view-margin: (100% - $element-view-inner-width)/2;
+  $element-view-margin: (100% - $element-view-inner-width) / 2;
   width: $element-view-inner-width;
   margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
   transition: box-shadow 0.15s ease-in-out;
@@ -88,7 +90,7 @@ $element-height: 40px;
 #element-desc-inner {
   justify-self: center;
   $element-view-inner-width: 95%;
-  $element-view-margin: (100% - $element-view-inner-width)/2;
+  $element-view-margin: (100% - $element-view-inner-width) / 2;
   width: $element-view-inner-width;
   margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
   transition: box-shadow 0.15s ease-in-out;
@@ -102,7 +104,7 @@ $element-height: 40px;
 
 #element-desc-inner > p {
   font-family: latolight;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 15px;
 }
 

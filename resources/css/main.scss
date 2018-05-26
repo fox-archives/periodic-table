@@ -1,4 +1,5 @@
 $minimum-width: 1000px;
+$maximum-width: 1000px;
 $border-radius: 15px;
 
 @import "./open-color.scss";
@@ -6,6 +7,7 @@ $border-radius: 15px;
 @import "../assets/icons/themify-icons.css";
 
 @import "./navigation.scss";
+@import "./footer.scss";
 @import "./options.scss";
 @import "./periodic-table.scss";
 @import "./generic-elements.scss";
@@ -51,8 +53,17 @@ h6 {
   font-size: 0.8em;
 }
 
-p {
+p, a {
   font-family: latolight;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:clicked {
+  text-decoration: none;
 }
 
 .formatContent {
