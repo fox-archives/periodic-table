@@ -1,34 +1,48 @@
 //main: ./main.scss
 
+// Logo
+#title {
+  user-select: none;
+}
+
+#logo {
+  display: inline-block;
+  position: relative;
+  top: 7px;
+}
+
+#title-word {
+  display: inline-block;
+}
+
 //First flebox, separating left and right sides of nav
 nav {
   display: flex;
+  justify-content: flex-start;
   background-color: $oc-gray-1;
   border-radius: $border-radius;
-  justify-content: space-between;
-}
-
-// Second flex, separating highlightable elements
-#nav-left-side, #nav-right-side {
-  display: flex;
+  width: 100%;
 }
 
 // Each div element in nav bar
-#nav-left-side > div, #nav-right-side > div {
-  padding: 15px 30px 15px 30px;
-  align-self: center;
+nav > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  //align-self: center;
   user-select: none;  // No highlighting when trying to select
 }
 
 // Each div element in nav bar hover
-#nav-left-side > div:hover, #nav-right-side > div:hover {
+nav > div:hover {
   background-color: $oc-gray-3;
   transition: background-color 0.15s ease-in-out;
   cursor: pointer;
 }
 
 // Each div element in nav bar active
-#nav-left-side > div:active, #nav-right-side > div:active {
+nav > div:active {
   background-color: $oc-gray-4;
   transition: background-color 0.15s ease-in-out;
 }
@@ -40,29 +54,16 @@ nav {
 }
 
 // Rounded corners for the navbar on the right-end
-#question:hover {
+/*#question:hover {
   border-top-right-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
-}
+}*/
 
-// Cannot do a class selector because icons need to be different sizes across the whole website
-#nav-right-side > div > span {
-  font-size: 30px;
-}
-
-
-// Third flexbox, separating highlightable elements on right side only
-#nav-left-side > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#nav-left-side > div > span {
-  padding-right: 10px;
+nav > div > span {
   font-size: 20px;
 }
 
-#nav-left-side > div > h2 {
-
+nav > div > span {
+  padding-right: 10px;
+  font-size: 18px;
 }

@@ -3,7 +3,7 @@ Vue.component("periodic-table", {
 })
 
 var one = new Vue({
-  el: '#grid-container',
+  el: '#grid',
   data: {
     elements: [
       { atomicNumber: 1,         name: "Hydrogen",       abbreviation: "H",       id: "h",    group: "g-1",    period: "p-1",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,      boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },

@@ -1,20 +1,7 @@
 //main: main.scss
-/* Open Sans */
-@font-face {
-  font-family: 'open_sanslight';
-  src: url('../assets/fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('../assets/fonts/opensans-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'open_sansregular';
-  src: url('../assets/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/opensans-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 /* Roboto */
+/*
 @font-face {
   font-family: 'robotobold';
   src: url('../assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
@@ -29,6 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 @font-face {
   font-family: 'robotoregular';
   src: url('../assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
@@ -43,21 +31,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Source Sans Pro */
-@font-face {
-  font-family: 'source_sans_prolight';
-  src: url('../assets/fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'source_sans_proregular';
-  src: url('../assets/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/sourcesanspro-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 /* Lato */
 @font-face {
     font-family: 'latoregular';
@@ -66,6 +39,7 @@
     font-weight: normal;
     font-style: normal;
 }
+/*
 @font-face {
     font-family: 'latoblack';
     src: url('../assets/fonts/lato-black-webfont.woff2') format('woff2'),
@@ -115,6 +89,7 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
 @font-face {
     font-family: 'latolight';
     src: url('../assets/fonts/lato-light-webfont.woff2') format('woff2'),
@@ -122,6 +97,7 @@
     font-weight: normal;
     font-style: normal;
 }
+/*
 @font-face {
     font-family: 'latolight_italic';
     src: url('../assets/fonts/lato-lightitalic-webfont.woff2') format('woff2'),
@@ -129,3 +105,4 @@
     font-weight: normal;
     font-style: normal;
 }
+*/

@@ -1,7 +1,6 @@
 //main: ./main.scss
 
-// Groups are columns and periods are rows
-// Extra 1 for labeling the rows and columns
+// Add 5 to rows for the "f" block elements
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
@@ -9,23 +8,25 @@ $total-rows: (7 * 2) + 5;
 $element-width: 100% / $total-columns;
 $element-height: 40px;
 
-// Div outisde of the grid
 #grid-container-outer {
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+}
+
+// Div outisde of the grid
+#grid-container {
+  display: inline-block;
   background-color: $oc-gray-1;
   border-radius: $border-radius;
   margin-top: 20px;
-  min-width: $minimum-width;
-  //max-width: $maximum-width;
 }
 
-// The grid itself (plus 5 for the block f elements)
-#grid-container {
-  // The 40px on column and row are for the row / column labels
+#grid {
   display: grid;
   grid-template-columns: 40px repeat($total-columns, 1fr);
   grid-template-rows: 40px repeat($total-rows, $element-height);
   padding: 10px 10px 10px 10px;
-
 }
 
 // ELEMENTS
@@ -77,7 +78,7 @@ $element-height: 40px;
 // Description with more info of the element (right of #element-overview)
 #element-desc {
   box-shadow: 4px 4px 4px $oc-gray-2;
-  border-radius: $border-radius/2;
+  border-radius: $border-radius / 2;
   grid-column-start: 14;
   grid-column-end: 25;
   grid-row-start: 2;
