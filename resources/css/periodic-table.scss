@@ -16,10 +16,12 @@ $element-height: 40px;
 
 // Div outisde of the grid
 #grid-container {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
   background-color: $oc-gray-1;
-  border-radius: $border-radius;
   margin-top: 20px;
+  min-width: 400px;
+
 }
 
 #grid {
@@ -55,8 +57,9 @@ $element-height: 40px;
 #element-overview {
   box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
+  overflow: hidden;
   grid-column-start: 7;
-  grid-column-end: 13;
+  grid-column-end: 14;
   grid-row-start: 2;
   grid-row-end: 7;
   transition: box-shadow 0.15s ease-in-out;
@@ -79,7 +82,7 @@ $element-height: 40px;
 #element-desc {
   box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
-  grid-column-start: 14;
+  grid-column-start: 15;
   grid-column-end: 25;
   grid-row-start: 2;
   grid-row-end: 7;
@@ -101,11 +104,12 @@ $element-height: 40px;
   font-family: latolight;
   font-size: 2em;
   margin-bottom: 5px;
+  overflow: hidden;
 }
 
 #element-desc-inner > p {
   font-family: latolight;
-  font-size: 1.3em;
+  font-size: 1.15em;
   margin-bottom: 15px;
 }
 

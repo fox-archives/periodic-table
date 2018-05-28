@@ -1,69 +1,40 @@
 //main: ./main.scss
-
-// Logo
-#title {
-  user-select: none;
-}
-
-#logo {
-  display: inline-block;
-  position: relative;
-  top: 7px;
-}
-
-#title-word {
-  display: inline-block;
-}
-
-//First flebox, separating left and right sides of nav
-nav {
+#nav-content {
   display: flex;
   justify-content: flex-start;
   background-color: $oc-gray-1;
-  border-radius: $border-radius;
-  width: 100%;
+  overflow-x: scroll;
+  //overflow-x: hidden;
+  list-style-type: none;
+  -webkit-user-select: none;
+  user-select: none;  // No highlighting when trying to select
 }
 
-// Each div element in nav bar
-nav > div {
+// Each list element in nav bar
+#nav-content > li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  //align-self: center;
-  user-select: none;  // No highlighting when trying to select
 }
 
-// Each div element in nav bar hover
-nav > div:hover {
+// Each list element in nav bar hover
+#nav-content > li:hover {
   background-color: $oc-gray-3;
   transition: background-color 0.15s ease-in-out;
   cursor: pointer;
 }
 
-// Each div element in nav bar active
-nav > div:active {
+// Each list element in nav bar active
+#nav-content > li:active {
   background-color: $oc-gray-4;
   transition: background-color 0.15s ease-in-out;
 }
 
-// Rounded corners for the navbar on the left-end
-#simple:hover {
-  border-top-left-radius: $border-radius;
-  border-bottom-left-radius: $border-radius;
+#nav-content > li > h2 {
+  padding-left: 10px;
 }
 
-// Rounded corners for the navbar on the right-end
-/*#question:hover {
-  border-top-right-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-}*/
-
-nav > div > span {
-  font-size: 20px;
-}
-
-nav > div > span {
-  padding-right: 10px;
+#nav-content > li > span {
   font-size: 18px;
 }

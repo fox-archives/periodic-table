@@ -5,26 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="./resources/css/main.min.css">
-  <title>Periodic Table</title>
+  <title>Succinct Periodic Table</title>
 </head>
 <body>
-    <div id="title" class="formatContent">
-      <object id="logo" data="./resources/assets/periodic-table-logo.svg" type="image/svg+xml" width="225px"></object>
-      <h1 id="title-word">Periodic Table of the Elements</h1>
-    </div>
     <nav id="navigation" class="formatContent">
-        <div id="simple"><span class="ti-menu-alt"></span><h2>Simple</h2></div>
-        <div id="properties"><span class="ti-eye"></span><h2>Properties</h2></div>
-        <div id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></div>
-        <div id="orbitals"><span class="ti-link"></span><h2>Orbitals</h2></div>
-        <div id="explore"><span class="ti-search"></span><h2>Explore</h2></div>
-        <div id="quiz"><span class="ti-check"></span><h2>Quiz</h2></div>
-        <div id="info"><span class="ti-info"></span></div>
-        <div id="question"><span class="ti-help"></span></div>
-    </nav>
-    <aside id="display-options" class="formatContent">
+      <ul id="nav-content">
+        <li id="simple"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
+        <li id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
+        <li id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></li>
+        <li id="orbitals"><span class="ti-link"></span><h2>Orbitals</h2></li>
+        <li id="explore"><span class="ti-search"></span><h2>Explore</h2></li>
+        <li id="quiz"><span class="ti-check"></span><h2>Quiz</h2></li>
+        <li id="info"><span class="ti-info"></span></li>
+        <li id="question"><span class="ti-help"></span></li>
+      </div>
+    <aside id="nav-options" class="formatContent">
       <!-- Options for how the main grid container and elemetns are displayed -->
     </aside>
+  </nav>
     <div id="grid-container-outer" class="formatContent">
       <div id="grid-container">
         <main id="grid">
@@ -81,6 +79,7 @@
   </footer>
   <script src="./resources/js/window.js"></script>
   <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script src="./resources/js/tests.js"></script>
   <script src="./resources/vue/main.vue"></script>
 </body>

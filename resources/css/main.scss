@@ -24,23 +24,23 @@ h1 {
   font-family: robotoregular;
   font-size: 3em;
 }
-// h5 is the navigation bar
+// h2 is the navigation bar
 h2 {
   font-family: robotolight;
   font-size: 1.15em;
 }
-// H3 and H4 used for the element overview pannel
+// h3 and h4 used for the element overview pannel
 h3 {
   font-family: latoregular;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 h4 {
   font-family: latolight;
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
-// H5 and H6 used for individual small elements
+// h5 and h6 used for individual small elements
 // h5 is element.abbreviation
 h5 {
   font-family: latoregular;
@@ -66,13 +66,6 @@ a:clicked {
   text-decoration: none;
 }
 
-// Make sure content is centered with whitespace
-.formatContent {
-  width: 97%;
-  margin: auto;
-  //min-width: $minimum-width;
-}
-
 // Shadow of the navigation bar
 nav, #display-options, #grid-container {
   box-shadow: 3px 3px 5px $oc-gray-3;
@@ -82,4 +75,34 @@ nav, #display-options, #grid-container {
 // don't extend out parent div element when sizing down
 nav, #display-options {
   flex-shrink: 0.5;
+}
+
+// Mobile
+@media (max-width: 950px) {
+  h1 {
+    font-size: 3em;
+  }
+  // h5 is the navigation bar
+  h2 {
+    font-size: 1.15em;
+  }
+  // H3 and H4 used for the element overview pannel
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  // H5 and H6 used for individual small elements
+  // h5 is element.abbreviation
+  h5 {
+    font-size: 1.4em;
+  }
+
+  // h6 is element.atomicNumber, element.name, and element.atomicMass
+  h6 {
+    font-size: 0.8em;
+  }
 }
