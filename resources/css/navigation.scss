@@ -5,13 +5,13 @@
 }
 
 #nav-content {
-  display: flex;
+  display: inline-flex;
+  box-sizing: content-box; // When calculating width of element, to not take into account of marigin-left 
   margin-left: 0px;
   justify-content: flex-start;
   list-style-type: none;
   -webkit-user-select: none;
   user-select: none;  // No highlighting when trying to select
-  width: 100%;
 }
 
 // Each list element in nav bar
