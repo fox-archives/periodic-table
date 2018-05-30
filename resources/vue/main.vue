@@ -114,7 +114,20 @@ var one = new Vue({
       { atomicNumber: 103,       name: "Lawrencium",     abbreviation: "Lr",      id: "lr",   group: "g-0",    period: "p-7",   column: "c-34",  row: "r-19",  block: "f",  atomicMass: "(262)",  meltingPoint: 1900,       boilingPoint: "Unknown",  discoveryDate: 1965,          discoveredBy: "Georgy Flerov and colleagues and Albert Ghiorso and colleagues" },
       //End second extented portion of the periodict table
       { atomicNumber: 104,       name: "Rutherfordium",  abbreviation: "Rf",      id: "rf",   group: "g-4",    period: "p-7",   column: "c-8",   row: "r-14",  block: "d",  atomicMass: "(267)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1964,          discoveredBy: "Georgy Flerov and colleagues and Albert Ghiorso and colleagues" },
-      { atomicNumber: 118,       name: "Oganesson",      abbreviation: "Og",      id: "og",   group: "g-18",   period: "p-7",   column: "c-36",  row: "r-14",  block: "p",  atomicMass: "(294)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2006,          discoveredBy: "Scientists from Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory" },
+      { atomicNumber: 105,       name: "Dubnium",        abbreviation: "Db",      id: "db",   group: "g-5",    period: "p-7",   column: "c-10",  row: "r-14",  block: "d",  atomicMass: "(268)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: "1968-1970",   discoveredBy: "No name" },
+      { atomicNumber: 106,       name: "Seaborgium",     abbreviation: "Sg",      id: "sg",   group: "g-6",    period: "p-7",   column: "c-12",  row: "r-14",  block: "d",  atomicMass: "(269)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1974,          discoveredBy: "Albert Ghiorso and colleagues" },
+      { atomicNumber: 107,       name: "Bohrium",        abbreviation: "Bh",      id: "bh",   group: "g-7",    period: "p-7",   column: "c-14",  row: "r-14",  block: "d",  atomicMass: "(270)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1981,          discoveredBy: "Peter Armbruster, Gottfried Mu..nzenberg and colleagues" },
+      { atomicNumber: 108,       name: "Hassium",        abbreviation: "Hs",      id: "hs",   group: "g-8",    period: "p-7",   column: "c-16",  row: "r-14",  block: "d",  atomicMass: "(269)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1984,          discoveredBy: "Peter Armbruster, Gottfried Mu..nzenberg and colleagues" },
+      { atomicNumber: 109,       name: "Meitnerium",     abbreviation: "Mt",      id: "mt",   group: "g-9",    period: "p-7",   column: "c-18",  row: "r-14",  block: "d",  atomicMass: "(278)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1982,          discoveredBy: "Peter Armbruster, Gottfried Mu..nzenberg and colleagues" },
+      { atomicNumber: 110,       name: "Darmstadtium",   abbreviation: "Ds",      id: "ds",   group: "g-10",   period: "p-7",   column: "c-20",  row: "r-14",  block: "d",  atomicMass: "(281)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1994,          discoveredBy: "Sigurd Hofmann, Peter Armbruster and Gottfried Mu..nzenberg" },
+      { atomicNumber: 111,       name: "Roentgenium",    abbreviation: "Rg",      id: "rg",   group: "g-11",   period: "p-7",   column: "c-22",  row: "r-14",  block: "d",  atomicMass: "(280)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1994,          discoveredBy: "Peter Armbruster and Gottfried My..nzenberg" },
+      { atomicNumber: 112,       name: "Copernicium",    abbreviation: "Cn",      id: "cn",   group: "g-12",   period: "p-7",   column: "c-24",  row: "r-14",  block: "d",  atomicMass: "(285)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1996,          discoveredBy: "Sigurd Hofmann and colleagues" },
+      { atomicNumber: 113,       name: "Nihonium",       abbreviation: "Nh",      id: "nh",   group: "g-13",   period: "p-7",   column: "c-26",  row: "r-14",  block: "p",  atomicMass: "(286)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2004,          discoveredBy: "Scientists from R.I.K.E.N." },
+      { atomicNumber: 114,       name: "Flerovium",      abbreviation: "Fl",      id: "fl",   group: "g-14",   period: "p-7",   column: "c-28",  row: "r-14",  block: "p",  atomicMass: "(289)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1999,          discoveredBy: "Scientists from J.I.N.C. and L.L.N.L." },
+      { atomicNumber: 115,       name: "Moscovium",      abbreviation: "Mc",      id: "mc",   group: "g-15",   period: "p-7",   column: "c-30",  row: "r-14",  block: "p",  atomicMass: "(289)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2010,          discoveredBy: "Scientists from J.I.N.C., L.L.N.L., and O.R.N.L." },
+      { atomicNumber: 116,       name: "Livermoreium",   abbreviation: "Lv",      id: "lv",   group: "g-16",   period: "p-7",   column: "c-32",  row: "r-14",  block: "p",  atomicMass: "(293)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2000,          discoveredBy: "Scientists from J.I.N.C. and L.L.N.L." },
+      { atomicNumber: 117,       name: "Tennessine",     abbreviation: "Ts",      id: "ts",   group: "g-17",   period: "p-7",   column: "c-34",  row: "r-14",  block: "p",  atomicMass: "(294)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2010,          discoveredBy: "Scientists from J.I.N.C., L.L.N.L., and O.R.N.L." },
+      { atomicNumber: 118,       name: "Oganesson",      abbreviation: "Og",      id: "og",   group: "g-18",   period: "p-7",   column: "c-36",  row: "r-14",  block: "p",  atomicMass: "(294)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2006,          discoveredBy: "Scientists from J.I.N.C. and L.L.N.L." },
       // Currently, the atomicNumber must be exactly the same as the index in the array (this helps get the object that the user hovers over)
       { atomicNumber: 119,      name: "Lanthanides",     abbreviation: "Lan.",    id: "z1",   group: "g-0",    period: "p-0",   column: "c-6",   row: "r-12",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",           discoveredBy: "" },
       { atomicNumber: 120,      name: "Actinides",       abbreviation: "Act.",    id: "z2",   group: "g-0",    period: "p-0",   column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",           discoveredBy: "" },
@@ -153,250 +166,43 @@ var one = new Vue({
     ],
     // These elements are the defaults. Should only change when  user clicks on a different tab like "orbitals", "properties", etc.
     elementsDefaultColor: [
-      "blue",
-      "blue",
-      "blue",
-      "blue",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red", //54 Xenon
-      "blue",
-      "blue",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "orange",
-      "orange"
-  ],
+      // Period 1
+      "blue", "blue",
+      // Period 2
+      "blue", "blue", "red", "red", "red", "red", "red", "red",
+      // Period 3
+      "blue", "blue", "red", "red", "red", "red", "red", "red",
+      // Period 4
+      "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+      // Period 5
+      "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+      // Period 6
+      "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
+      "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+      // Period 7
+      "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
+      "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red", "orange", "orange",
+    ],
+
   // These colors should be displayed
   elementColors: [
-      "blue",
-      "blue",
-      "blue",
-      "blue",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red", //54 Xenon
-      "blue",
-      "blue",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "blue",
-      "blue",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "orange",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "green",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "red",
-      "orange",
-      "orange"
-    ],
+    // Period 1
+    "blue", "blue",
+    // Period 2
+    "blue", "blue", "red", "red", "red", "red", "red", "red",
+    // Period 3
+    "blue", "blue", "red", "red", "red", "red", "red", "red",
+    // Period 4
+    "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+    // Period 5
+    "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+    // Period 6
+    "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
+    "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+    // Period 7
+    "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
+    "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red", "orange", "orange"
+  ],
     hoverAtomicNumber: "1",
     hoverAbbreviation: "H",
     hoverName: "Hydrogen",
@@ -531,26 +337,36 @@ var one = new Vue({
       }
     },
     changeLabelColor: function(index, isMouseOver) {
-      //var columnHovered = this.$refs;
+      // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
+      // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
+
+      // Get the period or group value corresponding to the hovered over element (ex. c-11, p-5)
       var periodFull = this.elements[index].period;
       var groupFull = this.elements[index].group;
 
+      // Concatonate period or group values to a number (ex. 11, 5)
       var period = periodFull.substring(2);
       var group = groupFull.substring(2);
 
-      if(isMouseOver == "true")
-      {
-        this.periodLabels[period - 1].color = "dark";
-        this.groupLabels[group - 1].color = "dark";
-      }
-      else if(isMouseOver == "false")
-      {
-        this.periodLabels[period - 1].color = "light";
-        this.groupLabels[group - 1].color = "light";
-      }
-      else
-      {
-        console.log("Unexpected parameter for isMouseOver passed through changeLabelColor in main.vue");
+      // Only darken the label if the element actually has a valid group or period (within the actual rangeon the periodic table)
+      if ((period > 0 && period < 8) && (group > 0 && group < 19)) {
+        // Darken the labels if the mouse is entering an element
+        if(isMouseOver == "true")
+        {
+          //
+          this.periodLabels[period - 1].color = "dark";
+          this.groupLabels[group - 1].color = "dark";
+        }
+        // Lighten the labels if the moues is leaving an element
+        else if(isMouseOver == "false")
+        {
+          this.periodLabels[period - 1].color = "light";
+          this.groupLabels[group - 1].color = "light";
+        }
+        else
+        {
+          console.log("Unexpected parameter for isMouseOver passed through changeLabelColor in main.vue");
+        }
       }
     }
   },

@@ -1,5 +1,4 @@
-/*
-window.addEventListener("resize", resizeWindow);
+/*window.addEventListener("resize", resizeWindow);
 
 function resizeWindow() {
 
