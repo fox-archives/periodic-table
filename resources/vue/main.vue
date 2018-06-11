@@ -1,5 +1,5 @@
 Vue.component("periodic-table", {
-  template: "<p>I am a reusable component</p>"
+  template: "<p>Reusable Component</p>"
 })
 
 var one = new Vue({
@@ -134,17 +134,17 @@ var one = new Vue({
 
     ],
     periodLabels: [
-      // Row labels
-      { display: 1,   column: "cc-1",   row: "rr-2", color: "light" },
-      { display: 2,   column: "cc-1",   row: "rr-4", color: "light" },
-      { display: 3,   column: "cc-1",   row: "rr-6", color: "light" },
-      { display: 4,   column: "cc-1",   row: "rr-8", color: "light" },
+      // Labels for each period element
+      { display: 1,   column: "cc-1",   row: "rr-2",  color: "light" },
+      { display: 2,   column: "cc-1",   row: "rr-4",  color: "light" },
+      { display: 3,   column: "cc-1",   row: "rr-6",  color: "light" },
+      { display: 4,   column: "cc-1",   row: "rr-8",  color: "light" },
       { display: 5,   column: "cc-1",   row: "rr-10", color: "light" },
       { display: 6,   column: "cc-1",   row: "rr-12", color: "light" },
       { display: 7,   column: "cc-1",   row: "rr-14", color: "light" }
     ],
     groupLabels: [
-      // Column labels
+      // Labels for each group element
       { display: " 1",   column: "cc-2",   row: "rr-1", color: "light" },
       { display: " 2",   column: "cc-4",   row: "rr-1", color: "light" },
       { display: " 3",   column: "cc-6",   row: "rr-1", color: "light" },
@@ -209,24 +209,27 @@ var one = new Vue({
     hoverAtomicMass: 1.008,
     hoverBlock: "s",
     hoverColor: "blue", //This actually changes the color
-
     hoverDiscoveryDate: "1766",
     hoverDiscoveredBy: "Henry Cavendish",
+
+    changeElementOnHover: true
 
   },
   methods: {
     updateElementInfoAndDesc: function(index) {
       // Do not add one to index because v-for array starts at 0 and, trying to get the element at a certain position in v-for array loop
       // Update element overview
-      this.hoverAtomicNumber = this.$refs.elementAtomicNumberDOM[index].innerHTML;
-      this.hoverAbbreviation = this.$refs.elementAbbreviationDOM[index].innerHTML;
-      this.hoverName = this.$refs.elementNameDOM[index].innerHTML;
-      this.hoverAtomicMass = this.$refs.elementAtomicMassDOM[index].innerHTML;
+      if(this.changeElementOnHover == true) {
+        this.hoverAtomicNumber = this.$refs.elementAtomicNumberDOM[index].innerHTML;
+        this.hoverAbbreviation = this.$refs.elementAbbreviationDOM[index].innerHTML;
+        this.hoverName = this.$refs.elementNameDOM[index].innerHTML;
+        this.hoverAtomicMass = this.$refs.elementAtomicMassDOM[index].innerHTML;
 
-      // Update element description
-      this.hoverDiscoveryDate = this.elements[index].discoveryDate;
-      this.hoverDiscoveredBy = this.elements[index].discoveredBy;
-      this.hoverColor = this.elementsDefaultColor[index];
+        // Update element description
+        this.hoverDiscoveryDate = this.elements[index].discoveryDate;
+        this.hoverDiscoveredBy = this.elements[index].discoveredBy;
+        this.hoverColor = this.elementsDefaultColor[index];
+      }
     },
 
     // Changing color of single elements
@@ -243,7 +246,7 @@ var one = new Vue({
 
     lightenElementOnHover: function(index) {
       var defaultColor = this.elementsDefaultColor[index];
-        // Saves the default color of the element to the hovered over element
+      // Saves the default color of the element to the hovered over element
       Vue.set(this.elementColors, index, (defaultColor));
     },
 
@@ -324,6 +327,7 @@ var one = new Vue({
         if(colorTo == "darken") {
           // For each element, prepend "light-" to property color. Since propert is binded to class, a CSS tyle will update the new colour
           Vue.set(this.elementColors, element - 1, ("light-" + defaultColor));
+          // If element is not alrady light-colored, make it light-colored
           if(this.hoverColor.indexOf("light-") == -1) {
             this.hoverColor = "light-" + this.hoverColor;
           }
@@ -368,6 +372,11 @@ var one = new Vue({
           console.log("Unexpected parameter for isMouseOver passed through changeLabelColor in main.vue");
         }
       }
+    },
+    holdElement: function(index) {
+      // Toggle changing elements on hover
+      console.log("holdElement function activated");
+      this.changeElementOnHover = !this.changeElementOnHover;
     }
   },
   computed: {

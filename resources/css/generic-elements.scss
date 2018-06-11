@@ -1,16 +1,15 @@
 //main: main.scss
 
-// The group and period labels
+// The group and period labels (.dark is appearance on hover)
 .light {
   background-color: $oc-gray-1;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
 }
 
 .dark {
   background-color: $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
 }
-
 
 // The text inside each element
 .atomicMass {
@@ -19,7 +18,7 @@
 }
 
 .atomicNumber, .abbreviation, .name, .atomicMass {
-  transition: color 0.15s ease-in-out;
+  transition: color $transition-time ease-in-out;
 }
 
 // REGULAR ELEMENT COLOR
@@ -69,7 +68,7 @@
   background-color: $oc-blue-1;
 }
 
-.light-blue p, .light-blue h6, .light-blue h5, .light-blue h4, .light-blue h3, {
+.light-blue p, .light-blue h6, .light-blue h5, .light-blue h4, .light-blue h3 {
   color: $oc-gray-6;
 }
 

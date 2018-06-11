@@ -1,4 +1,4 @@
-
+// Temporarily disabling navigation horizontal scrolling
 // This moves the navigtion elements left and right depending on a swipe left or right
 var navElement = document.getElementById("navigation");
 var mc = new Hammer(navElement);
@@ -24,18 +24,24 @@ mc.on("panleft panright", function(ev) {
 
     // Only change margin of narbar if the new nav margin is calculated to be less than zero
     if(newNavLeft <= 0 && newNavRight >= windowWidth) {
-      document.getElementById("nav-content").style.marginLeft = newNavLeft + "px";
+      navigationDOM.style.marginLeft = newNavLeft + "px";
     }
     else if (newNavLeft > 0) {
       newNavLeft = 0;
-      document.getElementById("nav-content").style.marginLeft = newNavLeft + "px";
+      navigationDOM.style.marginLeft = newNavLeft + "px";
     }
     else if (newNavRight < windowWidth) {
       // The margin of the element is equal to the length of the div element minus window length
       newNavLeft = -(navBarWidth - windowWidth);
-      document.getElementById("nav-content").style.marginLeft = newNavLeft + "px";
+      navigationDOM.style.marginLeft = newNavLeft + "px";
     }
   }
-  else {
-  }
 })
+
+// On resize of the browser, test if the browser winow is larger than the window width. If so, set navigation margin to 0
+  window.onresize = setNavMargin;
+
+  function setNavMargin() {
+    var navigationDOM = document.getElementById("nav-content");
+    navigationDOM.style.marginLeft = 0 + "px";
+  }

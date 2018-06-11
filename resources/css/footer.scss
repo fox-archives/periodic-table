@@ -1,18 +1,17 @@
 //main: main.scss
 
+// Main footer
 footer {
-  padding-bottom: 10px;
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
   padding-top: 12px;
 }
 
+// Text in footer
 footer > p, footer > a {
   font-family: robotoregular;
   color: $oc-gray-9;
-}
-
-footer p, footer a {
   padding-left: 10px;
   padding-right: 10px;
 }

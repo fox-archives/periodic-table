@@ -36,7 +36,7 @@ $element-height: 40px;
   border-radius: 5px;
   margin: 2px 2px 2px 2px;
   box-shadow: 3px 3px 3px $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
   overflow: hidden;
   user-select: none;
 }
@@ -44,7 +44,7 @@ $element-height: 40px;
 // Recall background-color found in generic-elements.scss
 .element-outer:hover {
   box-shadow: 5px 5px 5px $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
@@ -62,20 +62,21 @@ $element-height: 40px;
   grid-column-end: 14;
   grid-row-start: 2;
   grid-row-end: 7;
-  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow $transition-time ease-in-out;
   z-index: 1;
 
 }
 
-// This sets how wide the inner element should be, relative to the element outside of it
-// Then, it sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
+// Sets how wide the inner element should be, relative to the element outside of it
+// Sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
+$element-view-inner-width: 85%;
+$element-view-margin: (100% - $element-view-inner-width) / 2;
+
 #element-overview-inner {
   justify-self: center;
-  $element-view-inner-width: 85%;
-  $element-view-margin: (100% - $element-view-inner-width) / 2;
   width: $element-view-inner-width;
   margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
-  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow $transition-time ease-in-out;
 }
 
 // Description with more info of the element (right of #element-overview)
@@ -86,18 +87,19 @@ $element-height: 40px;
   grid-column-end: 25;
   grid-row-start: 2;
   grid-row-end: 7;
-  z-index: 1;
+  //z-index: 1;
 }
 
 // This sets how wide the inner element should be, relative to the element outside of it
 // Then, it sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
+$element-view-inner-width: 95%;
+$element-view-margin: (100% - $element-view-inner-width) / 2;
+
 #element-desc-inner {
   justify-self: center;
-  $element-view-inner-width: 95%;
-  $element-view-margin: (100% - $element-view-inner-width) / 2;
   width: $element-view-inner-width;
   margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
-  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow $transition-time ease-in-out;
 }
 
 #element-desc-inner > h5 {
@@ -115,7 +117,7 @@ $element-height: 40px;
 
 // Color transitions on hover of element-overview and element-desc
 #element-overview, #element-desc {
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
 }
 
 // ROW AND COLUMN LABELS
@@ -129,12 +131,12 @@ $element-height: 40px;
   height: 100%;
   width: 75%;
   border-radius: $border-radius / 2;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
 }
 
 .label-period-inner:hover {
   background-color: $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
@@ -155,12 +157,12 @@ $element-height: 40px;
   //padding-right: 7px;
   //padding-top: 5px;
   border-radius: $border-radius / 2;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
 }
 
 .label-group-inner:hover {
   background-color: $oc-gray-3;
-  transition: background-color 0.15s ease-in-out;
+  transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
