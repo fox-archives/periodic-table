@@ -1,6 +1,7 @@
+/*
 // Temporarily disabling navigation horizontal scrolling
 // This moves the navigtion elements left and right depending on a swipe left or right
-var navElement = document.getElementById("navigation");
+var navElement = document.getElementById("nav-content-outer");
 var mc = new Hammer(navElement);
 
 mc.get("pan").set({ direction: Hammer.DIRECTION_ALL });
@@ -45,3 +46,4 @@ mc.on("panleft panright", function(ev) {
     var navigationDOM = document.getElementById("nav-content");
     navigationDOM.style.marginLeft = 0 + "px";
   }
+*/

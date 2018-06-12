@@ -3,7 +3,7 @@
 function resizeWindow() {
 
   var titleHeight = document.getElementById("title").offsetHeight;
-  var navigationHeight = document.getElementById("navigation").offsetHeight;
+  var navigationHeight = document.getElementById("nav-content-outer").offsetHeight;
   var displayOptionsHeight = document.getElementById("display-options").offsetHeight;
   var gridContainerHeight = document.getElementById("grid-container-outer").offsetHeight;
   var heightFooter = document.getElementById("footer").offsetHeight;

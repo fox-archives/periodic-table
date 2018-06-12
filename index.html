@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./resources/css/main.min.css">
+  <link rel="stylesheet" type="text/css" href="./src/css/main.min.css">
   <title>Periodic Table of the Elements</title>
 </head>
 <body>
-    <nav id="navigation">
+    <nav id="nav-content-outer">
       <ul id="nav-content">
         <li id="simple"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
         <li id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
@@ -24,53 +24,11 @@
   <aside id="display-options">
     <!-- Options for how the main grid container and elemetns are displayed -->
   </aside>
-    <div id="grid-container-outer">
-      <div id="grid-container">
-        <main id="grid">
-          <!-- ELEMENT OVERVIEW PANNEL -->
-          <section id="element-overview" v-bind:class="hoverColor" v-cloak>
-              <div id="element-overview-inner">
-                <h4 id="element-ov-name">{{ hoverAtomicNumber }}</h4>
-                <h3 id="element-ov-abbreviation">{{ hoverAbbreviation }}</h3>
-                <h4 id="element-ov-name">{{ hoverName }}</h4>
-                <h4 id="element-ov-mass">{{ hoverAtomicMass }}</h4>
-              </div>
-          </section>
-          <!-- ELEMENT DESCRIPTIONS -->
-          <section id="element-desc" v-bind:class="hoverColor" v-cloak>
-            <div id="element-desc-inner">
-              <h5 id="element-d-discovery-date">Discovery Date</h5>
-              <p>{{ hoverDiscoveryDate }}</p>
-              <h5 id="element-d-discoverer">Discovered By </h5>
-              <p>{{ hoverDiscoveredBy }}</p>
-            </div>
-          </section>
+  <div id="grid-container-outer">
+    <div id="grid-container">
+      <main id="grid">
 
-          <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-          <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="[updateElementInfoAndDesc(index)]" v-on:mouseover="[shadeElementOnHover(index), changeLabelColor(index, 'true')]" v-on:mouseleave="[lightenElementOnHover(index), changeLabelColor(index, 'false')]" v-on:click="holdElement(index)">
-            <div v-cloak class="element-inner">
-              <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-              <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
-              <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
-              <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
-              <h6 class="atomicMass" ref="elementAtomicMassDOM">{{ element.atomicMass }}</h6>
-            </div>
-          </div>
-
-          <!-- PERIOD LABELS -->
-          <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-            <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color"  v-on:mouseover="darkenGroupOrPeriod(index, 'true', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'true', 'normal')">
-              <p class="label-text">{{ periodLabel.display }}</p>
-            </div>
-          </div>
-
-          <!-- GROUP LABELS -->
-          <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-            <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="darkenGroupOrPeriod(index, 'false', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'false', 'normal')">
-              <p class="label-text">{{ groupLabel.display }}</p>
-            </div>
-          </div>
-        </main>
+      </main>
     </div>
   </div>
   <footer id="footer">
@@ -79,11 +37,15 @@
       <a href="#">Feedback</a>
       <a href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
+
+  <script src="/dist/main.js"></script>
+  <!--
   <script src="./node_modules/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-  <script src="./resources/js/window.js"></script>
-  <script src="./resources/js/hammer.js"></script>
-  <script src="./resources/js/navigation.js"></script>
-  <script src="./resources/vue/main.vue"></script>
+  <script src="./src/js/window.js"></script>
+  <script src="./src/js/hammer.js"></script>
+  <script src="./src/js/navigation.js"></script>
+  <script src="./src/js/main.js"></script>
+  -->
 </body>
 </html>
