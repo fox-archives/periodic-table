@@ -1,51 +1,53 @@
-// AppComponent.vue
-
 <template>
-  <main id="grid">
-    <!-- ELEMENT OVERVIEW PANNEL -->
-    <section id="element-overview" v-bind:class="hoverColor" v-cloak>
-        <div id="element-overview-inner">
-          <h4 id="element-ov-name">{{ hoverAtomicNumber }}</h4>
-          <h3 id="element-ov-abbreviation">{{ hoverAbbreviation }}</h3>
-          <h4 id="element-ov-name">{{ hoverName }}</h4>
-          <h4 id="element-ov-mass">{{ hoverAtomicMass }}</h4>
+  <div id="grid-container-outer">
+    <div id="grid-container">
+      <main id="grid">
+        <!-- ELEMENT OVERVIEW PANNEL -->
+        <section id="element-overview" v-bind:class="hoverColor" v-cloak>
+            <div id="element-overview-inner">
+              <h4 id="element-ov-name">{{ hoverAtomicNumber }}</h4>
+              <h3 id="element-ov-abbreviation">{{ hoverAbbreviation }}</h3>
+              <h4 id="element-ov-name">{{ hoverName }}</h4>
+              <h4 id="element-ov-mass">{{ hoverAtomicMass }}</h4>
+            </div>
+        </section>
+        <!-- ELEMENT DESCRIPTIONS -->
+        <section id="element-desc" v-bind:class="hoverColor" v-cloak>
+          <div id="element-desc-inner">
+            <h5 id="element-d-discovery-date">Discovery Date</h5>
+            <p>{{ hoverDiscoveryDate }}</p>
+            <h5 id="element-d-discoverer">Discovered By </h5>
+            <p>{{ hoverDiscoveredBy }}</p>
+          </div>
+        </section>
+
+        <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
+        <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="[updateElementInfoAndDesc(index)]" v-on:mouseover="[shadeElementOnHover(index), changeLabelColor(index, 'true')]" v-on:mouseleave="[lightenElementOnHover(index), changeLabelColor(index, 'false')]" v-on:click="holdElement(index)">
+          <div v-cloak class="element-inner">
+            <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
+            <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
+            <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
+            <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
+            <h6 class="atomicMass" ref="elementAtomicMassDOM">{{ element.atomicMass }}</h6>
+          </div>
         </div>
-    </section>
-    <!-- ELEMENT DESCRIPTIONS -->
-    <section id="element-desc" v-bind:class="hoverColor" v-cloak>
-      <div id="element-desc-inner">
-        <h5 id="element-d-discovery-date">Discovery Date</h5>
-        <p>{{ hoverDiscoveryDate }}</p>
-        <h5 id="element-d-discoverer">Discovered By </h5>
-        <p>{{ hoverDiscoveredBy }}</p>
-      </div>
-    </section>
 
-    <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-    <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="[updateElementInfoAndDesc(index)]" v-on:mouseover="[shadeElementOnHover(index), changeLabelColor(index, 'true')]" v-on:mouseleave="[lightenElementOnHover(index), changeLabelColor(index, 'false')]" v-on:click="holdElement(index)">
-      <div v-cloak class="element-inner">
-        <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-        <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
-        <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
-        <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
-        <h6 class="atomicMass" ref="elementAtomicMassDOM">{{ element.atomicMass }}</h6>
-      </div>
-    </div>
+        <!-- PERIOD LABELS -->
+        <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color"  v-on:mouseover="darkenGroupOrPeriod(index, 'true', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'true', 'normal')">
+            <p class="label-text">{{ periodLabel.display }}</p>
+          </div>
+        </div>
 
-    <!-- PERIOD LABELS -->
-    <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-      <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color"  v-on:mouseover="darkenGroupOrPeriod(index, 'true', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'true', 'normal')">
-        <p class="label-text">{{ periodLabel.display }}</p>
-      </div>
+        <!-- GROUP LABELS -->
+        <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="darkenGroupOrPeriod(index, 'false', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'false', 'normal')">
+            <p class="label-text">{{ groupLabel.display }}</p>
+          </div>
+        </div>
+      </main>
     </div>
-
-    <!-- GROUP LABELS -->
-    <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-      <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="darkenGroupOrPeriod(index, 'false', 'darken')" v-on:mouseleave="darkenGroupOrPeriod(index, 'false', 'normal')">
-        <p class="label-text">{{ groupLabel.display }}</p>
-      </div>
-    </div>
-  </main>
+  </div>
 </template>
 <script>
    export default {

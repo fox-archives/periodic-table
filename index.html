@@ -4,41 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./src/css/main.min.css">
+  <link rel="stylesheet" type="text/css" href="./dist/main.bundle.css">
   <title>Periodic Table of the Elements</title>
 </head>
 <body>
-    <nav id="nav-content-outer">
-      <ul id="nav-content">
-        <li id="simple"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
-        <li id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
-        <li id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></li>
-        <li id="orbitals"><span class="ti-link"></span><h2>Orbitals</h2></li>
-        <li id="explore"><span class="ti-search"></span><h2>Explore</h2></li>
-        <li id="quiz"><span class="ti-check"></span><h2>Quiz</h2></li>
-        <li id="info"><span class="ti-info"></span></li>
-        <li id="question"><span class="ti-help"></span></li>
-        <li id="search"><span class="ti-search"></span></li>
-      </ul>
-  </nav>
-  <aside id="display-options">
-    <!-- Options for how the main grid container and elemetns are displayed -->
-  </aside>
+  <!-- NAVIGATION <-->
+  <div id="navigation-el"> </div>
+
+  <!-- OPTIONS -->
+  <div id="options-el"></div>
+
+  <!-- GRID CONTAINER -->
   <div id="grid-container-outer">
     <div id="grid-container">
       <main id="grid">
-
       </main>
     </div>
   </div>
-  <footer id="footer">
-      <p>© 2018 Edwin Kofler</p>
-      <a href="#">About</a>
-      <a href="#">Feedback</a>
-      <a href="https://discord.gg/eZMuVnu">Discord</a>
-  </footer>
 
-  <script src="/dist/main.js"></script>
+  <!-- FOOTER -->
+  <div id="footer-el"> </div>
+
+  <script src="/dist/main.bundle.js"></script>
   <!--
   <script src="./node_modules/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
