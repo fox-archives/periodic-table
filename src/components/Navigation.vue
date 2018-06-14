@@ -13,7 +13,3 @@
     </ul>
   </nav>
 </template>
-
-<script type="text/javascript">
-
-</script>

@@ -1227,11 +1227,6 @@
 @media (max-width: 815px) {
   #nav-content {
     display: inline-flex;
-    flex-wrap: wrap; } }
-
-@media (max-width: 460px) {
-  #nav-content {
-    display: inline-flex;
     flex-direction: column; }
   #nav-content > li {
     align-items: center;
@@ -1919,5 +1914,4 @@ a:clicked {
 
 nav, #display-options, #grid-container {
   box-shadow: 3px 3px 5px #dee2e6; }
-
 

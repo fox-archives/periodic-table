@@ -61,14 +61,6 @@
   #nav-content {
     display: inline-flex;
     //justify-content: flex-start; repeat
-  flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 460px) {
-  #nav-content {
-    display: inline-flex;
-    //justify-content: flex-start; repeat
     //flex-wrap: wrap;
     flex-direction: column;
   }
