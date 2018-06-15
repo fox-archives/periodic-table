@@ -403,18 +403,31 @@
          var group = groupFull.substring(2);
 
          // Only darken the label if the element actually has a valid group or period (within the actual rangeon the periodic table)
-         if ((period > 0 && period < 8) && (group > 0 && group < 19)) {
+         if (period > 0 && period < 8) {
            // Darken the labels if the mouse is entering an element
            if(isMouseOver == "true")
            {
-             //
              this.periodLabels[period - 1].color = "dark";
-             this.groupLabels[group - 1].color = "dark";
            }
            // Lighten the labels if the moues is leaving an element
            else if(isMouseOver == "false")
            {
              this.periodLabels[period - 1].color = "light";
+           }
+           else
+           {
+             console.log("Unexpected parameter for isMouseOver passed through changeLabelColor in main.vue");
+           }
+         }
+         if (group > 0 && group < 19) {
+           // Darken the labels if the mouse is entering an element
+           if(isMouseOver == "true")
+           {
+             this.groupLabels[group - 1].color = "dark";
+           }
+           // Lighten the labels if the moues is leaving an element
+           else if(isMouseOver == "false")
+           {
              this.groupLabels[group - 1].color = "light";
            }
            else

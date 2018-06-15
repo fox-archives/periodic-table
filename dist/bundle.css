@@ -1883,7 +1883,8 @@ footer > p, footer > a {
   margin: 0px;
   padding: 0px;
   color: #212529;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 0px; }
 
 h1 {
   font-family: robotoregular;

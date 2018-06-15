@@ -8,16 +8,16 @@ module.exports = {
   entry: "./src/index.js",
     output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.bundle.js',
+    filename: 'bundle.js',
     publicPath: '/dist'
   },
   // Tells webpack what directories should be searched when resolving moduls
-  resolve: {
+  /*resolve: {
     modules: [
       path.join(__dirname, 'src'),
       'node_modules'
     ]
-  },
+  },*/
    module: {
       rules: [
         // Change preset to 'env', but save that for later
@@ -44,7 +44,7 @@ module.exports = {
          }*/
        },
        {
-         test: /\.(sa|sc)ss$/,
+         test: /\.(sa|sc|c)ss$/,
          exclude: /node_modules/,
          use: [
            MiniCssExtractPlugin.loader,
@@ -83,7 +83,7 @@ module.exports = {
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-        filename: '[name].bundle.css',
+        filename: 'bundle.css',
         chunckFilename: '[id].css'
       })
     ]
