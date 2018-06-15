@@ -5,10 +5,18 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  entry: "./src/index.js",
     output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.bundle.js',
     publicPath: '/dist'
+  },
+  // Tells webpack what directories should be searched when resolving moduls
+  resolve: {
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules'
+    ]
   },
    module: {
       rules: [
@@ -19,7 +27,7 @@ module.exports = {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['es2015']
+              presets: ['env']
             }
           }
         },
@@ -41,16 +49,16 @@ module.exports = {
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader',
-           'sass-loader' // Loads a sass/scss file and compiles it t CSS
+           'sass-loader' // Loads a sass / scss file and compiles it t CSS
          ]
        },
-       {
+       /*{
          test: /\.css$/,
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader'
          ]
-       },
+       },*/
        // This gets all of the files and puts them in a fonts folder into the dist
        // (fine tune this later)
        {

@@ -1,5 +1,8 @@
 import './css/main.scss';
 
+import './js/blur.js';
+
+// VueJS
 import Vue from 'vue';
 // Assign Vue to window object in index.js; Vue() is now a global property of the window object
 window.Vue = Vue;
@@ -8,6 +11,11 @@ import Navigation from './components/Navigation.vue';
 import Options from './components/Options.vue';
 import PeriodicTable from './components/PeriodicTable.vue';
 import Footer from './components/Footer.vue';
+
+// Element UI
+import ElementUI from './element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
 
 // This may be formated incorrectly
 new Vue({

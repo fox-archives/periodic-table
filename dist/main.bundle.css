@@ -1252,6 +1252,13 @@ footer > p, footer > a {
   height: 35px;
   margin-top: 10px; }
 
+/*
+#info:active {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  filter: blur(4px);
+}
+*/
 #grid-container-outer {
   display: flex;
   justify-content: center;
