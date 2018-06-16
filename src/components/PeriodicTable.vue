@@ -22,7 +22,7 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, index) in elements" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id" v-on:mousemove="[updateElementInfoAndDesc(index)]" v-on:mouseover="[shadeElementOnHover(index), changeLabelColor(index, 'true')]" v-on:mouseleave="[lightenElementOnHover(index), changeLabelColor(index, 'false')]" v-on:click="holdElement(index)">
+        <div class="element-outer" v-for="(element, index) in elements" v-on:mousemove="[updateElementInfoAndDesc(index)]" v-on:mouseover="[setElementColorShade(index, 'dark-'), changeLabelColor(index, 'true')]" v-on:mouseleave="[setElementColorShade(index, ''), changeLabelColor(index, 'false')]" v-on:click="[holdElement(index), updateElementAll(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id">
           <div v-cloak class="element-inner">
             <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
             <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
@@ -51,7 +51,7 @@
 </template>
 <script>
    export default {
-     name: 'app',
+     name: 'PeriodicTable',
      data () {
        return {
          elements: [
@@ -261,7 +261,10 @@
          hoverDiscoveryDate: "1766",
          hoverDiscoveredBy: "Henry Cavendish",
 
-         changeElementOnHover: true
+         changeElementOnHover: true,
+
+         // When user clicks, want to make clicked element darker than if it was highlighted
+         clickedElement: -1
 
        }
      },
@@ -282,25 +285,38 @@
          }
        },
 
-       // Changing color of single elements
-       shadeElementOnHover: function(index) {
-         // Do not add one to index because v-for array starts at 0 and elementsDefaultColor array starts at 0
-         // Gets the default color of the hovered over element
-         //changeColor(index);
-         var defaultColor = this.elementsDefaultColor[index];
+       // Changes shade of hovered element (lighten or darken, or default)
+       setElementColorShade: function(index, shade) {
+         // Default state; when user hovers over different elements
+         if(this.clickedElement != index)
+         {
+           if(this.changeElementOnHover == true)
+           {
+             // Gets current default color
+             var defaultColor = this.elementsDefaultColor[index];
 
-         // If the element is in its default state, prefix "dark-" to it.
-         // (There is a dark-blue, dark-red etc. CSS property for all colors)
-         Vue.set(this.elementColors, index, ("dark-" + defaultColor));
+             // Sets current default color
+             Vue.set(this.elementColors, index, (shade + defaultColor));
+           }
+           else if(this.changeElementOnHover == false)
+           {
+
+           }
+         }
+       },
+       // Sets the color of all elements (usually the default color)
+       setAllElementsColor: function(shade) {
+         for(var i = 0; i < this.elementColors.length; i++)
+         {
+           if(i != this.clickedElement)
+           {
+             var current = this.elementsDefaultColor[i];
+             this.elementColors[i] = shade + current;
+           }
+         }
        },
 
-       lightenElementOnHover: function(index) {
-         var defaultColor = this.elementsDefaultColor[index];
-         // Saves the default color of the element to the hovered over element
-         Vue.set(this.elementColors, index, (defaultColor));
-       },
-
-       // Changing color of groups and periods
+       // When highlighting over period / group label, darken the period / group label being hovered over for easier visibility
        darkenGroupOrPeriod: function(index, isPeriod, colorTo) {
          // The period number is one more than the position the v-for loop
          var period = index + 1;
@@ -322,8 +338,7 @@
          var elements = document.getElementsByClassName(className);
 
          // For each element in the array, highlight it
-         var i;
-         for(i = 0; i < elements.length; i++) {
+         for(var i = 0; i < elements.length; i++) {
            // Get the atomicNumber of the element
            var element = elements[i].firstChild.children[0].innerText;
            var defaultColor = this.elementsDefaultColor[element - 1];
@@ -339,6 +354,7 @@
            }
          }
        },
+       // When highlighting over period / group label, lighten all others (so the hovered period / group label is in focus)
        lightenOtherGroupsOrPeriods: function(isPeriod, className, colorTo) {
          if(isPeriod == "true") {
            var upper = 7;
@@ -403,13 +419,13 @@
          var group = groupFull.substring(2);
 
          // Only darken the label if the element actually has a valid group or period (within the actual rangeon the periodic table)
-         if (period > 0 && period < 8) {
+         if (period > 0 && period < 8 && this.changeElementOnHover == true) {
            // Darken the labels if the mouse is entering an element
-           if(isMouseOver == "true")
+          if(isMouseOver == "true")
            {
              this.periodLabels[period - 1].color = "dark";
            }
-           // Lighten the labels if the moues is leaving an element
+           // Lighten the labels if the mouse is leaving an element
            else if(isMouseOver == "false")
            {
              this.periodLabels[period - 1].color = "light";
@@ -419,7 +435,7 @@
              console.log("Unexpected parameter for isMouseOver passed through changeLabelColor in main.vue");
            }
          }
-         if (group > 0 && group < 19) {
+         if (group > 0 && group < 19 && this.changeElementOnHover == true) {
            // Darken the labels if the mouse is entering an element
            if(isMouseOver == "true")
            {
@@ -437,9 +453,40 @@
          }
        },
        holdElement: function(index) {
+         console.log("holdElement called");
          // Toggle changing elements on hover
-         console.log("holdElement function activated");
-         this.changeElementOnHover = !this.changeElementOnHover;
+         // Works only for the changing of descriptions, but will add later for limited highlighting, etc.
+         console.log(this.changeElementOnHover);
+
+         // Reset period / group labels if changeElementOnHover becomes true
+         if(this.changeElementOnHover == true)
+         {
+           for(var i = 0; i < this.groupLabels.length; i++)
+           {
+             this.groupLabels[i].color = "light";
+           }
+           for(var i = 0; i < this.periodLabels.length; i++)
+           {
+             this.periodLabels[i].color = "light";
+           }
+           this.changeElementOnHover = false;
+         }
+         else if(this.changeElementOnHover == false)
+         {
+           // Make clicked element known, so this.setElementColorShade skips it
+           this.clickedElement = index;
+           console.log(this.clickedElement);
+
+           this.changeElementOnHover = true;
+         }
+       },
+       // Updates all aspects of elements including color and the element's period / group labels
+       updateElementAll: function(index) {
+         console.log("updateElementAll called");
+         // Change the label color on click, 'true', because pretending that that mouse is hovering over so that the element darkens
+         this.changeLabelColor(index, "true");
+         this.setAllElementsColor('');
+         //this.setElementColorShade(index, "supdark-")
        }
      }
    }

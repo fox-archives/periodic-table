@@ -16,7 +16,7 @@
 
 <script type="text/javascript">
   export default {
-    name: 'app2',
+    name: 'Navigation',
     data() {
       return {
 

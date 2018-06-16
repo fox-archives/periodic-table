@@ -1,7 +1,5 @@
 import './css/main.scss';
 
-import './js/blur.js';
-
 // VueJS
 import Vue from 'vue';
 // Assign Vue to window object in index.js; Vue() is now a global property of the window object

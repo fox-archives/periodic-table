@@ -1834,6 +1834,21 @@ footer > p, footer > a {
 .violet {
   background-color: #d0bfff; }
 
+.supdark-blue {
+  background-color: #4dabf7; }
+
+.supdark-red {
+  background-color: #ff8787; }
+
+.supdark-green {
+  background-color: #69db7c; }
+
+.supdark-orange {
+  background-color: #ffa94d; }
+
+.supdark-violet {
+  background-color: #9775fa; }
+
 .dark-blue {
   background-color: #74c0fc; }
 
