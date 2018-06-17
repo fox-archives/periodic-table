@@ -7,11 +7,16 @@ $transition-time: 0s;
 @import "./fonts.scss";
 @import "../assets/icons/themify-icons.css";
 
+$mainBackground: $oc-gray-0;
+$labelDark: $oc-gray-0;
+
 @import "./navigation.scss";
 @import "./footer.scss";
 @import "./options.scss";
 @import "./periodic-table.scss";
 @import "./generic-elements.scss";
+
+
 
 * {
   margin: 0px;

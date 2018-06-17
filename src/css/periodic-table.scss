@@ -16,7 +16,7 @@ $element-height: 40px;
 #grid-container {
   display: inline-flex;
   justify-content: center;
-  background-color: $oc-gray-1;
+  background-color: $mainBackground;
   margin-top: 20px;
   min-width: 400px;
 
@@ -31,7 +31,7 @@ $element-height: 40px;
 
 // ELEMENTS
 .element-outer {
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 2px 2px 2px 2px;
   box-shadow: 3px 3px 3px $oc-gray-3;
   transition: background-color $transition-time ease-in-out;

@@ -34,14 +34,14 @@
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[darkenPeriod(index, 'dark-'), lightenPeriods(index, 'light-')]" v-on:mouseleave="[darkenPeriod(index, ''), lightenPeriods(index, ''), resetElementToClick(index)]">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[darkenGroup(index, 'dark-'), lightenGroups(index, 'light-')]" v-on:mouseleave="[darkenGroup(index, ''), lightenGroups(index, ''), resetElementToClick(index)]">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
@@ -308,8 +308,8 @@
            }
          }
        },
-       darkenPeriod: function(index, prefix) {
-         var className = this.labelNoneToClass(index + 1, "period");
+       darkenElements: function(index, prefix, type) {
+         var className = this.labelNoneToClass(index + 1, type);
 
          var elements = document.getElementsByClassName(className);
          // For each element in the array, highlight it
@@ -321,59 +321,25 @@
            Vue.set(this.elementColors, element - 1, (prefix + defaultColor));
          }
        },
-       darkenGroup: function(index, prefix) {
-         var className = this.labelNoneToClass(index + 1, "group");
-
-         var elements = document.getElementsByClassName(className);
-         // For each element in the array, highlight it
-         for(var i = 0; i < elements.length; i++) {
-           // Get the atomicNumber of the element
-           var element = elements[i].firstChild.children[0].innerText;
-           var defaultColor = this.elementsDefaultColor[element - 1];
-
-           Vue.set(this.elementColors, element - 1, (prefix + defaultColor));
-         }
-       },
-       lightenPeriods: function(index, prefix) {
+       lightenElements: function(index, prefix, type, typeShort) {
          // className are the classes that need to be highlighted "p" stands for period, "g" stands for group
-         var className = this.labelNoneToClass(index + 1, "period");
+         var className = this.labelNoneToClass(index + 1, type);
+
+         // Get the length of the array to be used (depends on period / group)
+         if(type == "period")
+         {
+          var arrayType = this.periodLabels
+         }
+         else if(type == "group")
+         {
+           var arrayType = this.groupLabels
+         }
 
          var elementToChangeColor = [];
          // For every single period or group, check if the class we are darkening is the same as the one we want to lighten.
          // If not, then add that group of elements to the array
-         for(var i = 0; i <= this.periodLabels.length; i++) {
-           var AClassName = ("p-" + i);
-           var ithElements = [];
-           if(AClassName != className)
-           {
-             ithElements = document.getElementsByClassName(AClassName)
-           }
-           // When adding to the main array (elementToChangeColor), add the element atomicNumber
-           for(var j = 0; j < ithElements.length; j++) {
-             var temp = [];
-             // Adding all the atomicNumbers of nums that will lighten to an array
-             temp = ithElements[j].firstChild.children[0].innerText;
-             elementToChangeColor = elementToChangeColor.concat(temp);
-           }
-         }
-         // elementToChangeColor is final array containing all the atomicNumbers of elements that need to lighten
-         for(var i = 0; i < elementToChangeColor.length; i++) {
-           var element = elementToChangeColor[i];
-           var defaultColor = this.elementsDefaultColor[element - 1];
-
-           // For each element, prepend "light-" to property color. Since property is binded to class, a CSS tyle will update the new colour
-           Vue.set(this.elementColors, element - 1, (prefix + defaultColor));
-         }
-       },
-       lightenGroups: function(index, prefix) {
-         // className are the classes that need to be highlighted "p" stands for period, "g" stands for group
-         var className = this.labelNoneToClass(index + 1, "group");
-
-         var elementToChangeColor = [];
-         // For every single period or group, check if the class we are darkening is the same as the one we want to lighten.
-         // If not, then add that group of elements to the array
-         for(var i = 0; i <= this.groupLabels.length; i++) {
-           var AClassName = ("g-" + i);
+         for(var i = 0; i <= arrayType.length; i++) {
+           var AClassName = (typeShort + i);
            var ithElements = [];
            if(AClassName != className)
            {
@@ -450,6 +416,34 @@
            }
          }
        },
+       // type can either be "mouesOver" or "mouseLeave"
+       maintenanceBefore: function(index, type) {
+         if(type == "mouseOver") {
+           // Maintenance (making sure all other labels are not activated, before activating some)
+           this.clearLabelExcept(-1, -1);
+         }
+       },
+       // type can either be "mouesOver" or "mouseLeave"
+       maintenanceAfter: function(index, type) {
+         if(type == "mouseLeave") {
+           // By 'click' being active, mean that the user clicked on an element, and wants to display that element, even if mouse moves away from element
+           // If click is active, on mouse leave of label, show the previous element that was clicked on (because it got 'erased' on mouseover of label)
+           if(this.clickActive == true)
+           {
+             // Recall that this.clickedElementPeriod and this.clickedElementGroup are NOT indexes; they are actual values
+             // We don't want to change color when this.clickedElementPeriod / group is 0 that value is for groupless elements (lanth. and act. elements)
+             // Nor do we want to change color when this.clickedElementPeriod / group is -1, because that occurs when this.clickActive is false (I think this is already covered, but just a precaution)
+             if(this.clickedElementPeriod > 0) {
+               this.periodLabels[this.clickedElementPeriod - 1].color = "dark";
+             }
+             if(this.clickedElementGroup > 0) {
+               console.log(this.clickedElementGroup);
+               this.groupLabels[this.clickedElementGroup - 1].color = "dark";
+             }
+             this.elementColors[this.clickedElementIndex] = "dark-" + this.elementsDefaultColor[this.clickedElementIndex];
+           }
+         }
+       },
        clearLabelExcept: function(periodExclude, groupExclude) {
          // Clears all period / group labels, except for one period / group label
          for(var i = 0; i < this.periodLabels.length; i++) {
@@ -467,11 +461,13 @@
        clickElement: function(index) {
 
          // What to do if clicking for the first time, or clicking on a different element
+         // Save the index (element index, period index, and group index) of the clicked on element
+         // Will use these to show the clicked element after mouseout of labels
          if(this.clickedElementIndex == -1 || this.clickedElementIndex != index) {
            this.clickActive = true;
            this.clickedElementIndex = index;
-           this.clickedElementPeriod = this.elements[index].period;
-           this.clickedElementGroup = this.elements[index].group;
+           this.clickedElementPeriod = this.labelClassToNone( this.elements[index].period );
+           this.clickedElementGroup = this.labelClassToNone( this.elements[index].group );
 
            // Set clickActive temporarily to false, so we can actually changeLabelColor and updateElementInfoAndDesc etc.
            // Then change it back so it doesn't do it automatically (since user clicked, and wants to hold element info)
@@ -479,6 +475,8 @@
            this.changeLabelColor(index, "true");
            this.updateElementInfoAndDesc(index);
            this.clickActive = true;
+
+           // Sets colour of all elements in periodic table
            this.setAllElementsColor('');
 
 
@@ -490,23 +488,12 @@
            this.clickedElementPeriod = -1;
            this.clickedElementGroup = -1;
 
+           // Sets colour of all elements in periodic tablw
            this.setAllElementsColor('');
          }
        },
-       resetElementToClick: function(index) {
-         // Before doing any highlighting, make sure period / group labels clear
-         // Clear all group labels except for the currently highlighted one
-         this.clearLabelExcept(-1, -1);
-
-         // Highlight the saved element, as long as click is on
-         if(this.clickActive == true) {
-           console.log(this.clickedElementIndex);
-           console.log(this.clickedElementPeriod);
-           console.log(this.clickedElementGroup);
-         }
-       },
-       labelClassToNone: function(labelNum, type) {
-
+       labelClassToNone: function(labelNumber) {
+         return labelNumber.substring(2);
        },
        labelNoneToClass: function(labelNumber, type) {
          // className are the classes that need to be highlighted "p" stands for period, "g" stands for group
