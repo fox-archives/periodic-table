@@ -34,7 +34,7 @@ $element-height: 40px;
   border-radius: 4px;
   margin: 2px 2px 2px 2px;
   box-shadow: 3px 3px 3px $oc-gray-3;
-  transition: background-color $transition-time ease-in-out;
+  //transition: background-color $transition-time ease-in-out;
   overflow: hidden;
   user-select: none;
 }
@@ -42,7 +42,7 @@ $element-height: 40px;
 // Recall background-color found in generic-elements.scss
 .element-outer:hover {
   box-shadow: 5px 5px 5px $oc-gray-3;
-  transition: background-color $transition-time ease-in-out;
+  //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
@@ -129,12 +129,12 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   height: 100%;
   width: 75%;
   border-radius: $border-radius / 2;
-  transition: background-color $transition-time ease-in-out;
+  //transition: background-color $transition-time ease-in-out;
 }
 
 .label-period-inner:hover {
-  background-color: $oc-gray-3;
-  transition: background-color $transition-time ease-in-out;
+  background-color: $labelDark;
+  //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
@@ -155,12 +155,12 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   //padding-right: 7px;
   //padding-top: 5px;
   border-radius: $border-radius / 2;
-  transition: background-color $transition-time ease-in-out;
+  //transition: background-color $transition-time ease-in-out;
 }
 
 .label-group-inner:hover {
-  background-color: $oc-gray-3;
-  transition: background-color $transition-time ease-in-out;
+  background-color: $labelDark;
+  //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 

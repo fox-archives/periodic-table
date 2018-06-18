@@ -1,14 +1,14 @@
 $minimum-width: 1000px;
 $maximum-width: 1000px;
 $border-radius: 15px;
-$transition-time: 0s;
+$transition-time: 0.15s;
 
 @import "./open-color.scss";
 @import "./fonts.scss";
 @import "../assets/icons/themify-icons.css";
 
 $mainBackground: $oc-gray-0;
-$labelDark: $oc-gray-0;
+$labelDark: $oc-gray-2;
 
 @import "./navigation.scss";
 @import "./footer.scss";

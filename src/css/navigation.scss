@@ -7,71 +7,88 @@
 
 #nav-content {
   display: inline-flex;
-  justify-content: flex-start;
   box-sizing: content-box; // When calculating width of element, do not take into account of marigin-left
   margin-left: 0px;
   list-style-type: none;
   -webkit-user-select: none;
   user-select: none;  // No highlighting when trying to select
+  width: 100%;
 }
 
-// Each list element in nav bar
-#nav-content > li {
+#nav-right {
+  display: inline-flex;
+}
+
+// Each list element in nav bar (left and right)
+#nav-content li {
   display: flex;
   align-items: center;
   padding: 10px 20px 10px 20px;
 }
 
 // Each list element in nav bar hover
-#nav-content > li:hover {
+#nav-content li:hover {
   background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
 // Each list element in nav bar active
-#nav-content > li:active {
+#nav-content li:active {
   background-color: $oc-gray-4;
   transition: background-color $transition-time ease-in-out;
 }
 
-#nav-content > li > h2 {
+#nav-content li h2 {
   padding-left: 10px;
 }
 
-#nav-content > li > span {
+#nav-content li span {
   font-size: 18px;
 }
 
-@media (max-width: 970px) {
-  #nav-content > li {
+#nav-content li#menu-mobile {
+  display: none;
+}
+
+// When screen is small tablet, decrease option sizes
+@media (max-width: 1110px) {
+  // Make padding smaller
+  #nav-content li {
     padding: 10px 15px 10px 15px;
   }
-  #nav-content > li > h2 {
+
+  //Make text smaller
+  #nav-content li h2 {
     padding-left: 10px;
     font-size: 1em;
   }
 
-  #nav-content > li > span {
+  // Make icons smaller
+  #nav-content li span {
     font-size: 15px;
   }
 }
 
-@media (max-width: 815px) {
+// On really small size, make hamburger menu
+@media (max-width: 940px) {
   #nav-content {
+    justify-content: space-between;
+  }
+
+  // Hide elements that are not info, question, and search
+  #nav-content li#simple, #nav-content li#properties, #nav-content li#electrons, #nav-content li#orbitals, #nav-content li#explore, #nav-content li#quiz {
+    display: none;
+  }
+
+  // Show the hamburger menu as inline-flex (hidden for all other display sizes)
+  #nav-content li#menu-mobile {
     display: inline-flex;
-    //justify-content: flex-start; repeat
-    //flex-wrap: wrap;
-    flex-direction: column;
   }
+}
 
-  #nav-content > li {
-    align-items: center;
-    //padding: 10px 20px 10px 20px;
-    width: 100%;
-  }
-
-  #nav-content {
-    width: 100%;
+@media (max-width: 325px) {
+  #nav-content li#info, #nav-content li#question, #nav-content li#search {
+    display: none;
   }
 }

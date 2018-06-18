@@ -494,7 +494,7 @@
 
            // Sets colour of all elements in periodic tablw
            this.setAllElementsColor('');
-           this.setElementColorForce(index, "");
+           this.setElementColorForce(index, "dark-");
          }
        },
        labelClassToNone: function(labelNumber) {

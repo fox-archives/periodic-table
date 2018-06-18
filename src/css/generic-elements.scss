@@ -1,12 +1,12 @@
 // The group and period labels (.dark is appearance on hover)
 .light {
   background-color: $mainBackground;
-  transition: background-color $transition-time ease-in-out;
+  //transition: background-color $transition-time ease-in-out;
 }
 
 .dark {
-  background-color: $oc-gray-3;
-  transition: background-color $transition-time ease-in-out;
+  background-color: $labelDark;
+  //transition: background-color $transition-time ease-in-out;
 }
 
 // The text inside each element
