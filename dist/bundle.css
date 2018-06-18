@@ -1183,7 +1183,7 @@
 }
 */
 #nav-content-outer {
-  background-color: #f1f3f5;
+  background-color: #f8f9fa;
   overflow: auto; }
 
 #nav-content {
@@ -1202,12 +1202,12 @@
 
 #nav-content > li:hover {
   background-color: #dee2e6;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0s ease-in-out;
   cursor: pointer; }
 
 #nav-content > li:active {
   background-color: #ced4da;
-  transition: background-color 0.1s ease-in-out; }
+  transition: background-color 0s ease-in-out; }
 
 #nav-content > li > h2 {
   padding-left: 10px; }
@@ -1248,7 +1248,7 @@ footer > p, footer > a {
 
 #display-options {
   display: flex;
-  background-color: #f1f3f5;
+  background-color: #f8f9fa;
   height: 35px;
   margin-top: 10px; }
 
@@ -1267,7 +1267,7 @@ footer > p, footer > a {
 #grid-container {
   display: inline-flex;
   justify-content: center;
-  background-color: #f1f3f5;
+  background-color: #f8f9fa;
   margin-top: 20px;
   min-width: 400px; }
 
@@ -1278,16 +1278,16 @@ footer > p, footer > a {
   padding: 10px 10px 10px 10px; }
 
 .element-outer {
-  border-radius: 5px;
+  border-radius: 4px;
   margin: 2px 2px 2px 2px;
   box-shadow: 3px 3px 3px #dee2e6;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0s ease-in-out;
   overflow: hidden;
   user-select: none; }
 
 .element-outer:hover {
   box-shadow: 5px 5px 5px #dee2e6;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0s ease-in-out;
   cursor: pointer; }
 
 .element-inner {
@@ -1302,14 +1302,14 @@ footer > p, footer > a {
   grid-column-end: 14;
   grid-row-start: 2;
   grid-row-end: 7;
-  transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0s ease-in-out;
   z-index: 1; }
 
 #element-overview-inner {
   justify-self: center;
   width: 85%;
   margin: 7.5% 7.5% 7.5% 7.5%;
-  transition: box-shadow 0.1s ease-in-out; }
+  transition: box-shadow 0s ease-in-out; }
 
 #element-desc {
   box-shadow: 4px 4px 4px #e9ecef;
@@ -1323,7 +1323,7 @@ footer > p, footer > a {
   justify-self: center;
   width: 95%;
   margin: 2.5% 2.5% 2.5% 2.5%;
-  transition: box-shadow 0.1s ease-in-out; }
+  transition: box-shadow 0s ease-in-out; }
 
 #element-desc-inner > h5 {
   font-family: latolight;
@@ -1337,7 +1337,7 @@ footer > p, footer > a {
   margin-bottom: 15px; }
 
 #element-overview, #element-desc {
-  transition: background-color 0.1s ease-in-out; }
+  transition: background-color 0s ease-in-out; }
 
 .label-period-outer, .label-group-outer {
   z-index: 0;
@@ -1347,11 +1347,11 @@ footer > p, footer > a {
   height: 100%;
   width: 75%;
   border-radius: 7.5px;
-  transition: background-color 0.1s ease-in-out; }
+  transition: background-color 0s ease-in-out; }
 
 .label-period-inner:hover {
   background-color: #dee2e6;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0s ease-in-out;
   cursor: pointer; }
 
 .label-period-inner > .label-text {
@@ -1364,11 +1364,11 @@ footer > p, footer > a {
   height: 70%;
   width: 100%;
   border-radius: 7.5px;
-  transition: background-color 0.1s ease-in-out; }
+  transition: background-color 0s ease-in-out; }
 
 .label-group-inner:hover {
   background-color: #dee2e6;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0s ease-in-out;
   cursor: pointer; }
 
 .label-group-inner > .label-text {
@@ -1805,34 +1805,19 @@ footer > p, footer > a {
   grid-column-end: 38; }
 
 .light {
-  background-color: #f1f3f5;
-  transition: background-color 0.1s ease-in-out; }
+  background-color: #f8f9fa;
+  transition: background-color 0s ease-in-out; }
 
 .dark {
   background-color: #dee2e6;
-  transition: background-color 0.1s ease-in-out; }
+  transition: background-color 0s ease-in-out; }
 
 .atomicMass {
   position: relative;
   bottom: -3px; }
 
 .atomicNumber, .abbreviation, .name, .atomicMass {
-  transition: color 0.1s ease-in-out; }
-
-.blue {
-  background-color: #a5d8ff; }
-
-.red {
-  background-color: #ffc9c9; }
-
-.green {
-  background-color: #b2f2bb; }
-
-.orange {
-  background-color: #ffd8a8; }
-
-.violet {
-  background-color: #d0bfff; }
+  transition: color 0s ease-in-out; }
 
 .supdark-blue {
   background-color: #4dabf7; }
@@ -1863,6 +1848,21 @@ footer > p, footer > a {
 
 .dark-violet {
   background-color: #b197fc; }
+
+.blue {
+  background-color: #a5d8ff; }
+
+.red {
+  background-color: #ffc9c9; }
+
+.green {
+  background-color: #b2f2bb; }
+
+.orange {
+  background-color: #ffd8a8; }
+
+.violet {
+  background-color: #d0bfff; }
 
 .light-blue {
   background-color: #d0ebff; }
