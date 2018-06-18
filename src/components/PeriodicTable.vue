@@ -22,7 +22,7 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColorShade(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColorShade(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id">
+        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id">
           <div v-cloak class="element-inner">
             <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
             <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
@@ -288,7 +288,7 @@
        },
 
        // Changes shade of hovered element (lighten or darken, or default)
-       setElementColorShade: function(index, shade) {
+       setElementColor: function(index, shade) {
        if(this.clickedElementIndex != index) {
            // Gets current default color
            var defaultColor = this.elementsDefaultColor[index];
@@ -307,6 +307,14 @@
              this.elementColors[i] = shade + current;
            }
          }
+       },
+       // Similar to setElementColor, but does it by force (sets color even if ths.clickedElementIndex if the same as the index)
+       setElementColorForce: function(index, shade) {
+         // Gets current default color
+         var defaultColor = this.elementsDefaultColor[index];
+
+         // Sets current default color
+         Vue.set(this.elementColors, index, (shade + defaultColor));
        },
        darkenElements: function(index, prefix, type) {
          var className = this.labelNoneToClass(index + 1, type);
@@ -371,8 +379,8 @@
          var groupFull = this.elements[index].group;
 
          // Concatonate period or group values to a number (ex. 11, 5)
-         var period = periodFull.substring(2);
-         var group = groupFull.substring(2);
+         var period = this.labelClassToNone(periodFull);
+         var group = this.labelClassToNone(groupFull);
 
          if(this.clickActive == false) {
            // When changing a label, make sure all others are turned off first
@@ -437,10 +445,9 @@
                this.periodLabels[this.clickedElementPeriod - 1].color = "dark";
              }
              if(this.clickedElementGroup > 0) {
-               console.log(this.clickedElementGroup);
                this.groupLabels[this.clickedElementGroup - 1].color = "dark";
              }
-             this.elementColors[this.clickedElementIndex] = "dark-" + this.elementsDefaultColor[this.clickedElementIndex];
+             this.elementColors[this.clickedElementIndex] = "supdark-" + this.elementsDefaultColor[this.clickedElementIndex];
            }
          }
        },
@@ -459,10 +466,8 @@
        },
        // When element is clicked, darken it
        clickElement: function(index) {
-
          // What to do if clicking for the first time, or clicking on a different element
          // Save the index (element index, period index, and group index) of the clicked on element
-         // Will use these to show the clicked element after mouseout of labels
          if(this.clickedElementIndex == -1 || this.clickedElementIndex != index) {
            this.clickActive = true;
            this.clickedElementIndex = index;
@@ -470,7 +475,7 @@
            this.clickedElementGroup = this.labelClassToNone( this.elements[index].group );
 
            // Set clickActive temporarily to false, so we can actually changeLabelColor and updateElementInfoAndDesc etc.
-           // Then change it back so it doesn't do it automatically (since user clicked, and wants to hold element info)
+           // Then change it back so it doesn't update element info automatically (since user clicked, and we want to not change element info)
            this.clickActive = false;
            this.changeLabelColor(index, "true");
            this.updateElementInfoAndDesc(index);
@@ -478,8 +483,7 @@
 
            // Sets colour of all elements in periodic table
            this.setAllElementsColor('');
-
-
+           this.setElementColorForce(index, "supdark-");
          }
          // What to do if clicking on the same element twice (cancels elementHold)
          else if(this.clickedElementIndex == index) {
@@ -490,6 +494,7 @@
 
            // Sets colour of all elements in periodic tablw
            this.setAllElementsColor('');
+           this.setElementColorForce(index, "");
          }
        },
        labelClassToNone: function(labelNumber) {
