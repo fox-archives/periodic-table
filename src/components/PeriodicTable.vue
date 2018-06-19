@@ -34,14 +34,14 @@
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: periodLabels[index].display, text:periodLabels[index].name})">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: groupLabels[index].display, text:groupLabels[index].name})">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
@@ -184,34 +184,34 @@
          ],
          periodLabels: [
            // Labels for each period element
-           { display: 1,   column: "cc-1",   row: "rr-2",  color: "light" },
-           { display: 2,   column: "cc-1",   row: "rr-4",  color: "light" },
-           { display: 3,   column: "cc-1",   row: "rr-6",  color: "light" },
-           { display: 4,   column: "cc-1",   row: "rr-8",  color: "light" },
-           { display: 5,   column: "cc-1",   row: "rr-10", color: "light" },
-           { display: 6,   column: "cc-1",   row: "rr-12", color: "light" },
-           { display: 7,   column: "cc-1",   row: "rr-14", color: "light" }
+           { display: 1,   column: "cc-1",   row: "rr-2",  color: "light", name: "Period 1" },
+           { display: 2,   column: "cc-1",   row: "rr-4",  color: "light", name: "Period 2" },
+           { display: 3,   column: "cc-1",   row: "rr-6",  color: "light", name: "Period 3" },
+           { display: 4,   column: "cc-1",   row: "rr-8",  color: "light", name: "Period 4" },
+           { display: 5,   column: "cc-1",   row: "rr-10", color: "light", name: "Period 5" },
+           { display: 6,   column: "cc-1",   row: "rr-12", color: "light", name: "Period 6" },
+           { display: 7,   column: "cc-1",   row: "rr-14", color: "light", name: "Period 7" }
          ],
          groupLabels: [
            // Labels for each group element
-           { display: " 1",   column: "cc-2",   row: "rr-1", color: "light" },
-           { display: " 2",   column: "cc-4",   row: "rr-1", color: "light" },
-           { display: " 3",   column: "cc-6",   row: "rr-1", color: "light" },
-           { display: " 4",   column: "cc-8",   row: "rr-1", color: "light" },
-           { display: " 5",   column: "cc-10",  row: "rr-1", color: "light" },
-           { display: " 6",   column: "cc-12",  row: "rr-1", color: "light" },
-           { display: " 7",   column: "cc-14",  row: "rr-1", color: "light" },
-           { display: " 8",   column: "cc-16",  row: "rr-1", color: "light" },
-           { display: " 9",   column: "cc-18",  row: "rr-1", color: "light" },
-           { display: "10",   column: "cc-20",  row: "rr-1", color: "light" },
-           { display: "11",   column: "cc-22",  row: "rr-1", color: "light" },
-           { display: "12",   column: "cc-24",  row: "rr-1", color: "light" },
-           { display: "13",   column: "cc-26",  row: "rr-1", color: "light" },
-           { display: "14",   column: "cc-28",  row: "rr-1", color: "light" },
-           { display: "15",   column: "cc-30",  row: "rr-1", color: "light" },
-           { display: "16",   column: "cc-32",  row: "rr-1", color: "light" },
-           { display: "17",   column: "cc-34",  row: "rr-1", color: "light" },
-           { display: "18",   column: "cc-36",  row: "rr-1", color: "light" }
+           { display: 1,    column: "cc-2",   row: "rr-1", color: "light", name: "Alkali Metals" },
+           { display: 2,    column: "cc-4",   row: "rr-1", color: "light", name: "Alkaline Earth Metals" },
+           { display: 3,    column: "cc-6",   row: "rr-1", color: "light", name: "Scandium Family" },
+           { display: 4,    column: "cc-8",   row: "rr-1", color: "light", name: "Titanium Family" },
+           { display: 5,    column: "cc-10",  row: "rr-1", color: "light", name: "Vanadium Family" },
+           { display: 6,    column: "cc-12",  row: "rr-1", color: "light", name: "Chromium Family" },
+           { display: 7,    column: "cc-14",  row: "rr-1", color: "light", name: "Manganese Family" },
+           { display: 8,    column: "cc-16",  row: "rr-1", color: "light", name: "Iron Family" },
+           { display: 9,    column: "cc-18",  row: "rr-1", color: "light", name: "Cobalt Family" },
+           { display: 10,   column: "cc-20",  row: "rr-1", color: "light", name: "Nickel Family" },
+           { display: 11,   column: "cc-22",  row: "rr-1", color: "light", name: "Copper Family" },
+           { display: 12,   column: "cc-24",  row: "rr-1", color: "light", name: "Zinc Family" },
+           { display: 13,   column: "cc-26",  row: "rr-1", color: "light", name: "Boron Family" },
+           { display: 14,   column: "cc-28",  row: "rr-1", color: "light", name: "Carbon Family" },
+           { display: 15,   column: "cc-30",  row: "rr-1", color: "light", name: "Pnictogens" },
+           { display: 16,   column: "cc-32",  row: "rr-1", color: "light", name: "Chalcogens" },
+           { display: 17,   column: "cc-34",  row: "rr-1", color: "light", name: "Halogens" },
+           { display: 18,   column: "cc-36",  row: "rr-1", color: "light", name: "Noble Gases" }
          ],
          // These elements are the defaults. Should only change when  user clicks on a different tab like "orbitals", "properties", etc.
          elementsDefaultColor: [

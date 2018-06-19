@@ -22,6 +22,7 @@
   display: inline-flex;
   flex-direction: column;
   overflow: auto;
+  width: 100%;
   -webkit-user-select: none;
   user-select: none;  // No highlighting when trying to select
 }
@@ -31,6 +32,7 @@
   display: flex;
   align-items: center;
   padding: 10px 17px 10px 17px;
+  border-radius: 3px;
 }
 
 #nav-content li:hover, #nav-right-mobile li:hover {

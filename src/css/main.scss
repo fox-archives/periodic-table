@@ -91,3 +91,21 @@ h5.element-d-discovery-date, p.element-discovery-date, h5.element-d-discoverer, 
   -webkit-user-select: auto;
   user-select: auto;  // Highlights when trying to select
 }
+
+// BLUR EFFECT
+// Carefull, if too many elements have these tags, website could lag
+.no-blur {
+  transition: filter 0.5s;
+}
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+    transition: filter 0.5s;
+}
+.blur-large {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 0.5s;
+}
