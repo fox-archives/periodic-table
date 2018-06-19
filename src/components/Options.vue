@@ -1,6 +1,6 @@
 <template>
   <aside id="display-options">
-    <ul>
+    <ul id="display-options-inner">
       <li>
         <p class="option-text">Theme</p>
         <vs-select style="width: 70px;" class="option-theme" label="themes" v-model="theme" v-bind:options="themes"></vs-select>
@@ -10,7 +10,6 @@
         <vs-select style="width: 110px;" class="option-theme" label="theme" v-model="informationLocation" v-bind:options="informationLocations"></vs-select>
       </li>
     </ul>
-
   </aside>
 </template>
 
@@ -31,7 +30,6 @@
           { text: 'Intrusive', value: 2 },
           { text: 'Excluded', value: 3 }
         ],
-        popInfo: false
       }
     }
   }

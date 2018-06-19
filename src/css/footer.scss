@@ -10,6 +10,30 @@ footer {
 footer > p, footer > a {
   font-family: robotoregular;
   color: $oc-gray-9;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p#name2, p#name3 {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  p#name1 {
+    display: none;
+  }
+
+  p#name2 {
+    display: inline;
+  }
+}
+
+@media (max-width: 325px) {
+  p#name1, p#name2 {
+    display: none;
+  }
+
+  p#name3 {
+    display: inline;
+  }
 }

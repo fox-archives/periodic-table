@@ -11,7 +11,6 @@ import 'vuesax/dist/vuesax.css' // Gather VueSax styles
 Vue.use(Vuesax)
 
 import Navigation from './components/Navigation.vue';
-import Options from './components/Options.vue';
 import PeriodicTable from './components/PeriodicTable.vue';
 import Footer from './components/Footer.vue';
 
@@ -19,10 +18,6 @@ import Footer from './components/Footer.vue';
 new Vue({
   render: k => k(Navigation)
 }).$mount('#navigation-el')
-
-new Vue({
-  render: j => j(Options)
-}).$mount('#options-el')
 
 new Vue({
   // Render is method of vue instance, means replace part you are slecting the dom with, with some other code

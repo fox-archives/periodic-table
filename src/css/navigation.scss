@@ -3,6 +3,7 @@
 
   // If the navigation doesn't fit in the browser window, make sure user can at least scroll through all of the options
   overflow: auto;
+  width: 100%;
 }
 
 #nav-content {
@@ -33,14 +34,14 @@
 }
 
 #nav-content li:hover, #nav-right-mobile li:hover {
-  background-color: $oc-gray-3;
+  background-color: $oc-gray-2;
   transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
 // Each list element in nav bar active
 #nav-content li:active, #nav-right-mobile li:active {
-  background-color: $oc-gray-4;
+  background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
 }
 
@@ -92,8 +93,8 @@
   }
 }
 
-@media (max-width: 325px) {
-  #nav-content li#info, #nav-content li#question, #nav-content li#search {
+@media (max-width: 300px) {
+  #nav-content li#info, #nav-content li#settings, #nav-content li#search {
     display: none;
   }
 }

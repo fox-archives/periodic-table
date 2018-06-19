@@ -77,12 +77,13 @@ a:clicked {
 }
 
 // Shadow of the navigation bar
-nav, #display-options, #grid-container {
-  box-shadow: 3px 3px 5px $oc-gray-3;
+nav, #grid-container {
+  box-shadow: 2px 2px 2px $oc-gray-2;
 }
 
 .material-icons {
-  color: $oc-gray-2;
+  // Turning this on makes the 'x' mark on the vueSax popup grey (like it should)
+  //color: $oc-gray-2;
 }
 
 // Only highlight a select few elements

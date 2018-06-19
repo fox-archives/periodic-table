@@ -1,29 +1,22 @@
 #display-options {
-  display: flex;
-  background-color: $mainBackground;
-  height: 35px;
-  margin-top: 10px;
 }
 
 #display-options ul {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   height: 100%;
 }
 
 #display-options li {
   display: flex;
-  align-items: center;
-  padding: 0px 10px 0px 10px;
-}
-
-#display-options li p {
-  padding-right: 8px;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 // Descriptions of each option
 p.option-text {
   font-family: robotolight;
+  padding-bottom: 5px;
 }
 
 div.option-theme {
