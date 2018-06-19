@@ -8,7 +8,12 @@ window.Vue = Vue;
 // VueSax
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' // Gather VueSax styles
-Vue.use(Vuesax)
+Vue.use(Vuesax, {
+  theme: {
+    colors: {
+    }
+  }
+})
 
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';

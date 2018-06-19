@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "open-color": "^1.6.3",
     "sass": "^1.3.2",
     "vue": "^2.5.16",
     "vuesax": "^3.1.7"

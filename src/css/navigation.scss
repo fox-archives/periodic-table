@@ -100,3 +100,40 @@
     display: none;
   }
 }
+
+// POPUP MENUS AND OLD OPTIONS
+
+// Format menus of options
+.display-options {
+
+}
+
+.display-options ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.display-options li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+// Descriptions of each option
+.display-options li p {
+  font-family: robotolight;
+  padding-bottom: 5px;
+}
+
+div.option-theme {
+  font-family: robotoregular;
+}
+
+.display-references ul {
+  list-style-type: none;
+}
+
+.display-references li {
+  padding-bottom: 10px;
+}

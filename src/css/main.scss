@@ -12,7 +12,6 @@ $labelDark: $oc-gray-2;
 
 @import "./navigation.scss";
 @import "./footer.scss";
-@import "./options.scss";
 @import "./periodic-table.scss";
 @import "./generic-elements.scss";
 
@@ -95,17 +94,17 @@ h5.element-d-discovery-date, p.element-discovery-date, h5.element-d-discoverer, 
 // BLUR EFFECT
 // Carefull, if too many elements have these tags, website could lag
 .no-blur {
-  transition: filter 0.5s;
+  transition: filter 0.2s;
 }
 .blur {
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    filter: blur(2px);
-    transition: filter 0.5s;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    transition: filter 0.2s;
 }
 .blur-large {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    filter: blur(5px);
-    transition: filter 0.5s;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    filter: blur(20px);
+    transition: filter 0.2s;
 }
