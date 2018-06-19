@@ -24,7 +24,8 @@ $labelDark: $oc-gray-2;
   color: $oc-gray-9;
   box-sizing: border-box;
   outline: 0px;
-
+  -webkit-user-select: none;
+  user-select: none;  // No highlighting when trying to select
 }
 
 h1 {
@@ -78,4 +79,14 @@ a:clicked {
 // Shadow of the navigation bar
 nav, #display-options, #grid-container {
   box-shadow: 3px 3px 5px $oc-gray-3;
+}
+
+.material-icons {
+  color: $oc-gray-2;
+}
+
+// Only highlight a select few elements
+h5.element-d-discovery-date, p.element-discovery-date, h5.element-d-discoverer, p.element-discoverer {
+  -webkit-user-select: auto;
+  user-select: auto;  // Highlights when trying to select
 }

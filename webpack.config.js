@@ -44,23 +44,24 @@ module.exports = {
          }*/
        },
        {
-         test: /\.(sa|sc|c)ss$/,
+         test: /\.(sa|sc)ss$/,
          exclude: /node_modules/,
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader',
-           'sass-loader' // Loads a sass / scss file and compiles it t CSS
+           'sass-loader' // Loads a sass / scss file and compiles it to CSS
          ]
        },
-       /*{
+       {
          test: /\.css$/,
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader'
          ]
-       },*/
+       },
        // This gets all of the files and puts them in a fonts folder into the dist
        // (fine tune this later)
+       /*
        {
          test: /\.(png|woff|woff2|eot|ttf|svg)$/,
          exclude: /node_modules/,
@@ -69,7 +70,34 @@ module.exports = {
            name: '[name].[ext]',
            outputPath: 'assets'
          }
+       },*/
+       {
+         test: /\.(png|svg)$/,
+         exclude: /node_modules/,
+         loader: 'file-loader',
+         options: {
+           name: '[name].[ext]',
+           outputPath: 'assets'
+         }
+       },
+       {
+          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+          loader: "url-loader?limit=10000&mimetype=application/font-woff"
+       },
+       {
+         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+         loader: "file-loader",
+         options: {
+           name: '[name].[ext]',
+           outputPath: 'assets'
+         }
        }
+       /*,
+       // Loader that transforms files into base64 URIs
+       {
+         test: /\.(woff|woff2|eot|ttf|svg)$/,
+         loader: 'url-loader?limit=100000'
+       }*/
       ]
    },
    resolve: {

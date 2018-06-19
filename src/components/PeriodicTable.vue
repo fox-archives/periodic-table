@@ -15,9 +15,9 @@
         <section id="element-desc" v-bind:class="hoverColor" v-cloak>
           <div id="element-desc-inner">
             <h5 id="element-d-discovery-date">Discovery Date</h5>
-            <p>{{ hoverDiscoveryDate }}</p>
+            <p id="element-discovery-date">{{ hoverDiscoveryDate }}</p>
             <h5 id="element-d-discoverer">Discovered By </h5>
-            <p>{{ hoverDiscoveredBy }}</p>
+            <p id="element-discoverer">{{ hoverDiscoveredBy }}</p>
           </div>
         </section>
 

@@ -10,8 +10,6 @@
   box-sizing: content-box; // When calculating width of element, do not take into account of marigin-left
   margin-left: 0px;
   list-style-type: none;
-  -webkit-user-select: none;
-  user-select: none;  // No highlighting when trying to select
   width: 100%;
 }
 
@@ -19,31 +17,38 @@
   display: inline-flex;
 }
 
-// Each list element in nav bar (left and right)
-#nav-content li {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px 10px 20px;
+#nav-right-mobile {
+  display: inline-flex;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-user-select: none;
+  user-select: none;  // No highlighting when trying to select
 }
 
-// Each list element in nav bar hover
-#nav-content li:hover {
+// Each list element in nav bar (left and right)
+#nav-content li, #nav-right-mobile li {
+  display: flex;
+  align-items: center;
+  padding: 10px 17px 10px 17px;
+}
+
+#nav-content li:hover, #nav-right-mobile li:hover {
   background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
 // Each list element in nav bar active
-#nav-content li:active {
+#nav-content li:active, #nav-right-mobile li:active {
   background-color: $oc-gray-4;
   transition: background-color $transition-time ease-in-out;
 }
 
-#nav-content li h2 {
-  padding-left: 10px;
+#nav-content li h2, #nav-right-mobile li h2 {
+  padding-left: 13px;
 }
 
-#nav-content li span {
+#nav-content li span, #nav-right-mobile li span {
   font-size: 18px;
 }
 
@@ -52,7 +57,7 @@
 }
 
 // When screen is small tablet, decrease option sizes
-@media (max-width: 1110px) {
+@media (max-width: 1240px) {
   // Make padding smaller
   #nav-content li {
     padding: 10px 15px 10px 15px;
@@ -71,13 +76,13 @@
 }
 
 // On really small size, make hamburger menu
-@media (max-width: 940px) {
+@media (max-width: 1045px) {
   #nav-content {
     justify-content: space-between;
   }
 
   // Hide elements that are not info, question, and search
-  #nav-content li#simple, #nav-content li#properties, #nav-content li#electrons, #nav-content li#orbitals, #nav-content li#explore, #nav-content li#quiz {
+  #nav-content li#simple, #nav-content li#properties, #nav-content li#electrons, #nav-content li#orbitals, #nav-content li#isotopes, #nav-content li#explore, #nav-content li#quiz {
     display: none;
   }
 
