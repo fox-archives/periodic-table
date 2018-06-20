@@ -1,34 +1,36 @@
 <template>
-  <div id="grid-container-outer">
+  <div id="grid-container-outer" class="has-shadow">
     <div id="grid-container">
       <main id="grid">
+
         <!-- ELEMENT OVERVIEW PANNEL -->
         <section id="element-overview" v-bind:class="hoverColor" v-cloak>
             <div id="element-overview-inner">
-              <h4 id="element-ov-name">{{ hoverAtomicNumber }}</h4>
-              <h3 id="element-ov-abbreviation">{{ hoverAbbreviation }}</h3>
-              <h4 id="element-ov-name">{{ hoverName }}</h4>
-              <h4 id="element-ov-mass">{{ hoverAtomicMass }}</h4>
+              <p id="element-ov-name" class="element-ov-secondary-info">{{ hoverAtomicNumber }}</p>
+              <p id="element-ov-abbreviation" class="element-ov-primary-info">{{ hoverAbbreviation }}</p>
+              <p id="element-ov-name" class="element-ov-secondary-info">{{ hoverName }}</p>
+              <p id="element-ov-mass" class="element-ov-secondary-info">{{ hoverAtomicMass }}</p>
             </div>
         </section>
+
         <!-- ELEMENT DESCRIPTIONS -->
         <section id="element-desc" v-bind:class="hoverColor" v-cloak>
           <div id="element-desc-inner">
-            <h5 id="element-d-discovery-date">Discovery Date</h5>
-            <p id="element-discovery-date">{{ hoverDiscoveryDate }}</p>
-            <h5 id="element-d-discoverer">Discovered By </h5>
-            <p id="element-discoverer">{{ hoverDiscoveredBy }}</p>
+            <p id="element-d-discovery-date" class="element-d-primary-info">Discovery Date</p>
+            <p id="element-discovery-date" class="element-d-secondary-info">{{ hoverDiscoveryDate }}</p>
+            <p id="element-d-discoverer" class="element-d-primary-info">Discovered By </p>
+            <p id="element-discoverer" class="element-d-secondary-info">{{ hoverDiscoveredBy }}</p>
           </div>
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
         <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id">
           <div v-cloak class="element-inner">
-            <!--<h6>{{ index + 1 }}</h6> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-            <h6 class="atomicNumber" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</h6>
-            <h5 class="abbreviation" ref="elementAbbreviationDOM">{{ element.abbreviation }}</h5>
-            <h6 class="name" ref="elementNameDOM">{{ element.name }}</h6>
-            <h6 class="atomicMass" ref="elementAtomicMassDOM">{{ element.atomicMass }}</h6>
+            <!--<p>{{ index + 1 }}</p> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
+            <p class="element-atomicNumber element-secondary-info" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</p>
+            <p class="element-abbreviation element-primary-info" ref="elementAbbreviationDOM">{{ element.abbreviation }}</p>
+            <p class="element-name element-secondary-info" ref="elementNameDOM">{{ element.name }}</p>
+            <p class="element-atomicMass element-secondary-info" ref="elementAtomicMassDOM">{{ element.atomicMass }}</p>
           </div>
         </div>
 

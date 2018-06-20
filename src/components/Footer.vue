@@ -12,10 +12,5 @@
 <script type="text/javascript">
   export default {
     name: 'Footer',
-    data() {
-      return {
-        
-      }
-    }
   }
 </script>

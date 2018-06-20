@@ -1,25 +1,30 @@
-// Main footer
-footer {
+// Main footer (there is only one footer)
+#footer {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
   padding-top: 12px;
+  user-select: none;
 }
 
 // Text in footer
-footer > p, footer > a {
+#footer > p, #footer > a {
+  // Font Family is roboto because it is not exactly content, but a title sort of
   font-family: robotoregular;
+  font-size: 1em;
   color: $oc-gray-9;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+// Show large copyright notice (name1) on regular browser length
 p#name2, p#name3 {
   display: none;
 }
 
-@media (max-width: 400px) {
-  p#name1 {
+// Show medium copyright notice (name 2) on browser starting from 410px
+@media (max-width: 410px) {
+  p#name1, p#name3 {
     display: none;
   }
 
@@ -28,7 +33,8 @@ p#name2, p#name3 {
   }
 }
 
-@media (max-width: 325px) {
+// Show small copyright notice (name 3) on browser starting from 340px
+@media (max-width: 340px) {
   p#name1, p#name2 {
     display: none;
   }

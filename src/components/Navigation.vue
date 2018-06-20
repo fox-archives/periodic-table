@@ -1,7 +1,7 @@
 <template id="">
   <div>
     <!-- NAV BAR WITH BUTTONS -->
-    <nav id="nav-content-outer">
+    <nav id="nav-content-outer" class="has-shadow">
       <ul id="nav-content">
         <ul id="nav-left">
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
@@ -37,24 +37,24 @@
 
     <!-- POPUP FOR INFO -->
     <vs-popup vs-title="Information" v-bind:vs-active="infoPopupActive" v-on:vs-cancel="infoPopup('off')">
-      <aside class="display-references">
+      <aside class="nav-info">
         <h2>Tools and Websites Used to Make This Website</h2>
         <br>
         <ul>
           <li>
-            Logic from<a href="https://vuejs.org/">VueJS</a>
+            <p>Logic from <a href="https://vuejs.org/">VueJS</a></p>
           </li>
           <li>
-            U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a>
+            <p>U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a></p>
           </li>
           <li>
-            Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a>
+            <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
           </li>
           <li>
-            Icons from <a href="https://themify.me/themify-icons">Themify</a>
+            <p>Icons from <a href="https://themify.me/themify-icons">Themify</a></p>
           </li>
           <li>
-            Colors from  <a href="https://yeun.github.io/open-color/">Open Color</a>
+            <p>Colors from  <a href="https://yeun.github.io/open-color/">Open Color</a></p>
           </li>
 
         </ul>

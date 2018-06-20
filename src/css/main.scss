@@ -16,17 +16,15 @@ $labelDark: $oc-gray-2;
 @import "./generic-elements.scss";
 
 
-
 * {
   margin: 0px;
   padding: 0px;
   color: $oc-gray-9;
   box-sizing: border-box;
   outline: 0px;
-  -webkit-user-select: none;
-  user-select: none;  // No highlighting when trying to select
 }
 
+// ONLY FOR USE IN NAVIGATION / TITLE
 h1 {
   font-family: robotoregular;
   font-size: 3em;
@@ -38,57 +36,29 @@ h2 {
   font-size: 1.15em;
 }
 
-// h3 and h4 used for the element overview pannel
-h3 {
-  font-family: latoregular;
-  font-size: 2.5em;
-}
-
-h4 {
+// GENERAL TEXT FORMATING
+p {
   font-family: latolight;
-  font-size: 1.75em;
 }
 
-// h5 and h6 used for individual small elements
-// h5 is element.abbreviation
-h5 {
-  font-family: latoregular;
-  font-size: 1.4em;
-}
-
-// h6 is element.atomicNumber, element.name, and element.atomicMass
-h6 {
+a {
   font-family: latolight;
-  font-size: 0.8em;
-}
-
-p, a {
-  font-family: latolight;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-color: $oc-gray-2;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: $oc-gray-9;
 }
 
 a:clicked {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-// Shadow of the navigation bar
-nav, #grid-container {
+// ELEMENTS WITH SHADOW
+// Currently the navigation and elements bar
+.has-shadow {
   box-shadow: 2px 2px 2px $oc-gray-2;
-}
-
-.material-icons {
-  // Turning this on makes the 'x' mark on the vueSax popup grey (like it should)
-  //color: $oc-gray-2;
-}
-
-// Only highlight a select few elements
-h5.element-d-discovery-date, p.element-discovery-date, h5.element-d-discoverer, p.element-discoverer {
-  -webkit-user-select: auto;
-  user-select: auto;  // Highlights when trying to select
 }
 
 // BLUR EFFECT

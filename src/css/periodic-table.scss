@@ -6,20 +6,19 @@ $total-rows: (7 * 2) + 5;
 $element-width: 100% / $total-columns;
 $element-height: 40px;
 
+// MAIN GRID STRUCTURE
 #grid-container-outer {
   display: flex;
   justify-content: center;
   min-width: 400px;
 }
 
-// Div outisde of the grid
 #grid-container {
   display: inline-flex;
   justify-content: center;
   background-color: $mainBackground;
   margin-top: 20px;
-  //min-width: 400px;
-
+  //min-width: 400px
 }
 
 #grid {
@@ -29,7 +28,8 @@ $element-height: 40px;
   padding: 10px 10px 10px 10px;
 }
 
-// ELEMENTS
+
+// DUPLICATED ELEMENTS FROM PERIODIC TABLE
 .element-outer {
   border-radius: 4px;
   margin: 2px 2px 2px 2px;
@@ -51,7 +51,25 @@ $element-height: 40px;
   margin: 2px 2px 2px 4px;
 }
 
-// Large element with larger information about each element
+// Text inside of DUPLICATED ELEMENTS
+.element-primary-info {
+  font-family: latoregular;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.element-secondary-info {
+  font-family: latolight;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+// ELEMENT DESCRIPTIONS AND ELEMENT OVERVIEW PANNEL
+#element-overview, #element-desc {
+  transition: background-color $transition-time ease-in-out;
+}
+
+// ELEMENT OVERVIEW PANNEL
 #element-overview {
   box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
@@ -63,21 +81,35 @@ $element-height: 40px;
   transition: box-shadow $transition-time ease-in-out;
   z-index: 1;
 
+  // Sets how wide the inner element should be, relative to the element outside of it
+  // Sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
+  $element-view-inner-width: 85%;
+  $element-view-margin: (100% - $element-view-inner-width) / 2;
+
+  #element-overview-inner {
+    justify-self: center;
+    width: $element-view-inner-width;
+    margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
+    transition: box-shadow $transition-time ease-in-out;
+  }
+
+  // Text inside of ELEMENT OVERVIEW
+  .element-ov-primary-info {
+    font-family: latoregular;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+
+  .element-ov-secondary-info {
+    font-family: latolight;
+    font-weight: bold;
+    font-size: 1.75em;
+  }
+
 }
 
-// Sets how wide the inner element should be, relative to the element outside of it
-// Sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
-$element-view-inner-width: 85%;
-$element-view-margin: (100% - $element-view-inner-width) / 2;
 
-#element-overview-inner {
-  justify-self: center;
-  width: $element-view-inner-width;
-  margin: $element-view-margin $element-view-margin $element-view-margin $element-view-margin;
-  transition: box-shadow $transition-time ease-in-out;
-}
-
-// Description with more info of the element (right of #element-overview)
+// ELEMENT DESCRIPTIONS
 #element-desc {
   box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
@@ -100,36 +132,28 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   transition: box-shadow $transition-time ease-in-out;
 }
 
-#element-desc-inner > h5 {
+// Text inside ELEMENT DESCRIPTIONS
+.element-d-primary-info {
   font-family: latolight;
+  font-weight: bold;
   font-size: 1.7em;
   margin-bottom: 5px;
   overflow: hidden;
 }
 
-#element-desc-inner > p {
+.element-d-secondary-info {
   font-family: latolight;
   font-size: 1.15em;
   margin-bottom: 15px;
 }
 
-// Color transitions on hover of element-overview and element-desc
-#element-overview, #element-desc {
-  transition: background-color $transition-time ease-in-out;
-}
-
-// ROW AND COLUMN LABELS
-.label-period-outer, .label-group-outer {
-  z-index: 0;
-  user-select: none;
-}
-
-// PERIOD
+// PERIOD LABELS
 .label-period-inner {
   height: 100%;
   width: 75%;
-  border-radius: $border-radius / 2;
   //transition: background-color $transition-time ease-in-out;
+  border-radius: $border-radius / 2;
+  user-select: none;
 }
 
 .label-period-inner:hover {
@@ -145,17 +169,14 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   font-size: 1.33em;
 }
 
-// GROUP
+
+// GROUP LABELS
 .label-group-inner {
   height: 70%;
   width: 100%;
-  //margin-left: 50%;
-  //transform: translateX(-50%);
-  //padding-left: 7px;
-  //padding-right: 7px;
-  //padding-top: 5px;
-  border-radius: $border-radius / 2;
   //transition: background-color $transition-time ease-in-out;
+  border-radius: $border-radius / 2;
+  user-select: none;
 }
 
 .label-group-inner:hover {
@@ -170,7 +191,20 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   font-size: 1.33em;
 }
 
-// ELEMENTS
+// DUPLICATED ELEMENTS FROM PERIODIC TABLE CSS TAGS FOR POSITION IN TABLE
+//SCSS for loop from 1 to the total number of periods in the periodic table (rows)
+@for $i from 2 through $total-rows {
+  // For each DOM element with the p-$i class, place it starting at a certain row,
+  // and end it before the very next row
+  // Note, all p-$i classes are div elements
+  // Note, p-$i classes were created using v-bind, in a for loop for each element
+  // Note, p-$i stands for the ith period, or the nth period in which the elment is located on the periodic table
+  .r-#{$i} {
+    grid-row-start: #{$i};
+    grid-row-end: #{$i + 2};
+  }
+}
+
 //SCSS for loop from 1 to the total number of groups in the periodic table (columns)
 // Each element is on a 2 by 2 grid, which is why $i * 2.(Want it to start every two columns/rows)
 // ($i * 2) - 1 because for loop starts at 1, and 1 * 2 is 2, but CSS grids start at 1
@@ -187,20 +221,8 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   }
 }
 
-//SCSS for loop from 1 to the total number of periods in the periodic table (rows)
-@for $i from 2 through $total-rows {
-  // For each DOM element with the p-$i class, place it starting at a certain row,
-  // and end it before the very next row
-  // Note, all p-$i classes are div elements
-  // Note, p-$i classes were created using v-bind, in a for loop for each element
-  // Note, p-$i stands for the ith period, or the nth period in which the elment is located on the periodic table
-  .r-#{$i} {
-    grid-row-start: #{$i};
-    grid-row-end: #{$i + 2};
-  }
-}
 
-// COLUMN AND ROW LABELS
+// PERIOD LABELS AND GROUP LABELS CSS TAGS FOR POSITION IN TABLE
 //Row labels. On left side, these are one column wide rather than 2
 @for $i from 2 through $total-rows {
  .rr-#{$i} {

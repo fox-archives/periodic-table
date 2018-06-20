@@ -1,15 +1,4 @@
-// The group and period labels (.dark is appearance on hover)
-.light {
-  background-color: $mainBackground;
-  //transition: background-color $transition-time ease-in-out;
-}
-
-.dark {
-  background-color: $labelDark;
-  //transition: background-color $transition-time ease-in-out;
-}
-
-// The text inside each element
+// DUPLICATED ELEMENTS FROM PERIODIC TABLE
 .atomicMass {
   position: relative;
   bottom: -3px;
@@ -20,6 +9,7 @@
 }
 
 // SUPER DARK ELEMENT COLOR
+// Occurs when clicking on an element
 .supdark-blue {
   background-color: $oc-blue-4;
 }
@@ -62,6 +52,7 @@
 }
 
 // REGULAR ELEMENT COLOR
+// Occurs when highlighting over an element (default state)
 .blue {
   background-color: $oc-blue-2;
 }
@@ -83,6 +74,7 @@
 }
 
 // LIGHT ELEMENT COLOR
+// Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
 .light-blue {
   background-color: $oc-blue-1;
 }
@@ -121,4 +113,17 @@
 
 .light-violet p, .light-violet h6, .light-violet h5, .light-violet h4, .light-violet h3 {
   color: $oc-gray-6;
+}
+
+
+// PERIOD LABELS AND GROUP LABELS COLORS
+// Each element and group label has v-binds a class which is either .light or .dark
+.light {
+  background-color: $mainBackground;
+  //transition: background-color $transition-time ease-in-out;
+}
+
+.dark {
+  background-color: $labelDark;
+  //transition: background-color $transition-time ease-in-out;
 }
