@@ -59,15 +59,16 @@ module.exports = {
            'css-loader'
          ]
        },
-       {
-         test: /\.(png|jpg|jpeg|svg|gif|svg|ttf|woff|woff2)$/,
-         exclude: /node_modules/,
-         loader: 'file-loader',
-         options: {
-           name: '[name].[ext]',
-           outputPath: 'assets'
-         }
-       },
+        // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
+        {
+           test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+           //exclude: /node_modules/,
+           loader: 'file-loader',
+           options: {
+             name: '[name].[ext]',
+             outputPath: 'assets'
+           }
+        },
       ]
    },
    resolve: {
