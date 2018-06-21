@@ -7,17 +7,17 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="quiz"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
-          <li class="mainOptions" id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
-          <li class="mainOptions" id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></li>
-          <li class="mainOptions" id="orbitals"><span class="ti-shine"></span><h2>Orbitals</h2></li>
-          <li class="mainOptions" id="isotopes"><span class="ti-link"></span><h2>Isotopes</h2></li>
-          <li class="mainOptions" id="explore"><span class="ti-search"></span><h2>Explore</h2></li>
-          <li class="mainOptions" id="quiz"><span class="ti-check"></span><h2>Quiz</h2></li>
-          <li id="info" v-on:click="infoPopup('on')"><span class="ti-info"></span></li>
-          <li id="settings" v-on:click="settingsPopup('on')"><span class="ti-settings"></span></li>
-          <li id="search"><span class="ti-search"></span></li>
-          <li id="menu-mobile" v-on:click="menuPopup('on')"><span class="ti-menu"></span></li>
+          <li class="mainOptions" id="quiz"><h2>Simple</h2></li>
+          <li class="mainOptions" id="properties"><h2>Properties</h2></li>
+          <li class="mainOptions" id="electrons"><h2>Electrons</h2></li>
+          <li class="mainOptions" id="orbitals"><h2>Orbitals</h2></li>
+          <li class="mainOptions" id="isotopes"><h2>Isotopes</h2></li>
+          <li class="mainOptions" id="explore"></span><h2>Explore</h2></li>
+          <li class="mainOptions" id="quiz"><h2>Quiz</h2></li>
+          <li id="info" v-on:click="infoPopup('on')"></span></li>
+          <li id="settings" v-on:click="settingsPopup('on')"></li>
+          <li id="search"></li>
+          <li id="menu-mobile" v-on:click="menuPopup('on')"></li>
         </ul>
       </ul>
     </nav>
@@ -25,20 +25,20 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul id="nav-right-mobile">
-        <li class="mainOptions" id="quiz"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
-        <li class="mainOptions" id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></li>
-        <li class="mainOptions" id="orbitals"><span class="ti-shine"></span><h2>Orbitals</h2></li>
-        <li class="mainOptions" id="isotopes"><span class="ti-link"></span><h2>Isotopes</h2></li>
-        <li class="mainOptions" id="explore"><span class="ti-search"></span><h2>Explore</h2></li>
-        <li class="mainOptions" id="quiz"><span class="ti-check"></span><h2>Quiz</h2></li>
+        <li class="mainOptions" id="quiz"><h2>Simple</h2></li>
+        <li class="mainOptions" id="properties"><h2>Properties</h2></li>
+        <li class="mainOptions" id="electrons"><h2>Electrons</h2></li>
+        <li class="mainOptions" id="orbitals"><h2>Orbitals</h2></li>
+        <li class="mainOptions" id="isotopes"><h2>Isotopes</h2></li>
+        <li class="mainOptions" id="explore"><h2>Explore</h2></li>
+        <li class="mainOptions" id="quiz"><h2>Quiz</h2></li>
       </ul>
     </vs-popup>
 
     <!-- POPUP FOR INFO -->
     <vs-popup vs-title="Information" v-bind:vs-active="infoPopupActive" v-on:vs-cancel="infoPopup('off')">
       <aside class="nav-info">
-        <h2>Tools and Websites Used to Make This Website</h2>
+        <p>Tools and Websites Used to Make This Website</p>
         <br>
         <ul>
           <li>
@@ -184,17 +184,44 @@
           document.getElementById('content').classList.add('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.remove('blur-large');
+
+          // There's probably a better way to do this with VueJS
+          this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
+
         }
         else if(blurType == "blur") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.add('blur');
           document.getElementById('content').classList.remove('blur-large');
+
+          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
         }
         else if(blurType == "blur-large") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.add('blur-large');
+
+          this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
         }
+      },
+      addClassToNotif: function(classesAdd, classesRemove) {
+        // For all notification div elements found
+        var maxElements = document.getElementsByClassName('vs-noti-contenedor');
+        for(var i = 0; i < maxElements.length; i++) {
+          var element = document.getElementsByClassName('vs-noti-contenedor')[i];
+
+          // Add all classes in classAdd array
+          for(var j = 0; j < classesAdd.length; j++) {
+            element.classList.add(classesAdd[j]);
+          }
+
+          // Remove all classes in classRemove array
+          for(var j = 0; j < classesRemove.length; j++) {
+            element.classList.add(classesRemove[j]);
+          }
+        }
+      },
+      testAnimation: function() {
 
       }
     }

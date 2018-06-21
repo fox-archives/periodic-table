@@ -1,5 +1,7 @@
 import './css/main.scss';
 
+import anime from 'animejs'
+
 // VueJS
 import Vue from 'vue';
 // Assign Vue to window object in index.js; Vue() is now a global property of the window object
@@ -15,11 +17,16 @@ Vue.use(Vuesax, {
   }
 })
 
+import Test from './components/test.vue';
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';
 import Footer from './components/Footer.vue';
 
 // This may be formated incorrectly
+new Vue({
+  render: q => q(Test)
+}).$mount('#test-el')
+
 new Vue({
   render: k => k(Navigation)
 }).$mount('#navigation-el')

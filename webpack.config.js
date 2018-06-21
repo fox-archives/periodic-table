@@ -5,13 +5,13 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/main.js",
     output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/dist'
   },
-  // Tells webpack what directories should be searched when resolving moduls
+  // Tells webpack what directories should be searched when resolving modules
   /*resolve: {
     modules: [
       path.join(__dirname, 'src'),
@@ -20,7 +20,6 @@ module.exports = {
   },*/
    module: {
       rules: [
-        // Change preset to 'env', but save that for later
         {
           test: /\.js$/,
           exclude: /node_modules/,
@@ -45,7 +44,7 @@ module.exports = {
        },
        {
          test: /\.(sa|sc)ss$/,
-         exclude: /node_modules/,
+         //exclude: /node_modules/,
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader',
@@ -59,50 +58,18 @@ module.exports = {
            'css-loader'
          ]
        },
-       // This gets all of the files and puts them in a fonts folder into the dist
-       // (fine tune this later)
-       /*
+
+       // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
        {
-         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-         exclude: /node_modules/,
-         loader: 'file-loader',
-         options: {
-           name: '[name].[ext]',
-           outputPath: 'assets'
-         }
-       },*/
-       {
-         test: /\.(png|svg)$/,
-         exclude: /node_modules/,
-         loader: 'file-loader',
-         options: {
-           name: '[name].[ext]',
-           outputPath: 'assets'
-         }
-       },
-       {
-          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: "url-loader?limit=10000&mimetype=application/font-woff",
+          test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+          //exclude: /node_modules/,
+          loader: 'file-loader',
           options: {
             name: '[name].[ext]',
             outputPath: 'assets'
           }
        },
-       {
-         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-         loader: "file-loader",
-         options: {
-           name: '[name].[ext]',
-           outputPath: 'assets'
-         }
-       }
-       /*,
-       // Loader that transforms files into base64 URIs
-       {
-         test: /\.(woff|woff2|eot|ttf|svg)$/,
-         loader: 'url-loader?limit=100000'
-       }*/
-      ]
+     ]
    },
    resolve: {
       alias: {
