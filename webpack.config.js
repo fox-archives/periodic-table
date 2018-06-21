@@ -59,20 +59,8 @@ module.exports = {
            'css-loader'
          ]
        },
-       // This gets all of the files and puts them in a fonts folder into the dist
-       // (fine tune this later)
-       /*
        {
-         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-         exclude: /node_modules/,
-         loader: 'file-loader',
-         options: {
-           name: '[name].[ext]',
-           outputPath: 'assets'
-         }
-       },*/
-       {
-         test: /\.(png|svg)$/,
+         test: /\.(png|jpg|jpeg|svg|gif|svg|ttf|woff|woff2)$/,
          exclude: /node_modules/,
          loader: 'file-loader',
          options: {
@@ -80,28 +68,6 @@ module.exports = {
            outputPath: 'assets'
          }
        },
-       {
-          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          loader: "url-loader?limit=10000&mimetype=application/font-woff",
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets'
-          }
-       },
-       {
-         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-         loader: "file-loader",
-         options: {
-           name: '[name].[ext]',
-           outputPath: 'assets'
-         }
-       }
-       /*,
-       // Loader that transforms files into base64 URIs
-       {
-         test: /\.(woff|woff2|eot|ttf|svg)$/,
-         loader: 'url-loader?limit=100000'
-       }*/
       ]
    },
    resolve: {
