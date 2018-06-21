@@ -1,11 +1,17 @@
 <template>
   <div>
-    <h1>Test.vue works</h1>
-
-    <object data="test.svg" type="image/svg+xml"></object>
+    <icons/>
+    <icons></icons>
   </div>
 </template>
 
 <script>
+import Icons from './Icons.vue'
 
+export default {
+  name: 'Test',
+  components: {
+    Icons
+  }
+}
 </script>

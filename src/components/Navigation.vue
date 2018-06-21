@@ -51,9 +51,6 @@
             <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
           </li>
           <li>
-            <p>Icons from <a href="https://themify.me/themify-icons">Themify</a></p>
-          </li>
-          <li>
             <p>Colors from  <a href="https://yeun.github.io/open-color/">Open Color</a></p>
           </li>
 

@@ -5,13 +5,13 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: "./src/index.js",
     output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/dist'
   },
-  // Tells webpack what directories should be searched when resolving modules
+  // Tells webpack what directories should be searched when resolving moduls
   /*resolve: {
     modules: [
       path.join(__dirname, 'src'),
@@ -20,6 +20,7 @@ module.exports = {
   },*/
    module: {
       rules: [
+        // Change preset to 'env', but save that for later
         {
           test: /\.js$/,
           exclude: /node_modules/,
@@ -44,7 +45,7 @@ module.exports = {
        },
        {
          test: /\.(sa|sc)ss$/,
-         //exclude: /node_modules/,
+         exclude: /node_modules/,
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader',
@@ -58,18 +59,23 @@ module.exports = {
            'css-loader'
          ]
        },
-
-       // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
-       {
-          test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-          //exclude: /node_modules/,
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets'
-          }
-       },
-     ]
+        // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
+        {
+           test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
+           //exclude: /node_modules/,
+           loader: 'file-loader',
+           options: {
+             name: '[name].[ext]',
+             outputPath: 'assets'
+           }
+        },
+        {
+          test: /\.svg$/,
+          use: [
+            'vue-svg-icon-loader',
+          ],
+        }
+      ]
    },
    resolve: {
       alias: {

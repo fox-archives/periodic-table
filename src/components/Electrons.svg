@@ -1,5 +1,5 @@
-<style>
-	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500">
 <style type="text/css">
 	.st0{fill:#212529;}
@@ -39,4 +39,3 @@
 	<circle class="st0" cx="42.5" cy="369.5" r="12.5"/>
 </g>
 </svg>
-</style>

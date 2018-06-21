@@ -1,11 +1,8 @@
 import './css/main.scss';
 
-import anime from 'animejs'
-
 // VueJS
 import Vue from 'vue';
-// Assign Vue to window object in index.js; Vue() is now a global property of the window object
-window.Vue = Vue;
+window.Vue = Vue;  // Assign Vue to window object in index.js; Vue() is now a global property of the window object
 
 // VueSax
 import Vuesax from 'vuesax'
@@ -17,10 +14,16 @@ Vue.use(Vuesax, {
   }
 })
 
-import Test from './components/test.vue';
+import Test from './components/Test.vue';
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';
 import Footer from './components/Footer.vue';
+
+// Vue SVGIcon
+import * as svgicon from 'vue-svgicon'
+Vue.use(svgicon, {
+  tagName: 'icon'
+})
 
 // This may be formated incorrectly
 new Vue({
