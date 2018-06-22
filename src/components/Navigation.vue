@@ -7,17 +7,17 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="quiz"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
-          <li class="mainOptions" id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
-          <li class="mainOptions" id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></li>
-          <li class="mainOptions" id="orbitals"><span class="ti-shine"></span><h2>Orbitals</h2></li>
-          <li class="mainOptions" id="isotopes"><span class="ti-link"></span><h2>Isotopes</h2></li>
-          <li class="mainOptions" id="explore"><span class="ti-search"></span><h2>Explore</h2></li>
-          <li class="mainOptions" id="quiz"><span class="ti-check"></span><h2>Quiz</h2></li>
-          <li id="info" v-on:click="infoPopup('on')"><span class="ti-info"></span></li>
-          <li id="settings" v-on:click="settingsPopup('on')"><span class="ti-settings"></span></li>
-          <li id="search"><span class="ti-search"></span></li>
-          <li id="menu-mobile" v-on:click="menuPopup('on')"><span class="ti-menu"></span></li>
+          <li class="mainOptions" id="simple"><type-icon class="navIcon featherIcon"></type-icon><h2>Simple</h2></li>
+          <li class="mainOptions" id="properties"><list-icon class="navIcon featherIcon"></list-icon><h2>Properties</h2></li>
+          <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
+          <li class="mainOptions" id="orbitals"><orbitals></orbitals><h2>Orbitals</h2></li>
+          <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
+          <li class="mainOptions" id="explore"><map-icon class="navIcon featherIcon"></map-icon><h2>Explore</h2></li>
+          <li class="mainOptions" id="quiz"><check-icon class="navIcon featherIcon"></check-icon><h2>Quiz</h2></li>
+          <li id="info" v-on:click="infoPopup('on')"><info-icon class="navIcon featherIcon"></info-icon></li>
+          <li id="settings" v-on:click="settingsPopup('on')"><settings-icon class="navIcon featherIcon"></settings-icon></li>
+          <li id="search"><search-icon class="navIcon featherIcon"></search-icon></li>
+          <li id="menu-mobile" v-on:click="menuPopup('on')"><menu-icon class="navIcon featherIcon"></menu-icon></li>
         </ul>
       </ul>
     </nav>
@@ -25,20 +25,22 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul id="nav-right-mobile">
-        <li class="mainOptions" id="quiz"><span class="ti-menu-alt"></span><h2>Simple</h2></li>
-        <li class="mainOptions" id="properties"><span class="ti-eye"></span><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons"><span class="ti-arrow-right"></span><h2>Electrons</h2></li>
-        <li class="mainOptions" id="orbitals"><span class="ti-shine"></span><h2>Orbitals</h2></li>
-        <li class="mainOptions" id="isotopes"><span class="ti-link"></span><h2>Isotopes</h2></li>
-        <li class="mainOptions" id="explore"><span class="ti-search"></span><h2>Explore</h2></li>
-        <li class="mainOptions" id="quiz"><span class="ti-check"></span><h2>Quiz</h2></li>
+        <li class="mainOptions" id="quiz"><type-icon class="navIcon featherIcon"></type-icon><h2>Simple</h2></li>
+        <li class="mainOptions" id="properties"><list-icon class="navIcon featherIcon"></list-icon><h2>Properties</h2></li>
+        <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
+        <li class="mainOptions" id="orbitals"><orbitals2></orbitals2><h2>Orbitals</h2></li>
+        <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
+        <li class="mainOptions" id="explore"><map-icon class="navIcon featherIcon"></map-icon><h2>Explore</h2></li>
+        <li class="mainOptions" id="quiz"><check-icon class="navIcon featherIcon"></check-icon><h2>Quiz</h2></li>
       </ul>
     </vs-popup>
 
     <!-- POPUP FOR INFO -->
     <vs-popup vs-title="Information" v-bind:vs-active="infoPopupActive" v-on:vs-cancel="infoPopup('off')">
       <aside class="nav-info">
-        <h2>Tools and Websites Used to Make This Website</h2>
+        <em>Tools</em>
+        <br>
+        <hr>
         <br>
         <ul>
           <li>
@@ -48,10 +50,10 @@
             <p>U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a></p>
           </li>
           <li>
-            <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
+            <p>Some icons from <a href="https://feathericons.com/">Feather Icons</a></p>
           </li>
           <li>
-            <p>Icons from <a href="https://themify.me/themify-icons">Themify</a></p>
+            <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
           </li>
           <li>
             <p>Colors from  <a href="https://yeun.github.io/open-color/">Open Color</a></p>
@@ -101,6 +103,20 @@
 </template>
 
 <script type="text/javascript">
+// Importing to-be-used SVG icons
+import { Type } from 'vue-feather-icon';
+import { List } from 'vue-feather-icon';
+import Electrons from './svg/Electrons.vue';
+import Orbitals from './svg/Orbitals.vue';
+import Orbitals2 from './svg/Orbitals2.vue';
+import Isotopes from './svg/Isotopes.vue';
+import { Map } from 'vue-feather-icon'; // Explore
+import { Check } from 'vue-feather-icon'; // Quiz
+import { Info } from 'vue-feather-icon';
+import { Settings } from 'vue-feather-icon';
+import { Search } from 'vue-feather-icon';
+import { Menu } from 'vue-feather-icon';
+
   export default {
     name: 'Navigation',
     data() {
@@ -184,19 +200,60 @@
           document.getElementById('content').classList.add('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.remove('blur-large');
+
+          // There's probably a better way to do this with VueJS
+          this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
+
         }
         else if(blurType == "blur") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.add('blur');
           document.getElementById('content').classList.remove('blur-large');
+
+          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
         }
         else if(blurType == "blur-large") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.add('blur-large');
+
+          this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
         }
+      },
+      addClassToNotif: function(classesAdd, classesRemove) {
+        // For all notification div elements found
+        var maxElements = document.getElementsByClassName('vs-noti-contenedor');
+        for(var i = 0; i < maxElements.length; i++) {
+          var element = document.getElementsByClassName('vs-noti-contenedor')[i];
+
+          // Add all classes in classAdd array
+          for(var j = 0; j < classesAdd.length; j++) {
+            element.classList.add(classesAdd[j]);
+          }
+
+          // Remove all classes in classRemove array
+          for(var j = 0; j < classesRemove.length; j++) {
+            element.classList.add(classesRemove[j]);
+          }
+        }
+      },
+      testAnimation: function() {
 
       }
+    },
+    components: {
+      TypeIcon: Type.default,
+      ListIcon: List.default,
+      Electrons,
+      Orbitals,
+      Orbitals2,
+	    Isotopes,
+      MapIcon: Map.default,
+      CheckIcon: Check.default, // Quiz
+      InfoIcon: Info.default,
+      SettingsIcon: Settings.default,
+      SearchIcon: Search.default,
+      MenuIcon: Menu.default
     }
   }
 </script>

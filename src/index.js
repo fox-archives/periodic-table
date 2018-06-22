@@ -2,8 +2,7 @@ import './css/main.scss';
 
 // VueJS
 import Vue from 'vue';
-// Assign Vue to window object in index.js; Vue() is now a global property of the window object
-window.Vue = Vue;
+window.Vue = Vue;  // Assign Vue to window object in index.js; Vue() is now a global property of the window object
 
 // VueSax
 import Vuesax from 'vuesax'
@@ -14,6 +13,10 @@ Vue.use(Vuesax, {
     }
   }
 })
+
+// Feather Icons
+import VueFeatherIcon from 'vue-feather-icon';
+Vue.use(VueFeatherIcon);
 
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';

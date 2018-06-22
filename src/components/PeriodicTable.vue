@@ -36,14 +36,14 @@
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: periodLabels[index].display, text:periodLabels[index].name})">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: getPeriodColumnName('period', periodLabels[index].display), text:periodLabels[index].name})">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: groupLabels[index].display, text:groupLabels[index].name})">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: getPeriodColumnName('group', groupLabels[index].display), text:groupLabels[index].name})">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
@@ -509,6 +509,15 @@
          }
          else if(type == "group") {
            return "g-" + (labelNumber);
+         }
+       },
+       // OUTPUT: Group 1 / Period 7
+       getPeriodColumnName(type, number) {
+         if(type == "period") {
+           return "Period " + number;
+         }
+         else if(type == "group") {
+           return "Group " + number;
          }
        }
      }

@@ -5,6 +5,7 @@
   // If the navigation doesn't fit in the browser window, make sure user can at least scroll through all of the options
   overflow: auto;
   width: 100%;
+  user-select: none;
 }
 
 #nav-content {
