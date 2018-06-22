@@ -7,17 +7,17 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="quiz"><h2>Simple</h2></li>
-          <li class="mainOptions" id="properties"><h2>Properties</h2></li>
+          <li class="mainOptions" id="simple"><type-icon class="navIcon featherIcon"></type-icon><h2>Simple</h2></li>
+          <li class="mainOptions" id="properties"><list-icon class="navIcon featherIcon"></list-icon><h2>Properties</h2></li>
           <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
           <li class="mainOptions" id="orbitals"><orbitals></orbitals><h2>Orbitals</h2></li>
           <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
-          <li class="mainOptions" id="explore"><h2>Explore</h2></li>
-          <li class="mainOptions" id="quiz"><h2>Quiz</h2></li>
-          <li id="info" v-on:click="infoPopup('on')"></li>
-          <li id="settings" v-on:click="settingsPopup('on')"></li>
-          <li id="search"></li>
-          <li id="menu-mobile" v-on:click="menuPopup('on')"></li>
+          <li class="mainOptions" id="explore"><map-icon class="navIcon featherIcon"></map-icon><h2>Explore</h2></li>
+          <li class="mainOptions" id="quiz"><check-icon class="navIcon featherIcon"></check-icon><h2>Quiz</h2></li>
+          <li id="info" v-on:click="infoPopup('on')"><info-icon class="navIcon featherIcon"></info-icon></li>
+          <li id="settings" v-on:click="settingsPopup('on')"><settings-icon class="navIcon featherIcon"></settings-icon></li>
+          <li id="search"><search-icon class="navIcon featherIcon"></search-icon></li>
+          <li id="menu-mobile" v-on:click="menuPopup('on')"><menu-icon class="navIcon featherIcon"></menu-icon></li>
         </ul>
       </ul>
     </nav>
@@ -25,20 +25,22 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul id="nav-right-mobile">
-        <li class="mainOptions" id="quiz"><h2>Simple</h2></li>
-        <li class="mainOptions" id="properties"><h2>Properties</h2></li>
+        <li class="mainOptions" id="quiz"><type-icon class="navIcon featherIcon"></type-icon><h2>Simple</h2></li>
+        <li class="mainOptions" id="properties"><list-icon class="navIcon featherIcon"></list-icon><h2>Properties</h2></li>
         <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
-        <li class="mainOptions" id="orbitals"><h2>Orbitals</h2></li>
-        <li class="mainOptions" id="isotopes"><h2>Isotopes</h2></li>
-        <li class="mainOptions" id="explore"><h2>Explore</h2></li>
-        <li class="mainOptions" id="quiz"><quiz></quiz><h2>Quiz</h2></li>
+        <li class="mainOptions" id="orbitals"><orbitals2></orbitals2><h2>Orbitals</h2></li>
+        <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
+        <li class="mainOptions" id="explore"><map-icon class="navIcon featherIcon"></map-icon><h2>Explore</h2></li>
+        <li class="mainOptions" id="quiz"><check-icon class="navIcon featherIcon"></check-icon><h2>Quiz</h2></li>
       </ul>
     </vs-popup>
 
     <!-- POPUP FOR INFO -->
     <vs-popup vs-title="Information" v-bind:vs-active="infoPopupActive" v-on:vs-cancel="infoPopup('off')">
       <aside class="nav-info">
-        <p>Tools and Websites Used to Make This Website</p>
+        <em>Tools</em>
+        <br>
+        <hr>
         <br>
         <ul>
           <li>
@@ -48,7 +50,7 @@
             <p>U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a></p>
           </li>
           <li>
-            <p>Some icons from <a href="https://material.io/">Material Design</a></p>
+            <p>Some icons from <a href="https://feathericons.com/">Feather Icons</a></p>
           </li>
           <li>
             <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
@@ -102,9 +104,18 @@
 
 <script type="text/javascript">
 // Importing to-be-used SVG icons
+import { Type } from 'vue-feather-icon';
+import { List } from 'vue-feather-icon';
 import Electrons from './svg/Electrons.vue';
 import Orbitals from './svg/Orbitals.vue';
+import Orbitals2 from './svg/Orbitals2.vue';
 import Isotopes from './svg/Isotopes.vue';
+import { Map } from 'vue-feather-icon'; // Explore
+import { Check } from 'vue-feather-icon'; // Quiz
+import { Info } from 'vue-feather-icon';
+import { Settings } from 'vue-feather-icon';
+import { Search } from 'vue-feather-icon';
+import { Menu } from 'vue-feather-icon';
 
   export default {
     name: 'Navigation',
@@ -231,9 +242,18 @@ import Isotopes from './svg/Isotopes.vue';
       }
     },
     components: {
+      TypeIcon: Type.default,
+      ListIcon: List.default,
       Electrons,
       Orbitals,
+      Orbitals2,
 	    Isotopes,
+      MapIcon: Map.default,
+      CheckIcon: Check.default, // Quiz
+      InfoIcon: Info.default,
+      SettingsIcon: Settings.default,
+      SearchIcon: Search.default,
+      MenuIcon: Menu.default
     }
   }
 </script>

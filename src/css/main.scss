@@ -13,7 +13,7 @@ $labelDark: $oc-gray-2;
 @import "./footer.scss";
 @import "./periodic-table.scss";
 @import "./generic-elements.scss";
-
+@import "./icons.scss";
 
 * {
   margin: 0px;
@@ -59,6 +59,14 @@ a:clicked {
 .has-shadow {
   box-shadow: 2px 2px 2px $oc-gray-2;
 }
+
+// HR
+hr {
+  color: $oc-gray-5;
+  background-color: $oc-gray-5;
+  display: none;
+}
+
 
 // BLUR EFFECT
 // Carefull, if too many elements have these tags, website could lag

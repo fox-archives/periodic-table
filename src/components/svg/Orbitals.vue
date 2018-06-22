@@ -1,5 +1,5 @@
 <template>
-    <orbitals class="regular"></orbitals>
+    <orbitals class="navIcon customIcon"></orbitals>
 </template>
 
 <script>

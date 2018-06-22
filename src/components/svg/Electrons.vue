@@ -1,5 +1,5 @@
 <template>
-    <electrons class="regular"></electrons>
+    <electrons class="navIcon customIcon"></electrons>
 </template>
 
 <script>
@@ -13,10 +13,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.regular {
-  width: 32px;
-  height: 32px;
-}
-</style>
