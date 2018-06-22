@@ -55,8 +55,10 @@
   padding-left: 13px;
 }
 
-#nav-content li span, #nav-right-mobile li span {
-  font-size: 18px;
+// Normal icon size
+.navIcon {
+  width: 24px;
+  height: 24px;
 }
 
 // Mobile Menu (hamburger) does not show, until specific screen width (see @media requests)
@@ -64,7 +66,8 @@
   display: none;
 }
 
-// When screen is small tablet, decrease option sizes
+
+// When screen is small, decrease option sizes
 @media (max-width: 1240px) {
   // Make padding smaller
   #nav-content li {
@@ -77,14 +80,14 @@
     font-size: 1em;
   }
 
-  // Make icons smaller
-  #nav-content li span {
-    font-size: 15px;
+  .navIcon {
+    width: 18px;
+    height: 18px;
   }
 }
 
 // On really small size, show hamburger menu
-@media (max-width: 1045px) {
+@media (max-width: 1060px) {
   #nav-content {
     justify-content: space-between;
   }
@@ -100,9 +103,14 @@
   }
 }
 
-@media (max-width: 300px) {
-  #nav-content li#info, #nav-content li#settings, #nav-content li#search {
-    display: none;
+@media (max-width: 360px) {
+  .navIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  #nav-content li {
+    padding: 10px 10px 10px 10px;
   }
 }
 

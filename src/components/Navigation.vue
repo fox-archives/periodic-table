@@ -7,17 +7,17 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="simple"><type-icon class="navIcon featherIcon"></type-icon><h2>Simple</h2></li>
-          <li class="mainOptions" id="properties"><list-icon class="navIcon featherIcon"></list-icon><h2>Properties</h2></li>
-          <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
-          <li class="mainOptions" id="orbitals"><orbitals></orbitals><h2>Orbitals</h2></li>
-          <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
-          <li class="mainOptions" id="explore"><map-icon class="navIcon featherIcon"></map-icon><h2>Explore</h2></li>
-          <li class="mainOptions" id="quiz"><check-icon class="navIcon featherIcon"></check-icon><h2>Quiz</h2></li>
-          <li id="info" v-on:click="infoPopup('on')"><info-icon class="navIcon featherIcon"></info-icon></li>
-          <li id="settings" v-on:click="settingsPopup('on')"><settings-icon class="navIcon featherIcon"></settings-icon></li>
-          <li id="search"><search-icon class="navIcon featherIcon"></search-icon></li>
-          <li id="menu-mobile" v-on:click="menuPopup('on')"><menu-icon class="navIcon featherIcon"></menu-icon></li>
+          <li class="mainOptions" id="simple"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
+          <li class="mainOptions" id="properties"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
+          <li class="mainOptions" id="electrons"> <electrons></electrons> <h2>Electrons </h2> </li>
+          <li class="mainOptions" id="orbitals"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
+          <li class="mainOptions" id="isotopes"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
+          <li class="mainOptions" id="explore"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
+          <li class="mainOptions" id="quiz"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
+          <li id="info" v-on:click="infoPopup('on')"> <info-icon class="navIcon featherIcon"></info-icon> </li>
+          <li id="settings" v-on:click="settingsPopup('on')"> <settings-icon class="navIcon featherIcon"></settings-icon> </li>
+          <li id="search"><search-icon class="navIcon featherIcon"> </search-icon> </li>
+          <li id="menu-mobile" v-on:click="menuPopup('on')"> <menu-icon class="navIcon featherIcon"></menu-icon> </li>
         </ul>
       </ul>
     </nav>
@@ -25,13 +25,13 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul id="nav-right-mobile">
-        <li class="mainOptions" id="quiz"><type-icon class="navIcon featherIcon"></type-icon><h2>Simple</h2></li>
-        <li class="mainOptions" id="properties"><list-icon class="navIcon featherIcon"></list-icon><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
-        <li class="mainOptions" id="orbitals"><orbitals2></orbitals2><h2>Orbitals</h2></li>
-        <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
-        <li class="mainOptions" id="explore"><map-icon class="navIcon featherIcon"></map-icon><h2>Explore</h2></li>
-        <li class="mainOptions" id="quiz"><check-icon class="navIcon featherIcon"></check-icon><h2>Quiz</h2></li>
+        <li class="mainOptions" id="quiz"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
+        <li class="mainOptions" id="properties"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
+        <li class="mainOptions" id="electrons"> <electrons></electrons> <h2>Electrons</h2> </li>
+        <li class="mainOptions" id="orbitals"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
+        <li class="mainOptions" id="isotopes"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
+        <li class="mainOptions" id="explore"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
+        <li class="mainOptions" id="quiz"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Quiz</h2> </li>
       </ul>
     </vs-popup>
 
@@ -97,8 +97,6 @@
         </ul>
       </aside>
     </vs-popup>
-
-
   </div>
 </template>
 
