@@ -9,12 +9,12 @@
         <ul id="nav-right">
           <li class="mainOptions" id="quiz"><h2>Simple</h2></li>
           <li class="mainOptions" id="properties"><h2>Properties</h2></li>
-          <li class="mainOptions" id="electrons"><h2>Electrons</h2></li>
-          <li class="mainOptions" id="orbitals"><h2>Orbitals</h2></li>
-          <li class="mainOptions" id="isotopes"><h2>Isotopes</h2></li>
-          <li class="mainOptions" id="explore"></span><h2>Explore</h2></li>
+          <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
+          <li class="mainOptions" id="orbitals"><orbitals></orbitals><h2>Orbitals</h2></li>
+          <li class="mainOptions" id="isotopes"><isotopes></isotopes><h2>Isotopes</h2></li>
+          <li class="mainOptions" id="explore"><h2>Explore</h2></li>
           <li class="mainOptions" id="quiz"><h2>Quiz</h2></li>
-          <li id="info" v-on:click="infoPopup('on')"></span></li>
+          <li id="info" v-on:click="infoPopup('on')"></li>
           <li id="settings" v-on:click="settingsPopup('on')"></li>
           <li id="search"></li>
           <li id="menu-mobile" v-on:click="menuPopup('on')"></li>
@@ -27,11 +27,11 @@
       <ul id="nav-right-mobile">
         <li class="mainOptions" id="quiz"><h2>Simple</h2></li>
         <li class="mainOptions" id="properties"><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons"><h2>Electrons</h2></li>
+        <li class="mainOptions" id="electrons"><electrons></electrons><h2>Electrons</h2></li>
         <li class="mainOptions" id="orbitals"><h2>Orbitals</h2></li>
         <li class="mainOptions" id="isotopes"><h2>Isotopes</h2></li>
         <li class="mainOptions" id="explore"><h2>Explore</h2></li>
-        <li class="mainOptions" id="quiz"><h2>Quiz</h2></li>
+        <li class="mainOptions" id="quiz"><quiz></quiz><h2>Quiz</h2></li>
       </ul>
     </vs-popup>
 
@@ -46,6 +46,9 @@
           </li>
           <li>
             <p>U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a></p>
+          </li>
+          <li>
+            <p>Some icons from <a href="https://material.io/">Material Design</a></p>
           </li>
           <li>
             <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
@@ -98,6 +101,11 @@
 </template>
 
 <script type="text/javascript">
+// Importing to-be-used SVG icons
+import Electrons from './svg/Electrons.vue';
+import Orbitals from './svg/Orbitals.vue';
+import Isotopes from './svg/Isotopes.vue';
+
   export default {
     name: 'Navigation',
     data() {
@@ -221,6 +229,11 @@
       testAnimation: function() {
 
       }
+    },
+    components: {
+      Electrons,
+      Orbitals,
+	    Isotopes,
     }
   }
 </script>

@@ -11,13 +11,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist'
   },
-  // Tells webpack what directories should be searched when resolving moduls
-  /*resolve: {
-    modules: [
-      path.join(__dirname, 'src'),
-      'node_modules'
-    ]
-  },*/
    module: {
       rules: [
         // Change preset to 'env', but save that for later
@@ -33,7 +26,7 @@ module.exports = {
         },
         {
          test: /\.vue$/,
-         exclude: /node_modules/,
+         //exclude: /node_modules/,
          loader: 'vue-loader',
          /*options: {
            loaders: {
@@ -62,7 +55,6 @@ module.exports = {
         // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
         {
            test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
-           //exclude: /node_modules/,
            loader: 'file-loader',
            options: {
              name: '[name].[ext]',
@@ -72,7 +64,7 @@ module.exports = {
         {
           test: /\.svg$/,
           use: [
-            'vue-svg-icon-loader',
+            'vue-svg-icon-loader'
           ],
         }
       ]

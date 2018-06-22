@@ -14,22 +14,15 @@ Vue.use(Vuesax, {
   }
 })
 
-import Test from './components/Test.vue';
+// Feather Icons
+import VueFeatherIcon from 'vue-feather-icon';
+Vue.use(VueFeatherIcon);
+
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';
 import Footer from './components/Footer.vue';
 
-// Vue SVGIcon
-import * as svgicon from 'vue-svgicon'
-Vue.use(svgicon, {
-  tagName: 'icon'
-})
-
 // This may be formated incorrectly
-new Vue({
-  render: q => q(Test)
-}).$mount('#test-el')
-
 new Vue({
   render: k => k(Navigation)
 }).$mount('#navigation-el')
