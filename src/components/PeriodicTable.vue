@@ -36,14 +36,14 @@
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: getPeriodColumnName('period', periodLabels[index].display), text:periodLabels[index].name})">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="periodNotification(index)">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="$vs.notify({title: getPeriodColumnName('group', groupLabels[index].display), text:groupLabels[index].name})">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="groupNotification(index)">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
@@ -269,7 +269,6 @@
          clickedElementIndex: -1,
          clickedElementPeriod: -1,
          clickedElementGroup: -1
-
        }
      },
      methods: {
@@ -512,14 +511,54 @@
          }
        },
        // OUTPUT: Group 1 / Period 7
-       getPeriodColumnName(type, number) {
+       getPeriodGroupName: function(type, number) {
          if(type == "period") {
            return "Period " + number;
          }
          else if(type == "group") {
            return "Group " + number;
          }
+       },
+       periodNotification: function(index) {
+        // For now, use Vuesax notifications because they look better (and because ElementUI does not seem to display names properly)
+        // Unless one can customize the whites and greys of Vuesax, must move over to ElementUI eventually
+        ///*
+         this.$vs.notify({
+           time: 3000,
+           title: this.getPeriodGroupName('period', this.periodLabels[index].display),
+           text: this.periodLabels[index].name
+         });
+         //*/
+         /*
+         this.$notify({
+           title: this.getPeriodGroupName('period', this.periodLabels[index].display),
+           message: this.periodLabels[index].name,
+           position: 'bottom-right',
+           showClose: false
+         });
+         */
+       },
+       groupNotification: function(index) {
+         ///*
+         this.$vs.notify({
+           time: 3000,
+           title: this.getPeriodGroupName('group', this.groupLabels[index].display),
+           text: this.groupLabels[index].name
+         });
+        //*/
+
+        /*
+         this.$notify({
+           title: this.getPeriodGroupName('group', this.groupLabels[index].display),
+           message: this.groupLabels[index].name,
+           position: 'bottom-left',
+           showClose: false
+         });
+        */
        }
+     },
+     computed: {
+
      }
    }
 </script>

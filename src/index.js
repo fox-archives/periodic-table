@@ -1,5 +1,8 @@
 import './css/main.scss';
 
+// AnimeJS
+import anime from 'animejs';
+
 // VueJS
 import Vue from 'vue';
 window.Vue = Vue;  // Assign Vue to window object in index.js; Vue() is now a global property of the window object
@@ -13,6 +16,12 @@ Vue.use(Vuesax, {
     }
   }
 })
+
+// Element UI
+import ElementUI from 'element-ui';
+import locale from 'element-ui/lib/locale/lang/en'
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI, { locale });
 
 // Feather Icons
 import VueFeatherIcon from 'vue-feather-icon';

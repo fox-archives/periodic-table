@@ -119,7 +119,8 @@
 // PERIOD LABELS AND GROUP LABELS COLORS
 // Each element and group label has v-binds a class which is either .light or .dark
 .light {
-  background-color: $mainBackground;
+  background-color: white;
+  //background-color: $mainBackground;
   //transition: background-color $transition-time ease-in-out;
 }
 

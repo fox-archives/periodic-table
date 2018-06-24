@@ -7,13 +7,13 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="simple"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
-          <li class="mainOptions" id="properties"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
-          <li class="mainOptions" id="electrons"> <electrons></electrons> <h2>Electrons </h2> </li>
-          <li class="mainOptions" id="orbitals"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
-          <li class="mainOptions" id="isotopes"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
-          <li class="mainOptions" id="explore"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
-          <li class="mainOptions" id="quiz"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
+          <li class="mainOptions" id="simple" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
+          <li class="mainOptions" id="properties" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
+          <li class="mainOptions" id="electrons" v-on:click="[electronAnimation, changeSelection('electrons')]"> <electrons></electrons> <h2>Electrons </h2> </li>
+          <li class="mainOptions" id="orbitals" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
+          <li class="mainOptions" id="isotopes" v-on:click="changeSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
+          <li class="mainOptions" id="explore" v-on:click="changeSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
+          <li class="mainOptions" id="quiz" v-on:click="changeSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
           <li id="info" v-on:click="infoPopup('on')"> <info-icon class="navIcon featherIcon"></info-icon> </li>
           <li id="settings" v-on:click="settingsPopup('on')"> <settings-icon class="navIcon featherIcon"></settings-icon> </li>
           <li id="search"><search-icon class="navIcon featherIcon"> </search-icon> </li>
@@ -27,7 +27,7 @@
       <ul id="nav-right-mobile">
         <li class="mainOptions" id="quiz"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
         <li class="mainOptions" id="properties"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons"> <electrons></electrons> <h2>Electrons</h2> </li>
+        <li class="mainOptions" id="electrons"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
         <li class="mainOptions" id="orbitals"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
         <li class="mainOptions" id="isotopes"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
         <li class="mainOptions" id="explore"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
@@ -40,25 +40,13 @@
       <aside class="nav-info">
         <em>Tools</em>
         <br>
-        <hr>
         <br>
         <ul>
-          <li>
-            <p>Logic from <a href="https://vuejs.org/">VueJS</a></p>
-          </li>
-          <li>
-            <p>U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a></p>
-          </li>
-          <li>
-            <p>Some icons from <a href="https://feathericons.com/">Feather Icons</a></p>
-          </li>
-          <li>
-            <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p>
-          </li>
-          <li>
-            <p>Colors from  <a href="https://yeun.github.io/open-color/">Open Color</a></p>
-          </li>
-
+          <li> <p>Logic from <a href="https://vuejs.org/">VueJS</a></p> </li>
+          <li> <p>U.I. elements from <a href="https://lusaxweb.github.io/vuesax/">VueSax</a></p> </li>
+          <li> <p>Some icons from <a href="https://feathericons.com/">Feather Icons</a></p> </li>
+          <li> <p>Data from <a href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p> </li>
+          <li> <p>Colors from  <a href="https://yeun.github.io/open-color/">Open Color</a></p> </li>
         </ul>
       </aside>
     </vs-popup>
@@ -101,28 +89,35 @@
 </template>
 
 <script type="text/javascript">
-// Importing to-be-used SVG icons
-import { Type } from 'vue-feather-icon';
-import { List } from 'vue-feather-icon';
-import Electrons from './svg/Electrons.vue';
-import Orbitals from './svg/Orbitals.vue';
-import Orbitals2 from './svg/Orbitals2.vue';
-import Isotopes from './svg/Isotopes.vue';
-import { Map } from 'vue-feather-icon'; // Explore
-import { Check } from 'vue-feather-icon'; // Quiz
-import { Info } from 'vue-feather-icon';
-import { Settings } from 'vue-feather-icon';
-import { Search } from 'vue-feather-icon';
-import { Menu } from 'vue-feather-icon';
+  // Importing to-be-used SVG icons
+  import { Type } from 'vue-feather-icon';
+  import { List } from 'vue-feather-icon';
+  import Electrons from './svg/Electrons.vue';
+  import Orbitals from './svg/Orbitals.vue';
+  import Orbitals2 from './svg/Orbitals2.vue';
+  import Isotopes from './svg/Isotopes.vue';
+  import { Map } from 'vue-feather-icon'; // Explore
+  import { Check } from 'vue-feather-icon'; // Quiz
+  import { Info } from 'vue-feather-icon';
+  import { Settings } from 'vue-feather-icon';
+  import { Search } from 'vue-feather-icon';
+  import { Menu } from 'vue-feather-icon';
 
+  import anime from 'animejs';
   export default {
     name: 'Navigation',
     data() {
       return {
+        // DATA FOR ELEMENT UI MENU
+        activeIndex: '1',
+        // DATA FOR POPUPS
         menuPopupActive: false,
         infoPopupActive: false,
         settingsPopupActive: false,
         advancedSettingsPopupActive: false,
+
+        // DATA FOR HOVERED OPTIONS (when an option is hovered, it updates)
+        electronOptionHovered: "false",
 
         // DATA FOR OPTIONS
         theme: 1,
@@ -235,8 +230,41 @@ import { Menu } from 'vue-feather-icon';
           }
         }
       },
-      testAnimation: function() {
+      electronAnimation: function() {
+        console.log("test");
 
+        var path = anime.path('#electrons .path2');
+        var motionPath = anime({
+        targets: '#electrons .circle2',
+        translateX: path('x'),
+        translateY: path('y'),
+        easing: 'linear',
+        duration: 2000,
+        //loop: true
+        });
+      },
+      // Clicked element will change color (different than all other nav componets)
+      changeSelection(element) {
+        // All elements that will change their background
+        var navElements = [ "simple", "properties", "electrons", "orbitals", "isotopes", "explore", "quiz" ];
+
+        // When nav button is clicked, make that nav element white
+        var item = document.getElementById(element);
+        console.log(item);
+        item.style.background = "blue";
+        console.log("test");
+        item.style.borderBottomLeftRadius = "0px";
+        item.style.borderBottomRightRadius = "0px";
+
+        // When nav button is clicked, make all other nav elements regular color
+        /*for(var i = 0; i < navElements.length; i++) {
+          // If the nav element is not the clicked one, change color to light gray, and set the border radius
+          if(navElements[i] != element) {
+            item.style.background = "#f1f3f5";
+            item.style.borderBottomLeftRadius = "3px";
+            item.style.borderBottomRightRadius = "3px";
+          }
+        }*/
       }
     },
     components: {

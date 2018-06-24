@@ -8,6 +8,21 @@
 import Electrons from '../../assets/svg/icons/electrons.svg';
 
 export default {
+  // Which properties should I be able to set on this component
+  /*props: {
+    isHovered: String
+  },*/
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    test: function() {
+      //console.log("actvates");
+      //console.log(isHovered);
+    }
+  },
   components: {
     Electrons
   }

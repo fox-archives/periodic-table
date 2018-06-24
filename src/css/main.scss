@@ -7,7 +7,7 @@ $transition-time: 0.15s;
 @import "./fonts.scss";
 
 $mainBackground: $oc-gray-0;
-$labelDark: $oc-gray-2;
+$labelDark: $oc-gray-1;
 
 @import "./navigation.scss";
 @import "./footer.scss";
@@ -60,13 +60,6 @@ a:clicked {
   box-shadow: 2px 2px 2px $oc-gray-2;
 }
 
-// HR
-hr {
-  color: $oc-gray-5;
-  background-color: $oc-gray-5;
-  display: none;
-}
-
 
 // BLUR EFFECT
 // Carefull, if too many elements have these tags, website could lag
@@ -84,4 +77,13 @@ hr {
     -moz-filter: blur(20px);
     filter: blur(20px);
     transition: filter 0.2s;
+}
+
+// NO HIGHLIGHT EFFECT ON SOME VUESAX ELEMENTS, AMONG OTHER ELEMENTS
+.vs-noti-contenedor, .con-popup, .con-options, .activeItem {
+  user-select: none;
+}
+
+.vs-noti h3 {
+  //font-size: 5em;
 }

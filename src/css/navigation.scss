@@ -35,18 +35,19 @@
   display: flex;
   align-items: center;
   padding: 10px 17px 10px 17px;
+  // If changing this make sure to update the JS (when clicking on nav element, it changes the bottom border radius to zero)
   border-radius: 3px;
 }
 
 #nav-content li:hover, #nav-right-mobile li:hover {
-  background-color: $oc-gray-2;
+  //background-color: $oc-gray-2;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
 // Each list element in nav bar active
 #nav-content li:active, #nav-right-mobile li:active {
-  background-color: $oc-gray-3;
+  //background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
 }
 

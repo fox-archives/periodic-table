@@ -81,7 +81,9 @@ module.exports = {
         // Options similar to the same options in webpackOptions.output
         // both options are optional
         filename: 'bundle.css',
-        chunckFilename: '[id].css'
+        chunckFilename: '[id].css',
+        // Element UI to not import Chinese language pack by default
+        //new NormalModuleReplacementPlugin(/element-ui[\/\\]lib[\/\\]locale[\/\\]lang[\/\\]zh-CN/, 'element-ui/lib/locale/lang/en')
       })
     ]
 }
