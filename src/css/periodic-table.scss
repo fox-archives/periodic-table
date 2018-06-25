@@ -16,9 +16,14 @@ $element-height: 40px;
 #grid-container {
   display: inline-flex;
   justify-content: center;
-  background-color: white;
   //margin-top: 20px;
   //min-width: 400px
+}
+#grid-container.theme-light {
+  background-color: $oc-gray-0;
+}
+#grid-container.theme-dark {
+  background-color: $oc-gray-9;
 }
 
 #grid {
@@ -38,12 +43,23 @@ $element-height: 40px;
   overflow: hidden;
   user-select: none;
 }
+.element-outer.theme-light {
+  box-shadow: 3px 3px 3px $oc-gray-3;
+}
+.element-outer.theme-dark {
+  box-shadow: 3px 3px 3px $oc-gray-6;
+}
 
 // Recall background-color found in generic-elements.scss
 .element-outer:hover {
-  box-shadow: 5px 5px 5px $oc-gray-3;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
+}
+.element-outer.theme-light:hover {
+  box-shadow: 5px 5px 5px $oc-gray-3;
+}
+.element-outer.theme-dark:hover {
+  box-shadow: 5px 5px 5px $oc-gray-6;
 }
 
 .element-inner {
@@ -71,7 +87,6 @@ $element-height: 40px;
 
 // ELEMENT OVERVIEW PANNEL
 #element-overview {
-  box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
   overflow: hidden;
   grid-column-start: 7;
@@ -80,6 +95,13 @@ $element-height: 40px;
   grid-row-end: 7;
   //transition: box-shadow $transition-time ease-in-out;
   z-index: 1;
+}
+#element-overview.theme-light {
+  box-shadow: 4px 4px 4px $oc-gray-2;
+}
+#element-overview.theme-dark {
+  box-shadow: 4px 4px 4px $oc-gray-7;
+}
 
   // Sets how wide the inner element should be, relative to the element outside of it
   // Sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
@@ -105,9 +127,6 @@ $element-height: 40px;
     font-weight: bold;
     font-size: 1.75em;
   }
-
-}
-
 
 // ELEMENT DESCRIPTIONS
 #element-desc {
