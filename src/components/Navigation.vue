@@ -1,19 +1,19 @@
-<template id="">
+<template>
   <div>
     <!-- NAV BAR WITH BUTTONS -->
-    <nav id="nav-content-outer" class="has-shadow">
+    <nav id="nav" v-bind:class="themeType" class="has-shadow">
       <ul id="nav-content">
         <ul id="nav-left">
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="simple" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
-          <li class="mainOptions" id="properties" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
-          <li class="mainOptions" id="electrons" v-on:click="changeSelection('electrons')"> <electrons></electrons> <h2>Electrons </h2> </li>
-          <li class="mainOptions" id="orbitals" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
-          <li class="mainOptions" id="isotopes" v-on:click="changeSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
-          <li class="mainOptions" id="explore" v-on:click="changeSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
-          <li class="mainOptions" id="quiz" v-on:click="changeSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
+          <li id="simple-wide" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
+          <li id="properties-wide" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
+          <li class="custom-icon" id="electrons-wide" v-on:click="changeSelection('electrons')"> <electrons></electrons> <h2>Electrons </h2> </li>
+          <li class="custom-icon" id="orbitals-wide" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
+          <li class="custom-icon" id="isotopes-wide" v-on:click="changeSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
+          <li id="explore-wide" v-on:click="changeSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
+          <li id="quiz-wide" v-on:click="changeSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
           <li id="info" v-on:click="infoPopup('on')"> <info-icon class="navIcon featherIcon"></info-icon> </li>
           <li id="settings" v-on:click="settingsPopup('on')"> <settings-icon class="navIcon featherIcon"></settings-icon> </li>
           <li id="search"><search-icon class="navIcon featherIcon"> </search-icon> </li>
@@ -24,14 +24,14 @@
 
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
-      <ul id="nav-right-mobile">
-        <li class="mainOptions" id="quiz"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
-        <li class="mainOptions" id="properties"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
-        <li class="mainOptions" id="orbitals"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
-        <li class="mainOptions" id="isotopes"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
-        <li class="mainOptions" id="explore"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
-        <li class="mainOptions" id="quiz"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Quiz</h2> </li>
+      <ul v-bind:class="themeType" id="nav-mobile">
+        <li id="quiz-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
+        <li id="properties-mobile"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
+        <li class="custom-icon" id="electrons-mobile"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
+        <li class="custom-icon" id="orbitals-mobile"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
+        <li class="custom-icon" id="isotopes-mobile"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
+        <li id="explore-mobile"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
+        <li id="quiz-mobile"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Quiz</h2> </li>
       </ul>
     </vs-popup>
 
@@ -53,11 +53,11 @@
 
     <!-- POPUP FOR ADVANCED SETTINGS -->
     <vs-popup vs-title="Advanced Options" v-bind:vs-active="advancedSettingsPopupActive" v-on:vs-cancel="advancedSettingsPopup('off')">
-      <aside class="display-options">
+      <aside class="options">
         <ul>
           <li>
             <p>Group Labels</p>
-            <vs-select style="width: 90;" class="option-group-Types" label="groupTypes" v-model="groupType" v-bind:options="groupTypes"></vs-select>
+            <vs-select class="option-group-Types" label="groupTypes" v-model="groupType" v-bind:options="groupTypes"></vs-select>
           </li>
         </ul>
       </aside>
@@ -65,15 +65,15 @@
 
     <!-- POPUP FOR SETTINGS -->
     <vs-popup vs-title="Options" v-bind:vs-active="settingsPopupActive" v-on:vs-cancel="settingsPopup('off')">
-      <aside class="display-options">
+      <aside class="options">
         <ul>
           <li>
             <p>Theme</p>
-            <vs-select style="width: 70px;" class="option-theme" label="themes" v-model="theme" v-bind:options="themes"></vs-select>
+            <vs-select class="option-theme" label="themes" v-model="theme" v-bind:options="themes" v-on:change="changeTheme"></vs-select>
           </li>
           <li>
             <p>Information</p>
-            <vs-select style="width: 110px;" class="option-theme" label="theme" v-model="informationLocation" v-bind:options="informationLocations"></vs-select>
+            <vs-select class="option-theme" label="theme" v-model="informationLocation" v-bind:options="informationLocations"></vs-select>
           </li>
           <li>
             <p>Advanced Options</p>
@@ -89,6 +89,9 @@
 </template>
 
 <script type="text/javascript">
+  // Import the bus
+  import bus from "./bus.js";
+
   // Importing to-be-used SVG icons
   import { Type } from 'vue-feather-icon';
   import { List } from 'vue-feather-icon';
@@ -103,11 +106,17 @@
   import { Search } from 'vue-feather-icon';
   import { Menu } from 'vue-feather-icon';
 
-  import anime from 'animejs';
+  //import anime from 'animejs';
   export default {
     name: 'Navigation',
     data() {
       return {
+        // THEMING
+        // Default light theme (see themes array below to see values in selection menu)
+        // Recall there is a dark blue theme for element blue color (so cannot name blue theme dark-blue)
+        themeTypes: ["light-def", "light-con", "dark-def", "blue-dark"],
+        themeType: "light-def",
+
         // DATA FOR ELEMENT UI MENU
         activeIndex: '1',
         // DATA FOR POPUPS
@@ -122,8 +131,10 @@
         // DATA FOR OPTIONS
         theme: 1,
         themes: [
-          { text: 'Light', value: 1 },
-          { text: 'Dark', value: 2 }
+          { text: 'Light (Default)', value: 1 },
+          { text: 'Light (High Contrast)', value: 2 },
+          { text: 'Dark', value: 3 },
+          { text: 'Dark Blue', value: 4 }
         ],
 
         informationLocation: 2,
@@ -132,9 +143,8 @@
           { text: 'Intrusive', value: 2 },
           { text: 'Excluded', value: 3 }
         ],
-        // END DATA FOR OPTIONS
 
-        // START DATA FOR ADVANCED OPTIONS
+        // DATA FOR ADVANCED OPTIONS
         groupType: 1,
         groupTypes: [
           { text: 'I.U.P.A.C.', value: 1 },
@@ -229,6 +239,19 @@
             element.classList.add(classesRemove[j]);
           }
         }
+      },
+      changeTheme: function() {
+
+        // This changes themeType
+        // i represents each element in themeTypes array
+        for(var i = 0; i < this.themeTypes.length; i++) {
+          // i + 1 because theme
+          if(this.theme == i + 1) {
+            this.themeType = this.themeTypes[i];
+          }
+        }
+        // Emit event theme change, that the theme type was changed
+        bus.$emit('themeChanged', this.themeType);
       }
     },
     components: {

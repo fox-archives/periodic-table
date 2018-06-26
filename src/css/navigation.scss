@@ -1,7 +1,5 @@
 // MAIN NAVIGATION
 #nav-content-outer {
-  background-color: $mainBackground;
-
   // If the navigation doesn't fit in the browser window, make sure user can at least scroll through all of the options
   overflow: auto;
   width: 100%;
@@ -22,7 +20,7 @@
 
 // NAV ELEMENTS FOR MOBILE
 // Show when pressing the hamburger menu
-#nav-right-mobile {
+#nav-mobile {
   display: inline-flex;
   flex-direction: column;
   overflow: auto;
@@ -31,7 +29,7 @@
 
 // NAV ELEMENTS FOR MOBILE AND REGULAR WIDTH
 // Contain an icon and text, so must be formated
-#nav-content li, #nav-right-mobile li {
+#nav-content li, #nav-mobile li {
   display: flex;
   align-items: center;
   padding: 10px 17px 10px 17px;
@@ -39,20 +37,20 @@
   border-radius: 3px;
 }
 
-#nav-content li:hover, #nav-right-mobile li:hover {
+#nav-content li:hover, #nav-mobile li:hover {
   //background-color: $oc-gray-2;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
 // Each list element in nav bar active
-#nav-content li:active, #nav-right-mobile li:active {
+#nav-content li:active, #nav-mobile li:active {
   //background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
 }
 
 // FORMAT TEXT AND ICONS IN NAVBAR
-#nav-content li h2, #nav-right-mobile li h2 {
+#nav-content li h2, #nav-mobile li h2 {
   padding-left: 13px;
 }
 
@@ -88,18 +86,18 @@
 }
 
 // On really small size, show hamburger menu
-@media (max-width: 1060px) {
+@media (max-width: 1075px) {
   #nav-content {
     justify-content: space-between;
   }
 
   // Hide elements that are not info, question, and search
-  #nav-content li#simple, #nav-content li#properties, #nav-content li#electrons, #nav-content li#orbitals, #nav-content li#isotopes, #nav-content li#explore, #nav-content li#quiz {
+  #nav li#simple-wide, #nav li#properties-wide, #nav li#electrons-wide, #nav li#orbitals-wide, #nav li#isotopes-wide, #nav li#explore-wide, #nav li#quiz-wide {
     display: none;
   }
 
   // Show the hamburger menu as inline-flex (hidden for all other display sizes)
-  #nav-content li#menu-mobile {
+  #nav li#menu-mobile {
     display: inline-flex;
   }
 }
@@ -110,32 +108,36 @@
     height: 16px;
   }
 
-  #nav-content li {
+  #nav li {
     padding: 10px 10px 10px 10px;
   }
 }
 
-// POPUP MENUS AND OLD OPTIONS
-
-// SETTINGS
-.display-options {
+// POPUP MENUSz
+// SETTINGS (OPTIONS)
+.options {
 }
 
-.display-options ul {
+.options ul {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 30%;
 }
 
-.display-options li {
+.options li {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
 }
 
-.display-options li p {
+.options li p {
   font-family: robotolight;
   padding-bottom: 5px;
+}
+
+.options select {
+  width: 200px;
 }
 
 // INFORMATION

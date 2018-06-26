@@ -21,9 +21,13 @@ Vue.use(Vuesax, {
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
+// Create an event bus
+//export const bus = new Vue();
+
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';
 import Footer from './components/Footer.vue';
+
 
 // This may be formated incorrectly
 new Vue({
@@ -38,10 +42,3 @@ new Vue({
 new Vue({
   render: m => m(Footer)
 }).$mount('#footer-el')
-
-var doc = document.getElementById("content").querySelectorAll("*");
-
-for (var i = 0; i < doc.length; i++) {
-  //console.log("test");
-  doc[i].classList.add("theme-dark");
-}

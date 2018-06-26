@@ -1,0 +1,85 @@
+// ALL NAVIGATION THEMES
+
+// LIGHT DEF
+$light-def-text: $oc-gray-9;
+$light-def-background: white;
+#nav.light-def ul {
+  background-color: $light-def-background;
+}
+
+#nav.light-def li h2, #nav-mobile.light-def li h2 {
+  color: $light-def-text;
+}
+
+// Works for non-custom icons
+#nav.light-def li *, #nav-mobile.light-def li * {
+  stroke: $light-def-text;
+}
+
+#nav.light-def .custom-icon svg, #nav-mobile.light-def .custom-icon svg {
+  fill: $light-def-text;
+  stroke: $light-def-text;
+}
+
+// LIGHT CON (HIGH CONTRAST)
+$light-con-text: $oc-gray-9;
+$light-con-background: $oc-gray-1;
+#nav.light-con ul {
+  background-color: $light-con-background;
+}
+
+#nav.light-con li h2, #nav-mobile.light-con li h2 {
+  color: $light-con-text;
+}
+
+// Works for non-custom icons
+#nav.dark-def li *, #nav-mobile.dark-def li * {
+  stroke: $light-con-text;
+}
+
+#nav.dark-def .custom-icon svg, #nav-mobile.dark-def .custom-icon svg {
+  fill: $light-con-text;
+  stroke: $light-con-text;
+}
+
+// DARK
+$dark-def-text: $oc-gray-1;
+$dark-def-background: $oc-gray-9;
+#nav.dark-def ul {
+  background-color: $dark-def-background;
+}
+
+#nav.dark-def li h2, #nav-mobile.dark-def li h2 {
+  color: $dark-def-text;
+}
+
+// Works for non-custom icons
+#nav.dark-def li *, #nav-mobile.dark-def li * {
+  stroke: $dark-def-text;
+}
+
+#nav.dark-def .custom-icon svg, #nav-mobile.dark-def .custom-icon svg {
+  fill: $dark-def-text;
+  stroke: $dark-def-text;
+}
+
+// DARK BLUE
+$dark-blue-text: $oc-gray-1;
+$dark-blue-background: $oc-blue-9;
+#nav.blue-dark ul {
+  background-color: $dark-blue-background;
+}
+
+#nav.blue-dark li h2, #nav-mobile.blue-dark li h2 {
+  color: $dark-blue-text;
+}
+
+// Works for non-custom icons
+#nav.blue-dark li *, #nav-mobile.blue-dark li * {
+  stroke: $dark-blue-text;
+}
+
+#nav.blue-dark .custom-icon svg, #nav-mobile.blue-dark .custom-icon svg {
+  fill: $dark-blue-text;
+  stroke: $dark-blue-text;
+}

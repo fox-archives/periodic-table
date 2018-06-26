@@ -10,7 +10,9 @@ $mainBackground: $oc-gray-0;
 $labelDark: $oc-gray-1;
 
 @import "./navigation.scss";
+@import "./navigation-themes.scss";
 @import "./footer.scss";
+@import "./footer-themes.scss";
 @import "./periodic-table.scss";
 @import "./generic-elements.scss";
 @import "./icons.scss";
@@ -82,8 +84,4 @@ a:clicked {
 // NO HIGHLIGHT EFFECT ON SOME VUESAX ELEMENTS, AMONG OTHER ELEMENTS
 .vs-noti-contenedor, .con-popup, .con-options, .activeItem {
   user-select: none;
-}
-
-.vs-noti h3 {
-  //font-size: 5em;
 }

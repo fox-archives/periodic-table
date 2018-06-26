@@ -1,0 +1,34 @@
+// ALL FOOTER THEMES
+
+// LIGHT DEF
+#footer.light-def p, #footer.light-def a {
+  color: $oc-gray-9;
+}
+#footer.light-def {
+  background-color: white;
+}
+
+
+// LIGHT CON
+#footer.light-con p, #footer.light-con a {
+  color: $oc-gray-9;
+}
+#footer.light-con {
+  background-color: $oc-gray-0;
+}
+
+// DARK
+#footer.dark-def p, #footer.dark-def a {
+  color: $oc-gray-1;
+}
+#footer.dark-def {
+  background-color: $oc-gray-9;
+}
+
+// DARK BLUE
+#footer.blue-dark p, #footer.blue-dark a {
+  color: $oc-gray-1;
+}
+#footer.blue-dark {
+  background-color: $oc-blue-9;
+}
