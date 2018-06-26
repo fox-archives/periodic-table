@@ -118,32 +118,13 @@
 
 // PERIOD LABELS AND GROUP LABELS COLORS
 // Each element and group label has v-binds a class which is either .light or .dark
-.light.theme-light {
-  background-color: $oc-gray-0;
-  //background-color: $mainBackground;
-  //transition: background-color $transition-time ease-in-out;
-}
-
-.dark.theme-light {
-  background-color: $oc-gray-1;
-  //transition: background-color $transition-time ease-in-out;
-}
-
-.light.theme-dark {
-  background-color: $oc-gray-9;
-  //background-color: $mainBackground;
-  //transition: background-color $transition-time ease-in-out;
-}
-
-.dark.theme-dark {
-  background-color: $oc-gray-8;
-  //transition: background-color $transition-time ease-in-out;
-}
-
 .light {
-  background-color: orange;
+  background-color: white;
+  //background-color: $mainBackground;
+  //transition: background-color $transition-time ease-in-out;
 }
 
 .dark {
-  background-color: blue;
+  background-color: $labelDark;
+  //transition: background-color $transition-time ease-in-out;
 }

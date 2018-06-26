@@ -1,15 +1,11 @@
 // MAIN NAVIGATION
 #nav-content-outer {
+  background-color: $mainBackground;
+
   // If the navigation doesn't fit in the browser window, make sure user can at least scroll through all of the options
   overflow: auto;
   width: 100%;
   user-select: none;
-}
-#nav-content-outer.theme-light {
-  background-color: white;
-}
-#nav-content-outer.theme-dark {
-  background-color: black;
 }
 
 #nav-content {
@@ -44,37 +40,20 @@
 }
 
 #nav-content li:hover, #nav-right-mobile li:hover {
+  //background-color: $oc-gray-2;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
-#nav-content li.theme-light:hover, #nav-right-mobile li.theme-light:hover {
-  background-color: $oc-gray-0;
-}
-#nav-content li.theme-dark:hover, #nav-right-mobile li.theme-dark:hover {
-  background-color: $oc-gray-9;
-}
-
 
 // Each list element in nav bar active
 #nav-content li:active, #nav-right-mobile li:active {
+  //background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
-}
-#nav-content li.theme-light:active, #nav-right-mobile li.theme-light:active {
-  background-color: $oc-gray-1;
-}
-#nav-content li.theme-dark:active, #nav-right-mobile li.theme-dark:active {
-  background-color: $oc-gray-8;
 }
 
 // FORMAT TEXT AND ICONS IN NAVBAR
 #nav-content li h2, #nav-right-mobile li h2 {
   padding-left: 13px;
-}
-#nav-content li h2.theme-light, #nav-right-mobile li h2.theme-light {
-  color: $oc-gray-9;
-}
-#nav-content li h2.theme-dark, #nav-right-mobile li h2.theme-dark {
-  color: $oc-gray-0;
 }
 
 // Normal icon size
@@ -109,13 +88,13 @@
 }
 
 // On really small size, show hamburger menu
-@media (max-width: 1072px) {
+@media (max-width: 1060px) {
   #nav-content {
     justify-content: space-between;
   }
 
   // Hide elements that are not info, question, and search
-  #nav-content li#simple-main, #nav-content li#properties-main, #nav-content li#electrons-main, #nav-content li#orbitals-main, #nav-content li#isotopes-main, #nav-content li#explore-main, #nav-content li#quiz-main {
+  #nav-content li#simple, #nav-content li#properties, #nav-content li#electrons, #nav-content li#orbitals, #nav-content li#isotopes, #nav-content li#explore, #nav-content li#quiz {
     display: none;
   }
 

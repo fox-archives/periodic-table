@@ -9,9 +9,6 @@ $transition-time: 0.15s;
 $mainBackground: $oc-gray-0;
 $labelDark: $oc-gray-1;
 
-$theme-light-text: $oc-gray-1;
-$theme-dark-text: $oc-gray-1;
-
 @import "./navigation.scss";
 @import "./footer.scss";
 @import "./periodic-table.scss";
@@ -21,18 +18,10 @@ $theme-dark-text: $oc-gray-1;
 * {
   margin: 0px;
   padding: 0px;
+  color: $oc-gray-9;
   box-sizing: border-box;
   outline: 0px;
 }
-
-/*
-.theme-light {
-  color: $oc-gray-9;
-}
-
-.theme-dark {
-  color: $oc-gray-0;
-}*/
 
 // ONLY FOR USE IN NAVIGATION / TITLE
 h1 {
@@ -51,24 +40,14 @@ p {
   font-family: latolight;
 }
 
-a.theme-light {
+a {
   font-family: latolight;
   text-decoration-line: underline;
   text-decoration-color: $oc-gray-2;
 }
 
-a.theme-dark {
-  font-family: latolight;
-  text-decoration-line: underline;
-  text-decoration-color: $oc-gray-7;
-}
-
-a.theme-light:hover {
+a:hover {
   text-decoration-color: $oc-gray-9;
-}
-
-a.theme-dark:hover {
-  text-decoration-color: $oc-gray-0;
 }
 
 a:clicked {
@@ -77,12 +56,8 @@ a:clicked {
 
 // ELEMENTS WITH SHADOW
 // Currently the navigation and elements bar
-.has-shadow.theme-light {
+.has-shadow {
   box-shadow: 2px 2px 2px $oc-gray-2;
-}
-
-.has-shadow.theme-dark {
-  box-shadow: 2px 2px 2px $oc-gray-7;
 }
 
 

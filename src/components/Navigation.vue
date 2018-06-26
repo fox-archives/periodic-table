@@ -1,5 +1,5 @@
 <template id="">
-  <div id="theme-decider">  <!-- Do not remove this! Assists in determining what the current theme is -->
+  <div>
     <!-- NAV BAR WITH BUTTONS -->
     <nav id="nav-content-outer" class="has-shadow">
       <ul id="nav-content">
@@ -7,14 +7,13 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="mainOptions" id="simple-main" v-on:click="changeSelection('simple-main')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
-          <li class="mainOptions" id="properties-main" v-on:click="changeSelection('properties-main')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
-          <li class="mainOptions" id="electrons-main" v-on:click="[changeSelection('electrons-main')]"> <electrons></electrons> <h2>Electrons </h2> </li>
-          <li class="mainOptions" id="orbitals-main" v-on:click="changeSelection('orbitals-main')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
-          <li class="mainOptions" id="isotopes-main" v-on:click="changeSelection('isotopes-main')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
-          <li class="mainOptions" id="explore-main" v-on:click="changeSelection('explore-main')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
-          <li class="mainOptions" id="quiz-main" v-on:click="changeSelection('quiz-main')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
-
+          <li class="mainOptions" id="simple" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
+          <li class="mainOptions" id="properties" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
+          <li class="mainOptions" id="electrons" v-on:click="[electronAnimation, changeSelection('electrons')]"> <electrons></electrons> <h2>Electrons </h2> </li>
+          <li class="mainOptions" id="orbitals" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
+          <li class="mainOptions" id="isotopes" v-on:click="changeSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
+          <li class="mainOptions" id="explore" v-on:click="changeSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
+          <li class="mainOptions" id="quiz" v-on:click="changeSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
           <li id="info" v-on:click="infoPopup('on')"> <info-icon class="navIcon featherIcon"></info-icon> </li>
           <li id="settings" v-on:click="settingsPopup('on')"> <settings-icon class="navIcon featherIcon"></settings-icon> </li>
           <li id="search"><search-icon class="navIcon featherIcon"> </search-icon> </li>
@@ -26,13 +25,13 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul id="nav-right-mobile">
-        <li class="mainOptions" id="quiz-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
-        <li class="mainOptions" id="properties-mobile"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
-        <li class="mainOptions" id="electrons-mobile"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
-        <li class="mainOptions" id="orbitals-mobile"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
-        <li class="mainOptions" id="isotopes-mobile"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
-        <li class="mainOptions" id="explore-mobile"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
-        <li class="mainOptions" id="quiz-mobile"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Quiz</h2> </li>
+        <li class="mainOptions" id="quiz"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
+        <li class="mainOptions" id="properties"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
+        <li class="mainOptions" id="electrons"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
+        <li class="mainOptions" id="orbitals"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
+        <li class="mainOptions" id="isotopes"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
+        <li class="mainOptions" id="explore"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
+        <li class="mainOptions" id="quiz"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Quiz</h2> </li>
       </ul>
     </vs-popup>
 
@@ -70,11 +69,11 @@
         <ul>
           <li>
             <p>Theme</p>
-            <vs-select style="width: 70px;" class="option-theme" label="themes" v-model="theme" v-bind:options="themes" v-on:change="changeTheme"></vs-select>
+            <vs-select style="width: 70px;" class="option-theme" label="themes" v-model="theme" v-bind:options="themes"></vs-select>
           </li>
           <li>
             <p>Information</p>
-            <vs-select style="width: 110px;" class="option-theme" label="theme" v-model="infoLocation" v-bind:options="infoLocations" v-on:change="changeInfoLocation"></vs-select>
+            <vs-select style="width: 110px;" class="option-theme" label="theme" v-model="informationLocation" v-bind:options="informationLocations"></vs-select>
           </li>
           <li>
             <p>Advanced Options</p>
@@ -105,11 +104,12 @@
   import { Menu } from 'vue-feather-icon';
 
   import anime from 'animejs';
-
   export default {
     name: 'Navigation',
     data() {
       return {
+        // DATA FOR ELEMENT UI MENU
+        activeIndex: '1',
         // DATA FOR POPUPS
         menuPopupActive: false,
         infoPopupActive: false,
@@ -126,8 +126,8 @@
           { text: 'Dark', value: 2 }
         ],
 
-        infoLocation: 2,
-        infoLocations: [
+        informationLocation: 2,
+        informationLocations: [
           { text: 'Unobtrusive', value: 1 },
           { text: 'Intrusive', value: 2 },
           { text: 'Excluded', value: 3 }
@@ -148,7 +148,6 @@
       }
     },
     methods: {
-      // POPUP MENUS: ACTIVATING / CLOSING THEM
       menuPopup: function(state) {
         if(state == "on") {
           this.changeBlur("blur");
@@ -189,7 +188,6 @@
           this.advancedSettingsPopupActive = false;
         }
       },
-      // CHANGE THE BLUR OF THE BACKGROUND
       changeBlur: function(blurType) {
         if(blurType == "no-blur") {
           document.getElementById('content').classList.add('no-blur');
@@ -232,49 +230,41 @@
           }
         }
       },
+      electronAnimation: function() {
+        console.log("test");
+
+        var path = anime.path('#electrons .path2');
+        var motionPath = anime({
+        targets: '#electrons .circle2',
+        translateX: path('x'),
+        translateY: path('y'),
+        easing: 'linear',
+        duration: 2000,
+        //loop: true
+        });
+      },
       // Clicked element will change color (different than all other nav componets)
-      changeSelection: function(element) {
+      changeSelection(element) {
         // All elements that will change their background
-        var navElements = [ "simple-main", "properties-main", "electrons-main", "orbitals-main", "isotopes-main", "explore-main", "quiz-main" ];
-      },
-      changeTheme: function() {
-        // 1 is Light
-        // 2 is Dark
-        /*
-        var newTheme;
-        if(this.theme == 1) {
-          newTheme = "theme-light";
-        }
-        else if(this.theme == 2) {
-          newTheme = "theme-dark";
-        }
+        var navElements = [ "simple", "properties", "electrons", "orbitals", "isotopes", "explore", "quiz" ];
 
-        // Gets array of all classes (which should correspond to themes). There should only be one element in the array
-        var themeClasses = document.getElementById("theme-decider").classList;
-        if(themeClasses.length > 1) {
-          console.log("Something is not right. There are more than one classes under the element with 'theme-decider' id. This means that more than 1 theme exists at one time.");
-        }
+        // When nav button is clicked, make that nav element white
+        var item = document.getElementById(element);
+        console.log(item);
+        item.style.background = "blue";
+        console.log("test");
+        item.style.borderBottomLeftRadius = "0px";
+        item.style.borderBottomRightRadius = "0px";
 
-        // Assumes there is only one theme active at a time (which must be held true throughout the applications, or there may be CSS weirdness)
-        var currentTheme = themeClasses[0];
-
-        // Only replace themes if the current theme is different than the new theme
-        if(newTheme != currentTheme) {
-          var allElements = document.getElementById("content").querySelectorAll("*");
-          for (var i = 0; i < allElements.length; i++) {
-            //console.log("test");
-            allElements[i].classList.add(newTheme);
-            allElements[i].classList.remove(currentTheme);
+        // When nav button is clicked, make all other nav elements regular color
+        /*for(var i = 0; i < navElements.length; i++) {
+          // If the nav element is not the clicked one, change color to light gray, and set the border radius
+          if(navElements[i] != element) {
+            item.style.background = "#f1f3f5";
+            item.style.borderBottomLeftRadius = "3px";
+            item.style.borderBottomRightRadius = "3px";
           }
-
-        }
-        */
-      },
-      changeInfoLocation: function() {
-        // 1 is Unobtrusive
-        // 2 is Intrusive
-        // 3 is Excluded
-        console.log(this.infoLocation);
+        }*/
       }
     },
     components: {
@@ -293,7 +283,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-
-</style>

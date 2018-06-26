@@ -16,14 +16,9 @@ $element-height: 40px;
 #grid-container {
   display: inline-flex;
   justify-content: center;
+  background-color: white;
   //margin-top: 20px;
   //min-width: 400px
-}
-#grid-container.theme-light {
-  background-color: $oc-gray-0;
-}
-#grid-container.theme-dark {
-  background-color: $oc-gray-9;
 }
 
 #grid {
@@ -38,27 +33,17 @@ $element-height: 40px;
 .element-outer {
   border-radius: 4px;
   margin: 2px 2px 2px 2px;
+  box-shadow: 3px 3px 3px $oc-gray-3;
   //transition: background-color $transition-time ease-in-out;
   overflow: hidden;
   user-select: none;
 }
-.element-outer.theme-light {
-  box-shadow: 3px 3px 3px $oc-gray-3;
-}
-.element-outer.theme-dark {
-  box-shadow: 3px 3px 3px $oc-gray-6;
-}
 
 // Recall background-color found in generic-elements.scss
 .element-outer:hover {
+  box-shadow: 5px 5px 5px $oc-gray-3;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
-}
-.element-outer.theme-light:hover {
-  box-shadow: 5px 5px 5px $oc-gray-3;
-}
-.element-outer.theme-dark:hover {
-  box-shadow: 5px 5px 5px $oc-gray-6;
 }
 
 .element-inner {
@@ -86,6 +71,7 @@ $element-height: 40px;
 
 // ELEMENT OVERVIEW PANNEL
 #element-overview {
+  box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
   overflow: hidden;
   grid-column-start: 7;
@@ -94,13 +80,6 @@ $element-height: 40px;
   grid-row-end: 7;
   //transition: box-shadow $transition-time ease-in-out;
   z-index: 1;
-}
-#element-overview.theme-light {
-  box-shadow: 4px 4px 4px $oc-gray-2;
-}
-#element-overview.theme-dark {
-  box-shadow: 4px 4px 4px $oc-gray-7;
-}
 
   // Sets how wide the inner element should be, relative to the element outside of it
   // Sets the margin to 100% - lenth you want element, then / 2 since there are left and right margins
@@ -127,20 +106,18 @@ $element-height: 40px;
     font-size: 1.75em;
   }
 
+}
+
+
 // ELEMENT DESCRIPTIONS
 #element-desc {
+  box-shadow: 4px 4px 4px $oc-gray-2;
   border-radius: $border-radius / 2;
   grid-column-start: 15;
   grid-column-end: 25;
   grid-row-start: 2;
   grid-row-end: 7;
   //z-index: 1;
-}
-#element-desc.theme-light {
-  box-shadow: 4px 4px 4px $oc-gray-2;
-}
-#element-desc.theme-dark {
-  box-shadow: 4px 4px 4px $oc-gray-7;
 }
 
 // This sets how wide the inner element should be, relative to the element outside of it
@@ -180,14 +157,9 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 .label-period-inner:hover {
+  background-color: $labelDark;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
-}
-.label-period-inner.theme-light:hover {
-  background-color: $oc-gray-1;
-}
-.label-period-inner.theme-dark:hover {
-  background-color: $oc-gray-8;
 }
 
 .label-period-inner > .label-text {
@@ -208,27 +180,15 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 .label-group-inner:hover {
+  background-color: $labelDark;
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
-}
-.label-group-inner.theme-light:hover {
-  background-color: $oc-gray-1;
-}
-.label-group-inner.theme-dark:hover {
-  background-color: $oc-gray-8;
 }
 
 .label-group-inner > .label-text {
   padding-top: 2px;
   text-align: center;
   font-size: 1.33em;
-}
-
-.label-text.theme-light {
-  color: $oc-gray-9;
-}
-.label-text.theme-dark {
-  color: $oc-gray-0;
 }
 
 // DUPLICATED ELEMENTS FROM PERIODIC TABLE CSS TAGS FOR POSITION IN TABLE

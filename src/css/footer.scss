@@ -7,19 +7,12 @@
   user-select: none;
 }
 
-#footer.theme-light {
-  background-color: white;
-}
-
-#footer.theme-dark {
-  background-color: black;
-}
-
 // Text in footer
 #footer > p, #footer > a {
   // Font Family is roboto because it is not exactly content, but a title sort of
   font-family: robotoregular;
   font-size: 1em;
+  color: $oc-gray-9;
   margin-left: 10px;
   margin-right: 10px;
 }

@@ -28,13 +28,13 @@ module.exports = {
          test: /\.vue$/,
          //exclude: /node_modules/,
          loader: 'vue-loader',
-         options: {
+         /*options: {
            loaders: {
              scss: {
                loader: 'sass-loader'
              }
            }
-         }
+         }*/
        },
        {
          test: /\.(sa|sc)ss$/,
@@ -70,12 +70,10 @@ module.exports = {
       ]
    },
    resolve: {
-     extensions: ['*', '.js', '.vue', '.json'],
       alias: {
-        'vue$': 'vue/dist/vue.esm.js',
-        /*'@': resolve('src'),
-        styles: resolve('src/css')*/
-      }
+        'vue$': 'vue/dist/vue.esm.js'
+      },
+      extensions: ['*', '.js', '.vue', '.json']
     },
     plugins: [
       new VueLoaderPlugin(),

@@ -288,7 +288,6 @@
          }
        },
 
-        /*
        // Changes shade of hovered element (lighten or darken, or default)
        setElementColor: function(index, shade) {
        if(this.clickedElementIndex != index) {
@@ -373,7 +372,6 @@
          }
        },
        changeLabelColor: function(index, isMouseOver) {
-
          // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
          // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
 
@@ -386,23 +384,31 @@
          var group = this.labelClassToNone(groupFull);
 
          if(this.clickActive == false) {
+           // When changing a label, make sure all others are turned off first
+           for(var i = 0; i < this.periodLabels.length; i++) {
+             this.periodLabels[i].color = "light";
+           }
+           for(var i = 0; i < this.groupLabels.length; i++) {
+              this.groupLabels[i].color = "light";
+           }
 
            // Only darken the label if the element actually has a valid period number (within the actual range of the periodic table)
            if (period > 0 && period < 8) {
              // Darken the labels if the mouse is entering an element
-            if(isMouseOver == "true") {
+            if(isMouseOver == "true")
+             {
                this.periodLabels[period - 1].color = "dark";
              }
              // Lighten the labels if the mouse is leaving an element
-             else if(isMouseOver == "false") {
+             else if(isMouseOver == "false")
+             {
                this.periodLabels[period - 1].color = "light";
              }
-             else {
+             else
+             {
                console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
              }
            }
-
-
            // Only darken the label if the element actually has a valid group number (within the actual range of the periodic table)
            if (group > 0 && group < 19) {
              // Darken the labels if the mouse is entering an element
@@ -417,7 +423,6 @@
                console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
              }
            }
-
          }
        },
        // type can either be "mouesOver" or "mouseLeave"
@@ -473,7 +478,7 @@
            // Set clickActive temporarily to false, so we can actually changeLabelColor and updateElementInfoAndDesc etc.
            // Then change it back so it doesn't update element info automatically (since user clicked, and we want to not change element info)
            this.clickActive = false;
-           //this.changeLabelColor(index, "true");
+           this.changeLabelColor(index, "true");
            this.updateElementInfoAndDesc(index);
            this.clickActive = true;
 
@@ -493,7 +498,6 @@
            this.setElementColorForce(index, "dark-");
          }
        },
-       */
        labelClassToNone: function(labelNumber) {
          return labelNumber.substring(2);
        },
@@ -518,18 +522,39 @@
        periodNotification: function(index) {
         // For now, use Vuesax notifications because they look better (and because ElementUI does not seem to display names properly)
         // Unless one can customize the whites and greys of Vuesax, must move over to ElementUI eventually
+        ///*
          this.$vs.notify({
            time: 3000,
            title: this.getPeriodGroupName('period', this.periodLabels[index].display),
            text: this.periodLabels[index].name
          });
+         //*/
+         /*
+         this.$notify({
+           title: this.getPeriodGroupName('period', this.periodLabels[index].display),
+           message: this.periodLabels[index].name,
+           position: 'bottom-right',
+           showClose: false
+         });
+         */
        },
        groupNotification: function(index) {
+         ///*
          this.$vs.notify({
            time: 3000,
            title: this.getPeriodGroupName('group', this.groupLabels[index].display),
            text: this.groupLabels[index].name
          });
+        //*/
+
+        /*
+         this.$notify({
+           title: this.getPeriodGroupName('group', this.groupLabels[index].display),
+           message: this.groupLabels[index].name,
+           position: 'bottom-left',
+           showClose: false
+         });
+        */
        }
      },
      computed: {
