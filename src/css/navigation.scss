@@ -43,19 +43,6 @@
   border-radius: 3px;
 }
 
-// 'Simple' highlighted by default
-#nav-content li#simple-main.theme-light {
-  background-color: $oc-gray-0;
-  border-bottom-left-radius: 0px;
-  border-buttom-right-radius: 0px;
-}
-
-#nav-content li#simple-main.theme-dark {
-  background-color: $oc-gray-9;
-  border-bottom-left-radius: 0px;
-  border-buttom-right-radius: 0px;
-}
-
 #nav-content li:hover, #nav-right-mobile li:hover {
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
@@ -82,6 +69,12 @@
 // FORMAT TEXT AND ICONS IN NAVBAR
 #nav-content li h2, #nav-right-mobile li h2 {
   padding-left: 13px;
+}
+#nav-content li h2.theme-light, #nav-right-mobile li h2.theme-light {
+  color: $oc-gray-9;
+}
+#nav-content li h2.theme-dark, #nav-right-mobile li h2.theme-dark {
+  color: $oc-gray-0;
 }
 
 // Normal icon size

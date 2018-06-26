@@ -240,7 +240,7 @@
       changeTheme: function() {
         // 1 is Light
         // 2 is Dark
-
+        /*
         var newTheme;
         if(this.theme == 1) {
           newTheme = "theme-light";
@@ -268,7 +268,7 @@
           }
 
         }
-
+        */
       },
       changeInfoLocation: function() {
         // 1 is Unobtrusive
