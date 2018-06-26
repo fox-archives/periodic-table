@@ -17,12 +17,6 @@ Vue.use(Vuesax, {
   }
 })
 
-// Element UI
-import ElementUI from 'element-ui';
-import locale from 'element-ui/lib/locale/lang/en'
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI, { locale });
-
 // Feather Icons
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
@@ -44,3 +38,10 @@ new Vue({
 new Vue({
   render: m => m(Footer)
 }).$mount('#footer-el')
+
+var doc = document.getElementById("content").querySelectorAll("*");
+
+for (var i = 0; i < doc.length; i++) {
+  //console.log("test");
+  doc[i].classList.add("theme-dark");
+}

@@ -9,7 +9,7 @@
         <ul id="nav-right">
           <li class="mainOptions" id="simple" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
           <li class="mainOptions" id="properties" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
-          <li class="mainOptions" id="electrons" v-on:click="[electronAnimation, changeSelection('electrons')]"> <electrons></electrons> <h2>Electrons </h2> </li>
+          <li class="mainOptions" id="electrons" v-on:click="changeSelection('electrons')"> <electrons></electrons> <h2>Electrons </h2> </li>
           <li class="mainOptions" id="orbitals" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
           <li class="mainOptions" id="isotopes" v-on:click="changeSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
           <li class="mainOptions" id="explore" v-on:click="changeSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
@@ -229,42 +229,6 @@
             element.classList.add(classesRemove[j]);
           }
         }
-      },
-      electronAnimation: function() {
-        console.log("test");
-
-        var path = anime.path('#electrons .path2');
-        var motionPath = anime({
-        targets: '#electrons .circle2',
-        translateX: path('x'),
-        translateY: path('y'),
-        easing: 'linear',
-        duration: 2000,
-        //loop: true
-        });
-      },
-      // Clicked element will change color (different than all other nav componets)
-      changeSelection(element) {
-        // All elements that will change their background
-        var navElements = [ "simple", "properties", "electrons", "orbitals", "isotopes", "explore", "quiz" ];
-
-        // When nav button is clicked, make that nav element white
-        var item = document.getElementById(element);
-        console.log(item);
-        item.style.background = "blue";
-        console.log("test");
-        item.style.borderBottomLeftRadius = "0px";
-        item.style.borderBottomRightRadius = "0px";
-
-        // When nav button is clicked, make all other nav elements regular color
-        /*for(var i = 0; i < navElements.length; i++) {
-          // If the nav element is not the clicked one, change color to light gray, and set the border radius
-          if(navElements[i] != element) {
-            item.style.background = "#f1f3f5";
-            item.style.borderBottomLeftRadius = "3px";
-            item.style.borderBottomRightRadius = "3px";
-          }
-        }*/
       }
     },
     components: {

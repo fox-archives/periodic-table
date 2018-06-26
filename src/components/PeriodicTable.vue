@@ -298,6 +298,14 @@
            Vue.set(this.elementColors, index, (shade + defaultColor));
          }
        },
+       // Similar to setElementColor, but does it by force (sets color even if ths.clickedElementIndex if the same as the index)
+       setElementColorForce: function(index, shade) {
+         // Gets current default color
+         var defaultColor = this.elementsDefaultColor[index];
+
+         // Sets current default color
+         Vue.set(this.elementColors, index, (shade + defaultColor));
+       },
        // Sets the color of all elements (usually the default color)
        setAllElementsColor: function(shade) {
          for(var i = 0; i < this.elementColors.length; i++)
@@ -309,18 +317,12 @@
            }
          }
        },
-       // Similar to setElementColor, but does it by force (sets color even if ths.clickedElementIndex if the same as the index)
-       setElementColorForce: function(index, shade) {
-         // Gets current default color
-         var defaultColor = this.elementsDefaultColor[index];
-
-         // Sets current default color
-         Vue.set(this.elementColors, index, (shade + defaultColor));
-       },
        darkenElements: function(index, prefix, type) {
          var className = this.labelNoneToClass(index + 1, type);
 
+         // Elements that need to be lightened
          var elements = document.getElementsByClassName(className);
+
          // For each element in the array, highlight it
          for(var i = 0; i < elements.length; i++) {
            // Get the atomicNumber of the element
@@ -335,12 +337,10 @@
          var className = this.labelNoneToClass(index + 1, type);
 
          // Get the length of the array to be used (depends on period / group)
-         if(type == "period")
-         {
+         if(type == "period") {
           var arrayType = this.periodLabels
          }
-         else if(type == "group")
-         {
+         else if(type == "group") {
            var arrayType = this.groupLabels
          }
 
@@ -350,8 +350,7 @@
          for(var i = 0; i <= arrayType.length; i++) {
            var AClassName = (typeShort + i);
            var ithElements = [];
-           if(AClassName != className)
-           {
+           if(AClassName != className) {
              ithElements = document.getElementsByClassName(AClassName)
            }
            // When adding to the main array (elementToChangeColor), add the element atomicNumber
@@ -395,17 +394,14 @@
            // Only darken the label if the element actually has a valid period number (within the actual range of the periodic table)
            if (period > 0 && period < 8) {
              // Darken the labels if the mouse is entering an element
-            if(isMouseOver == "true")
-             {
+            if(isMouseOver == "true") {
                this.periodLabels[period - 1].color = "dark";
              }
              // Lighten the labels if the mouse is leaving an element
-             else if(isMouseOver == "false")
-             {
+             else if(isMouseOver == "false") {
                this.periodLabels[period - 1].color = "light";
              }
-             else
-             {
+             else {
                console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
              }
            }
@@ -437,8 +433,7 @@
          if(type == "mouseLeave") {
            // By 'click' being active, mean that the user clicked on an element, and wants to display that element, even if mouse moves away from element
            // If click is active, on mouse leave of label, show the previous element that was clicked on (because it got 'erased' on mouseover of label)
-           if(this.clickActive == true)
-           {
+           if(this.clickActive == true) {
              // Recall that this.clickedElementPeriod and this.clickedElementGroup are NOT indexes; they are actual values
              // We don't want to change color when this.clickedElementPeriod / group is 0 that value is for groupless elements (lanth. and act. elements)
              // Nor do we want to change color when this.clickedElementPeriod / group is -1, because that occurs when this.clickActive is false (I think this is already covered, but just a precaution)
@@ -522,39 +517,24 @@
        periodNotification: function(index) {
         // For now, use Vuesax notifications because they look better (and because ElementUI does not seem to display names properly)
         // Unless one can customize the whites and greys of Vuesax, must move over to ElementUI eventually
-        ///*
          this.$vs.notify({
            time: 3000,
            title: this.getPeriodGroupName('period', this.periodLabels[index].display),
            text: this.periodLabels[index].name
          });
-         //*/
-         /*
-         this.$notify({
-           title: this.getPeriodGroupName('period', this.periodLabels[index].display),
-           message: this.periodLabels[index].name,
-           position: 'bottom-right',
-           showClose: false
-         });
-         */
        },
        groupNotification: function(index) {
-         ///*
          this.$vs.notify({
            time: 3000,
            title: this.getPeriodGroupName('group', this.groupLabels[index].display),
            text: this.groupLabels[index].name
          });
-        //*/
-
-        /*
          this.$notify({
            title: this.getPeriodGroupName('group', this.groupLabels[index].display),
            message: this.groupLabels[index].name,
            position: 'bottom-left',
            showClose: false
          });
-        */
        }
      },
      computed: {
