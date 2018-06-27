@@ -1,5 +1,5 @@
 <template>
-  <div id="grid-container-outer" class="has-shadow">
+  <div id="grid-container-outer" class="has-shadow" v-bind:class="themeType">
     <div id="grid-container">
       <main id="grid">
 
@@ -271,7 +271,9 @@
          // When user clicks, want to make clicked element darker than if it was highlighted
          clickedElementIndex: -1,
          clickedElementPeriod: -1,
-         clickedElementGroup: -1
+         clickedElementGroup: -1,
+
+         themeType: 'light-def'
        }
      },
      methods: {
@@ -536,6 +538,11 @@
        changeTheme: function() {
          console.log("Perioidc table theme change");
        }
+     },
+     created() {
+       bus.$on('themeChanged', (data) => {
+         this.themeType = data;
+       })
      },
      computed: {
 

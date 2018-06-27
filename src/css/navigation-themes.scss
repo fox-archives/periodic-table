@@ -21,6 +21,7 @@ $light-def-background: white;
   stroke: $light-def-text;
 }
 
+
 // LIGHT CON (HIGH CONTRAST)
 $light-con-text: $oc-gray-9;
 $light-con-background: $oc-gray-1;
@@ -42,9 +43,10 @@ $light-con-background: $oc-gray-1;
   stroke: $light-con-text;
 }
 
-// DARK
+
+// DARK DEF
 $dark-def-text: $oc-gray-1;
-$dark-def-background: $oc-gray-9;
+$dark-def-background: $oc-gray-8;
 #nav.dark-def ul {
   background-color: $dark-def-background;
 }
@@ -62,6 +64,7 @@ $dark-def-background: $oc-gray-9;
   fill: $dark-def-text;
   stroke: $dark-def-text;
 }
+
 
 // DARK BLUE
 $dark-blue-text: $oc-gray-1;

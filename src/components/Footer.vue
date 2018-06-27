@@ -25,11 +25,6 @@
       bus.$on('themeChanged', (data) => {
         this.themeType = data;
       })
-    },
-    methods: {
-      changeTheme: function() {
-
-      }
     }
   }
 </script>
