@@ -114,7 +114,7 @@
         // THEMING
         // Default light theme (see themes array below to see values in selection menu)
         // Recall there is a dark blue theme for element blue color (so cannot name blue theme dark-blue)
-        themeTypes: ["light-def", "light-con", "dark-def", "blue-dark"],
+        themeTypes: ["light-def", "light-con", "dark-def"],
         themeType: "light-def",
 
         // DATA FOR ELEMENT UI MENU
@@ -133,8 +133,7 @@
         themes: [
           { text: 'Light (Default)', value: 1 },
           { text: 'Light (High Contrast)', value: 2 },
-          { text: 'Dark', value: 3 },
-          { text: 'Dark Blue', value: 4 }
+          { text: 'Dark', value: 3 }
         ],
 
         informationLocation: 2,
