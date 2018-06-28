@@ -20,7 +20,9 @@
   box-shadow: 4px 4px 4px $oc-gray-3;
 }
 
-
+#grid-container-outer.light-def .label-period-inner p, .light-def .label-group-inner p {
+  color: $oc-gray-9;
+}
 
 
 // LIGHT CON
@@ -49,8 +51,4 @@
 
 #grid-container-outer.dark-def .label-period-inner p, .dark-def .label-group-inner p {
   color: $oc-gray-0;
-}
-
-#grid-container-outer.dark-def .label-period-inner:hover, .dark-def .label-group-inner:hover {
-  background-color: $oc-gray-8;
 }

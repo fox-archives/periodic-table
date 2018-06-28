@@ -27,6 +27,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3",
+    "url-loader": "^1.0.1",
     "vue-feather-icon": "^1.2.0",
     "vue-loader": "^15.2.4",
     "vue-svg-component-runtime": "^1.0.1",
