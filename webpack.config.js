@@ -9,7 +9,7 @@ module.exports = {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      /*publicPath: '/dist'*/
+      publicPath: ''
   },
    module: {
       rules: [
@@ -58,7 +58,7 @@ module.exports = {
            loader: 'file-loader',
            options: {
              name: '[name].[ext]',
-             outputPath: '/assets'
+             outputPath: 'assets'
            }
         },
         {
