@@ -101,6 +101,18 @@
     font-style: normal;
 }
 */
+.light-def a {
+  text-decoration-color: #e9ecef; }
+
+.light-def a:hover {
+  text-decoration-color: #212529; }
+
+.dark-def a {
+  text-decoration-color: #343a40; }
+
+.dark-def a:hover {
+  text-decoration-color: #f1f3f5; }
+
 #nav-content-outer {
   overflow: auto;
   width: 100%;
@@ -1164,11 +1176,7 @@ p {
 
 a {
   font-family: latolight;
-  text-decoration-line: underline;
-  text-decoration-color: #e9ecef; }
-
-a:hover {
-  text-decoration-color: #212529; }
+  text-decoration-line: underline; }
 
 a:clicked {
   text-decoration: underline; }
