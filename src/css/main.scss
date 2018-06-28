@@ -9,6 +9,7 @@ $transition-time: 0.15s;
 $mainBackground: $oc-gray-0;
 $labelDark: $oc-gray-1;
 
+@import "./main-themes";
 @import "./navigation.scss";
 @import "./navigation-themes.scss";
 @import "./footer.scss";
@@ -46,11 +47,6 @@ p {
 a {
   font-family: latolight;
   text-decoration-line: underline;
-  text-decoration-color: $oc-gray-2;
-}
-
-a:hover {
-  text-decoration-color: $oc-gray-9;
 }
 
 a:clicked {

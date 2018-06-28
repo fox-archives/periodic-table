@@ -24,7 +24,7 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]" v-bind:id="element.id">
+        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]">
           <div v-cloak class="element-inner">
             <!--<p>{{ index + 1 }}</p> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
             <p class="element-atomicNumber element-secondary-info" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</p>

@@ -1,0 +1,15 @@
+.light-def a {
+  text-decoration-color: $oc-gray-2;
+}
+
+.light-def a:hover {
+  text-decoration-color: $oc-gray-9;
+}
+
+.dark-def a {
+  text-decoration-color: $oc-gray-8;
+}
+
+.dark-def a:hover {
+  text-decoration-color: $oc-gray-1;
+}
