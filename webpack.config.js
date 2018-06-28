@@ -35,23 +35,23 @@ module.exports = {
              }
            }
          }*/
-       },
-       {
-         test: /\.(sa|sc)ss$/,
-         exclude: /node_modules/,
-         use: [
-           MiniCssExtractPlugin.loader,
-           'css-loader',
-           'sass-loader' // Loads a sass / scss file and compiles it to CSS
-         ]
-       },
-       {
-         test: /\.css$/,
-         use: [
-           MiniCssExtractPlugin.loader,
-           'css-loader'
-         ]
-       },
+        },
+        {
+          test: /\.(sa|sc)ss$/,
+          exclude: /node_modules/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader' // Loads a sass / scss file and compiles it to CSS
+          ]
+        },
+        {
+          test: /\.css$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader'
+          ]
+        },
         // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
         {
            test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
