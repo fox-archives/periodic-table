@@ -1,187 +1,73 @@
 // SUPER DARK ELEMENT COLOR
 // Occurs when clicking on an element
-#grid-container-outer.light-def .supdark-blue {
-  background-color: $oc-blue-4;
-}
+#pt.light-def .supdark-blue { background-color: $oc-blue-4; }
+#pt.light-def .supdark-red { background-color: $oc-red-4; }
+#pt.light-def .supdark-green { background-color: $oc-green-4; }
+#pt.light-def .supdark-orange { background-color: $oc-orange-4; }
+#pt.light-def .supdark-violet { background-color: $oc-violet-4; }
 
-#grid-container-outer.light-def .supdark-red {
-  background-color: $oc-red-4;
-}
-
-#grid-container-outer.light-def .supdark-green {
-  background-color: $oc-green-4;
-}
-
-#grid-container-outer.light-def .supdark-orange {
-  background-color: $oc-orange-4;
-}
-
-#grid-container-outer.light-def .supdark-violet {
-  background-color: $oc-violet-4;
-}
-
-#grid-container-outer.light-def .supdark-blue * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .supdark-red * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .supdark-green * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .supdark-orange * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .supdark-violet * {
-  color: $oc-violet-9;
-}
+#pt.light-def .supdark-blue * { color: $oc-gray-9; }
+#pt.light-def .supdark-red * { color: $oc-gray-9; }
+#pt.light-def .supdark-green * { color: $oc-gray-9; }
+#pt.light-def .supdark-orange * { color: $oc-gray-9; }
+#pt.light-def .supdark-violet * { color: $oc-violet-9; }
 
 
 // DARK ELEMENT COLOR
-#grid-container-outer.light-def .dark-blue {
-  background-color: $oc-blue-3;
-}
+#pt.light-def .dark-blue { background-color: $oc-blue-3; }
+#pt.light-def .dark-red { background-color: $oc-red-3; }
+#pt.light-def .dark-green { background-color: $oc-green-3; }
+#pt.light-def .dark-orange { background-color: $oc-orange-3; }
+#pt.light-def .dark-violet { background-color: $oc-violet-3; }
 
-#grid-container-outer.light-def .dark-red {
-  background-color: $oc-red-3;
-}
-
-#grid-container-outer.light-def .dark-green {
-  background-color: $oc-green-3;
-}
-
-#grid-container-outer.light-def .dark-orange {
-  background-color: $oc-orange-3;
-}
-
-#grid-container-outer.light-def .dark-violet {
-  background-color: $oc-violet-3;
-}
-
-#grid-container-outer.light-def .dark-blue * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .dark-red * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .dark-green * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .dark-orange * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .dark-violet * {
-  color: $oc-violet-9;
-}
+#pt.light-def .dark-blue * { color: $oc-gray-9; }
+#pt.light-def .dark-red * { color: $oc-gray-9; }
+#pt.light-def .dark-green * { color: $oc-gray-9; }
+#pt.light-def .dark-orange * { color: $oc-gray-9; }
+#pt.light-def .dark-violet * { color: $oc-violet-9; }
 
 // REGULAR ELEMENT COLOR
 // Occurs when highlighting over an element (default state)
-#grid-container-outer.light-def .blue {
-  background-color: $oc-blue-2;
-}
+#pt.light-def .blue { background-color: $oc-blue-2; }
+#pt.light-def .red { background-color: $oc-red-2; }
+#pt.light-def .green { background-color: $oc-green-2; }
+#pt.light-def .orange { background-color: $oc-orange-2; }
+#pt.light-def .violet { background-color: $oc-violet-2; }
 
-#grid-container-outer.light-def .red {
-  background-color: $oc-red-2;
-}
-
-#grid-container-outer.light-def .green {
-  background-color: $oc-green-2;
-}
-
-#grid-container-outer.light-def .orange {
-  background-color: $oc-orange-2;
-}
-
-#grid-container-outer.light-def .violet {
-  background-color: $oc-violet-2;
-}
-
-#grid-container-outer.light-def .blue * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .red * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .green * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .orange * {
-  color: $oc-gray-9;
-}
-
-#grid-container-outer.light-def .violet * {
-  color: $oc-violet-9;
-}
+#pt.light-def .blue * { color: $oc-gray-9; }
+#pt.light-def .red * { color: $oc-gray-9; }
+#pt.light-def .green * { color: $oc-gray-9; }
+#pt.light-def .orange * { color: $oc-gray-9; }
+#pt.light-def .violet * { color: $oc-violet-9; }
 
 // LIGHT ELEMENT COLOR
 // Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
-#grid-container-outer.light-def .light-blue {
-  background-color: $oc-blue-1;
-}
+#pt.light-def .light-blue { background-color: $oc-blue-1; }
+#pt.light-def .light-red { background-color: $oc-red-1; }
+#pt.light-def .light-green { background-color: $oc-green-1; }
+#pt.light-def .light-orange { background-color: $oc-orange-1; }
+#pt.light-def .light-violet { background-color: $oc-violet-1; }
 
-#grid-container-outer.light-def .light-red {
-  background-color: $oc-red-1;
-}
-
-#grid-container-outer.light-def .light-green {
-  background-color: $oc-green-1;
-}
-
-#grid-container-outer.light-def .light-orange {
-  background-color: $oc-orange-1;
-}
-
-#grid-container-outer.light-def .light-violet {
-  background-color: $oc-violet-1;
-}
-
-#grid-container-outer.light-def .light-blue * {
-  color: $oc-gray-6;
-}
-
-#grid-container-outer.light-def .light-red * {
-  color: $oc-gray-6;
-}
-
-#grid-container-outer.light-def .light-green * {
-  color: $oc-gray-6;
-}
-
-#grid-container-outer.light-def .light-orange * {
-  color: $oc-gray-6;
-}
-
-#grid-container-outer.light-def .light-violet * {
-  color: $oc-gray-6;
-}
+#pt.light-def .light-blue * { color: $oc-gray-6; }
+#pt.light-def .light-red * { color: $oc-gray-6; }
+#pt.light-def .light-green * { color: $oc-gray-6; }
+#pt.light-def .light-orange * { color: $oc-gray-6; }
+#pt.light-def .light-violet * { color: $oc-gray-6; }
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
-// Each element and group label has v-binds a class which is either .light or .dark
-#grid-container-outer.light-def .light {
+// Each period / group label has v-binds a class which is either .light or .dark
+#pt.light-def .light {
   background-color: $oc-gray-0;
-  //background-color: $mainBackground;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#grid-container-outer.light-def .light:hover {
+#pt.light-def .light:hover {
   background-color: $oc-gray-2;
-  //background-color: $mainBackground;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#grid-container-outer.light-def .dark {
+#pt.light-def .dark {
   background-color: $oc-gray-2;
   //transition: background-color $transition-time ease-in-out;
 }
@@ -194,188 +80,74 @@
 
 // SUPER DARK ELEMENT COLOR
 // Occurs when clicking on an element
-#grid-container-outer.dark-def .supdark-blue {
-  background-color: $oc-blue-7;
-}
+#pt.dark-def .supdark-blue { background-color: $oc-blue-7; }
+#pt.dark-def .supdark-red { background-color: $oc-red-7; }
+#pt.dark-def .supdark-green { background-color: $oc-green-7; }
+#pt.dark-def .supdark-orange { background-color: $oc-orange-7; }
+#pt.dark-def .supdark-violet { background-color: $oc-violet-7; }
 
-#grid-container-outer.dark-def .supdark-red {
-  background-color: $oc-red-7;
-}
-
-#grid-container-outer.dark-def .supdark-green {
-  background-color: $oc-green-7;
-}
-
-#grid-container-outer.dark-def .supdark-orange {
-  background-color: $oc-orange-7;
-}
-
-#grid-container-outer.dark-def .supdark-violet {
-  background-color: $oc-violet-7;
-}
-
-#grid-container-outer.dark-def .supdark-blue * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .supdark-red * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .supdark-green * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .supdark-orange * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .supdark-violet * {
-  color: $oc-gray-1;
-}
+#pt.dark-def .supdark-blue * { color: $oc-gray-1; }
+#pt.dark-def .supdark-red * { color: $oc-gray-1; }
+#pt.dark-def .supdark-green * { color: $oc-gray-1; }
+#pt.dark-def .supdark-orange * { color: $oc-gray-1; }
+#pt.dark-def .supdark-violet * { color: $oc-gray-1; }
 
 // DARK ELEMENT COLOR
-#grid-container-outer.dark-def .dark-blue {
-  background-color: $oc-blue-6;
-}
+#pt.dark-def .dark-blue { background-color: $oc-blue-6; }
+#pt.dark-def .dark-red { background-color: $oc-red-6; }
+#pt.dark-def .dark-green { background-color: $oc-green-6; }
+#pt.dark-def .dark-orange { background-color: $oc-orange-6; }
+#pt.dark-def .dark-violet { background-color: $oc-violet-6; }
 
-#grid-container-outer.dark-def .dark-red {
-  background-color: $oc-red-6;
-}
-
-#grid-container-outer.dark-def .dark-green {
-  background-color: $oc-green-6;
-}
-
-#grid-container-outer.dark-def .dark-orange {
-  background-color: $oc-orange-6;
-}
-
-#grid-container-outer.dark-def .dark-violet {
-  background-color: $oc-violet-6;
-}
-
-#grid-container-outer.dark-def .dark-blue * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .dark-red * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .dark-green * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .dark-orange * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .dark-violet * {
-  color: $oc-gray-1;
-}
+#pt.dark-def .dark-blue * { color: $oc-gray-1; }
+#pt.dark-def .dark-red * { color: $oc-gray-1; }
+#pt.dark-def .dark-green * { color: $oc-gray-1; }
+#pt.dark-def .dark-orange * { color: $oc-gray-1; }
+#pt.dark-def .dark-violet * { color: $oc-gray-1; }
 
 
 // REGULAR ELEMENT COLOR
 // Occurs when highlighting over an element (default state)
-#grid-container-outer.dark-def .blue {
-  background-color: $oc-blue-5;
-}
+#pt.dark-def .blue { background-color: $oc-blue-5; }
+#pt.dark-def .red { background-color: $oc-red-5; }
+#pt.dark-def .green { background-color: $oc-green-5; }
+#pt.dark-def .orange { background-color: $oc-orange-5; }
+#pt.dark-def .violet { background-color: $oc-violet-5; }
 
-#grid-container-outer.dark-def .red {
-  background-color: $oc-red-5;
-}
-
-#grid-container-outer.dark-def .green {
-  background-color: $oc-green-5;
-}
-
-#grid-container-outer.dark-def .orange {
-  background-color: $oc-orange-5;
-}
-
-#grid-container-outer.dark-def .violet {
-  background-color: $oc-violet-5;
-}
-
-#grid-container-outer.dark-def .blue * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .red * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .green * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .orange * {
-  color: $oc-gray-1;
-}
-
-#grid-container-outer.dark-def .violet * {
-  background-color: $oc-violet-4;
-}
+#pt.dark-def .blue * { color: $oc-gray-1; }
+#pt.dark-def .red * { color: $oc-gray-1; }
+#pt.dark-def .green * { color: $oc-gray-1; }
+#pt.dark-def .orange * { color: $oc-gray-1; }
+#pt.dark-def .violet * { color: $oc-violet-4; }
 
 // LIGHT ELEMENT COLOR
 // Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
-#grid-container-outer.dark-def .light-blue {
-  background-color: $oc-blue-3;
-}
+#pt.dark-def .light-blue { background-color: $oc-blue-3; }
+#pt.dark-def .light-red { background-color: $oc-red-3; }
+#pt.dark-def .light-green { background-color: $oc-green-3; }
+#pt.dark-def .light-orange { background-color: $oc-orange-3; }
+#pt.dark-def .light-violet { background-color: $oc-violet-3; }
 
-#grid-container-outer.dark-def .light-red {
-  background-color: $oc-red-3;
-}
-
-#grid-container-outer.dark-def .light-green {
-  background-color: $oc-green-3;
-}
-
-#grid-container-outer.dark-def .light-orange {
-  background-color: $oc-orange-3;
-}
-
-#grid-container-outer.dark-def .light-violet {
-  background-color: $oc-violet-3;
-}
-
-#grid-container-outer.dark-def .light-blue * {
-  color: $oc-gray-3;
-}
-
-#grid-container-outer.dark-def .light-red * {
-  color: $oc-gray-3;
-}
-
-#grid-container-outer.dark-def .light-green * {
-  color: $oc-gray-3;
-}
-
-#grid-container-outer.dark-def .light-orange * {
-  color: $oc-gray-3;
-}
-
-#grid-container-outer.dark-def .light-violet * {
-  color: $oc-gray-3;
-}
+#pt.dark-def .light-blue * { color: $oc-gray-3; }
+#pt.dark-def .light-red * { color: $oc-gray-3; }
+#pt.dark-def .light-green * { color: $oc-gray-3; }
+#pt.dark-def .light-orange * { color: $oc-gray-3; }
+#pt.dark-def .light-violet * { color: $oc-gray-3; }
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
-// Each element and group label has v-binds a class which is either .light or .dark
-#grid-container-outer.dark-def .light {
+// Each period / group label has v-binds a class which is either .light or .dark
+#pt.dark-def .light {
   background-color: $oc-gray-9;
-  //background-color: $mainBackground;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#grid-container-outer.dark-def .light:hover {
+#pt.dark-def .light:hover {
   background-color: $oc-gray-8;
-  //background-color: $mainBackground;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#grid-container-outer.dark-def .dark {
+#pt.dark-def .dark {
   background-color: $oc-gray-8;
   //transition: background-color $transition-time ease-in-out;
 }

@@ -1,26 +1,26 @@
 // PERIODIC TABLE THEMES
 // LIGHT DEF
-#grid-container-outer.light-def #grid-container {
+#pt.light-def #grid-container {
   background-color: $oc-gray-0;
 }
 
-#grid-container-outer.light-def .element-outer {
+#pt.light-def .element-outer {
   box-shadow: 3px 3px 3px $oc-gray-3;
 }
 
-#grid-container-outer.light-def .element-outer:hover {
+#pt.light-def .element-outer:hover {
   box-shadow: 5px 5px 5px $oc-gray-3;
 }
 
-#grid-container-outer.light-def #element-overview {
+#pt.light-def #element-overview {
   box-shadow: 4px 4px 4px $oc-gray-3;
 }
 
-#grid-container-outer.light-def #element-desc {
+#pt.light-def #element-desc {
   box-shadow: 4px 4px 4px $oc-gray-3;
 }
 
-#grid-container-outer.light-def .label-period-inner p, .light-def .label-group-inner p {
+#pt.light-def .label-period-inner p, .light-def .label-group-inner p {
   color: $oc-gray-9;
 }
 
@@ -29,26 +29,26 @@
 
 
 // DARK DEF
-#grid-container-outer.dark-def #grid-container {
+#pt.dark-def #grid-container {
   background-color: $oc-gray-9;
 }
 
-#grid-container-outer.dark-def .element-outer {
+#pt.dark-def .element-outer {
   box-shadow: 3px 3px 3px $oc-gray-7;
 }
 
-#grid-container-outer.dark-def .element-outer:hover {
+#pt.dark-def .element-outer:hover {
   box-shadow: 5px 5px 5px $oc-gray-7;
 }
 
-#grid-container-outer.dark-def #element-overview {
+#pt.dark-def #element-overview {
   box-shadow: 4px 4px 4px $oc-gray-7;
 }
 
-#grid-container-outer.dark-def #element-desc {
+#pt.dark-def #element-desc {
   box-shadow: 4px 4px 4px $oc-gray-7;
 }
 
-#grid-container-outer.dark-def .label-period-inner p, .dark-def .label-group-inner p {
+#pt.dark-def .label-period-inner p, .dark-def .label-group-inner p {
   color: $oc-gray-0;
 }

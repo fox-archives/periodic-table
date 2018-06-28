@@ -1,5 +1,5 @@
 <template>
-  <div id="grid-container-outer" class="has-shadow" v-bind:class="themeType">
+  <div id="pt" class="has-shadow" v-bind:class="themeType">
     <div id="grid-container">
       <main id="grid">
 
