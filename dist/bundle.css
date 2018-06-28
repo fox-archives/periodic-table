@@ -17,13 +17,13 @@
 */
 @font-face {
   font-family: 'robotoregular';
-  src: url(assets/roboto-regular-webfont.woff2) format("woff2"), url(assets/roboto-regular-webfont.woff) format("woff");
+  src: url(dist/assets/roboto-regular-webfont.woff2) format("woff2"), url(dist/assets/roboto-regular-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'robotolight';
-  src: url(assets/roboto-light-webfont.woff2) format("woff2"), url(assets/roboto-light-webfont.woff) format("woff");
+  src: url(dist/assets/roboto-light-webfont.woff2) format("woff2"), url(dist/assets/roboto-light-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
