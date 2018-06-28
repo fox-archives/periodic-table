@@ -2,7 +2,7 @@
 Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
 
 ## Current Development
-![Periodic Table Image](https://github.com/EanKeen/periodic-table/blob/master/periodic-table-june-21-2018.png)
+![Periodic Table Image](https://github.com/EanKeen/periodic-table/blob/master/periodic-table.png)
 
 ## Browser Compatibility
 Not intended to support Internet Explorer.
