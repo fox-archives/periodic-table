@@ -3,6 +3,7 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -13,7 +14,6 @@ module.exports = {
   },
    module: {
       rules: [
-        // Change preset to 'env', but save that for later
         {
           test: /\.js$/,
           exclude: /node_modules/,
@@ -78,12 +78,11 @@ module.exports = {
     plugins: [
       new VueLoaderPlugin(),
       new MiniCssExtractPlugin({
-        // Options similar to the same options in webpackOptions.output
-        // both options are optional
         filename: 'bundle.css',
-        chunckFilename: '[id].css',
-        // Element UI to not import Chinese language pack by default
-        //new NormalModuleReplacementPlugin(/element-ui[\/\\]lib[\/\\]locale[\/\\]lang[\/\\]zh-CN/, 'element-ui/lib/locale/lang/en')
-      })
+        chunckFilename: '[id].css'
+      }),
+      new CopyWebpackPlugin([
+        { from: 'index.html', to: '' }
+      ])
     ]
 }
