@@ -21,6 +21,16 @@ $light-def-background: white;
   stroke: $light-def-text;
 }
 
+#nav.light-def .nav-selected {
+  background-color: $oc-gray-0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#nav.light-def #nav-right li:hover {
+  background-color: $oc-gray-0;
+}
+
 
 // LIGHT CON (HIGH CONTRAST)
 $light-con-text: $oc-gray-9;
@@ -65,6 +75,15 @@ $dark-def-background: $oc-gray-8;
   stroke: $dark-def-text;
 }
 
+#nav.dark-def .nav-selected {
+  background-color: $oc-gray-9;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#nav.dark-def #nav-right li:hover {
+  background-color: $oc-gray-9;
+}
 
 // DARK BLUE
 $dark-blue-text: $oc-gray-1;

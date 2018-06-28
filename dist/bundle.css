@@ -218,6 +218,14 @@
   fill: #212529;
   stroke: #212529; }
 
+#nav.light-def .nav-selected {
+  background-color: #f8f9fa;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+#nav.light-def #nav-right li:hover {
+  background-color: #f8f9fa; }
+
 #nav.light-con ul {
   background-color: #f1f3f5; }
 
@@ -243,6 +251,14 @@
 #nav.dark-def .custom-icon svg, #nav-mobile.dark-def .custom-icon svg {
   fill: #f1f3f5;
   stroke: #f1f3f5; }
+
+#nav.dark-def .nav-selected {
+  background-color: #212529;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+#nav.dark-def #nav-right li:hover {
+  background-color: #212529; }
 
 #nav.blue-dark ul {
   background-color: #1864ab; }

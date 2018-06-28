@@ -7,7 +7,7 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li id="simple-wide" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
+          <li class="nav-selected" id="simple-wide" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
           <li id="properties-wide" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
           <li class="custom-icon" id="electrons-wide" v-on:click="changeSelection('electrons')"> <electrons></electrons> <h2>Electrons </h2> </li>
           <li class="custom-icon" id="orbitals-wide" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
