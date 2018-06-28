@@ -17,13 +17,13 @@
 */
 @font-face {
   font-family: 'robotoregular';
-  src: url(dist/assets/roboto-regular-webfont.woff2) format("woff2"), url(dist/assets/roboto-regular-webfont.woff) format("woff");
+  src: url(assets/roboto-regular-webfont.woff2) format("woff2"), url(assets/roboto-regular-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'robotolight';
-  src: url(dist/assets/roboto-light-webfont.woff2) format("woff2"), url(dist/assets/roboto-light-webfont.woff) format("woff");
+  src: url(assets/roboto-light-webfont.woff2) format("woff2"), url(assets/roboto-light-webfont.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1147,7 +1147,7 @@ p#name2, p#name3 {
 * {
   margin: 0px;
   padding: 0px;
-  color: green;
+  color: #212529;
   box-sizing: border-box;
   outline: 0px; }
 
