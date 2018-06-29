@@ -1,5 +1,5 @@
 // PERIODIC TABLE THEMES
-// LIGHT DEF
+// // LIGHT DEF \\ \\
 #pt.light-def #grid-container {
   background-color: $oc-gray-0;
 }
@@ -25,10 +25,33 @@
 }
 
 
-// LIGHT CON
+// // LIGHT CON \\ \\
+#pt.light-con #grid-container {
+  background-color: $oc-gray-2;
+}
+
+#pt.light-con .element-outer {
+  box-shadow: 3px 3px 3px $oc-gray-5;
+}
+
+#pt.light-con .element-outer:hover {
+  box-shadow: 5px 5px 5px $oc-gray-5;
+}
+
+#pt.light-con #element-overview {
+  box-shadow: 4px 4px 4px $oc-gray-5;
+}
+
+#pt.light-con #element-desc {
+  box-shadow: 4px 4px 4px $oc-gray-5;
+}
+
+#pt.light-con .label-period-inner p, .light-con .label-group-inner p {
+  color: $oc-gray-9;
+}
 
 
-// DARK DEF
+// // DARK DEF \\ \\
 #pt.dark-def #grid-container {
   background-color: $oc-gray-9;
 }
