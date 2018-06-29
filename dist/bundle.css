@@ -5,34 +5,34 @@
   src: url('../assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
          url('../assets/fonts/roboto-bold-webfont.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-weight: normal;
 }
 @font-face {
   font-family: 'robotomedium';
   src: url('../assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
          url('../assets/fonts/roboto-medium-webfont.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
+  font-weight: normal;
 }
 */
 @font-face {
   font-family: 'robotoregular';
   src: url(assets/roboto-regular-webfont.woff2) format("woff2"), url(assets/roboto-regular-webfont.woff) format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-weight: normal; }
 
 @font-face {
   font-family: 'robotolight';
   src: url(assets/roboto-light-webfont.woff2) format("woff2"), url(assets/roboto-light-webfont.woff) format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-weight: normal; }
 
 /* Lato */
 @font-face {
   font-family: 'latoregular';
   src: url(assets/lato-regular-webfont.woff2) format("woff2"), url(assets/lato-regular-webfont.woff) format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-weight: normal; }
 
 /*
 @font-face {
@@ -40,21 +40,21 @@
     src: url('../assets/fonts/lato-black-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-black-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'latoblack_italic';
     src: url('../assets/fonts/lato-blackitalic-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-blackitalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 */
 @font-face {
   font-family: 'latobold';
   src: url(assets/lato-bold-webfont.woff2) format("woff2"), url(assets/lato-bold-webfont.woff) format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-weight: normal; }
 
 /*A
 @font-face {
@@ -62,35 +62,35 @@
     src: url('../assets/fonts/lato-bolditalic-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'latohairline';
     src: url('../assets/fonts/lato-hairline-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-hairline-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'latohairline_italic';
     src: url('../assets/fonts/lato-hairlineitalic-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-hairlineitalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'latoitalic';
     src: url('../assets/fonts/lato-italic-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 */
 @font-face {
   font-family: 'latolight';
   src: url(assets/lato-light-webfont.woff2) format("woff2"), url(assets/lato-light-webfont.woff) format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-weight: normal; }
 
 /*
 @font-face {
@@ -98,7 +98,7 @@
     src: url('../assets/fonts/lato-lightitalic-webfont.woff2') format('woff2'),
          url('../assets/fonts/lato-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-weight: normal;
 }
 */
 .light-def a {
@@ -349,12 +349,12 @@ p#name2, p#name3 {
 
 .element-primary-info {
   font-family: latobold;
-  font-style: regular;
+  font-weight: regular;
   font-size: 1.4em; }
 
 .element-secondary-info {
   font-family: latoregular;
-  font-style: regular;
+  font-weight: regular;
   font-size: 0.8em; }
 
 #element-overview, #element-desc {
@@ -377,7 +377,7 @@ p#name2, p#name3 {
     font-weight: regular;
     font-size: 2.5em; }
   #element-overview .element-ov-secondary-info {
-    font-family: latobold;
+    font-family: latoregular;
     font-weight: regular;
     font-size: 1.75em; }
 
@@ -402,7 +402,7 @@ p#name2, p#name3 {
 
 .element-d-secondary-info {
   font-family: latolight;
-  font-style: regular;
+  font-weight: regular;
   font-size: 1.15em;
   margin-bottom: 15px; }
 
@@ -1327,7 +1327,7 @@ h1 {
 
 h2 {
   font-family: robotolight;
-  font-style: regular;
+  font-weight: regular;
   font-size: 1.15em; }
 
 p {
