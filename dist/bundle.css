@@ -348,13 +348,13 @@ p#name2, p#name3 {
   margin: 2px 2px 2px 4px; }
 
 .element-primary-info {
-  font-family: latoregular;
-  font-weight: bold;
+  font-family: latobold;
+  font-style: regular;
   font-size: 1.4em; }
 
 .element-secondary-info {
-  font-family: latolight;
-  font-weight: bold;
+  font-family: latoregular;
+  font-style: regular;
   font-size: 0.8em; }
 
 #element-overview, #element-desc {
@@ -373,12 +373,12 @@ p#name2, p#name3 {
     width: 85%;
     margin: 7.5% 7.5% 7.5% 7.5%; }
   #element-overview .element-ov-primary-info {
-    font-family: latoregular;
-    font-weight: bold;
+    font-family: latobold;
+    font-weight: regular;
     font-size: 2.5em; }
   #element-overview .element-ov-secondary-info {
-    font-family: latolight;
-    font-weight: bold;
+    font-family: latobold;
+    font-weight: regular;
     font-size: 1.75em; }
 
 #element-desc {
@@ -394,14 +394,15 @@ p#name2, p#name3 {
   margin: 2.5% 2.5% 2.5% 2.5%; }
 
 .element-d-primary-info {
-  font-family: latolight;
-  font-weight: bold;
+  font-family: latoregular;
+  font-weight: regular;
   font-size: 1.7em;
   margin-bottom: 5px;
   overflow: hidden; }
 
 .element-d-secondary-info {
   font-family: latolight;
+  font-style: regular;
   font-size: 1.15em;
   margin-bottom: 15px; }
 
@@ -1326,13 +1327,16 @@ h1 {
 
 h2 {
   font-family: robotolight;
+  font-style: regular;
   font-size: 1.15em; }
 
 p {
-  font-family: latolight; }
+  font-family: latolight;
+  font-size: 1em; }
 
 a {
   font-family: latolight;
+  font-size: 1em;
   text-decoration-line: underline; }
 
 a:clicked {

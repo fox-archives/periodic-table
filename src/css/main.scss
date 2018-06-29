@@ -36,16 +36,19 @@ h1 {
 // h2 is the navigation bar
 h2 {
   font-family: robotolight;
+  font-style: regular;
   font-size: 1.15em;
 }
 
 // GENERAL TEXT FORMATING
 p {
   font-family: latolight;
+  font-size: 1em;
 }
 
 a {
   font-family: latolight;
+  font-size: 1em;
   text-decoration-line: underline;
 }
 
@@ -66,16 +69,16 @@ a:clicked {
   transition: filter 0.2s;
 }
 .blur {
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    filter: blur(10px);
-    transition: filter 0.2s;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: blur(10px);
+  transition: filter 0.2s;
 }
 .blur-large {
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    filter: blur(20px);
-    transition: filter 0.2s;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  filter: blur(20px);
+  transition: filter 0.2s;
 }
 
 // NO HIGHLIGHT EFFECT ON SOME VUESAX ELEMENTS, AMONG OTHER ELEMENTS

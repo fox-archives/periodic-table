@@ -48,14 +48,14 @@ $element-height: 40px;
 
 // Text inside of DUPLICATED ELEMENTS
 .element-primary-info {
-  font-family: latoregular;
-  font-weight: bold;
+  font-family: latobold;
+  font-style: regular;
   font-size: 1.4em;
 }
 
 .element-secondary-info {
-  font-family: latolight;
-  font-weight: bold;
+  font-family: latoregular;
+  font-style: regular;
   font-size: 0.8em;
 }
 
@@ -89,14 +89,14 @@ $element-height: 40px;
 
   // Text inside of ELEMENT OVERVIEW
   .element-ov-primary-info {
-    font-family: latoregular;
-    font-weight: bold;
+    font-family: latobold;
+    font-weight: regular;
     font-size: 2.5em;
   }
 
   .element-ov-secondary-info {
-    font-family: latolight;
-    font-weight: bold;
+    font-family: latobold;
+    font-weight: regular;
     font-size: 1.75em;
   }
 
@@ -127,8 +127,8 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 
 // Text inside ELEMENT DESCRIPTIONS
 .element-d-primary-info {
-  font-family: latolight;
-  font-weight: bold;
+  font-family: latoregular;
+  font-weight: regular;
   font-size: 1.7em;
   margin-bottom: 5px;
   overflow: hidden;
@@ -136,6 +136,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 
 .element-d-secondary-info {
   font-family: latolight;
+  font-style: regular;
   font-size: 1.15em;
   margin-bottom: 15px;
 }
