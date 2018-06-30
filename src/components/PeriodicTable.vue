@@ -355,6 +355,7 @@
          hoverColor: "blue", //This actually changes the color
          hoverDiscoveryDate: "1766",
          hoverDiscoveredBy: "Henry Cavendish",
+         hoverIndex: 0,
 
          clickActive: false,
 
@@ -369,8 +370,9 @@
      methods: {
        updateElementInfoAndDesc: function(index) {
          // Do not add one to index because v-for array starts at 0 and, trying to get the element at a certain position in v-for array loop
-         // Update element overview (left box)
          if(this.clickActive == false) {
+           this.hoverIndex = index;
+           // Update element overview (left box)
            this.hoverAtomicNumber = this.elements[index].atomicNumber;
            this.hoverAbbreviation = this.elements[index].abbreviation;
            this.hoverName = this.elements[index].name;
@@ -413,7 +415,11 @@
          }
        },
        darkenElements: function(index, prefix, type) {
+         // On hover, clear all other label highlights
          this.clearLabelExcept(-1, -1);
+         console.log(this.hoverColor);
+         // Change element description and shade on hover of label
+         this.hoverColor = "light-" + this.elementDisplayProps[this.hoverIndex].defaultColor;
 
          var className = this.labelNoneToClass(index + 1, type);
 
@@ -521,6 +527,8 @@
              }
              Vue.set(this.elementDisplayProps[this.clickedElementIndex], 'color', ("supdark-" + this.elementDisplayProps[this.clickedElementIndex].color));
            }
+           // Make element overview and desc normal color
+           this.hoverColor = this.elementDisplayProps[this.hoverIndex].defaultColor;
          }
        },
        clearLabelExcept: function(periodExclude, groupExclude) {

@@ -253,6 +253,9 @@
         }
         // Emit event theme change, that the theme type was changed
         bus.$emit('themeChanged', this.themeType);
+      },
+      changeSelection: function() {
+        
       }
     },
     components: {
