@@ -1,3 +1,4 @@
+// // LIGHT DEF \\ \\
 .light-def a {
   text-decoration-color: $oc-gray-2;
 }
@@ -6,6 +7,16 @@
   text-decoration-color: $oc-gray-9;
 }
 
+// // LIGHT CON \\ \\
+.light-def a {
+  text-decoration-color: $oc-gray-4;
+}
+
+.light-def a:hover {
+  text-decoration-color: $oc-gray-9;
+}
+
+// // DARK DEF \\ \\
 .dark-def a {
   text-decoration-color: $oc-gray-8;
 }

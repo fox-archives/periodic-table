@@ -24,26 +24,26 @@
         </section>
 
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementColors[element.atomicNumber-1], element.period, element.group]">
+        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, elementDisplayProps[index].color, element.period, element.group]">
           <div v-cloak class="element-inner">
             <!--<p>{{ index + 1 }}</p> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-            <p class="element-atomicNumber element-secondary-info" ref="elementAtomicNumberDOM">{{ element.atomicNumber }}</p>
-            <p class="element-abbreviation element-primary-info" ref="elementAbbreviationDOM">{{ element.abbreviation }}</p>
-            <p class="element-name element-secondary-info" ref="elementNameDOM">{{ element.name }}</p>
-            <p class="element-atomicMass element-secondary-info" ref="elementAtomicMassDOM">{{ element.atomicMass }}</p>
+            <p class="element-atomicNumber element-secondary-info">{{ element.atomicNumber }}</p>
+            <p class="element-abbreviation element-primary-info">{{ element.abbreviation }}</p>
+            <p class="element-name element-secondary-info">{{ element.name }}</p>
+            <p class="element-atomicMass element-secondary-info">{{ element.atomicMass }}</p>
           </div>
         </div>
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(periodLabel, index) in periodLabels" v-bind:class="[periodLabel.row, periodLabel.column]">
-          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="periodNotification(index)">
+          <div v-cloak class="label-period-inner" v-bind:class="periodLabels[index].color" v-on:mouseover="[darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="periodNotification(index)">
             <p class="label-text">{{ periodLabel.display }}</p>
           </div>
         </div>
 
         <!-- GROUP LABELS -->
         <div class="label-group-outer" v-for="(groupLabel, index) in groupLabels" v-bind:class="[groupLabel.row, groupLabel.column]">
-          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[maintenanceBefore(index, 'mouseOver'), darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[maintenanceBefore(index, 'mouseLeave'), darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="groupNotification(index)">
+          <div v-cloak class="label-group-inner" v-bind:class="groupLabels[index].color" v-on:mouseover="[darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="groupNotification(index)">
             <p class="label-text">{{ groupLabel.display }}</p>
           </div>
         </div>
@@ -116,13 +116,14 @@
           { atomicNumber: 54,        name: "Xenon",          abbreviation: "Xe",      id: "xe",   group: "g-18",   period: "p-5",   column: "c-36",  row: "r-10",  block: "p",  atomicMass: 131.293,  meltingPoint: 161.4,      boilingPoint: 165.051,   discoveryDate: 1898,            discoveredBy: "Sir William Ramsay and Morris Travers" },
           { atomicNumber: 55,        name: "Caesium",        abbreviation: "Cs",      id: "cs",   group: "g-1",    period: "p-6",   column: "c-2",   row: "r-12",  block: "s",  atomicMass: 132.905,  meltingPoint: 301.7,      boilingPoint: 944,       discoveryDate: 1860,            discoveredBy: "Gustav Kirchhoff and Robert Bunsen" },
           { atomicNumber: 56,        name: "Barium",         abbreviation: "Ba",      id: "ba",   group: "g-2",    period: "p-6",   column: "c-4",   row: "r-12",  block: "s",  atomicMass: 137.327,  meltingPoint: 1000,       boilingPoint: 2118,      discoveryDate: 1808,            discoveredBy: "Humphry Davy" },
+          { atomicNumber: '57-71',   name: "Lanthanides",    abbreviation: "Lan.",    id: "z1",   group: "g-0",    period: "p-0",   column: "c-6",   row: "r-12",  block: "f",  atomicMass: " ",      meltingPoint: "N / A",    boilingPoint: "N / A",    discoveryDate: "N / A",       discoveredBy: "N / A" },
           // Start first extended portion of periodic table
           { atomicNumber: 57,        name: "Lanthanum",      abbreviation: "La",      id: "la",   group: "g-0",    period: "p-6",   column: "c-6",   row: "r-17",  block: "f",  atomicMass: 138.905,  meltingPoint: 1193,       boilingPoint: 3737,       discoveryDate: 1839,           discoveredBy: "Carl Gustav Mosander" },
           { atomicNumber: 58,        name: "Cerium",         abbreviation: "Ce",      id: "ce",   group: "g-0",    period: "p-6",   column: "c-8",   row: "r-17",  block: "f",  atomicMass: 140.116,  meltingPoint: 1072,       boilingPoint: 3716,       discoveryDate: 1803,           discoveredBy: "Jo..ns Jacob Berzelius and Wilhelm Hisinger" },
           { atomicNumber: 59,        name: "Praseodymium",   abbreviation: "Pr",      id: "pr",   group: "g-0",    period: "p-6",   column: "c-10",  row: "r-17",  block: "f",  atomicMass: 140.908,  meltingPoint: 1204,       boilingPoint: 3793,       discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
           { atomicNumber: 60,        name: "Neodymium",      abbreviation: "Nd",      id: "nd",   group: "g-0",    period: "p-6",   column: "c-12",  row: "r-17",  block: "f",  atomicMass: 144.242,  meltingPoint: 1289,       boilingPoint: 3347,       discoveryDate: 1885,           discoveredBy: "Carl Auer von Welsbach" },
           { atomicNumber: 61,        name: "Promethium",     abbreviation: "Pm",      id: "pm",   group: "g-0",    period: "p-6",   column: "c-14",  row: "r-17",  block: "f",  atomicMass: "(145)",  meltingPoint: 1315,       boilingPoint: 3273,       discoveryDate: 1945,           discoveredBy: "Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell" },
-          { atomicNumber: 62,        name: "Samarium",       abbreviation: "Sm",      id: "sm",   group: "g-0",    period: "p-6",   column: "c-16",  row: "r-17",  block: "f",  atomicMass: 150.36,   meltingPoint: 1345,       boilingPoint: 2067,       discoveryDate: 1879,           discoveredBy: "Paul-E`mile Lecoq de Boisbaudran" },
+          { atomicNumber: 62,        name: "Samarium",       abbreviation: "Sm",      id: "sm",   group: "g-0",    period: "p-6",   column: "c-16",  row: "r-17",  block: "f",  atomicMass: 150.36,   meltingPoint: 1345,       boilingPoint: 2067,       discoveryDate: 1879,           discoveredBy: "Paul-Émile Lecoq de Boisbaudran" },
           { atomicNumber: 63,        name: "Europium",       abbreviation: "Eu",      id: "eu",   group: "g-0",    period: "p-6",   column: "c-18",  row: "r-17",  block: "f",  atomicMass: 151.964,  meltingPoint: 1095,       boilingPoint: 1802,       discoveryDate: 1901,           discoveredBy: "Euge'ne-Anatole Demarc'ay" },
           { atomicNumber: 64,        name: "Gadolinium",     abbreviation: "Gd",      id: "gd",   group: "g-0",    period: "p-6",   column: "c-20",  row: "r-17",  block: "f",  atomicMass: 157.25,   meltingPoint: 1586,       boilingPoint: 3546,       discoveryDate: 1880,           discoveredBy: "Jean Charles Galissard de Marignac"},
           { atomicNumber: 65,        name: "Terbium",        abbreviation: "Tb",      id: "tb",   group: "g-0",    period: "p-6",   column: "c-22",  row: "r-17",  block: "f",  atomicMass: 158.925,  meltingPoint: 1632,       boilingPoint: 3503,       discoveryDate: 1843,           discoveredBy: "Carl Gustav Mosander" },
@@ -150,10 +151,11 @@
           { atomicNumber: 86,        name: "Radon",          abbreviation: "Rn",      id: "rn",   group: "g-18",   period: "p-6",   column: "c-36",  row: "r-12",  block: "p",  atomicMass: "(222)",  meltingPoint: 202,        boilingPoint: 211.5,      discoveryDate: 1900,           discoveredBy: "Friedrich Ernst Dorn" },
           { atomicNumber: 87,        name: "Francium",       abbreviation: "Fr",      id: "fr",   group: "g-1",    period: "p-7",   column: "c-2",   row: "r-14",  block: "s",  atomicMass: "(223)",  meltingPoint: 294,        boilingPoint: 923,        discoveryDate: 1939,           discoveredBy: "Marguerite Perey" },
           { atomicNumber: 88,        name: "Radium",         abbreviation: "Ra",      id: "ra",   group: "g-2",    period: "p-7",   column: "c-4",   row: "r-14",  block: "s",  atomicMass: "(226)",  meltingPoint: 969,        boilingPoint: 1773,       discoveryDate: 1898,           discoveredBy: "Pierre Curie and Marie Curie" },
+          { atomicNumber: '89-103',  name: "Actinides",      abbreviation: "Act.",    id: "z2",   group: "g-0",    period: "p-0",   column: "c-6",   row: "r-14",  block: "f",  atomicMass: " ",      meltingPoint: "N / A",    boilingPoint: "N / A",    discoveryDate: "N / A",       discoveredBy: "N / A" },
           // Start second portion of the periodict table
           { atomicNumber: 89,        name: "Actinium",       abbreviation: "Fr",      id: "fr",   group: "g-0",    period: "p-7",   column: "c-6",   row: "r-19",  block: "f",  atomicMass: "(227)",  meltingPoint: 1323,       boilingPoint: 3473,       discoveryDate: 1899,          discoveredBy: "Andrew Debierne" },
-          { atomicNumber: 90,        name: "Thorium",        abbreviation: "Th",      id: "th",   group: "g-0",    period: "p-7",   column: "c-8",   row: "r-19",  block: "f",  atomicMass: 232.038,  meltingPoint: 2023,       boilingPoint: 5058,       discoveryDate: 1829,          discoveredBy: "Jo..ns Jacob Berzelius" },
-          { atomicNumber: 91,        name: "Protactinium",   abbreviation: "Pa",      id: "pa",   group: "g-0",    period: "p-7",   column: "c-10",  row: "r-19",  block: "f",  atomicMass: 231.036,  meltingPoint: 1845,       boilingPoint: 4273,       discoveryDate: 1913,          discoveredBy: "Kasimir Fajans and Otto Go..hring" },
+          { atomicNumber: 90,        name: "Thorium",        abbreviation: "Th",      id: "th",   group: "g-0",    period: "p-7",   column: "c-8",   row: "r-19",  block: "f",  atomicMass: 232.038,  meltingPoint: 2023,       boilingPoint: 5058,       discoveryDate: 1829,          discoveredBy: "Jöns Jacob Berzelius" },
+          { atomicNumber: 91,        name: "Protactinium",   abbreviation: "Pa",      id: "pa",   group: "g-0",    period: "p-7",   column: "c-10",  row: "r-19",  block: "f",  atomicMass: 231.036,  meltingPoint: 1845,       boilingPoint: 4273,       discoveryDate: 1913,          discoveredBy: "Kasimir Fajans and Otto Göhring" },
           { atomicNumber: 92,        name: "Uranium",        abbreviation: "U",       id: "u",    group: "g-0",    period: "p-7",   column: "c-12",  row: "r-19",  block: "f",  atomicMass: 238.029,  meltingPoint: 1408,       boilingPoint: 4404,       discoveryDate: 1789,          discoveredBy: "Martin Heinrich Klaproth" },
           { atomicNumber: 93,        name: "Neptunium",      abbreviation: "Np",      id: "np",   group: "g-0",    period: "p-7",   column: "c-14",  row: "r-19",  block: "f",  atomicMass: "(237)",  meltingPoint: 917,        boilingPoint: 4175,       discoveryDate: 1940,          discoveredBy: "Edwin McMillian and Philip Abelson" },
           { atomicNumber: 94,        name: "Plutonium",      abbreviation: "Pu",      id: "pu",   group: "g-0",    period: "p-7",   column: "c-16",  row: "r-19",  block: "f",  atomicMass: "(244)",  meltingPoint: 913,        boilingPoint: 3501,       discoveryDate: 1940,          discoveredBy: "Glenn Seaborg and colleagues" },
@@ -166,15 +168,15 @@
           { atomicNumber: 101,       name: "Mendelevium",    abbreviation: "Md",      id: "md",   group: "g-0",    period: "p-7",   column: "c-30",  row: "r-19",  block: "f",  atomicMass: "(258)",  meltingPoint: 1100,       boilingPoint: "Unknown",  discoveryDate: 1955,          discoveredBy: "Albert Ghiorso and colleagues" },
           { atomicNumber: 102,       name: "Nobelium",       abbreviation: "No",      id: "no",   group: "g-0",    period: "p-7",   column: "c-32",  row: "r-19",  block: "f",  atomicMass: "(259)",  meltingPoint: 1100,       boilingPoint: "Unknown",  discoveryDate: 1963,          discoveredBy: "Georgy Flerov and colleagues and Albert Ghiorso and colleagues" },
           { atomicNumber: 103,       name: "Lawrencium",     abbreviation: "Lr",      id: "lr",   group: "g-0",    period: "p-7",   column: "c-34",  row: "r-19",  block: "f",  atomicMass: "(262)",  meltingPoint: 1900,       boilingPoint: "Unknown",  discoveryDate: 1965,          discoveredBy: "Georgy Flerov and colleagues and Albert Ghiorso and colleagues" },
-          //End second extented portion of the periodict table
+          // End second extented portion of the periodic table
           { atomicNumber: 104,       name: "Rutherfordium",  abbreviation: "Rf",      id: "rf",   group: "g-4",    period: "p-7",   column: "c-8",   row: "r-14",  block: "d",  atomicMass: "(267)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1964,          discoveredBy: "Georgy Flerov and colleagues and Albert Ghiorso and colleagues" },
-          { atomicNumber: 105,       name: "Dubnium",        abbreviation: "Db",      id: "db",   group: "g-5",    period: "p-7",   column: "c-10",  row: "r-14",  block: "d",  atomicMass: "(268)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: "1968-1970",   discoveredBy: "No name" },
+          { atomicNumber: 105,       name: "Dubnium",        abbreviation: "Db",      id: "db",   group: "g-5",    period: "p-7",   column: "c-10",  row: "r-14",  block: "d",  atomicMass: "(268)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: "1968-1970",   discoveredBy: "No Name" },
           { atomicNumber: 106,       name: "Seaborgium",     abbreviation: "Sg",      id: "sg",   group: "g-6",    period: "p-7",   column: "c-12",  row: "r-14",  block: "d",  atomicMass: "(269)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1974,          discoveredBy: "Albert Ghiorso and colleagues" },
-          { atomicNumber: 107,       name: "Bohrium",        abbreviation: "Bh",      id: "bh",   group: "g-7",    period: "p-7",   column: "c-14",  row: "r-14",  block: "d",  atomicMass: "(270)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1981,          discoveredBy: "Peter Armbruster, Gottfried Mu..nzenberg and colleagues" },
-          { atomicNumber: 108,       name: "Hassium",        abbreviation: "Hs",      id: "hs",   group: "g-8",    period: "p-7",   column: "c-16",  row: "r-14",  block: "d",  atomicMass: "(269)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1984,          discoveredBy: "Peter Armbruster, Gottfried Mu..nzenberg and colleagues" },
-          { atomicNumber: 109,       name: "Meitnerium",     abbreviation: "Mt",      id: "mt",   group: "g-9",    period: "p-7",   column: "c-18",  row: "r-14",  block: "d",  atomicMass: "(278)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1982,          discoveredBy: "Peter Armbruster, Gottfried Mu..nzenberg and colleagues" },
+          { atomicNumber: 107,       name: "Bohrium",        abbreviation: "Bh",      id: "bh",   group: "g-7",    period: "p-7",   column: "c-14",  row: "r-14",  block: "d",  atomicMass: "(270)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1981,          discoveredBy: "Peter Armbruster, Gottfried Münzenberg and colleagues" },
+          { atomicNumber: 108,       name: "Hassium",        abbreviation: "Hs",      id: "hs",   group: "g-8",    period: "p-7",   column: "c-16",  row: "r-14",  block: "d",  atomicMass: "(269)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1984,          discoveredBy: "Peter Armbruster, Gottfried Münzenberg and colleagues" },
+          { atomicNumber: 109,       name: "Meitnerium",     abbreviation: "Mt",      id: "mt",   group: "g-9",    period: "p-7",   column: "c-18",  row: "r-14",  block: "d",  atomicMass: "(278)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1982,          discoveredBy: "Peter Armbruster, Gottfried Münzenberg and colleagues" },
           { atomicNumber: 110,       name: "Darmstadtium",   abbreviation: "Ds",      id: "ds",   group: "g-10",   period: "p-7",   column: "c-20",  row: "r-14",  block: "d",  atomicMass: "(281)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1994,          discoveredBy: "Sigurd Hofmann, Peter Armbruster and Gottfried Mu..nzenberg" },
-          { atomicNumber: 111,       name: "Roentgenium",    abbreviation: "Rg",      id: "rg",   group: "g-11",   period: "p-7",   column: "c-22",  row: "r-14",  block: "d",  atomicMass: "(280)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1994,          discoveredBy: "Peter Armbruster and Gottfried My..nzenberg" },
+          { atomicNumber: 111,       name: "Roentgenium",    abbreviation: "Rg",      id: "rg",   group: "g-11",   period: "p-7",   column: "c-22",  row: "r-14",  block: "d",  atomicMass: "(280)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1994,          discoveredBy: "Peter Armbruster and Gottfried Müzenberg" },
           { atomicNumber: 112,       name: "Copernicium",    abbreviation: "Cn",      id: "cn",   group: "g-12",   period: "p-7",   column: "c-24",  row: "r-14",  block: "d",  atomicMass: "(285)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1996,          discoveredBy: "Sigurd Hofmann and colleagues" },
           { atomicNumber: 113,       name: "Nihonium",       abbreviation: "Nh",      id: "nh",   group: "g-13",   period: "p-7",   column: "c-26",  row: "r-14",  block: "p",  atomicMass: "(286)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2004,          discoveredBy: "Scientists from R.I.K.E.N." },
           { atomicNumber: 114,       name: "Flerovium",      abbreviation: "Fl",      id: "fl",   group: "g-14",   period: "p-7",   column: "c-28",  row: "r-14",  block: "p",  atomicMass: "(289)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 1999,          discoveredBy: "Scientists from J.I.N.C. and L.L.N.L." },
@@ -183,8 +185,6 @@
           { atomicNumber: 117,       name: "Tennessine",     abbreviation: "Ts",      id: "ts",   group: "g-17",   period: "p-7",   column: "c-34",  row: "r-14",  block: "p",  atomicMass: "(294)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2010,          discoveredBy: "Scientists from J.I.N.C., L.L.N.L., and O.R.N.L." },
           { atomicNumber: 118,       name: "Oganesson",      abbreviation: "Og",      id: "og",   group: "g-18",   period: "p-7",   column: "c-36",  row: "r-14",  block: "p",  atomicMass: "(294)",  meltingPoint: "Unknown",  boilingPoint: "Unknown",  discoveryDate: 2006,          discoveredBy: "Scientists from J.I.N.C. and L.L.N.L." },
           // Currently, the atomicNumber must be exactly the same as the index in the array (this helps get the object that the user hovers over)
-          { atomicNumber: 119,      name: "Lanthanides",     abbreviation: "Lan.",    id: "z1",   group: "g-0",    period: "p-0",   column: "c-6",   row: "r-12",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",           discoveredBy: "" },
-          { atomicNumber: 120,      name: "Actinides",       abbreviation: "Act.",    id: "z2",   group: "g-0",    period: "p-0",   column: "c-6",   row: "r-14",  block: "f",  atomicMass: "1",       meltingPoint: "",        boilingPoint: "",        discoveryDate: "",           discoveredBy: "" },
          ],
          periodLabels: [
            // Labels for each period element
@@ -217,44 +217,134 @@
            { display: 17,   column: "cc-34",  row: "rr-1", color: "light", name: "Halogens" },
            { display: 18,   column: "cc-36",  row: "rr-1", color: "light", name: "Noble Gases" }
          ],
-         // These elements are the defaults. Should only change when  user clicks on a different tab like "orbitals", "properties", etc.
-         elementsDefaultColor: [
+         elementDisplayProps: [
            // Period 1
-           "blue", "blue",
+           { name: "Hydrogen", defaultColor: "blue", color: "blue" },
+           { name: "Helium", defaultColor: "blue", color: "blue" },
            // Period 2
-           "blue", "blue", "red", "red", "red", "red", "red", "red",
+           { name: "Lithium", defaultColor: "blue", color: "blue" },
+           { name: "Beryllium", defaultColor: "blue", color: "blue" },
+           { name: "Boron", defaultColor: "red", color: "red" },
+           { name: "Carbon", defaultColor: "red", color: "red" },
+           { name: "Nitrogen", defaultColor: "red", color: "red" },
+           { name: "Oxygen", defaultColor: "red", color: "red" },
+           { name: "Flourine", defaultColor: "red", color: "red" },
+           { name: "Neon", defaultColor: "red", color: "red" },
            // Period 3
-           "blue", "blue", "red", "red", "red", "red", "red", "red",
+           { name: "Sodium", defaultColor: "blue", color: "blue" },
+           { name: "Magnesium", defaultColor: "blue", color: "blue" },
+           { name: "Aluminium", defaultColor: "red", color: "red" },
+           { name: "Silicon", defaultColor: "red", color: "red" },
+           { name: "Phosphorous", defaultColor: "red", color: "red" },
+           { name: "Sulfur", defaultColor: "red", color: "red" },
+           { name: "Chlorine", defaultColor: "red", color: "red" },
+           { name: "Argon", defaultColor: "red", color: "red" },
            // Period 4
-           "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+           { name: "Potassium", defaultColor: "blue", color: "blue" },
+           { name: "Calcium", defaultColor: "blue", color: "blue" },
+           { name: "Scandium", defaultColor: "green", color: "green" },
+           { name: "Titanium", defaultColor: "green", color: "green" },
+           { name: "Vanadium", defaultColor: "green", color: "green" },
+           { name: "Chromium", defaultColor: "green", color: "green" },
+           { name: "Manganese", defaultColor: "green", color: "green" },
+           { name: "Iron", defaultColor: "green", color: "green" },
+           { name: "Cobalt", defaultColor: "green", color: "green" },
+           { name: "Nickel", defaultColor: "green", color: "green" },
+           { name: "Copper", defaultColor: "green", color: "green" },
+           { name: "Zinc", defaultColor: "green", color: "green" },
+           { name: "Gallium", defaultColor: "red", color: "red" },
+           { name: "Germanium", defaultColor: "red", color: "red" },
+           { name: "Arsenic", defaultColor: "red", color: "red" },
+           { name: "Selenium", defaultColor: "red", color: "red" },
+           { name: "Bromine", defaultColor: "red", color: "red" },
+           { name: "Krypton", defaultColor: "red", color: "red" },
            // Period 5
-           "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+           { name: "Rubidium", defaultColor: "blue", color: "blue" },
+           { name: "Strontium", defaultColor: "blue", color: "blue" },
+           { name: "Yttrium", defaultColor: "green", color: "green" },
+           { name: "Zirconium", defaultColor: "green", color: "green" },
+           { name: "Niobium", defaultColor: "green", color: "green" },
+           { name: "Molybdenum", defaultColor: "green", color: "green" },
+           { name: "Technetium", defaultColor: "green", color: "green" },
+           { name: "Ruthenium", defaultColor: "green", color: "green" },
+           { name: "Rhodium", defaultColor: "green", color: "green" },
+           { name: "Palladium", defaultColor: "green", color: "green" },
+           { name: "Silver", defaultColor: "green", color: "green" },
+           { name: "Cadmium", defaultColor: "green", color: "green" },
+           { name: "Indium", defaultColor: "red", color: "red" },
+           { name: "Tin", defaultColor: "red", color: "red" },
+           { name: "Antmony", defaultColor: "red", color: "red" },
+           { name: "Tellurium", defaultColor: "red", color: "red" },
+           { name: "Iodine", defaultColor: "red", color: "red" },
+           { name: "Xenon", defaultColor: "red", color: "red" },
            // Period 6
-           "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
-           "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
+           { name: "Caesium", defaultColor: "blue", color: "blue" },
+           { name: "Barium", defaultColor: "blue", color: "blue" },
+           { name: "Lanthanides", defaultColor: "orange", color: "orange" },
+           { name: "Lanthanum", defaultColor: "orange", color: "orange" },
+           { name: "Cerium", defaultColor: "orange", color: "orange" },
+           { name: "Praseodymium", defaultColor: "orange", color: "orange" },
+           { name: "Neodymium", defaultColor: "orange", color: "orange" },
+           { name: "Promethium", defaultColor: "orange", color: "orange" },
+           { name: "Samarium", defaultColor: "orange", color: "orange" },
+           { name: "Europium", defaultColor: "orange", color: "orange" },
+           { name: "Gadolinium", defaultColor: "orange", color: "orange" },
+           { name: "Terbium", defaultColor: "orange", color: "orange" },
+           { name: "Dysprosium", defaultColor: "orange", color: "orange" },
+           { name: "Holmium", defaultColor: "orange", color: "orange" },
+           { name: "Erbium", defaultColor: "orange", color: "orange" },
+           { name: "Thulium", defaultColor: "orange", color: "orange" },
+           { name: "Ytterbium", defaultColor: "orange", color: "orange" },
+           { name: "Lutetium", defaultColor: "orange", color: "orange" },
+           { name: "Hafnium", defaultColor: "green", color: "green" },
+           { name: "Tantalum", defaultColor: "green", color: "green" },
+           { name: "Tungsten", defaultColor: "green", color: "green" },
+           { name: "Rhenium", defaultColor: "green", color: "green" },
+           { name: "Osmium", defaultColor: "green", color: "green" },
+           { name: "Iridium", defaultColor: "green", color: "green" },
+           { name: "Platinum", defaultColor: "green", color: "green" },
+           { name: "Gold", defaultColor: "green", color: "green" },
+           { name: "Mercury", defaultColor: "green", color: "green" },
+           { name: "Thallium", defaultColor: "red", color: "red" },
+           { name: "Lead", defaultColor: "red", color: "red" },
+           { name: "Bismuth", defaultColor: "red", color: "red" },
+           { name: "Polonium", defaultColor: "red", color: "red" },
+           { name: "Astatine", defaultColor: "red", color: "red" },
+           { name: "Radon", defaultColor: "red", color: "red" },
            // Period 7
-           "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
-           "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red", "orange", "orange",
-         ],
-
-         // These colors should be displayed
-         elementColors: [
-         // Period 1
-         "blue", "blue",
-         // Period 2
-         "blue", "blue", "red", "red", "red", "red", "red", "red",
-         // Period 3
-         "blue", "blue", "red", "red", "red", "red", "red", "red",
-         // Period 4
-         "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
-         // Period 5
-         "blue", "blue", "green", "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
-         // Period 6
-         "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
-         "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red",
-         // Period 7
-         "blue", "blue", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange", "orange",
-         "green", "green", "green", "green", "green", "green", "green", "green", "green", "red", "red", "red", "red", "red", "red", "orange", "orange"
+           { name: "Francium", defaultColor: "blue", color: "blue" },
+           { name: "Radium", defaultColor: "blue", color: "blue" },
+           { name: "Actinides", defaultColor: "orange", color: "orange" },
+           { name: "Actinium", defaultColor: "orange", color: "orange" },
+           { name: "Thorium", defaultColor: "orange", color: "orange" },
+           { name: "Protactinium", defaultColor: "orange", color: "orange" },
+           { name: "Uranium", defaultColor: "orange", color: "orange" },
+           { name: "Neptunium", defaultColor: "orange", color: "orange" },
+           { name: "Plutonium", defaultColor: "orange", color: "orange" },
+           { name: "Americium", defaultColor: "orange", color: "orange" },
+           { name: "Curium", defaultColor: "orange", color: "orange" },
+           { name: "Berkelium", defaultColor: "orange", color: "orange" },
+           { name: "Californium", defaultColor: "orange", color: "orange" },
+           { name: "Einsteinium", defaultColor: "orange", color: "orange" },
+           { name: "Fermium", defaultColor: "orange", color: "orange" },
+           { name: "Mendelevium", defaultColor: "orange", color: "orange" },
+           { name: "Nobelium", defaultColor: "orange", color: "orange" },
+           { name: "Lawrencium", defaultColor: "orange", color: "orange" },
+           { name: "Rutherfordium", defaultColor: "green", color: "green" },
+           { name: "Dubnium", defaultColor: "green", color: "green" },
+           { name: "Seaborgium", defaultColor: "green", color: "green" },
+           { name: "Bohrium", defaultColor: "green", color: "green" },
+           { name: "Hassium", defaultColor: "green", color: "green" },
+           { name: "Meitnerium", defaultColor: "green", color: "green" },
+           { name: "Darmstadtium", defaultColor: "green", color: "green" },
+           { name: "Roentgenium", defaultColor: "green", color: "green" },
+           { name: "Copernicium", defaultColor: "green", color: "green" },
+           { name: "Nihonium", defaultColor: "red", color: "red" },
+           { name: "Flerovium", defaultColor: "red", color: "red" },
+           { name: "Moscovium", defaultColor: "red", color: "red" },
+           { name: "Livermoreium", defaultColor: "red", color: "red" },
+           { name: "Tennessine", defaultColor: "red", color: "red" },
+           { name: "Oganesson", defaultColor: "red", color: "red" }
          ],
 
          hoverAtomicNumber: "1",
@@ -279,17 +369,17 @@
      methods: {
        updateElementInfoAndDesc: function(index) {
          // Do not add one to index because v-for array starts at 0 and, trying to get the element at a certain position in v-for array loop
-         // Update element overview
+         // Update element overview (left box)
          if(this.clickActive == false) {
-           this.hoverAtomicNumber = this.$refs.elementAtomicNumberDOM[index].innerHTML;
-           this.hoverAbbreviation = this.$refs.elementAbbreviationDOM[index].innerHTML;
-           this.hoverName = this.$refs.elementNameDOM[index].innerHTML;
-           this.hoverAtomicMass = this.$refs.elementAtomicMassDOM[index].innerHTML;
+           this.hoverAtomicNumber = this.elements[index].atomicNumber;
+           this.hoverAbbreviation = this.elements[index].abbreviation;
+           this.hoverName = this.elements[index].name;
+           this.hoverAtomicMass = this.elements[index].atomicMass;
 
-           // Update element description
+           // Update element description (right box)
            this.hoverDiscoveryDate = this.elements[index].discoveryDate;
            this.hoverDiscoveredBy = this.elements[index].discoveredBy;
-           this.hoverColor = this.elementsDefaultColor[index];
+           this.hoverColor = this.elementDisplayProps[index].defaultColor;
          }
        },
 
@@ -297,82 +387,73 @@
        setElementColor: function(index, shade) {
        if(this.clickedElementIndex != index) {
            // Gets current default color
-           var defaultColor = this.elementsDefaultColor[index];
+           var defaultColor = this.elementDisplayProps[index].defaultColor;
 
-           // Sets current default color
-           Vue.set(this.elementColors, index, (shade + defaultColor));
+           // Sets current default color ('color' is the property we want to change)
+           Vue.set(this.elementDisplayProps[index], 'color', (shade + defaultColor));
          }
        },
-       // Similar to setElementColor, but does it by force (sets color even if ths.clickedElementIndex if the same as the index)
+       // Similar to setElementColor, but does it by force (sets color even if ths.clickedElementIndex is not the same as the index)
        setElementColorForce: function(index, shade) {
          // Gets current default color
-         var defaultColor = this.elementsDefaultColor[index];
+         var defaultColor = this.elementDisplayProps[index].defaultColor;
 
          // Sets current default color
-         Vue.set(this.elementColors, index, (shade + defaultColor));
+         Vue.set(this.elementDisplayProps[index], 'color', (shade + defaultColor));
        },
        // Sets the color of all elements (usually the default color)
        setAllElementsColor: function(shade) {
-         for(var i = 0; i < this.elementColors.length; i++)
+         for(var i = 0; i < this.elementDisplayProps.length; i++)
          {
            if(i != this.clickedElementIndex)
            {
-             var current = this.elementsDefaultColor[i];
-             this.elementColors[i] = shade + current;
+             var defaultColor = this.elementDisplayProps[i].defaultColor;
+             Vue.set(this.elementDisplayProps[i], 'color', (shade + defaultColor));
            }
          }
        },
        darkenElements: function(index, prefix, type) {
+         this.clearLabelExcept(-1, -1);
+
          var className = this.labelNoneToClass(index + 1, type);
 
-         // Elements that need to be lightened
-         var elements = document.getElementsByClassName(className);
-
-         // For each element in the array, highlight it
-         for(var i = 0; i < elements.length; i++) {
-           // Get the atomicNumber of the element
-           var element = elements[i].firstChild.children[0].innerText;
-           var defaultColor = this.elementsDefaultColor[element - 1];
-
-           Vue.set(this.elementColors, element - 1, (prefix + defaultColor));
+         // Get elements that need to be lighened (elements to be lightened either in a period or group)
+         if(type == "period") {
+           for(var i = 0; i < this.elements.length; i++) {
+             if(this.elements[i].period == className) {
+               var defaultColor = this.elementDisplayProps[i].defaultColor;
+               Vue.set(this.elementDisplayProps[i], 'color', (prefix + defaultColor))
+             }
+           }
+         }
+         else if(type == "group") {
+           for(var i = 0; i < this.elements.length; i++) {
+             if(this.elements[i].group == className) {
+               var defaultColor = this.elementDisplayProps[i].defaultColor;
+               Vue.set(this.elementDisplayProps[i], 'color', (prefix + defaultColor))
+             }
+           }
          }
        },
        lightenElements: function(index, prefix, type, typeShort) {
-         // className are the classes that need to be highlighted "p" stands for period, "g" stands for group
          var className = this.labelNoneToClass(index + 1, type);
 
-         // Get the length of the array to be used (depends on period / group)
+         // Get elements that need to be lighened (elements to be lightened either in a period or group)
          if(type == "period") {
-          var arrayType = this.periodLabels
+           for(var i = 0; i < this.elements.length; i++) {
+             if(this.elements[i].period != className) {
+               var defaultColor = this.elementDisplayProps[i].defaultColor;
+               Vue.set(this.elementDisplayProps[i], 'color', (prefix + defaultColor))
+             }
+           }
          }
          else if(type == "group") {
-           var arrayType = this.groupLabels
-         }
-
-         var elementToChangeColor = [];
-         // For every single period or group, check if the class we are darkening is the same as the one we want to lighten.
-         // If not, then add that group of elements to the array
-         for(var i = 0; i <= arrayType.length; i++) {
-           var AClassName = (typeShort + i);
-           var ithElements = [];
-           if(AClassName != className) {
-             ithElements = document.getElementsByClassName(AClassName)
+           for(var i = 0; i < this.elements.length; i++) {
+             if(this.elements[i].group != className) {
+               var defaultColor = this.elementDisplayProps[i].defaultColor;
+               Vue.set(this.elementDisplayProps[i], 'color', (prefix + defaultColor))
+             }
            }
-           // When adding to the main array (elementToChangeColor), add the element atomicNumber
-           for(var j = 0; j < ithElements.length; j++) {
-             var temp = [];
-             // Adding all the atomicNumbers of nums that will lighten to an array
-             temp = ithElements[j].firstChild.children[0].innerText;
-             elementToChangeColor = elementToChangeColor.concat(temp);
-           }
-         }
-         // elementToChangeColor is final array containing all the atomicNumbers of elements that need to lighten
-         for(var i = 0; i < elementToChangeColor.length; i++) {
-           var element = elementToChangeColor[i];
-           var defaultColor = this.elementsDefaultColor[element - 1];
-
-           // For each element, prepend "light-" to property color. Since property is binded to class, a CSS tyle will update the new colour
-           Vue.set(this.elementColors, element - 1, (prefix + defaultColor));
          }
        },
        changeLabelColor: function(index, isMouseOver) {
@@ -389,15 +470,11 @@
 
          if(this.clickActive == false) {
            // When changing a label, make sure all others are turned off first
-           for(var i = 0; i < this.periodLabels.length; i++) {
-             this.periodLabels[i].color = "light";
-           }
-           for(var i = 0; i < this.groupLabels.length; i++) {
-              this.groupLabels[i].color = "light";
-           }
+           this.clearLabelExcept(-1, -1);
 
            // Only darken the label if the element actually has a valid period number (within the actual range of the periodic table)
-           if (period > 0 && period < 8) {
+           // Recall Act. and Lan. have period of 0, and they don't have period / group labels
+           if(period > 0) {
              // Darken the labels if the mouse is entering an element
             if(isMouseOver == "true") {
                this.periodLabels[period - 1].color = "dark";
@@ -411,7 +488,8 @@
              }
            }
            // Only darken the label if the element actually has a valid group number (within the actual range of the periodic table)
-           if (group > 0 && group < 19) {
+           // Recall Act. and Lan. have group of 0, and they don't have period / group labels
+           if (group > 0) {
              // Darken the labels if the mouse is entering an element
              if(isMouseOver == "true") {
                this.groupLabels[group - 1].color = "dark";
@@ -424,13 +502,6 @@
                console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
              }
            }
-         }
-       },
-       // type can either be "mouesOver" or "mouseLeave"
-       maintenanceBefore: function(index, type) {
-         if(type == "mouseOver") {
-           // Maintenance (making sure all other labels are not activated, before activating some)
-           this.clearLabelExcept(-1, -1);
          }
        },
        // type can either be "mouesOver" or "mouseLeave"
@@ -448,7 +519,7 @@
              if(this.clickedElementGroup > 0) {
                this.groupLabels[this.clickedElementGroup - 1].color = "dark";
              }
-             this.elementColors[this.clickedElementIndex] = "supdark-" + this.elementsDefaultColor[this.clickedElementIndex];
+             Vue.set(this.elementDisplayProps[this.clickedElementIndex], 'color', ("supdark-" + this.elementDisplayProps[this.clickedElementIndex].color));
            }
          }
        },
@@ -467,6 +538,10 @@
        },
        // When element is clicked, darken it
        clickElement: function(index) {
+         // Change element info and label color (in case the mouse does not movein or moveout the element)
+         this.changeLabelColor(index, "true");
+         this.updateElementInfoAndDesc(index);
+
          // What to do if clicking for the first time, or clicking on a different element
          // Save the index (element index, period index, and group index) of the clicked on element
          if(this.clickedElementIndex == -1 || this.clickedElementIndex != index) {
@@ -475,14 +550,8 @@
            this.clickedElementPeriod = this.labelClassToNone( this.elements[index].period );
            this.clickedElementGroup = this.labelClassToNone( this.elements[index].group );
 
-           // Set clickActive temporarily to false, so we can actually changeLabelColor and updateElementInfoAndDesc etc.
-           // Then change it back so it doesn't update element info automatically (since user clicked, and we want to not change element info)
-           this.clickActive = false;
-           this.changeLabelColor(index, "true");
-           this.updateElementInfoAndDesc(index);
-           this.clickActive = true;
 
-           // Sets colour of all elements in periodic table
+           // Sets color of all elements in periodic table
            this.setAllElementsColor('');
            this.setElementColorForce(index, "supdark-");
          }
@@ -535,9 +604,6 @@
            text: this.groupLabels[index].name
          });
        },
-       changeTheme: function() {
-         console.log("Perioidc table theme change");
-       }
      },
      created() {
        bus.$on('themeChanged', (data) => {

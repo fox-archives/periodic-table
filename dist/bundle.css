@@ -107,6 +107,12 @@
 .light-def a:hover {
   text-decoration-color: #212529; }
 
+.light-def a {
+  text-decoration-color: #ced4da; }
+
+.light-def a:hover {
+  text-decoration-color: #212529; }
+
 .dark-def a {
   text-decoration-color: #343a40; }
 
