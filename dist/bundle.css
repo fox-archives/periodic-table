@@ -191,7 +191,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 30%; }
+  width: 200px; }
 
 .options li {
   display: flex;
@@ -202,9 +202,9 @@
   font-family: robotolight;
   padding-bottom: 5px; }
 
-.options select {
-  width: 200px; }
-
+/*.options select {
+  width: 200px;
+}*/
 .nav-info ul {
   list-style-type: none; }
 
@@ -327,6 +327,7 @@ p#name2, p#name3 {
 
 #pt {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-width: 400px; }
 
@@ -338,7 +339,7 @@ p#name2, p#name3 {
   display: grid;
   grid-template-columns: 40px repeat(36, 1fr);
   grid-template-rows: 40px repeat(19, 40px);
-  padding: 10px 10px 10px 10px; }
+  padding: 10px 20px 10px 20px; }
 
 .element-outer {
   border-radius: 4px;
@@ -411,6 +412,20 @@ p#name2, p#name3 {
   font-weight: regular;
   font-size: 1.15em;
   margin-bottom: 15px; }
+
+#det {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-color: #f8f9fa;
+  padding: 0px 10px 0px 10px; }
+
+#det div {
+  margin: 10px 20px 10px 0px; }
+
+#det #unobtrusive-overview {
+  border-radius: 7.5px;
+  background-color: #f1f3f5; }
 
 .label-period-inner {
   height: 100%;
@@ -1365,6 +1380,20 @@ a:clicked {
   -moz-filter: blur(20px);
   filter: blur(20px);
   transition: filter 0.2s; }
+
+@media (max-width: 1075px) {
+  .no-blur {
+    transition: filter 0s; }
+  .blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 0s; }
+  .blur-large {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    transition: filter 0s; } }
 
 .vs-noti-contenedor, .con-popup, .con-options, .activeItem {
   user-select: none; }

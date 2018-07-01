@@ -1,20 +1,32 @@
 <template>
   <div id="pt" class="has-shadow" v-bind:class="themeType">
+    <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
+    <section v-if="infoLocationType == 'info-unobtrusive'" id="det">
+      <div id="unobtrusive-overview">
+        <p class="element-det-secondary-info"> {{ hoverAtomicNumber }} </p>
+        <p class="element-det-primary-info"> {{ hoverAbbreviation }} </p>
+        <p class="element-det-secondary-info"> {{ hoverName }} </p>
+        <p class="element-det-secondary-info"> {{ hoverAtomicMass }} </p>
+      </div>
+      <div>
+
+      </div>
+    </section>
+
     <div id="grid-container">
       <main id="grid">
-
-        <!-- ELEMENT OVERVIEW PANNEL -->
-        <section id="element-overview" v-bind:class="hoverColor" v-cloak>
+        <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
+        <section v-if="infoLocationType == 'info-obtrusive'" id="element-overview" v-bind:class="hoverColor" v-cloak>
             <div id="element-overview-inner">
-              <p id="element-ov-name" class="element-ov-secondary-info">{{ hoverAtomicNumber }}</p>
-              <p id="element-ov-abbreviation" class="element-ov-primary-info">{{ hoverAbbreviation }}</p>
-              <p id="element-ov-name" class="element-ov-secondary-info">{{ hoverName }}</p>
-              <p id="element-ov-mass" class="element-ov-secondary-info">{{ hoverAtomicMass }}</p>
+              <p class="element-ov-secondary-info">{{ hoverAtomicNumber }}</p>
+              <p class="element-ov-primary-info">{{ hoverAbbreviation }}</p>
+              <p class="element-ov-secondary-info">{{ hoverName }}</p>
+              <p class="element-ov-secondary-info">{{ hoverAtomicMass }}</p>
             </div>
         </section>
 
-        <!-- ELEMENT DESCRIPTIONS -->
-        <section id="element-desc" v-bind:class="hoverColor" v-cloak>
+        <!-- (INFO OBTRUSIVE) ELEMENT DESCRIPTIONS -->
+        <section v-if="infoLocationType == 'info-obtrusive'" id="element-desc" v-bind:class="hoverColor" v-cloak>
           <div id="element-desc-inner">
             <p id="element-d-discovery-date" class="element-d-primary-info">Discovery Date</p>
             <p id="element-discovery-date" class="element-d-secondary-info">{{ hoverDiscoveryDate }}</p>
@@ -364,7 +376,8 @@
          clickedElementPeriod: -1,
          clickedElementGroup: -1,
 
-         themeType: 'light-def'
+         themeType: 'light-def',
+         infoLocationType: 'info-obtrusive'
        }
      },
      methods: {
@@ -417,7 +430,6 @@
        darkenElements: function(index, prefix, type) {
          // On hover, clear all other label highlights
          this.clearLabelExcept(-1, -1);
-         console.log(this.hoverColor);
          // Change element description and shade on hover of label
          this.hoverColor = "light-" + this.elementDisplayProps[this.hoverIndex].defaultColor;
 
@@ -616,7 +628,10 @@
      created() {
        bus.$on('themeChanged', (data) => {
          this.themeType = data;
-       })
+       });
+       bus.$on('infoLocationChanged', (data) => {
+         this.infoLocationType = data;
+       });
      },
      computed: {
 

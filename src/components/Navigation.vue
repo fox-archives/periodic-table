@@ -7,13 +7,13 @@
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
         </ul>
         <ul id="nav-right">
-          <li class="nav-selected" id="simple-wide" v-on:click="changeSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
-          <li id="properties-wide" v-on:click="changeSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
-          <li class="custom-icon" id="electrons-wide" v-on:click="changeSelection('electrons')"> <electrons></electrons> <h2>Electrons </h2> </li>
-          <li class="custom-icon" id="orbitals-wide" v-on:click="changeSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
-          <li class="custom-icon" id="isotopes-wide" v-on:click="changeSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
-          <li id="explore-wide" v-on:click="changeSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
-          <li id="quiz-wide" v-on:click="changeSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
+          <li class="nav-selected" id="simple-wide" v-on:click="setSelection('simple')"> <type-icon class="navIcon featherIcon"></type-icon> <h2>Simple</h2> </li>
+          <li id="properties-wide" v-on:click="setSelection('properties')"> <list-icon class="navIcon featherIcon"></list-icon> <h2>Properties</h2> </li>
+          <li class="custom-icon" id="electrons-wide" v-on:click="setSelection('electrons')"> <electrons></electrons> <h2>Electrons </h2> </li>
+          <li class="custom-icon" id="orbitals-wide" v-on:click="setSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
+          <li class="custom-icon" id="isotopes-wide" v-on:click="setSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
+          <li id="explore-wide" v-on:click="setSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
+          <li id="quiz-wide" v-on:click="setSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
           <li id="info" v-on:click="infoPopup('on')"> <info-icon class="navIcon featherIcon"></info-icon> </li>
           <li id="settings" v-on:click="settingsPopup('on')"> <settings-icon class="navIcon featherIcon"></settings-icon> </li>
           <li id="search"><search-icon class="navIcon featherIcon"> </search-icon> </li>
@@ -57,7 +57,15 @@
         <ul>
           <li>
             <p>Group Labels</p>
-            <vs-select class="option-group-Types" label="groupTypes" v-model="groupType" v-bind:options="groupTypes"></vs-select>
+            <vs-select label="groupTypes" v-model="groupType" v-bind:options="groupTypes"></vs-select>
+          </li>
+          <li>
+            <p>Decimal Count</p>
+            <vs-select label="decimalCountTypes" v-model="decimalCountType" v-bind:options="decimalCountTypes"></vs-select>
+          </li>
+          <li>
+            <p>Transitions and Effects</p>
+            <vs-select label="transitionTypes" v-model="transitionType" v-bind:options="transitionTypes"></vs-select>
           </li>
         </ul>
       </aside>
@@ -69,11 +77,15 @@
         <ul>
           <li>
             <p>Theme</p>
-            <vs-select class="option-theme" label="themes" v-model="theme" v-bind:options="themes" v-on:change="changeTheme"></vs-select>
+            <vs-select class="option-theme" label="themes" v-model="theme" v-bind:options="themes" v-on:change="setTheme"></vs-select>
           </li>
           <li>
             <p>Information</p>
-            <vs-select class="option-theme" label="theme" v-model="informationLocation" v-bind:options="informationLocations"></vs-select>
+            <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-bind:options="infoLocations" v-on:change="setInfoLocation"></vs-select>
+          </li>
+          <li>
+            <p>Periodic Table Layout</p>
+            <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout" v-bind:options="tableLayouts" v-on:change="setTableLayout"></vs-select>
           </li>
           <li>
             <p>Advanced Options</p>
@@ -117,6 +129,10 @@
         themeTypes: ["light-def", "light-con", "dark-def"],
         themeType: "light-def",
 
+        // INFO LOCATION
+        infoLocationTypes: ['info-obtrusive', 'info-unobtrusive', 'info-excluded'],
+        infoLocationType: "info-obtrusive",
+
         // DATA FOR ELEMENT UI MENU
         activeIndex: '1',
         // DATA FOR POPUPS
@@ -136,11 +152,25 @@
           { text: 'Dark', value: 3 }
         ],
 
-        informationLocation: 2,
-        informationLocations: [
-          { text: 'Unobtrusive', value: 1 },
-          { text: 'Intrusive', value: 2 },
+        infoLocation: 1,
+        infoLocations: [
+          { text: 'Obtrusive', value: 1 },
+          { text: 'Unobtrusive', value: 2 },
           { text: 'Excluded', value: 3 }
+        ],
+
+        tableLayout: 1,
+        tableLayouts: [
+          { text: 'Fit to Screen', value: 1 },
+          { text: 'Full Screen Height', value: 2 },
+          { text: 'Full Screen Width', value: 3 },
+          { text: 'Mobile', value: 4 },
+        ],
+
+        transitionType: 1,
+        transitionTypes: [
+          { text: 'Advanced', value: 1 },
+          { text: 'Basic', value: 2 },
         ],
 
         // DATA FOR ADVANCED OPTIONS
@@ -151,7 +181,15 @@
           { text: 'CAS', value: 3 },
           { text: 'Trivial Name', value: 4 },
           { text: 'By Element Name', value: 5 }
-        ]
+        ],
+
+        decimalCountType: 1,
+        decimalCountTypes: [
+          { text: '2', value: 1 },
+          { text: '3', value: 2 },
+          { text: '4', value: 3 },
+          { text: 'Maximum', value: 4 },
+        ],
 
         // END DATA FOR ADVANCED OPTIONS
       }
@@ -159,45 +197,45 @@
     methods: {
       menuPopup: function(state) {
         if(state == "on") {
-          this.changeBlur("blur");
+          this.setBlur("blur");
           this.menuPopupActive = true;
         }
         else if(state == "off") {
-          this.changeBlur("no-blur");
+          this.setBlur("no-blur");
           this.menuPopupActive = false;
         }
       },
       infoPopup: function(state) {
         if(state == "on") {
-          this.changeBlur("blur");
+          this.setBlur("blur");
           this.infoPopupActive = true;
         }
         else if(state == "off") {
-          this.changeBlur("no-blur");
+          this.setBlur("no-blur");
           this.infoPopupActive = false;
         }
       },
       settingsPopup: function(state) {
         if(state == "on") {
-          this.changeBlur("blur");
+          this.setBlur("blur");
           this.settingsPopupActive = true;
         }
         else if(state == "off") {
-          this.changeBlur("no-blur");
+          this.setBlur("no-blur");
           this.settingsPopupActive = false;
         }
       },
       advancedSettingsPopup: function(state) {
         if(state == "on") {
-          this.changeBlur("blur-large");
+          this.setBlur("blur-large");
           this.advancedSettingsPopupActive = true;
         }
         else if(state == "off") {
-          this.changeBlur("blur");
+          this.setBlur("blur");
           this.advancedSettingsPopupActive = false;
         }
       },
-      changeBlur: function(blurType) {
+      setBlur: function(blurType) {
         // Could make this similar to addClassToNotif function below, but will not
         if(blurType == "no-blur") {
           document.getElementById('content').classList.add('no-blur');
@@ -242,7 +280,7 @@
         }
       },
       // Changes local teme, and emits 'theme-changed' to all other .vue files (so theme changes in other .vue files)
-      changeTheme: function() {
+      setTheme: function() {
         // This changes themeType
         // i represents each element in themeTypes array
         for(var i = 0; i < this.themeTypes.length; i++) {
@@ -254,8 +292,19 @@
         // Emit event theme change, that the theme type was changed
         bus.$emit('themeChanged', this.themeType);
       },
-      changeSelection: function() {
-        
+      setInfoLocation: function() {
+        for(var i = 0; i < this.infoLocationTypes.length; i++) {
+          if(this.infoLocation == i + 1) {
+            this.infoLocationType = this.infoLocationTypes[i];
+          }
+        }
+        bus.$emit('infoLocationChanged', this.infoLocationType);
+      },
+      setSelection: function() {
+
+      },
+      setTableLayout: function() {
+
       }
     },
     components: {

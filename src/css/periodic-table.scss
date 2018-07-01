@@ -9,6 +9,7 @@ $element-height: 40px;
 // MAIN GRID STRUCTURE
 #pt {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-width: 400px;
 }
@@ -22,7 +23,7 @@ $element-height: 40px;
   display: grid;
   grid-template-columns: 40px repeat($total-columns, 1fr);
   grid-template-rows: 40px repeat($total-rows, $element-height);
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
 }
 
 
@@ -66,7 +67,7 @@ $element-height: 40px;
 
 // ELEMENT OVERVIEW PANNEL
 #element-overview {
-  border-radius: $border-radius / 2;
+  border-radius: $border-radius;
   overflow: hidden;
   grid-column-start: 7;
   grid-column-end: 14;
@@ -105,7 +106,7 @@ $element-height: 40px;
 
 // ELEMENT DESCRIPTIONS
 #element-desc {
-  border-radius: $border-radius / 2;
+  border-radius: $border-radius;
   grid-column-start: 15;
   grid-column-end: 25;
   grid-row-start: 2;
@@ -141,12 +142,32 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   margin-bottom: 15px;
 }
 
+// UNOBTRUSIVE INFORMATION (DETAILS)
+#det {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-color: $oc-gray-0;
+  padding: 0px 10px 0px 10px;
+
+}
+
+#det div {
+  margin: 10px 20px 10px 0px;
+}
+
+#det #unobtrusive-overview {
+  border-radius: $border-radius;
+  background-color: $oc-gray-1;
+}
+
+
 // PERIOD LABELS
 .label-period-inner {
   height: 100%;
   width: 75%;
   //transition: background-color $transition-time ease-in-out;
-  border-radius: $border-radius / 2;
+  border-radius: $border-radius;
   user-select: none;
 }
 
@@ -168,7 +189,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   height: 70%;
   width: 100%;
   //transition: background-color $transition-time ease-in-out;
-  border-radius: $border-radius / 2;
+  border-radius: $border-radius;
   user-select: none;
 }
 

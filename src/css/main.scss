@@ -1,13 +1,10 @@
 $minimum-width: 1000px;
 $maximum-width: 1000px;
-$border-radius: 15px;
+$border-radius: 7.5px;
 $transition-time: 0.15s;
 
 @import "./open-color.scss";
 @import "./fonts.scss";
-
-$mainBackground: $oc-gray-0;
-$labelDark: $oc-gray-1;
 
 @import "./main-themes";
 @import "./navigation.scss";
@@ -79,6 +76,27 @@ a:clicked {
   -moz-filter: blur(20px);
   filter: blur(20px);
   transition: filter 0.2s;
+}
+
+// No blur transition, and less blur for smaller devices (less computing power)
+@media (max-width: 1075px) {
+  .no-blur {
+    transition: filter 0s;
+  }
+
+  .blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 0s;
+  }
+
+  .blur-large {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+    transition: filter 0s;
+  }
 }
 
 // NO HIGHLIGHT EFFECT ON SOME VUESAX ELEMENTS, AMONG OTHER ELEMENTS
