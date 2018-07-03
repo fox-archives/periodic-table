@@ -81,7 +81,7 @@
     </div>
   </div>
 </template>
-<script>
+<script type="text/javascript">
   // Import the bus
   import bus from "./bus.js";
 
@@ -652,6 +652,14 @@
        bus.$on('infoLocationChanged', (data) => {
          this.infoLocationType = data;
        });
+      /*
+       fetch('/src/assets/data/main.json')
+       .then(response => response.json())
+       .then(jsonResponse => {
+         //console.log(jsonResponse);
+         var elements = JSON.parse(jsonResponse);
+       })
+       */
      },
      computed: {
 

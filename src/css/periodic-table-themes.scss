@@ -24,12 +24,16 @@
   color: $oc-gray-9;
 }
 
-#det {
-  //background-color: $oc-gray-1;
+#pt.light-def #det {
+  background-color: $oc-gray-0;
 }
 
-#det #unobtrusive-overview {
+#pt.light-def #det li {
+  background-color: $oc-gray-1;
+}
 
+#pt.light-def p, #pt.light-def h3, #pt.light-def h4 {
+  color: $oc-gray-9;
 }
 
 // // LIGHT CON \\ \\
@@ -38,25 +42,36 @@
 }
 
 #pt.light-con .element-outer {
-  box-shadow: 3px 3px 3px $oc-gray-5;
+  box-shadow: 3px 3px 3px $oc-gray-4;
 }
 
 #pt.light-con .element-outer:hover {
-  box-shadow: 5px 5px 5px $oc-gray-5;
+  box-shadow: 5px 5px 5px $oc-gray-4;
 }
 
 #pt.light-con #element-overview {
-  box-shadow: 4px 4px 4px $oc-gray-5;
+  box-shadow: 4px 4px 4px $oc-gray-4;
 }
 
 #pt.light-con #element-desc {
-  box-shadow: 4px 4px 4px $oc-gray-5;
+  box-shadow: 4px 4px 4px $oc-gray-4;
 }
 
 #pt.light-con .label-period-inner p, .light-con .label-group-inner p {
   color: $oc-gray-9;
 }
 
+#pt.light-con #det {
+  background-color: $oc-gray-1;
+}
+
+#pt.light-con #det li {
+  background-color: $oc-gray-4;
+}
+
+#pt.light-con p, #pt.light-con h3, #pt.light-con h4 {
+  color: $oc-gray-9;
+}
 
 // // DARK DEF \\ \\
 #pt.dark-def #grid-container {
@@ -80,5 +95,17 @@
 }
 
 #pt.dark-def .label-period-inner p, .dark-def .label-group-inner p {
+  color: $oc-gray-0;
+}
+
+#pt.dark-def #det {
+  background-color: $oc-gray-9;
+}
+
+#pt.dark-def #det li {
+  background-color: $oc-gray-8;
+}
+
+#pt.dark-def p, #pt.dark-def h3, #pt.dark-def h4 {
   color: $oc-gray-0;
 }

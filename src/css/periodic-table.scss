@@ -148,7 +148,6 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   flex-direction: row;
   height: 250px;
   list-style-type: none;
-  border-radius: $border-radius;
 }
 
 #det #unobtrusive-overview {
@@ -160,9 +159,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   align-items: center;
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
-  background-color: $oc-gray-1;
   border-radius: $border-radius /2;
-
 }
 
 #det p {

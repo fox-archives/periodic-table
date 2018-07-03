@@ -1,4 +1,5 @@
 import './css/main.scss';
+var json = require('./assets/data/main.json');
 
 // AnimeJS
 import anime from 'animejs';
