@@ -3,10 +3,28 @@
     <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
     <section v-if="infoLocationType == 'info-unobtrusive'" id="det">
       <div id="unobtrusive-overview">
-        <p class="element-det-secondary-info"> {{ hoverAtomicNumber }} </p>
-        <p class="element-det-primary-info"> {{ hoverAbbreviation }} </p>
-        <p class="element-det-secondary-info"> {{ hoverName }} </p>
-        <p class="element-det-secondary-info"> {{ hoverAtomicMass }} </p>
+        <li>
+          <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
+          <h3>{{ hoverName }}</h3>
+        </li>
+        <li>
+          <h4>Atomic Number</h4>
+          <p>{{ hoverAtomicNumber }}</p>
+        </li>
+        <li>
+          <h4>Atomic Mass</h4>
+          <p>{{ hoverAtomicMass }}</p>
+        </li>
+      </div>
+      <div id="unobtrusive-desc">
+        <li>
+          <h4>Discovered By</h4>
+          <p>{{ hoverDiscoveredBy }}</p>
+        </li>
+        <li>
+          <h4>Discovery Date</h4>
+          <p>{{ hoverDiscoveryDate }}</p>
+        </li>
       </div>
       <div>
 
@@ -559,14 +577,16 @@
        // When element is clicked, darken it
        clickElement: function(index) {
          // Change element info and label color (in case the mouse does not movein or moveout the element)
+         this.clickActive = false;
          this.changeLabelColor(index, "true");
          this.updateElementInfoAndDesc(index);
+         this.clickActive = true;
 
          // What to do if clicking for the first time, or clicking on a different element
          // Save the index (element index, period index, and group index) of the clicked on element
          if(this.clickedElementIndex == -1 || this.clickedElementIndex != index) {
-           this.clickActive = true;
            this.clickedElementIndex = index;
+
            this.clickedElementPeriod = this.labelClassToNone( this.elements[index].period );
            this.clickedElementGroup = this.labelClassToNone( this.elements[index].group );
 

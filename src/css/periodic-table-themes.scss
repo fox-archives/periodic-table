@@ -24,10 +24,17 @@
   color: $oc-gray-9;
 }
 
+#det {
+  //background-color: $oc-gray-1;
+}
+
+#det #unobtrusive-overview {
+
+}
 
 // // LIGHT CON \\ \\
 #pt.light-con #grid-container {
-  background-color: $oc-gray-2;
+  background-color: $oc-gray-1;
 }
 
 #pt.light-con .element-outer {

@@ -1,20 +1,16 @@
 /* Roboto */
-/*
 @font-face {
   font-family: 'robotobold';
-  src: url('../assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/roboto-bold-webfont.woff') format('woff');
+  src: url(assets/roboto-bold-webfont.woff2) format("woff2"), url(assets/roboto-bold-webfont.woff) format("woff");
   font-weight: normal;
-  font-weight: normal;
-}
+  font-weight: normal; }
+
 @font-face {
   font-family: 'robotomedium';
-  src: url('../assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
-         url('../assets/fonts/roboto-medium-webfont.woff') format('woff');
+  src: url(assets/roboto-medium-webfont.woff2) format("woff2"), url(assets/roboto-medium-webfont.woff) format("woff");
   font-weight: normal;
-  font-weight: normal;
-}
-*/
+  font-weight: normal; }
+
 @font-face {
   font-family: 'robotoregular';
   src: url(assets/roboto-regular-webfont.woff2) format("woff2"), url(assets/roboto-regular-webfont.woff) format("woff");
@@ -339,7 +335,7 @@ p#name2, p#name3 {
   display: grid;
   grid-template-columns: 40px repeat(36, 1fr);
   grid-template-rows: 40px repeat(19, 40px);
-  padding: 10px 20px 10px 20px; }
+  padding: 10px 10px 10px 10px; }
 
 .element-outer {
   border-radius: 4px;
@@ -415,17 +411,65 @@ p#name2, p#name3 {
 
 #det {
   display: flex;
-  width: 100%;
+  flex-direction: row;
   height: 250px;
-  background-color: #f8f9fa;
-  padding: 0px 10px 0px 10px; }
-
-#det div {
-  margin: 10px 20px 10px 0px; }
+  list-style-type: none;
+  border-radius: 7.5px; }
 
 #det #unobtrusive-overview {
+  margin: 5px 5px 5px 5px; }
+
+#det li {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  background-color: #f1f3f5;
+  border-radius: 3.75px; }
+
+#det p {
+  font-family: robotolight;
+  font-weight: regular;
+  font-size: 1.2em; }
+
+#det h3 {
+  font-family: robotolight;
+  font-weight: regular;
+  font-size: 2.5em;
+  margin-left: 20px; }
+
+#det h4 {
+  font-family: robotolight;
+  font-weight: regular;
+  font-size: 1.2em;
+  margin-right: 7px; }
+
+#det #element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.75px;
+  font-family: robotomedium;
+  font-weight: regular;
+  font-size: 1.7em;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.15s ease-in-out; }
+
+#det #element-icon:hover {
   border-radius: 7.5px;
-  background-color: #f1f3f5; }
+  transition: border-radius 0.2s ease-in-out;
+  cursor: pointer; }
+
+#det .element-det-primary-info {
+  font-family: latobold;
+  font-weight: regular;
+  font-size: 1.7em; }
+
+#det .element-det-secondary-info {
+  font-family: latolight;
+  font-weight: regular;
+  font-size: 1.15em; }
 
 .label-period-inner {
   height: 100%;
@@ -910,7 +954,7 @@ p#name2, p#name3 {
   color: #212529; }
 
 #pt.light-con #grid-container {
-  background-color: #e9ecef; }
+  background-color: #f1f3f5; }
 
 #pt.light-con .element-outer {
   box-shadow: 3px 3px 3px #adb5bd; }
