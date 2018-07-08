@@ -143,15 +143,45 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 // UNOBTRUSIVE INFORMATION (DETAILS)
-#det {
-  display: flex;
-  flex-direction: row;
-  height: 250px;
+section#det {
+  display: inline-flex;
   list-style-type: none;
 }
 
 #det #unobtrusive-overview {
-  margin: 5px 5px 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $oc-gray-2;
+  height: 20vw;
+  width: 20vw;
+  max-height: 25vh;
+  max-width: 25vh;
+}
+
+#det #element-icon-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#det #element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+  width: 65%;
+  border-radius: $border-radius / 2;
+  font-family: robotomedium;
+  font-weight: regular;
+  font-size: 3.25em;
+  transition: background-color $transition-time ease-in-out;
+}
+
+#det #element-name {
+  font-size: 1.85em;
 }
 
 #det li {
@@ -159,20 +189,19 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   align-items: center;
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
-  border-radius: $border-radius /2;
+  border-radius: $border-radius;
 }
 
 #det p {
   font-family: robotolight;
   font-weight: regular;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 #det h3 {
   font-family: robotolight;
   font-weight: regular;
-  font-size: 2.5em;
-  margin-left: 20px;
+  font-size: 2em;
 }
 
 #det h4 {
@@ -182,24 +211,9 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   margin-right: 7px;
 }
 
-#det #element-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: $border-radius / 2;
-    font-family: robotomedium;
-    font-weight: regular;
-    font-size: 1.7em;
-    width: 50px;
-    height: 50px;
-    transition: background-color $transition-time ease-in-out;
-
-
-}
-
 #det #element-icon:hover {
   border-radius: $border-radius;
-  transition: border-radius 0.2s ease-in-out;
+  transition: border-radius 0.2s ease-in;
   cursor: pointer;
 }
 

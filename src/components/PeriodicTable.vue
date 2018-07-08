@@ -3,31 +3,8 @@
     <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
     <section v-if="infoLocationType == 'info-unobtrusive'" id="det">
       <div id="unobtrusive-overview">
-        <li>
-          <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
-          <h3>{{ hoverName }}</h3>
-        </li>
-        <li>
-          <h4>Atomic Number</h4>
-          <p>{{ hoverAtomicNumber }}</p>
-        </li>
-        <li>
-          <h4>Atomic Mass</h4>
-          <p>{{ hoverAtomicMass }}</p>
-        </li>
-      </div>
-      <div id="unobtrusive-desc">
-        <li>
-          <h4>Discovered By</h4>
-          <p>{{ hoverDiscoveredBy }}</p>
-        </li>
-        <li>
-          <h4>Discovery Date</h4>
-          <p>{{ hoverDiscoveryDate }}</p>
-        </li>
-      </div>
-      <div>
-
+        <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
+        <h3 id="element-name">{{ hoverName }}</h3>
       </div>
     </section>
 

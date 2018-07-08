@@ -13,7 +13,7 @@
           <li class="custom-icon" id="orbitals-wide" v-on:click="setSelection('orbitals')"> <orbitals></orbitals> <h2>Orbitals </h2> </li>
           <li class="custom-icon" id="isotopes-wide" v-on:click="setSelection('isotopes')"> <isotopes></isotopes> <h2>Isotopes </h2> </li>
           <li id="explore-wide" v-on:click="setSelection('explore')"> <map-icon class="navIcon featherIcon"></map-icon> <h2>Explore</h2> </li>
-          <li id="quiz-wide" v-on:click="setSelection('quiz')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Quiz</h2> </li>
+          <li id="trivia-wide" v-on:click="setSelection('trivia')"> <check-icon class="navIcon featherIcon"></check-icon> <h2>Trivia</h2> </li>
           <li id="info" v-on:click="infoPopup('on')"> <info-icon class="navIcon featherIcon"></info-icon> </li>
           <li id="settings" v-on:click="settingsPopup('on')"> <settings-icon class="navIcon featherIcon"></settings-icon> </li>
           <li id="search"><search-icon class="navIcon featherIcon"> </search-icon> </li>
@@ -25,13 +25,13 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul v-bind:class="themeType" id="nav-mobile">
-        <li id="quiz-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
+        <li id="trivia-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
         <li id="properties-mobile"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
         <li class="custom-icon" id="electrons-mobile"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
         <li class="custom-icon" id="orbitals-mobile"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
         <li class="custom-icon" id="isotopes-mobile"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
         <li id="explore-mobile"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
-        <li id="quiz-mobile"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Quiz</h2> </li>
+        <li id="trivia-mobile"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Trivia</h2> </li>
       </ul>
     </vs-popup>
 
@@ -112,7 +112,7 @@
   import Orbitals2 from './svg/Orbitals2.vue';
   import Isotopes from './svg/Isotopes.vue';
   import { Map } from 'vue-feather-icon'; // Explore
-  import { Check } from 'vue-feather-icon'; // Quiz
+  import { Check } from 'vue-feather-icon'; // Trivia
   import { Info } from 'vue-feather-icon';
   import { Settings } from 'vue-feather-icon';
   import { Search } from 'vue-feather-icon';
@@ -315,7 +315,7 @@
       Orbitals2,
 	    Isotopes,
       MapIcon: Map.default,
-      CheckIcon: Check.default, // Quiz
+      CheckIcon: Check.default, // Trivia
       InfoIcon: Info.default,
       SettingsIcon: Settings.default,
       SearchIcon: Search.default,

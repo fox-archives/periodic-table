@@ -171,7 +171,7 @@
 @media (max-width: 1075px) {
   #nav-content {
     justify-content: space-between; }
-  #nav li#simple-wide, #nav li#properties-wide, #nav li#electrons-wide, #nav li#orbitals-wide, #nav li#isotopes-wide, #nav li#explore-wide, #nav li#quiz-wide {
+  #nav li#simple-wide, #nav li#properties-wide, #nav li#electrons-wide, #nav li#orbitals-wide, #nav li#isotopes-wide, #nav li#explore-wide, #nav li#trivia-wide {
     display: none; }
   #nav li#menu-mobile {
     display: inline-flex; } }
@@ -409,32 +409,58 @@ p#name2, p#name3 {
   font-size: 1.15em;
   margin-bottom: 15px; }
 
-#det {
-  display: flex;
-  flex-direction: row;
-  height: 250px;
+section#det {
+  display: inline-flex;
   list-style-type: none; }
 
 #det #unobtrusive-overview {
-  margin: 5px 5px 5px 5px; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e9ecef;
+  height: 20vw;
+  width: 20vw;
+  max-height: 25vh;
+  max-width: 25vh; }
+
+#det #element-icon-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+#det #element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65%;
+  width: 65%;
+  border-radius: 3.75px;
+  font-family: robotomedium;
+  font-weight: regular;
+  font-size: 3.25em;
+  transition: background-color 0.15s ease-in-out; }
+
+#det #element-name {
+  font-size: 1.85em; }
 
 #det li {
   display: inline-flex;
   align-items: center;
   padding: 10px 10px 10px 10px;
   margin: 5px 5px 5px 5px;
-  border-radius: 3.75px; }
+  border-radius: 7.5px; }
 
 #det p {
   font-family: robotolight;
   font-weight: regular;
-  font-size: 1.2em; }
+  font-size: 1em; }
 
 #det h3 {
   font-family: robotolight;
   font-weight: regular;
-  font-size: 2.5em;
-  margin-left: 20px; }
+  font-size: 2em; }
 
 #det h4 {
   font-family: robotolight;
@@ -442,21 +468,9 @@ p#name2, p#name3 {
   font-size: 1.2em;
   margin-right: 7px; }
 
-#det #element-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3.75px;
-  font-family: robotomedium;
-  font-weight: regular;
-  font-size: 1.7em;
-  width: 50px;
-  height: 50px;
-  transition: background-color 0.15s ease-in-out; }
-
 #det #element-icon:hover {
   border-radius: 7.5px;
-  transition: border-radius 0.2s ease-in-out;
+  transition: border-radius 0.2s ease-in;
   cursor: pointer; }
 
 #det .element-det-primary-info {
