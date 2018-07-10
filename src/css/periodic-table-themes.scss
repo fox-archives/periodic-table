@@ -28,7 +28,7 @@
   background-color: $oc-gray-0;
 }
 
-#pt.light-def #det li {
+#pt.light-def #det .uo-item, #pt.light-def #det .ud-item li {
   background-color: $oc-gray-1;
 }
 
@@ -65,8 +65,8 @@
   background-color: $oc-gray-1;
 }
 
-#pt.light-con #det li {
-  background-color: $oc-gray-4;
+#pt.light-con #det .uo-item, #pt.light-con #det .ud-item li {
+  background-color: $oc-gray-3;
 }
 
 #pt.light-con p, #pt.light-con h3, #pt.light-con h4 {
@@ -102,7 +102,7 @@
   background-color: $oc-gray-9;
 }
 
-#pt.dark-def #det li {
+#pt.dark-def #det .uo-item, #pt.dark-def #det .ud-item li {
   background-color: $oc-gray-8;
 }
 

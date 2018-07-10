@@ -2,10 +2,34 @@
   <div id="pt" class="has-shadow" v-bind:class="themeType">
     <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
     <section v-if="infoLocationType == 'info-unobtrusive'" id="det">
-      <div id="unobtrusive-overview">
-        <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
-        <h3 id="element-name">{{ hoverName }}</h3>
-      </div>
+      <li id="unobtrusive-overview">
+        <div id="unobtrusive-overview-inner" class="uo-item">
+          <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
+          <h3 id="element-name">{{ hoverName }}</h3>
+        </div>
+      </li>
+    <!--
+      <li id="unobtrusive-desc">
+        <ul>
+          <li>
+            <h4>Atomic Number</h4>
+            <p>{{ hoverAtomicNumber }}</p>
+          </li>
+          <li>
+            <h4>Atomic Mass</h4>
+            <p>{{ hoverAtomicMass }}</p>
+          </li>
+          <li>
+            <h4>Discovered By</h4>
+            <p>{{ hoverDiscoveredBy }}</p>
+          </li>
+          <li>
+            <h4>Discovery Date</h4>
+            <p>{{ hoverDiscoveryDate }}</p>
+          </li>
+        </ul>
+      </li>
+    -->
     </section>
 
     <div id="grid-container">
@@ -64,7 +88,7 @@
 
   export default {
     name: 'PeriodicTable',
-    data () {
+    data() {
       return {
         elements: [
           { atomicNumber: 1,         name: "Hydrogen",       abbreviation: "H",       id: "h",    group: "g-1",    period: "p-1",   column: "c-2",   row: "r-2",   block: "s",  atomicMass: 1.008,    meltingPoint: 13.99,      boilingPoint: 20.271,    discoveryDate: 1766,            discoveredBy: "Henry Cavendish" },

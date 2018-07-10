@@ -144,7 +144,8 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 
 // UNOBTRUSIVE INFORMATION (DETAILS)
 section#det {
-  display: inline-flex;
+  display: grid;
+  grid-teplate-row: 20vh 80vh;
   list-style-type: none;
 }
 
@@ -152,19 +153,28 @@ section#det {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: $oc-gray-2;
   height: 20vw;
   width: 20vw;
   max-height: 25vh;
   max-width: 25vh;
 }
 
-#det #element-icon-parent {
+#det > li {
+  align-items: center;
+  //padding: 10px 10px 10px 10px;
+  //margin: 5px 5px 5px 5px;
+  border-radius: $border-radius;
+}
+
+#det #unobtrusive-overview-inner {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 90%;
+  width: 90%;
+  border-radius: $border-radius;
+  padding: 5px 5px 5px 5px;
 }
 
 #det #element-icon {
@@ -173,7 +183,7 @@ section#det {
   justify-content: center;
   height: 65%;
   width: 65%;
-  border-radius: $border-radius / 2;
+  border-radius: $border-radius;
   font-family: robotomedium;
   font-weight: regular;
   font-size: 3.25em;
@@ -184,27 +194,35 @@ section#det {
   font-size: 1.85em;
 }
 
-#det li {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-  border-radius: $border-radius;
-}
 
-#det p {
-  font-family: robotolight;
-  font-weight: regular;
-  font-size: 1em;
-}
-
-#det h3 {
+#det #unobtrusive-overview-inner h3 {
   font-family: robotolight;
   font-weight: regular;
   font-size: 2em;
 }
 
-#det h4 {
+#det #unobtrusive-desc {
+  display: flex;
+  /*height: 20vw;
+  width: 80vw;
+  max-height: 25vh;
+  //max-width: 25vh;*/
+}
+
+#det #unobtrusive-desc li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 5px 5px 5px 5px;
+}
+
+#det #unobtrusive-desc li p {
+  font-family: robotolight;
+  font-weight: regular;
+  font-size: 1em;
+}
+
+#det #unobtrusive-desc li h4 {
   font-family: robotolight;
   font-weight: regular;
   font-size: 1.2em;
@@ -212,19 +230,21 @@ section#det {
 }
 
 #det #element-icon:hover {
-  border-radius: $border-radius;
-  transition: border-radius 0.2s ease-in;
+  border-radius: $border-radius * 1.75;
+  transition: border-radius 0.2s ease-in-out;
   cursor: pointer;
 }
 
 
 #det .element-det-primary-info {
+  overflow: visible;
   font-family: latobold;
   font-weight: regular;
   font-size: 1.7em;
 }
 
 #det .element-det-secondary-info {
+  overflow: visible;
   font-family: latolight;
   font-weight: regular;
   font-size: 1.15em;

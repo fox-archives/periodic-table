@@ -410,25 +410,32 @@ p#name2, p#name3 {
   margin-bottom: 15px; }
 
 section#det {
-  display: inline-flex;
+  display: grid;
+  grid-teplate-row: 20vh 80vh;
   list-style-type: none; }
 
 #det #unobtrusive-overview {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: #e9ecef;
   height: 20vw;
   width: 20vw;
   max-height: 25vh;
   max-width: 25vh; }
 
-#det #element-icon-parent {
+#det > li {
+  align-items: center;
+  border-radius: 7.5px; }
+
+#det #unobtrusive-overview-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  border-radius: 7.5px;
+  padding: 5px 5px 5px 5px; }
 
 #det #element-icon {
   display: flex;
@@ -436,7 +443,7 @@ section#det {
   justify-content: center;
   height: 65%;
   width: 65%;
-  border-radius: 3.75px;
+  border-radius: 7.5px;
   font-family: robotomedium;
   font-weight: regular;
   font-size: 3.25em;
@@ -445,40 +452,48 @@ section#det {
 #det #element-name {
   font-size: 1.85em; }
 
-#det li {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 10px 10px 10px;
-  margin: 5px 5px 5px 5px;
-  border-radius: 7.5px; }
-
-#det p {
-  font-family: robotolight;
-  font-weight: regular;
-  font-size: 1em; }
-
-#det h3 {
+#det #unobtrusive-overview-inner h3 {
   font-family: robotolight;
   font-weight: regular;
   font-size: 2em; }
 
-#det h4 {
+#det #unobtrusive-desc {
+  display: flex;
+  /*height: 20vw;
+  width: 80vw;
+  max-height: 25vh;
+  //max-width: 25vh;*/ }
+
+#det #unobtrusive-desc li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 5px 5px 5px 5px; }
+
+#det #unobtrusive-desc li p {
+  font-family: robotolight;
+  font-weight: regular;
+  font-size: 1em; }
+
+#det #unobtrusive-desc li h4 {
   font-family: robotolight;
   font-weight: regular;
   font-size: 1.2em;
   margin-right: 7px; }
 
 #det #element-icon:hover {
-  border-radius: 7.5px;
-  transition: border-radius 0.2s ease-in;
+  border-radius: 13.125px;
+  transition: border-radius 0.2s ease-in-out;
   cursor: pointer; }
 
 #det .element-det-primary-info {
+  overflow: visible;
   font-family: latobold;
   font-weight: regular;
   font-size: 1.7em; }
 
 #det .element-det-secondary-info {
+  overflow: visible;
   font-family: latolight;
   font-weight: regular;
   font-size: 1.15em; }
@@ -968,7 +983,7 @@ section#det {
 #pt.light-def #det {
   background-color: #f8f9fa; }
 
-#pt.light-def #det li {
+#pt.light-def #det .uo-item, #pt.light-def #det .ud-item li {
   background-color: #f1f3f5; }
 
 #pt.light-def p, #pt.light-def h3, #pt.light-def h4 {
@@ -995,8 +1010,8 @@ section#det {
 #pt.light-con #det {
   background-color: #f1f3f5; }
 
-#pt.light-con #det li {
-  background-color: #ced4da; }
+#pt.light-con #det .uo-item, #pt.light-con #det .ud-item li {
+  background-color: #dee2e6; }
 
 #pt.light-con p, #pt.light-con h3, #pt.light-con h4 {
   color: #212529; }
@@ -1022,7 +1037,7 @@ section#det {
 #pt.dark-def #det {
   background-color: #212529; }
 
-#pt.dark-def #det li {
+#pt.dark-def #det .uo-item, #pt.dark-def #det .ud-item li {
   background-color: #343a40; }
 
 #pt.dark-def p, #pt.dark-def h3, #pt.dark-def h4 {
