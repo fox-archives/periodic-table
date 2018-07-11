@@ -8,7 +8,7 @@
           <h3 id="element-name">{{ hoverName }}</h3>
         </div>
       </li>
-    <!--
+
       <li id="unobtrusive-desc">
         <ul>
           <li>
@@ -29,7 +29,8 @@
           </li>
         </ul>
       </li>
-    -->
+
+
     </section>
 
     <div id="grid-container">

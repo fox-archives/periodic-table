@@ -143,27 +143,28 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 // UNOBTRUSIVE INFORMATION (DETAILS)
-section#det {
+#det {
   display: grid;
-  grid-teplate-row: 20vh 80vh;
+  grid-template-columns: auto 1fr;
   list-style-type: none;
-}
-
-#det #unobtrusive-overview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 20vw;
-  width: 20vw;
   max-height: 25vh;
-  max-width: 25vh;
 }
 
 #det > li {
-  align-items: center;
   //padding: 10px 10px 10px 10px;
   //margin: 5px 5px 5px 5px;
   border-radius: $border-radius;
+}
+
+#det #unobtrusive-overview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  //height: 20vw; // Don't need this because these properties are expressed in #det
+  //max-height: 25vh;
+  width: 20vw;
+  max-width: 25vh;
 }
 
 #det #unobtrusive-overview-inner {
@@ -174,7 +175,6 @@ section#det {
   height: 90%;
   width: 90%;
   border-radius: $border-radius;
-  padding: 5px 5px 5px 5px;
 }
 
 #det #element-icon {
@@ -203,10 +203,7 @@ section#det {
 
 #det #unobtrusive-desc {
   display: flex;
-  /*height: 20vw;
-  width: 80vw;
-  max-height: 25vh;
-  //max-width: 25vh;*/
+  overflow: hidden;
 }
 
 #det #unobtrusive-desc li {

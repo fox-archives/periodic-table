@@ -207,29 +207,30 @@
 .nav-info li {
   padding-bottom: 10px; }
 
+#nav.light-def {
+  box-shadow: 5px 5px 5px 5px #212529; }
+
 #nav.light-def ul {
   background-color: white; }
 
 #nav.light-def li h2, #nav-mobile.light-def li h2 {
-  color: #343a40; }
+  color: #495057; }
 
 #nav.light-def li *, #nav-mobile.light-def li * {
-  stroke: #343a40; }
+  stroke: #495057; }
 
 #nav.light-def .custom-icon svg, #nav-mobile.light-def .custom-icon svg {
-  fill: #343a40;
-  stroke: #343a40; }
+  fill: #495057;
+  stroke: #495057; }
 
 #nav.light-def .nav-selected {
-  background-color: #f8f9fa;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
+  background-color: #f8f9fa; }
 
 #nav.light-def #nav-right li:hover {
   background-color: #f8f9fa; }
 
 #nav.light-con ul {
-  background-color: #f1f3f5; }
+  background-color: #f8f9fa; }
 
 #nav.light-con li h2, #nav-mobile.light-con li h2 {
   color: #212529; }
@@ -255,9 +256,7 @@
   stroke: #f1f3f5; }
 
 #nav.dark-def .nav-selected {
-  background-color: #212529;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
+  background-color: #212529; }
 
 #nav.dark-def #nav-right li:hover {
   background-color: #212529; }
@@ -409,23 +408,22 @@ p#name2, p#name3 {
   font-size: 1.15em;
   margin-bottom: 15px; }
 
-section#det {
+#det {
   display: grid;
-  grid-teplate-row: 20vh 80vh;
-  list-style-type: none; }
-
-#det #unobtrusive-overview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: auto 1fr;
+  list-style-type: none;
   height: 20vw;
-  width: 20vw;
-  max-height: 25vh;
-  max-width: 25vh; }
+  max-height: 25vh; }
 
 #det > li {
-  align-items: center;
   border-radius: 7.5px; }
+
+#det #unobtrusive-overview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  max-width: 25vh; }
 
 #det #unobtrusive-overview-inner {
   display: flex;
@@ -434,8 +432,7 @@ section#det {
   flex-direction: column;
   height: 90%;
   width: 90%;
-  border-radius: 7.5px;
-  padding: 5px 5px 5px 5px; }
+  border-radius: 7.5px; }
 
 #det #element-icon {
   display: flex;
@@ -459,10 +456,7 @@ section#det {
 
 #det #unobtrusive-desc {
   display: flex;
-  /*height: 20vw;
-  width: 80vw;
-  max-height: 25vh;
-  //max-width: 25vh;*/ }
+  overflow: hidden; }
 
 #det #unobtrusive-desc li {
   display: flex;
@@ -966,22 +960,22 @@ section#det {
   background-color: #f8f9fa; }
 
 #pt.light-def .element-outer {
-  box-shadow: 3px 3px 3px #dee2e6; }
+  box-shadow: 3px 3px 3px rgba(233, 236, 239, 0.8); }
 
 #pt.light-def .element-outer:hover {
-  box-shadow: 5px 5px 5px #dee2e6; }
+  box-shadow: 5px 5px 5px rgba(233, 236, 239, 0.8); }
 
 #pt.light-def #element-overview {
-  box-shadow: 4px 4px 4px #dee2e6; }
+  box-shadow: 4px 4px 4px rgba(233, 236, 239, 0.8); }
 
 #pt.light-def #element-desc {
-  box-shadow: 4px 4px 4px #dee2e6; }
+  box-shadow: 4px 4px 4px rgba(233, 236, 239, 0.8); }
 
 #pt.light-def .label-period-inner p, .light-def .label-group-inner p {
   color: #212529; }
 
 #pt.light-def #det {
-  background-color: #f8f9fa; }
+  background-color: white; }
 
 #pt.light-def #det .uo-item, #pt.light-def #det .ud-item li {
   background-color: #f1f3f5; }
