@@ -53,13 +53,6 @@ a:clicked {
   text-decoration: underline;
 }
 
-// ELEMENTS WITH SHADOW
-// Currently the navigation and elements bar
-.has-shadow {
-  box-shadow: 2px 2px 2px $oc-gray-2;
-}
-
-
 // BLUR EFFECT
 // Carefull, if too many elements have these tags, website could lag
 .no-blur {

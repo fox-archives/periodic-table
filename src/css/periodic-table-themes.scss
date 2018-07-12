@@ -1,8 +1,29 @@
 // PERIODIC TABLE THEMES
 // // LIGHT DEF \\ \\
-$light-def-shadow: rgba(233, 236, 239, 0.8);
+
+// Section unobtrusive information
+#pt.light-def #det #unobtrusive-overview-inner, #pt.light-def #det #unobtrusive-desc ul li {
+  background-color: $oc-gray-0;
+  box-shadow: 2px 2px 3px $oc-gray-2;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.light-def #det #unobtrusive-overview-inner:hover, #pt.light-def #det #unobtrusive-desc ul li:hover {
+  box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+// end
+$light-def-shadow: $oc-gray-3;
 #pt.light-def #grid-container {
   background-color: $oc-gray-0;
+  box-shadow: 2px 2px 4px $oc-gray-2;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.light-def #grid-container:hover {
+  background-color: $oc-gray-0;
+  box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
 }
 
 #pt.light-def .element-outer {
@@ -29,17 +50,34 @@ $light-def-shadow: rgba(233, 236, 239, 0.8);
   background-color: white;
 }
 
-#pt.light-def #det #unobtrusive-overview-inner, #pt.light-def #det #unobtrusive-desc ul li {
-  background-color: $oc-gray-0;
-}
 
 #pt.light-def p, #pt.light-def h3, #pt.light-def h4 {
   color: $oc-gray-9;
 }
 
 // // LIGHT CON \\ \\
+// Section unobtrusive information
+#pt.light-con #det #unobtrusive-overview-inner, #pt.light-con #det #unobtrusive-desc ul li {
+  background-color: $oc-gray-1;
+  box-shadow: 2px 2px 3px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.light-con #det #unobtrusive-overview-inner:hover, #pt.light-con #det #unobtrusive-desc ul li:hover {
+  box-shadow: 2px 2px 4px $oc-gray-4;
+  transition: all 0.2s ease-in-out;
+}
+//end
 #pt.light-con #grid-container {
   background-color: $oc-gray-1;
+  box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.light-con #grid-container:hover {
+  background-color: $oc-gray-1;
+  box-shadow: 2px 2px 4px $oc-gray-4;
+  transition: all 0.2s ease-in-out;
 }
 
 #pt.light-con .element-outer {
@@ -63,11 +101,7 @@ $light-def-shadow: rgba(233, 236, 239, 0.8);
 }
 
 #pt.light-con #det {
-  background-color: $oc-gray-1;
-}
-
-#pt.light-con #det #unobtrusive-overview-inner, #pt.light-con #det #unobtrusive-desc ul li {
-  background-color: $oc-gray-2;
+  background-color: white;
 }
 
 #pt.light-con p, #pt.light-con h3, #pt.light-con h4 {
@@ -75,8 +109,20 @@ $light-def-shadow: rgba(233, 236, 239, 0.8);
 }
 
 // // DARK DEF \\ \\
+// Section unobtrusive information
+#pt.dark-def #det #unobtrusive-overview-inner, #pt.dark-def #det #unobtrusive-desc ul li {
+  background-color: $oc-gray-8;
+  //box-shadow: 2px 2px 3px $oc-gray-7;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.dark-def #det #unobtrusive-overview-inner:hover, #pt.dark-def #det #unobtrusive-desc ul li:hover {
+  //box-shadow: 2px 2px 4px $oc-gray-6;
+  transition: all 0.2s ease-in-out;
+}
+//end
 #pt.dark-def #grid-container {
-  background-color: $oc-gray-9;
+  background-color: $oc-gray-8;
 }
 
 #pt.dark-def .element-outer {
@@ -102,11 +148,6 @@ $light-def-shadow: rgba(233, 236, 239, 0.8);
 #pt.dark-def #det {
   background-color: $oc-gray-9;
 }
-
-#pt.dark-def #det #unobtrusive-overview-inner, #pt.dark-def #det #unobtrusive-desc ul li {
-  background-color: $oc-gray-8;
-}
-
 
 #pt.dark-def p, #pt.dark-def h3, #pt.dark-def h4 {
   color: $oc-gray-0;

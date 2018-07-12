@@ -24,3 +24,7 @@
 .dark-def a:hover {
   text-decoration-color: $oc-gray-1;
 }
+
+body.dark-def {
+  background-color: $oc-gray-9;
+}

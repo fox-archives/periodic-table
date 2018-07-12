@@ -2,7 +2,12 @@
 
 // LIGHT DEF
 #nav.light-def {
-  box-shadow: 5px 5px 5px 5px $oc-gray-9;
+  box-shadow: 2px 2px 3px $oc-gray-2;
+  transition: all 0.2s ease-in-out;
+}
+#nav.light-def:hover {
+  box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
 }
 
 $light-def-text: $oc-gray-7;
@@ -35,6 +40,14 @@ $light-def-background: white;
 
 
 // LIGHT CON (HIGH CONTRAST)
+#nav.light-con {
+  box-shadow: 2px 2px 3px $oc-gray-2;
+  transition: all 0.2s ease-in-out;
+}
+#nav.light-con:hover {
+  box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
 $light-con-text: $oc-gray-9;
 $light-con-background: $oc-gray-0;
 #nav.light-con ul {
@@ -57,6 +70,14 @@ $light-con-background: $oc-gray-0;
 
 
 // DARK DEF
+#nav.night-def {
+  //box-shadow: 2px 2px 3px $oc-gray-2;
+  transition: all 0.2s ease-in-out;
+}
+#nav.night-def:hover {
+  //box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
 $dark-def-text: $oc-gray-1;
 $dark-def-background: $oc-gray-8;
 #nav.dark-def ul {
@@ -83,25 +104,4 @@ $dark-def-background: $oc-gray-8;
 
 #nav.dark-def #nav-right li:hover {
   background-color: $oc-gray-9;
-}
-
-// DARK BLUE
-$dark-blue-text: $oc-gray-1;
-$dark-blue-background: $oc-blue-9;
-#nav.blue-dark ul {
-  background-color: $dark-blue-background;
-}
-
-#nav.blue-dark li h2, #nav-mobile.blue-dark li h2 {
-  color: $dark-blue-text;
-}
-
-// Works for non-custom icons
-#nav.blue-dark li *, #nav-mobile.blue-dark li * {
-  stroke: $dark-blue-text;
-}
-
-#nav.blue-dark .custom-icon svg, #nav-mobile.blue-dark .custom-icon svg {
-  fill: $dark-blue-text;
-  stroke: $dark-blue-text;
 }

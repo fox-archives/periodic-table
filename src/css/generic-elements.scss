@@ -205,11 +205,11 @@
 
 // LIGHT ELEMENT COLOR
 // Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
-#pt.dark-def .light-blue { background-color: $oc-blue-3; }
-#pt.dark-def .light-red { background-color: $oc-red-3; }
-#pt.dark-def .light-green { background-color: $oc-green-3; }
-#pt.dark-def .light-orange { background-color: $oc-orange-3; }
-#pt.dark-def .light-violet { background-color: $oc-violet-3; }
+#pt.dark-def .light-blue { background-color: $oc-blue-4; }
+#pt.dark-def .light-red { background-color: $oc-red-4; }
+#pt.dark-def .light-green { background-color: $oc-green-4; }
+#pt.dark-def .light-orange { background-color: $oc-orange-4; }
+#pt.dark-def .light-violet { background-color: $oc-violet-4; }
 
 #pt.dark-def .light-blue * { color: $oc-gray-4; }
 #pt.dark-def .light-red * { color: $oc-gray-4; }
@@ -221,16 +221,16 @@
 // PERIOD LABELS AND GROUP LABELS COLORS
 // Each period / group label has v-binds a class which is either .light or .dark
 #pt.dark-def .light {
-  background-color: $oc-gray-9;
+  background-color: $oc-gray-8;
   //transition: background-color $transition-time ease-in-out;
 }
 
 #pt.dark-def .light:hover {
-  background-color: $oc-gray-8;
+  background-color: $oc-gray-9;
   //transition: background-color $transition-time ease-in-out;
 }
 
 #pt.dark-def .dark {
-  background-color: $oc-gray-8;
+  background-color: $oc-gray-9;
   //transition: background-color $transition-time ease-in-out;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- NAV BAR WITH BUTTONS -->
-    <nav id="nav" v-bind:class="themeType" class="has-shadow">
+    <nav id="nav" v-bind:class="themeType">
       <ul id="nav-content">
         <ul id="nav-left">
           <li id="logo"><img src="../assets/placeholder.png" height="30px"></img></li>
@@ -287,6 +287,15 @@
           // i + 1 because theme
           if(this.theme == i + 1) {
             this.themeType = this.themeTypes[i];
+
+            // Add it to the main body tag
+            var bodyTag = document.getElementById("body");
+            bodyTag.classList.add(this.themeTypes[i])
+            for(var j = 0; j < this.themeTypes.length; j++) {
+              if(this.themeTypes[i] != this.themeTypes[j]) {
+                bodyTag.classList.remove(this.themeTypes[j]);
+              }
+            }
           }
         }
         // Emit event theme change, that the theme type was changed

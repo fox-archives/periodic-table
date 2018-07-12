@@ -12,11 +12,14 @@ $element-height: 40px;
   flex-direction: column;
   justify-content: center;
   min-width: 400px;
+  margin-top: 10px;
 }
 
 #grid-container {
   display: inline-flex;
   justify-content: center;
+  margin: 0px 10px 10px 10px;
+  border-radius: $border-radius;
 }
 
 #grid {
@@ -149,10 +152,11 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   list-style-type: none;
   height: 20vw;
   max-height: 25vh;
+  margin: 0px 10px 10px 10px;
 }
 
 #det #unobtrusive-overview {
-  margin: 7px 7px 7px 7px;
+  //margin: 7px 7px 7px 7px;
   width: 20vw;
   max-width: 25vh;
   border-radius: $border-radius;
@@ -197,7 +201,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
-  margin: 7px 7px 7px 7px;
+  margin-left: 10px;
 }
 
 // Left and right elements
