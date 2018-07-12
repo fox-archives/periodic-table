@@ -1,23 +1,24 @@
 // PERIODIC TABLE THEMES
 // // LIGHT DEF \\ \\
+$light-def-shadow: rgba(233, 236, 239, 0.8);
 #pt.light-def #grid-container {
   background-color: $oc-gray-0;
 }
 
 #pt.light-def .element-outer {
-  box-shadow: 3px 3px 3px $oc-gray-3;
+  box-shadow: 3px 3px 3px $light-def-shadow;
 }
 
 #pt.light-def .element-outer:hover {
-  box-shadow: 5px 5px 5px $oc-gray-3;
+  box-shadow: 5px 5px 5px $light-def-shadow;
 }
 
 #pt.light-def #element-overview {
-  box-shadow: 4px 4px 4px $oc-gray-3;
+  box-shadow: 4px 4px 4px $light-def-shadow;
 }
 
 #pt.light-def #element-desc {
-  box-shadow: 4px 4px 4px $oc-gray-3;
+  box-shadow: 4px 4px 4px $light-def-shadow;
 }
 
 #pt.light-def .label-period-inner p, .light-def .label-group-inner p {
@@ -25,11 +26,11 @@
 }
 
 #pt.light-def #det {
-  background-color: $oc-gray-0;
+  background-color: white;
 }
 
-#pt.light-def #det .uo-item, #pt.light-def #det .ud-item li {
-  background-color: $oc-gray-1;
+#pt.light-def #det #unobtrusive-overview-inner, #pt.light-def #det #unobtrusive-desc ul li {
+  background-color: $oc-gray-0;
 }
 
 #pt.light-def p, #pt.light-def h3, #pt.light-def h4 {

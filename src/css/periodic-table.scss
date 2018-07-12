@@ -143,27 +143,22 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 // UNOBTRUSIVE INFORMATION (DETAILS)
-section#det {
+#det {
   display: grid;
-  grid-teplate-row: 20vh 80vh;
+  grid-template-columns: auto 1fr;
   list-style-type: none;
-}
-
-#det #unobtrusive-overview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 20vw;
-  width: 20vw;
   max-height: 25vh;
-  max-width: 25vh;
 }
 
 #det > li {
-  align-items: center;
-  //padding: 10px 10px 10px 10px;
-  //margin: 5px 5px 5px 5px;
   border-radius: $border-radius;
+}
+
+#det #unobtrusive-overview {
+  margin: 7px 7px 7px 7px;
+  width: 20vw;
+  max-width: 25vh;
 }
 
 #det #unobtrusive-overview-inner {
@@ -171,10 +166,10 @@ section#det {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90%;
-  width: 90%;
+  //margin: 10px 10px 10px 10px 0
+  height: 100%;
+  width: 100%;
   border-radius: $border-radius;
-  padding: 5px 5px 5px 5px;
 }
 
 #det #element-icon {
@@ -202,18 +197,28 @@ section#det {
 }
 
 #det #unobtrusive-desc {
-  display: flex;
-  /*height: 20vw;
-  width: 80vw;
-  max-height: 25vh;
-  //max-width: 25vh;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  height: 100%;
+  width: 100%;
+  margin: 7px 7px 7px 7px;
+  overflow: hidden;
 }
 
-#det #unobtrusive-desc li {
+// Left and right elements
+#det #unobtrusive-desc ul {
+
+}
+
+// Each statistic box thing
+#det #unobtrusive-desc ul li {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   list-style: none;
-  margin: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  border-radius: $border-radius / 2;
 }
 
 #det #unobtrusive-desc li p {
@@ -226,7 +231,7 @@ section#det {
   font-family: robotolight;
   font-weight: regular;
   font-size: 1.2em;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 #det #element-icon:hover {

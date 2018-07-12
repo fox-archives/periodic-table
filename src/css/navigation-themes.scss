@@ -1,7 +1,11 @@
 // ALL NAVIGATION THEMES
 
 // LIGHT DEF
-$light-def-text: $oc-gray-8;
+#nav.light-def {
+  box-shadow: 5px 5px 5px 5px $oc-gray-9;
+}
+
+$light-def-text: $oc-gray-7;
 $light-def-background: white;
 #nav.light-def ul {
   background-color: $light-def-background;
@@ -23,8 +27,6 @@ $light-def-background: white;
 
 #nav.light-def .nav-selected {
   background-color: $oc-gray-0;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 #nav.light-def #nav-right li:hover {
@@ -34,7 +36,7 @@ $light-def-background: white;
 
 // LIGHT CON (HIGH CONTRAST)
 $light-con-text: $oc-gray-9;
-$light-con-background: $oc-gray-1;
+$light-con-background: $oc-gray-0;
 #nav.light-con ul {
   background-color: $light-con-background;
 }
@@ -77,8 +79,6 @@ $dark-def-background: $oc-gray-8;
 
 #nav.dark-def .nav-selected {
   background-color: $oc-gray-9;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 #nav.dark-def #nav-right li:hover {

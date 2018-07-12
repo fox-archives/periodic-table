@@ -3,21 +3,22 @@
     <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
     <section v-if="infoLocationType == 'info-unobtrusive'" id="det">
       <li id="unobtrusive-overview">
-        <div id="unobtrusive-overview-inner" class="uo-item">
+        <div id="unobtrusive-overview-inner">
           <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
           <h3 id="element-name">{{ hoverName }}</h3>
         </div>
       </li>
-    <!--
+
       <li id="unobtrusive-desc">
-        <ul>
+        <ul id="unobtrusive-desc-left">
           <li>
-            <h4>Atomic Number</h4>
-            <p>{{ hoverAtomicNumber }}</p>
+              <h4>Atomic Number</h4>
+              <p>{{ hoverAtomicNumber }}</p>
           </li>
           <li>
             <h4>Atomic Mass</h4>
             <p>{{ hoverAtomicMass }}</p>
+            <p>u</p>
           </li>
           <li>
             <h4>Discovered By</h4>
@@ -28,8 +29,12 @@
             <p>{{ hoverDiscoveryDate }}</p>
           </li>
         </ul>
+        <ul id="unobtrusive-desc-right">
+
+        </ul>
       </li>
-    -->
+
+
     </section>
 
     <div id="grid-container">
