@@ -66,8 +66,8 @@ $light-def-shadow: rgba(233, 236, 239, 0.8);
   background-color: $oc-gray-1;
 }
 
-#pt.light-con #det .uo-item, #pt.light-con #det .ud-item li {
-  background-color: $oc-gray-3;
+#pt.light-con #det #unobtrusive-overview-inner, #pt.light-con #det #unobtrusive-desc ul li {
+  background-color: $oc-gray-2;
 }
 
 #pt.light-con p, #pt.light-con h3, #pt.light-con h4 {
@@ -103,9 +103,10 @@ $light-def-shadow: rgba(233, 236, 239, 0.8);
   background-color: $oc-gray-9;
 }
 
-#pt.dark-def #det .uo-item, #pt.dark-def #det .ud-item li {
+#pt.dark-def #det #unobtrusive-overview-inner, #pt.dark-def #det #unobtrusive-desc ul li {
   background-color: $oc-gray-8;
 }
+
 
 #pt.dark-def p, #pt.dark-def h3, #pt.dark-def h4 {
   color: $oc-gray-0;

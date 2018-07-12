@@ -151,14 +151,11 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   max-height: 25vh;
 }
 
-#det > li {
-  border-radius: $border-radius;
-}
-
 #det #unobtrusive-overview {
   margin: 7px 7px 7px 7px;
   width: 20vw;
   max-width: 25vh;
+  border-radius: $border-radius;
 }
 
 #det #unobtrusive-overview-inner {
@@ -200,10 +197,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
-  height: 100%;
-  width: 100%;
   margin: 7px 7px 7px 7px;
-  overflow: hidden;
 }
 
 // Left and right elements
@@ -217,7 +211,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   align-items: center;
   list-style: none;
   margin-bottom: 10px;
-  padding-left: 7px;
+  padding: 2px 0px 2px 7px;
   border-radius: $border-radius / 2;
 }
 

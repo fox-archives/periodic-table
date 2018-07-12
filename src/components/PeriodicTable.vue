@@ -34,7 +34,6 @@
         </ul>
       </li>
 
-
     </section>
 
     <div id="grid-container">
