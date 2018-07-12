@@ -3,7 +3,7 @@
     <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
     <section v-if="infoLocationType == 'info-unobtrusive'" id="det">
       <li id="unobtrusive-overview">
-        <div id="unobtrusive-overview-inner"class="shadowReg">
+        <div id="unobtrusive-overview-inner" class="shadowReg">
           <p id="element-icon" v-bind:class="hoverColor">{{ hoverAbbreviation }}</p>
           <h3 id="element-name">{{ hoverName }}</h3>
         </div>
@@ -453,8 +453,10 @@
        darkenElements: function(index, prefix, type) {
          // On hover, clear all other label highlights
          this.clearLabelExcept(-1, -1);
-         // Change element description and shade on hover of label
-         this.hoverColor = "light-" + this.elementDisplayProps[this.hoverIndex].defaultColor;
+         // Change element description and shade on hover of label (only if element description is inside)
+         if(this.infoLocationType == "info-obtrusive") {
+           this.hoverColor = "light-" + this.elementDisplayProps[this.hoverIndex].defaultColor;
+         }
 
          var className = this.labelNoneToClass(index + 1, type);
 
