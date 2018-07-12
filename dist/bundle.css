@@ -419,9 +419,7 @@ p#name2, p#name3 {
   border-radius: 7.5px; }
 
 #det #unobtrusive-overview {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  margin: 7px 7px 7px 7px;
   width: 20vw;
   max-width: 25vh; }
 
@@ -430,8 +428,8 @@ p#name2, p#name3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   border-radius: 7.5px; }
 
 #det #element-icon {
@@ -455,14 +453,21 @@ p#name2, p#name3 {
   font-size: 2em; }
 
 #det #unobtrusive-desc {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  height: 100%;
+  width: 100%;
+  margin: 7px 7px 7px 7px;
   overflow: hidden; }
 
-#det #unobtrusive-desc li {
+#det #unobtrusive-desc ul li {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   list-style: none;
-  margin: 5px 5px 5px 5px; }
+  margin-bottom: 10px;
+  padding-left: 7px;
+  border-radius: 3.75px; }
 
 #det #unobtrusive-desc li p {
   font-family: robotolight;
@@ -473,7 +478,7 @@ p#name2, p#name3 {
   font-family: robotolight;
   font-weight: regular;
   font-size: 1.2em;
-  margin-right: 7px; }
+  margin-right: 10px; }
 
 #det #element-icon:hover {
   border-radius: 13.125px;
@@ -977,8 +982,8 @@ p#name2, p#name3 {
 #pt.light-def #det {
   background-color: white; }
 
-#pt.light-def #det .uo-item, #pt.light-def #det .ud-item li {
-  background-color: #f1f3f5; }
+#pt.light-def #det #unobtrusive-overview-inner, #pt.light-def #det #unobtrusive-desc ul li {
+  background-color: #f8f9fa; }
 
 #pt.light-def p, #pt.light-def h3, #pt.light-def h4 {
   color: #212529; }

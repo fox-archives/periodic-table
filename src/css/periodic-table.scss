@@ -152,17 +152,11 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 #det > li {
-  //padding: 10px 10px 10px 10px;
-  //margin: 5px 5px 5px 5px;
   border-radius: $border-radius;
 }
 
 #det #unobtrusive-overview {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  //height: 20vw; // Don't need this because these properties are expressed in #det
-  //max-height: 25vh;
+  margin: 7px 7px 7px 7px;
   width: 20vw;
   max-width: 25vh;
 }
@@ -172,8 +166,9 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90%;
-  width: 90%;
+  //margin: 10px 10px 10px 10px 0
+  height: 100%;
+  width: 100%;
   border-radius: $border-radius;
 }
 
@@ -202,15 +197,28 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
 }
 
 #det #unobtrusive-desc {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  height: 100%;
+  width: 100%;
+  margin: 7px 7px 7px 7px;
   overflow: hidden;
 }
 
-#det #unobtrusive-desc li {
+// Left and right elements
+#det #unobtrusive-desc ul {
+
+}
+
+// Each statistic box thing
+#det #unobtrusive-desc ul li {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   list-style: none;
-  margin: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  padding-left: 7px;
+  border-radius: $border-radius / 2;
 }
 
 #det #unobtrusive-desc li p {
@@ -223,7 +231,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   font-family: robotolight;
   font-weight: regular;
   font-size: 1.2em;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 #det #element-icon:hover {
