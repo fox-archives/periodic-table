@@ -30,12 +30,14 @@ $light-def-background: white;
   stroke: $light-def-text;
 }
 
-#nav.light-def .nav-selected {
+.light-def #nav-right li:hover, .light-def #nav-mobile li:hover {
   background-color: $oc-gray-0;
+  transition: all 0.2 ease-in-out;
 }
 
-#nav.light-def #nav-right li:hover {
-  background-color: $oc-gray-0;
+.light-def #nav-right li:active, .light-def #nav-mobile li:active {
+  background-color: $oc-gray-2;
+  transition: all 0.2s ease-in-out;
 }
 
 
