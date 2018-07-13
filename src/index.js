@@ -1,4 +1,5 @@
 import './css/main.scss';
+import 'material-icons/iconfont/material-icons.css';
 var json = require('./assets/data/main.json');
 
 // AnimeJS

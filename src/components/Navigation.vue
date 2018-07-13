@@ -57,15 +57,21 @@
         <ul>
           <li>
             <p>Group Labels</p>
-            <vs-select label="groupTypes" v-model="groupType" v-bind:options="groupTypes"></vs-select>
+            <vs-select label="groupTypes" v-model="groupType">
+              <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in groupTypes" />
+            </vs-select>
           </li>
           <li>
             <p>Decimal Count</p>
-            <vs-select label="decimalCountTypes" v-model="decimalCountType" v-bind:options="decimalCountTypes"></vs-select>
+            <vs-select label="decimalCountTypes" v-model="decimalCountType">
+              <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in decimalCountTypes" />
+            </vs-select>
           </li>
           <li>
             <p>Transitions and Effects</p>
-            <vs-select label="transitionTypes" v-model="transitionType" v-bind:options="transitionTypes"></vs-select>
+            <vs-select label="transitionTypes" v-model="transitionType" v-bind:options="transitionTypes">
+              <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in transitionTypes" />
+            </vs-select>
           </li>
         </ul>
       </aside>
@@ -77,15 +83,21 @@
         <ul>
           <li>
             <p>Theme</p>
-            <vs-select class="option-theme" label="themes" v-model="theme" v-bind:options="themes" v-on:change="setTheme"></vs-select>
+            <vs-select class="option-theme" label="themes" v-model="theme" v-on:change="setTheme">
+              <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in themes" />
+            </vs-select>
           </li>
           <li>
             <p>Information</p>
-            <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-bind:options="infoLocations" v-on:change="setInfoLocation"></vs-select>
+            <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
+              <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
+            </vs-select>
           </li>
           <li>
             <p>Periodic Table Layout</p>
-            <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout" v-bind:options="tableLayouts" v-on:change="setTableLayout"></vs-select>
+            <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout" v-on:change="setTableLayout">
+              <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in tableLayouts" />
+            </vs-select>
           </li>
           <li>
             <p>Advanced Options</p>
