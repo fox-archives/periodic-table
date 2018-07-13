@@ -11,10 +11,10 @@ module.exports = merge(common, {
   mode: 'production',
   module: {
     rules: [
-      
+
     ]
   },
-  optimization: {
+  /*optimization: {
     minimizer: [
       new UglifyJSPlugin({
         sourceMap: false,
@@ -25,7 +25,7 @@ module.exports = merge(common, {
         }
       })
     ]
-  },
+  },*/
   plugins: [
     //new OptimizeCssAssetsPlugin(),
     new CleanWebpackPlugin(['dist/*.*', 'dist/assets/*.*'])

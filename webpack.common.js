@@ -36,7 +36,7 @@ module.exports = {
         },
         // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
         {
-           test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
+           test: /\.(png|jpg|gif|eot|ttf|woff|woff2|json)$/,
            loader: 'file-loader',
            options: {
              name: '[name].[ext]',

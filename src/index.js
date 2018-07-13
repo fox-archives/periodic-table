@@ -1,9 +1,6 @@
 import './css/main.scss';
 import 'material-icons/iconfont/material-icons.css';
-var json = require('./assets/data/main.json');
 
-// AnimeJS
-import anime from 'animejs';
 
 // VueJS
 import Vue from 'vue';
@@ -22,9 +19,6 @@ Vue.use(Vuesax, {
 // Feather Icons
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
-
-// Create an event bus
-//export const bus = new Vue();
 
 import Navigation from './components/Navigation.vue';
 import PeriodicTable from './components/PeriodicTable.vue';

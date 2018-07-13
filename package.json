@@ -11,7 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^2.2.0",
     "material-icons": "^0.2.3",
     "open-color": "^1.6.3",
     "sass": "^1.9.1",

@@ -95,37 +95,8 @@
     data() {
       return {
         elements: null,
-         periodLabels: [
-           // Labels for each period element
-           { display: 1,   column: "cc-1",   row: "rr-2",  color: "light", name: "Period 1" },
-           { display: 2,   column: "cc-1",   row: "rr-4",  color: "light", name: "Period 2" },
-           { display: 3,   column: "cc-1",   row: "rr-6",  color: "light", name: "Period 3" },
-           { display: 4,   column: "cc-1",   row: "rr-8",  color: "light", name: "Period 4" },
-           { display: 5,   column: "cc-1",   row: "rr-10", color: "light", name: "Period 5" },
-           { display: 6,   column: "cc-1",   row: "rr-12", color: "light", name: "Period 6" },
-           { display: 7,   column: "cc-1",   row: "rr-14", color: "light", name: "Period 7" }
-         ],
-         groupLabels: [
-           // Labels for each group element
-           { display: 1,    column: "cc-2",   row: "rr-1", color: "light", name: "Alkali Metals" },
-           { display: 2,    column: "cc-4",   row: "rr-1", color: "light", name: "Alkaline Earth Metals" },
-           { display: 3,    column: "cc-6",   row: "rr-1", color: "light", name: "Scandium Family" },
-           { display: 4,    column: "cc-8",   row: "rr-1", color: "light", name: "Titanium Family" },
-           { display: 5,    column: "cc-10",  row: "rr-1", color: "light", name: "Vanadium Family" },
-           { display: 6,    column: "cc-12",  row: "rr-1", color: "light", name: "Chromium Family" },
-           { display: 7,    column: "cc-14",  row: "rr-1", color: "light", name: "Manganese Family" },
-           { display: 8,    column: "cc-16",  row: "rr-1", color: "light", name: "Iron Family" },
-           { display: 9,    column: "cc-18",  row: "rr-1", color: "light", name: "Cobalt Family" },
-           { display: 10,   column: "cc-20",  row: "rr-1", color: "light", name: "Nickel Family" },
-           { display: 11,   column: "cc-22",  row: "rr-1", color: "light", name: "Copper Family" },
-           { display: 12,   column: "cc-24",  row: "rr-1", color: "light", name: "Zinc Family" },
-           { display: 13,   column: "cc-26",  row: "rr-1", color: "light", name: "Boron Family" },
-           { display: 14,   column: "cc-28",  row: "rr-1", color: "light", name: "Carbon Family" },
-           { display: 15,   column: "cc-30",  row: "rr-1", color: "light", name: "Pnictogens" },
-           { display: 16,   column: "cc-32",  row: "rr-1", color: "light", name: "Chalcogens" },
-           { display: 17,   column: "cc-34",  row: "rr-1", color: "light", name: "Halogens" },
-           { display: 18,   column: "cc-36",  row: "rr-1", color: "light", name: "Noble Gases" }
-         ],
+         periodLabels: null,
+         groupLabels: null,
          elementDisplayProps: [
            // Period 1
            { name: "Hydrogen", defaultColor: "blue", color: "blue" },
@@ -534,23 +505,31 @@
          this.infoLocationType = data;
        });
 
-      // Get the data from the json
-      var xmlhttp = new XMLHttpRequest();
-      var self = this;
-      //var url = "./main.json";
-      var url = "src/components/main.json";
-      xmlhttp.open("GET", url, true);
+       // Get the data from the json
+       var xmlhttp = new XMLHttpRequest();
+       var self = this;
+       //var url = "./main.json";
+       var url = "/src/assets/data/main.json";
+       xmlhttp.open("GET", url, true);
+       xmlhttp.onreadystatechange = function() {
+         if(this.readyState == 4 && this.status == 200) {
+           self.elements = JSON.parse(xmlhttp.responseText).elements;
+         }
+       }
+       xmlhttp.send();
 
-
-      xmlhttp.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200) {
-          //console.log(JSON.parse(xmlhttp.responseText));
-          //console.log(JSON.parse(xmlhttp.responseText).elements[0]);
-          //console.log(xmlhttp.responseText[0]);
-          self.elements = JSON.parse(xmlhttp.responseText).elements;
-        }
-      }
-      xmlhttp.send();
+       // Get the data from the json
+       var xmlhttp2 = new XMLHttpRequest();
+       var self = this;
+       var url2 = "/src/assets/data/groupPeriodLabels.json";
+       xmlhttp2.open("GET", url2, true);
+       xmlhttp2.onreadystatechange = function() {
+         if(this.readyState == 4 && this.status == 200) {
+           self.periodLabels = JSON.parse(xmlhttp2.responseText).periodLabels;
+           self.groupLabels = JSON.parse(xmlhttp2.responseText).groupLabels;
+         }
+       }
+       xmlhttp2.send();
      },
      computed: {
 
