@@ -96,3 +96,14 @@ a:clicked {
 .vs-noti-contenedor, .con-popup, .con-options, .activeItem {
   user-select: none;
 }
+
+// VUESAX
+// Notification conts
+.con-text-noti h3 {
+  font-family: robotoregular;
+  font-weight: regular;
+}
+.con-text-noti p {
+  font-family: robotolight;
+  font-weight: regular;
+}

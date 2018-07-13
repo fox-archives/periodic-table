@@ -13,33 +13,43 @@
   transition: all 0.2s ease-in-out;
 }
 // end
-$light-def-shadow: $oc-gray-3;
 #pt.light-def #grid-container {
   background-color: $oc-gray-0;
-  box-shadow: 2px 2px 4px $oc-gray-2;
+  box-shadow: 2px 2px 3px $oc-gray-2;
   transition: all 0.2s ease-in-out;
 }
 
 #pt.light-def #grid-container:hover {
-  background-color: $oc-gray-0;
   box-shadow: 2px 2px 4px $oc-gray-3;
   transition: all 0.2s ease-in-out;
 }
 
 #pt.light-def .element-outer {
-  box-shadow: 3px 3px 3px $light-def-shadow;
+  box-shadow: 2px 2px 3px $oc-gray-3;
 }
 
 #pt.light-def .element-outer:hover {
-  box-shadow: 5px 5px 5px $light-def-shadow;
+  box-shadow: 2px 2px 4px $oc-gray-4;
 }
 
 #pt.light-def #element-overview {
-  box-shadow: 4px 4px 4px $light-def-shadow;
+  box-shadow: 2px 2px 3px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.light-def #element-overview:hover {
+  box-shadow: 2px 2px 4px $oc-gray-4;
+  transition: all 0.2s ease-in-out;
 }
 
 #pt.light-def #element-desc {
-  box-shadow: 4px 4px 4px $light-def-shadow;
+  box-shadow: 2px 2px 3px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.light-def #element-desc:hover {
+  box-shadow: 2px 2px 4px $oc-gray-4;
+  transition: all 0.2s ease-in-out;
 }
 
 #pt.light-def .label-period-inner p, .light-def .label-group-inner p {

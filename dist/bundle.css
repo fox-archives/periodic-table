@@ -171,7 +171,7 @@ body.dark-def {
     width: 18px;
     height: 18px; } }
 
-@media (max-width: 1075px) {
+@media (max-width: 1079px) {
   #nav-content {
     justify-content: space-between; }
   #nav li#simple-wide, #nav li#properties-wide, #nav li#electrons-wide, #nav li#orbitals-wide, #nav li#isotopes-wide, #nav li#explore-wide, #nav li#trivia-wide {
@@ -978,25 +978,34 @@ p#name2, p#name3 {
 
 #pt.light-def #grid-container {
   background-color: #f8f9fa;
-  box-shadow: 2px 2px 4px #e9ecef;
+  box-shadow: 2px 2px 3px #e9ecef;
   transition: all 0.2s ease-in-out; }
 
 #pt.light-def #grid-container:hover {
-  background-color: #f8f9fa;
   box-shadow: 2px 2px 4px #dee2e6;
   transition: all 0.2s ease-in-out; }
 
 #pt.light-def .element-outer {
-  box-shadow: 3px 3px 3px #dee2e6; }
+  box-shadow: 2px 2px 3px #dee2e6; }
 
 #pt.light-def .element-outer:hover {
-  box-shadow: 5px 5px 5px #dee2e6; }
+  box-shadow: 2px 2px 4px #ced4da; }
 
 #pt.light-def #element-overview {
-  box-shadow: 4px 4px 4px #dee2e6; }
+  box-shadow: 2px 2px 3px #dee2e6;
+  transition: all 0.2s ease-in-out; }
+
+#pt.light-def #element-overview:hover {
+  box-shadow: 2px 2px 4px #ced4da;
+  transition: all 0.2s ease-in-out; }
 
 #pt.light-def #element-desc {
-  box-shadow: 4px 4px 4px #dee2e6; }
+  box-shadow: 2px 2px 3px #dee2e6;
+  transition: all 0.2s ease-in-out; }
+
+#pt.light-def #element-desc:hover {
+  box-shadow: 2px 2px 4px #ced4da;
+  transition: all 0.2s ease-in-out; }
 
 #pt.light-def .label-period-inner p, .light-def .label-group-inner p {
   color: #212529; }
@@ -1522,6 +1531,14 @@ a:clicked {
 
 .vs-noti-contenedor, .con-popup, .con-options, .activeItem {
   user-select: none; }
+
+.con-text-noti h3 {
+  font-family: robotoregular;
+  font-weight: regular; }
+
+.con-text-noti p {
+  font-family: robotolight;
+  font-weight: regular; }
 
 @font-face {
   font-family: "Material Icons";

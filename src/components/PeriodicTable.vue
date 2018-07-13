@@ -639,16 +639,16 @@
         // For now, use Vuesax notifications because they look better (and because ElementUI does not seem to display names properly)
         // Unless one can customize the whites and greys of Vuesax, must move over to ElementUI eventually
          this.$vs.notify({
-           time: 3000,
            title: this.getPeriodGroupName('period', this.periodLabels[index].display),
-           text: this.periodLabels[index].name
+           text: this.periodLabels[index].name,
+           time: 3000000
          });
        },
        groupNotification: function(index) {
          this.$vs.notify({
-           time: 3000,
            title: this.getPeriodGroupName('group', this.groupLabels[index].display),
-           text: this.groupLabels[index].name
+           text: this.groupLabels[index].name,
+           time: 3000
          });
        },
      },
