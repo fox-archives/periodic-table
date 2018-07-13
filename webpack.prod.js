@@ -32,7 +32,7 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new UglifyJSPlugin({
-        sourceMap: true,
+        sourceMap: false,
         uglifyOptions: {
           compress: {
             inline: false
@@ -42,7 +42,7 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new OptimizeCssAssetsPlugin({}),
+    //new OptimizeCssAssetsPlugin(),
     new CleanWebpackPlugin(['dist/*.*', 'dist/assets/*.*'])
   ]
 });
