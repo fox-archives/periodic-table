@@ -48,6 +48,22 @@ module.exports = {
           use: [
             'vue-svg-icon-loader'
           ],
+        },
+        {
+          test: /\.(sa|sc)ss$/,
+          exclude: /node_modules/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader' // Loads a sass / scss file and compiles it to CSS
+          ]
+        },
+        {
+          test: /\.css$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader'
+          ]
         }
       ]
    },
