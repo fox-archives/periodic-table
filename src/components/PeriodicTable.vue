@@ -509,7 +509,7 @@
        var xmlhttp = new XMLHttpRequest();
        var self = this;
        //var url = "./main.json";
-       var url = "/src/assets/data/main.json";
+       var url = require("../assets/data/main.json");
        xmlhttp.open("GET", url, true);
        xmlhttp.onreadystatechange = function() {
          if(this.readyState == 4 && this.status == 200) {
@@ -521,7 +521,7 @@
        // Get the data from the json
        var xmlhttp2 = new XMLHttpRequest();
        var self = this;
-       var url2 = "/src/assets/data/groupPeriodLabels.json";
+       var url2 = require("../assets/data/groupPeriodLabels.json");
        xmlhttp2.open("GET", url2, true);
        xmlhttp2.onreadystatechange = function() {
          if(this.readyState == 4 && this.status == 200) {

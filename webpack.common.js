@@ -36,7 +36,16 @@ module.exports = {
         },
         // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
         {
-           test: /\.(png|jpg|gif|eot|ttf|woff|woff2|json)$/,
+          type: 'javascript/auto',
+          test: /\.json$/,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: './assets'
+          }
+        },
+        {
+           test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
            loader: 'file-loader',
            options: {
              name: '[name].[ext]',
