@@ -10,8 +10,7 @@
 </template>
 
 <script type="text/javascript">
-  //import { bus } from "../index.js";
-  import bus from "./bus.js";
+  import bus from "../bus.js";
 
   export default {
     name: 'Footer',
@@ -28,3 +27,9 @@
     }
   }
 </script>
+
+<style scoped lang="scss">
+  @import '../../css/globals.scss';
+  @import './footer.scss';
+  @import './footer-themes.scss';
+</style>

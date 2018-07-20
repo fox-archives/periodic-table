@@ -1,29 +1,29 @@
-const path = require('path');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
-        }
-      },
-      {
         test: /\.vue$/,
         loader: 'vue-loader',
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        // JS in Vue script tags run when in node_modules https://vue-loader.vuejs.org/guide/pre-processors.html#excluding-node-modules
+        exclude: file => (
+          /node_modules/.test(file) &&
+          !/\.vue\.js/.test(file)
+        )
       },
       // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
       {
@@ -48,22 +48,6 @@ module.exports = {
         use: [
           'vue-svg-icon-loader'
         ],
-      },
-      {
-        test: /\.(sa|sc)ss$/,
-        exclude: /node_modules/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader' // Loads a sass / scss file and compiles it to CSS
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader'
-        ]
       }
     ]
   },
@@ -73,8 +57,9 @@ module.exports = {
       filename: 'bundle.css',
       chunckFilename: '[id].css'
     }),
-    new CopyWebpackPlugin([
-      { from: 'index.html', to: '' }
-    ])
+    new HtmlWebpackPlugin({
+      title: 'A Periodic Table',
+      template: './index.html'
+    })
   ]
 }

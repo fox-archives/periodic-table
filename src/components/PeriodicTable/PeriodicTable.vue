@@ -8,7 +8,6 @@
           <h3 id="element-name">{{ hoverName }}</h3>
         </div>
       </li>
-
       <li id="unobtrusive-desc">
         <ul id="unobtrusive-desc-left">
           <li class="shadowReg">
@@ -87,8 +86,7 @@
   </div>
 </template>
 <script type="text/javascript">
-  // Import the bus
-  import bus from "./bus.js";
+  import bus from "../bus.js";
 
   export default {
     name: 'PeriodicTable',
@@ -372,7 +370,7 @@
       var xmlhttp = new XMLHttpRequest();
       var self = this;
       //var url = "./main.json";
-      var url = require("../assets/data/main.json");
+      var url = require("../../assets/data/main.json");
       xmlhttp.open("GET", url, true);
       xmlhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
@@ -385,7 +383,7 @@
       // Get the data from the json
       var xmlhttp2 = new XMLHttpRequest();
       var self = this;
-      var url2 = require("../assets/data/groupPeriodLabels.json");
+      var url2 = require("../../assets/data/groupPeriodLabels.json");
       xmlhttp2.open("GET", url2, true);
       xmlhttp2.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
@@ -399,7 +397,7 @@
       // Get the data from the json
       var xmlhttp3 = new XMLHttpRequest();
       var self = this;
-      var url3 = require("../assets/data/elementPlacement.json");
+      var url3 = require("../../assets/data/elementPlacement.json");
       xmlhttp3.open("GET", url3, true);
       xmlhttp3.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
@@ -420,3 +418,9 @@
     }
   }
 </script>
+
+<style scoped lang="scss">
+  @import "../../css/globals.scss";
+  @import "./periodic-table.scss";
+  @import "./periodic-table-themes.scss";
+</style>

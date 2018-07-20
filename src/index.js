@@ -1,6 +1,6 @@
 import './css/main.scss';
-import 'material-icons/iconfont/material-icons.css';
 
+import 'material-icons/iconfont/material-icons.css';
 
 // VueJS
 import Vue from 'vue';
@@ -20,12 +20,11 @@ Vue.use(Vuesax, {
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
-import Navigation from './components/Navigation.vue';
-import PeriodicTable from './components/PeriodicTable.vue';
-import Footer from './components/Footer.vue';
+import Navigation from './components/Navigation/Navigation.vue';
+import PeriodicTable from './components/PeriodicTable/PeriodicTable.vue';
+import Footer from './components/Footer/Footer.vue';
 
 
-// This may be formated incorrectly
 new Vue({
   render: k => k(Navigation)
 }).$mount('#navigation-el')
