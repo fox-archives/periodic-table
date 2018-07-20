@@ -420,7 +420,8 @@
 </script>
 
 <style scoped lang="scss">
-  @import "../../css/globals.scss";
-  @import "./periodic-table.scss";
-  @import "./periodic-table-themes.scss";
+  @import '../../styles/variables.scss';
+  @import './periodic-table.scss';
+  @import './periodic-table-themes.scss';
+  @import './generic-elements.scss';
 </style>

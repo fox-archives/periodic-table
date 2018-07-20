@@ -29,7 +29,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../../css/globals.scss';
+  @import '../../styles/variables.scss';
   @import './footer.scss';
   @import './footer-themes.scss';
 </style>

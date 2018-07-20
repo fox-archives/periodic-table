@@ -344,7 +344,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../../css/globals.scss';
+  @import '../../styles/variables.scss';
   @import './navigation.scss';
   @import './navigation-themes.scss';
 </style>

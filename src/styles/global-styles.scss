@@ -1,0 +1,11 @@
+// Globals only have variables, all .scss files must have these
+@import "./variables.scss";
+
+// Fonts
+@import "./fonts.scss";
+
+// Main HTML Tags (and other stuff also)
+@import './tags.scss';
+
+// Themes for Non-Vue Components
+@import "./main-themes";

@@ -1,5 +1,7 @@
-import './css/main.scss';
+// Import all the global styles (shared by all Vue components)
+import './styles/global-styles.scss';
 
+// Import Material Library (Used by VueSax)
 import 'material-icons/iconfont/material-icons.css';
 
 // VueJS
