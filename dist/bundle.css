@@ -61,6 +61,9 @@ a:clicked {
   font-family: robotolight;
   font-weight: regular; }
 
+.featherIcon, .featherIcon path, .featherIcon circle, .featherIcon line, .featherIcon polyline {
+  stroke-width: 1.125; }
+
 /* Roboto */
 @font-face {
   font-family: 'robotobold';
@@ -568,9 +571,6 @@ body.dark-def {
 #pt.dark-def .dark {
   background-color: #212529; }
 
-.featherIcon, .featherIcon path, .featherIcon circle, .featherIcon line, .featherIcon polyline {
-  stroke-width: 1.125; }
-
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
@@ -669,6 +669,9 @@ a[data-v-7c42558f]:clicked {
 .con-text-noti p[data-v-7c42558f] {
   font-family: robotolight;
   font-weight: regular;
+}
+.featherIcon[data-v-7c42558f], .featherIcon path[data-v-7c42558f], .featherIcon circle[data-v-7c42558f], .featherIcon line[data-v-7c42558f], .featherIcon polyline[data-v-7c42558f] {
+  stroke-width: 1.125;
 }
 #nav[data-v-7c42558f] {
   overflow: auto;
@@ -909,6 +912,9 @@ a[data-v-10f1c537]:clicked {
 .con-text-noti p[data-v-10f1c537] {
   font-family: robotolight;
   font-weight: regular;
+}
+.featherIcon[data-v-10f1c537], .featherIcon path[data-v-10f1c537], .featherIcon circle[data-v-10f1c537], .featherIcon line[data-v-10f1c537], .featherIcon polyline[data-v-10f1c537] {
+  stroke-width: 1.125;
 }
 #pt[data-v-10f1c537] {
   display: flex;
@@ -1739,6 +1745,9 @@ a[data-v-edbb25a2]:clicked {
 .con-text-noti p[data-v-edbb25a2] {
   font-family: robotolight;
   font-weight: regular;
+}
+.featherIcon[data-v-edbb25a2], .featherIcon path[data-v-edbb25a2], .featherIcon circle[data-v-edbb25a2], .featherIcon line[data-v-edbb25a2], .featherIcon polyline[data-v-edbb25a2] {
+  stroke-width: 1.125;
 }
 #footer[data-v-edbb25a2] {
   display: flex;

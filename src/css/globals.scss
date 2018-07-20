@@ -1,2 +1,10 @@
+// Open Color
 @import 'open-color/open-color.scss';
-@import './globals-extended.scss';
+
+// SVG
+@import "./icons.scss";
+
+$minimum-width: 1000px;
+$maximum-width: 1000px;
+$border-radius: 7.5px;
+$transition-time: 0.15s;
