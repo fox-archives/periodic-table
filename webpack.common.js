@@ -51,6 +51,11 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      Styles: path.resolve(__dirname, 'src/styles/')
+    }
+  },
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
