@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "material-icons": "^0.2.3",
     "open-color": "^1.6.3",
-    "sass": "^1.9.1",
+    "sass": "^1.10.0",
     "vue": "^2.5.16",
-    "vuesax": "^3.1.40"
+    "vuesax": "^3.1.45"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -34,12 +35,12 @@
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",
     "vue-feather-icon": "^1.2.0",
-    "vue-loader": "^15.2.4",
+    "vue-loader": "^15.2.6",
     "vue-svg-component-runtime": "^1.0.1",
     "vue-svg-icon-loader": "^2.1.1",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.16.0",
-    "webpack-cli": "^3.0.8",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.3"
   }

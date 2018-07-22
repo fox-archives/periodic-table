@@ -12,13 +12,6 @@ module.exports = merge(common, {
           'vue-style-loader',
           'css-loader',
           'sass-loader'
-          /*{
-            loader: 'sass-loader',
-            options: {
-              data: 'open-color.scss'
-            }
-
-          }*/
         ]
       },
       {

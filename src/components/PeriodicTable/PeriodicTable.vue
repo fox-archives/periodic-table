@@ -86,7 +86,8 @@
   </div>
 </template>
 <script type="text/javascript">
-  import bus from "../bus.js";
+  import bus from '../bus.js';
+  const axios = require('axios');
 
   export default {
     name: 'PeriodicTable',
@@ -97,14 +98,14 @@
         groupLabels: [],
         elementDisplayProps: null,
 
-        hoverAtomicNumber: "1",
-        hoverAbbreviation: "H",
-        hoverName: "Hydrogen",
+        hoverAtomicNumber: '1',
+        hoverAbbreviation: 'H',
+        hoverName: 'Hydrogen',
         hoverAtomicMass: 1.008,
-        hoverBlock: "s",
-        hoverColor: "blue", //This actually changes the color
-        hoverDiscoveryDate: "1766",
-        hoverDiscoveredBy: "Henry Cavendish",
+        hoverBlock: 's',
+        hoverColor: 'blue', //T his actually changes the color
+        hoverDiscoveryDate: '1766',
+        hoverDiscoveredBy: 'Henry Cavendish',
         hoverIndex: 0,
 
         clickActive: false,
@@ -354,7 +355,7 @@
         this.$vs.notify({
           title: this.getPeriodGroupName('period', this.periodLabels[index].display),
           text: this.periodLabels[index].name,
-          time: 3000000
+          time: 3000
         });
       },
       groupNotification: function(index) {
@@ -366,6 +367,7 @@
       },
     },
     created: function() {
+
       // Get the data from the json
       var xmlhttp = new XMLHttpRequest();
       var self = this;
@@ -379,6 +381,13 @@
       }
       xmlhttp.send();
 
+      axios.get('../../assets/data/main.json')
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
 
       // Get the data from the json
       var xmlhttp2 = new XMLHttpRequest();
