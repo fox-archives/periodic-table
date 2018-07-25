@@ -24,6 +24,11 @@ module.exports = merge(common, {
     ]
   },
   devServer: {
-    port: 8080
+    port: 8080,
+    open: true, // Automatically open the homepage at startup
+    // Proxy URL to separate backend development server
+    proxy: {
+      '/': "http://localhost:3000"
+    }
   }
 });
