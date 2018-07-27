@@ -381,7 +381,7 @@
       }
       xmlhttp.send();
 
-      axios.get('../../assets/data/main.json')
+      axios.get('http:localhost:3000/api/elementPlacement')
       .then(function(response) {
         console.log(response);
       })
