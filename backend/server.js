@@ -1,5 +1,15 @@
 const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const morgan = require('morgan')
+
 const app = express()
+
+// Use Morgan log generator
+app.use(morgan('combined'))
+
+// Allow express to parse .json requests sent in
+app.use(cors())
 
 const elementPlacement = require('./assets/elementPlacement.json')
 const groupPeriodLabels = require('./assets/groupPeriodLabels.json')
