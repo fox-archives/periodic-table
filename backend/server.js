@@ -8,6 +8,8 @@ const app = express()
 // Use Morgan log generator
 app.use(morgan('combined'))
 
+app.use(bodyParser.json())
+
 // Allow express to parse .json requests sent in
 app.use(cors())
 
@@ -30,6 +32,12 @@ app.get('/api/groupPeriodLabels', function(req, res) {
 
 app.get('/api/main', function(req, res) {
   res.send(main)
+})
+
+app.post('/register', (req, res) => {
+  res.send({
+    message: `${req.body.email} was registered`
+})
 })
 
 const port = process.env.PORT || 3000

@@ -53,7 +53,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Styles: path.resolve(__dirname, 'src/styles/')
+      Styles: path.resolve(__dirname, 'src/styles/'),
+      Components: path.resolve(__dirname, 'src/components')
     }
   },
   plugins: [

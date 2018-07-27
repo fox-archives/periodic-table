@@ -116,21 +116,21 @@
 </template>
 
 <script type="text/javascript">
-  import bus from "../bus.js";
+  import bus from '../bus.js'
 
   // Importing to-be-used SVG icons
-  import { Type } from 'vue-feather-icon';
-  import { List } from 'vue-feather-icon';
-  import Electrons from '../svg/Electrons.vue';
-  import Orbitals from '../svg/Orbitals.vue';
-  import Orbitals2 from '../svg/Orbitals2.vue';
-  import Isotopes from '../svg/Isotopes.vue';
-  import { Map } from 'vue-feather-icon'; // Explore
-  import { Check } from 'vue-feather-icon'; // Trivia
-  import { Info } from 'vue-feather-icon';
-  import { Settings } from 'vue-feather-icon';
-  import { Search } from 'vue-feather-icon';
-  import { Menu } from 'vue-feather-icon';
+  import { Type } from 'vue-feather-icon'
+  import { List } from 'vue-feather-icon'
+  import Electrons from '../svg/Electrons.vue'
+  import Orbitals from '../svg/Orbitals.vue'
+  import Orbitals2 from '../svg/Orbitals2.vue'
+  import Isotopes from '../svg/Isotopes.vue'
+  import { Map } from 'vue-feather-icon' // Explore
+  import { Check } from 'vue-feather-icon' // Trivia
+  import { Info } from 'vue-feather-icon'
+  import { Settings } from 'vue-feather-icon'
+  import { Search } from 'vue-feather-icon'
+  import { Menu } from 'vue-feather-icon'
 
   export default {
     name: 'Navigation',
