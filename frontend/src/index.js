@@ -22,8 +22,10 @@ Vue.use(Vuesax, {
 import VueFeatherIcon from 'vue-feather-icon'
 Vue.use(VueFeatherIcon)
 
-import Main from 'Components/Main/Main.vue'
+import App from 'Components/App.vue'
+import router from 'Components/router.js'
 
 new Vue({
-  render: n => n(Main)
+  router,
+  render: h => h(App)
 }).$mount('#app')

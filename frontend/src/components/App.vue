@@ -1,26 +1,21 @@
-<template lang="html">
-  <div>
+<template>
+  <div id="app">
     <Navigation></Navigation>
-    <PeriodicTable></PeriodicTable>
+    <router-view/>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Navigation from 'Components/Navigation/Navigation.vue'
-import PeriodicTable from 'Components/PeriodicTable/PeriodicTable.vue'
 import Footer from 'Components/Footer/Footer.vue'
-
 export default {
-  name: 'Main',
   data() {
     return {
-
     }
   },
   components: {
     Navigation,
-    PeriodicTable,
     Footer
   }
 }
