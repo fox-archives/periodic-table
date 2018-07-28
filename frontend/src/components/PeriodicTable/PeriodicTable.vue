@@ -35,7 +35,7 @@
 
     </section>
 
-    <div id="grid-container">
+    <div v-if="ready" id="grid-container">
       <main id="grid">
         <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
         <section v-if="infoLocationType == 'info-obtrusive'" id="element-overview" v-bind:class="hoverColor" v-cloak>
@@ -93,10 +93,11 @@
     name: 'PeriodicTable',
     data() {
       return {
-        elements: null,
+        elements: [],
         periodLabels: [],
         groupLabels: [],
-        elementDisplayProps: null,
+        elementDisplayProps: [],
+        ready: false,
 
         hoverAtomicNumber: '1',
         hoverAbbreviation: 'H',
@@ -367,7 +368,11 @@
       },
     },
     created: function() {
+<<<<<<< Updated upstream:frontend/src/components/PeriodicTable/PeriodicTable.vue
 
+=======
+      /*
+>>>>>>> Stashed changes:src/components/PeriodicTable.vue
       // Get the data from the json
       var xmlhttp = new XMLHttpRequest();
       var self = this;
@@ -380,7 +385,20 @@
         }
       }
       xmlhttp.send();
+      */
 
+      const xmlhttp1 = new XMLHttpRequest();
+      const url1 = require("../assets/data/main.json");
+      xmlhttp1.open("GET", url1, true);
+      xmlhttp1.onreadystatechange = () => {
+        if (this.readyState === 4 && this.status === 200) {
+          this.elementDisplayProps = JSON.parse(xmlhttp1.responseText);
+          console.log(xmlhttp1.responseText);
+        }
+      }
+      xmlhttp1.send();
+
+<<<<<<< Updated upstream:frontend/src/components/PeriodicTable/PeriodicTable.vue
       axios.get('http:localhost:3000/api/elementPlacement')
       .then(function(response) {
         console.log(response);
@@ -389,6 +407,9 @@
         console.log(error);
       })
 
+=======
+      /*
+>>>>>>> Stashed changes:src/components/PeriodicTable.vue
       // Get the data from the json
       var xmlhttp2 = new XMLHttpRequest();
       var self = this;
@@ -401,8 +422,19 @@
         }
       }
       xmlhttp2.send();
+      */
 
+      const xmlhttp2 = new XMLHttpRequest();
+      const url2 = require("../assets/data/groupPeriodLabels.json");
+      xmlhttp2.open("GET", url2, true);
+      xmlhttp2.onreadystatechange = () => {
+        if (this.readyState === 4 && this.status === 200) {
+          this.elementDisplayProps = JSON.parse(xmlhttp2.responseText);
+        }
+      }
+      xmlhttp2.send();
 
+      ///*
       // Get the data from the json
       var xmlhttp3 = new XMLHttpRequest();
       var self = this;
@@ -414,6 +446,21 @@
         }
       }
       xmlhttp3.send();
+      //*/
+
+
+      // const xmlhttp3 = new XMLHttpRequest();
+      // const url3 = require("../assets/data/elementPlacement.json");
+      // xmlhttp3.open("GET", url3, true);
+      // xmlhttp3.onreadystatechange = () => {
+      //   if (this.readyState === 4 && this.status === 200) {
+      //     this.elementDisplayProps = JSON.parse(xmlhttp3.responseText);
+      //   }
+      // }
+      // xmlhttp3.send();
+
+
+      this.ready = true;
 
       bus.$on('themeChanged', (data) => {
         this.themeType = data;
