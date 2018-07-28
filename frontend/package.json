@@ -14,15 +14,9 @@
     "axios": "^0.18.0",
     "material-icons": "^0.2.3",
     "open-color": "^1.6.3",
-<<<<<<< Updated upstream:frontend/package.json
     "sass": "^1.10.0",
     "vue": "^2.5.16",
     "vuesax": "^3.1.45"
-=======
-    "sass": "^1.9.2",
-    "vue": "^2.5.16",
-    "vuesax": "^3.1.43"
->>>>>>> Stashed changes:package.json
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
