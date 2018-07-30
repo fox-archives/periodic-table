@@ -22,7 +22,7 @@ const myRoutes = [
     component: PeriodicTable
   },
   {
-    path: './orbitals',
+    path: '/orbitals',
     component: PeriodicTable
   },
   {
