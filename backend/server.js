@@ -18,6 +18,7 @@ app.use(cors());
 //import simple from './assets/element/simple.json';
 const placement = require('./assets/element/placement.json');
 const simple = require('./assets/element/simple.json');
+const color = require('./assets/element/color.json');
 // Import .json from label
 // import period from './assets/label/period.json';
 // import group from './assets/label/group.json';
@@ -30,12 +31,21 @@ app.get('/', function(req, res) {
   res.send('Working')
 });
 
+// TODO: Add favicon and make server sends favicon on request
+app.get('/favicon.ico', function(req, res) {
+
+});
+
 app.get('/api/data/element/placement', function(req, res) {
   res.json(placement)
 });
 
 app.get('/api/data/element/simple', function(req, res) {
   res.json(simple)
+});
+
+app.get('/api/data/element/color', function(req, res) {
+  res.json(color)
 });
 
 app.get('/api/data/label/period', function(req, res) {
