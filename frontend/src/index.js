@@ -1,31 +1,28 @@
-// Import all the global styles (shared by all Vue components)
-import './styles/global-styles.scss'
-
-// Import Material Library (Used by VueSax)
-import 'material-icons/iconfont/material-icons.css'
-
-// VueJS
 import Vue from 'vue'
-window.Vue = Vue  // Assign Vue to window object in index.js; Vue() is now a global property of the window object
 
-// VueSax
+// Use Vue Routing (as defined in router.js)
+import router from 'Components/router.js'
+
+// Import Main Application Component
+import App from 'Components/App.vue'
+
+
+// Import global styles and material design
+import './styles/global-styles.scss';
+import 'material-icons/iconfont/material-icons.css';
+
+// VueSax (CSS and Components)
 import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css' // Gather VueSax styles
-Vue.use(Vuesax, {
-  theme: {
-    colors: {
-    }
-  }
-})
+import 'vuesax/dist/vuesax.css'
+Vue.use(Vuesax);
 
 // Feather Icons
 import VueFeatherIcon from 'vue-feather-icon'
-Vue.use(VueFeatherIcon)
+Vue.use(VueFeatherIcon);
 
-import App from 'Components/App.vue'
-import router from 'Components/router.js'
-
+// Mount Vue Instance to the DOM
 new Vue({
   router,
+  mode: 'history',
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');

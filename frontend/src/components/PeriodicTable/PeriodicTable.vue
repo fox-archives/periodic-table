@@ -85,6 +85,7 @@
     </div>
   </div>
 </template>
+
 <script type="text/javascript">
   import bus from '../bus.js';
   const axios = require('axios');
@@ -104,7 +105,7 @@
         hoverName: 'Hydrogen',
         hoverAtomicMass: 1.008,
         hoverBlock: 's',
-        hoverColor: 'blue', //T his actually changes the color
+        hoverColor: 'blue', //This actually changes the color
         hoverDiscoveryDate: '1766',
         hoverDiscoveredBy: 'Henry Cavendish',
         hoverIndex: 0,
@@ -175,7 +176,7 @@
 
         var className = this.labelNoneToClass(index + 1, type);
 
-        // Get elements that need to be lighened (elements to be lightened either in a period or group)
+        // Get elements that need to be lighened (elements to be lightened either in a period.json or group)
         if(type == "period") {
           for(var i = 0; i < this.elements.length; i++) {
             if(this.elements[i].period == className) {
@@ -196,7 +197,7 @@
       lightenElements: function(index, prefix, type, typeShort) {
         var className = this.labelNoneToClass(index + 1, type);
 
-        // Get elements that need to be lighened (elements to be lightened either in a period or group)
+        // Get elements that need to be lighened (elements to be lightened either in a period.json or group)
         if(type == "period") {
           for(var i = 0; i < this.elements.length; i++) {
             if(this.elements[i].period != className) {
@@ -218,11 +219,11 @@
         // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
         // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
 
-        // Get the period or group value corresponding to the hovered over element (ex. c-11, p-5)
+        // Get the period.json or group value corresponding to the hovered over element (ex. c-11, p-5)
         var periodFull = this.elements[index].period;
         var groupFull = this.elements[index].group;
 
-        // Concatonate period or group values to a number (ex. 11, 5)
+        // Concatonate period.json or group values to a number (ex. 11, 5)
         var period = this.labelClassToNone(periodFull);
         var group = this.labelClassToNone(groupFull);
 
@@ -230,8 +231,8 @@
           // When changing a label, make sure all others are turned off first
           this.clearLabelExcept(-1, -1);
 
-          // Only darken the label if the element actually has a valid period number (within the actual range of the periodic table)
-          // Recall Act. and Lan. have period of 0, and they don't have period / group labels
+          // Only darken the label if the element actually has a valid period.json number (within the actual range of the periodic table)
+          // Recall Act. and Lan. have period.json of 0, and they don't have period.json / group labels
           if(period > 0) {
             // Darken the labels if the mouse is entering an element
            if(isMouseOver == "true") {
@@ -246,7 +247,7 @@
             }
           }
           // Only darken the label if the element actually has a valid group number (within the actual range of the periodic table)
-          // Recall Act. and Lan. have group of 0, and they don't have period / group labels
+          // Recall Act. and Lan. have group of 0, and they don't have period.json / group labels
           if (group > 0) {
             // Darken the labels if the mouse is entering an element
             if(isMouseOver == "true") {
@@ -284,7 +285,7 @@
         }
       },
       clearLabelExcept: function(periodExclude, groupExclude) {
-        // Clears all period / group labels, except for one period / group label
+        // Clears all period.json / group labels, except for one period.json / group label
         for(var i = 0; i < this.periodLabels.length; i++) {
           if(i != periodExclude) {
             this.periodLabels[i].color = "light";
@@ -305,7 +306,7 @@
         this.clickActive = true;
 
         // What to do if clicking for the first time, or clicking on a different element
-        // Save the index (element index, period index, and group index) of the clicked on element
+        // Save the index (element index, period.json index, and group index) of the clicked on element
         if(this.clickedElementIndex == -1 || this.clickedElementIndex != index) {
           this.clickedElementIndex = index;
 
@@ -333,7 +334,7 @@
         return labelNumber.substring(2);
       },
       labelNoneToClass: function(labelNumber, type) {
-        // className are the classes that need to be highlighted "p" stands for period, "g" stands for group
+        // className are the classes that need to be highlighted "p" stands for period.json, "g" stands for group
         if(type == "period") {
           return "p-" + (labelNumber);
         }
@@ -368,100 +369,20 @@
       },
     },
     created: function() {
-<<<<<<< Updated upstream:frontend/src/components/PeriodicTable/PeriodicTable.vue
 
-=======
-      /*
->>>>>>> Stashed changes:src/components/PeriodicTable.vue
-      // Get the data from the json
-      var xmlhttp = new XMLHttpRequest();
-      var self = this;
-      //var url = "./main.json";
-      var url = require("../../assets/data/main.json");
-      xmlhttp.open("GET", url, true);
-      xmlhttp.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200) {
-          self.elements = JSON.parse(xmlhttp.responseText);
-        }
-      }
-      xmlhttp.send();
-      */
-
-      const xmlhttp1 = new XMLHttpRequest();
-      const url1 = require("../assets/data/main.json");
-      xmlhttp1.open("GET", url1, true);
-      xmlhttp1.onreadystatechange = () => {
-        if (this.readyState === 4 && this.status === 200) {
-          this.elementDisplayProps = JSON.parse(xmlhttp1.responseText);
-          console.log(xmlhttp1.responseText);
-        }
-      }
-      xmlhttp1.send();
-
-<<<<<<< Updated upstream:frontend/src/components/PeriodicTable/PeriodicTable.vue
-      axios.get('http:localhost:3000/api/elementPlacement')
+      axios.get('/api/data/element/placement')
       .then(function(response) {
         console.log(response);
       })
       .catch(function(error) {
         console.log(error);
-      })
-
-=======
-      /*
->>>>>>> Stashed changes:src/components/PeriodicTable.vue
-      // Get the data from the json
-      var xmlhttp2 = new XMLHttpRequest();
-      var self = this;
-      var url2 = require("../../assets/data/groupPeriodLabels.json");
-      xmlhttp2.open("GET", url2, true);
-      xmlhttp2.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200) {
-          self.periodLabels = JSON.parse(xmlhttp2.responseText).periodLabels;
-          self.groupLabels = JSON.parse(xmlhttp2.responseText).groupLabels;
-        }
-      }
-      xmlhttp2.send();
-      */
-
-      const xmlhttp2 = new XMLHttpRequest();
-      const url2 = require("../assets/data/groupPeriodLabels.json");
-      xmlhttp2.open("GET", url2, true);
-      xmlhttp2.onreadystatechange = () => {
-        if (this.readyState === 4 && this.status === 200) {
-          this.elementDisplayProps = JSON.parse(xmlhttp2.responseText);
-        }
-      }
-      xmlhttp2.send();
-
-      ///*
-      // Get the data from the json
-      var xmlhttp3 = new XMLHttpRequest();
-      var self = this;
-      var url3 = require("../../assets/data/elementPlacement.json");
-      xmlhttp3.open("GET", url3, true);
-      xmlhttp3.onreadystatechange = function() {
-        if(this.readyState == 4 && this.status == 200) {
-          self.elementDisplayProps = JSON.parse(xmlhttp3.responseText);
-        }
-      }
-      xmlhttp3.send();
-      //*/
+      });
 
 
-      // const xmlhttp3 = new XMLHttpRequest();
-      // const url3 = require("../assets/data/elementPlacement.json");
-      // xmlhttp3.open("GET", url3, true);
-      // xmlhttp3.onreadystatechange = () => {
-      //   if (this.readyState === 4 && this.status === 200) {
-      //     this.elementDisplayProps = JSON.parse(xmlhttp3.responseText);
-      //   }
-      // }
-      // xmlhttp3.send();
+
 
 
       this.ready = true;
-
       bus.$on('themeChanged', (data) => {
         this.themeType = data;
       });

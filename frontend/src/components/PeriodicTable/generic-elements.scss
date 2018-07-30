@@ -44,7 +44,7 @@
 #pt.light-def .violet * { color: $oc-gray-9; }
 
 // LIGHT ELEMENT COLOR
-// Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
+// Occurs when user hovers over period.json / group label; perios / groups that were not highlighted over become lighter (color and text)
 #pt.light-def .light-blue { background-color: $oc-blue-1; }
 #pt.light-def .light-red { background-color: $oc-red-1; }
 #pt.light-def .light-green { background-color: $oc-green-1; }
@@ -59,7 +59,7 @@
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
-// Each period / group label has v-binds a class which is either .light or .dark
+// Each period.json / group label has v-binds a class which is either .light or .dark
 #pt.light-def .light {
   background-color: $oc-gray-0;
   //transition: background-color $transition-time ease-in-out;
@@ -125,7 +125,7 @@
 #pt.light-con .violet * { color: $oc-gray-9; }
 
 // LIGHT ELEMENT COLOR
-// Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
+// Occurs when user hovers over period.json / group label; perios / groups that were not highlighted over become lighter (color and text)
 #pt.light-con .light-blue { background-color: $oc-blue-2; }
 #pt.light-con .light-red { background-color: $oc-red-2; }
 #pt.light-con .light-green { background-color: $oc-green-2; }
@@ -140,7 +140,7 @@
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
-// Each period / group label has v-binds a class which is either .light or .dark
+// Each period.json / group label has v-binds a class which is either .light or .dark
 #pt.light-con .light {
   background-color: $oc-gray-1;
   //transition: background-color $transition-time ease-in-out;
@@ -204,7 +204,7 @@
 #pt.dark-def .violet * { color: $oc-violet-4; }
 
 // LIGHT ELEMENT COLOR
-// Occurs when user hovers over period / group label; perios / groups that were not highlighted over become lighter (color and text)
+// Occurs when user hovers over period.json / group label; perios / groups that were not highlighted over become lighter (color and text)
 #pt.dark-def .light-blue { background-color: $oc-blue-4; }
 #pt.dark-def .light-red { background-color: $oc-red-4; }
 #pt.dark-def .light-green { background-color: $oc-green-4; }
@@ -219,7 +219,7 @@
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
-// Each period / group label has v-binds a class which is either .light or .dark
+// Each period.json / group label has v-binds a class which is either .light or .dark
 #pt.dark-def .light {
   background-color: $oc-gray-8;
   //transition: background-color $transition-time ease-in-out;
