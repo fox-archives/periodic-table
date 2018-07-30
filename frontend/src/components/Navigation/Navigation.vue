@@ -130,31 +130,31 @@
     },
     methods: {
       menuPopup: function(state) {
-        if(state == "on") {
+        if(state === "on") {
           this.setBlur("blur");
           this.menuPopupActive = true;
         }
-        else if(state == "off") {
+        else if(state === "off") {
           this.setBlur("no-blur");
           this.menuPopupActive = false;
         }
       },
       infoPopup: function(state) {
-        if(state == "on") {
+        if(state === "on") {
           this.setBlur("blur");
           this.infoPopupActive = true;
         }
-        else if(state == "off") {
+        else if(state === "off") {
           this.setBlur("no-blur");
           this.infoPopupActive = false;
         }
       },
       settingsPopup: function(state) {
-        if(state == "on") {
+        if(state === "on") {
           this.setBlur("blur");
           this.settingsPopupActive = true;
         }
-        else if(state == "off") {
+        else if(state === "off") {
           this.setBlur("no-blur");
           this.settingsPopupActive = false;
         }
@@ -163,7 +163,7 @@
       // Duplicate setBlur function found in options.vue
       setBlur: function(blurType) {
         // Could make this similar to addClassToNotif function below, but will not
-        if(blurType == "no-blur") {
+        if(blurType === "no-blur") {
           document.getElementById('content').classList.add('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.remove('blur-large');
@@ -172,14 +172,14 @@
           this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
 
         }
-        else if(blurType == "blur") {
+        else if(blurType === "blur") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.add('blur');
           document.getElementById('content').classList.remove('blur-large');
 
           this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
         }
-        else if(blurType == "blur-large") {
+        else if(blurType === "blur-large") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.add('blur-large');
@@ -191,17 +191,17 @@
       // Add and remove classes to VueSax notifications (specifically blur)
       addClassToNotif: function(classesAdd, classesRemove) {
         // For all notification div elements found
-        var maxElements = document.getElementsByClassName('vs-noti-contenedor');
-        for(var i = 0; i < maxElements.length; i++) {
-          var element = document.getElementsByClassName('vs-noti-contenedor')[i];
+        let maxElements = document.getElementsByClassName('vs-noti-contenedor');
+        for(let i = 0; i < maxElements.length; i++) {
+          let element = document.getElementsByClassName('vs-noti-contenedor')[i];
 
           // Add all classes in classAdd array
-          for(var j = 0; j < classesAdd.length; j++) {
+          for(let j = 0; j < classesAdd.length; j++) {
             element.classList.add(classesAdd[j]);
           }
 
           // Remove all classes in classRemove array
-          for(var j = 0; j < classesRemove.length; j++) {
+          for(let j = 0; j < classesRemove.length; j++) {
             element.classList.remove(classesRemove[j]);
           }
         }

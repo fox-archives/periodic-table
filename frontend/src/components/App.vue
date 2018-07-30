@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Navigation from 'Components/Navigation/Navigation.vue';
-import Footer from 'Components/Footer/Footer.vue';
+import Navigation from './Navigation/Navigation.vue';
+import Footer from './Footer/Footer.vue';
 
 export default {
   data() {

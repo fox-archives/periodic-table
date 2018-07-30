@@ -39,6 +39,7 @@
 </template>
 
 <script>
+  import bus from '../components/bus.js';
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
   export default {
     name: "Options",
@@ -84,16 +85,16 @@
       setTheme: function() {
         // This changes themeType
         // i represents each element in themeTypes array
-        for(var i = 0; i < this.themeTypes.length; i++) {
+        for(let i = 0; i < this.themeTypes.length; i++) {
           // i + 1 because theme
-          if(this.theme == i + 1) {
+          if(this.theme === i + 1) {
             this.themeType = this.themeTypes[i];
 
             // Add it to the main body tag
-            var bodyTag = document.getElementById("body");
-            bodyTag.classList.add(this.themeTypes[i])
-            for(var j = 0; j < this.themeTypes.length; j++) {
-              if(this.themeTypes[i] != this.themeTypes[j]) {
+            let bodyTag = document.getElementById("body");
+            bodyTag.classList.add(this.themeTypes[i]);
+            for(let j = 0; j < this.themeTypes.length; j++) {
+              if(this.themeTypes[i] !== this.themeTypes[j]) {
                 bodyTag.classList.remove(this.themeTypes[j]);
               }
             }
@@ -103,8 +104,8 @@
         bus.$emit('themeChanged', this.themeType);
       },
       setInfoLocation: function() {
-        for(var i = 0; i < this.infoLocationTypes.length; i++) {
-          if(this.infoLocation == i + 1) {
+        for(let i = 0; i < this.infoLocationTypes.length; i++) {
+          if(this.infoLocation === i + 1) {
             this.infoLocationType = this.infoLocationTypes[i];
           }
         }
@@ -119,7 +120,7 @@
       // DUPLICATE FOUND IN ADVANCED OPTIONS
       setBlur: function(blurType) {
         // Could make this similar to addClassToNotif function below, but will not
-        if(blurType == "no-blur") {
+        if(blurType === "no-blur") {
           document.getElementById('content').classList.add('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.remove('blur-large');
@@ -128,14 +129,14 @@
           this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
 
         }
-        else if(blurType == "blur") {
+        else if(blurType === "blur") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.add('blur');
           document.getElementById('content').classList.remove('blur-large');
 
           this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
         }
-        else if(blurType == "blur-large") {
+        else if(blurType === "blur-large") {
           document.getElementById('content').classList.remove('no-blur');
           document.getElementById('content').classList.remove('blur');
           document.getElementById('content').classList.add('blur-large');
@@ -145,17 +146,17 @@
       },
       addClassToNotif: function(classesAdd, classesRemove) {
         // For all notification div elements found
-        var maxElements = document.getElementsByClassName('vs-noti-contenedor');
-        for(var i = 0; i < maxElements.length; i++) {
-          var element = document.getElementsByClassName('vs-noti-contenedor')[i];
+        let maxElements = document.getElementsByClassName('vs-noti-contenedor');
+        for(let i = 0; i < maxElements.length; i++) {
+          let element = document.getElementsByClassName('vs-noti-contenedor')[i];
 
           // Add all classes in classAdd array
-          for(var j = 0; j < classesAdd.length; j++) {
+          for(let j = 0; j < classesAdd.length; j++) {
             element.classList.add(classesAdd[j]);
           }
 
           // Remove all classes in classRemove array
-          for(var j = 0; j < classesRemove.length; j++) {
+          for(let j = 0; j < classesRemove.length; j++) {
             element.classList.remove(classesRemove[j]);
           }
         }
@@ -168,6 +169,8 @@
 </script>
 
 <style lang="scss">
+  // TODO: Remove duplicate of following SCSS in AdvancedOptions.vue
+  // while still displaying advancedOptions.vue properly
 #options {
     display: flex;
     flex-direction: column;
