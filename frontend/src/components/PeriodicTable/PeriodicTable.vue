@@ -61,7 +61,7 @@
         <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, eColors[index].color, element.period, element.group]">
           <div v-cloak class="element-inner">
             <!--<p>{{ index + 1 }}</p> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-            <p class="element-atomicNumber element-secondary-info">{{ element.atomicNumber }}</p>
+            <p class="element-atomicNumber element-secondary-info">{{ element.eLabel }}</p>
             <p class="element-abbreviation element-primary-info">{{ element.abbreviation }}</p>
             <p class="element-name element-secondary-info">{{ element.name }}</p>
             <p class="element-atomicMass element-secondary-info">{{ element.atomicMass }}</p>
@@ -108,7 +108,7 @@
         
         eSimple: [],
         eColors: [],
-        ready: false,
+        ready: true,
 
         hoverAtomicNumber: '1',
         hoverAbbreviation: 'H',
@@ -137,7 +137,7 @@
         if(this.clickActive === false) {
           this.hoverIndex = index;
           // Update element overview (left box)
-          this.hoverAtomicNumber = this.elements[index].atomicNumber;
+          this.hoverAtomicNumber = this.elements[index].eLabel;
           this.hoverAbbreviation = this.elements[index].abbreviation;
           this.hoverName = this.elements[index].name;
           this.hoverAtomicMass = this.elements[index].atomicMass;
@@ -380,9 +380,28 @@
     },
     created() {
       let that = this;
+      axios.get('/api/data/element/color')
+        .then(function(response) {
+          that.eColors = response.data;
+          console.log("Color Complete");
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+
+      axios.get('/api/data/element/discovered')
+        .then(function(response) {
+          that.eDiscovered = response.data;
+          console.log("Discovered Complete");
+        })
+        .catch(function(error) {
+          console.log(error)
+        });
+
       axios.get('/api/data/element/placement')
         .then(function(response) {
-          that.ePlacement = response;
+          that.ePlacement = response.data;
+          console.log("Placement Complete");
         })
         .catch(function(error) {
           console.log(error);
@@ -390,23 +409,18 @@
 
       axios.get('/api/data/element/simple')
         .then(function(response) {
-          that.eSimple = response;
+          that.elements = response.data;
+          console.log("Simple Complete");
         })
         .catch(function(error) {
           console.log(error);
         });
 
-      axios.get('/api/data/element/color')
-        .then(function(response) {
-          that.eColors = response;
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
 
       axios.get('/api/data/label/group')
         .then(function(response) {
-          that.groupData = response;
+          that.groupData = response.data;
+          console.log("Group Complete");
       })
         .catch(function(error) {
           console.log(error);
@@ -414,11 +428,13 @@
 
       axios.get('/api/data/label/period')
         .then(function(response) {
-          that.periodData = response;
+          that.periodData = response.data;
+          console.log("Period Complete");
         })
         .catch(function(error) {
           console.log(error);
         });
+
 
       bus.$on('themeChanged', (data) => {
         this.themeType = data;

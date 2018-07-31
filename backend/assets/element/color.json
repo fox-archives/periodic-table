@@ -1,7 +1,6 @@
 [
   { "eLabel": 1,        "defaultColor": "blue", "color": "blue" },
   { "eLabel": 2,        "defaultColor": "blue", "color": "blue" },
-
   { "eLabel": 3,        "defaultColor": "blue", "color": "blue" },
   { "eLabel": 4,        "defaultColor": "blue", "color": "blue" },
   { "eLabel": 5,        "defaultColor": "red", "color": "red" },
@@ -10,7 +9,6 @@
   { "eLabel": 8,        "defaultColor": "red", "color": "red" },
   { "eLabel": 9,        "defaultColor": "red", "color": "red" },
   { "eLabel": 10,       "defaultColor": "red", "color": "red" },
-
   { "eLabel": 11,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 12,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 13,       "defaultColor": "red", "color": "red" },
@@ -19,7 +17,6 @@
   { "eLabel": 16,       "defaultColor": "red", "color": "red" },
   { "eLabel": 17,       "defaultColor": "red", "color": "red" },
   { "eLabel": 18,       "defaultColor": "red", "color": "red" },
-
   { "eLabel": 19,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 20,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 21,       "defaultColor": "green", "color": "green" },
@@ -38,7 +35,6 @@
   { "eLabel": 34,       "defaultColor": "red", "color": "red" },
   { "eLabel": 35,       "defaultColor": "red", "color": "red" },
   { "eLabel": 36,       "defaultColor": "red", "color": "red" },
-
   { "eLabel": 37,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 38,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 39,       "defaultColor": "green", "color": "green" },
@@ -57,10 +53,8 @@
   { "eLabel": 52,       "defaultColor": "red", "color": "red" },
   { "eLabel": 53,       "defaultColor": "red", "color": "red" },
   { "eLabel": 54,       "defaultColor": "red", "color": "red" },
-
   { "eLabel": 55,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 56,       "defaultColor": "blue", "color": "blue" },
-
   { "eLabel": "57-71",  "defaultColor": "orange", "color": "orange" },
   { "eLabel": 57,       "defaultColor": "orange", "color": "orange" },
   { "eLabel": 58,       "defaultColor": "orange", "color": "orange" },
@@ -77,7 +71,6 @@
   { "eLabel": 69,       "defaultColor": "orange", "color": "orange" },
   { "eLabel": 70,       "defaultColor": "orange", "color": "orange" },
   { "eLabel": 71,       "defaultColor": "orange", "color": "orange" },
-
   { "eLabel": 72,       "defaultColor": "green", "color": "green" },
   { "eLabel": 73,       "defaultColor": "green", "color": "green" },
   { "eLabel": 74,       "defaultColor": "green", "color": "green" },
@@ -93,10 +86,8 @@
   { "eLabel": 84,       "defaultColor": "red", "color": "red" },
   { "eLabel": 85,       "defaultColor": "red", "color": "red" },
   { "eLabel": 86,       "defaultColor": "red", "color": "red" },
-
   { "eLabel": 87,       "defaultColor": "blue", "color": "blue" },
   { "eLabel": 88,       "defaultColor": "blue", "color": "blue" },
-
   { "eLabel": "89-103", "defaultColor": "orange", "color": "orange" },
   { "eLabel": 89,       "defaultColor": "orange", "color": "orange" },
   { "eLabel": 90,       "defaultColor": "orange", "color": "orange" },
@@ -113,7 +104,6 @@
   { "eLabel": 101,      "defaultColor": "orange", "color": "orange" },
   { "eLabel": 102,      "defaultColor": "orange", "color": "orange" },
   { "eLabel": 103,      "defaultColor": "orange", "color": "orange" },
-
   { "eLabel": 104,      "defaultColor": "green", "color": "green" },
   { "eLabel": 105,      "defaultColor": "green", "color": "green" },
   { "eLabel": 106,      "defaultColor": "green", "color": "green" },
