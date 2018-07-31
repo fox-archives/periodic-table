@@ -305,7 +305,7 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   // and end it before the very next row
   // Note, all p-$i classes are div elements
   // Note, p-$i classes were created using v-bind, in a for loop for each element
-  // Note, p-$i stands for the ith period, or the nth period in which the elment is located on the periodic table
+  // Note, p-$i stands for the ith period.json, or the nth period.json in which the elment is located on the periodic table
   .r-#{$i} {
     grid-row-start: #{$i};
     grid-row-end: #{$i + 2};

@@ -1,3 +1,14 @@
 node_modules/
 package-lock.json
 .idea
+.DS_Store
+
+# macOS OSX #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+>>>>>>> 4299dce5dd0c0fa2db4a3b426b6686a6895461b5

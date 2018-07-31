@@ -112,36 +112,3 @@
     padding: 10px 10px 10px 10px;
   }
 }
-
-// POPUP MENUSz
-// SETTINGS (OPTIONS)
-.options {
-}
-
-.options ul {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 200px;
-}
-
-.options li {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-}
-
-.options li p {
-  font-family: robotolight;
-  padding-bottom: 5px;
-}
-
-// INFORMATION
-// Before settings icons in navbar
-.nav-info ul {
-  list-style-type: none;
-}
-
-.nav-info li {
-  padding-bottom: 10px;
-}

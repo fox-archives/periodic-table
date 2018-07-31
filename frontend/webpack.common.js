@@ -1,7 +1,8 @@
-const path = require('path')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -65,7 +66,16 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',
+      filename: 'index.html',
       template: './index.html'
     })
+    // TODO: Automatically copy the html file (created by HtmlWebpackPlugin) to the backend w/ build and prod scripts
+    // The following code does not work for some reason (even with the CopyWebpackPlugin require statement)
+    // new CopyWebpackPlugin([
+    //   {
+    //     from: './dist/index.html',
+    //     to: '../../backend'
+    //   }
+    // ])
   ]
 }
