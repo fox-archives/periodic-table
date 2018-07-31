@@ -37,7 +37,7 @@
 
     <div v-if="ready" id="grid-container">
       <main id="grid">
-        <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANNEL -->
+        <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANEL -->
         <section v-if="infoLocationType === 'info-obtrusive'" id="element-overview" v-bind:class="hoverColor" v-cloak>
             <div id="element-overview-inner">
               <p class="element-ov-secondary-info">{{ hoverAtomicNumber }}</p>
@@ -56,31 +56,6 @@
             <p id="element-discoverer" class="element-d-secondary-info">{{ hoverDiscoveredBy }}</p>
           </div>
         </section>
-
-        <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer" v-for="(element, index) in elements" v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]" v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]" v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]" v-bind:class="[element.column, element.row, eColors[index].color, element.period, element.group]">
-          <div v-cloak class="element-inner">
-            <!--<p>{{ index + 1 }}</p> Turn this element on if not sure if v-for loop "linked" w/ each atomic element (should be the same)-->
-            <p class="element-atomicNumber element-secondary-info">{{ element.eLabel }}</p>
-            <p class="element-abbreviation element-primary-info">{{ element.abbreviation }}</p>
-            <p class="element-name element-secondary-info">{{ element.name }}</p>
-            <p class="element-atomicMass element-secondary-info">{{ element.atomicMass }}</p>
-          </div>
-        </div>
-
-        <!-- PERIOD LABELS -->
-        <div class="label-period-outer" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
-          <div v-cloak class="label-period-inner" v-bind:class="periodData[index].color" v-on:mouseover="[darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="periodNotification(index)">
-            <p class="label-text">{{ period.display }}</p>
-          </div>
-        </div>
-
-        <!-- GROUP LABELS -->
-        <div class="label-group-outer" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
-          <div v-cloak class="label-group-inner" v-bind:class="groupData[index].color" v-on:mouseover="[darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]" v-on:mouseleave="[darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]" v-on:click="groupNotification(index)">
-            <p class="label-text">{{ group.display }}</p>
-          </div>
-        </div>
       </main>
     </div>
   </div>
@@ -95,21 +70,21 @@
     data() {
       return {
         elements: [],
-        //periodLabels: [],
-        //groupLabels: [],
-        //elementDisplayProps: [],
+
+        // Simple data about each element
+        simpleData: [],
 
         // Placement of Each Element
-        ePlacement: [],
+        ePlacements: [],
 
         // Placement and data of each Period and Group Label
         periodData: [],
         groupData: [],
-        
-        eSimple: [],
+
         eColors: [],
         ready: true,
 
+        // Element Defaults
         hoverAtomicNumber: '1',
         hoverAbbreviation: 'H',
         hoverName: 'Hydrogen',
@@ -148,7 +123,34 @@
           this.hoverColor = this.eColors[index].defaultColor;
         }
       },
+      darkenElements: function(index, prefix, type) {
+        // On hover, clear all other label highlights
+        this.clearLabelExcept(-1, -1);
+        // Change element description and shade on hover of label (only if element description is inside)
+        if(this.infoLocationType === "info-obtrusive") {
+          this.hoverColor = "light-" + this.eColors[this.hoverIndex].defaultColor;
+        }
 
+        let className = this.labelNoneToClass(index + 1, type);
+
+        // Get elements that need to be lightened (elements to be lightened either in a period.json or group)
+        if(type === "period") {
+          for(let i = 0; i < this.elements.length; i++) {
+            if(this.elements[i].period === className) {
+              let defaultColor = this.eColors[i].defaultColor;
+              Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
+            }
+          }
+        }
+        else if(type === "group") {
+          for(let i = 0; i < this.elements.length; i++) {
+            if(this.elements[i].group === className) {
+              let defaultColor = this.eColors[i].defaultColor;
+              Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
+            }
+          }
+        }
+      },
       // Changes shade of hovered element (lighten or darken, or default)
       setElementColor: function(index, shade) {
         if(this.clickedElementIndex !== index) {
@@ -176,34 +178,7 @@
           }
         }
       },
-      darkenElements: function(index, prefix, type) {
-        // On hover, clear all other label highlights
-        this.clearLabelExcept(-1, -1);
-        // Change element description and shade on hover of label (only if element description is inside)
-        if(this.infoLocationType === "info-obtrusive") {
-          this.hoverColor = "light-" + this.eColors[this.hoverIndex].defaultColor;
-        }
 
-        var className = this.labelNoneToClass(index + 1, type);
-
-        // Get elements that need to be lightened (elements to be lightened either in a period.json or group)
-        if(type === "period") {
-          for(let i = 0; i < this.elements.length; i++) {
-            if(this.elements[i].period === className) {
-              let defaultColor = this.eColors[i].defaultColor;
-              Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
-            }
-          }
-        }
-        else if(type === "group") {
-          for(let i = 0; i < this.elements.length; i++) {
-            if(this.elements[i].group === className) {
-              let defaultColor = this.eColors[i].defaultColor;
-              Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
-            }
-          }
-        }
-      },
       lightenElements: function(index, prefix, type, typeShort) {
         let className = this.labelNoneToClass(index + 1, type);
 
@@ -400,7 +375,7 @@
 
       axios.get('/api/data/element/placement')
         .then(function(response) {
-          that.ePlacement = response.data;
+          that.ePlacements = response.data;
           console.log("Placement Complete");
         })
         .catch(function(error) {
@@ -409,7 +384,7 @@
 
       axios.get('/api/data/element/simple')
         .then(function(response) {
-          that.elements = response.data;
+          that.simpleData = response.data;
           console.log("Simple Complete");
         })
         .catch(function(error) {
@@ -449,7 +424,7 @@
   }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   @import 'Styles/variables.scss';
   @import './periodic-table.scss';
   @import './periodic-table-themes.scss';
