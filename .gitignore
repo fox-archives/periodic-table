@@ -1,12 +1,8 @@
 node_modules/
 package-lock.json
-<<<<<<< HEAD
 .idea/
 .idea
 .idea/workspace.xml
-=======
-.idea
->>>>>>> 3c020f1b4f10808b527e7bfe3fec0dcaa2dfc0cc
 .DS_Store
 
 # macOS OSX #
@@ -17,4 +13,3 @@ package-lock.json
 .Trashes
 ehthumbs.db
 Thumbs.db
->>>>>>> 4299dce5dd0c0fa2db4a3b426b6686a6895461b5

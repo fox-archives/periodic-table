@@ -36,6 +36,24 @@
     </section>
 
     <div v-if="ready" id="grid-container">
+
+      <!-- TEMPORARY ELEMENTS (WILL LATER ADD IN COMPONENT FOR THIS -->
+      <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
+      <div class="element-outer"
+           v-for="(ePlacement, index) in 10"
+           v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]"
+           v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]"
+           v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]"
+           v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
+      >
+        <div v-cloak class="element-inner">
+          <p class="element-atomicNumber element-secondary-info">{{ simpleData[index].eLabel }}</p>
+          <p class="element-abbreviation element-primary-info">{{ simpleData[index].abbreviation }}</p>
+          <p class="element-name element-secondary-info">{{ simpleData[index].name }}</p>
+          <p class="element-atomicMass element-secondary-info">{{ simpleData[index].atomicMass }}</p>
+        </div>
+      </div>
+
       <main id="grid">
         <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANEL -->
         <section v-if="infoLocationType === 'info-obtrusive'" id="element-overview" v-bind:class="hoverColor" v-cloak>
@@ -63,14 +81,12 @@
 
 <script type="text/javascript">
   import bus from '../bus.js';
-  const axios = require('axios');
+  import axios from 'axios';
 
   export default {
     name: 'PeriodicTable',
     data() {
       return {
-        elements: [],
-
         // Simple data about each element
         simpleData: [],
 
@@ -82,7 +98,7 @@
         groupData: [],
 
         eColors: [],
-        ready: false,
+        ready: true,
 
         // Element Defaults
         hoverAtomicNumber: '1',
@@ -108,7 +124,7 @@
     },
     methods: {
       updateElementInfoAndDesc: function(index) {
-      // Do not add one to index because v-for array starts at 0 and, trying to get the element at a certain position in v-for array loop
+        // Do not add one to index because v-for array starts at 0 and, trying to get the element at a certain position in v-for array loop
         if(this.clickActive === false) {
           this.hoverIndex = index;
           // Update element overview (left box)
@@ -220,7 +236,7 @@
           // Recall Act. and Lan. have period.json of 0, and they don't have period.json / group labels
           if(period > 0) {
             // Darken the labels if the mouse is entering an element
-           if(isMouseOver === "true") {
+            if(isMouseOver === "true") {
               this.periodData[period - 1].color = "dark";
             }
             // Lighten the labels if the mouse is leaving an element
@@ -337,8 +353,8 @@
         }
       },
       periodNotification: function(index) {
-       // For now, use Vuesax notifications because they look better (and because ElementUI does not seem to display names properly)
-       // Unless one can customize the whites and greys of Vuesax, must move over to ElementUI eventually
+        // For now, use Vuesax notifications because they look better (and because ElementUI does not seem to display names properly)
+        // Unless one can customize the whites and greys of Vuesax, must move over to ElementUI eventually
         this.$vs.notify({
           title: this.getPeriodGroupName('period', this.periodData[index].display),
           text: this.periodData[index].name,
@@ -354,62 +370,7 @@
       },
     },
     created() {
-      let that = this;
-      axios.get('/api/data/element/color')
-        .then(function(response) {
-          that.eColors = response.data;
-          console.log("Color Complete");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-
-      axios.get('/api/data/element/discovered')
-        .then(function(response) {
-          that.eDiscovered = response.data;
-          console.log("Discovered Complete");
-        })
-        .catch(function(error) {
-          console.log(error)
-        });
-
-      axios.get('/api/data/element/placement')
-        .then(function(response) {
-          that.ePlacements = response.data;
-          console.log("Placement Complete");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-
-      axios.get('/api/data/element/simple')
-        .then(function(response) {
-          that.simpleData = response.data;
-          console.log("Simple Complete");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-
-
-      axios.get('/api/data/label/group')
-        .then(function(response) {
-          that.groupData = response.data;
-          console.log("Group Complete");
-      })
-        .catch(function(error) {
-          console.log(error);
-      });
-
-      axios.get('/api/data/label/period')
-        .then(function(response) {
-          that.periodData = response.data;
-          console.log("Period Complete");
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
-
+      this.$store.dispatch('loadElementData');
 
       bus.$on('themeChanged', (data) => {
         this.themeType = data;
@@ -419,10 +380,10 @@
       });
     },
     computed: {
-
     }
   }
 </script>
+
 
 <style lang="scss">
   @import 'Styles/variables.scss';

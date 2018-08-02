@@ -37,27 +37,32 @@ app.get('/favicon.ico', function(req, res) {
 });
 
 // Element Information
+// Each element color
 app.get('/api/data/element/color', function(req, res) {
   res.json(color)
 });
 
-app.get('/api/data/element/discovered.json', function(req, res) {
+// Discovery Data and Discoverer
+app.get('/api/data/element/discovered', function(req, res) {
   res.json(discovered)
 });
 
+// Placement in Array
 app.get('/api/data/element/placement', function(req, res) {
   res.json(placement)
 });
 
+// All simple element data
 app.get('/api/data/element/simple', function(req, res) {
   res.json(simple)
 });
 
-// Period / Group Labels
+// Period labels
 app.get('/api/data/label/period', function(req, res) {
   res.json(period)
 });
 
+// Group Labels
 app.get('/api/data/label/group', function(req, res) {
   res.json(group)
 });
