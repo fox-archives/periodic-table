@@ -82,7 +82,7 @@
         groupData: [],
 
         eColors: [],
-        ready: true,
+        ready: false,
 
         // Element Defaults
         hoverAtomicNumber: '1',

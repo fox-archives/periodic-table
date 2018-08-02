@@ -1,6 +1,8 @@
 node_modules/
 package-lock.json
 .idea/
+.idea
+.idea/workspace.xml
 .DS_Store
 
 # macOS OSX #
