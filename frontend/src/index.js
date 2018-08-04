@@ -1,4 +1,5 @@
 import Vue from 'vue';
+window.Vue = Vue;
 
 // Use Vuex
 import store from './store.js';
@@ -25,8 +26,9 @@ Vue.use(VueFeatherIcon);
 
 // Mount Vue Instance to the DOM
 new Vue({
+  el: '#app',
   router: router,
   store: store,
   mode: 'history',
   render: h => h(App)
-}).$mount('#app');
+});

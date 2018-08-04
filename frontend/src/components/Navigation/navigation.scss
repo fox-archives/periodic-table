@@ -32,7 +32,7 @@
 #nav-content li, #nav-mobile li {
   display: flex;
   align-items: center;
-  padding: 10px 17px 10px 17px;
+  padding: 10px 16px 10px 16px;
   // If changing this make sure to update the JS (when clicking on nav element, it changes the bottom border radius to zero)
   border-radius: 3px;
 }
@@ -70,7 +70,7 @@
 @media (max-width: 1261px) {
   // Make padding smaller
   #nav-content li {
-    padding: 10px 15px 10px 15px;
+    padding: 10px 14px 10px 14px;
   }
 
   //Make text smaller
