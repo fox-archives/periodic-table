@@ -1,5 +1,9 @@
 <template>
   <div id="pt" class="has-shadow" v-bind:class="themeType">
+      <button @click="setColorOfAllButOneGroup({
+      prefix: 'light-',
+      exclude: 7
+      })">Press to Test</button>
     <!-- (INFO UNOBTRUSIVE) ELEMENT OVERVIEW PANEL -->
     <section v-if="infoLocationType === 'info-unobtrusive'" id="det">
       <li id="unobtrusive-overview">
@@ -39,9 +43,9 @@
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
         <div class="element-outer"
              v-for="(ePlacement, index) in ePlacements"
-             v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateElementInfoAndDesc(index)]"
-             v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateElementInfoAndDesc(index)]"
-             v-on:click="[clickElement(index), updateElementInfoAndDesc(index)]"
+             v-on:mouseover="[setElementColor(index, 'dark-'), changeLabelColor(index, 'true'), updateActiveElement(index)]"
+             v-on:mouseleave="[setElementColor(index, ''), changeLabelColor(index, 'false'), updateActiveElement(index)]"
+             v-on:click="[clickElement(index), updateActiveElement(index)]"
              v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
         >
           <div v-cloak class="element-inner">
@@ -77,8 +81,8 @@
         <div class="label-period-outer" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
           <div v-cloak class="label-period-inner"
                v-bind:class="periodData[index].color"
-               v-on:mouseover="[darkenElements(index, 'dark-', 'period'), lightenElements(index, 'light-', 'period', 'p-'), maintenanceAfter(index, 'mouseOver')]"
-               v-on:mouseleave="[darkenElements(index, '', 'period'), lightenElements(index, '', 'period', 'p-'), maintenanceAfter(index, 'mouseLeave')]"
+               v-on:mouseover="[highlightSection(index, 'period'), maintenanceAfter(index, 'mouseOver')]"
+               v-on:mouseleave="[highlightSection(index, 'period'), maintenanceAfter(index, 'mouseLeave')]"
                v-on:click="periodNotification(index)"
           >
             <p class="label-text">{{ period.display }}</p>
@@ -89,8 +93,8 @@
         <div class="label-group-outer" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
           <div v-cloak class="label-group-inner"
                v-bind:class="groupData[index].color"
-               v-on:mouseover="[darkenElements(index, 'dark-', 'group'), lightenElements(index, 'light-', 'group', 'g-'), maintenanceAfter(index, 'mouseOver')]"
-               v-on:mouseleave="[darkenElements(index, '', 'group'), lightenElements(index, '', 'group', 'g-'), maintenanceAfter(index, 'mouseLeave')]"
+               v-on:mouseover="[highlightSection(index, 'group'), maintenanceAfter(index, 'mouseOver')]"
+               v-on:mouseleave="[highlightSection(index, 'group'), maintenanceAfter(index, 'mouseLeave')]"
                v-on:click="groupNotification(index)"
           >
             <p class="label-text">{{ group.display }}</p>
@@ -110,13 +114,53 @@
   export default {
     name: 'PeriodicTable',
     methods: {
-      darkenElements: function(state, index, prefix, type) {
+      ...mapMutations([
+        'updateActiveElement',
+        'updateActiveElementForce',
+        'clearLabelExcept',
+        'setActiveElements',
+        'setColorOfElement',
+        'setColorOfPeriod',
+        'setColorOfGroup',
+        'setColorOfAllButOnePeriod',
+        'setColorOfAllButOneGroup'
+
+      ]),
+
+      // @param #String 'type' can be:
+      //   'period'  Want to darken a period
+      //   'group'  Want to darken a group
+      highlightSection: function(index, type) {
+        if(type === 'period') {
+          let period = index + 1;
+          this.setColorOfAllButOnePeriod({
+            // ES6: prefix,
+            prefix: 'light-', // want this to be light
+            exclude: period
+          });
+          this.setColorOfPeriod({
+            prefix: 'dark-', // want this to be dark
+            include: period
+          });
+        }
+        if(type === 'group') {
+          let group = index + 1;
+          this.setColorOfAllButOneGroup({
+            prefix: 'light-', // want this to be  light
+            exclude: group
+          });
+          this.setColorOfGroup({
+            prefix: 'dark-', // want this to be dark
+            include: group
+          });
+        }
+        /*
         // On hover, clear all other label highlights
         this.$store.commit('clearLabelExcept', {
           periodExlucde: -1,
           groupExclude: - 1
         });
-        //state.clearLabelExcept(-1, -1); old
+        // state.clearLabelExcept(-1, -1); old
 
 
         // Change element description and shade on hover of period / group label
@@ -128,7 +172,7 @@
           });
 
           // This code was actually moved to defaultToLight (
-          //this.activeElement.color = 'light-' + this.eColors[state.hoverIndex].defaultColor; old
+          // this.activeElement.color = 'light-' + this.eColors[state.hoverIndex].defaultColor; old
 
         }
 
@@ -140,100 +184,144 @@
         if(type === 'period') {
           for(let i = 0; i < this.ePlacements.length; i++) {
             if(this.ePlacements[i].period === className) {
-              let defaultColor = this.eColors[i].defaultColor;
-              // TODO: Make this a mutator
-              Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
+              this.$store.commit('setColorOfElement', {
+                prefix: prefix,
+                i: i
+              });
+
+              // let defaultColor = this.eColors[i].defaultColor; old
+              // Vue.set(this.eColors[i], 'color', (prefix + defaultColor)); old
             }
           }
         }
-        else if(type === "group") {
+        else if(type === 'group') {
           for(let i = 0; i < this.ePlacements.length; i++) {
             if(this.ePlacements[i].group === className) {
-              let defaultColor = state.eColors[i].defaultColor;
-              Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
+              this.$store.commit('setColorOfElement', {
+                prefix: prefix,
+                i: i
+              });
+
+              // let defaultColor = this.eColors[i].defaultColor; old
+              // Vue.set(this.eColors[i], 'color', (prefix + defaultColor)); old
             }
           }
         }
+        */
       },
-      // Changes shade of hovered element (lighten or darken, or default)
-      setElementColor: function(state, index, shade) {
-        if(state.clickedElementIndex !== index) {
-          // Gets current default color
-          let defaultColor = state.eColors[index].defaultColor;
 
-          // Sets current default color ('color' is the property we want to change)
-          Vue.set(state.eColors[index], 'color', (shade + defaultColor));
+      lightenElements: function(index, prefix, type) {
+
+        /*
+        let className = this.labelNoneToClass(index + 1, type);
+
+        // Get elements that need to be lightened (elements to be lightened either in a period.json or group)
+        if(type === 'period') {
+          for(let i = 0; i < this.ePlacements.length; i++) {
+            if(this.ePlacements[i].period !== className) {
+              this.$store.commit('setColorOfElement', {
+                prefix: prefix,
+                i: i
+              });
+
+              // let defaultColor = this.eColors[i].defaultColor;
+              // Vue.set(this.eColors[i], 'color', (prefix + defaultColor))
+            }
+          }
+        }
+        else if(type === 'group') {
+          for(let i = 0; i < this.ePlacements.length; i++) {
+            if(this.ePlacements[i].group !== className) {
+              this.$store.commit('setColorOfElement', {
+                prefix: prefix,
+                i: i
+              });
+
+              // let defaultColor = this.eColors[i].defaultColor; old
+              // Vue.set(this.eColors[i], 'color', (prefix + defaultColor)) old
+            }
+          }
+        }
+        */
+      },
+
+      // Changes shade of hovered element (lighten or darken, or default)
+      // TODO: Make all references of this method to the Vuex store mutator
+      setElementColor: function(index, shade) {
+        if(this.clickedElement.index !== index) {
+          this.$store.commit('setColorOfElement', {
+            prefix: shade,
+            i: index
+          });
+
+          // // OLD
+          // // Gets current default color
+          // let defaultColor = this.eColors[index].defaultColor;
+          //
+          // // Sets current default color ('color' is the property we want to change)
+          // Vue.set(this.eColors[index], 'color', (shade + defaultColor));
         }
       },
-      // Similar to setElementColor, but does it by force (sets color even if ths.clickedElementIndex is not the same as the index)
-      setElementColorForce: function(state, index, shade) {
-        // Gets current default color
-        let defaultColor = state.eColors[index].defaultColor;
+      // Similar to setElementColor, but does it by force (sets color even if this.clickedElement.index is not the same as the index)
+      setElementColorForce: function(index, shade) {
+        this.$store.commit('setColorOfElement', {
+          prefix: shade,
+          i: index
+        });
 
-        // Sets current default color
-        Vue.set(state.eColors[index], 'color', (shade + defaultColor));
+        // // OLD
+        // // Gets current default color
+        // let defaultColor = this.eColors[index].defaultColor;
+        //
+        // // Sets current default color
+        // Vue.set(this.eColors[index], 'color', (shade + defaultColor));
       },
       // Sets the color of all elements (usually the default color)
-      setAllElementsColor: function(state, shade) {
-        for(let i = 0; i < state.eColors.length; i++) {
-          if(i !== state.clickedElementIndex) {
-            let defaultColor = state.eColors[i].defaultColor;
-            Vue.set(state.eColors[i], 'color', (shade + defaultColor));
+      setAllElementsColor: function(shade) {
+        for(let i = 0; i < this.eColors.length; i++) {
+          if(i !== this.clickedElement.index) {
+            this.$store.commit('setColorOfElement', {
+              prefix: shade,
+              i: i
+            });
+
+            // let defaultColor = this.eColors[i].defaultColor; OLD
+            // Vue.set(this.eColors[i], 'color', (shade + defaultColor)); OLD
           }
         }
       },
-      lightenElements: function(state, index, prefix, type, typeShort) {
-
-        let className = state.labelNoneToClass(index + 1, type);
-
-        // Get elements that need to be lighened (elements to be lightened either in a period.json or group)
-        if(type === "period") {
-          for(let i = 0; i < state.ePlacements.length; i++) {
-            if(state.ePlacements[i].period !== className) {
-              let defaultColor = state.eColors[i].defaultColor;
-              Vue.set(state.eColors[i], 'color', (prefix + defaultColor))
-            }
-          }
-        }
-        else if(type === "group") {
-          for(let i = 0; i < state.ePlacements.length; i++) {
-            if(state.ePlacements[i].group !== className) {
-              let defaultColor = state.eColors[i].defaultColor;
-              Vue.set(state.eColors[i], 'color', (prefix + defaultColor))
-            }
-          }
-        }
-      },
-      changeLabelColor: function(state, index, isMouseOver) {
+      changeLabelColor: function(index, isMouseOver) {
         // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
         // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
 
         // Get the period.json or group value corresponding to the hovered over element (ex. c-11, p-5)
-        let periodFull = state.ePlacements[index].period;
-        let groupFull = state.ePlacements[index].group;
+        let periodFull = this.ePlacements[index].period;
+        let groupFull = this.ePlacements[index].group;
+        //console.log('Change Label Color Called');
+        //console.log(periodFull + ' ' + groupFull);
 
         // Concatenate period.json or group values to a number (ex. 11, 5)
-        let period = state.labelClassToNone(periodFull);
-        let group = state.labelClassToNone(groupFull);
+        let period = this.labelClassToNone(periodFull);
+        let group = this.labelClassToNone(groupFull);
 
-        if(state.clickActive === false) {
+        if(this.clickActive === false) {
           // When changing a label color, make sure all others are turned off first
           this.$store.commit('clearLabelExcept', {
             periodExclude: -1,
-            groupExclude: -1,
+            groupExclude: -1
           });
-          //state.clearLabelExcept(-1, -1); old
+          // this.clearLabelExcept(-1, -1); old
 
           // Only darken the label if the element actually has a valid period.json number (within the actual range of the periodic table)
           // Recall Act. and Lan. have period.json of 0, and they don't have period.json / group labels
           if(period > 0) {
             // Darken the labels if the mouse is entering an element
-            if(isMouseOver === "true") {
-              state.periodData[period - 1].color = "dark";
+            if(isMouseOver === 'true') {
+              this.periodData[period - 1].color = 'dark';
             }
             // Lighten the labels if the mouse is leaving an element
-            else if(isMouseOver === "false") {
-              state.periodData[period - 1].color = "light";
+            else if(isMouseOver === 'false') {
+              this.periodData[period - 1].color = 'light';
             }
             else {
               console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
@@ -243,12 +331,12 @@
           // Recall Act. and Lan. have group of 0, and they don't have period.json / group labels
           if (group > 0) {
             // Darken the labels if the mouse is entering an element
-            if(isMouseOver === "true") {
-              state.groupData[group - 1].color = "dark";
+            if(isMouseOver === 'true') {
+              this.groupData[group - 1].color = 'dark';
             }
             // Lighten the labels if the moues is leaving an element
-            else if(isMouseOver === "false") {
-              state.groupData[group - 1].color = "light";
+            else if(isMouseOver === 'false') {
+              this.groupData[group - 1].color = 'light';
             }
             else {
               console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
@@ -257,110 +345,119 @@
         }
       },
       // type can either be "mouesOver" or "mouseLeave"
-      maintenanceAfter: function(state, index, type) {
-        if(type === "mouseLeave") {
+      maintenanceAfter: function(index, type) {
+        if(type === 'mouseLeave') {
           // By 'click' being active, mean that the user clicked on an element, and wants to display that element, even if mouse moves away from element
           // If click is active, on mouse leave of label, show the previous element that was clicked on (because it got 'erased' on mouseover of label)
-          if(state.clickActive === true) {
-            // Recall that state.clickedElementPeriod and state.clickedElementGroup are NOT indexes; they are actual values
-            // We don't want to change color when state.clickedElementPeriod / group is 0 that value is for groupless elements (lanth. and act. elements)
-            // Nor do we want to change color when state.clickedElementPeriod / group is -1, because that occurs when state.clickActive is false (I think state is already covered, but just a precaution)
-            if(state.clickedElementPeriod > 0) {
-              state.periodData[state.clickedElementPeriod - 1].color = "dark";
+          if(this.clickActive === true) {
+            // Recall that this.clickedElement.period and this.clickedElement.group are NOT indexes; they are actual values
+            // We don't want to change color when this.clickedElement.period / group is 0 that value is for groupless elements (lanth. and act. elements)
+            // Nor do we want to change color when this.clickedElement.period / group is -1, because that occurs when this.clickActive is false (I think this is already covered, but just a precaution)
+            if(this.clickedElement.period > 0) {
+              this.periodData[this.clickedElement.period - 1].color = 'dark';
             }
-            if(state.clickedElementGroup > 0) {
-              state.groupData[state.clickedElementGroup - 1].color = "dark";
+            if(this.clickedElement.group > 0) {
+              this.groupData[this.clickedElement.group - 1].color = 'dark';
             }
-            Vue.set(state.eColors[state.clickedElementIndex], 'color', ("supdark-" + state.eColors[state.clickedElementIndex].color));
+
+            Vue.set(this.eColors[this.clickedElement.index], 'color', ('supdark-' + this.eColors[this.clickedElement.index].color));
+            // Vue.set(this.eColors[this.clickedElementIndex], 'color', ('supdark-' + this.eColors[this.clickedElementIndex].color)); old
           }
           // Make element overview and desc normal color
-          state.hoverColor = state.eColors[state.hoverIndex].defaultColor;
+          this.hoverColor = this.eColors[this.activeElement.index].defaultColor;
         }
       },
 
       // When element is clicked, darken it
-      clickElement: function(state, index) {
+      clickElement: function(index) {
         // Change element info and label color (in case the mouse does not movein or moveout the element)
-        state.clickActive = false;
-        this.changeLabelColor(index, "true");
-        this.updateElementInfoAndDesc(index);
-        state.clickActive = true;
+        this.clickedElement.active = false;
+        this.changeLabelColor(index, 'true');
+        this.updateActiveElement(index);
+        this.clickedElement.active = true;
 
         // What to do if clicking for the first time, or clicking on a different element
         // Save the index (element index, period.json index, and group index) of the clicked on element
-        if(state.clickedElementIndex === -1 || state.clickedElementIndex !== index) {
-          state.clickedElementIndex = index;
+        if(this.clickedElement.active === -1 || this.clickedElement.active !== index) {
+          this.clickedElement.active = index;
 
-          state.clickedElementPeriod = state.labelClassToNone( state.ePlacements[index].period );
-          state.clickedElementGroup = state.labelClassToNone( state.ePlacements[index].group );
+          this.clickedElement.period = this.labelClassToNone( this.ePlacements[index].period );
+          this.clickedElement.group = this.labelClassToNone( this.ePlacements[index].group );
 
 
           // Sets color of all elements in periodic table
-          state.setAllElementsColor('');
-          state.setElementColorForce(index, "supdark-");
+          this.setAllElementsColor('');
+          this.setElementColorForce(index, 'supdark-');
         }
         // What to do if clicking on the same element twice (cancels elementHold)
-        else if(state.clickedElementIndex === index) {
-          state.clickActive = false;
-          state.clickedElementIndex = -1;
-          state.clickedElementPeriod = -1;
-          state.clickedElementGroup = -1;
+        else if(this.clickedElement.index === index) {
+          this.clickActive = false;
+          this.clickedElement.index = -1;
+          this.clickedElement.period = -1;
+          this.clickedElement.group = -1;
 
           // Sets colour of all elements in periodic table
-          state.setAllElementsColor('');
-          state.setElementColorForce(index, "dark-");
+          this.setAllElementsColor('');
+          this.setElementColorForce(index, 'dark-');
         }
       },
 
 
       // Keep Here
       // TODO: Import this as a mixin later
-      labelClassToNone: function(state, labelNumber) {
+      labelClassToNone: function(labelNumber) {
         return labelNumber.substring(2);
       },
-      labelNoneToClass: function(state, labelNumber, type) {
+      labelNoneToClass: function(labelNumber, type) {
         // className are the classes that need to be highlighted "p" stands for period.json, "g" stands for group
-        if(type === "period") {
-          return "p-" + (labelNumber);
+        if(type === 'period') {
+          return 'p-' + (labelNumber);
         }
-        else if(type === "group") {
-          return "g-" + (labelNumber);
+        else if(type === 'group') {
+          return 'g-' + (labelNumber);
         }
       },
       // OUTPUT: Group 1 / Period 7
-      getPeriodGroupName: function(state, type, number) {
-        if(type === "period") {
-          return "Period " + number;
+      getPeriodGroupName: function(type, number) {
+        if(type === 'period') {
+          return 'Period ' + number;
         }
-        else if(type === "group") {
-          return "Group " + number;
+        else if(type === 'group') {
+          return 'Group ' + number;
         }
       },
-      periodNotification: function(state, index) {
-        state.$vs.notify({
-          title: this.getPeriodGroupName('period', state.periodData[index].display),
-          text: state.periodData[index].name,
+      periodNotification: function(index) {
+        this.$vs.notify({
+          title: this.getPeriodGroupName('period', this.periodData[index].display),
+          text: this.periodData[index].name,
           time: 3000
         });
       },
-      groupNotification: function(state, index) {
-        state.$vs.notify({
-          title: this.getPeriodGroupName('group', state.groupData[index].display),
-          text: state.groupData[index].name,
+      groupNotification: function(index) {
+        this.$vs.notify({
+          title: this.getPeriodGroupName('group', this.groupData[index].display),
+          text: this.groupData[index].name,
           time: 3000
         });
-      }
-    },
-    created() {
-      this.$store.dispatch('loadElementData');
+      },
 
-      // TODO: Implement theme change with global Vuex
-      // bus.$on('themeChanged', (data) => {
-      //   this.themeType = data;
-      // });
-      // bus.$on('infoLocationChanged', (data) => {
-      //   this.infoLocationType = data;
-      // });
+      /*
+      getElementPeriod: function(index) {
+        // This is the full period (ex. p-0, p-3)
+        let fullPeriod = this.ePlacements[index].period;
+        console.log(fullPeriod);
+
+        // We want to return the period in a numerical form, without 'p-'
+        return Number(this.labelClassToNone(fullPeriod));
+      },
+      getElementGroup: function(index) {
+        // This is the full group (ex. g-0, g-5)
+        let fullGroup = this.ePlacements[index].group;
+
+        // We want to return the group in a numerical form, without 'g-'
+        return Number(this.labelClassToNone(fullGroup));
+      }
+      */
     },
     computed: {
       // Mix the getters into computed with object spread operator
@@ -385,26 +482,19 @@
       ]),
 
     },
-    methods: {
-      ...mapMutations([
-        'updateActiveElement',
-        'updateActiveElementForce',
-        'clearLabelExcept'
-
-      ]),
-      updateElementInfoAndDesc(index) {
-        this.$store.commit('updateElementInfoAndDesc', index);
-      },
-      darkenElements(index, prefix, type) {
-        this.$store.commit('darkenElements', index, prefix, type);
-      },
-      setElementColor(index, shade) {
-        this.$store.commit('setElementColor', index, shade);
-      },
-
-    },
     components: {
       Elements
+    },
+    created() {
+      this.$store.dispatch('loadElementData');
+
+      // TODO: Implement theme change with global Vuex
+      // bus.$on('themeChanged', (data) => {
+      //   this.themeType = data;
+      // });
+      // bus.$on('infoLocationChanged', (data) => {
+      //   this.infoLocationType = data;
+      // });
     }
   }
 </script>

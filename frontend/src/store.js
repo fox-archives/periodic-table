@@ -37,13 +37,18 @@ export default new Vuex.Store({
 
     // Data about a clicked element
     clickedElement: {
-      clickActive: false,
+      // COMENTED OUT OLD VALUES
+      // clickActive: false,
+      active: false,
 
       // When user clicks, want to make clicked element darker than if it was highlighted
       // This also keeps track of the clicked element (if a user decides to hover over a group or period label, changing all element color
-      clickedElementIndex: -1,
-      clickedElementPeriod: -1,
-      clickedElementGroup: -1,
+      // clickedElementIndex: -1,
+      // clickedElementPeriod: -1,
+      // clickedElementGroup: -1,
+      index: -1,
+      period: -1,
+      group: -1
     },
 
     // Changeable options
@@ -162,8 +167,97 @@ export default new Vuex.Store({
           state.activeElement[property] = newProperties[property];
         }
       }
-
     },
+    // Sets the color of any elements in the periodic table (NOT the default color)
+    setColorOfElement: function(state, payload) {
+      // Payload contains an object containing properties
+      console.log("setColorOfElement Called");
+
+      let defaultColor = state.eColors[payload.i].defaultColor;
+      Vue.set(state.eColors[payload.i], 'color', (payload.prefix + defaultColor));
+    },
+
+
+
+
+    // NEW METHODS (MORE EFFICIENT)
+
+    // @param #object 'payload' contains properties:
+    //   (req) .prefix  Prefix to be added before the original color of element
+    //   (req) .exclude  Period to exclude setting the color of
+    setColorOfAllButOnePeriod: function(state, payload) {
+      for(let i = 0; i < state.ePlacements.length; i++) {
+        // elementPeriod represents the period number of a given periodic table element
+        let elementPeriod = state.ePlacements[i].period.substring(2);
+
+        // defaultColor represents default color of a given periodic table element
+        let defaultColor = state.eColors[i].defaultColor;
+
+        // If the element period is excluded (from @param 'payload')
+        // Allow type coercion (so '1' == 1)
+        if(elementPeriod != payload.exclude) {
+          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+        }
+      }
+    },
+
+    // @param #object 'payload' contains properties:
+    //   (req) .prefix  Prefix to be added before the original color of element
+    //   (req) .exclude  Group to be excluded setting the color of
+    setColorOfAllButOneGroup: function(state, payload) {
+      for(let i = 0; i < state.ePlacements.length; i++) {
+        // elementGroup represents the group number of a given periodic table element
+        let elementGroup = state.ePlacements[i].group.substring(2);
+
+        // defaultColor represents default color of a given periodic table element
+        let defaultColor = state.eColors[i].defaultColor;
+
+        // If the element group is excluded (from @param 'payload')
+        // Allow type coercion (so '1' == 1)
+        if(elementGroup != payload.exclude) {
+          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+        }
+      }
+    },
+
+    // @param #object 'payload' contains properties:
+    //   (req) .prefix  Prefix to be added before the original color of element
+    //   (req) .include  Period to include setting the color of
+    setColorOfPeriod: function(state, payload) {
+      for(let i = 0; i < state.ePlacements.length; i++) {
+        // elementPeriod represents the period number of a given periodic table element
+        let elementPeriod = state.ePlacements[i].period.substring(2);
+
+        // defaultColor represents default color of a given periodic table element
+        let defaultColor = state.eColors[i].defaultColor;
+
+        // If the element period is excluded (from @param 'payload')
+        // Allow type coercion (so '1' == 1)
+        if(elementPeriod == payload.include) {
+          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+        }
+      }
+    },
+
+    // @param #object 'payload' contains properties:
+    //   (req) .prefix  Prefix to be added before the original color of element
+    //   (req) .include  Group to be included setting the color of
+    setColorOfGroup: function(state, payload) {
+      for(let i = 0; i < state.ePlacements.length; i++) {
+        // elementGroup represents the group number of a given periodic table element
+        let elementGroup = state.ePlacements[i].group.substring(2);
+
+        // defaultColor represents default color of a given periodic table element
+        let defaultColor = state.eColors[i].defaultColor;
+
+        // If the element group is excluded (from @param 'payload')
+        // Allow type coercion (so '1' == 1)
+        if(elementGroup == payload.include) {
+          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+        }
+      }
+    }
+
 
 
   },
