@@ -40,14 +40,14 @@
              v-for="(ePlacement, index) in ePlacements"
              v-on:mouseover="[changeElementAndLabelPrefix(index, 'dark-'), changeLabelColor(index, 'true'), updateActiveElement(index)]"
              v-on:mouseleave="[changeElementAndLabelPrefix(index, ''), changeLabelColor(index, 'false'), updateActiveElement(index)]"
-             v-on:click="[clickElement(index), updateActiveElement(index)]"
+             v-on:click="[clickElement(index)]"
              v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
         >
           <div v-cloak class="element-inner">
-            <p class="element-atomicNumber element-secondary-info">{{ ePlacement.eLabel }}</p>
-            <p class="element-abbreviation element-primary-info">{{ simpleData[index].abbreviation }}</p>
-            <p class="element-name element-secondary-info">{{ simpleData[index].name }}</p>
-            <p class="element-atomicMass element-secondary-info">{{ simpleData[index].atomicMass }}</p>
+            <p class="element-secondary-info">{{ ePlacement.eLabel }}</p>
+            <p class="element-primary-info">{{ simpleData[index].abbreviation }}</p>
+            <p class="element-secondary-info">{{ simpleData[index].name }}</p>
+            <p class="element-secondary-info">{{ simpleData[index].atomicMass }}</p>
           </div>
         </div>
 
@@ -64,10 +64,10 @@
         <!-- (INFO OBTRUSIVE) ELEMENT DESCRIPTIONS -->
         <section v-if="infoLocationType === 'info-obtrusive'" id="element-desc" v-bind:class="activeElement.color" v-cloak>
           <div id="element-desc-inner">
-            <p id="element-d-discovery-date" class="element-d-primary-info">Discovery Date</p>
-            <p id="element-discovery-date" class="element-d-secondary-info">{{ activeElement.discoveryDate }}</p>
-            <p id="element-d-discoverer" class="element-d-primary-info">Discovered By </p>
-            <p id="element-discoverer" class="element-d-secondary-info">{{ activeElement.discoveredBy }}</p>
+            <p class="element-d-primary-info">Discovery Date</p>
+            <p class="element-d-secondary-info">{{ activeElement.discoveryDate }}</p>
+            <p class="element-d-primary-info">Discovered By</p>
+            <p class="element-d-secondary-info">{{ activeElement.discoveredBy }}</p>
           </div>
         </section>
 
@@ -215,12 +215,15 @@
       },
 
       changeElementAndLabelPrefix(index, prefix) {
-        //if(this.clickedElement.index !== index) {
+        // This if statement is important
+        // When user clicks on an element and hovers over a different element, the original element that was clicked
+        // on still has prefix 'superdark'
+        if(this.clickedElement.index !== index) {
           this.setColorOfOneElement({
-            prefix: shade,
+            prefix: prefix,
             i: index
           });
-        //}
+        }
       },
 
       changeLabelColor: function(index, isMouseOver) {
@@ -230,8 +233,6 @@
         // Get the period.json or group value corresponding to the hovered over element (ex. c-11, p-5)
         let periodFull = this.ePlacements[index].period;
         let groupFull = this.ePlacements[index].group;
-        //console.log('Change Label Color Called');
-        //console.log(periodFull + ' ' + groupFull);
 
         // Concatenate period.json or group values to a number (ex. 11, 5)
         let period = this.labelClassToNone(periodFull);
@@ -239,13 +240,12 @@
 
         if(this.clickedElement.active === false) {
           // When changing a label color, make sure all others are turned off first
-          this.$store.commit('clearLabelExcept', {
+          this.clearLabelExcept({
             periodExclude: -1,
-            groupExclude: -1
+            groupExclude: -1,
           });
-          // this.clearLabelExcept(-1, -1); old
 
-          // Only darken the label if the element actually has a valid period.json number (within the actual range of the periodic table)
+          // Only darken the period / group label if the element actually has a valid period.json number (within the actual range of the periodic table)
           // Recall Act. and Lan. have period.json of 0, and they don't have period.json / group labels
           if(period > 0) {
             // Darken the labels if the mouse is entering an element
@@ -260,7 +260,7 @@
               console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
             }
           }
-          // Only darken the label if the element actually has a valid group number (within the actual range of the periodic table)
+          // Only darken the period / group label if the element actually has a valid group number (within the actual range of the periodic table)
           // Recall Act. and Lan. have group of 0, and they don't have period.json / group labels
           if (group > 0) {
             // Darken the labels if the mouse is entering an element
@@ -282,13 +282,13 @@
         // Change element info and label color (in case the mouse does not movein or moveout the element)
         this.clickedElement.active = false;
         this.changeLabelColor(index, 'true');
-        this.updateActiveElement(index);
+        this.updateActiveElementForce(index); // This does not require clickedElement.active to be false
         this.clickedElement.active = true;
 
         // What to do if clicking for the first time, or clicking on a different element
         // Save the index (element index, period.json index, and group index) of the clicked on element
-        if(this.clickedElement.active === -1 || this.clickedElement.active !== index) {
-          this.clickedElement.active = index;
+        if(this.clickedElement.index === -1 || this.clickedElement.index !== index) {
+          this.clickedElement.index = index;
 
           this.clickedElement.period = this.labelClassToNone( this.ePlacements[index].period );
           this.clickedElement.group = this.labelClassToNone( this.ePlacements[index].group );
