@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import PeriodicTable from 'Components/PeriodicTable/PeriodicTable.vue'
+import PeriodicTable from 'Components/PeriodicTable/PeriodicTable.vue';
+import Explore from 'Components/Explore.vue';
+import Trivia from 'Components/Trivia.vue';
 
 Vue.use(VueRouter);
 
@@ -31,11 +33,11 @@ const myRoutes = [
   },
   {
     path: '/explore',
-    component: PeriodicTable
+    component: Explore
   },
   {
     path: '/trivia',
-    component: PeriodicTable
+    component: Trivia
   },
   {
     path: '/info',

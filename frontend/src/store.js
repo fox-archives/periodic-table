@@ -37,15 +37,11 @@ export default new Vuex.Store({
 
     // Data about a clicked element
     clickedElement: {
-      // COMENTED OUT OLD VALUES
-      // clickActive: false,
+      // COMMENTED OUT OLD VALUES
       active: false,
 
       // When user clicks, want to make clicked element darker than if it was highlighted
       // This also keeps track of the clicked element (if a user decides to hover over a group or period label, changing all element color
-      // clickedElementIndex: -1,
-      // clickedElementPeriod: -1,
-      // clickedElementGroup: -1,
       index: -1,
       period: -1,
       group: -1
@@ -118,47 +114,52 @@ export default new Vuex.Store({
     // TODO: Remove the 'Force'
     updateActiveElement: function(state, index) {
       // Update Store variables with Element information according to index
-      if(state.clickActive === false) {
-        state.hoverIndex = state.index;
-        state.hoverAbbreviation = state.simpleData[index].abbreviation;
-        state.hoverName = state.simpleData[index].name;
-        state.hoverAtomicMass = state.simpleData[index].atomicMass;
+      if(state.clickedElement.active === false) {
+        state.activeElement.index = state.index;
+        state.activeElement.abbreviation = state.simpleData[index].abbreviation;
+        state.activeElement.name = state.simpleData[index].name;
+        state.activeElement.atomicMass = state.simpleData[index].atomicMass;
 
         // Update element description (right box)
-        state.hoverDiscoveryDate = state.eDiscovered[index].discoveryDate;
-        state.hoverDiscoveredBy = state.eDiscovered[index].discoveredBy;
-        state.hoverColor = state.eColors[index].defaultColor;
+        state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
+        state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
+        state.activeElement.color = state.eColors[index].defaultColor;
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
     updateActiveElementForce: function(state, index) {
-      state.hoverIndex = state.index;
-      state.hoverAbbreviation = state.simpleData[index].abbreviation;
-      state.hoverName = state.simpleData[index].name;
-      state.hoverAtomicMass = state.simpleData[index].atomicMass;
+      state.activeElement.index = state.index;
+      state.activeElement.abbreviation = state.simpleData[index].abbreviation;
+      state.activeElement.name = state.simpleData[index].name;
+      state.activeElement.atomicMass = state.simpleData[index].atomicMass;
 
       // Update element description (right box)
-      state.hoverDiscoveryDate = state.eDiscovered[index].discoveryDate;
-      state.hoverDiscoveredBy = state.eDiscovered[index].discoveredBy;
-      state.hoverColor = state.eColors[index].defaultColor;
+      state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
+      state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
+      state.activeElement.color = state.eColors[index].defaultColor;
     },
-    clearLabelExcept: function(state, payload) {
-      // Clears all period.json / group labels, except for one period.json / group label
-      let periodExclude = payload.periodExlucde;
-      let groupExclude = payload.groupExclude;
 
+    // Purpose: Recolor all period and group labels
+    // @param #object 'payload' contains properties:
+    //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
+    //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
+    clearLabelExcept: function(state, payload) {
       for(let i = 0; i < state.periodData.length; i++) {
-        if(i !== periodExclude) {
-          state.periodData[i].color = "light";
+        if(i !== payload.periodExclude) {
+          state.periodData[i].color = 'light';
         }
       }
       for(let i = 0; i < state.groupData.length; i++) {
-        if(i !== groupExclude) {
-          state.groupData[i].color = "light";
+        if(i !== payload.groupExclude) {
+          state.groupData[i].color = 'light';
         }
       }
     },
 
+    // Purpose: Change the properties of the active element, or the element that was clicked on
+    // @param #object 'payload' contains properties:
+    //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
+    //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
     setActiveElement: function(state, newProperties) {
       // Payload contains an object containing properties
       // These properties should replace the properties the activeElement object (from the vuex state) has
@@ -168,19 +169,22 @@ export default new Vuex.Store({
         }
       }
     },
-    // Sets the color of any elements in the periodic table (NOT the default color)
-    setColorOfElement: function(state, payload) {
-      // Payload contains an object containing properties
-      console.log("setColorOfElement Called");
 
-      let defaultColor = state.eColors[payload.i].defaultColor;
-      Vue.set(state.eColors[payload.i], 'color', (payload.prefix + defaultColor));
-    },
 
 
 
 
     // NEW METHODS (MORE EFFICIENT)
+    // @param #object 'payload' contains properties:
+    //   (req)  .prefix  Prefix to be added before the original color of an element
+    setColorOfAllElements: function(state, prefix) {
+      for(let i = 0; i < state.ePlacements.length; i++) {
+        // defaultColor represents default color of a given periodic table element
+        let defaultColor = state.eColors[i].defaultColor
+
+        Vue.set(state.eColors[i], 'color', (prefix + defaultColor));
+      }
+    },
 
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
@@ -222,8 +226,27 @@ export default new Vuex.Store({
 
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
+    //   (req) .exclude  Element to be excluded setting the color of
+    setColorOfAllButOneElement: function(state, payload) {
+      for(let i = 0; i < state.ePlacements.length; i++) {
+
+        // defaultColor represents default color of a given periodic table element
+        let defaultColor = state.eColors[i].defaultColor;
+
+        // If the element group is excluded (from @param 'payload')
+        // Allow type coercion (so '1' == 1)
+
+        // i represents the index of the element to be excluded
+        if(i != payload.exclude) {
+          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+        }
+      }
+    },
+
+    // @param #object 'payload' contains properties:
+    //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Period to include setting the color of
-    setColorOfPeriod: function(state, payload) {
+    setColorOfOnePeriod: function(state, payload) {
       for(let i = 0; i < state.ePlacements.length; i++) {
         // elementPeriod represents the period number of a given periodic table element
         let elementPeriod = state.ePlacements[i].period.substring(2);
@@ -242,7 +265,7 @@ export default new Vuex.Store({
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Group to be included setting the color of
-    setColorOfGroup: function(state, payload) {
+    setColorOfOneGroup: function(state, payload) {
       for(let i = 0; i < state.ePlacements.length; i++) {
         // elementGroup represents the group number of a given periodic table element
         let elementGroup = state.ePlacements[i].group.substring(2);
@@ -256,10 +279,18 @@ export default new Vuex.Store({
           Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
         }
       }
+    },
+
+
+
+    // Sets the color of any elements in the periodic table (NOT the default color)
+    setColorOfOneElement: function(state, payload) {
+      // Payload contains an object containing properties
+      //console.log("setColorOfOneElement Called");
+
+      let defaultColor = state.eColors[payload.i].defaultColor;
+      Vue.set(state.eColors[payload.i], 'color', (payload.prefix + defaultColor));
     }
-
-
-
   },
   // Allow to run Async code
   actions: {
