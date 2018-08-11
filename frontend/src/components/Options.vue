@@ -1,45 +1,46 @@
 <template>
 <div>
-<aside class="options">
-  <ul>
-    <li class="option">
-      <p>Theme</p>
-      <vs-select class="option-theme" label="themes" v-model="theme" v-on:change="setTheme">
-        <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in themes" />
-      </vs-select>
-    </li>
-    <li class="option">
-      <p>Information</p>
-      <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
-        <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
-      </vs-select>
-    </li>
-    <li class="option">
-      <p>Periodic Table Layout</p>
-      <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout" v-on:change="setTableLayout">
-        <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in tableLayouts" />
-      </vs-select>
-    </li>
-    <li class="option">
-      <p>Advanced Options</p>
-      <!-- I don't know why this div tag stops the button from having a length of 100% -->
-      <div>
-        <vs-button v-on:click="advancedSettingsPopup('on')" color="primary" vs-type="filled">Advanced</vs-button>
-      </div>
-    </li>
-  </ul>
-</aside>
+  <aside class="options">
+    <ul>
+      <li class="option">
+        <p>Theme</p>
+        <vs-select class="option-theme" label="themes" v-model="theme" v-on:change="setTheme">
+          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in themes" />
+        </vs-select>
+      </li>
+      <li class="option">
+        <p>Information</p>
+        <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
+          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
+        </vs-select>
+      </li>
+      <li class="option">
+        <p>Periodic Table Layout</p>
+        <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout" v-on:change="setTableLayout">
+          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in tableLayouts" />
+        </vs-select>
+      </li>
+      <li class="option">
+        <p>Advanced Options</p>
+        <!-- I don't know why this div tag stops the button from having a length of 100% -->
+        <div>
+          <vs-button v-on:click="advancedSettingsPopup('on')" color="primary" vs-type="filled">Advanced</vs-button>
+        </div>
+      </li>
+    </ul>
+  </aside>
 
-    <!-- POPUP FOR ADVANCED SETTINGS -->
-    <vs-popup vs-title="Advanced Options" v-bind:vs-active="advancedSettingsPopupActive" v-on:vs-cancel="advancedSettingsPopup('off')">
-        <AdvancedOptionsPopUp></AdvancedOptionsPopUp>
-    </vs-popup>
-
+  <!-- POPUP FOR ADVANCED SETTINGS -->
+  <vs-popup vs-title="Advanced Options" v-bind:vs-active="advancedSettingsPopupActive" v-on:vs-cancel="advancedSettingsPopup('off')">
+      <AdvancedOptionsPopUp></AdvancedOptionsPopUp>
+  </vs-popup>
 </div>
 </template>
 
 <script>
-  import bus from '../components/bus.js';
+  import { mapGetters } from 'vuex';
+  import { mapMutations } from 'vuex';
+  import bus from './bus.js';
   import blurBackground from '../mixins/blurBackground.js';
 
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
@@ -47,6 +48,16 @@
     name: "Options",
     data() {
       return {
+        // THEMING
+        // Default light theme (see themes array below to see values in selection menu)
+        themeTypes: ["light-def", "light-con", "dark-def"],
+
+        // INFO LOCATION
+        infoLocationTypes: ['info-obtrusive', 'info-unobtrusive', 'info-excluded'],
+
+        // DATA FOR HOVERED OPTIONS (when an option is hovered, it updates)
+        electronOptionHovered: "false",
+
         advancedSettingsPopupActive: false,
 
         theme: 1,
@@ -85,12 +96,12 @@
       },
       // Changes local theme, and emits 'theme-changed' to all other .vue files (so theme changes in other .vue files)
       setTheme: function() {
-        // This changes themeType
+        // This changes themeType (in Vuex optios object)
         // i represents each element in themeTypes array
         for(let i = 0; i < this.themeTypes.length; i++) {
           // i + 1 because theme
           if(this.theme === i + 1) {
-            this.themeType = this.themeTypes[i];
+            this.options.themeType = this.themeTypes[i];
 
             // Add it to the main body tag
             let bodyTag = document.getElementById("body");
@@ -102,16 +113,15 @@
             }
           }
         }
-        // Emit event theme change, that the theme type was changed
-        bus.$emit('themeChanged', this.themeType);
       },
       setInfoLocation: function() {
         for(let i = 0; i < this.infoLocationTypes.length; i++) {
           if(this.infoLocation === i + 1) {
-            this.infoLocationType = this.infoLocationTypes[i];
+            this.options.infoLocationType = this.infoLocationTypes[i];
           }
         }
-        bus.$emit('infoLocationChanged', this.infoLocationType);
+        // this.options.infoLocationType = this.infoLocationType;
+        // bus.$emit('infoLocationChanged', this.infoLocationType);
       },
       setSelection: function() {
 
@@ -119,6 +129,11 @@
       setTableLayout: function() {
 
       }
+    },
+    computed: {
+        ...mapGetters([
+          'options'
+        ])
     },
     components: {
       AdvancedOptionsPopUp

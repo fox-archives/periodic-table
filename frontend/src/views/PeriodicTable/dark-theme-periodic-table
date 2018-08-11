@@ -1,0 +1,43 @@
+// Section unobtrusive information
+#pt.dark-def #det #unobtrusive-overview-inner, #pt.dark-def #det #unobtrusive-desc ul li {
+  background-color: $oc-gray-8;
+  //box-shadow: 2px 2px 3px $oc-gray-7;
+  transition: all 0.2s ease-in-out;
+}
+
+#pt.dark-def #det #unobtrusive-overview-inner:hover, #pt.dark-def #det #unobtrusive-desc ul li:hover {
+  //box-shadow: 2px 2px 4px $oc-gray-6;
+  transition: all 0.2s ease-in-out;
+}
+//end
+#pt.dark-def #grid-container {
+  background-color: $oc-gray-8;
+}
+
+#pt.dark-def .element-outer {
+  box-shadow: 3px 3px 3px $oc-gray-7;
+}
+
+#pt.dark-def .element-outer:hover {
+  box-shadow: 5px 5px 5px $oc-gray-7;
+}
+
+#pt.dark-def #element-overview {
+  box-shadow: 4px 4px 4px $oc-gray-7;
+}
+
+#pt.dark-def #element-desc {
+  box-shadow: 4px 4px 4px $oc-gray-7;
+}
+
+#pt.dark-def .label-period-inner p, .dark-def .label-group-inner p {
+  color: $oc-gray-0;
+}
+
+#pt.dark-def #det {
+  background-color: $oc-gray-9;
+}
+
+#pt.dark-def p, #pt.dark-def h3, #pt.dark-def h4 {
+  color: $oc-gray-0;
+}

@@ -1,53 +1,62 @@
+<link rel="stylesheet" href="navigation.scss">
 <template>
   <div>
     <!-- NAV BAR WITH BUTTONS -->
-    <nav id="nav" v-bind:class="themeType">
+    <nav id="nav" v-bind:class="options.themeType">
       <ul id="nav-content">
         <ul id="nav-left">
-          <li id="logo"><img src="../../assets/placeholder.png" height="30px"></li>
+          <li id="logo"><a href="/simple"><img src="../../assets/placeholder.png" height="30px"></a></li>
         </ul>
         <ul id="nav-right">
-          <li class="nav-selected" id="simple-wide" v-on:click="setSelection('simple')">
+          <li class="active navItem" id="simple-wide" v-on:click="setSelection('simple')">
             <type-icon class="navIcon featherIcon"></type-icon>
-            <h2> <router-link to="/simple">Simple</router-link> </h2>
+            <h2 class="navText"> <router-link to="/simple">Simple</router-link> </h2>
           </li>
-          <li id="properties-wide" v-on:click="setSelection('properties')">
+
+          <li class="navItem" id="properties-wide" v-on:click="setSelection('properties')">
             <list-icon class="navIcon featherIcon"></list-icon>
-            <h2> <router-link to="/properties"> Properties</router-link> </h2>
+            <h2 class="navText"> <router-link to="/properties"> Properties</router-link> </h2>
           </li>
-          <li class="custom-icon" id="electrons-wide" v-on:click="setSelection('electrons')">
-            <electrons></electrons>
-            <h2> <router-link to="/electrons">Electrons</router-link> </h2>
+
+          <li class="navItem" id="electrons-wide" v-on:click="setSelection('electrons')">
+            <electrons class="navIcon customIcon"></electrons>
+            <h2 class="navText"> <router-link to="/electrons">Electrons</router-link> </h2>
           </li>
-          <li class="custom-icon" id="orbitals-wide" v-on:click="setSelection('orbitals')">
-            <orbitals></orbitals>
-            <h2> <router-link to="/orbitals">Orbitals</router-link> </h2>
+
+          <li class="navItem" id="orbitals-wide" v-on:click="setSelection('orbitals')">
+            <orbitals class="navIcon customIcon"></orbitals>
+            <h2 class="navText"> <router-link to="/orbitals">Orbitals</router-link> </h2>
           </li>
-          <li class="custom-icon" id="isotopes-wide" v-on:click="setSelection('isotopes')">
-            <isotopes></isotopes>
-            <h2> <router-link to="/isotopes">Isotopes</router-link> </h2>
+
+          <li class="navItem" id="isotopes-wide" v-on:click="setSelection('isotopes')">
+            <isotopes class="navIcon customIcon"></isotopes>
+            <h2 class="navText"> <router-link to="/isotopes">Isotopes</router-link> </h2>
           </li>
-          <li id="explore-wide" v-on:click="setSelection('explore')">
+
+          <li class="navItem" id="explore-wide" v-on:click="setSelection('explore')">
             <map-icon class="navIcon featherIcon"></map-icon>
-            <h2> <router-link to="/explore">Explore</router-link> </h2>
+            <h2 class="navText"> <router-link to="/explore">Explore</router-link> </h2>
           </li>
-          <li id="trivia-wide" v-on:click="setSelection('trivia')">
+
+          <li class="navItem" id="trivia-wide" v-on:click="setSelection('trivia')">
             <check-icon class="navIcon featherIcon"></check-icon>
-            <h2> <router-link to="/trivia">Trivia</router-link> </h2>
+            <h2 class="navText"> <router-link to="/trivia">Trivia</router-link> </h2>
           </li>
-          <li id="info" v-on:click="infoPopup('on')">
+
+
+          <li class="navItem" id="info" v-on:click="infoPopup('on')">
             <info-icon class="navIcon featherIcon"></info-icon>
 
           </li>
-          <li id="settings" v-on:click="settingsPopup('on')">
+          <li class="navItem" id="settings" v-on:click="settingsPopup('on')">
             <settings-icon class="navIcon featherIcon"></settings-icon>
 
           </li>
-          <li id="search"><search-icon class="navIcon featherIcon">
-          </search-icon>
+          <li class="navItem" id="search">
+          <search-icon class="navIcon featherIcon"></search-icon>
 
           </li>
-          <li id="menu-mobile" v-on:click="menuPopup('on')">
+          <li class="navItem" id="menu-mobile" v-on:click="menuPopup('on')">
             <menu-icon class="navIcon featherIcon"></menu-icon>
 
           </li>
@@ -58,7 +67,7 @@
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
       <ul v-bind:class="themeType" id="nav-mobile">
-        <li id="trivia-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
+        <li id="simple-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
         <li id="properties-mobile"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
         <li class="custom-icon" id="electrons-mobile"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
         <li class="custom-icon" id="orbitals-mobile"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
@@ -73,8 +82,6 @@
       <InfoPopUp></InfoPopUp>
     </vs-popup>
 
-
-
     <!-- POPUP FOR SETTINGS -->
     <vs-popup vs-title="Options" v-bind:vs-active="settingsPopupActive" v-on:vs-cancel="settingsPopup('off')">
       <OptionsPopUp></OptionsPopUp>
@@ -83,6 +90,8 @@
 </template>
 
 <script type="text/javascript">
+  import { mapGetters } from 'vuex';
+  import { mapMutations } from 'vuex';
   import bus from '../bus.js';
   import blurBackGround from '../../mixins/blurBackground.js';
 
@@ -101,25 +110,13 @@
   import { Menu } from 'vue-feather-icon'
 
   // Importing Popup Components
-  import InfoPopUp from '../../views/Info.vue'
-  import OptionsPopUp from '../../views/Options.vue'
+  import InfoPopUp from '../Info.vue'
+  import OptionsPopUp from '../Options.vue'
 
   export default {
     name: 'Navigation',
     data() {
       return {
-        // THEMING
-        // Default light theme (see themes array below to see values in selection menu)
-        // Recall there is a dark blue theme for element blue color (so cannot name blue theme dark-blue)
-        themeTypes: ["light-def", "light-con", "dark-def"],
-        themeType: "light-def",
-
-        // INFO LOCATION
-        infoLocationTypes: ['info-obtrusive', 'info-unobtrusive', 'info-excluded'],
-        infoLocationType: "info-obtrusive",
-
-        // DATA FOR ELEMENT UI MENU
-        activeIndex: '1',
         // DATA FOR POPUPS
         menuPopupActive: false,
         infoPopupActive: false,
@@ -130,6 +127,7 @@
       }
     },
     methods: {
+
       menuPopup: function(state) {
         if(state === "on") {
           this.setBlur("blur");
@@ -161,6 +159,13 @@
         }
       }
     },
+    computed: {
+      ...mapGetters([
+        'options',
+        'themeType',
+        'infoLocationType'
+      ]),
+    },
     components: {
       // Icon Components
       TypeIcon: Type.default,
@@ -168,7 +173,7 @@
       Electrons,
       Orbitals,
       Orbitals2,
-	    Isotopes,
+      Isotopes,
       MapIcon: Map.default,
       CheckIcon: Check.default, // Trivia
       InfoIcon: Info.default,
@@ -186,8 +191,12 @@
   }
 </script>
 
-<style scoped lang="scss">
-  @import 'Styles/variables.scss';
+<style lang="scss">
+  @import '../../styles/variables.scss';
   @import './navigation.scss';
-  @import './navigation-themes.scss';
+
+  // Themes
+  @import './dark-theme-navigation';
+  @import './light-con-theme-navigation';
+  @import './light-theme-navigation';
 </style>

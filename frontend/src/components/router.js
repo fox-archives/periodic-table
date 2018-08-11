@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import PeriodicTable from 'Components/PeriodicTable/PeriodicTable.vue';
-import Explore from 'Components/Explore.vue';
-import Trivia from 'Components/Trivia.vue';
+import PeriodicTable from '../views/PeriodicTable/PeriodicTable.vue';
+import Explore from '../views/Explore.vue';
+import Trivia from '../views/Trivia.vue';
 
 Vue.use(VueRouter);
 

@@ -1,0 +1,42 @@
+$text: $oc-gray-1;
+$background: $oc-gray-8;
+
+// Recall with navigation, Vue-Router applies an inside a element
+#nav.dark-def {
+  background-color: $background;
+}
+
+#nav.dark-def .navItem:hover {
+  background-color: $oc-gray-9;
+}
+
+.dark-def .navText a {
+  color: $text;
+  text-decoration: none;
+}
+
+.dark-def .navText a:hover {
+  color: $text;
+  //text-decoration: underline;
+  //text-decoration-color: $text;
+}
+
+.dark-def .navText a:active {
+  color: $text;
+}
+
+.dark-def .navText a:visited {
+  color: $text;
+}
+
+
+// ICONS
+.dark-def .featherIcon * {
+  stroke: $text;
+}
+
+.dark-def .customIcon * {
+  stroke: $text;
+  fill: $text;
+}
+

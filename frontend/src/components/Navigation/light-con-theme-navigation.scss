@@ -1,0 +1,84 @@
+/*
+// LIGHT CON (HIGH CONTRAST)
+#nav.light-con {
+  box-shadow: 2px 2px 3px $oc-gray-2;
+  transition: all 0.2s ease-in-out;
+}
+#nav.light-con:hover {
+  box-shadow: 2px 2px 4px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+$light-con-text: $oc-gray-9;
+$light-con-background: $oc-gray-0;
+#nav.light-con ul {
+  background-color: $light-con-background;
+}
+
+#nav.light-con li h2, #nav-mobile.light-con li h2 {
+  color: $light-con-text;
+}
+
+// Works for non-custom icons
+#nav.light-con li *, #nav-mobile.light-con li * {
+  stroke: $light-con-text;
+}
+
+#nav.light-con .custom-icon svg, #nav-mobile.light-con .custom-icon svg {
+  fill: $light-con-text;
+  stroke: $light-con-text;
+}
+*/
+
+$text: $oc-gray-9;
+$background: $oc-gray-1;
+
+// Recall with navigation, Vue-Router applies an inside a element
+#nav.light-con {
+  background-color: $background;
+  box-shadow: 2px 2px 3px $oc-gray-3;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav.light-con:hover {
+  box-shadow: 2px 2px 4px $oc-gray-4;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav.light-con .navItem:hover {
+  background-color: $oc-gray-3;
+}
+
+#nav.light-con .navItem:active {
+  background-color: $oc-gray-4;
+}
+
+.light-con .navText a {
+  color: $text;
+  text-decoration: none;
+}
+
+.light-con .navText a:hover {
+  color: $text;
+  //text-decoration: underline;
+  //text-decoration-color: $text;
+}
+
+.light-con .navText a:active {
+  color: $text;
+}
+
+.light-con .navText a:visited {
+  color: $text;
+}
+
+
+// ICONS
+.light-con .featherIcon * {
+  stroke: $text;
+}
+
+.light-con .customIcon * {
+  stroke: $text;
+  fill: $text;
+}
+

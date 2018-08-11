@@ -16,8 +16,8 @@ import './styles/global-styles.scss';
 import 'material-icons/iconfont/material-icons.css';
 
 // VueSax (CSS and Components)
-import Vuesax from 'vuesax'
-import 'vuesax/dist/vuesax.css'
+import Vuesax from 'vuesax';
+import 'vuesax/dist/vuesax.css';
 Vue.use(Vuesax);
 
 // Feather Icons

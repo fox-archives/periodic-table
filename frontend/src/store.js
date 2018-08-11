@@ -139,7 +139,7 @@ export default new Vuex.Store({
       state.activeElement.color = state.eColors[index].defaultColor;
     },
 
-    // Purpose: Recolor all period and group labels
+    // Purpose: Recolor all period and group labels with the exception of one period or group
     // @param #object 'payload' contains properties:
     //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
     //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
@@ -158,8 +158,7 @@ export default new Vuex.Store({
 
     // Purpose: Change the properties of the active element, or the element that was clicked on
     // @param #object 'payload' contains properties:
-    //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
-    //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
+    //   Each possible property are the same properties as this.activeElement
     setActiveElement: function(state, newProperties) {
       // Payload contains an object containing properties
       // These properties should replace the properties the activeElement object (from the vuex state) has
@@ -169,10 +168,21 @@ export default new Vuex.Store({
         }
       }
     },
-
-
-
-
+    // Purpose: Change the properties of the clicked element, or the element that was clicked on
+    // @param #object 'payload' contains properties:
+    //   (opt) .active #boolean If an element has been clicked, or a click was activated
+    //   (opt) .index #int Integer of the clicked element (placement in the ePlacements array)
+    //   (opt) .period #int Period number of the clicked element (actual period, does not start at 0)
+    //   (opt) .group #int Group number of the clicked element (actual group, does not start at 0)
+    setClickedElement: function(state, newProperties) {
+      // Payload contains an object containing properties
+      // These properties should replace the properties the activeElement object (from the vuex state) has
+      for(let property in newProperties) {
+        if(state.clickedElement.hasOwnProperty(property)) {
+          state.clickedElement[property] = newProperties[property];
+        }
+      }
+    },
 
     // NEW METHODS (MORE EFFICIENT)
     // @param #object 'payload' contains properties:
@@ -226,7 +236,7 @@ export default new Vuex.Store({
 
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
-    //   (req) .exclude  Element to be excluded setting the color of
+    //   (req) .exclude  Element to be excluded setting the color of (index)
     setColorOfAllButOneElement: function(state, payload) {
       for(let i = 0; i < state.ePlacements.length; i++) {
 
@@ -290,7 +300,23 @@ export default new Vuex.Store({
 
       let defaultColor = state.eColors[payload.i].defaultColor;
       Vue.set(state.eColors[payload.i], 'color', (payload.prefix + defaultColor));
-    }
+    },
+
+
+    // NAVIGATION STUFF
+
+    // @param #object 'payload' contains properties:
+    //   (req) .themeType #String  The theme that is active
+    //   (req) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
+    setOptions: function(state, payload) {
+      // Payload contains an object containing properties
+      // These properties should replace the properties the activeElement object (from the vuex state) has
+      for(let property in newProperties) {
+        if(state.options.hasOwnProperty(property)) {
+          state.options[property] = newProperties[property];
+        }
+      }
+    },
   },
   // Allow to run Async code
   actions: {

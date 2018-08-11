@@ -1,6 +1,6 @@
 <template>
-  <div id="pt" class="has-shadow" v-bind:class="themeType">
-    <section v-if="infoLocationType === 'info-unobtrusive'" id="det">
+  <div id="pt" class="has-shadow" v-bind:class="options.themeType">
+    <section v-if="options.infoLocationType === 'info-unobtrusive'" id="det">
       <li id="unobtrusive-overview">
         <div id="unobtrusive-overview-inner" class="shadowReg">
           <p id="element-icon" v-bind:class="activeElement.color">{{ activeElement.abbreviation }}</p>
@@ -52,7 +52,7 @@
         </div>
 
         <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANEL -->
-        <section v-if="infoLocationType === 'info-obtrusive'" id="element-overview" v-bind:class="activeElement.color" v-cloak>
+        <section v-if="options.infoLocationType === 'info-obtrusive'" id="element-overview" v-bind:class="activeElement.color" v-cloak>
           <div id="element-overview-inner">
             <p class="element-ov-secondary-info">{{ activeElement.atomicNumber }}</p>
             <p class="element-ov-primary-info">{{ activeElement.abbreviation }}</p>
@@ -62,7 +62,7 @@
         </section>
 
         <!-- (INFO OBTRUSIVE) ELEMENT DESCRIPTIONS -->
-        <section v-if="infoLocationType === 'info-obtrusive'" id="element-desc" v-bind:class="activeElement.color" v-cloak>
+        <section v-if="options.infoLocationType === 'info-obtrusive'" id="element-desc" v-bind:class="activeElement.color" v-cloak>
           <div id="element-desc-inner">
             <p class="element-d-primary-info">Discovery Date</p>
             <p class="element-d-secondary-info">{{ activeElement.discoveryDate }}</p>
@@ -101,10 +101,10 @@
 </template>
 
 <script type="text/javascript">
-  import bus from '../bus.js';
+  import bus from '../../components/bus.js';
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import Elements from '../Elements/Elements.vue';
+  import Elements from '../../components/Elements/Elements.vue';
 
   export default {
     name: 'PeriodicTable',
@@ -115,6 +115,7 @@
 
         'clearLabelExcept',
         'setActiveElement',
+        'setClickedElement',
 
         'setColorOfAllElements',
         'setColorOfAllButOnePeriod',
@@ -288,28 +289,36 @@
         // What to do if clicking for the first time, or clicking on a different element
         // Save the index (element index, period.json index, and group index) of the clicked on element
         if(this.clickedElement.index === -1 || this.clickedElement.index !== index) {
-          this.clickedElement.index = index;
-
-          this.clickedElement.period = this.labelClassToNone( this.ePlacements[index].period );
-          this.clickedElement.group = this.labelClassToNone( this.ePlacements[index].group );
-
+          this.setClickedElement({
+            index: index,
+            period: this.labelClassToNone( this.ePlacements[index].period ),
+            group: this.labelClassToNone( this.ePlacements[index].group )
+          });
 
           // Sets color of all elements in periodic table
-          this.setColorOfAllElements('');
+          this.setColorOfAllButOneElement({
+            prefix: '',
+            exclude: index,
+          });
           this.setColorOfOneElement({
             prefix: 'supdark-',
             i: index
           });
         }
-        // What to do if clicking on the same element twice (cancels elementHold)
+        // If clicking on the same element twice, cancel the 'supdark-' prefix and element hold
         else if(this.clickedElement.index === index) {
-          this.clickedElement.active = false;
-          this.clickedElement.index = -1;
-          this.clickedElement.period = -1;
-          this.clickedElement.group = -1;
+          this.setClickedElement({
+            active: false,
+            index: -1,
+            period: -1,
+            group: -1,
+          });
 
-          // Sets colour of all elements in periodic table
-          this.setColorOfAllElements('');
+          // Sets color of all elements in periodic table
+          this.setColorOfAllButOneElement({
+            prefix: '',
+            exclude: index,
+          });
           this.setColorOfOneElement({
             prefix: 'dark-',
             i: index
@@ -387,22 +396,18 @@
     },
     created() {
       this.$store.dispatch('loadElementData');
-
-      // TODO: Implement theme change with global Vuex
-      // bus.$on('themeChanged', (data) => {
-      //   this.themeType = data;
-      // });
-      // bus.$on('infoLocationChanged', (data) => {
-      //   this.infoLocationType = data;
-      // });
     }
   }
 </script>
 
 
 <style lang="scss">
-  @import 'Styles/variables.scss';
-  @import './periodic-table.scss';
-  @import './periodic-table-themes.scss';
-  @import './generic-elements.scss';
+  @import '../../styles/variables.scss';
+  @import 'periodic-table';
+  @import 'generic-elements';
+
+  // Themes
+  @import './dark-theme-periodic-table';
+  @import './light-con-theme-periodic-table';
+  @import './light-theme-periodic-table';
 </style>

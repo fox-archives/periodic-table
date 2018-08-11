@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" v-bind:class="themeType">
+  <footer id="footer" v-bind:class="this.options.themeType">
     <p id="name1">© 2018 Edwin Kofler</p>
     <p id="name2">© E. Kofler</p>
     <p id="name3">©</p>
@@ -10,20 +10,16 @@
 </template>
 
 <script type="text/javascript">
+  import { mapGetters } from 'vuex';
+  import { mapMutations } from 'vuex';
   import bus from "../bus.js";
 
   export default {
     name: 'Footer',
-    data() {
-      return {
-        themeType: "light-def"
-      }
-    },
-    // Fires when component is first created
-    created() {
-      bus.$on('themeChanged', (data) => {
-        this.themeType = data;
-      })
+    computed: {
+      ...mapGetters([
+          'options'
+      ])
     }
   }
 </script>
