@@ -14,13 +14,13 @@
   width: 100%;
 }
 
-#nav-right {
+#nav-elements {
   display: inline-flex;
 }
 
 // NAV ELEMENTS FOR MOBILE
 // Show when pressing the hamburger menu
-#nav-mobile {
+#nav-popup {
   display: inline-flex;
   flex-direction: column;
   overflow: auto;
@@ -28,29 +28,29 @@
 }
 
 // NAV ELEMENTS FOR MOBILE AND REGULAR WIDTH
-// Contain an icon and text, so must be formated
-#nav-content li, #nav-mobile li {
+// Contain an icon and text, so must be formatted
+.navItem, #logo {
   display: flex;
   align-items: center;
   padding: 10px 16px 10px 16px;
+  height: 100%;
   // If changing this make sure to update the JS (when clicking on nav element, it changes the bottom border radius to zero)
   border-radius: 3px;
 }
 
-#nav-content li:hover, #nav-mobile li:hover {
-  //background-color: $oc-gray-2;
+.navItem:hover {
   //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
 // Each list element in nav bar active
-#nav-content li:active, #nav-mobile li:active {
+.navItem:active {
   //background-color: $oc-gray-3;
   transition: background-color $transition-time ease-in-out;
 }
 
 // FORMAT TEXT AND ICONS IN NAVBAR
-#nav-content li h2, #nav-mobile li h2 {
+.navText {
   margin-left: 13px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 // Mobile Menu (hamburger) does not show, until specific screen width (see @media requests)
-#nav-content li#menu-mobile {
+#nav-content #menu-mobile {
   display: none;
 }
 

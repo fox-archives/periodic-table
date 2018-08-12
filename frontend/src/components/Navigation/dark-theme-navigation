@@ -10,25 +10,24 @@ $background: $oc-gray-8;
   background-color: $oc-gray-9;
 }
 
-.dark-def .navText a {
-  color: $text;
-  text-decoration: none;
-}
+.dark-def {
+  a {
+    color: $text;
+    text-decoration: none;
+  }
 
-.dark-def .navText a:hover {
-  color: $text;
-  //text-decoration: underline;
-  //text-decoration-color: $text;
-}
+  a:hover {
+    color: $text;
+  }
 
-.dark-def .navText a:active {
-  color: $text;
-}
+  a:active {
+    color: $text;
+  }
 
-.dark-def .navText a:visited {
-  color: $text;
+  a:visited {
+    color: $text;
+  }
 }
-
 
 // ICONS
 .dark-def .featherIcon * {

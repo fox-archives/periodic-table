@@ -13,6 +13,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    // TODO: Add SCSS mixins for common theme elements (such as basic heading colors)
 
 </style>

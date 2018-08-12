@@ -1,6 +1,6 @@
 <template>
   <div id="pt" class="has-shadow" v-bind:class="options.themeType">
-    <section v-if="options.infoLocationType === 'info-unobtrusive'" id="det">
+    <section v-if="options.infoLocationType === 'info-top'" id="det">
       <li id="unobtrusive-overview">
         <div id="unobtrusive-overview-inner" class="shadowReg">
           <p id="element-icon" v-bind:class="activeElement.color">{{ activeElement.abbreviation }}</p>
@@ -51,25 +51,25 @@
           </div>
         </div>
 
-        <!-- (INFO OBTRUSIVE) ELEMENT OVERVIEW PANEL -->
-        <section v-if="options.infoLocationType === 'info-obtrusive'" id="element-overview" v-bind:class="activeElement.color" v-cloak>
-          <div id="element-overview-inner">
-            <p class="element-ov-secondary-info">{{ activeElement.atomicNumber }}</p>
-            <p class="element-ov-primary-info">{{ activeElement.abbreviation }}</p>
-            <p class="element-ov-secondary-info">{{ activeElement.name }}</p>
-            <p class="element-ov-secondary-info">{{ activeElement.atomicMass }}</p>
-          </div>
-        </section>
+        <!-- (INFO CENTER) ELEMENT OVERVIEW PANEL -->
+        <!--<section v-if="options.infoLocationType === 'info-center'" id="element-overview" v-bind:class="activeElement.color" v-cloak>-->
+          <!--<div id="element-overview-inner">-->
+            <!--<p class="element-ov-secondary-info">{{ activeElement.atomicNumber }}</p>-->
+            <!--<p class="element-ov-primary-info">{{ activeElement.abbreviation }}</p>-->
+            <!--<p class="element-ov-secondary-info">{{ activeElement.name }}</p>-->
+            <!--<p class="element-ov-secondary-info">{{ activeElement.atomicMass }}</p>-->
+          <!--</div>-->
+        <!--</section>-->
 
-        <!-- (INFO OBTRUSIVE) ELEMENT DESCRIPTIONS -->
-        <section v-if="options.infoLocationType === 'info-obtrusive'" id="element-desc" v-bind:class="activeElement.color" v-cloak>
-          <div id="element-desc-inner">
-            <p class="element-d-primary-info">Discovery Date</p>
-            <p class="element-d-secondary-info">{{ activeElement.discoveryDate }}</p>
-            <p class="element-d-primary-info">Discovered By</p>
-            <p class="element-d-secondary-info">{{ activeElement.discoveredBy }}</p>
-          </div>
-        </section>
+        <!--&lt;!&ndash; (INFO CENTER) ELEMENT DESCRIPTIONS &ndash;&gt;-->
+        <!--<section v-if="options.infoLocationType === 'info-center'" id="element-desc" v-bind:class="activeElement.color" v-cloak>-->
+          <!--<div id="element-desc-inner">-->
+            <!--<p class="element-d-primary-info">Discovery Date</p>-->
+            <!--<p class="element-d-secondary-info">{{ activeElement.discoveryDate }}</p>-->
+            <!--<p class="element-d-primary-info">Discovered By</p>-->
+            <!--<p class="element-d-secondary-info">{{ activeElement.discoveredBy }}</p>-->
+          <!--</div>-->
+        <!--</section>-->
 
 
         <!-- PERIOD LABELS -->
@@ -104,7 +104,6 @@
   import bus from '../../components/bus.js';
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import Elements from '../../components/Elements/Elements.vue';
 
   export default {
     name: 'PeriodicTable',
@@ -131,6 +130,11 @@
       //   'period'  Want to darken a period
       //   'group'  Want to darken a group
       highlightSection: function(index, type) {
+        // // Get color from element-info and make it lighter, if info is obtrusive
+        // if(this.options.infoLoationType === 'info-auto') {
+        //   this.activeElement.color = 'light-' + this.eColors[index].defaultColor;
+        // }
+
         // Before highlighting the elements, make sure that the period / group labels are not highlighted
         this.clearLabelExcept({
           periodExclude: -1,
@@ -209,10 +213,7 @@
             i: this.clickedElement.index
           });
 
-          // Vue.set(this.eColors[this.clickedElementIndex], 'color', ('supdark-' + this.eColors[this.clickedElementIndex].color)); old
         }
-        // Make element overview and desc normal color
-        this.activeElement.color   = this.eColors[index].defaultColor;
       },
 
       changeElementAndLabelPrefix(index, prefix) {
@@ -283,7 +284,7 @@
         // Change element info and label color (in case the mouse does not movein or moveout the element)
         this.clickedElement.active = false;
         this.changeLabelColor(index, 'true');
-        this.updateActiveElementForce(index); // This does not require clickedElement.active to be false
+        this.updateActiveElementForce(index); // This does not require clickedElement.active to be false changeLabelColor apparently does
         this.clickedElement.active = true;
 
         // What to do if clicking for the first time, or clicking on a different element
@@ -331,7 +332,7 @@
 
 
       // Keep Here
-      // TODO: Import these as a mixin later
+      // TODO: Import these as a mixin
       labelClassToNone: function(labelNumber) {
         return labelNumber.substring(2);
       },
@@ -392,7 +393,6 @@
 
     },
     components: {
-      Elements
     },
     created() {
       this.$store.dispatch('loadElementData');

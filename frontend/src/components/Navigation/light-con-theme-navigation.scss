@@ -14,16 +14,16 @@ $light-con-background: $oc-gray-0;
   background-color: $light-con-background;
 }
 
-#nav.light-con li h2, #nav-mobile.light-con li h2 {
+#nav.light-con li h2, #nav-popup.light-con li h2 {
   color: $light-con-text;
 }
 
 // Works for non-custom icons
-#nav.light-con li *, #nav-mobile.light-con li * {
+#nav.light-con li *, #nav-popup.light-con li * {
   stroke: $light-con-text;
 }
 
-#nav.light-con .custom-icon svg, #nav-mobile.light-con .custom-icon svg {
+#nav.light-con .custom-icon svg, #nav-popup.light-con .custom-icon svg {
   fill: $light-con-text;
   stroke: $light-con-text;
 }
@@ -52,23 +52,23 @@ $background: $oc-gray-1;
   background-color: $oc-gray-4;
 }
 
-.light-con .navText a {
-  color: $text;
-  text-decoration: none;
-}
+.light-con {
+  a {
+    color: $text;
+    text-decoration: none;
+  }
 
-.light-con .navText a:hover {
-  color: $text;
-  //text-decoration: underline;
-  //text-decoration-color: $text;
-}
+  a:hover {
+    color: $text;
+  }
 
-.light-con .navText a:active {
-  color: $text;
-}
+  a:active {
+    color: $text;
+  }
 
-.light-con .navText a:visited {
-  color: $text;
+  a:visited {
+    color: $text;
+  }
 }
 
 

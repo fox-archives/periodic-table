@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="navigation.scss">
 <template>
   <div>
     <!-- NAV BAR WITH BUTTONS -->
@@ -7,41 +6,56 @@
         <ul id="nav-left">
           <li id="logo"><a href="/simple"><img src="../../assets/placeholder.png" height="30px"></a></li>
         </ul>
-        <ul id="nav-right">
-          <li class="active navItem" id="simple-wide" v-on:click="setSelection('simple')">
+        <ul id="nav-elements">
+
+          <router-link to="/simple">
+          <li class="active navItem" id="simple-wide">
             <type-icon class="navIcon featherIcon"></type-icon>
-            <h2 class="navText"> <router-link to="/simple">Simple</router-link> </h2>
+            <h2 class="navText"> Simple </h2>
           </li>
+          </router-link>
 
-          <li class="navItem" id="properties-wide" v-on:click="setSelection('properties')">
+          <router-link to="/properties">
+          <li class="navItem" id="properties-wide">
             <list-icon class="navIcon featherIcon"></list-icon>
-            <h2 class="navText"> <router-link to="/properties"> Properties</router-link> </h2>
+            <h2 class="navText">Properties</h2>
           </li>
+          </router-link>
 
-          <li class="navItem" id="electrons-wide" v-on:click="setSelection('electrons')">
+          <router-link to="/electrons">
+          <li class="navItem" id="electrons-wide">
             <electrons class="navIcon customIcon"></electrons>
-            <h2 class="navText"> <router-link to="/electrons">Electrons</router-link> </h2>
+            <h2 class="navText">Electrons </h2>
           </li>
+          </router-link>
 
-          <li class="navItem" id="orbitals-wide" v-on:click="setSelection('orbitals')">
+          <router-link to="/orbitals">
+          <li class="navItem" id="orbitals-wide">
             <orbitals class="navIcon customIcon"></orbitals>
-            <h2 class="navText"> <router-link to="/orbitals">Orbitals</router-link> </h2>
+            <h2 class="navText">Orbitals</h2>
           </li>
+          </router-link>
 
-          <li class="navItem" id="isotopes-wide" v-on:click="setSelection('isotopes')">
+          <router-link to="/isotopes">
+          <li class="navItem" id="isotopes-wide">
             <isotopes class="navIcon customIcon"></isotopes>
-            <h2 class="navText"> <router-link to="/isotopes">Isotopes</router-link> </h2>
+            <h2 class="navText"> Isotopes </h2>
           </li>
+          </router-link>
 
-          <li class="navItem" id="explore-wide" v-on:click="setSelection('explore')">
+          <router-link to="/explore">
+          <li class="navItem" id="explore-wide">
             <map-icon class="navIcon featherIcon"></map-icon>
-            <h2 class="navText"> <router-link to="/explore">Explore</router-link> </h2>
+            <h2 class="navText"> Explore </h2>
           </li>
+          </router-link>
 
-          <li class="navItem" id="trivia-wide" v-on:click="setSelection('trivia')">
+          <router-link to="/trivia">
+          <li class="navItem" id="trivia-wide">
             <check-icon class="navIcon featherIcon"></check-icon>
-            <h2 class="navText"> <router-link to="/trivia">Trivia</router-link> </h2>
+            <h2 class="navText"> Trivia </h2>
           </li>
+          </router-link>
 
 
           <li class="navItem" id="info" v-on:click="infoPopup('on')">
@@ -66,14 +80,40 @@
 
     <!-- POPUP FOR HAMBURGER MENU -->
     <vs-popup vs-title="Choose a View" v-bind:vs-active="menuPopupActive" v-on:vs-cancel="menuPopup('off')">
-      <ul v-bind:class="themeType" id="nav-mobile">
-        <li id="simple-mobile"> <type-icon class="navIcon featherIcon"> </type-icon><h2>Simple</h2></li>
-        <li id="properties-mobile"> <list-icon class="navIcon featherIcon"> </list-icon><h2>Properties</h2></li>
-        <li class="custom-icon" id="electrons-mobile"> <electrons v-bind:isHovered="electronOptionHovered"></electrons> <h2>Electrons</h2> </li>
-        <li class="custom-icon" id="orbitals-mobile"> <orbitals2></orbitals2> <h2>Orbitals</h2> </li>
-        <li class="custom-icon" id="isotopes-mobile"> <isotopes></isotopes> <h2>Isotopes</h2> </li>
-        <li id="explore-mobile"> <map-icon class="navIcon featherIcon"> </map-icon> <h2>Explore</h2> </li>
-        <li id="trivia-mobile"> <check-icon class="navIcon featherIcon"> </check-icon> <h2>Trivia</h2> </li>
+      <ul v-bind:class="options.themeType" id="nav-popup">
+        <li class="navitem" id="simple-mobile">
+          <type-icon class="navIcon featherIcon"></type-icon>
+          <h2 class="navText">Simple</h2>
+        </li>
+
+        <li class="navitem" id="properties-mobile">
+          <list-icon class="navIcon featherIcon"></list-icon>
+          <h2 class="navText">Properties</h2>
+        </li>
+
+        <li class="navItem custom-icon" id="electrons-mobile">
+          <electrons v-bind:isHovered="electronOptionHovered"></electrons>
+          <h2 class="navText">Electrons</h2>
+        </li>
+
+        <li class="navItem custom-icon" id="orbitals-mobile">
+          <orbitals2></orbitals2>
+          <h2 class="navText">Orbitals</h2>
+        </li>
+
+        <li class="navItem custom-icon" id="isotopes-mobile">
+          <isotopes></isotopes>
+          <h2 class="navText">Isotopes</h2>
+        </li>
+
+        <li class="navitem" id="explore-mobile">
+          <map-icon class="navIcon featherIcon"></map-icon>
+          <h2 class="navText">Explore</h2> </li>
+
+        <li class="navitem" id="trivia-mobile">
+          <check-icon class="navIcon featherIcon"></check-icon>
+          <h2 class="navText">Trivia</h2>
+        </li>
       </ul>
     </vs-popup>
 

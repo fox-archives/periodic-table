@@ -14,21 +14,21 @@
   background-color: $oc-gray-8;
 }
 
-#pt.dark-def .element-outer {
-  box-shadow: 3px 3px 3px $oc-gray-7;
-}
+//#pt.dark-def .element-outer {
+//  box-shadow: 3px 3px 3px $oc-gray-7;
+//}
+//
+//#pt.dark-def .element-outer:hover {
+//  box-shadow: 5px 5px 5px $oc-gray-7;
+//}
 
-#pt.dark-def .element-outer:hover {
-  box-shadow: 5px 5px 5px $oc-gray-7;
-}
-
-#pt.dark-def #element-overview {
-  box-shadow: 4px 4px 4px $oc-gray-7;
-}
-
-#pt.dark-def #element-desc {
-  box-shadow: 4px 4px 4px $oc-gray-7;
-}
+//#pt.dark-def #element-overview {
+//  box-shadow: 4px 4px 4px $oc-gray-7;
+//}
+//
+//#pt.dark-def #element-desc {
+//  box-shadow: 4px 4px 4px $oc-gray-7;
+//}
 
 #pt.dark-def .label-period-inner p, .dark-def .label-group-inner p {
   color: $oc-gray-0;

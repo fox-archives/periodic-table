@@ -53,7 +53,7 @@
         themeTypes: ["light-def", "light-con", "dark-def"],
 
         // INFO LOCATION
-        infoLocationTypes: ['info-obtrusive', 'info-unobtrusive', 'info-excluded'],
+        infoLocationTypes: ['info-auto', 'info-top', 'info-side', 'info-excluded'],
 
         // DATA FOR HOVERED OPTIONS (when an option is hovered, it updates)
         electronOptionHovered: "false",
@@ -69,14 +69,15 @@
 
         infoLocation: 1,
         infoLocations: [
-          { text: 'Obtrusive', value: 1 },
-          { text: 'Unobtrusive', value: 2 },
-          { text: 'Excluded', value: 3 }
+          { text: 'Auto', value: 1 },
+          { text: 'Top', value: 2 },
+          { text: 'Side', value: 3 },
+          { text: 'Excluded', value: 4 }
         ],
 
         tableLayout: 1,
         tableLayouts: [
-          { text: 'Fit to Screen', value: 1 },
+          { text: 'Auto', value: 1 },
           { text: 'Full Screen Height', value: 2 },
           { text: 'Full Screen Width', value: 3 },
           { text: 'Mobile', value: 4 },

@@ -1229,25 +1229,25 @@
 #nav-right {
   display: inline-flex;
 }
-#nav-mobile {
+#nav-popup {
   display: inline-flex;
   flex-direction: column;
   overflow: auto;
   width: 100%;
 }
-#nav-content li, #nav-mobile li {
+#nav-content li, #nav-popup li {
   display: flex;
   align-items: center;
   padding: 10px 16px 10px 16px;
   border-radius: 3px;
 }
-#nav-content li:hover, #nav-mobile li:hover {
+#nav-content li:hover, #nav-popup li:hover {
   cursor: pointer;
 }
-#nav-content li:active, #nav-mobile li:active {
+#nav-content li:active, #nav-popup li:active {
   transition: background-color 0.15s ease-in-out;
 }
-#nav-content li h2, #nav-mobile li h2 {
+#nav-content li h2, #nav-popup li h2 {
   padding-left: 13px;
 }
 .navIcon {
@@ -1293,13 +1293,13 @@
 #nav.dark-def ul {
   background-color: #343a40;
 }
-.dark-def li h2, #nav-mobile.dark-def li h2 {
+.dark-def li h2, #nav-popup.dark-def li h2 {
   color: white;
 }
-#nav.dark-def li *, #nav-mobile.dark-def li * {
+#nav.dark-def li *, #nav-popup.dark-def li * {
   stroke: #f1f3f5;
 }
-#nav.dark-def .custom-icon svg, #nav-mobile.dark-def .custom-icon svg {
+#nav.dark-def .custom-icon svg, #nav-popup.dark-def .custom-icon svg {
   fill: #f1f3f5;
   stroke: #f1f3f5;
 }
@@ -1320,13 +1320,13 @@
 #nav.light-con ul {
   background-color: #f8f9fa;
 }
-#nav.light-con li h2, #nav-mobile.light-con li h2 {
+#nav.light-con li h2, #nav-popup.light-con li h2 {
   color: #212529;
 }
-#nav.dark-def li *, #nav-mobile.dark-def li * {
+#nav.dark-def li *, #nav-popup.dark-def li * {
   stroke: #212529;
 }
-#nav.dark-def .custom-icon svg, #nav-mobile.dark-def .custom-icon svg {
+#nav.dark-def .custom-icon svg, #nav-popup.dark-def .custom-icon svg {
   fill: #212529;
   stroke: #212529;
 }
@@ -1341,21 +1341,21 @@
 #nav.light-def ul {
   background-color: white;
 }
-#nav.light-def li h2, #nav-mobile.light-def li h2 {
+#nav.light-def li h2, #nav-popup.light-def li h2 {
   color: #495057;
 }
-#nav.light-def li *, #nav-mobile.light-def li * {
+#nav.light-def li *, #nav-popup.light-def li * {
   stroke: #495057;
 }
-#nav.light-def .custom-icon svg, #nav-mobile.light-def .custom-icon svg {
+#nav.light-def .custom-icon svg, #nav-popup.light-def .custom-icon svg {
   fill: #495057;
   stroke: #495057;
 }
-.light-def #nav-right li:hover, .light-def #nav-mobile li:hover {
+.light-def #nav-right li:hover, .light-def #nav-popup li:hover {
   background-color: #f8f9fa;
   transition: all 0.2 ease-in-out;
 }
-.light-def #nav-right li:active, .light-def #nav-mobile li:active {
+.light-def #nav-right li:active, .light-def #nav-popup li:active {
   background-color: #e9ecef;
   transition: all 0.2s ease-in-out;
 }

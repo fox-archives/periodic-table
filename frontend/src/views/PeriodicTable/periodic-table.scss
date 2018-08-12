@@ -184,6 +184,13 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   font-weight: regular;
   font-size: 3.25em;
   transition: background-color $transition-time ease-in-out;
+  transition: border-radius 0.2s ease-in-out;
+}
+
+#det #element-icon:hover {
+  border-radius: $border-radius * 1.75;
+  transition: border-radius 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 #det #element-name {
@@ -230,12 +237,6 @@ $element-view-margin: (100% - $element-view-inner-width) / 2;
   font-weight: regular;
   font-size: 1.2em;
   margin-right: 10px;
-}
-
-#det #element-icon:hover {
-  border-radius: $border-radius * 1.75;
-  transition: border-radius 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 
