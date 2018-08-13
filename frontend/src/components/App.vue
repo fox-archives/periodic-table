@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <!-- TODO: MAKE BLUR BACKGROUND CLASS V-BIND RATHER THAN MANUALLY CHANGED -->
+  <div id="content" v-bind:class="options.blurType">
     <Navigation></Navigation>
     <router-view/>
     <Footer></Footer>
@@ -15,6 +16,11 @@ export default {
     return {
     }
   },
+  computed: {
+    options: function(){
+      return this.$store.getters.options;
+    }
+  },
   components: {
     Navigation,
     Footer
@@ -25,7 +31,7 @@ export default {
 <style lang="scss">
   @import '../styles/variables.scss';
 
-  .dark-def #app {
+  .dark-def #content {
     background-color: $oc-gray-9;
   }
 </style>

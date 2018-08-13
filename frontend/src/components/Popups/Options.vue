@@ -86,11 +86,13 @@
     methods: {
       advancedSettingsPopup: function(state) {
         if(state === "on") {
-          this.setBlur("blur-large");
+          this.options.blurType = 'blur-large';
+          this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
           this.advancedSettingsPopupActive = true;
         }
         else if(state === "off") {
-          this.setBlur("blur");
+          this.options.blurType = 'blur';
+          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
           this.advancedSettingsPopupActive = false;
         }
       },

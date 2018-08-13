@@ -51,6 +51,7 @@ export default new Vuex.Store({
     options: {
       themeType: 'light-def',
       infoLocationType: 'info-auto',
+      blurType: 'no-blur'
     }
 
   },

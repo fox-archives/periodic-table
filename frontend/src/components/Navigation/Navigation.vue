@@ -129,31 +129,37 @@
     methods: {
       infoPopup: function(state) {
         if(state === "on") {
-          this.setBlur("blur");
+          this.options.blurType = 'blur';
+          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
           this.infoPopupActive = true;
         }
         else if(state === "off") {
-          this.setBlur("no-blur");
+          this.options.blurType = 'no-blur';
+          this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
           this.infoPopupActive = false;
         }
       },
       menuPopup: function(state) {
         if(state === "on") {
-          this.setBlur("blur");
+          this.options.blurType = 'blur';
+          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
           this.menuPopupActive = true;
         }
         else if(state === "off") {
-          this.setBlur("no-blur");
+          this.options.blurType = 'no-blur';
+          this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
           this.menuPopupActive = false;
         }
       },
       optionsPopup: function(state) {
         if(state === "on") {
-          this.setBlur("blur");
+          this.options.blurType = 'blur';
+          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
           this.settingsPopupActive = true;
         }
         else if(state === "off") {
-          this.setBlur("no-blur");
+          this.options.blurType = 'no-blur';
+          this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
           this.settingsPopupActive = false;
         }
       }

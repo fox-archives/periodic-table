@@ -1,7 +1,7 @@
 // THIS SHOWS UNDER ANY DISPLAY OF THE PERIODIC TABLE
 // SIMPLE, PROPERTIES, ELECTRONS, ORBITALS, AND ISOTOPES
 <template>
-  <div id="content" v-bind:class="[options.themeType, options.infoLocationType]">
+  <div id="display" v-bind:class="[options.infoLocationType]">
     <ElementInfoPanel/>
     <PeriodicTable/>
   </div>
