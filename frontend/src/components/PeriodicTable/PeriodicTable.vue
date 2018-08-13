@@ -1,38 +1,5 @@
 <template>
-  <div id="pt" class="has-shadow" v-bind:class="options.themeType">
-    <section v-if="options.infoLocationType === 'info-top'" id="det">
-      <li id="unobtrusive-overview">
-        <div id="unobtrusive-overview-inner" class="shadowReg">
-          <p id="element-icon" v-bind:class="activeElement.color">{{ activeElement.abbreviation }}</p>
-          <h3 id="element-name">{{ activeElement.name }}</h3>
-        </div>
-      </li>
-      <li id="unobtrusive-desc">
-        <ul id="unobtrusive-desc-left">
-          <li class="shadowReg">
-              <h4>Atomic Number</h4>
-              <p>{{ activeElement.atomicNumber }}</p>
-          </li>
-          <li class="shadowReg">
-            <h4>Atomic Mass</h4>
-            <p>{{ activeElement.atomicMass }}</p>
-            <p>u</p>
-          </li>
-          <li class="shadowReg">
-            <h4>Discovered By</h4>
-            <p>{{ activeElement.discoveredBy }}</p>
-          </li>
-          <li class="shadowReg">
-            <h4>Discovery Date</h4>
-            <p>{{ activeElement.discoveryDate }}</p>
-          </li>
-        </ul>
-        <ul id="unobtrusive-desc-right">
-
-        </ul>
-      </li>
-    </section>
-
+  <div id="pt" v-bind:class="[options.themeType, options.infoLocationType]">
     <div v-if="ready" id="grid-container">
       <main id="grid">
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
@@ -50,27 +17,6 @@
             <p class="element-secondary-info">{{ simpleData[index].atomicMass }}</p>
           </div>
         </div>
-
-        <!-- (INFO CENTER) ELEMENT OVERVIEW PANEL -->
-        <!--<section v-if="options.infoLocationType === 'info-center'" id="element-overview" v-bind:class="activeElement.color" v-cloak>-->
-          <!--<div id="element-overview-inner">-->
-            <!--<p class="element-ov-secondary-info">{{ activeElement.atomicNumber }}</p>-->
-            <!--<p class="element-ov-primary-info">{{ activeElement.abbreviation }}</p>-->
-            <!--<p class="element-ov-secondary-info">{{ activeElement.name }}</p>-->
-            <!--<p class="element-ov-secondary-info">{{ activeElement.atomicMass }}</p>-->
-          <!--</div>-->
-        <!--</section>-->
-
-        <!--&lt;!&ndash; (INFO CENTER) ELEMENT DESCRIPTIONS &ndash;&gt;-->
-        <!--<section v-if="options.infoLocationType === 'info-center'" id="element-desc" v-bind:class="activeElement.color" v-cloak>-->
-          <!--<div id="element-desc-inner">-->
-            <!--<p class="element-d-primary-info">Discovery Date</p>-->
-            <!--<p class="element-d-secondary-info">{{ activeElement.discoveryDate }}</p>-->
-            <!--<p class="element-d-primary-info">Discovered By</p>-->
-            <!--<p class="element-d-secondary-info">{{ activeElement.discoveredBy }}</p>-->
-          <!--</div>-->
-        <!--</section>-->
-
 
         <!-- PERIOD LABELS -->
         <div class="label-period-outer" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
@@ -101,7 +47,6 @@
 </template>
 
 <script type="text/javascript">
-  import bus from '../../components/bus.js';
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
 
@@ -326,9 +271,6 @@
           });
         }
       },
-      setSelection: function(index) {
-        //
-      },
 
 
       // Keep Here
@@ -393,6 +335,7 @@
 
     },
     components: {
+
     },
     created() {
       this.$store.dispatch('loadElementData');
@@ -401,13 +344,18 @@
 </script>
 
 
-<style lang="scss">
-  @import '../../styles/variables.scss';
-  @import 'periodic-table';
-  @import 'generic-elements';
+<style scoped lang="scss">
+  // Variables, mixins, and common components
+  @import '../../styles/variables';
+  @import '../../styles/common/_titles.scss';
+
+  // Structure
+  @import 'periodic-table.scss';
+  @import 'generic-elements.scss';
+  @import 'element-styling.scss';
 
   // Themes
-  @import './dark-theme-periodic-table';
-  @import './light-con-theme-periodic-table';
-  @import './light-theme-periodic-table';
+  @import 'theme-dark-periodic-table.scss';
+  @import 'theme-light-con-periodic-table.scss';
+  @import 'theme-light-periodic-table.scss';
 </style>

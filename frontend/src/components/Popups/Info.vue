@@ -18,11 +18,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-
-    }
-  }
+  name: 'Info'
 }
 </script>
 

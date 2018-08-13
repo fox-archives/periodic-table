@@ -1,35 +1,35 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import PeriodicTable from '../views/PeriodicTable/PeriodicTable.vue';
-import Explore from '../views/Explore.vue';
-import Trivia from '../views/Trivia.vue';
+import Body from './views/Body/Body.vue';
+import Explore from './views/Explore/Explore.vue';
+import Trivia from './views/Trivia/Trivia.vue';
 
 Vue.use(VueRouter);
 
 const myRoutes = [
   {
     path: '/',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/simple',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/properties',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/electrons',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/orbitals',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/isotopes',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/explore',
@@ -41,15 +41,15 @@ const myRoutes = [
   },
   {
     path: '/info',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/options',
-    component: PeriodicTable
+    component: Body
   },
   {
     path: '/search',
-    component: PeriodicTable
+    component: Body
   }
 ];
 

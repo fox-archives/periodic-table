@@ -10,13 +10,13 @@
       </li>
       <li class="option">
         <p>Information</p>
-        <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
+        <vs-select class="option-theme" label="infoLocations" v-model="infoLocation">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
         </vs-select>
       </li>
       <li class="option">
         <p>Periodic Table Layout</p>
-        <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout" v-on:change="setTableLayout">
+        <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in tableLayouts" />
         </vs-select>
       </li>
@@ -40,8 +40,7 @@
 <script>
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import bus from './bus.js';
-  import blurBackground from '../mixins/blurBackground.js';
+  import blurBackground from '../../mixins/blurBackground.js';
 
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
   export default {
@@ -53,7 +52,7 @@
         themeTypes: ["light-def", "light-con", "dark-def"],
 
         // INFO LOCATION
-        infoLocationTypes: ['info-auto', 'info-top', 'info-side', 'info-excluded'],
+        infoLocationTypes: ['info-auto', 'info-top', 'info-side', 'info-exclude'],
 
         // DATA FOR HOVERED OPTIONS (when an option is hovered, it updates)
         electronOptionHovered: "false",
@@ -121,13 +120,6 @@
             this.options.infoLocationType = this.infoLocationTypes[i];
           }
         }
-        // this.options.infoLocationType = this.infoLocationType;
-        // bus.$emit('infoLocationChanged', this.infoLocationType);
-      },
-      setSelection: function() {
-
-      },
-      setTableLayout: function() {
 
       }
     },
@@ -145,25 +137,8 @@
   }
 </script>
 
-<style lang="scss">
-  // TODO: Remove duplicate of following SCSS in AdvancedOptions.vue
-  // while still displaying advancedOptions.vue properly
-#options {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 200px;
-}
+<style scoped lang="scss">
+// Format each option
+@import '../../styles/common/options';
 
-.option {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    list-style-type: none;
-}
-
-.option p {
-    font-family: robotolight;
-    padding-bottom: 5px;
-}
 </style>

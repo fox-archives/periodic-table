@@ -5,14 +5,17 @@ window.Vue = Vue;
 import store from './store.js';
 
 // Use Vue Routing (as defined in router.js)
-import router from 'Components/router.js';
+import router from './router.js';
 
 // Import Main Application Component
 import App from 'Components/App.vue';
 
 
 // Import global styles and material design
-import './styles/global-styles.scss';
+import './styles/variables.scss';
+import './styles/fonts.scss';
+import './styles/tags.scss';
+
 import 'material-icons/iconfont/material-icons.css';
 
 // VueSax (CSS and Components)
@@ -26,7 +29,7 @@ Vue.use(VueFeatherIcon);
 
 // Mount Vue Instance to the DOM
 new Vue({
-  el: '#app',
+  el: '#content',
   router: router,
   store: store,
   mode: 'history',

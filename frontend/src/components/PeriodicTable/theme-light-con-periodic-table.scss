@@ -1,11 +1,11 @@
- Section unobtrusive information
-#pt.light-con #det #unobtrusive-overview-inner, #pt.light-con #det #unobtrusive-desc ul li {
+// Section unobtrusive information
+#pt.light-con #det #element-symbol-inner, #pt.light-con #det #element-info ul li {
   background-color: $oc-gray-1;
   box-shadow: 2px 2px 3px $oc-gray-3;
   transition: all 0.2s ease-in-out;
 }
 
-#pt.light-con #det #unobtrusive-overview-inner:hover, #pt.light-con #det #unobtrusive-desc ul li:hover {
+#pt.light-con #det #element-symbol-inner:hover, #pt.light-con #det #element-info ul li:hover {
   box-shadow: 2px 2px 4px $oc-gray-4;
   transition: all 0.2s ease-in-out;
 }

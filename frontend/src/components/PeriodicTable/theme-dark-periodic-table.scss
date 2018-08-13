@@ -1,11 +1,11 @@
 // Section unobtrusive information
-#pt.dark-def #det #unobtrusive-overview-inner, #pt.dark-def #det #unobtrusive-desc ul li {
+#pt.dark-def #element-info-panel #element-symbol-inner, #pt.dark-def #det #element-info ul li {
   background-color: $oc-gray-8;
   //box-shadow: 2px 2px 3px $oc-gray-7;
   transition: all 0.2s ease-in-out;
 }
 
-#pt.dark-def #det #unobtrusive-overview-inner:hover, #pt.dark-def #det #unobtrusive-desc ul li:hover {
+#pt.dark-def #det #element-symbol-inner:hover, #pt.dark-def #det #element-info ul li:hover {
   //box-shadow: 2px 2px 4px $oc-gray-6;
   transition: all 0.2s ease-in-out;
 }

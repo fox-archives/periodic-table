@@ -23,8 +23,9 @@ export default {
 </script>
 
 <style lang="scss">
+  @import '../styles/variables.scss';
+
   .dark-def #app {
-    @import '../styles/variables.scss';
     background-color: $oc-gray-9;
   }
 </style>

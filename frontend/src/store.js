@@ -51,11 +51,7 @@ export default new Vuex.Store({
     options: {
       themeType: 'light-def',
       infoLocationType: 'info-auto',
-    },
-
-    // Remove this after code accesses the options object rather than taking values directly from the Vuex store state
-    themeType: 'light-def',
-    infoLocationType: 'info-auto',
+    }
 
   },
   getters: {

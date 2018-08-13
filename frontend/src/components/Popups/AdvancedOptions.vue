@@ -55,23 +55,7 @@
 </script>
 
 <style scoped lang="scss">
-  #options {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 200px;
-    list-style-type: none;
-  }
+// Format each option
+@import '../../styles/common/options';
 
-  .option {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    list-style-type: none;
-  }
-
-  .option p {
-    font-family: robotolight;
-    padding-bottom: 5px;
-  }
 </style>

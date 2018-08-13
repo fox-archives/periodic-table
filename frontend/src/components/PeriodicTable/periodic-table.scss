@@ -1,0 +1,41 @@
+// Add 5 to rows for the "f" block elements
+$total-columns: (18 * 2);
+$total-rows: (7 * 2) + 5;
+
+// The width and height of each element in the periodic table
+$element-width: 100% / $total-columns;
+$element-height: 40px;
+
+// MAIN GRID STRUCTURE
+#pt.info-auto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
+}
+
+#pt.info-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
+}
+
+#pt.info-side {
+  display: flex;
+  flex-direction: row;
+}
+
+#grid-container {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0px 10px 10px 10px;
+  border-radius: $border-radius;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 40px repeat($total-columns, 1fr);
+  grid-template-rows: 40px repeat($total-rows, $element-height);
+  padding: 10px 10px 10px 10px;
+}

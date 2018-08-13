@@ -12,7 +12,6 @@
 <script type="text/javascript">
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import bus from "../bus.js";
 
   export default {
     name: 'Footer',
