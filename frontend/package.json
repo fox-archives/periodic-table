@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --progress --config webpack.dev.js",
-    "prod": "webpack --progress --config webpack.prod.js"
+    "prod": "webpack --progress --config webpack.prod.js",
+    "deploy": "gulp deploy"
   },
   "keywords": [],
   "author": "",
@@ -29,22 +30,23 @@
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^4.0.3",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^1.0.1",
     "vue-feather-icon": "^1.2.0",
-    "vue-loader": "^15.2.6",
+    "vue-loader": "^15.3.0",
     "vue-router": "^3.0.1",
     "vue-svg-component-runtime": "^1.0.1",
     "vue-svg-icon-loader": "^2.1.1",
-    "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.16.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.3"
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
   }
 }

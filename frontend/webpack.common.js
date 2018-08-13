@@ -69,15 +69,5 @@ module.exports = {
       filename: 'index.html',
       template: './index.html'
     })
-    // TODO: Automatically copy the html file (created by HtmlWebpackPlugin) to the backend w/ build and prod scripts
-    // Or use Gulp.js to do this task automation
-
-    // The following code does not work for some reason (even with the CopyWebpackPlugin require statement)
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: './dist/index.html',
-    //     to: '../../backend'
-    //   }
-    // ])
   ]
-}
+};

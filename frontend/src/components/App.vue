@@ -1,5 +1,4 @@
 <template>
-  <!-- TODO: MAKE BLUR BACKGROUND CLASS V-BIND RATHER THAN MANUALLY CHANGED -->
   <div id="content" v-bind:class="options.blurType">
     <Navigation></Navigation>
     <router-view/>
