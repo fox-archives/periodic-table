@@ -1,17 +1,16 @@
 <template>
   <footer id="footer" v-bind:class="this.options.themeType">
-    <p id="name1">© 2018 Edwin Kofler</p>
-    <p id="name2">© E. Kofler</p>
-    <p id="name3">©</p>
-    <a href="#">About</a>
-    <a href="#">Feedback</a>
-    <a href="https://discord.gg/eZMuVnu">Discord</a>
+    <p class="text" id="name1">© 2018 Edwin Kofler</p>
+    <p class="text" id="name2">© E. Kofler</p>
+    <p class="text" id="name3">©</p>
+    <a class="link" href="#">About</a>
+    <a class="link" href="#">Feedback</a>
+    <a class="link" href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
 </template>
 
 <script type="text/javascript">
   import { mapGetters } from 'vuex';
-  import { mapMutations } from 'vuex';
 
   export default {
     name: 'Footer',
@@ -24,7 +23,24 @@
 </script>
 
 <style scoped lang="scss">
-  @import 'Styles/variables.scss';
-  @import './footer.scss';
-  @import './footer-themes.scss';
+@import '../../styles/variables.scss';
+@import './footer.scss';
+@import './footer-theme-mixin';
+
+// footerThemeTemplate
+// @param 1  Text Color
+// @param 2  Color of Underline when mouse hoveres over link (a tag)
+// @param 3  Background color of footer element
+
+.light-def {
+  @include footerThemeTemplate($oc-gray-9, $oc-gray-3, white)
+}
+
+.light-con {
+  @include footerThemeTemplate($oc-gray-9, $oc-gray-4, white)
+}
+
+.dark-def {
+  @include footerThemeTemplate($oc-gray-1, $oc-gray-7, $oc-gray-9)
+}
 </style>

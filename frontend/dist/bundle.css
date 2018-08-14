@@ -1435,10 +1435,10 @@ $light-con-background: $oc-gray-0;
 .light-con a:visited {
   color: #212529;
 }
-.light-con .featherIcon * {
+.light-con .feather-icon * {
   stroke: #212529;
 }
-.light-con .customIcon * {
+.light-con .custom-icon * {
   stroke: #212529;
   fill: #212529;
 }
@@ -1461,10 +1461,10 @@ $light-con-background: $oc-gray-0;
 .dark-def a:visited {
   color: #f1f3f5;
 }
-.dark-def .featherIcon * {
+.dark-def .feather-icon * {
   stroke: #f1f3f5;
 }
-.dark-def .customIcon * {
+.dark-def .custom-icon * {
   stroke: #f1f3f5;
   fill: #f1f3f5;
 }
@@ -1496,10 +1496,10 @@ $light-con-background: $oc-gray-0;
 .light-def a:visited {
   color: #495057;
 }
-.light-def .featherIcon * {
+.light-def .feather-icon * {
   stroke: #495057;
 }
-.light-def .customIcon * {
+.light-def .custom-icon * {
   stroke: #495057;
   fill: #495057;
 }
@@ -1683,7 +1683,7 @@ p#name3[data-v-edbb25a2] {
   font-family: robotolight;
   font-weight: regular; }
 
-.featherIcon, .featherIcon path, .featherIcon circle, .featherIcon line, .featherIcon polyline {
+.feather-icon, .feather-icon path, .feather-icon circle, .feather-icon line, .feather-icon polyline {
   stroke-width: 1.125; }
 
 @font-face {

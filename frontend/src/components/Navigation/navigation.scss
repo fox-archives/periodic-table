@@ -1,115 +1,49 @@
-// MAIN NAVIGATION
 #nav {
-  // If the navigation doesn't fit in the browser window, make sure user can at least scroll through all of the options
+  margin-bottom: 10px;
   overflow: auto;
   width: 100%;
   user-select: none;
-  margin-bottom: 10px;
 }
 
 #nav-content {
-  display: inline-flex;
-  box-sizing: content-box; // When calculating width of element, do not take into account of marigin-left
+  display: flex;
   margin-left: 0px;
-  list-style-type: none;
   width: 100%;
 }
 
 #nav-elements {
-  display: inline-flex;
+  display: flex;
+  list-style-type: none;
 }
 
-// NAV ELEMENTS FOR MOBILE
-// Show when pressing the hamburger menu
-#nav-popup {
-  display: inline-flex;
-  flex-direction: column;
-  overflow: auto;
-  width: 100%;
-}
-
-// NAV ELEMENTS FOR MOBILE AND REGULAR WIDTH
-// Contain an icon and text, so must be formatted
-.navItem, #logo {
+.nav-item-body {
   display: flex;
   align-items: center;
   padding: 10px 16px 10px 16px;
   height: 100%;
-  // If changing this make sure to update the JS (when clicking on nav element, it changes the bottom border radius to zero)
   border-radius: 3px;
 }
 
-.navItem:hover {
-  //transition: background-color $transition-time ease-in-out;
+.nav-item-body:hover {
   cursor: pointer;
 }
 
-// Each list element in nav bar active
-.navItem:active {
-  //background-color: $oc-gray-3;
-  transition: background-color $transition-time ease-in-out;
-}
-
-// FORMAT TEXT AND ICONS IN NAVBAR
-.navText {
+.heading {
   margin-left: 13px;
 }
 
 // Normal icon size
-.navIcon {
+.icon {
   width: 24px;
   height: 24px;
 }
 
-// Mobile Menu (hamburger) does not show, until specific screen width (see @media requests)
-#nav-content #menu-mobile {
-  display: none;
-}
 
-
-// When screen is small, decrease option sizes
-@media (max-width: 1261px) {
-  // Make padding smaller
-  #nav-content li {
-    padding: 10px 14px 10px 14px;
-  }
-
-  //Make text smaller
-  #nav-content li h2 {
-    padding-left: 10px;
-    font-size: 1em;
-  }
-
-  .navIcon {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-// On really small size, show hamburger menu
-@media (max-width: 1079px) {
-  #nav-content {
-    justify-content: space-between;
-  }
-
-  // Hide elements that are not info, question, and search
-  #nav li#simple-wide, #nav li#properties-wide, #nav li#electrons-wide, #nav li#orbitals-wide, #nav li#isotopes-wide, #nav li#explore-wide, #nav li#trivia-wide {
-    display: none;
-  }
-
-  // Show the hamburger menu as inline-flex (hidden for all other display sizes)
-  #nav li#menu-mobile {
-    display: inline-flex;
-  }
-}
-
-@media (max-width: 360px) {
-  .navIcon {
-    width: 16px;
-    height: 16px;
-  }
-
-  #nav li {
-    padding: 10px 10px 10px 10px;
-  }
+// Logo Formatting
+#logo-container {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 0px 10px;
 }

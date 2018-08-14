@@ -317,7 +317,7 @@ export default new Vuex.Store({
   },
   // Allow to run Async code
   actions: {
-    loadElementData() {
+    loadElementData: function() {
       var that = this;
       // Element Calls
       axios.get('/api/data/element/color')

@@ -1,5 +1,5 @@
 <template>
-    <isotopes class="navIcon customIcon"></isotopes>
+    <isotopes></isotopes>
 </template>
 
 <script>

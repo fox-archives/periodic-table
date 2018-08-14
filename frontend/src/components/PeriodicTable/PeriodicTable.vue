@@ -224,6 +224,7 @@
           }
         }
       },
+
       // When element is clicked, darken it
       clickElement: function(index) {
         // Change element info and label color (in case the mouse does not movein or moveout the element)
@@ -272,9 +273,6 @@
         }
       },
 
-
-      // Keep Here
-      // TODO: Import these as a mixin
       labelClassToNone: function(labelNumber) {
         return labelNumber.substring(2);
       },
@@ -325,12 +323,7 @@
 
         'activeElement',
         'clickedElement',
-        'options',
-
-        // Remove these in place of the options object
-        'themeType',
-        'infoLocationType',
-
+        'options'
       ]),
 
     },

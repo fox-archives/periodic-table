@@ -1,37 +1,37 @@
 <template>
     <ul v-bind:class="options.themeType" id="nav-popup">
-      <li class="navitem" id="simple-mobile">
-        <type-icon class="navIcon featherIcon"></type-icon>
-        <h2 class="navText">Simple</h2>
+      <li class="nav-item" id="simple-mobile">
+        <type-icon class="nav-icon feather-icon"></type-icon>
+        <h2 class="heading">Simple</h2>
       </li>
 
-      <li class="navitem" id="properties-mobile">
-        <list-icon class="navIcon featherIcon"></list-icon>
-        <h2 class="navText">Properties</h2>
+      <li class="nav-item" id="properties-mobile">
+        <list-icon class="nav-icon feather-icon"></list-icon>
+        <h2 class="heading">Properties</h2>
       </li>
 
-      <li class="navItem custom-icon" id="electrons-mobile">
+      <li class="nav-item custom-icon" id="electrons-mobile">
         <electrons></electrons>
-        <h2 class="navText">Electrons</h2>
+        <h2 class="heading">Electrons</h2>
       </li>
 
-      <li class="navItem custom-icon" id="orbitals-mobile">
+      <li class="nav-item custom-icon" id="orbitals-mobile">
         <orbitals2></orbitals2>
-        <h2 class="navText">Orbitals</h2>
+        <h2 class="heading">Orbitals</h2>
       </li>
 
-      <li class="navItem custom-icon" id="isotopes-mobile">
+      <li class="nav-item custom-icon" id="isotopes-mobile">
         <isotopes></isotopes>
-        <h2 class="navText">Isotopes</h2>
+        <h2 class="heading">Isotopes</h2>
       </li>
 
-      <li class="navitem" id="explore-mobile">
-        <map-icon class="navIcon featherIcon"></map-icon>
-        <h2 class="navText">Explore</h2> </li>
+      <li class="nav-item" id="explore-mobile">
+        <map-icon class="nav-icon feather-icon"></map-icon>
+        <h2 class="heading">Explore</h2> </li>
 
-      <li class="navitem" id="trivia-mobile">
-        <check-icon class="navIcon featherIcon"></check-icon>
-        <h2 class="navText">Trivia</h2>
+      <li class="nav-item" id="trivia-mobile">
+        <check-icon class="nav-icon feather-icon"></check-icon>
+        <h2 class="heading">Trivia</h2>
       </li>
     </ul>
 </template>
@@ -77,5 +77,10 @@
 </script>
 
 <style scoped lang="scss">
-
+#nav-popup {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+}
 </style>

@@ -1,0 +1,13 @@
+@mixin footerThemeTemplate($text, $underline, $background) {
+  .text, .link {
+    color: $text;
+  }
+
+  .link {
+    text-decoration-color: $underline;
+  }
+
+  &#footer {
+    background-color: $background;
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-    <electrons class="navIcon customIcon"></electrons>
+    <electrons class="navIcon custom-icon"></electrons>
 </template>
 
 <script>

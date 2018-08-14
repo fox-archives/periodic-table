@@ -1,39 +1,18 @@
 <template>
     <section v-if="options.infoLocationType !== 'info-exclude'" id="element-info-panel">
-        <li id="element-symbol">
-            <div id="element-symbol-inner" class="shadowReg">
-                <p id="icon" v-bind:class="activeElement.color">{{ activeElement.abbreviation }}</p>
-                <h3 id="element-name">{{ activeElement.name }}</h3>
-            </div>
-        </li>
-        <li id="element-info">
-            <ul id="element-info-left">
-                <li class="shadowReg">
-                    <h4>Atomic Number</h4>
-                    <p>{{ activeElement.atomicNumber }}</p>
-                </li>
-                <li class="shadowReg">
-                    <h4>Atomic Mass</h4>
-                    <p>{{ activeElement.atomicMass }}</p>
-                    <p>u</p>
-                </li>
-                <li class="shadowReg">
-                    <h4>Discovered By</h4>
-                    <p>{{ activeElement.discoveredBy }}</p>
-                </li>
-                <li class="shadowReg">
-                    <h4>Discovery Date</h4>
-                    <p>{{ activeElement.discoveryDate }}</p>
-                </li>
-            </ul>
-        </li>
+        <div id="visual">
+            <h2>Visual Element</h2>
+        </div>
+        <div id="textual">
+            <h2>Textual Element</h2>
+        </div>
     </section>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
   export default {
-    name: "ElementInfoPanel",
+    name: 'ElementInfoPanel',
     data() {
       return {
 

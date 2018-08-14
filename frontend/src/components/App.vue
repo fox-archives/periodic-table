@@ -1,5 +1,6 @@
 <template>
-  <div id="content" v-bind:class="options.blurType">
+  <div id="content">
+  <!--<div id="content" v-bind:class="options.blurType">-->
     <Navigation></Navigation>
     <router-view/>
     <Footer></Footer>

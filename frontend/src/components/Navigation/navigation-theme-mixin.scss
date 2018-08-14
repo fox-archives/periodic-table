@@ -1,0 +1,59 @@
+@mixin navigationThemeTemplate($background, $shadow, $shadowHover, $navItemHover, $navItemClick, $navItemActive, $heading, $icon) {
+  // Color of main navigation bar
+  #nav {
+    background-color: $background;
+    box-shadow: 2px 2px 3px $shadow;
+    transition: all $transition-time ease-in-out;
+  }
+
+  &#nav:hover {
+    box-shadow: 2px 2px 4px $shadowHover;
+    transition: all $transition-time ease-in-out;
+  }
+
+  // Color of each nav item
+  .nav-item-body {
+    // Background should automatically be $background
+  }
+
+  .nav-item-body:hover {
+    background-color: $navItemHover;
+  }
+
+  .nav-item-body:active {
+    background-color: $navItemClick;
+    transition: all $transition-time ease-in-out;
+  }
+
+  .nav-item-body.router-link-active {
+    background-color: $navItemActive;
+    transition: all $transition-time ease-in-out;
+  }
+
+  // Color of of headings
+  .heading {
+    color: $heading;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .link:hover {
+    //text-decoration: underline;
+    //text-decoration-color: $headingUnderline;
+  }
+
+  // Icons
+  .custom-icon {
+    color: $icon;
+  }
+
+  .feather-icon {
+    // Should be able to remove stroke if vue-feather-icons updates to use latest version of Feather Icons
+    stroke: $icon;
+    color: $icon;
+    stroke-width: 1.125;
+  }
+
+}

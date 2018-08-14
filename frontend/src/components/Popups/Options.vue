@@ -9,8 +9,8 @@
         </vs-select>
       </li>
       <li class="option">
-        <p>Information</p>
-        <vs-select class="option-theme" label="infoLocations" v-model="infoLocation">
+        <p>Element Info Location</p>
+        <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
         </vs-select>
       </li>
@@ -31,7 +31,7 @@
   </aside>
 
   <!-- POPUP FOR ADVANCED SETTINGS -->
-  <vs-popup vs-title="Advanced Options" v-bind:vs-active="advancedSettingsPopupActive" v-on:vs-cancel="advancedSettingsPopup('off')">
+  <vs-popup title="Advanced Options" :active.sync="advancedSettingsPopupActive" v-on:vs-cancel="advancedSettingsPopup('off')">
       <AdvancedOptionsPopUp></AdvancedOptionsPopUp>
   </vs-popup>
 </div>
@@ -47,6 +47,14 @@
     name: "Options",
     data() {
       return {
+        select1:3,
+
+        options1:[
+          {text:'IT',value:0},
+          {text:'Blade Runner',value:2},
+          {text:'Thor Ragnarok',value:3},
+        ],
+
         // THEMING
         // Default light theme (see themes array below to see values in selection menu)
         themeTypes: ["light-def", "light-con", "dark-def"],
@@ -87,12 +95,12 @@
       advancedSettingsPopup: function(state) {
         if(state === "on") {
           this.options.blurType = 'blur-large';
-          this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
+          // this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
           this.advancedSettingsPopupActive = true;
         }
         else if(state === "off") {
           this.options.blurType = 'blur';
-          this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
+          // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
           this.advancedSettingsPopupActive = false;
         }
       },

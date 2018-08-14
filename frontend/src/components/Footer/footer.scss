@@ -8,12 +8,20 @@
 }
 
 // Text in footer
-#footer p, #footer a {
+.text, .link {
   // Font Family is roboto because it is not exactly content, but a title sort of
   font-family: robotoregular;
   font-size: 1em;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 // Show large copyright notice (name1) on regular browser length

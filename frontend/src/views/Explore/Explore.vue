@@ -14,6 +14,7 @@
 </script>
 
 <style scoped lang="scss">
-    // TODO: Add SCSS mixins for common theme elements (such as basic heading colors)
+    @import '../../styles/variables.scss';
+    @import '../../styles/common/_titles.scss';
 
 </style>
