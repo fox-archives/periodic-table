@@ -103,11 +103,6 @@
   import Orbitals from '../../assets/svg/icons/orbitals.svg';
   import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
   import Isotopes from '../../assets/svg/icons/isotopes.svg';
-
-  // import Electrons from '../svg/Electrons.vue';
-  // import Orbitals from '../svg/Orbitals.vue';
-  // import Orbitals2 from '../svg/Orbitals2.vue';
-  // import Isotopes from '../svg/Isotopes.vue';
   import { Map } from 'vue-feather-icon'; // Explore
   import { Check } from 'vue-feather-icon'; // Trivia
   import { Info } from 'vue-feather-icon';

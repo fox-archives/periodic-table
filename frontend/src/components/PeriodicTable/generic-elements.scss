@@ -2,75 +2,75 @@
 
 // SUPER DARK ELEMENT COLOR
 // Clicking on an element
-#pt.light-def .supdark-blue { background-color: $oc-blue-4; }
-#pt.light-def .supdark-red { background-color: $oc-red-4; }
-#pt.light-def .supdark-green { background-color: $oc-green-4; }
-#pt.light-def .supdark-orange { background-color: $oc-orange-4; }
-#pt.light-def .supdark-violet { background-color: $oc-violet-4; }
+.light-def .supdark-blue { background-color: $oc-blue-4; }
+.light-def .supdark-red { background-color: $oc-red-4; }
+.light-def .supdark-green { background-color: $oc-green-4; }
+.light-def .supdark-orange { background-color: $oc-orange-4; }
+.light-def .supdark-violet { background-color: $oc-violet-4; }
 
-#pt.light-def .supdark-blue * { color: $oc-gray-9; }
-#pt.light-def .supdark-red * { color: $oc-gray-9; }
-#pt.light-def .supdark-green * { color: $oc-gray-9; }
-#pt.light-def .supdark-orange * { color: $oc-gray-9; }
-#pt.light-def .supdark-violet * { color: $oc-gray-9; }
+.light-def .supdark-blue * { color: $oc-gray-9; }
+.light-def .supdark-red * { color: $oc-gray-9; }
+.light-def .supdark-green * { color: $oc-gray-9; }
+.light-def .supdark-orange * { color: $oc-gray-9; }
+.light-def .supdark-violet * { color: $oc-gray-9; }
 
 
 // DARK ELEMENT COLOR
 // Hovering over element
-#pt.light-def .dark-blue { background-color: $oc-blue-3; }
-#pt.light-def .dark-red { background-color: $oc-red-3; }
-#pt.light-def .dark-green { background-color: $oc-green-3; }
-#pt.light-def .dark-orange { background-color: $oc-orange-3; }
-#pt.light-def .dark-violet { background-color: $oc-violet-3; }
+.light-def .dark-blue { background-color: $oc-blue-3; }
+.light-def .dark-red { background-color: $oc-red-3; }
+.light-def .dark-green { background-color: $oc-green-3; }
+.light-def .dark-orange { background-color: $oc-orange-3; }
+.light-def .dark-violet { background-color: $oc-violet-3; }
 
-#pt.light-def .dark-blue * { color: $oc-gray-9; }
-#pt.light-def .dark-red * { color: $oc-gray-9; }
-#pt.light-def .dark-green * { color: $oc-gray-9; }
-#pt.light-def .dark-orange * { color: $oc-gray-9; }
-#pt.light-def .dark-violet * { color: $oc-gray-9; }
+.light-def .dark-blue * { color: $oc-gray-9; }
+.light-def .dark-red * { color: $oc-gray-9; }
+.light-def .dark-green * { color: $oc-gray-9; }
+.light-def .dark-orange * { color: $oc-gray-9; }
+.light-def .dark-violet * { color: $oc-gray-9; }
 
 // REGULAR ELEMENT COLOR
 // Occurs when highlighting over an element (default state)
-#pt.light-def .blue { background-color: $oc-blue-2; }
-#pt.light-def .red { background-color: $oc-red-2; }
-#pt.light-def .green { background-color: $oc-green-2; }
-#pt.light-def .orange { background-color: $oc-orange-2; }
-#pt.light-def .violet { background-color: $oc-violet-2; }
+.light-def .blue { background-color: $oc-blue-2; }
+.light-def .red { background-color: $oc-red-2; }
+.light-def .green { background-color: $oc-green-2; }
+.light-def .orange { background-color: $oc-orange-2; }
+.light-def .violet { background-color: $oc-violet-2; }
 
-#pt.light-def .blue * { color: $oc-gray-9; }
-#pt.light-def .red * { color: $oc-gray-9; }
-#pt.light-def .green * { color: $oc-gray-9; }
-#pt.light-def .orange * { color: $oc-gray-9; }
-#pt.light-def .violet * { color: $oc-gray-9; }
+.light-def .blue * { color: $oc-gray-9; }
+.light-def .red * { color: $oc-gray-9; }
+.light-def .green * { color: $oc-gray-9; }
+.light-def .orange * { color: $oc-gray-9; }
+.light-def .violet * { color: $oc-gray-9; }
 
 // LIGHT ELEMENT COLOR
 // Occurs when user hovers over period.json / group label; perios / groups that were not highlighted over become lighter (color and text)
-#pt.light-def .light-blue { background-color: $oc-blue-1; }
-#pt.light-def .light-red { background-color: $oc-red-1; }
-#pt.light-def .light-green { background-color: $oc-green-1; }
-#pt.light-def .light-orange { background-color: $oc-orange-1; }
-#pt.light-def .light-violet { background-color: $oc-violet-1; }
+.light-def .light-blue { background-color: $oc-blue-1; }
+.light-def .light-red { background-color: $oc-red-1; }
+.light-def .light-green { background-color: $oc-green-1; }
+.light-def .light-orange { background-color: $oc-orange-1; }
+.light-def .light-violet { background-color: $oc-violet-1; }
 
-#pt.light-def .light-blue * { color: $oc-gray-6; }
-#pt.light-def .light-red * { color: $oc-gray-6; }
-#pt.light-def .light-green * { color: $oc-gray-6; }
-#pt.light-def .light-orange * { color: $oc-gray-6; }
-#pt.light-def .light-violet * { color: $oc-gray-6; }
+.light-def .light-blue * { color: $oc-gray-6; }
+.light-def .light-red * { color: $oc-gray-6; }
+.light-def .light-green * { color: $oc-gray-6; }
+.light-def .light-orange * { color: $oc-gray-6; }
+.light-def .light-violet * { color: $oc-gray-6; }
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
 // Each period.json / group label has v-binds a class which is either .light or .dark
-#pt.light-def .light {
+.light-def .light {
   background-color: $oc-gray-0;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#pt.light-def .light:hover {
+.light-def .light:hover {
   background-color: $oc-gray-2;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#pt.light-def .dark {
+.light-def .dark {
   background-color: $oc-gray-2;
   //transition: background-color $transition-time ease-in-out;
 }
@@ -83,75 +83,75 @@
 
 // SUPER DARK ELEMENT COLOR
 // Clicking on an element
-#pt.light-con .supdark-blue { background-color: $oc-blue-6; }
-#pt.light-con .supdark-red { background-color: $oc-red-6; }
-#pt.light-con .supdark-green { background-color: $oc-green-6; }
-#pt.light-con .supdark-orange { background-color: $oc-orange-6; }
-#pt.light-con .supdark-violet { background-color: $oc-violet-6; }
+.light-con .supdark-blue { background-color: $oc-blue-6; }
+.light-con .supdark-red { background-color: $oc-red-6; }
+.light-con .supdark-green { background-color: $oc-green-6; }
+.light-con .supdark-orange { background-color: $oc-orange-6; }
+.light-con .supdark-violet { background-color: $oc-violet-6; }
 
-#pt.light-con .supdark-blue * { color: $oc-gray-9; }
-#pt.light-con .supdark-red * { color: $oc-gray-9; }
-#pt.light-con .supdark-green * { color: $oc-gray-9; }
-#pt.light-con .supdark-orange * { color: $oc-gray-9; }
-#pt.light-con .supdark-violet * { color: $oc-gray-9; }
+.light-con .supdark-blue * { color: $oc-gray-9; }
+.light-con .supdark-red * { color: $oc-gray-9; }
+.light-con .supdark-green * { color: $oc-gray-9; }
+.light-con .supdark-orange * { color: $oc-gray-9; }
+.light-con .supdark-violet * { color: $oc-gray-9; }
 
 
 // DARK ELEMENT COLOR
 // Hovering over element
-#pt.light-con .dark-blue { background-color: $oc-blue-5; }
-#pt.light-con .dark-red { background-color: $oc-red-5; }
-#pt.light-con .dark-green { background-color: $oc-green-5; }
-#pt.light-con .dark-orange { background-color: $oc-orange-5; }
-#pt.light-con .dark-violet { background-color: $oc-violet-5; }
+.light-con .dark-blue { background-color: $oc-blue-5; }
+.light-con .dark-red { background-color: $oc-red-5; }
+.light-con .dark-green { background-color: $oc-green-5; }
+.light-con .dark-orange { background-color: $oc-orange-5; }
+.light-con .dark-violet { background-color: $oc-violet-5; }
 
-#pt.light-con .dark-blue * { color: $oc-gray-9; }
-#pt.light-con .dark-red * { color: $oc-gray-9; }
-#pt.light-con .dark-green * { color: $oc-gray-9; }
-#pt.light-con .dark-orange * { color: $oc-gray-9; }
-#pt.light-con .dark-violet * { color: $oc-gray-9; }
+.light-con .dark-blue * { color: $oc-gray-9; }
+.light-con .dark-red * { color: $oc-gray-9; }
+.light-con .dark-green * { color: $oc-gray-9; }
+.light-con .dark-orange * { color: $oc-gray-9; }
+.light-con .dark-violet * { color: $oc-gray-9; }
 
 // REGULAR ELEMENT COLOR
 // Occurs when highlighting over an element (default state)
-#pt.light-con .blue { background-color: $oc-blue-4; }
-#pt.light-con .red { background-color: $oc-red-4; }
-#pt.light-con .green { background-color: $oc-green-4; }
-#pt.light-con .orange { background-color: $oc-orange-4; }
-#pt.light-con .violet { background-color: $oc-violet-4; }
+.light-con .blue { background-color: $oc-blue-4; }
+.light-con .red { background-color: $oc-red-4; }
+.light-con .green { background-color: $oc-green-4; }
+.light-con .orange { background-color: $oc-orange-4; }
+.light-con .violet { background-color: $oc-violet-4; }
 
-#pt.light-con .blue * { color: $oc-gray-9; }
-#pt.light-con .red * { color: $oc-gray-9; }
-#pt.light-con .green * { color: $oc-gray-9; }
-#pt.light-con .orange * { color: $oc-gray-9; }
-#pt.light-con .violet * { color: $oc-gray-9; }
+.light-con .blue * { color: $oc-gray-9; }
+.light-con .red * { color: $oc-gray-9; }
+.light-con .green * { color: $oc-gray-9; }
+.light-con .orange * { color: $oc-gray-9; }
+.light-con .violet * { color: $oc-gray-9; }
 
 // LIGHT ELEMENT COLOR
 // Occurs when user hovers over period.json / group label; perios / groups that were not highlighted over become lighter (color and text)
-#pt.light-con .light-blue { background-color: $oc-blue-2; }
-#pt.light-con .light-red { background-color: $oc-red-2; }
-#pt.light-con .light-green { background-color: $oc-green-2; }
-#pt.light-con .light-orange { background-color: $oc-orange-2; }
-#pt.light-con .light-violet { background-color: $oc-violet-2; }
+.light-con .light-blue { background-color: $oc-blue-2; }
+.light-con .light-red { background-color: $oc-red-2; }
+.light-con .light-green { background-color: $oc-green-2; }
+.light-con .light-orange { background-color: $oc-orange-2; }
+.light-con .light-violet { background-color: $oc-violet-2; }
 
-#pt.light-con .light-blue * { color: $oc-gray-6; }
-#pt.light-con .light-red * { color: $oc-gray-6; }
-#pt.light-con .light-green * { color: $oc-gray-6; }
-#pt.light-con .light-orange * { color: $oc-gray-6; }
-#pt.light-con .light-violet * { color: $oc-gray-6; }
+.light-con .light-blue * { color: $oc-gray-6; }
+.light-con .light-red * { color: $oc-gray-6; }
+.light-con .light-green * { color: $oc-gray-6; }
+.light-con .light-orange * { color: $oc-gray-6; }
+.light-con .light-violet * { color: $oc-gray-6; }
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
 // Each period.json / group label has v-binds a class which is either .light or .dark
-#pt.light-con .light {
+.light-con .light {
   background-color: $oc-gray-1;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#pt.light-con .light:hover {
+.light-con .light:hover {
   background-color: $oc-gray-4;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#pt.light-con .dark {
+.light-con .dark {
   background-color: $oc-gray-4;
   //transition: background-color $transition-time ease-in-out;
 }
@@ -163,74 +163,74 @@
 
 // SUPER DARK ELEMENT COLOR
 // Clicking on an element
-#pt.dark-def .supdark-blue { background-color: $oc-blue-9; }
-#pt.dark-def .supdark-red { background-color: $oc-red-9; }
-#pt.dark-def .supdark-green { background-color: $oc-green-9; }
-#pt.dark-def .supdark-orange { background-color: $oc-orange-9; }
-#pt.dark-def .supdark-violet { background-color: $oc-violet-9; }
+.dark-def .supdark-blue { background-color: $oc-blue-9; }
+.dark-def .supdark-red { background-color: $oc-red-9; }
+.dark-def .supdark-green { background-color: $oc-green-9; }
+.dark-def .supdark-orange { background-color: $oc-orange-9; }
+.dark-def .supdark-violet { background-color: $oc-violet-9; }
 
-#pt.dark-def .supdark-blue * { color: $oc-gray-1; }
-#pt.dark-def .supdark-red * { color: $oc-gray-1; }
-#pt.dark-def .supdark-green * { color: $oc-gray-1; }
-#pt.dark-def .supdark-orange * { color: $oc-gray-1; }
-#pt.dark-def .supdark-violet * { color: $oc-gray-1; }
+.dark-def .supdark-blue * { color: $oc-gray-1; }
+.dark-def .supdark-red * { color: $oc-gray-1; }
+.dark-def .supdark-green * { color: $oc-gray-1; }
+.dark-def .supdark-orange * { color: $oc-gray-1; }
+.dark-def .supdark-violet * { color: $oc-gray-1; }
 
 // DARK ELEMENT COLOR
 // Hovering over element
-#pt.dark-def .dark-blue { background-color: $oc-blue-8; }
-#pt.dark-def .dark-red { background-color: $oc-red-8; }
-#pt.dark-def .dark-green { background-color: $oc-green-8; }
-#pt.dark-def .dark-orange { background-color: $oc-orange-8; }
-#pt.dark-def .dark-violet { background-color: $oc-violet-8; }
+.dark-def .dark-blue { background-color: $oc-blue-8; }
+.dark-def .dark-red { background-color: $oc-red-8; }
+.dark-def .dark-green { background-color: $oc-green-8; }
+.dark-def .dark-orange { background-color: $oc-orange-8; }
+.dark-def .dark-violet { background-color: $oc-violet-8; }
 
-#pt.dark-def .dark-blue * { color: $oc-gray-1; }
-#pt.dark-def .dark-red * { color: $oc-gray-1; }
-#pt.dark-def .dark-green * { color: $oc-gray-1; }
-#pt.dark-def .dark-orange * { color: $oc-gray-1; }
-#pt.dark-def .dark-violet * { color: $oc-gray-1; }
+.dark-def .dark-blue * { color: $oc-gray-1; }
+.dark-def .dark-red * { color: $oc-gray-1; }
+.dark-def .dark-green * { color: $oc-gray-1; }
+.dark-def .dark-orange * { color: $oc-gray-1; }
+.dark-def .dark-violet * { color: $oc-gray-1; }
 
 
 // REGULAR ELEMENT COLOR
-#pt.dark-def .blue { background-color: $oc-blue-6; }
-#pt.dark-def .red { background-color: $oc-red-6; }
-#pt.dark-def .green { background-color: $oc-green-6; }
-#pt.dark-def .orange { background-color: $oc-orange-6; }
-#pt.dark-def .violet { background-color: $oc-violet-6; }
+.dark-def .blue { background-color: $oc-blue-6; }
+.dark-def .red { background-color: $oc-red-6; }
+.dark-def .green { background-color: $oc-green-6; }
+.dark-def .orange { background-color: $oc-orange-6; }
+.dark-def .violet { background-color: $oc-violet-6; }
 
-#pt.dark-def .blue * { color: $oc-gray-1; }
-#pt.dark-def .red * { color: $oc-gray-1; }
-#pt.dark-def .green * { color: $oc-gray-1; }
-#pt.dark-def .orange * { color: $oc-gray-1; }
-#pt.dark-def .violet * { color: $oc-violet-4; }
+.dark-def .blue * { color: $oc-gray-1; }
+.dark-def .red * { color: $oc-gray-1; }
+.dark-def .green * { color: $oc-gray-1; }
+.dark-def .orange * { color: $oc-gray-1; }
+.dark-def .violet * { color: $oc-violet-4; }
 
 // LIGHT ELEMENT COLOR
 // Occurs when user hovers over period.json / group label; perios / groups that were not highlighted over become lighter (color and text)
-#pt.dark-def .light-blue { background-color: $oc-blue-4; }
-#pt.dark-def .light-red { background-color: $oc-red-4; }
-#pt.dark-def .light-green { background-color: $oc-green-4; }
-#pt.dark-def .light-orange { background-color: $oc-orange-4; }
-#pt.dark-def .light-violet { background-color: $oc-violet-4; }
+.dark-def .light-blue { background-color: $oc-blue-4; }
+.dark-def .light-red { background-color: $oc-red-4; }
+.dark-def .light-green { background-color: $oc-green-4; }
+.dark-def .light-orange { background-color: $oc-orange-4; }
+.dark-def .light-violet { background-color: $oc-violet-4; }
 
-#pt.dark-def .light-blue * { color: $oc-gray-5; }
-#pt.dark-def .light-red * { color: $oc-gray-5; }
-#pt.dark-def .light-green * { color: $oc-gray-5; }
-#pt.dark-def .light-orange * { color: $oc-gray-5; }
-#pt.dark-def .light-violet * { color: $oc-gray-5; }
+.dark-def .light-blue * { color: $oc-gray-5; }
+.dark-def .light-red * { color: $oc-gray-5; }
+.dark-def .light-green * { color: $oc-gray-5; }
+.dark-def .light-orange * { color: $oc-gray-5; }
+.dark-def .light-violet * { color: $oc-gray-5; }
 
 
 // PERIOD LABELS AND GROUP LABELS COLORS
 // Each period.json / group label has v-binds a class which is either .light or .dark
-#pt.dark-def .light {
+.dark-def .light {
   background-color: $oc-gray-8;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#pt.dark-def .light:hover {
+.dark-def .light:hover {
   background-color: $oc-gray-9;
   //transition: background-color $transition-time ease-in-out;
 }
 
-#pt.dark-def .dark {
+.dark-def .dark {
   background-color: $oc-gray-9;
   //transition: background-color $transition-time ease-in-out;
 }

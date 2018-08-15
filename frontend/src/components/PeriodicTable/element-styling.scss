@@ -1,13 +1,13 @@
 // DUPLICATED ELEMENTS FROM PERIODIC TABLE
-.element-outer {
-  border-radius: 4px;
+.element {
+  border-radius: $border-radius-small;
   margin: 2px 2px 2px 2px;
   overflow: hidden;
   user-select: none;
 }
 
 // Recall background-color found in generic-elements.scss
-.element-outer:hover {
+.element:hover {
   cursor: pointer;
 }
 

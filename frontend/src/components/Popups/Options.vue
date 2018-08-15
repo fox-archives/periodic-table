@@ -106,7 +106,7 @@
       },
       // Changes local theme, and emits 'theme-changed' to all other .vue files (so theme changes in other .vue files)
       setTheme: function() {
-        // This changes themeType (in Vuex optios object)
+        // This changes options.themeType (in Vuex optios object)
         // i represents each element in themeTypes array
         for(let i = 0; i < this.themeTypes.length; i++) {
           // i + 1 because theme

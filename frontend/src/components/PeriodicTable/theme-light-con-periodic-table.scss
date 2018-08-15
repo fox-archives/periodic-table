@@ -1,51 +1,51 @@
 // Section unobtrusive information
-#pt.light-con #det #element-symbol-inner, #pt.light-con #det #element-info ul li {
+.light-con #det #element-symbol-inner, .light-con #det #element-info ul li {
   background-color: $oc-gray-1;
   box-shadow: 2px 2px 3px $oc-gray-3;
   transition: all 0.2s ease-in-out;
 }
 
-#pt.light-con #det #element-symbol-inner:hover, #pt.light-con #det #element-info ul li:hover {
+.light-con #det #element-symbol-inner:hover, .light-con #det #element-info ul li:hover {
   box-shadow: 2px 2px 4px $oc-gray-4;
   transition: all 0.2s ease-in-out;
 }
 //end
-#pt.light-con #grid-container {
+.light-con #grid-container {
   background-color: $oc-gray-1;
   box-shadow: 2px 2px 4px $oc-gray-3;
   transition: all 0.2s ease-in-out;
 }
 
-#pt.light-con #grid-container:hover {
+.light-con #grid-container:hover {
   background-color: $oc-gray-1;
   box-shadow: 2px 2px 4px $oc-gray-4;
   transition: all 0.2s ease-in-out;
 }
 
-#pt.light-con .element-outer {
+.light-con .element {
   box-shadow: 3px 3px 3px $oc-gray-4;
 }
 
-#pt.light-con .element-outer:hover {
+.light-con .element:hover {
   box-shadow: 5px 5px 5px $oc-gray-4;
 }
 
-#pt.light-con #element-overview {
+.light-con #element-overview {
   box-shadow: 4px 4px 4px $oc-gray-4;
 }
 
-#pt.light-con #element-desc {
+.light-con #element-desc {
   box-shadow: 4px 4px 4px $oc-gray-4;
 }
 
-#pt.light-con .label-period-inner p, .light-con .label-group-inner p {
+.light-con .label-period-inner p, .light-con .label-group-inner p {
   color: $oc-gray-9;
 }
 
-#pt.light-con #det {
+.light-con #det {
   background-color: white;
 }
 
-#pt.light-con p, #pt.light-con h3, #pt.light-con h4 {
+.light-con p, .light-con h3, .light-con h4 {
   color: $oc-gray-9;
 }

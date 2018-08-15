@@ -1,47 +1,49 @@
 <template>
-  <div id="pt" v-bind:class="[options.themeType, options.infoLocationType]">
-    <div v-if="ready" id="grid-container">
-      <main id="grid">
-        <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
-        <div class="element-outer"
-             v-for="(ePlacement, index) in ePlacements"
-             v-on:mouseover="[changeElementAndLabelPrefix(index, 'dark-'), changeLabelColor(index, 'true'), updateActiveElement(index)]"
-             v-on:mouseleave="[changeElementAndLabelPrefix(index, ''), changeLabelColor(index, 'false'), updateActiveElement(index)]"
-             v-on:click="[clickElement(index)]"
-             v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
-        >
-          <div v-cloak class="element-inner">
-            <p class="element-secondary-info">{{ ePlacement.eLabel }}</p>
-            <p class="element-primary-info">{{ simpleData[index].abbreviation }}</p>
-            <p class="element-secondary-info">{{ simpleData[index].name }}</p>
-            <p class="element-secondary-info">{{ simpleData[index].atomicMass }}</p>
-          </div>
-        </div>
-
-        <!-- PERIOD LABELS -->
-        <div class="label-period-outer" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
-          <div v-cloak class="label-period-inner"
-               v-bind:class="periodData[index].color"
-               v-on:mouseover="[highlightSection(index, 'period')]"
-               v-on:mouseleave="[unHighlightSection(index, 'period')]"
-               v-on:click="periodNotification(index)"
+  <div v-bind:class="[options.themeType, options.infoLocationType]" id="remove-this-div-later">
+    <div id="grid-container-outer">
+      <div v-if="ready" id="grid-container" v-bind:class="[options.themeType, options.infoLocationType]">
+        <main id="grid">
+          <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
+          <div class="element"
+               v-for="(ePlacement, index) in ePlacements"
+               v-on:mouseover="[changeElementAndLabelPrefix(index, 'dark-'), changeLabelColor(index, 'true'), updateActiveElement(index)]"
+               v-on:mouseleave="[changeElementAndLabelPrefix(index, ''), changeLabelColor(index, 'false'), updateActiveElement(index)]"
+               v-on:click="[clickElement(index)]"
+               v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
           >
-            <p class="label-text">{{ period.display }}</p>
+            <div v-cloak class="element-inner">
+              <p class="element-secondary-info">{{ ePlacement.eLabel }}</p>
+              <p class="element-primary-info">{{ simpleData[index].abbreviation }}</p>
+              <p class="element-secondary-info">{{ simpleData[index].name }}</p>
+              <p class="element-secondary-info">{{ simpleData[index].atomicMass }}</p>
+            </div>
           </div>
-        </div>
 
-        <!-- GROUP LABELS -->
-        <div class="label-group-outer" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
-          <div v-cloak class="label-group-inner"
-               v-bind:class="groupData[index].color"
-               v-on:mouseover="[highlightSection(index, 'group')]"
-               v-on:mouseleave="[unHighlightSection(index, 'group')]"
-               v-on:click="groupNotification(index)"
-          >
-            <p class="label-text">{{ group.display }}</p>
+          <!-- PERIOD LABELS -->
+          <div class="label-period" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
+            <div v-cloak class="label-period-inner"
+                 v-bind:class="periodData[index].color"
+                 v-on:mouseover="[highlightSection(index, 'period')]"
+                 v-on:mouseleave="[unHighlightSection(index, 'period')]"
+                 v-on:click="periodNotification(index)"
+            >
+              <p class="label-text">{{ period.display }}</p>
+            </div>
           </div>
-        </div>
-      </main>
+
+          <!-- GROUP LABELS -->
+          <div class="label-group" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
+            <div v-cloak class="label-group-inner"
+                 v-bind:class="groupData[index].color"
+                 v-on:mouseover="[highlightSection(index, 'group')]"
+                 v-on:mouseleave="[unHighlightSection(index, 'group')]"
+                 v-on:click="groupNotification(index)"
+            >
+              <p class="label-text">{{ group.display }}</p>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
   </div>
 </template>
@@ -343,12 +345,15 @@
   @import '../../styles/common/_titles.scss';
 
   // Structure
-  @import 'periodic-table.scss';
-  @import 'generic-elements.scss';
-  @import 'element-styling.scss';
+  @import './periodic-table.scss';
+  @import './generic-elements.scss';
+  @import './element-styling.scss';
+
 
   // Themes
-  @import 'theme-dark-periodic-table.scss';
-  @import 'theme-light-con-periodic-table.scss';
-  @import 'theme-light-periodic-table.scss';
+  @import './periodic-table-theme-mixin.scss';
+
+  @import './theme-dark-periodic-table.scss';
+  @import './theme-light-con-periodic-table.scss';
+  @import './theme-light-periodic-table.scss';
 </style>

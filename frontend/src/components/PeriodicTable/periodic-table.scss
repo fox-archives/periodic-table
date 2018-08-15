@@ -7,28 +7,20 @@ $element-width: 100% / $total-columns;
 $element-height: 40px;
 
 // MAIN GRID STRUCTURE
-#pt.info-auto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 400px;
-}
-
-#pt.info-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 400px;
-}
-
-#pt.info-side {
-  display: flex;
-  flex-direction: row;
+#grid-container-outer {
+  //position: relative;
+  //height: 0px;
+  //width: 100%;
+  //padding-bottom: 58%;
 }
 
 #grid-container {
-  display: inline-flex;
-  justify-content: center;
+  //position: absolute;
+  //top: 0px;
+  //right: 0px;
+  //bottom: 0px;
+  //left: 0px;
+
   margin: 0px 10px 10px 10px;
   border-radius: $border-radius;
 }

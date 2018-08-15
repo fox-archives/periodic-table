@@ -92,20 +92,7 @@ export default new Vuex.Store({
 
     options: function(state) {
       return state.options;
-    },
-
-    // TO BE REMOVED (in place of the options object)
-    themeType: function(state) {
-      return state.themeType;
-    },
-    infoLocationType: function(state) {
-      return state.infoLocationType;
-    },
-
-    // OTHER GETTERS (MOSTLY CALCULATIONS)
-
-
-
+    }
   },
   mutations: {
     // TODO: Remove the 'Force'
