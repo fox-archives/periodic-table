@@ -8,26 +8,26 @@ $element-height: 40px;
 
 // MAIN GRID STRUCTURE
 #grid-container-outer {
-  //position: relative;
-  //height: 0px;
-  //width: 100%;
-  //padding-bottom: 58%;
+  margin: 0px 10px 10px 10px;
 }
 
 #grid-container {
-  //position: absolute;
-  //top: 0px;
-  //right: 0px;
-  //bottom: 0px;
-  //left: 0px;
-
-  margin: 0px 10px 10px 10px;
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 63.5%;
   border-radius: $border-radius;
 }
 
 #grid {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
   display: grid;
   grid-template-columns: 40px repeat($total-columns, 1fr);
-  grid-template-rows: 40px repeat($total-rows, $element-height);
+  grid-template-rows: 40px repeat($total-rows, 1fr);
   padding: 10px 10px 10px 10px;
 }
