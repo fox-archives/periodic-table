@@ -1,13 +1,34 @@
-@mixin navigationThemeTemplate($background, $shadow, $shadowHover, $navItemHover, $navItemClick, $navItemActive, $heading, $icon) {
+// @param 1  $background  Background color of the navigation bar
+// @param 2  $hasShadow  Boolean for if there is a shadow, if so, shadow selectors are not created
+// @param 2  $shadow  Shadow that appears below the navigation bar (no hover)
+// @param 3  $shadowHover  Shadow that appears below the navigation bar (on hover)
+// @param 4  $navItemHover  The background of each navigation button on hover
+
+// @param 5  $navItemClick  The background of each navigation button on click (note, this uses CSS class :active, which is basically on click)
+// @param 6  $navItemActive  The background of each navigation button when selected, and page redirects according to the nav button that was pressed
+// @param 7  $heading  The color of each heading text element
+// @param 8  $icon  The color of all icons
+
+// Note: There is no $navItem because the background of this will be the same as $background, or the background of the nav bar as a whole
+
+@mixin navigationThemeTemplate($background, $hasShadow, $shadow, $shadowHover, $navItemHover,
+                               $navItemClick, $navItemActive, $heading, $icon) {
   // Color of main navigation bar
   #nav {
     background-color: $background;
-    box-shadow: 2px 2px 3px $shadow;
+
+    @if($hasShadow) {
+      box-shadow: 2px 2px 3px $shadow;
+    }
+
     transition: all $transition-time ease-in-out;
   }
 
-  &#nav:hover {
-    box-shadow: 2px 2px 4px $shadowHover;
+  #nav:hover {
+    @if($hasShadow) {
+      box-shadow: 2px 2px 4px $shadowHover;
+    }
+
     transition: all $transition-time ease-in-out;
   }
 

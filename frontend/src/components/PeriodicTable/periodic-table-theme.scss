@@ -1,13 +1,26 @@
-@mixin periodicTableTheme($background, $hasShadow, $shadow, $shadowHover) {
+// @param 1  $background  The background of the whole periodic table
+// @param 2  $hasShadow  Boolean for if there is a shadow; if so, shadow selectors are not created
+// @param 3  $shadow  Default color of shadow
+// @param 4  $shadowHover  Color of shadow on hover of element
+
+@mixin periodicTableThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
   #grid-container {
     background-color: $background;
-    box-shadow: 2px 2px 3px $shadow;
-    transition: all 0.2s ease-in-out;
+
+    @if($hasShadow) {
+      box-shadow: 2px 2px 3px $shadow;
+    }
+
+    transition: all $transition-time ease-in-out;
   }
 
   #grid-container:hover {
-    box-shadow: 2px 2px 4px $shadowHover;
-    transition: all 0.2s ease-in-out;
+
+    @if($hasShadow) {
+      box-shadow: 2px 2px 4px $shadowHover;
+    }
+
+    transition: all $transition-time ease-in-out;
   }
 }
 

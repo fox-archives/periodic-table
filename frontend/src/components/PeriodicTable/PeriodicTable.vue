@@ -5,8 +5,8 @@
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
         <div class="element"
              v-for="(ePlacement, index) in ePlacements"
-             v-on:mouseover="[changeElementAndLabelPrefix(index, 'dark-'), changeLabelColor(index, 'true'), updateActiveElement(index)]"
-             v-on:mouseleave="[changeElementAndLabelPrefix(index, ''), changeLabelColor(index, 'false'), updateActiveElement(index)]"
+             v-on:mouseover="[setElementPrefix(index, 'dark-'), setLabelColor(index, 'true'), updateActiveElement(index)]"
+             v-on:mouseleave="[setElementPrefix(index, ''), setLabelColor(index, 'false'), updateActiveElement(index)]"
              v-on:click="[clickElement(index)]"
              v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
         >
@@ -76,7 +76,7 @@
       //   'group'  Want to darken a group
       highlightSection: function(index, type) {
         // // Get color from element-info and make it lighter, if info is obtrusive
-        // if(this.options.infoLoationType === 'info-auto') {
+        // if(this.options.infoLocationType === 'info-auto') {
         //   this.activeElement.color = 'light-' + this.eColors[index].defaultColor;
         // }
 
@@ -161,7 +161,7 @@
         }
       },
 
-      changeElementAndLabelPrefix(index, prefix) {
+      setElementPrefix(index, prefix) {
         // This if statement is important
         // When user clicks on an element and hovers over a different element, the original element that was clicked
         // on still has prefix 'superdark'
@@ -173,7 +173,7 @@
         }
       },
 
-      changeLabelColor: function(index, isMouseOver) {
+      setLabelColor: function(index, isMouseOver) {
         // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
         // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
 
@@ -204,7 +204,7 @@
               this.periodData[period - 1].color = 'light';
             }
             else {
-              console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
+              console.log("Unexpected parameter for isMouseOver passed through setLabelColor.");
             }
           }
           // Only darken the period / group label if the element actually has a valid group number (within the actual range of the periodic table)
@@ -219,7 +219,7 @@
               this.groupData[group - 1].color = 'light';
             }
             else {
-              console.log("Unexpected parameter for isMouseOver passed through changeLabelColor.");
+              console.log("Unexpected parameter for isMouseOver passed through setLabelColor.");
             }
           }
         }
@@ -229,8 +229,8 @@
       clickElement: function(index) {
         // Change element info and label color (in case the mouse does not movein or moveout the element)
         this.clickedElement.active = false;
-        this.changeLabelColor(index, 'true');
-        this.updateActiveElementForce(index); // This does not require clickedElement.active to be false changeLabelColor apparently does
+        this.setLabelColor(index, 'true');
+        this.updateActiveElementForce(index); // This does not require clickedElement.active to be false setLabelColor apparently does
         this.clickedElement.active = true;
 
         // What to do if clicking for the first time, or clicking on a different element
@@ -348,32 +348,21 @@
   @import './periodic-table-theme.scss';
 
   .light-def {
-    @include periodicTableTheme($oc-gray-0, true, $oc-gray-2, $oc-gray-3);
+    @include periodicTableThemeDefault($oc-gray-0, true, $oc-gray-2, $oc-gray-3);
   }
 
   .light-con {
-    @include periodicTableTheme($oc-gray-1, true, $oc-gray-3, $oc-gray-4);
+    @include periodicTableThemeDefault($oc-gray-1, true, $oc-gray-3, $oc-gray-4);
   }
 
   .dark-def {
-    @include periodicTableTheme($oc-gray-8, false, $oc-gray-7, $oc-gray-6);
+    @include periodicTableThemeDefault($oc-gray-8, false, $oc-gray-7, $oc-gray-6);
   }
 
 
   // ELEMENTS \\
   @import './elements.scss';
   @import './elements-theme.scss';
-  // elementsThemeColors parameters
-  // @param 1  $colorShade  The type of color shade (ex. supdark, dark)
-  // @param 2  $hasBackgroundColor  Boolean for if there should be a background-color for that particular colorShade
-  // @param 3  $backgroundColor  Color of the background of the element
-  // @param 4  textColor  Color of the text of each element
-  // Note: There isn't a $hasTextColor because there will always be text, that has some color
-
-  // elementThemeShadow parameters
-  // @param 1  $hasShadow  Boolean for if the element has a shadow
-  // @param 2  $shadow  Normal shadow for the element
-  // @param 3  $shadowHover Shadow on hover of the element
 
   .light-def {
     @include elementsThemeColors('supdark-', true, 4, 9);
@@ -394,13 +383,25 @@
   .dark-def {
     @include elementsThemeColors('supdark-', true, 9, 1);
     @include elementsThemeColors('dark-', true, 8, 1);
-    @include elementsThemeColors('', true, 6, 1);
+    @include elementsThemeColors('', true, 7, 1);
     @include elementsThemeColors('light-', true, 4, 5);
-    @include elementsThemeShadow(false, $oc-violet-5, $oc-violet-6);
+    @include elementsThemeShadow(false, $oc-gray-8, $oc-gray-7);
   }
 
 
   // LABELS \\
   @import './labels.scss';
   @import './labels-theme.scss';
+
+  .light-def {
+    @include labelsThemeDefault($oc-gray-0, $oc-gray-2, $oc-gray-9);
+  }
+
+  .light-con {
+    @include labelsThemeDefault($oc-gray-1, $oc-gray-4, $oc-gray-9);
+  }
+
+  .dark-def {
+    @include labelsThemeDefault($oc-gray-8, $oc-gray-9, $oc-gray-0);
+  }
 </style>

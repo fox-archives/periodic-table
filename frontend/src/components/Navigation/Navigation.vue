@@ -206,31 +206,18 @@
   @import './navigation.scss';
   @import './navigation-theme-mixin.scss';
 
-  // navigationThemeTemplate parameters
-  // @param 1  $background  Background color of the navigation bar
-  // @param 2  $shadow  Shadow that appears below the navigation bar (no hover)
-  // @param 3  $shadowHover  Shadow that appears below the navigation bar (on hover)
-  // @param 4  $navItemHover  The background of each navigation button on hover
-
-  // @param 5  $navItemClick  The background of each navigation button on click (note, this uses CSS class :active, which is basically on click)
-  // @param 6  $navItemActive  The background of each navigation button when selected, and page redirects according to the nav button that was pressed
-  // @param 7  $heading  The color of each heading text element
-  // @param 8  $icon  The color of all icons
-  //
-  // Note: There is no $navItem because the background of this will be the same as $background, or the background of the nav bar as a whole
-
   .light-def {
-    @include navigationThemeTemplate($oc-gray-0, $oc-gray-2, $oc-gray-3, $oc-gray-2,
-                                     $oc-gray-3, $oc-gray-2, $oc-gray-7, $oc-gray-7)
+    @include navigationThemeTemplate($oc-gray-0, true, $oc-gray-2, $oc-gray-3, $oc-gray-2,
+                                     $oc-gray-3, $oc-gray-2, $oc-gray-7, $oc-gray-7);
   }
 
   .light-con {
-    @include navigationThemeTemplate($oc-gray-1, $oc-gray-3, $oc-gray-4, $oc-gray-3,
-            $oc-gray-4, $oc-gray-3, $oc-gray-8, $oc-gray-8)
+    @include navigationThemeTemplate($oc-gray-1, true, $oc-gray-3, $oc-gray-4, $oc-gray-3,
+                                     $oc-gray-4, $oc-gray-3, $oc-gray-8, $oc-gray-8);
   }
 
   .dark-def {
-    @include navigationThemeTemplate($oc-gray-8, $oc-gray-7, $oc-gray-7, $oc-gray-7,
-                                     $oc-gray-6, $oc-gray-7, $oc-gray-1, $oc-gray-1)
+    @include navigationThemeTemplate($oc-gray-8, false, $oc-gray-7, $oc-gray-6, $oc-gray-7,
+                                     $oc-gray-6, $oc-gray-7, $oc-gray-1, $oc-gray-1);
   }
 </style>

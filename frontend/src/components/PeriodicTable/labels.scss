@@ -1,18 +1,16 @@
-// PERIOD LABELS
+// Period Labels
 .label-period-inner {
   height: 100%;
   width: 75%;
-  //transition: background-color $transition-time ease-in-out;
   border-radius: $border-radius;
   user-select: none;
 }
 
 .label-period-inner:hover {
-  //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
-.label-period-inner > .label-text {
+.label-period-inner .label-text {
   text-align: center;
   padding-top: 50%;
   transform: translateY(40%);
@@ -20,28 +18,26 @@
 }
 
 
-// GROUP LABELS
+// Group Labels
 .label-group-inner {
   height: 70%;
   width: 100%;
-  //transition: background-color $transition-time ease-in-out;
   border-radius: $border-radius;
   user-select: none;
 }
 
 .label-group-inner:hover {
-  //transition: background-color $transition-time ease-in-out;
   cursor: pointer;
 }
 
-.label-group-inner > .label-text {
+.label-group-inner .label-text {
   padding-top: 2px;
   text-align: center;
   font-size: 1.33em;
 }
 
-// PERIOD LABELS AND GROUP LABELS CSS TAGS FOR POSITION IN TABLE
-//Row labels. On left side, these are one column wide rather than 2
+// Period and Group Labels
+// Period (row) labels. On left side, and have height of 2 rows, width of one column (note the difference between a row and column)
 @for $i from 2 through $total-rows {
   .rr-#{$i} {
     grid-row-start: #{$i};
@@ -49,7 +45,7 @@
   }
 }
 
-// Column labels. On top side, these are still 2 rows wide
+// Group (column) labels. On top side, and have height of 1 row, width of 2 columns
 @for $i from 2 through $total-columns {
   .cc-#{$i} {
     grid-column-start: #{$i};

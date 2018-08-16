@@ -1,69 +1,29 @@
-.label-text {
-  color: $oc-gray-9;
-}
-
-// PERIOD LABELS AND GROUP LABELS COLORS
 // Each period.json / group label has v-binds a class which is either .light or .dark
-.light-def .light {
-  background-color: $oc-gray-0;
-}
+// Note: Label cannot have class of 'light' and 'dark' at the same time
 
-.light-def .light:hover {
-  background-color: $oc-gray-2;
-}
+// @param 1  $background  Default background of the label
+// @param 2  $backgroundHover  Background when label is hovered, or forced to darken (when changing which periodic table element is being hovered over)
+// @param 3  $text  Text inside label, a number that tells which number the label is
 
-.light-def .dark {
-  background-color: $oc-gray-2;
-}
-.light-def .label-period-inner p, .light-def .label-group-inner p {
-  color: $oc-gray-9;
-}
+// Purpose: For defining the colors of the period or group labels, on default, a user hover
+// or when classes are modified to change the color directly
+@mixin labelsThemeDefault($background, $backgroundHover, $text) {
+  // Label is light by default (independent of theme)
+  .light {
+    background-color: $background;
+  }
 
+  // Label is directly hovered
+  .light:hover {
+    background-color: $backgroundHover;
+  }
 
-.light-def p, .light-def h3, .light-def h4 {
-  color: $oc-gray-9;
-}
+  // Label class modified when user hovers over different periodic table element, and the labels update
+  .dark {
+    background-color: $backgroundHover;
+  }
 
-
-// PERIOD LABELS AND GROUP LABELS COLORS
-// Each period.json / group label has v-binds a class which is either .light or .dark
-.light-con .light {
-  background-color: $oc-gray-1;
-}
-
-.light-con .light:hover {
-  background-color: $oc-gray-4;
-}
-
-.light-con .dark {
-  background-color: $oc-gray-4;
-}
-.light-con .label-period-inner p, .light-con .label-group-inner p {
-  color: $oc-gray-9;
-}
-
-.light-con p, .light-con h3, .light-con h4 {
-  color: $oc-gray-9;
-}
-
-
-// PERIOD LABELS AND GROUP LABELS COLORS
-// Each period.json / group label has v-binds a class which is either .light or .dark
-.dark-def .light {
-  background-color: $oc-gray-8;
-}
-
-.dark-def .light:hover {
-  background-color: $oc-gray-9;
-}
-
-.dark-def .dark {
-  background-color: $oc-gray-9;
-}
-.dark-def .label-period-inner p, .dark-def .label-group-inner p {
-  color: $oc-gray-0;
-}
-
-.dark-def p, .dark-def h3, .dark-def h4 {
-  color: $oc-gray-0;
+  .label-text {
+    color: $text;
+  }
 }

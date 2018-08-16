@@ -31,7 +31,6 @@
 // Element Classes, which correspond to position on the CSS grid
 
 // The following notes work for both @for loops
-// Purpose:  each DOM element with the p-$i class, place it starting at a certain row, and end it before the very next row
 // Note, p-$i classes were created using v-bind, in a for loop for each element
 // Note, p-$i stands for the ith period.json, or the nth period.json in which the element is located on the periodic table
 

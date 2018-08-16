@@ -1,4 +1,4 @@
-@mixin footerThemeTemplate($text, $underline, $background) {
+@mixin footerThemeDefault($text, $underline, $background) {
   .text, .link {
     color: $text;
   }

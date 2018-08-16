@@ -1,4 +1,5 @@
-// List of the main colors being used (for simple layout)
+// List of the main colors being used (this will be updated when more colors from Open-Color)
+// If using all color lists, Open-Color has a variable that maps all lists
 $list-of-oc-colors: (
         $oc-blue-list: 'blue',
         $oc-red-list: 'red',
@@ -6,6 +7,13 @@ $list-of-oc-colors: (
         $oc-orange-list: 'orange',
         $oc-violet-list: 'violet',
 );
+
+
+// @param 1  $colorShade  The type of color shade (ex. supdark, dark)
+// @param 2  $hasBackgroundColor  Boolean for if there should be a background-color for that particular colorShade
+// @param 3  $backgroundColor  Color of the background of the element
+// @param 4  textColor  Color of the text of each element
+// Note: There isn't a $hasTextColor because there will always be text, that has some color
 
 // Purpose: For each of the 118 elements, change their background color and text color,
 // depending on if they are not hovered, hovered, or clicked.
@@ -23,14 +31,21 @@ $list-of-oc-colors: (
   }
 }
 
+
+// @param 1  $hasShadow  Boolean for if the element has a shadow
+// @param 2  $shadow  Normal shadow for the element
+// @param 3  $shadowHover Shadow on hover of the element
+
 // Purpose: For each of the 118 elements, change their shadow, if they have one, depending if
 // they are being hovered or not
 @mixin elementsThemeShadow($hasShadow, $shadow, $shadowHover) {
-  .element {
-    box-shadow: 2px 2px 3px $shadow;
-  }
+  @if($hasShadow) {
+    .element {
+      box-shadow: 2px 2px 3px $shadow;
+    }
 
-  .element:hover {
-    box-shadow: 2px 2px 4px $shadowHover;
+    .element:hover {
+      box-shadow: 2px 2px 4px $shadowHover;
+    }
   }
 }

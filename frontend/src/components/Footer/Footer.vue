@@ -27,20 +27,20 @@
 @import './footer.scss';
 @import './footer-theme-mixin';
 
-// footerThemeTemplate parameters
+// footerThemeDefault parameters
 // @param 1  Text Color
 // @param 2  Color of Underline when mouse hoveres over link (a tag)
 // @param 3  Background color of footer element
 
 .light-def {
-  @include footerThemeTemplate($oc-gray-9, $oc-gray-3, white)
+  @include footerThemeDefault($oc-gray-9, $oc-gray-3, white)
 }
 
 .light-con {
-  @include footerThemeTemplate($oc-gray-9, $oc-gray-4, white)
+  @include footerThemeDefault($oc-gray-9, $oc-gray-4, white)
 }
 
 .dark-def {
-  @include footerThemeTemplate($oc-gray-1, $oc-gray-7, $oc-gray-9)
+  @include footerThemeDefault($oc-gray-1, $oc-gray-7, $oc-gray-9)
 }
 </style>
