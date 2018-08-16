@@ -1,6 +1,6 @@
 <template>
   <div v-bind:class="[options.themeType, options.infoLocationType]" id="grid-container-outer">
-    <div v-if="ready" id="grid-container" v-bind:class="[options.themeType, options.infoLocationType]">
+    <div v-if="ready" id="grid-container">
       <main id="grid">
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
         <div class="element"
@@ -11,16 +11,16 @@
              v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
         >
           <div v-cloak class="element-inner">
-            <p class="element-secondary-info">{{ ePlacement.eLabel }}</p>
-            <p class="element-primary-info">{{ simpleData[index].abbreviation }}</p>
-            <p class="element-secondary-info">{{ simpleData[index].name }}</p>
-            <p class="element-secondary-info">{{ simpleData[index].atomicMass }}</p>
+            <p class="secondary-text">{{ ePlacement.eLabel }}</p>
+            <p class="primary-text">{{ simpleData[index].abbreviation }}</p>
+            <p class="secondary-text">{{ simpleData[index].name }}</p>
+            <p class="secondary-text">{{ simpleData[index].atomicMass }}</p>
           </div>
         </div>
 
         <!-- PERIOD LABELS -->
-        <div class="label-period" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
-          <div v-cloak class="label-period-inner"
+        <div class="label-period label" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
+          <div v-cloak class="label-period-inner label-inner"
                v-bind:class="periodData[index].color"
                v-on:mouseover="[highlightSection(index, 'period')]"
                v-on:mouseleave="[unHighlightSection(index, 'period')]"
@@ -31,8 +31,8 @@
         </div>
 
         <!-- GROUP LABELS -->
-        <div class="label-group" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
-          <div v-cloak class="label-group-inner"
+        <div class="label-group label" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
+          <div v-cloak class="label-group-inner label-inner"
                v-bind:class="groupData[index].color"
                v-on:mouseover="[highlightSection(index, 'group')]"
                v-on:mouseleave="[unHighlightSection(index, 'group')]"
@@ -342,16 +342,65 @@
   @import '../../styles/variables';
   @import '../../styles/common/_titles.scss';
 
-  // Structure
+
+  // PERIODIC TABLE \\
   @import './periodic-table.scss';
-  @import './generic-elements.scss';
-  @import './element-styling.scss';
+  @import './periodic-table-theme.scss';
+
+  .light-def {
+    @include periodicTableTheme($oc-gray-0, true, $oc-gray-2, $oc-gray-3);
+  }
+
+  .light-con {
+    @include periodicTableTheme($oc-gray-1, true, $oc-gray-3, $oc-gray-4);
+  }
+
+  .dark-def {
+    @include periodicTableTheme($oc-gray-8, false, $oc-gray-7, $oc-gray-6);
+  }
 
 
-  // Themes
-  @import './periodic-table-theme-mixin.scss';
+  // ELEMENTS \\
+  @import './elements.scss';
+  @import './elements-theme.scss';
+  // elementsThemeColors parameters
+  // @param 1  $colorShade  The type of color shade (ex. supdark, dark)
+  // @param 2  $hasBackgroundColor  Boolean for if there should be a background-color for that particular colorShade
+  // @param 3  $backgroundColor  Color of the background of the element
+  // @param 4  textColor  Color of the text of each element
+  // Note: There isn't a $hasTextColor because there will always be text, that has some color
 
-  @import './theme-dark-periodic-table.scss';
-  @import './theme-light-con-periodic-table.scss';
-  @import './theme-light-periodic-table.scss';
+  // elementThemeShadow parameters
+  // @param 1  $hasShadow  Boolean for if the element has a shadow
+  // @param 2  $shadow  Normal shadow for the element
+  // @param 3  $shadowHover Shadow on hover of the element
+
+  .light-def {
+    @include elementsThemeColors('supdark-', true, 4, 9);
+    @include elementsThemeColors('dark-', true, 3, 9);
+    @include elementsThemeColors('', true, 2, 9);
+    @include elementsThemeColors('light-', true, 1, 6);
+    @include elementsThemeShadow(true, $oc-gray-3, $oc-gray-4);
+  }
+
+  .light-con {
+    @include elementsThemeColors('supdark-', true, 6, 9);
+    @include elementsThemeColors('dark-', true, 5, 9);
+    @include elementsThemeColors('', true, 4, 9);
+    @include elementsThemeColors('light-', true, 2, 6);
+    @include elementsThemeShadow(true, $oc-gray-4, $oc-gray-5);
+  }
+
+  .dark-def {
+    @include elementsThemeColors('supdark-', true, 9, 1);
+    @include elementsThemeColors('dark-', true, 8, 1);
+    @include elementsThemeColors('', true, 6, 1);
+    @include elementsThemeColors('light-', true, 4, 5);
+    @include elementsThemeShadow(false, $oc-violet-5, $oc-violet-6);
+  }
+
+
+  // LABELS \\
+  @import './labels.scss';
+  @import './labels-theme.scss';
 </style>

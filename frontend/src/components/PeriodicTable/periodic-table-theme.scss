@@ -1,0 +1,13 @@
+@mixin periodicTableTheme($background, $hasShadow, $shadow, $shadowHover) {
+  #grid-container {
+    background-color: $background;
+    box-shadow: 2px 2px 3px $shadow;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #grid-container:hover {
+    box-shadow: 2px 2px 4px $shadowHover;
+    transition: all 0.2s ease-in-out;
+  }
+}
+

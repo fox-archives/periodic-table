@@ -1,0 +1,52 @@
+.element {
+  border-radius: $border-radius-small;
+  margin: 2px 2px 2px 2px;
+  user-select: none;
+  overflow: hidden;
+}
+
+// Recall background-color found in elements-theme-mixin.scss
+.element:hover {
+  cursor: pointer;
+}
+
+.element-inner {
+  justify-self: center; //Center horizontally
+  margin-top: 2px;
+  margin-left: 4px;
+
+  .primary-text {
+    font-family: latobold;
+    font-weight: normal;
+    font-size: 1.4em;
+  }
+
+  .secondary-text {
+    font-family: latoregular;
+    font-weight: normal;
+    font-size: 0.8em;
+  }
+}
+
+// Element Classes, which correspond to position on the CSS grid
+
+// The following notes work for both @for loops
+// Purpose:  each DOM element with the p-$i class, place it starting at a certain row, and end it before the very next row
+// Note, p-$i classes were created using v-bind, in a for loop for each element
+// Note, p-$i stands for the ith period.json, or the nth period.json in which the element is located on the periodic table
+
+// Loop from 2 to the total number of periods in the periodic table (rows)
+@for $i from 2 through $total-rows {
+  .r-#{$i} {
+    grid-row-start: #{$i};
+    grid-row-end: #{$i + 2};
+  }
+}
+
+// Loop from 2 to the total number of groups in the periodic table (columns)
+@for $i from 2 through $total-columns {
+  .c-#{$i} {
+    grid-column-start: #{$i};
+    grid-column-end: #{$i + 2};
+  }
+}

@@ -206,7 +206,7 @@
   @import './navigation.scss';
   @import './navigation-theme-mixin.scss';
 
-  // navigationThemeTempplate Parameters
+  // navigationThemeTemplate parameters
   // @param 1  $background  Background color of the navigation bar
   // @param 2  $shadow  Shadow that appears below the navigation bar (no hover)
   // @param 3  $shadowHover  Shadow that appears below the navigation bar (on hover)

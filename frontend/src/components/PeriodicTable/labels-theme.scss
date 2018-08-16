@@ -1,0 +1,69 @@
+.label-text {
+  color: $oc-gray-9;
+}
+
+// PERIOD LABELS AND GROUP LABELS COLORS
+// Each period.json / group label has v-binds a class which is either .light or .dark
+.light-def .light {
+  background-color: $oc-gray-0;
+}
+
+.light-def .light:hover {
+  background-color: $oc-gray-2;
+}
+
+.light-def .dark {
+  background-color: $oc-gray-2;
+}
+.light-def .label-period-inner p, .light-def .label-group-inner p {
+  color: $oc-gray-9;
+}
+
+
+.light-def p, .light-def h3, .light-def h4 {
+  color: $oc-gray-9;
+}
+
+
+// PERIOD LABELS AND GROUP LABELS COLORS
+// Each period.json / group label has v-binds a class which is either .light or .dark
+.light-con .light {
+  background-color: $oc-gray-1;
+}
+
+.light-con .light:hover {
+  background-color: $oc-gray-4;
+}
+
+.light-con .dark {
+  background-color: $oc-gray-4;
+}
+.light-con .label-period-inner p, .light-con .label-group-inner p {
+  color: $oc-gray-9;
+}
+
+.light-con p, .light-con h3, .light-con h4 {
+  color: $oc-gray-9;
+}
+
+
+// PERIOD LABELS AND GROUP LABELS COLORS
+// Each period.json / group label has v-binds a class which is either .light or .dark
+.dark-def .light {
+  background-color: $oc-gray-8;
+}
+
+.dark-def .light:hover {
+  background-color: $oc-gray-9;
+}
+
+.dark-def .dark {
+  background-color: $oc-gray-9;
+}
+.dark-def .label-period-inner p, .dark-def .label-group-inner p {
+  color: $oc-gray-0;
+}
+
+.dark-def p, .dark-def h3, .dark-def h4 {
+  color: $oc-gray-0;
+}

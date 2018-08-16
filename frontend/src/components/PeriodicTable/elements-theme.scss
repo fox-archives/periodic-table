@@ -1,0 +1,36 @@
+// List of the main colors being used (for simple layout)
+$list-of-oc-colors: (
+        $oc-blue-list: 'blue',
+        $oc-red-list: 'red',
+        $oc-green-list: 'green',
+        $oc-orange-list: 'orange',
+        $oc-violet-list: 'violet',
+);
+
+// Purpose: For each of the 118 elements, change their background color and text color,
+// depending on if they are not hovered, hovered, or clicked.
+@mixin elementsThemeColors($colorShade, $hasBackgroundColor, $backgroundColor, $textColor) {
+  @each $colorList, $colorString in $list-of-oc-colors {
+    .#{$colorShade}#{$colorString} {
+      background-color: map-get($colorList, #{$backgroundColor});
+    }
+  }
+
+  @each $colorList, $colorString in $list-of-oc-colors {
+    .#{$colorShade}#{$colorString} p {
+      color: map-get($oc-gray-list, #{$textColor});
+    }
+  }
+}
+
+// Purpose: For each of the 118 elements, change their shadow, if they have one, depending if
+// they are being hovered or not
+@mixin elementsThemeShadow($hasShadow, $shadow, $shadowHover) {
+  .element {
+    box-shadow: 2px 2px 3px $shadow;
+  }
+
+  .element:hover {
+    box-shadow: 2px 2px 4px $shadowHover;
+  }
+}

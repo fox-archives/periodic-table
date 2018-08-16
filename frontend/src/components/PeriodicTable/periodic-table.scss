@@ -2,10 +2,6 @@
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
-// The width and height of each element in the periodic table
-$element-width: 100% / $total-columns;
-$element-height: 40px;
-
 // MAIN GRID STRUCTURE
 #grid-container-outer {
   margin: 0px 10px 10px 10px;
@@ -15,7 +11,7 @@ $element-height: 40px;
   position: relative;
   width: 100%;
   height: 0px;
-  padding-bottom: 63.5%;
+  padding-bottom: 60%;
   border-radius: $border-radius;
 }
 

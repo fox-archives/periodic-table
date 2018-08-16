@@ -27,7 +27,7 @@
 @import './footer.scss';
 @import './footer-theme-mixin';
 
-// footerThemeTemplate
+// footerThemeTemplate parameters
 // @param 1  Text Color
 // @param 2  Color of Underline when mouse hoveres over link (a tag)
 // @param 3  Background color of footer element

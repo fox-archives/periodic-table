@@ -16,8 +16,8 @@
       </li>
       <li class="option">
         <p>Periodic Table Layout</p>
-        <vs-select class="option-theme" label="tableLayouts" v-model="tableLayout">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in tableLayouts" />
+        <vs-select class="option-theme" label="tableLayouts" v-model="gridLayout">
+          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in gridLayouts" />
         </vs-select>
       </li>
       <li class="option">
@@ -47,27 +47,10 @@
     name: "Options",
     data() {
       return {
-        select1:3,
-
-        options1:[
-          {text:'IT',value:0},
-          {text:'Blade Runner',value:2},
-          {text:'Thor Ragnarok',value:3},
-        ],
-
-        // THEMING
-        // Default light theme (see themes array below to see values in selection menu)
-        themeTypes: ["light-def", "light-con", "dark-def"],
-
-        // INFO LOCATION
-        infoLocationTypes: ['info-auto', 'info-top', 'info-side', 'info-exclude'],
-
-        // DATA FOR HOVERED OPTIONS (when an option is hovered, it updates)
-        electronOptionHovered: "false",
-
         advancedSettingsPopupActive: false,
 
         theme: 1,
+        themeTypes: ["light-def", "light-con", "dark-def"],
         themes: [
           { text: 'Light (Default)', value: 1 },
           { text: 'Light (High Contrast)', value: 2 },
@@ -75,6 +58,7 @@
         ],
 
         infoLocation: 1,
+        infoLocationTypes: ['info-auto', 'info-top', 'info-side', 'info-exclude'],
         infoLocations: [
           { text: 'Auto', value: 1 },
           { text: 'Top', value: 2 },
@@ -82,11 +66,11 @@
           { text: 'Excluded', value: 4 }
         ],
 
-        tableLayout: 1,
-        tableLayouts: [
+        gridLayout: 1,
+        gridLayouts: [
           { text: 'Auto', value: 1 },
-          { text: 'Full Screen Height', value: 2 },
-          { text: 'Full Screen Width', value: 3 },
+          { text: 'Full Height', value: 2 },
+          { text: 'Full Width', value: 3 },
           { text: 'Mobile', value: 4 },
         ]
       }
