@@ -23,11 +23,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.nav-info ul {
-    list-style-type: none;
-}
+  @import '../../styles/variables.scss';
+  @import '../../styles/tags.scss';
 
-.nav-info li {
-    padding-bottom: 10px;
-}
+  // TODO: Fix this formatting and add classes to relevant html
+  * {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+  }
+
+  p {
+    font-family: latolight;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  a {
+    font-family: latolight;
+    font-size: 1em;
+    text-decoration-line: underline;
+  }
+
+  .nav-info ul {
+      list-style-type: none;
+  }
+
+  .nav-info li {
+      padding-bottom: 10px;
+  }
 </style>

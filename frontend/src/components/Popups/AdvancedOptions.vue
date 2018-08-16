@@ -56,6 +56,6 @@
 
 <style scoped lang="scss">
 // Format each option
-@import '../../styles/common/options';
+@import '../../styles/common/options.scss';
 
 </style>

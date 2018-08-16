@@ -2,7 +2,9 @@
   <nav id="nav" v-bind:class="options.themeType">
     <ul id="nav-content">
       <ul id="logo-container">
-        <li id="logo"><a href="/simple"><img src="../../assets/placeholder.png" height="30px"></a></li>
+        <li id="logo">
+          <a href="/simple"><img src="../../assets/placeholder.png" height="30px"></a>
+        </li>
       </ul>
       <ul id="nav-items">
         <li class="nav-item text" id="simple-wide">
@@ -208,17 +210,17 @@
   @import './_navigation-theme.scss';
 
   .light-def {
-    @include navigationThemeTemplate($oc-gray-0, true, $oc-gray-2, $oc-gray-3, $oc-gray-2,
+    @include navigationThemeDefault($oc-gray-0, true, $oc-gray-2, $oc-gray-3, $oc-gray-2,
                                      $oc-gray-3, $oc-gray-2, $oc-gray-7, $oc-gray-7);
   }
 
   .light-con {
-    @include navigationThemeTemplate($oc-gray-1, true, $oc-gray-3, $oc-gray-4, $oc-gray-3,
+    @include navigationThemeDefault($oc-gray-1, true, $oc-gray-3, $oc-gray-4, $oc-gray-3,
                                      $oc-gray-4, $oc-gray-3, $oc-gray-8, $oc-gray-8);
   }
 
   .dark-def {
-    @include navigationThemeTemplate($oc-gray-8, false, $oc-gray-7, $oc-gray-6, $oc-gray-7,
+    @include navigationThemeDefault($oc-gray-8, false, $oc-gray-7, $oc-gray-6, $oc-gray-7,
                                      $oc-gray-6, $oc-gray-7, $oc-gray-1, $oc-gray-1);
   }
 </style>

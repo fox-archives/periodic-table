@@ -1,5 +1,5 @@
 <template>
-    <h1>Welcome to Explore</h1>
+    <h1 id="heading">Welcome to Explore</h1>
 </template>
 
 <script>
@@ -16,5 +16,11 @@
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
     @import '../../styles/common/_titles.scss';
+
+    .heading {
+        font-family: robotoregular;
+        font-style: normal;
+        font-size: 3em;
+    }
 
 </style>

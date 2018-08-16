@@ -11,7 +11,7 @@ h1[data-v-10f1c537] {
 }
 h2[data-v-10f1c537] {
   font-family: robotolight;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.15em;
 }
 p[data-v-10f1c537] {
@@ -988,7 +988,7 @@ h1[data-v-3643260f] {
 }
 h2[data-v-3643260f] {
   font-family: robotolight;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.15em;
 }
 p[data-v-3643260f] {
@@ -1015,7 +1015,7 @@ h1[data-v-e640e7a6] {
 }
 h2[data-v-e640e7a6] {
   font-family: robotolight;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.15em;
 }
 p[data-v-e640e7a6] {
@@ -1041,7 +1041,7 @@ h1[data-v-62d95c65] {
 }
 h2[data-v-62d95c65] {
   font-family: robotolight;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.15em;
 }
 p[data-v-62d95c65] {
@@ -1143,7 +1143,7 @@ h1[data-v-7c42558f] {
 }
 h2[data-v-7c42558f] {
   font-family: robotolight;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 1.15em;
 }
 p[data-v-7c42558f] {
@@ -1170,11 +1170,11 @@ a[data-v-7c42558f] {
 }
 .con-text-noti h3[data-v-7c42558f] {
   font-family: robotoregular;
-  font-weight: regular;
+  font-weight: normal;
 }
 .con-text-noti p[data-v-7c42558f] {
   font-family: robotolight;
-  font-weight: regular;
+  font-weight: normal;
 }
 #nav[data-v-7c42558f] {
   margin-bottom: 10px;
@@ -1506,11 +1506,11 @@ p#name3[data-v-edbb25a2] {
 
 .con-text-noti h3 {
   font-family: robotoregular;
-  font-weight: regular; }
+  font-weight: normal; }
 
 .con-text-noti p {
   font-family: robotolight;
-  font-weight: regular; }
+  font-weight: normal; }
 
 @font-face {
   font-family: "Material Icons";

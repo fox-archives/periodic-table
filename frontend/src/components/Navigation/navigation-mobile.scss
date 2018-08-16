@@ -1,4 +1,34 @@
 @media (max-width: 1200px) {
+  .nav-item-body {
+    padding: 10px 11px 10px 11px;
+  }
+
+  .heading {
+    font-size: 1em;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .nav-item-body {
+    padding: 10px 9px 10px 9px;
+  }
+
+  .heading {
+    font-size: 0.95em;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 920px) {
   #nav-content {
     display: flex;
     justify-content: space-between;
@@ -9,7 +39,7 @@
   }
 
   #menu-mobile {
-    display: inline;
+    display: flex;
   }
 }
 

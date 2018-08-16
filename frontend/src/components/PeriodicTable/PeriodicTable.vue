@@ -340,8 +340,6 @@
 <style scoped lang="scss">
   // Variables, mixins, and common components
   @import '../../styles/variables';
-  @import '../../styles/common/_titles.scss';
-
 
   // PERIODIC TABLE \\
   @import './periodic-table.scss';

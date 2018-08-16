@@ -1,10 +1,10 @@
 <template>
     <section v-if="options.infoLocationType !== 'info-exclude'" id="element-info-panel">
         <div id="visual">
-            <h2>Visual Element</h2>
+            <h2 class="heading">Visual Element</h2>
         </div>
         <div id="textual">
-            <h2>Textual Element</h2>
+            <h2 class="heading">Textual Element</h2>
         </div>
     </section>
 </template>
@@ -33,4 +33,9 @@ import { mapGetters } from 'vuex';
 
 
     @import './element-info-panel.scss';
+
+    .heading {
+        font-family: robotolight;
+        font-weight: normal;
+    }
 </style>

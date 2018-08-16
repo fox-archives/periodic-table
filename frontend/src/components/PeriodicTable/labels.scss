@@ -10,14 +10,6 @@
   user-select: none;
 }
 
-.label-period-inner:hover {
-  cursor: pointer;
-}
-
-.label-period-inner .label-text {
-  font-size: 1.33em;
-}
-
 
 // Group Labels
 .label-group-inner {
@@ -31,11 +23,14 @@
   user-select: none;
 }
 
-.label-group-inner:hover {
+// Period and Group Labels
+.label-inner:hover {
   cursor: pointer;
 }
 
-.label-group-inner .label-text {
+.label-text {
+  font-family: latolight;
+  font-weight: normal;
   font-size: 1.33em;
 }
 
