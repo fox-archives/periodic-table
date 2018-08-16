@@ -11,7 +11,7 @@
              v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
         >
           <div v-cloak class="element-inner">
-            <p class="secondary-text">{{ ePlacement.eLabel }}</p>
+            <p class="secondary-text test">{{ ePlacement.eLabel }}</p>
             <p class="primary-text">{{ simpleData[index].abbreviation }}</p>
             <p class="secondary-text">{{ simpleData[index].name }}</p>
             <p class="secondary-text">{{ simpleData[index].atomicMass }}</p>
@@ -345,7 +345,7 @@
 
   // PERIODIC TABLE \\
   @import './periodic-table.scss';
-  @import './periodic-table-theme.scss';
+  @import './_periodic-table-theme.scss';
 
   .light-def {
     @include periodicTableThemeDefault($oc-gray-0, true, $oc-gray-2, $oc-gray-3);
@@ -362,7 +362,7 @@
 
   // ELEMENTS \\
   @import './elements.scss';
-  @import './elements-theme.scss';
+  @import './_elements-theme.scss';
 
   .light-def {
     @include elementsThemeColors('supdark-', true, 4, 9);
@@ -391,7 +391,7 @@
 
   // LABELS \\
   @import './labels.scss';
-  @import './labels-theme.scss';
+  @import './_labels-theme.scss';
 
   .light-def {
     @include labelsThemeDefault($oc-gray-0, $oc-gray-2, $oc-gray-9);

@@ -25,7 +25,7 @@
 <style scoped lang="scss">
 @import '../../styles/variables.scss';
 @import './footer.scss';
-@import './footer-theme-mixin';
+@import './_footer-theme.scss';
 
 // footerThemeDefault parameters
 // @param 1  Text Color

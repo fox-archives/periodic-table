@@ -1,0 +1,20 @@
+@media (max-width: 1200px) {
+  #nav-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text {
+    display: none;
+  }
+
+  #menu-mobile {
+    display: inline;
+  }
+}
+
+@media (max-width: 350px) {
+  .nav-item-body {
+    padding: 7px 10px 7px 10px;
+  }
+}

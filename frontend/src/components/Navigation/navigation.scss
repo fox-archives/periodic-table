@@ -11,11 +11,12 @@
   width: 100%;
 }
 
-#nav-elements {
+#nav-items {
   display: flex;
   list-style-type: none;
 }
 
+// This is router-link. If there is no router-link (like search button), then it is list-element
 .nav-item-body {
   display: flex;
   align-items: center;
@@ -28,6 +29,10 @@
   cursor: pointer;
 }
 
+#menu-mobile {
+  display: none;
+}
+
 .heading {
   margin-left: 9px;
 }
@@ -37,7 +42,6 @@
   width: 24px;
   height: 24px;
 }
-
 
 // Logo Formatting
 #logo-container {

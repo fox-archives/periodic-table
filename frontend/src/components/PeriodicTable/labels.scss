@@ -1,5 +1,9 @@
 // Period Labels
 .label-period-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 100%;
   width: 75%;
   border-radius: $border-radius;
@@ -11,15 +15,16 @@
 }
 
 .label-period-inner .label-text {
-  text-align: center;
-  padding-top: 50%;
-  transform: translateY(40%);
   font-size: 1.33em;
 }
 
 
 // Group Labels
 .label-group-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 70%;
   width: 100%;
   border-radius: $border-radius;
@@ -31,8 +36,6 @@
 }
 
 .label-group-inner .label-text {
-  padding-top: 2px;
-  text-align: center;
   font-size: 1.33em;
 }
 

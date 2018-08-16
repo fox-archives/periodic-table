@@ -4,50 +4,50 @@
       <ul id="logo-container">
         <li id="logo"><a href="/simple"><img src="../../assets/placeholder.png" height="30px"></a></li>
       </ul>
-      <ul id="nav-elements">
-        <li class="nav-item" id="simple-wide">
+      <ul id="nav-items">
+        <li class="nav-item text" id="simple-wide">
         <router-link class="nav-item-body link" to="/simple">
           <type-icon class="icon feather-icon"></type-icon>
           <h2 class="heading"> Simple </h2>
         </router-link>
         </li>
 
-        <li class="nav-item" id="properties-wide">
+        <li class="nav-item text" id="properties-wide">
         <router-link class="nav-item-body link" to="/properties">
           <list-icon class="icon feather-icon"></list-icon>
           <h2 class="heading">Properties</h2>
         </router-link>
         </li>
 
-        <li class="nav-item" id="electrons-wide">
+        <li class="nav-item text" id="electrons-wide">
         <router-link class="nav-item-body link" to="/electrons">
           <electrons class="icon custom-icon"></electrons>
           <h2 class="heading">Electrons </h2>
         </router-link>
         </li>
 
-        <li class="nav-item" id="orbitals-wide">
+        <li class="nav-item text" id="orbitals-wide">
         <router-link class="nav-item-body link" to="/orbitals">
           <orbitals class="icon custom-icon"></orbitals>
           <h2 class="heading">Orbitals</h2>
         </router-link>
         </li>
 
-        <li class="nav-item" id="isotopes-wide">
+        <li class="nav-item text" id="isotopes-wide">
         <router-link class="nav-item-body link" to="/isotopes">
           <isotopes class="icon custom-icon"></isotopes>
           <h2 class="heading"> Isotopes </h2>
         </router-link>
         </li>
 
-        <li class="nav-item" id="explore-wide">
+        <li class="nav-item text" id="explore-wide">
         <router-link class="nav-item-body link" to="/explore">
           <map-icon class="icon feather-icon"></map-icon>
           <h2 class="heading"> Explore </h2>
         </router-link>
         </li>
 
-        <li class="nav-item" id="trivia-wide">
+        <li class="nav-item text" id="trivia-wide">
         <router-link class="nav-item-body link" to="/trivia">
           <check-icon class="icon feather-icon"></check-icon>
           <h2 class="heading"> Trivia </h2>
@@ -55,19 +55,19 @@
         </li>
 
 
-        <li class="nav-item nav-item-body" id="info" v-on:click="infoPopup('on')">
+        <li class="nav-item nav-item-body no-text" id="info" v-on:click="infoPopup('on')">
           <info-icon class="icon feather-icon"></info-icon>
         </li>
 
-        <li class="nav-item nav-item-body" id="settings" v-on:click="optionsPopup('on')">
+        <li class="nav-item nav-item-body no-text" id="settings" v-on:click="optionsPopup('on')">
           <settings-icon class="icon feather-icon"></settings-icon>
         </li>
 
-        <li class="nav-item nav-item-body" id="search">
+        <li class="nav-item nav-item-body no-text" id="search">
           <search-icon class="icon feather-icon"></search-icon>
         </li>
 
-        <li class="nav-item nav-item-body" id="menu-mobile" v-on:click="menuPopup('on')">
+        <li class="nav-item nav-item-body no-text" id="menu-mobile" v-on:click="menuPopup('on')">
           <menu-icon class="icon feather-icon"></menu-icon>
         </li>
 
@@ -204,7 +204,8 @@
 
   // Structure
   @import './navigation.scss';
-  @import './navigation-theme-mixin.scss';
+  @import './navigation-mobile.scss';
+  @import './_navigation-theme.scss';
 
   .light-def {
     @include navigationThemeTemplate($oc-gray-0, true, $oc-gray-2, $oc-gray-3, $oc-gray-2,
