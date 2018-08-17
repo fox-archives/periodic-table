@@ -1,27 +1,22 @@
 <template>
-    <section v-if="options.infoLocationType !== 'info-exclude'" id="element-info-panel">
-        <div id="visual">
-            <h2 class="heading">Visual Element</h2>
-        </div>
-        <div id="textual">
-            <h2 class="heading">Textual Element</h2>
-        </div>
-    </section>
+  <section id="panel" v-bind:class="[options.themeType, options.infoLocationType]">
+    <div id="visual">
+      <h2 class="heading">Visual Element</h2>
+    </div>
+    <div id="textual">
+      <h2 class="heading">Textual Element</h2>
+    </div>
+  </section>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+
   export default {
     name: 'ElementInfoPanel',
-    data() {
-      return {
-
-      }
-    },
     computed: {
       ...mapGetters([
-        'options',
-        'activeElement',
+        'options'
       ])
     }
   }
@@ -29,10 +24,13 @@ import { mapGetters } from 'vuex';
 
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
-    @import '../../styles/common/_titles.scss';
-
 
     @import './element-info-panel.scss';
+
+    #panel {
+        display: flex;
+        flex-direction: row;
+    }
 
     .heading {
         font-family: robotolight;

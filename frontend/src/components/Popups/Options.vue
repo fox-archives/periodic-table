@@ -1,27 +1,27 @@
 <template>
 <div>
-  <aside class="options">
+  <aside id="options">
     <ul>
       <li class="option">
-        <p>Theme</p>
+        <p class="text">Theme</p>
         <vs-select class="option-theme" label="themes" v-model="theme" v-on:change="setTheme">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in themes" />
         </vs-select>
       </li>
       <li class="option">
-        <p>Element Info Location</p>
+        <p class="text">Element Info Location</p>
         <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
         </vs-select>
       </li>
       <li class="option">
-        <p>Periodic Table Layout</p>
+        <p class="text">Periodic Table Layout</p>
         <vs-select class="option-theme" label="tableLayouts" v-model="gridLayout">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in gridLayouts" />
         </vs-select>
       </li>
       <li class="option">
-        <p>Advanced Options</p>
+        <p class="text">Advanced Options</p>
         <!-- I don't know why this div tag stops the button from having a length of 100% -->
         <div>
           <vs-button v-on:click="advancedSettingsPopup('on')" color="primary" vs-type="filled">Advanced</vs-button>

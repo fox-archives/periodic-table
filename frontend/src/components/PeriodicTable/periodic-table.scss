@@ -4,7 +4,8 @@ $total-rows: (7 * 2) + 5;
 
 // MAIN GRID STRUCTURE
 #grid-container-outer {
-  margin: 0px 10px 10px 10px;
+  // margin: 0px 10px 10px 10px; (this style is under Body.vue)
+  width: 100%;
 }
 
 #grid-container {

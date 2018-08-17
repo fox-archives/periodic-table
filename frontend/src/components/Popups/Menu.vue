@@ -79,9 +79,13 @@
 <style scoped lang="scss">
   // Variables, mixins, and common components
   @import '../../styles/variables.scss';
-  @import '../../styles/common/_titles.scss';
-
   @import '../../styles/tags.scss';
+
+  #popup-items, .popup-item, .heading {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
 
   #popup-items {
     display: flex;

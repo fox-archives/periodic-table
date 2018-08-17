@@ -1,4 +1,10 @@
 // Display each option button, menu, etc. with flex
+#options, .option, .text {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 #options {
   display: flex;
   flex-direction: column;
@@ -14,7 +20,7 @@
   list-style-type: none;
 }
 
-.option p {
+.text {
   font-family: robotolight;
   font-weight: normal;
   font-size: 1em;

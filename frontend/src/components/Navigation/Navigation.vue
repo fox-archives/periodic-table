@@ -200,8 +200,6 @@
 <style scoped lang="scss">
   // Variables, mixins, and common components
   @import '../../styles/variables.scss';
-  @import '../../styles/common/_titles.scss';
-
   @import '../../styles/tags.scss';
 
   // Structure
