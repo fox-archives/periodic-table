@@ -39,21 +39,39 @@ import PanelTextual from './PanelTextual.vue';
     }
 
     .panel.info-top {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 20vw auto;
+      grid-template-rows: 20vw;
       border-radius: $border-radius;
       width: 100%;
-      height: 20vw;
       margin-bottom: 10px;
+
+      #visual {
+        height: 100%;
+        width: 100%;
+        background-color: $oc-yellow-1;
+      }
+
+      #textual {
+        background-color: $oc-orange-1;
+      }
     }
 
     .panel.info-side {
-      display: flex;
-      flex-direction: column;
-      width: 25vw;
+      display: grid;
+      grid-template-columns: 17vw;
+      grid-template-rows: 17vw auto;
       margin-right: 10px;
       border-radius: $border-radius;
       // Do not add a height because by default, the height is the same as the height of the periodic table, which scales
+
+      #visual {
+        background-color: $oc-yellow-1;
+      }
+
+      #textual {
+        background-color: $oc-orange-1;
+      }
     }
 
     .panel.info-exclude {

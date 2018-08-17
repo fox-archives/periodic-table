@@ -1,10 +1,6 @@
 <template>
   <div id="visual-outer">
-    <!--<div id="visual">-->
-      <!--<div id="visual-inner">-->
-        <!--H-->v
-      <!--</div>-->
-    <!--</div>-->
+
   </div>
 </template>
 
