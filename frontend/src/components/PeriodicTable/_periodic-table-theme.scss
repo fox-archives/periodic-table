@@ -3,6 +3,7 @@
 // @param 3  $shadow  Default color of shadow
 // @param 4  $shadowHover  Color of shadow on hover of element
 
+// Purpose: To color the colors behind all the elements (periodic table)
 @mixin periodicTableThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
   #grid-container {
     background-color: $background;

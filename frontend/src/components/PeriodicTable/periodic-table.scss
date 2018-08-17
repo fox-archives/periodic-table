@@ -3,8 +3,11 @@ $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
 // MAIN GRID STRUCTURE
+#grid-container-outer, #grid-container, #grid {
+  box-sizing: border-box;
+}
+
 #grid-container-outer {
-  // margin: 0px 10px 10px 10px; (this style is under Body.vue)
   width: 100%;
 }
 

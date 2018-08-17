@@ -2,8 +2,8 @@
 // SIMPLE, PROPERTIES, ELECTRONS, ORBITALS, AND ISOTOPES
 <template>
   <div id="display" v-bind:class="[options.themeType, options.infoLocationType]">
-    <ElementInfoPanel></ElementInfoPanel>
-    <PeriodicTable></PeriodicTable>
+    <ElementInfoPanel class="eli"></ElementInfoPanel>
+    <PeriodicTable class="pta"></PeriodicTable>
   </div>
 </template>
 
@@ -27,29 +27,32 @@
 </script>
 
 <style scoped lang="scss">
-  /*#display {*/
-    /*// display: flex;*/
+  #display {
+    margin: 0px 10px 0px 10px;
 
-    /*&.info-auto {*/
-
-    /*}*/
-
-    /*&.info-top {*/
-      /*display: flex;*/
-      /*flex-direction: column;*/
-    /*}*/
-
-    /*&.info-side {*/
-      /*display: flex;*/
-      /*flex-direction: row;*/
-    /*}*/
-
-    /*&info-exclude {*/
-
-    /*}*/
-  /*}*/
-
-  #pt {
-    margin: 0px 10px 10px 10px;
   }
+
+  #display.info-auto {
+    display: flex;
+  }
+
+  #display.info-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #display.info-side {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #display.info-exclude {
+    // Do not to do any styling because there will be only one element
+  }
+
+  .pta {
+    box-sizing: border-box;
+
+  }
+
 </style>
