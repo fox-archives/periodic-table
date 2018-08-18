@@ -5,23 +5,11 @@
 
 // Purpose: To color the colors behind all the elements (periodic table)
 @mixin periodicTableThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
+  // Add shadow to grid container
+  @include shadow('#grid-container', $hasShadow, $shadow, $shadowHover);
+
   #grid-container {
     background-color: $background;
-
-    @if($hasShadow) {
-      box-shadow: 2px 2px 3px $shadow;
-    }
-
-    transition: all $transition-time ease-in-out;
-  }
-
-  #grid-container:hover {
-
-    @if($hasShadow) {
-      box-shadow: 2px 2px 4px $shadowHover;
-    }
-
-    transition: all $transition-time ease-in-out;
   }
 }
 

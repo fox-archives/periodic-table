@@ -29,7 +29,7 @@
 
 // footerThemeDefault parameters
 // @param 1  Text Color
-// @param 2  Color of Underline when mouse hoveres over link (a tag)
+// @param 2  Color of Underline when mouse hovers over link (a tag)
 // @param 3  Background color of footer element
 
 .light-def {

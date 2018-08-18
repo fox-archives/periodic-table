@@ -1,8 +1,0 @@
-// Param 1  $background  Define the background color of the element info panel
-
-// Purpose: To style the panel that shows detailed specifics of each element
-@mixin elementInfoPanelThemeDefault($background) {
-  .panel {
-    background-color: $background
-  }
-}

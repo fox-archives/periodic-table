@@ -208,17 +208,17 @@
   @import './_navigation-theme.scss';
 
   .light-def {
-    @include navigationThemeDefault($oc-gray-0, true, $oc-gray-2, $oc-gray-3, $oc-gray-2,
+    @include navigationThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $oc-gray-2,
                                      $oc-gray-3, $oc-gray-2, $oc-gray-7, $oc-gray-7);
   }
 
   .light-con {
-    @include navigationThemeDefault($oc-gray-1, true, $oc-gray-3, $oc-gray-4, $oc-gray-3,
+    @include navigationThemeDefault($lc-background, true, $lc-shadow, $lc-shadow-hover, $oc-gray-3,
                                      $oc-gray-4, $oc-gray-3, $oc-gray-8, $oc-gray-8);
   }
 
   .dark-def {
-    @include navigationThemeDefault($oc-gray-8, false, $oc-gray-7, $oc-gray-6, $oc-gray-7,
+    @include navigationThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover, $oc-gray-7,
                                      $oc-gray-6, $oc-gray-7, $oc-gray-1, $oc-gray-1);
   }
 </style>

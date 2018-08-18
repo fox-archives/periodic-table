@@ -101,7 +101,6 @@
     align-items: center;
     padding: 9px 10px 9px 10px;
     border-radius: $border-radius;
-    // transition: all $transition-time ease-in-out;
 
     .icon {
       height: 24px;
@@ -119,11 +118,10 @@
 
   .popup-item:hover {
     cursor: pointer;
-    // transition: all $transition-time ease-in-out;
   }
 
   .popup-item:active {
-    transition: all $transition-time ease-in-out;
+    transition: createTransitions((background-color));
   }
 
   .feather-icon {

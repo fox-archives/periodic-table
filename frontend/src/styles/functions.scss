@@ -1,0 +1,26 @@
+// createTransitions
+// @param 1  $transitionProperties   List of all the transitions to use. All of these transitions will have the same transition duration and timing function
+// @param 2  $isExtraTransitions  Boolean for if there is extra transitions after using the function. In other words, this is true if you are adding more transitions, either manually or with the transition function after using the transition function
+// @param 3  $transitionDuration  Specify the duration of the transition. Default is $transition-duration
+// @param 4  $transitionTimingFunction  Specify the function of how the transition timing behaves. Default is $transition-timing-fn
+// Purpose: To create a function that can add transitions to the CSS property. The only mandatory parameter to pass are the proeprties to transitions, the rest will defualt
+@function createTransitions($transitionProperties,
+                       $isExtraTransitions: false,
+                       $transitionDuration: $transition-duration,
+                       $transitionTimingFunction: $transition-timing-fn
+) {
+
+  $returnThis: '';
+  @each $transitionProperty in $transitionProperties {
+    $returnThis: $returnThis + ($transitionProperty + ' ' +
+                                $transitionDuration + ' ' +
+                                $transitionTimingFunction);
+
+    // Make sure you don't put a comma and space at the end if it is the last element, OR, if there will be more transitions after
+    @if( (index($transitionProperties, $transitionProperty) != length($transitionProperties)) or $isExtraTransitions ) {
+      $returnThis: ($returnThis + ', ');
+    }
+  }
+
+  @return unquote($returnThis);
+}

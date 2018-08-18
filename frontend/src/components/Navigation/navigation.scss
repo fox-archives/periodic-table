@@ -3,6 +3,11 @@
   overflow: auto;
   width: 100%;
   user-select: none;
+  transition: createTransitions((box-shadow, background-color));
+}
+
+#nav:hover {
+  transition: createTransitions((box-shadow, background-color));
 }
 
 #nav-content {
@@ -32,6 +37,10 @@
 
 .nav-item-body:hover {
   cursor: pointer;
+}
+
+.nav-item-body:active {
+  transition: createTransitions((background-color));
 }
 
 #menu-mobile {

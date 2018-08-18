@@ -346,15 +346,15 @@
   @import './_periodic-table-theme.scss';
 
   .light-def {
-    @include periodicTableThemeDefault($oc-gray-0, true, $oc-gray-2, $oc-gray-3);
+    @include periodicTableThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover);
   }
 
   .light-con {
-    @include periodicTableThemeDefault($oc-gray-1, true, $oc-gray-3, $oc-gray-4);
+    @include periodicTableThemeDefault($lc-background, true, $lc-shadow, $lc-shadow-hover);
   }
 
   .dark-def {
-    @include periodicTableThemeDefault($oc-gray-8, false, $oc-gray-7, $oc-gray-6);
+    @include periodicTableThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover);
   }
 
 

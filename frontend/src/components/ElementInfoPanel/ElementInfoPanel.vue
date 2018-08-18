@@ -27,13 +27,6 @@ import PanelTextual from './PanelTextual.vue';
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
 
-    @import './_element-info-panel-theme.scss';
-
-    .light-def {
-      @include elementInfoPanelThemeDefault($oc-gray-0);
-    }
-
-
     .panel.info-auto {
 
     }
@@ -42,18 +35,14 @@ import PanelTextual from './PanelTextual.vue';
       display: grid;
       grid-template-columns: 20vw auto;
       grid-template-rows: 20vw;
+      grid-column-gap: 10px;
+      margin-bottom: 10px;
       border-radius: $border-radius;
       width: 100%;
-      margin-bottom: 10px;
 
       #visual {
         height: 100%;
         width: 100%;
-        background-color: $oc-yellow-1;
-      }
-
-      #textual {
-        background-color: $oc-orange-1;
       }
     }
 
@@ -61,17 +50,10 @@ import PanelTextual from './PanelTextual.vue';
       display: grid;
       grid-template-columns: 17vw;
       grid-template-rows: 17vw auto;
-      margin-right: 10px;
+      grid-row-gap: 10px;
       border-radius: $border-radius;
+      margin-right: 10px;
       // Do not add a height because by default, the height is the same as the height of the periodic table, which scales
-
-      #visual {
-        background-color: $oc-yellow-1;
-      }
-
-      #textual {
-        background-color: $oc-orange-1;
-      }
     }
 
     .panel.info-exclude {

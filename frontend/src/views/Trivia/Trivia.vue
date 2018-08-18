@@ -38,11 +38,12 @@
     background-color: $oc-gray-0;
     height: 400px;
     width: 250px;
+    transition: createTransitions((box-shadow, background-color));
 }
 
 .trivia:hover {
     box-shadow: 2px 2px 4px $oc-gray-2;
-    transition: all $transition-time ease-in-out;
+    transition: createTransitions((box-shadow, background-color));
 }
 
 .title {

@@ -1,0 +1,11 @@
+// Param 1  $background  Define the background color of the textual part of element info panel
+
+// Purpose: To style the textual part of the element info panel, detailing the statistics of a selected element
+@mixin panelTextualThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
+  // Add shadow to textual part of element info panel
+  @include shadow('#textual-inner', $hasShadow, $shadow, $shadowHover);
+
+  #textual-inner {
+    background-color: $background;
+  }
+}

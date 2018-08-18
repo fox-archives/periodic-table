@@ -14,23 +14,12 @@
 // Purpose: To change nav bar shadow depending on hover of nav bar, and change nav bar elements, depending on hover of each individual element
 @mixin navigationThemeDefault($background, $hasShadow, $shadow, $shadowHover, $navItemHover,
                                $navItemClick, $navItemActive, $heading, $icon) {
+  // Make navigation bar have a shadow
+  @include shadow('#nav', $hasShadow, $shadow, $shadowHover);
+
   // Color of main navigation bar
   #nav {
     background-color: $background;
-
-    @if($hasShadow) {
-      box-shadow: 2px 2px 3px $shadow;
-    }
-
-    transition: all $transition-time ease-in-out;
-  }
-
-  #nav:hover {
-    @if($hasShadow) {
-      box-shadow: 2px 2px 4px $shadowHover;
-    }
-
-    transition: all $transition-time ease-in-out;
   }
 
   // Color of each nav item
@@ -44,12 +33,10 @@
 
   .nav-item-body:active {
     background-color: $navItemClick;
-    transition: all $transition-time ease-in-out;
   }
 
   .nav-item-body.router-link-active {
     background-color: $navItemActive;
-    transition: all $transition-time ease-in-out;
   }
 
   // Color of of headings

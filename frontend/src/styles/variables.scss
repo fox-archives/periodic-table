@@ -1,9 +1,51 @@
 // Open Color Variables
 @import 'open-color/open-color.scss';
 
+// Import mixins and functions, which are only included if the mixin or function is called via @include
+@import './mixins.scss';
+@import './functions.scss';
+
 // Other common variables
 $minimum-width: 1000px;
 $maximum-width: 1000px;
 $border-radius: 7.5px;
 $border-radius-small: 4px;
-$transition-time: 0.15s;
+$transition-time: 0.15s; // Remove $transition-time in favor of $transition-duration eventually
+$transition-duration: 0.15s;
+$transition-timing-fn: ease-in-out;
+
+
+
+// MASTER COLOR VARIABLE LIST
+//  [Theme Name]          [JS Theme Name]   [CSS Theme Abbreviation]
+//  Light Theme           light-def         ld
+//  High Contrast Theme   light-con         lc
+//  Dark Theme            dark-def          dd
+
+
+// GENERAL DESCRIPTIONS (create aa-variables just for better readability of master variables, don't actually use them)
+// Defines the background of any component directly on the DOM (like periodic table, navbar, element information, etc)
+$aa-background: $oc-gray-0;
+
+// Defines the shadow of any component directly on the DOM (like periodic table, navBar, element information, etc)
+$aa-shadow: $oc-gray-2;
+
+// Defines the shadow during mouse hover of component, as described above
+$aa-shadow-hover: $oc-gray-3;
+
+
+
+// LIGHT THEME (LF)
+$ld-background: $oc-gray-0;
+$ld-shadow: $oc-gray-2;
+$ld-shadow-hover: $oc-gray-3;
+
+// HIGH CONTRAST THEME (LC)
+$lc-background: $oc-gray-1;
+$lc-shadow: $oc-gray-3;
+$lc-shadow-hover: $oc-gray-4;
+
+// DARK THEME (DD)
+$dd-background: $oc-gray-8;
+$dd-shadow: $oc-gray-7;
+$dd-shadow-hover: $oc-gray-6;

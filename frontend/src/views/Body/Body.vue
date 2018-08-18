@@ -28,7 +28,7 @@
 
 <style scoped lang="scss">
   #display {
-    margin: 0px 10px 0px 10px;
+    // margin: 0px 10px 0px 10px;
 
   }
 

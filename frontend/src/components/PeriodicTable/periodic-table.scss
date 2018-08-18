@@ -17,6 +17,11 @@ $total-rows: (7 * 2) + 5;
   height: 0px;
   padding-bottom: 60%;
   border-radius: $border-radius;
+  transition: createTransitions((box-shadow, background-color));
+}
+
+#grid-conatainer:hover {
+  transition: createTransitions((box-shadow, background-color));
 }
 
 #grid {
