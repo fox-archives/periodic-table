@@ -29,7 +29,6 @@
 
 <style scoped lang="scss">
   @import '../../styles/variables.scss';
-  @import './local-variables.scss';
 
   @import './_panel-visual-theme.scss';
 
@@ -69,8 +68,8 @@
     position: relative;
     margin-top: 10px; // Don't think this should be $spacing
     height: 0px;
-    width: $fraction-of-panel-visual;
-    padding-bottom: $fraction-of-panel-visual;
+    width: 75%;
+    padding-bottom: 75%;
   }
 
   #icon-inner {
@@ -89,11 +88,11 @@
   }
 
   .info-top #icon-inner {
-    font-size: var(--info-top-text-size);
+    font-size: calc(20vw * 0.75 * 0.48);
   }
 
   .info-side #icon-inner {
-    font-size: var(--info-side-text-size);
+    font-size: calc(17vw * 0.75 * 0.48);
   }
 
   #icon-inner:hover {

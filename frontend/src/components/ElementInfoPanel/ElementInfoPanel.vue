@@ -26,7 +26,6 @@ import PanelTextual from './PanelTextual.vue';
 
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
-    @import './local-variables.scss';
 
     .panel.info-auto {
 
@@ -34,10 +33,10 @@ import PanelTextual from './PanelTextual.vue';
 
     .panel.info-top {
       display: grid;
-      grid-template-columns: $box-size-info-top 1fr;
-      grid-template-rows: $box-size-info-top;
-      grid-column-gap: $spacing-panel-visual;
-      margin-bottom: $spacing-panel-visual;
+      grid-template-columns: 20vw 1fr;
+      grid-template-rows: 20vw;
+      grid-column-gap: $spacing;
+      margin-bottom: $spacing;
       border-radius: $border-radius;
       // width: 100%; // Not sure why I need this. Maybe to stretch the component to the width of body?
 
@@ -49,11 +48,11 @@ import PanelTextual from './PanelTextual.vue';
 
     .panel.info-side {
       display: grid;
-      grid-template-columns: $box-size-info-side;
-      grid-template-rows: $box-size-info-side auto;
-      grid-row-gap: $spacing-panel-visual;
+      grid-template-columns: 17vw;
+      grid-template-rows: 17vw auto;
+      grid-row-gap: $spacing;
       border-radius: $border-radius;
-      margin-right: $spacing-panel-visual;
+      margin-right: $spacing;
       // TODO: Make the height of the panel stretch the whole remaining height.
       // Do not add a height because by default, the height is the same as the height of the periodic table, which scales
     }

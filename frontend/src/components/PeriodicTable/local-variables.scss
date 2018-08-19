@@ -1,8 +1,0 @@
-$periodic-table-padding: 10px;
-
-#grid-container {
-  // Local CSS variables to be under scope of #grid-container
-  --periodic-table-info-top-label-font-size: calc( (100vw - (#{$body-margin} * 2) - #{$spacing-global} - 20vw - (#{$periodic-table-padding} * 2)) * 0.0172 );
-  --periodic-table-info-side-label-font-size: calc( (100vw - (#{$body-margin} * 2) - #{$spacing-global} - 20vw - (#{$periodic-table-padding} * 2)) * 0.0166 );
-
-}
