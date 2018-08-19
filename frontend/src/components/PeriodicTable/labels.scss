@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
 
-  height: 70%;
+  height: 75%;
   width: 100%;
   border-radius: $border-radius;
   user-select: none;
@@ -31,7 +31,16 @@
 .label-text {
   font-family: latolight;
   font-weight: normal;
-  font-size: 1.33em;
+
+}
+
+.info-top .label-text{
+  font-size: var(--periodic-table-info-top-label-font-size);
+}
+
+.info-side .label-text {
+  font-size: var(--periodic-table-info-side-label-font-size);
+
 }
 
 // Period and Group Labels

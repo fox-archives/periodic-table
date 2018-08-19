@@ -36,8 +36,8 @@ import PanelTextual from './PanelTextual.vue';
       display: grid;
       grid-template-columns: $box-size-info-top 1fr;
       grid-template-rows: $box-size-info-top;
-      grid-column-gap: $spacing;
-      margin-bottom: $spacing;
+      grid-column-gap: $spacing-panel-visual;
+      margin-bottom: $spacing-panel-visual;
       border-radius: $border-radius;
       // width: 100%; // Not sure why I need this. Maybe to stretch the component to the width of body?
 
@@ -51,9 +51,9 @@ import PanelTextual from './PanelTextual.vue';
       display: grid;
       grid-template-columns: $box-size-info-side;
       grid-template-rows: $box-size-info-side auto;
-      grid-row-gap: $spacing;
+      grid-row-gap: $spacing-panel-visual;
       border-radius: $border-radius;
-      margin-right: $spacing;
+      margin-right: $spacing-panel-visual;
       // TODO: Make the height of the panel stretch the whole remaining height.
       // Do not add a height because by default, the height is the same as the height of the periodic table, which scales
     }

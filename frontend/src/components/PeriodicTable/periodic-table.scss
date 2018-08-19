@@ -1,3 +1,5 @@
+@import './local-variables.scss';
+
 // Add 5 to rows for the "f" block elements
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
@@ -20,7 +22,7 @@ $total-rows: (7 * 2) + 5;
   transition: createTransitions((box-shadow, background-color));
 }
 
-#grid-conatainer:hover {
+#grid-container:hover {
   transition: createTransitions((box-shadow, background-color));
 }
 
@@ -32,7 +34,7 @@ $total-rows: (7 * 2) + 5;
   left: 0px;
 
   display: grid;
-  grid-template-columns: 40px repeat($total-columns, 1fr);
-  grid-template-rows: 40px repeat($total-rows, 1fr);
-  padding: 10px 10px 10px 10px;
+  grid-template-columns: 2.8% repeat($total-columns, 1fr);
+  grid-template-rows: 5% repeat($total-rows, 1fr);
+  padding: $periodic-table-padding;
 }
