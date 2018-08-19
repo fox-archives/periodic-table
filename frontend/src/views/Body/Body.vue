@@ -27,8 +27,10 @@
 </script>
 
 <style scoped lang="scss">
+  @import '../../styles/variables.scss';
+
   #display {
-    // margin: 0px 10px 0px 10px;
+    margin: 0px $body-margin 0px $body-margin;
 
   }
 

@@ -18,14 +18,18 @@
   .primary-text {
     font-family: latobold;
     font-weight: normal;
-    font-size: 1.4em;
+    // TODO: REMOVE below temporary "fix" and make text size relative to parent div
+    // font-size: 1.4em;
+    font-size: 1.2vw;
     white-space: nowrap;
   }
 
   .secondary-text {
     font-family: latoregular;
     font-weight: normal;
-    font-size: 0.8em;
+    // TODO: REMOVE below temporary "fix" and make text size relative to parent div
+    //font-size: 0.8em;
+    font-size: 0.9vw;
     white-space: nowrap;
   }
 }

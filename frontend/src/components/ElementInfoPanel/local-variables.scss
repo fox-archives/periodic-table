@@ -1,0 +1,22 @@
+
+// Stuff about everything
+// Bottom margin of panel visual (when its on top), and in between panel visual and textual
+$spacing: 10px;
+
+
+// Stuff about the Left Panel
+$box-size-info-top: 20vw;
+$box-size-info-side: 17vw;
+
+// Stuff about Panel Visual
+$fraction-of-panel-visual: 75%;
+
+.panel {
+  // Declare CSS Variables in here if needed. They should be scoped to the .panel component (SCSS should be scoped automatically)
+
+  // Note: It is this simple because $box-size-info-top scales according to the viewport width
+  // This variable determines the font size of the element abbreviation
+  // There is a ' / 100%' beause $fraction-of-panel-visual is a percentage, and dividing by a % in Sass gets rid of it
+  --info-top-text-size: calc(#{$box-size-info-top} * #{$fraction-of-panel-visual / 100%} * 0.48);
+  --info-side-text-size: calc(#{$box-size-info-side} * #{$fraction-of-panel-visual / 100%} * 0.48);
+}

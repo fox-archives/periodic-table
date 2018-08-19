@@ -8,11 +8,16 @@
 // Other common variables
 $minimum-width: 1000px;
 $maximum-width: 1000px;
-$border-radius: 7.5px;
+$border-radius: 8px;
 $border-radius-small: 4px;
 $transition-time: 0.15s; // Remove $transition-time in favor of $transition-duration eventually
 $transition-duration: 0.15s;
 $transition-timing-fn: ease-in-out;
+
+// Variables for Aesthetics
+
+// The main margins on the left and right side of the page
+$body-margin: 10px;
 
 
 

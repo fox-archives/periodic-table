@@ -9,8 +9,8 @@ $list-of-oc-colors: (
 );
 
 
-// @param 1  $colorShade  The type of color shade (ex. supdark, dark)
-// @param 2  $hasBackgroundColor  Boolean for if there should be a background-color for that particular colorShade
+// @param 1  $colorShade  The type of color shade (ex. supdark-, dark-)
+// @param 2  $hasBackgroundColor  Boolean for if there should be a background-color for that particular colorShade. It false, the element background would have the same color as the grid behind it
 // @param 3  $backgroundColor  Color of the background of the element
 // @param 4  textColor  Color of the text of each element
 // Note: There isn't a $hasTextColor because there will always be text, that has some color
@@ -30,6 +30,39 @@ $list-of-oc-colors: (
     }
   }
 }
+
+//  Example output from using: @include elementsThemeColors('light-', true, 1, 6);
+//  .light-blue {
+//    background-color: #d0ebff;
+//  }
+//
+//  .light-red {
+//    background-color: #ffe3e3;
+//  }
+//
+//  .light-green {
+//    background-color: #d3f9d8;
+//  }
+//  ...
+//
+//  .light-blue p {
+//    color: #868e96;
+//  }
+//
+//  .light-red p {
+//    color: #868e96;
+//  }
+//
+//  .light-green p {
+//    color: #868e96;
+//  }
+//  ...
+
+
+
+
+
+
 
 
 // @param 1  $hasShadow  Boolean for if the element has a shadow
