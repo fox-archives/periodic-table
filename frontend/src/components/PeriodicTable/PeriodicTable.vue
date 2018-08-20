@@ -75,11 +75,6 @@
       //   'period'  Want to darken a period
       //   'group'  Want to darken a group
       highlightSection: function(index, type) {
-        // // Get color from element-info and make it lighter, if info is obtrusive
-        // if(this.options.infoLocationType === 'info-auto') {
-        //   this.activeElement.color = 'light-' + this.eColors[index].defaultColor;
-        // }
-
         // Before highlighting the elements, make sure that the period / group labels are not highlighted
         this.clearLabelExcept({
           periodExclude: -1,
@@ -204,7 +199,7 @@
               this.periodData[period - 1].color = 'light';
             }
             else {
-              console.log("Unexpected parameter for isMouseOver passed through setLabelColor.");
+              console.warn("Unexpected parameter for isMouseOver passed through setLabelColor.");
             }
           }
           // Only darken the period / group label if the element actually has a valid group number (within the actual range of the periodic table)
@@ -219,7 +214,7 @@
               this.groupData[group - 1].color = 'light';
             }
             else {
-              console.log("Unexpected parameter for isMouseOver passed through setLabelColor.");
+              console.warn("Unexpected parameter for isMouseOver passed through setLabelColor.");
             }
           }
         }
@@ -327,10 +322,8 @@
       ]),
 
     },
-    components: {
-
-    },
     created() {
+      // Load element data via Axios / Fetch API requests to backend
       this.$store.dispatch('loadElementData');
     }
   }

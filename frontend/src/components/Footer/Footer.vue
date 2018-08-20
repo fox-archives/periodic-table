@@ -27,11 +27,6 @@
 @import './footer.scss';
 @import './_footer-theme.scss';
 
-// footerThemeDefault parameters
-// @param 1  Text Color
-// @param 2  Color of Underline when mouse hovers over link (a tag)
-// @param 3  Background color of footer element
-
 .light-def {
   @include footerThemeDefault($oc-gray-9, $oc-gray-3, white)
 }

@@ -27,10 +27,6 @@ import PanelTextual from './PanelTextual.vue';
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
 
-    .panel.info-auto {
-
-    }
-
     .panel.info-top {
       display: grid;
       grid-template-columns: 20vw 1fr;
@@ -38,7 +34,6 @@ import PanelTextual from './PanelTextual.vue';
       grid-column-gap: $spacing;
       margin-bottom: $spacing;
       border-radius: $border-radius;
-      // width: 100%; // Not sure why I need this. Maybe to stretch the component to the width of body?
 
       #visual {
         height: 100%;

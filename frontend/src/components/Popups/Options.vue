@@ -10,7 +10,7 @@
       </li>
       <li class="option">
         <p class="text">Element Info Location</p>
-        <vs-select class="option-theme" label="infoLocations" v-model="infoLocation" v-on:change="setInfoLocation">
+        <vs-select class="option-theme" label="infoLocations" v-model="infoLocationNum" v-on:change="setInfoLocation">
           <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
         </vs-select>
       </li>
@@ -57,7 +57,7 @@
           { text: 'Dark', value: 3 }
         ],
 
-        infoLocation: 1,
+        infoLocationNum: 1,
         infoLocationTypes: ['info-auto', 'info-top', 'info-side', 'info-exclude'],
         infoLocations: [
           { text: 'Auto', value: 1 },
@@ -67,18 +67,23 @@
         ],
 
         gridLayout: 1,
+        gridLayouts: ['grid-auto', 'grid-full-width'],
         gridLayouts: [
           { text: 'Auto', value: 1 },
-          { text: 'Full Height', value: 2 },
-          { text: 'Full Width', value: 3 },
-          { text: 'Mobile', value: 4 },
+          { text: 'Full Width', value: 2 },
         ]
       }
     },
     methods: {
+      ...mapMutations([
+        'setOptions'
+      ]),
       advancedSettingsPopup: function(state) {
         if(state === "on") {
+          // TODO: use the setOptions mutator in store.js to manipulate this.options
           this.options.blurType = 'blur-large';
+
+
           // this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
           this.advancedSettingsPopupActive = true;
         }
@@ -109,18 +114,49 @@
         }
       },
       setInfoLocation: function() {
-        for(let i = 0; i < this.infoLocationTypes.length; i++) {
-          if(this.infoLocation === i + 1) {
-            this.options.infoLocationType = this.infoLocationTypes[i];
+        // First, convert infoLocation number to a string
+        let infoChosen = this.infoLocationTypes[this.infoLocationNum - 1];
+
+        // Then, set it to global options
+        this.setOptions({
+          infoLocationType: infoChosen
+        });
+
+        // Then set the global options for if the info location type is auto
+        if(infoChosen === 'info-auto') {
+          this.setOptions({
+            infoLocationTypeIsAuto: true
+          });
+          this.updateInfoLocation();
+        }
+        else {
+          this.setOptions({
+            infoLocationTypeIsAuto: false,
+          });
+        }
+      },
+      // Purpose: To update the infoLocationType depending on the size of the viewport (greater than or less than 1100 px)
+      updateInfoLocation: function() {
+        if(this.options.infoLocationTypeIsAuto) {
+          if(window.innerWidth < 1150 ) {
+            this.setOptions({ infoLocationType: 'info-top' });
+          }
+          else if(window.innerWidth >= 1150) {
+            this.setOptions({ infoLocationType: 'info-side' });
           }
         }
-
       }
     },
     computed: {
         ...mapGetters([
           'options'
         ])
+    },
+    mounted() {
+      this.updateInfoLocation();
+      window.addEventListener('resize', () => {
+        this.updateInfoLocation();
+      })
     },
     components: {
       AdvancedOptionsPopUp

@@ -9,8 +9,8 @@
 #footer {
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 5px;
+  // margin-top: 5px; // A padding bottom is declared under PeriodicTable.vue associated SCSS files
   user-select: none;
 }
 

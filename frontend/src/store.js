@@ -51,9 +51,9 @@ export default new Vuex.Store({
     options: {
       themeType: 'light-def',
       infoLocationType: 'info-auto',
+      infoLocationTypeIsAuto: true,
       blurType: 'no-blur'
     }
-
   },
   getters: {
     // ACCESSING ARRAYS
@@ -291,8 +291,9 @@ export default new Vuex.Store({
 
     // @param #object 'payload' contains properties:
     //   (req) .themeType #String  The theme that is active
-    //   (req) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
-    setOptions: function(state, payload) {
+    //   (opt) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
+    //   (opt) Any other properties of options
+    setOptions: function(state, newProperties) {
       // Payload contains an object containing properties
       // These properties should replace the properties the activeElement object (from the vuex state) has
       for(let property in newProperties) {
@@ -300,7 +301,9 @@ export default new Vuex.Store({
           state.options[property] = newProperties[property];
         }
       }
-    },
+    }
+
+
   },
   // Allow to run Async code
   actions: {

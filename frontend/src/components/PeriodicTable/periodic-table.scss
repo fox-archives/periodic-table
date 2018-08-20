@@ -9,6 +9,8 @@ $total-rows: (7 * 2) + 5;
 
 #grid-container-outer {
   width: 100%;
+  height: 100%;
+  // min-height the same height as the periodic table (if we can't get the scrollbar to ONLY work on the periodic-table component, and not the whole page)
 }
 
 #grid-container {
@@ -31,6 +33,7 @@ $total-rows: (7 * 2) + 5;
   bottom: 0px;
   left: 0px;
 
+  // Recall the first number in grid-template-columns / rows refers to the period / group labels
   display: grid;
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
   grid-template-rows: 5% repeat($total-rows, 1fr);

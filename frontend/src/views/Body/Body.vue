@@ -9,6 +9,7 @@
 
 <script>
   import { mapGetters } from 'vuex';
+  import { mapMutations } from 'vuex';
   import PeriodicTable from '../../components/PeriodicTable/PeriodicTable.vue';
   import ElementInfoPanel from '../../components/ElementInfoPanel/ElementInfoPanel.vue';
 
@@ -30,12 +31,15 @@
   @import '../../styles/variables.scss';
 
   #display {
-    margin: 0px $body-margin 0px $body-margin;
-
+    margin-left: $body-margin;
+    margin-right: $body-margin;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   #display.info-auto {
     display: flex;
+    flex-direction: row;
   }
 
   #display.info-top {
@@ -53,8 +57,9 @@
   }
 
   .pta {
+    // There is already a global implementation of this
+    // TODO: Remove box-sizing
     box-sizing: border-box;
-
   }
 
 </style>
