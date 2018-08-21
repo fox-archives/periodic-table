@@ -30,7 +30,8 @@ export default {
   // The top three templates have the following IDs respectively: #nav, #display, #footer
   #content {
     display: grid;
-    grid-template-rows: 45px 1fr auto;
+    // minmax(max-content, max-content) instead of 20vh
+    grid-template-rows: minmax(max-content, max-content) 1fr auto;
   }
 
   // This is to make sure that the periodic table does not expand past the actual <html></html> tags (there was an issue with white showing in the dark theme on info-top if height: 100vh; was used
