@@ -1,11 +1,11 @@
 <template>
   <nav id="nav" v-bind:class="options.themeType">
     <ul id="nav-content">
-      <!--<ul id="logo-container">-->
-        <!--<li id="logo">-->
-          <!--<a href="/simple"><img src="../../assets/placeholder.png"></a>-->
-        <!--</li>-->
-      <!--</ul>-->
+      <ul id="logo-container">
+        <li id="logo">
+          <a href="/simple"><img src="../../assets/placeholder.png" height="30px"></a>
+        </li>
+      </ul>
       <ul id="nav-items">
         <li class="nav-item text" id="simple-wide">
         <router-link class="nav-item-body link" to="/simple">

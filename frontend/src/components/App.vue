@@ -30,7 +30,6 @@ export default {
   // The top three templates have the following IDs respectively: #nav, #display, #footer
   #content {
     display: grid;
-    // minmax(max-content, max-content) instead of 20vh
     grid-template-rows: minmax(max-content, max-content) 1fr auto;
   }
 
