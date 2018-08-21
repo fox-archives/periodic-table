@@ -34,7 +34,6 @@
     margin-left: $body-margin;
     margin-right: $body-margin;
     margin-bottom: 10px;
-    margin-top: 10px;
   }
 
   #display.info-auto {

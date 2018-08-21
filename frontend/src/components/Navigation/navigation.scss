@@ -1,7 +1,8 @@
+// Navbar, including pop-ups
 #nav {
-  // margin-bottom: 5px;
-  overflow: hidden;
   width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
   user-select: none;
   transition: createTransitions((box-shadow, background-color));
 }
@@ -10,19 +11,37 @@
   transition: createTransitions((box-shadow, background-color));
 }
 
+// Just navbar, no popups
 #nav-content {
   display: flex;
-  margin-left: 0px;
+  justify-content: space-between;
   width: 100%;
 }
 
-#nav-items {
+// Left Nav Stuff
+#left-nav {
   display: flex;
-  list-style-type: none;
+  align-items: center;
 }
 
-.nav-item {
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
+#nav-items {
+   display: flex;
+   list-style-type: none;
+ }
+
+// Right Nav Stuff
+#right-nav {
+  display: flex;
 }
 
 // This is router-link. If there is no router-link (like search button), then it is list-element
@@ -33,7 +52,6 @@
   border-radius: $border-radius-small;
   padding: 10px 15px 10px 15px;
 }
-
 
 .nav-item-body:hover {
   cursor: pointer;
@@ -58,15 +76,4 @@
 .icon {
   width: 24px;
   height: 24px;
-}
-
-// Logo Formatting
-#logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#logo {
-  padding-left: 10px;
-  padding-right: 10px;
 }
