@@ -5,7 +5,7 @@
 
         <ul id="logo-container">
           <li id="logo">
-            <a href="/simple"><img src="../../assets/placeholder.png" height="35px"></a>
+            <a href="/simple"><img src="../../assets/placeholder.png" height="32px"></a>
           </li>
         </ul>
 

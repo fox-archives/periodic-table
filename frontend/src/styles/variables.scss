@@ -18,6 +18,12 @@ $transition-time: 0.15s; // Remove $transition-time in favor of $transition-dura
 $transition-duration: 0.15s;
 $transition-timing-fn: ease-in-out;
 
+// Variables for Navigation / Layouts
+$small-laptop-width: 1200px;
+$tablet-width: 1050px;
+$mobile-width: 940px;
+$tiny-mobile-width: 350px;
+
 // Variables for Aesthetics
 
 // The main margins on the left and right side of the page
@@ -37,13 +43,13 @@ $spacing: 10px;
 
 // GENERAL DESCRIPTIONS (create aa-variables just for better readability of master variables, don't actually use them)
 // Defines the background of any component directly on the DOM (like periodic table, navbar, element information, etc)
-$aa-background: $oc-gray-0;
+$zz-background: $oc-gray-0;
 
 // Defines the shadow of any component directly on the DOM (like periodic table, navBar, element information, etc)
-$aa-shadow: $oc-gray-2;
+$zz-shadow: $oc-gray-2;
 
 // Defines the shadow during mouse hover of component, as described above
-$aa-shadow-hover: $oc-gray-3;
+$zz-shadow-hover: $oc-gray-3;
 
 
 

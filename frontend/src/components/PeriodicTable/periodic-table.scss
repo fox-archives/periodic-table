@@ -11,15 +11,18 @@ $total-rows: (7 * 2) + 5;
   width: 100%;
   height: 100%;
   // min-height the same height as the periodic table (if we can't get the scrollbar to ONLY work on the periodic-table component, and not the whole page)
+  overflow: auto;
 }
 
 #grid-container {
   position: relative;
-  width: 100%;
   height: 0px;
+  // IF YOU CHANGE WIDTH OR PADDING BOTTOM, CHANGE MIN-WIDTH AND MIN-HEIGHT UNDER #GRID
+  width: 100%;
   padding-bottom: 60%;
   border-radius: $border-radius;
   transition: createTransitions((box-shadow, background-color));
+  overflow: auto;
 }
 
 #grid-container:hover {
@@ -32,6 +35,9 @@ $total-rows: (7 * 2) + 5;
   right: 0px;
   bottom: 0px;
   left: 0px;
+  // IF YOU CHANGE MIN-WIDTH OR MIN-HEIGHT, CHANGE PADDING-BOTTOM RATIO UNDER #GRID-CONTAINER
+  min-width: 700px;
+  min-height: 420px;
 
   // Recall the first number in grid-template-columns / rows refers to the period / group labels
   display: grid;

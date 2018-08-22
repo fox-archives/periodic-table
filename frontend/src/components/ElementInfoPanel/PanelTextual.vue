@@ -1,14 +1,36 @@
 <template>
   <div>
-    <div id="textual-inner">
+    <div id="textual-inner" v-bind:class="[options.themeType, options.infoLocationType]">
+      <div id="textual-inner-inner">
+        <div class="stat" v-for="n in 20">
+          <div class="stat-icon">
+
+          </div>
+          <div class="stat-text">
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
 
     </div>
   </div>
 </template>
 
 <script>
+  import { mapGetters } from 'vuex';
   export default {
-    name: 'PanelTextual'
+    name: 'PanelTextual',
+    computed: {
+      ...mapGetters([
+        'options'
+      ])
+    }
+
   }
 </script>
 
@@ -33,10 +55,45 @@
     width: 100%;
     height: 100%;
     border-radius: $border-radius;
+    // padding: 5px 5px 5px 5px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-content: flex-start;*/
+    /*overflow: auto;*/
+
     transition: createTransitions((box-shadow, background-color));
   }
 
   #textual-inner:hover {
     transition: createTransitions((box-shadow, background-color));
+  }
+
+  #textual-inner-inner {
+    display: grid;
+    grid-column-gap: 0.5vw;
+    grid-row-gap: 0.5vw;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .info-top #textual-inner-inner {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .info-side #textual-inner-inner {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    // grid-auto-columns: 1fr;
+    // grid-template-rows: minmax(40px, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(25px, auto));
+  }
+
+  .stat {
+    background-color: $oc-gray-2;
+    border-radius: $border-radius-small;
   }
 </style>
