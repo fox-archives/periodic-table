@@ -13,3 +13,5 @@ package-lock.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+frontend/dist
