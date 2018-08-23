@@ -13,15 +13,8 @@ module.exports = merge(common, {
         test: /\.scss$/,
         use: [
           'vue-style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          },
+          'css-loader',
+          'postcss-loader',
           'sass-loader'
         ]
       },
@@ -29,15 +22,8 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          }
+          'css-loader',
+          'postcss-loader'
         ]
       },
     ]
@@ -45,7 +31,7 @@ module.exports = merge(common, {
   devServer: {
     port: 8080,
 
-    // Automatically do not open the homepage at startup
+    // Automatically do not open the website at startup
     open: false,
 
     // Redirect all 404 errors to .html (so vue-router with mode: history works (without hashes))

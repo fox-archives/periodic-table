@@ -69,9 +69,8 @@
   }
 
   #textual-inner-inner {
-    display: grid;
-    grid-column-gap: 0.5vw;
-    grid-row-gap: 0.5vw;
+
+
     padding: 5px;
     height: 100%;
     width: 100%;
@@ -79,17 +78,20 @@
   }
 
   .info-top #textual-inner-inner {
+    display: grid;
+    grid-column-gap: 0.5vw;
+    grid-row-gap: 0.5vw;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(5, auto);
   }
 
   .info-side #textual-inner-inner {
-    grid-auto-flow: row;
-    grid-template-columns: 1fr;
-    // grid-auto-columns: 1fr;
-    // grid-template-rows: minmax(40px, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(25px, auto));
+    display: flex;
+
+    /*grid-auto-flow: row;*/
+    /*grid-template-columns: 1fr;*/
+    /*grid-template-rows: repeat(auto-fit, minmax(25px, auto));*/
   }
 
   .stat {

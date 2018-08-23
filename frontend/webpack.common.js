@@ -62,7 +62,7 @@ module.exports = {
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: 'bundle.css',
-      chunckFilename: '[id].css'
+      chunkFilename: '[id].css'
     }),
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',
