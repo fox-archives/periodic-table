@@ -1,19 +1,21 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: '[name].[hash].bundle.js',
+    filename: 'bundle.js'
+    // filename: '[name].[hash].bundle.js',
   },
   optimization: {
-    splitChunks: {
-      chunks: 'all'
-    }
+    // The SplitChunksPlugin extracts common dependencies into existing entry chunk or an entirely new chunk
+    //
+    // splitChunks: {
+    //   chunks: 'all'
+    // }
   },
   module: {
     rules: [
@@ -65,10 +67,8 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].[hash].bundle.css',
-      // chunkFilename: '[name].[id].css'
-    }),
+    // new CompressionPlugin(),
+
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',
       filename: 'index.html',

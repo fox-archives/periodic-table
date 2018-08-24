@@ -70,6 +70,7 @@ app.get('/api/data/label/group', function(req, res) {
 
 // Catch-all request (if user goes to a URL that only the client can resolve (AKA vue-router),
 // send the user the .html file, rather than trying to resolve the URL server-side
+// If this is disabled, would get something like 'Cannot GET /simple'
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'), function(err) {
     if (err) {

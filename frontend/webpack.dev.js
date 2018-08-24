@@ -1,11 +1,13 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const webpack = require('webpack');
+const path = require('path');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   output: {
     publicPath: '/'
   },
@@ -35,21 +37,34 @@ module.exports = merge(common, {
       new UglifyJsPlugin({
         sourceMap: true
       }),
-      new OptimizeCssAssetsPlugin({})
+      new OptimizeCssAssetsPlugin({
+
+      })
     ]
   },
+  plugins: [
+    // Need to instantiate this when declaring hot: true as a property of the webpack-dev-server
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devServer: {
-    port: 8080,
-
     // Automatically do not open the website at startup
     open: false,
-
-    // Redirect all 404 errors to .html (so vue-router with mode: history works (without hashes))
-    historyApiFallback: true,
+    hot: true,
+    host: 'localhost',
+    port: 8080,
+    // compress: true,
 
     // Proxy URL to separate backend development server
     proxy: {
-      '/': "http://localhost:3000"
-    }
+      // changeOrigin: true, // All this does is rewrite the origin of the hostheader (localhost:8080) to the target URL (localhost:3000)
+      // '/api/*': {
+      //   target: 'http://localhost:3000/api'
+      // }
+      '/': {
+        target: 'http://localhost:3000/'
+      }
+    },
+    // This makes is so when you press 'back' button on browser, it goes back to the previous route without refreshing the page
+    historyApiFallback: true
   }
 });

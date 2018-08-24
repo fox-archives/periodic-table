@@ -4,19 +4,13 @@
       <div id="textual-inner-inner">
         <div class="stat" v-for="n in 20">
           <div class="stat-icon">
-
+            Test
           </div>
           <div class="stat-text">
 
           </div>
         </div>
-
-
-
-
-
       </div>
-
     </div>
   </div>
 </template>
@@ -55,11 +49,7 @@
     width: 100%;
     height: 100%;
     border-radius: $border-radius;
-    // padding: 5px 5px 5px 5px;
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*align-content: flex-start;*/
-    /*overflow: auto;*/
+
 
     transition: createTransitions((box-shadow, background-color));
   }
@@ -69,8 +59,6 @@
   }
 
   #textual-inner-inner {
-
-
     padding: 5px;
     height: 100%;
     width: 100%;
@@ -86,16 +74,28 @@
     grid-template-rows: repeat(5, auto);
   }
 
-  .info-side #textual-inner-inner {
-    display: flex;
+  #textual-inner.info-side {
+   overflow-y: auto;
+  }
 
-    /*grid-auto-flow: row;*/
-    /*grid-template-columns: 1fr;*/
-    /*grid-template-rows: repeat(auto-fit, minmax(25px, auto));*/
+  .info-side #textual-inner-inner {
+    padding: 5px 5px 5px 5px;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    // grid-template-rows: (5, auto);
+
+
+
+    /*overflow-y: scroll;*/
+    overflow-x: hidden;
+    height: 100%;
   }
 
   .stat {
     background-color: $oc-gray-2;
     border-radius: $border-radius-small;
+    margin-bottom: 6px;
   }
 </style>
