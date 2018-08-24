@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
@@ -26,6 +28,14 @@ module.exports = merge(common, {
           'postcss-loader'
         ]
       },
+    ]
+  },
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        sourceMap: true
+      }),
+      new OptimizeCssAssetsPlugin({})
     ]
   },
   devServer: {

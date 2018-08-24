@@ -2,13 +2,18 @@ const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js',
+    filename: '[name].[hash].bundle.js',
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
   },
   module: {
     rules: [
@@ -61,8 +66,8 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'bundle.css',
-      chunkFilename: '[id].css'
+      filename: '[name].[hash].bundle.css',
+      // chunkFilename: '[name].[id].css'
     }),
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',

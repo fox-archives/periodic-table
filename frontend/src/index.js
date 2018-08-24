@@ -27,6 +27,7 @@ Vue.use(Vuesax);
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
+
 // Mount Vue Instance to the DOM
 new Vue({
   el: '#content',
