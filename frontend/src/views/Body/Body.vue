@@ -36,11 +36,6 @@
     margin-bottom: 10px;
   }
 
-  #display.info-auto {
-    display: flex;
-    flex-direction: row;
-  }
-
   #display.info-top {
     display: flex;
     flex-direction: column;
@@ -52,7 +47,7 @@
   }
 
   #display.info-exclude {
-    // Do not to do any styling because there will be only one element
+    // Do not to do any styling because there will be only one element (the periodic table)
   }
 
   .pta {

@@ -52,7 +52,7 @@ module.exports = merge(common, {
     hot: true,
     host: 'localhost',
     port: 8080,
-    // compress: true,
+    compress: true,
 
     // Proxy URL to separate backend development server
     proxy: {

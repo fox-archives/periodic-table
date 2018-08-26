@@ -48,8 +48,6 @@ import PanelTextual from './PanelTextual.vue';
       grid-row-gap: $spacing;
       border-radius: $border-radius;
       margin-right: $spacing;
-      // TODO: Make the height of the panel stretch the whole remaining height.
-      // Do not add a height because by default, the height is the same as the height of the periodic table, which scales
     }
 
     .panel.info-exclude {

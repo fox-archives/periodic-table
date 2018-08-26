@@ -67,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    // new CompressionPlugin(),
+    new CompressionPlugin(),
 
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',

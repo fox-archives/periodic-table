@@ -2,9 +2,9 @@
   <div>
     <div id="textual-inner" v-bind:class="[options.themeType, options.infoLocationType]">
       <div id="textual-inner-inner">
-        <div class="stat" v-for="n in 20">
+        <div class="stat" v-for="n in 25">
           <div class="stat-icon">
-            Test
+            B
           </div>
           <div class="stat-text">
 
@@ -50,7 +50,6 @@
     height: 100%;
     border-radius: $border-radius;
 
-
     transition: createTransitions((box-shadow, background-color));
   }
 
@@ -58,11 +57,15 @@
     transition: createTransitions((box-shadow, background-color));
   }
 
-  #textual-inner-inner {
-    padding: 5px;
-    height: 100%;
-    width: 100%;
+  #textual-inner.info-side {
+    position: relative;
     overflow: auto;
+  }
+
+  #textual-inner-inner {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
   }
 
   .info-top #textual-inner-inner {
@@ -74,28 +77,24 @@
     grid-template-rows: repeat(5, auto);
   }
 
-  #textual-inner.info-side {
-   overflow-y: auto;
-  }
 
   .info-side #textual-inner-inner {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     padding: 5px 5px 5px 5px;
+    border-radius: $border-radius;
 
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-columns: 1fr;
-    // grid-template-rows: (5, auto);
-
-
-
-    /*overflow-y: scroll;*/
-    overflow-x: hidden;
-    height: 100%;
+    overflow: auto;
+    // height: 100%;
+    // max-height: 40vh;
   }
 
   .stat {
     background-color: $oc-gray-2;
     border-radius: $border-radius-small;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 </style>
