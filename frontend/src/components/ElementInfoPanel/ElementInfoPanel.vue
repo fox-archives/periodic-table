@@ -1,7 +1,7 @@
 <template>
   <section class="panel" v-bind:class="[options.themeType, options.infoLocationType]">
-    <PanelVisual id="visual"></PanelVisual>
-    <PanelTextual id="textual"></PanelTextual>
+    <PanelVisual></PanelVisual>
+    <PanelTextual></PanelTextual>
   </section>
 </template>
 
@@ -27,20 +27,7 @@ import PanelTextual from './PanelTextual.vue';
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
 
-    .panel.info-top {
-      display: grid;
-      grid-template-columns: 20vw 1fr;
-      grid-template-rows: 20vw;
-      grid-column-gap: $spacing;
-      margin-bottom: $spacing;
-      border-radius: $border-radius;
-
-      #visual {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
+    // Info Side
     .panel.info-side {
       display: grid;
       grid-template-columns: 17vw;
@@ -50,6 +37,17 @@ import PanelTextual from './PanelTextual.vue';
       margin-right: $spacing;
     }
 
+    // Info Top
+    .panel.info-top {
+      display: grid;
+      grid-template-columns: 20vw 1fr;
+      grid-template-rows: 20vw;
+      grid-column-gap: $spacing;
+      margin-bottom: $spacing;
+      border-radius: $border-radius;
+    }
+
+    // Info Exclude
     .panel.info-exclude {
       display: none;
     }

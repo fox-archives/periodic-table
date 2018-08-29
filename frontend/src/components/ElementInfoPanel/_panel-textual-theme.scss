@@ -3,9 +3,9 @@
 // Purpose: To style the textual part of the element info panel, detailing the statistics of a selected element
 @mixin panelTextualThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
   // Add shadow to textual part of element info panel
-  @include shadow('#textual-inner', $hasShadow, $shadow, $shadowHover);
+  @include shadow('#textual', $hasShadow, $shadow, $shadowHover);
 
-  #textual-inner {
+  #textual {
     background-color: $background;
   }
 }
