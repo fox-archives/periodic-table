@@ -25,7 +25,7 @@
 <style scoped lang="scss">
 @import '../../styles/variables.scss';
 @import './footer.scss';
-@import './_footer-theme.scss';
+@import './footer-theme.scss';
 
 .light-def {
   @include footerThemeDefault($oc-gray-9, $oc-gray-3, white)

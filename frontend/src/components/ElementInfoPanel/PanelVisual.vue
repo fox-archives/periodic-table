@@ -30,10 +30,10 @@
 <style scoped lang="scss">
   @import '../../styles/variables.scss';
 
-  @import './_panel-visual-theme.scss';
+  @import './panel-visual-theme.scss';
 
   // TODO: Make elementsThemeColors global rather than importing the _elements-theme.scss file, which is mixins and variables
-  @import '../PeriodicTable/_elements-theme.scss';
+  @import '../PeriodicTable/elements-theme.scss';
   .light-def {
     @include panelVisualThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover);
     @include elementsThemeColors('', true, 2, 9);

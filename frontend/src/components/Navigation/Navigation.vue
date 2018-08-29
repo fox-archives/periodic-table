@@ -210,7 +210,7 @@
   // Structure
   @import './navigation.scss';
   @import './navigation-mobile.scss';
-  @import './_navigation-theme.scss';
+  @import './navigation-theme.scss';
 
   .light-def {
     @include navigationThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $oc-gray-2,

@@ -336,7 +336,7 @@
 
   // PERIODIC TABLE \\
   @import './periodic-table.scss';
-  @import './_periodic-table-theme.scss';
+  @import './periodic-table-theme.scss';
 
   .light-def {
     @include periodicTableThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover);
@@ -353,7 +353,7 @@
 
   // ELEMENTS \\
   @import './elements.scss';
-  @import './_elements-theme.scss';
+  @import './elements-theme.scss';
 
   .light-def {
     @include elementsThemeColors('supdark-', true, 4, 9);
@@ -382,7 +382,7 @@
 
   // LABELS \\
   @import './labels.scss';
-  @import './_labels-theme.scss';
+  @import './labels-theme.scss';
 
   .light-def {
     @include labelsThemeDefault($oc-gray-0, $oc-gray-2, $oc-gray-9);

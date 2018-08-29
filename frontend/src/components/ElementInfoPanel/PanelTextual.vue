@@ -29,7 +29,7 @@
 <style scoped lang="scss">
   @import '../../styles/variables.scss';
 
-  @import './_panel-textual-theme.scss';
+  @import './panel-textual-theme.scss';
 
   .light-def {
     @include panelTextualThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover);
@@ -89,6 +89,10 @@
   }
 
   // Info Top
+  #textual.info-top {
+    overflow: auto;
+  }
+
   .info-top #textual-inner {
     display: grid;
     grid-column-gap: 0.5vw;
@@ -96,6 +100,7 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(5, auto);
+    // overflow: auto;
   }
 
 
