@@ -46,14 +46,4 @@
     flex-direction: row;
   }
 
-  #display.info-exclude {
-    // Do not to do any styling because there will be only one element (the periodic table)
-  }
-
-  .pta {
-    // There is already a global implementation of this
-    // TODO: Remove box-sizing
-    box-sizing: border-box;
-  }
-
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <div id="textual" v-bind:class="[options.themeType, options.infoLocationType]">
+  <div id="textual">
     <div id="textual-inner">
-      <div class="stat" v-for="n in 25">
+      <div class="stat" v-for="n in 15">
         <div class="stat-icon">
-          Boi
+          Lorem Ipsum
         </div>
         <div class="stat-text">
 
@@ -43,7 +43,7 @@
     @include panelTextualThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover);
   }
 
-  // All Cases
+  // ALL CASES
   #textual {
     width: 100%;
     height: 100%;
@@ -68,8 +68,8 @@
     margin-bottom: 10px;
   }
 
-  // Info Side
-  #textual.info-side {
+  // INFO SIDE
+  .info-side #textual {
     position: relative;
     overflow: auto;
   }
@@ -88,8 +88,8 @@
     // max-height: 40vh;
   }
 
-  // Info Top
-  #textual.info-top {
+  // INFO TOP
+  .info-top #textual {
     overflow: auto;
   }
 
@@ -102,7 +102,5 @@
     grid-template-rows: repeat(5, auto);
     // overflow: auto;
   }
-
-
 
 </style>

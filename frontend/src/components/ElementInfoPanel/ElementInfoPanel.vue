@@ -27,7 +27,7 @@ import PanelTextual from './PanelTextual.vue';
 <style scoped lang="scss">
     @import '../../styles/variables.scss';
 
-    // Info Side
+    // INFO SIDE
     .panel.info-side {
       display: grid;
       grid-template-columns: 17vw;
@@ -37,7 +37,7 @@ import PanelTextual from './PanelTextual.vue';
       margin-right: $spacing;
     }
 
-    // Info Top
+    // INFO TOP
     .panel.info-top {
       display: grid;
       grid-template-columns: 20vw 1fr;
@@ -47,7 +47,7 @@ import PanelTextual from './PanelTextual.vue';
       border-radius: $border-radius;
     }
 
-    // Info Exclude
+    // INFO EXCLUDE
     .panel.info-exclude {
       display: none;
     }

@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:class="[options.themeType, options.infoLocationType]" id="grid-container-outer">
+  <div id="grid-container-outer">
     <div v-if="ready" id="grid-container">
       <main id="grid">
         <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->

@@ -2,23 +2,38 @@
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
+// The periodic-table has width of 1, length of 0.6 relative to that width
+$elementRatio: 0.6;
+
 #grid-container-outer {
   width: 100%;
   height: 100%;
-  // min-height the same height as the periodic table (if we can't get the scrollbar to ONLY work on the periodic-table component, and not the whole page)
+  // min-height the same height as the periodic table (if we can't get the
+  // scrollbar to ONLY work on the periodic-table component, and not the whole page)
   border-radius: $border-radius;
+}
+
+.info-side #grid-container-outer {
+  // Overflow visible so the box-shadow around periodic-table is visible and not cut off
+  overflow: visible;
+}
+
+.info-top #grid-container-outer {
+  // Overflow auto so that when scrolling to small width, the scrollbars show border-radius
   overflow: auto;
-  transition: createTransitions((box-shadow, background-color));
+
+  // Recall there is a box-shadow for this element
+  transition: createTransitions((box-shadow));
 }
 
 #grid-container {
   position: relative;
   height: 0px;
-  // IF YOU CHANGE WIDTH OR PADDING BOTTOM, CHANGE MIN-WIDTH AND MIN-HEIGHT UNDER #GRID
   width: 100%;
-  padding-bottom: 60%;
-  // border-radius: $border-radius;
+  padding-bottom: 100% * $elementRatio;
   overflow: auto;
+  border-radius: $border-radius;
+  transition: createTransitions((box-shadow, background-color));
 }
 
 #grid-container:hover {
@@ -31,9 +46,8 @@ $total-rows: (7 * 2) + 5;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  // IF YOU CHANGE MIN-WIDTH OR MIN-HEIGHT, CHANGE PADDING-BOTTOM RATIO UNDER #GRID-CONTAINER
   min-width: 700px;
-  min-height: 420px;
+  min-height: 700 * $elementRatio;
 
   display: grid;
   grid-template-columns: 2.8% repeat($total-columns, 1fr);

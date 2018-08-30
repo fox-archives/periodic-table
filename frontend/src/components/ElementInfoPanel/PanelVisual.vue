@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="visual-inner" v-bind:class="options.infoLocationType">
+    <div id="visual-inner">
       <div id="icon">
         <div id="icon-inner" v-bind:class="activeElement.color">
             {{ activeElement.abbreviation }}
