@@ -1,5 +1,5 @@
 <template>
-  <section class="panel" v-bind:class="[options.themeType, options.infoLocationType]">
+  <section id="panel">
     <PanelVisual></PanelVisual>
     <PanelTextual></PanelTextual>
   </section>
@@ -28,17 +28,16 @@ import PanelTextual from './PanelTextual.vue';
     @import '../../styles/variables.scss';
 
     // INFO SIDE
-    .panel.info-side {
+    .info-side #panel {
       display: grid;
       grid-template-columns: 17vw;
       grid-template-rows: 17vw auto;
       grid-row-gap: $spacing;
       border-radius: $border-radius;
-      margin-right: $spacing;
     }
 
     // INFO TOP
-    .panel.info-top {
+    .info-top #panel {
       display: grid;
       grid-template-columns: 20vw 1fr;
       grid-template-rows: 20vw;
@@ -48,7 +47,7 @@ import PanelTextual from './PanelTextual.vue';
     }
 
     // INFO EXCLUDE
-    .panel.info-exclude {
+    .info-exclude #panel {
       display: none;
     }
 

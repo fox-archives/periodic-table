@@ -2,7 +2,7 @@
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
-// The periodic-table has width of 1, length of 0.6 relative to that width
+// The periodic-table has width of 1, height of 0.6 relative to that width
 $elementRatio: 0.6;
 
 #grid-container-outer {
@@ -12,6 +12,12 @@ $elementRatio: 0.6;
   // scrollbar to ONLY work on the periodic-table component, and not the whole page)
   border-radius: $border-radius;
 }
+
+//.info-side .scaleToHeight #grid-container-outer {
+//  // display: none;
+//  --scaleToHeightHeight: 300px;
+//  width: var(--scaleToHeightHeight);
+//}
 
 .info-side #grid-container-outer {
   // Overflow visible so the box-shadow around periodic-table is visible and not cut off
