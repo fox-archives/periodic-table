@@ -15,12 +15,6 @@
         </vs-select>
       </li>
       <li class="option">
-        <p class="text">Periodic Table Layout</p>
-        <vs-select class="option-theme" label="tableLayouts" v-model="gridLayout">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in gridLayouts" />
-        </vs-select>
-      </li>
-      <li class="option">
         <p class="text">Advanced Options</p>
         <!-- I don't know why this div tag stops the button from having a length of 100% -->
         <div>
@@ -64,19 +58,13 @@
           { text: 'Top', value: 2 },
           { text: 'Side', value: 3 },
           { text: 'Excluded', value: 4 }
-        ],
-
-        gridLayout: 1,
-        gridLayouts: ['grid-auto', 'grid-full-width'],
-        gridLayouts: [
-          { text: 'Auto', value: 1 },
-          { text: 'Full Width', value: 2 },
         ]
       }
     },
     methods: {
       ...mapMutations([
-        'setOptions'
+        'setOptions',
+        'setClassLayout'
       ]),
       advancedSettingsPopup: function(state) {
         if(state === "on") {
@@ -93,7 +81,7 @@
           this.advancedSettingsPopupActive = false;
         }
       },
-      // Changes local theme, and emits 'theme-changed' to all other .vue files (so theme changes in other .vue files)
+      // Changes local theme
       setTheme: function() {
         // This changes options.themeType (in Vuex options object)
         // i represents each element in themeTypes array
@@ -113,7 +101,12 @@
           }
         }
       },
+      // Changes placement of info-location (and calls setClassLayout)
       setInfoLocation: function() {
+        // .1s after setInfoLocation is called, update the className that determines the layout
+        // Probably can't do it right away because the div elements have just moved / changed positions
+        setTimeout(() => this.setClassLayout(), 100);
+
         // First, convert infoLocation number to a string
         let infoChosen = this.infoLocationTypes[this.infoLocationNum - 1];
 
@@ -134,6 +127,7 @@
             infoLocationTypeIsAuto: false,
           });
         }
+
       },
       // Purpose: To update the infoLocationType depending on the size of the viewport (greater than or less than 1100 px)
       updateInfoLocation: function() {
@@ -156,7 +150,7 @@
       this.updateInfoLocation();
       window.addEventListener('resize', () => {
         this.updateInfoLocation();
-      })
+      });
     },
     components: {
       AdvancedOptionsPopUp

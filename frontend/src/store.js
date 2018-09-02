@@ -53,7 +53,10 @@ export default new Vuex.Store({
       infoLocationType: 'info-auto',
       infoLocationTypeIsAuto: true,
       blurType: 'no-blur'
-    }
+    },
+
+    contentState: ''
+
   },
   getters: {
     // ACCESSING ARRAYS
@@ -92,6 +95,9 @@ export default new Vuex.Store({
 
     options: function(state) {
       return state.options;
+    },
+    contentState: function(state) {
+      return state.contentState;
     }
   },
   mutations: {
@@ -174,7 +180,7 @@ export default new Vuex.Store({
     setColorOfAllElements: function(state, prefix) {
       for(let i = 0; i < state.ePlacements.length; i++) {
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor
+        let defaultColor = state.eColors[i].defaultColor;
 
         Vue.set(state.eColors[i], 'color', (prefix + defaultColor));
       }
@@ -275,8 +281,6 @@ export default new Vuex.Store({
       }
     },
 
-
-
     // Sets the color of any elements in the periodic table (NOT the default color)
     setColorOfOneElement: function(state, payload) {
       // Payload contains an object containing properties
@@ -288,7 +292,6 @@ export default new Vuex.Store({
 
 
     // NAVIGATION STUFF
-
     // @param #object 'payload' contains properties:
     //   (req) .themeType #String  The theme that is active
     //   (opt) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
@@ -301,9 +304,32 @@ export default new Vuex.Store({
           state.options[property] = newProperties[property];
         }
       }
+    },
+
+    // LAYOUT STUFF
+    // This script makes the periodic-table and element info panel not have a height
+    // bigger than the browser on info-side
+    setClassLayout: function(state) {
+      // Test if the height of periodic-table and element-info-panel are the same
+      // This assumes the element-info panel goes all the way to bottom of window (stops right above footer)
+
+      let panelHeight = document.getElementById('grid-container').offsetHeight;
+      let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
+
+      // console.log(panelHeight);
+      // console.log(periodicTableHeight);
+
+      // Only change the style if the periodic-table has a greater or equal height fo element info panel
+      if (periodicTableHeight >= panelHeight && periodicTableHeight !== 0 && panelHeight !== 0) {
+        // This means if panel and periodic-table fill whole window height, increasing
+        // width will not increase size of periodic-table, instead it creates whitespace;
+        // periodic-table will only increase if the height of browser window increases
+        state.contentState = 'heightSame';
+      }
+      else {
+        state.contentState = 'heightDifferent';
+      }
     }
-
-
   },
   // Allow to run Async code
   actions: {

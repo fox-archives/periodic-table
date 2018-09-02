@@ -18,6 +18,7 @@ $elementRatio: 0.6;
 }
 
 .info-top .heightSame #grid-container-outer {
+  // If .heightSame is removed, then the box-shadow is clipped (for some info-top layout)
   // So scrollbar has rounded edges
    overflow: auto;
 }
