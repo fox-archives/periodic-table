@@ -29,7 +29,7 @@
           // This assumes the element-info panel goes all the way to bottom of window (stops right above footer)
 
           let panelHeight = document.getElementById('panel').offsetHeight;
-          let periodicTableHeight = document.getElementById('grid-container').offsetHeight;
+          let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
 
           // console.log(panelHeight);
           // console.log(periodicTableHeight);
@@ -44,10 +44,10 @@
             // Seems to tricky to implement
             // document.getElementById('grid-container-outer').style.setProperty('--scaleToHeightHeight', (panelHeight / 0.6 - 50) + 'px');
 
-            this.contentState = 'scaleToHeight';
+            this.contentState = 'heightSame';
           }
           else {
-            this.contentState = 'scaleToWidth';
+            this.contentState = 'heightDifferent';
           }
         }
       }
@@ -84,7 +84,6 @@
   #display {
     margin-left: $body-margin;
     margin-right: $body-margin;
-    margin-bottom: $spacing;
   }
 
   .info-top #display {
@@ -98,11 +97,5 @@
     grid-template-columns: 17vw auto;
     grid-column-gap: $spacing;
   }
-
-  /*.info-side .scaleToHeight#display {*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-  /*}*/
 
 </style>

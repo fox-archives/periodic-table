@@ -5,47 +5,50 @@ $total-rows: (7 * 2) + 5;
 // The periodic-table has width of 1, height of 0.6 relative to that width
 $elementRatio: 0.6;
 
+// Just for position relative
 #grid-container-outer {
-  width: 100%;
-  height: 100%;
-  // min-height the same height as the periodic table (if we can't get the
-  // scrollbar to ONLY work on the periodic-table component, and not the whole page)
+  position: relative;
   border-radius: $border-radius;
 }
 
-//.info-side .scaleToHeight #grid-container-outer {
-//  // display: none;
-//  --scaleToHeightHeight: 300px;
-//  width: var(--scaleToHeightHeight);
-//}
-
-.info-side #grid-container-outer {
-  // Overflow visible so the box-shadow around periodic-table is visible and not cut off
-  overflow: visible;
-}
-
-.info-top #grid-container-outer {
-  // Overflow auto so that when scrolling to small width, the scrollbars show border-radius
+.info-side .heightSame #grid-container-outer {
+  // So scrollbar has rounded edges
   overflow: auto;
-
-  // Recall there is a box-shadow for this element
-  transition: createTransitions((box-shadow));
 }
 
-#grid-container {
+.info-side #grid-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: $border-radius;
+}
+
+.info-side .heightSame #grid-container {
+  overflow: auto;
+}
+
+// Holds aspect ratio
+#grid-outer {
   position: relative;
   height: 0px;
   width: 100%;
   padding-bottom: 100% * $elementRatio;
-  overflow: auto;
-  border-radius: $border-radius;
   transition: createTransitions((box-shadow, background-color));
 }
 
-#grid-container:hover {
+.heightDifferent #grid-outer {
+  // .info-side is not in the declarationa above since we want the border-radius to appear on info-top
+  border-radius: $border-radius; // Only want this border when there is no scrollbar
+
+}
+
+#grid-outer:hover {
   transition: createTransitions((box-shadow, background-color));
 }
 
+// Main grid
 #grid {
   position: absolute;
   top: 0px;

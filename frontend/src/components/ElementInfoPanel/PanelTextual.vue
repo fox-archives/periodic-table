@@ -3,7 +3,7 @@
     <div id="textual-inner">
       <div class="stat" v-for="n in 15">
         <div class="stat-icon">
-          Lorem Ipsum
+          <p>Lorem Ipsum</p>
         </div>
         <div class="stat-text">
 
@@ -62,10 +62,16 @@
     padding: 5px;
   }
 
-  .stat {
+  .info-top .stat {
     background-color: $oc-gray-2;
     border-radius: $border-radius-small;
-    margin-bottom: 10px;
+    margin: 2px;
+  }
+
+  .info-side .stat {
+    background-color: $oc-gray-2;
+    border-radius: $border-radius-small;
+    margin-bottom: 6px;
   }
 
   // INFO SIDE
