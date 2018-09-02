@@ -31,14 +31,6 @@ export default {
   #content {
     display: grid;
     grid-template-rows: max-content 1fr max-content;
-  }
-
-  // This is to make sure that the periodic table does not expand past the actual <html></html> tags (there was an issue with white showing in the dark theme on info-top if height: 100vh; was used
-  #content.info-top {
-    height: 100%;
-  }
-
-  #content.info-side {
     height: 100vh;
   }
 

@@ -30,7 +30,7 @@ import PanelTextual from './PanelTextual.vue';
     // INFO SIDE
     .info-side #panel {
       display: grid;
-      // grid-template-columns: 17vw;
+      grid-template-columns: 17vw;
       grid-template-rows: 17vw auto;
       grid-row-gap: $spacing;
       border-radius: $border-radius;
@@ -40,9 +40,9 @@ import PanelTextual from './PanelTextual.vue';
     .info-top #panel {
       display: grid;
       grid-template-columns: 20vw auto;
-      // grid-template-rows: 20vw;
+      grid-template-rows: 20vw;
       grid-column-gap: $spacing;
-      // margin-bottom: $spacing;
+      margin-bottom: $spacing;
       border-radius: $border-radius;
     }
 

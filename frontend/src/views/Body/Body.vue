@@ -24,11 +24,11 @@
       // This script makes the periodic-table and element info panel not have a height
       // bigger than the browser on info-side
       setContentStateClass: function() {
-        if(this.options.infoLocationType === 'info-side') {
+        // if(this.options.infoLocationType === 'info-side') {
           // Test if the height of periodic-table and element-info-panel are the same
           // This assumes the element-info panel goes all the way to bottom of window (stops right above footer)
 
-          let panelHeight = document.getElementById('panel').offsetHeight;
+          let panelHeight = document.getElementById('grid-container').offsetHeight;
           let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
 
           // console.log(panelHeight);
@@ -43,13 +43,12 @@
             // Set the CSS Var First
             // Seems to tricky to implement
             // document.getElementById('grid-container-outer').style.setProperty('--scaleToHeightHeight', (panelHeight / 0.6 - 50) + 'px');
-
             this.contentState = 'heightSame';
           }
           else {
             this.contentState = 'heightDifferent';
           }
-        }
+        // }
       }
     },
     computed: {
@@ -88,13 +87,13 @@
 
   .info-top #display {
     display: grid;
-    grid-template-rows: 20vw auto;
-    grid-row-gap: $spacing;
+    grid-template-rows: max-content auto;
+    // grid-row-gap: $spacing;
   }
 
   .info-side #display {
     display: grid;
-    grid-template-columns: 17vw auto;
+    grid-template-columns: max-content auto;
     grid-column-gap: $spacing;
   }
 

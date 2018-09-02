@@ -11,6 +11,11 @@ $elementRatio: 0.6;
   border-radius: $border-radius;
 }
 
+.info-top #grid-container-outer {
+  // So scrollbar has rounded edges
+  overflow: auto;
+}
+
 .info-side .heightSame #grid-container-outer {
   // So scrollbar has rounded edges
   overflow: auto;
@@ -28,6 +33,15 @@ $elementRatio: 0.6;
 .info-side .heightSame #grid-container {
   overflow: auto;
 }
+.info-top #grid-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: auto;
+  border-radius: $border-radius;
+}
 
 // Holds aspect ratio
 #grid-outer {
@@ -36,10 +50,12 @@ $elementRatio: 0.6;
   width: 100%;
   padding-bottom: 100% * $elementRatio;
   transition: createTransitions((box-shadow, background-color));
+  overflow: auto;
+  // border-radius: $border-radius;
 }
 
 .heightDifferent #grid-outer {
-  // .info-side is not in the declarationa above since we want the border-radius to appear on info-top
+  //.info-side is not in the declarationa above since we want the border-radius to appear on info-top
   border-radius: $border-radius; // Only want this border when there is no scrollbar
 
 }
@@ -55,8 +71,8 @@ $elementRatio: 0.6;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  min-width: 700px;
-  min-height: 700 * $elementRatio;
+  //min-width: 700px;
+  //min-height: 700 * $elementRatio;
 
   display: grid;
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
