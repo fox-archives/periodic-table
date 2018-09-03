@@ -334,63 +334,50 @@ export default new Vuex.Store({
   // Allow to run Async code
   actions: {
     loadElementData: function() {
-      var that = this;
       // Element Calls
       axios.get('/api/data/element/color')
-        .then(function(response) {
-          that.state.eColors = response.data;
+        .then((response) => {
+          this.state.eColors = response.data;
           console.log("Color Complete");
         })
-        .catch(function(error) {
-          console.log(error);
-        });
+        .catch((error) => console.log(error));
 
       axios.get('/api/data/element/discovered')
-        .then(function(response) {
-          that.state.eDiscovered = response.data;
+        .then((response) => {
+          this.state.eDiscovered = response.data;
           console.log("Discovered Complete");
         })
-        .catch(function(error) {
-          console.log(error)
-        });
+        .catch((error) => console.log(error));
 
       axios.get('/api/data/element/placement')
-        .then(function(response) {
-          that.state.ePlacements = response.data;
+        .then((response) => {
+          this.state.ePlacements = response.data;
           console.log("Placement Complete");
         })
-        .catch(function(error) {
-          console.log(error);
-        });
+        .catch((error) => console.log(error));
 
       axios.get('/api/data/element/simple')
-        .then(function(response) {
-          that.state.simpleData = response.data;
-          that.state.ready = true;
+        .then((response) => {
+          this.state.simpleData = response.data;
+          this.state.ready = true;
           console.log("Simple Complete");
         })
-        .catch(function(error) {
-          console.log(error);
-        });
+        .catch((error) => console.log(error));
 
       // Period / Group calls
       axios.get('/api/data/label/period')
-        .then(function(response) {
-          that.state.periodData = response.data;
+        .then((response) => {
+          this.state.periodData = response.data;
           console.log("Period Complete");
         })
-        .catch(function(error) {
-          console.log(error);
-        });
+        .catch((error) => console.log(error));
 
       axios.get('/api/data/label/group')
-        .then(function(response) {
-          that.state.groupData = response.data;
+        .then((response) => {
+          this.state.groupData = response.data;
           console.log("Group Complete");
         })
-        .catch(function(error) {
-          console.log(error);
-        });
+        .catch((error) => console.log(error));
     }
   }
 });
