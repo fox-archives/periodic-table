@@ -64,7 +64,8 @@
     methods: {
       ...mapMutations([
         'setOptions',
-        'setClassLayout'
+        'setClassLayout',
+        'setMobilePeriodicTableWidth'
       ]),
       advancedSettingsPopup: function(state) {
         if(state === "on") {
@@ -106,6 +107,7 @@
         // .1s after setInfoLocation is called, update the className that determines the layout
         // Probably can't do it right away because the div elements have just moved / changed positions
         setTimeout(() => this.setClassLayout(), 100);
+        setTimeout(() => this.setMobilePeriodicTableWidth(), 100);
 
         // First, convert infoLocation number to a string
         let infoChosen = this.infoLocationTypes[this.infoLocationNum - 1];

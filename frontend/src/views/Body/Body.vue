@@ -17,8 +17,10 @@
     name: "Body",
     methods: {
       ...mapMutations([
-        'setClassLayout'
-      ])
+        'setClassLayout',
+        'setMobilePeriodicTableWidth'
+      ]),
+
     },
     computed: {
       ...mapGetters([
@@ -27,17 +29,25 @@
       ])
     },
     created() {
+      // TODO: Clean this up and make the required updates in the DOM instantaneously, when the DOM is ready
       let setClassLayoutFirstLoad = setInterval(() => {
         // If the document is loaded, clear the timer, setClassLayout
         // should only be activated on page resize
         if(document.readyState === 'complete') {
           this.setClassLayout();
+          this.setMobilePeriodicTableWidth();
           clearInterval(setClassLayoutFirstLoad);
         }
       }, 100);
 
+      // Apparently the first setInterval was not working, but this apparently works
+      setTimeout(() => {
+        this.setMobilePeriodicTableWidth();
+      }, 1000);
+
       window.addEventListener('resize', () => {
         this.setClassLayout();
+        this.setMobilePeriodicTableWidth();
       });
     },
     components: {

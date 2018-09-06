@@ -329,6 +329,22 @@ export default new Vuex.Store({
       else {
         state.contentState = 'heightDifferent';
       }
+    },
+    setMobilePeriodicTableWidth: function(state) {
+      if(/*this.options.infoLocationType === 'info-top' && */state.contentState === 'heightDifferent') {
+        // To change the length of the #grid-container (so #grid-outer scrolls to fit)
+        let gridContainer = document.getElementById('grid');
+
+        // Be sure to change the ratio in periodictable.scss if changed here
+        let periodicTableRatio = 0.6;
+
+        // Subtract 2 because recall CSS says the height is calc(100% - 2px)
+        // All I know is that when 2 is removed, then scrollbar is shown for small widths for info-side
+        gridContainer.style.width = (gridContainer.clientHeight - 2) / 0.6 + 'px';
+      }
+      else {
+        document.getElementById('grid').style.width = '';
+      }
     }
   },
   // Allow to run Async code

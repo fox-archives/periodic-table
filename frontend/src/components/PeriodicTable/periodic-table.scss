@@ -3,6 +3,7 @@ $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
 // The periodic-table has width of 1, height of 0.6 relative to that width
+// Be sure to change the ratio in Body.vue if changed here
 $elementRatio: 0.6;
 
 // GRID-CONTAINER-OUTER \\
@@ -20,8 +21,13 @@ $elementRatio: 0.6;
 .info-top .heightSame #grid-container-outer {
   // If .heightSame is removed, then the box-shadow is clipped (for some info-top layout)
   // So scrollbar has rounded edges
-   overflow: auto;
+  overflow: auto;
+
 }
+
+//.info-top .heightDifferent #grid-container-outer {
+//  overflow: auto;
+//}
 
 
 // GRID-CONTAINER \\
@@ -42,6 +48,10 @@ $elementRatio: 0.6;
    overflow: auto;
 }
 
+.info-top .heightDifferent #grid-container {
+  overflow: auto;
+}
+
 
 // GRID-OUTER \\
 // Holds aspect ratio
@@ -52,6 +62,10 @@ $elementRatio: 0.6;
   padding-bottom: 100% * $elementRatio;
   transition: createTransitions((box-shadow, background-color));
   overflow: auto;
+}
+
+.info-top .heightDifferent #grid-outer {
+  height: calc(100% - 2px);
 }
 
 #grid-outer:hover {
