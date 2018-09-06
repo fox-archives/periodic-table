@@ -3,7 +3,7 @@
     <div id="textual-inner">
       <div class="stat" v-for="n in 15">
         <div class="stat-icon">
-          <p>Lorem Ipsum</p>
+          <p></p>
         </div>
         <div class="stat-text">
 
