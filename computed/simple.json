@@ -5,7 +5,8 @@
 		"abbreviation":"H",
 		"block":"s",
 		"atomicMass":"1.008",
-		"meltingPoint":14.01
+		"meltingPoint":"14.01",
+		"boilingPoint":"20.28"
 	},
 	{
 		"eLabel":2,
@@ -13,7 +14,8 @@
 		"abbreviation":"He",
 		"block":"s",
 		"atomicMass":"4.002602",
-		"meltingPoint":"N \/ A"
+		"meltingPoint":"N \/ A",
+		"boilingPoint":"4.22"
 	},
 	{
 		"eLabel":3,
@@ -21,7 +23,8 @@
 		"abbreviation":"Li",
 		"block":"s",
 		"atomicMass":"6.94",
-		"meltingPoint":453.69
+		"meltingPoint":"453.69",
+		"boilingPoint":"1615"
 	},
 	{
 		"eLabel":4,
@@ -29,7 +32,8 @@
 		"abbreviation":"Be",
 		"block":"s",
 		"atomicMass":"9.0121831",
-		"meltingPoint":"1560"
+		"meltingPoint":"1560",
+		"boilingPoint":"2743"
 	},
 	{
 		"eLabel":5,
@@ -37,7 +41,8 @@
 		"abbreviation":"B",
 		"block":"p",
 		"atomicMass":"10.81",
-		"meltingPoint":"2348"
+		"meltingPoint":"2348",
+		"boilingPoint":"4273"
 	},
 	{
 		"eLabel":6,
@@ -45,7 +50,8 @@
 		"abbreviation":"C",
 		"block":"p",
 		"atomicMass":"12.011",
-		"meltingPoint":"3823"
+		"meltingPoint":"3823",
+		"boilingPoint":"4300"
 	},
 	{
 		"eLabel":7,
@@ -53,7 +59,8 @@
 		"abbreviation":"N",
 		"block":"p",
 		"atomicMass":"14.007",
-		"meltingPoint":63.05
+		"meltingPoint":"63.05",
+		"boilingPoint":"77.36"
 	},
 	{
 		"eLabel":8,
@@ -61,7 +68,8 @@
 		"abbreviation":"O",
 		"block":"p",
 		"atomicMass":"15.999",
-		"meltingPoint":54.8
+		"meltingPoint":"54.8",
+		"boilingPoint":"90.2"
 	},
 	{
 		"eLabel":9,
@@ -69,7 +77,8 @@
 		"abbreviation":"F",
 		"block":"p",
 		"atomicMass":"18.998403163",
-		"meltingPoint":53.5
+		"meltingPoint":"53.5",
+		"boilingPoint":"85.03"
 	},
 	{
 		"eLabel":10,
@@ -77,7 +86,8 @@
 		"abbreviation":"Ne",
 		"block":"p",
 		"atomicMass":"20.1797",
-		"meltingPoint":24.56
+		"meltingPoint":"24.56",
+		"boilingPoint":"27.07"
 	},
 	{
 		"eLabel":11,
@@ -85,7 +95,8 @@
 		"abbreviation":"Na",
 		"block":"s",
 		"atomicMass":"22.98976928",
-		"meltingPoint":370.87
+		"meltingPoint":"370.87",
+		"boilingPoint":"1156"
 	},
 	{
 		"eLabel":12,
@@ -93,7 +104,8 @@
 		"abbreviation":"Mg",
 		"block":"s",
 		"atomicMass":"24.305",
-		"meltingPoint":"923"
+		"meltingPoint":"923",
+		"boilingPoint":"1363"
 	},
 	{
 		"eLabel":13,
@@ -101,7 +113,8 @@
 		"abbreviation":"Al",
 		"block":"p",
 		"atomicMass":"26.9815385",
-		"meltingPoint":933.47
+		"meltingPoint":"933.47",
+		"boilingPoint":"2792"
 	},
 	{
 		"eLabel":14,
@@ -109,7 +122,8 @@
 		"abbreviation":"Si",
 		"block":"p",
 		"atomicMass":"28.085",
-		"meltingPoint":"1687"
+		"meltingPoint":"1687",
+		"boilingPoint":"3173"
 	},
 	{
 		"eLabel":15,
@@ -117,7 +131,8 @@
 		"abbreviation":"P",
 		"block":"p",
 		"atomicMass":"30.973761998",
-		"meltingPoint":317.3
+		"meltingPoint":"317.3",
+		"boilingPoint":"553.6"
 	},
 	{
 		"eLabel":16,
@@ -125,7 +140,8 @@
 		"abbreviation":"S",
 		"block":"p",
 		"atomicMass":"32.06",
-		"meltingPoint":388.36
+		"meltingPoint":"388.36",
+		"boilingPoint":"717.87"
 	},
 	{
 		"eLabel":17,
@@ -133,7 +149,8 @@
 		"abbreviation":"Cl",
 		"block":"p",
 		"atomicMass":"35.45",
-		"meltingPoint":171.6
+		"meltingPoint":"171.6",
+		"boilingPoint":"239.11"
 	},
 	{
 		"eLabel":18,
@@ -141,7 +158,8 @@
 		"abbreviation":"Ar",
 		"block":"p",
 		"atomicMass":"39.948",
-		"meltingPoint":83.8
+		"meltingPoint":"83.8",
+		"boilingPoint":"87.3"
 	},
 	{
 		"eLabel":19,
@@ -149,7 +167,8 @@
 		"abbreviation":"K",
 		"block":"s",
 		"atomicMass":"39.0983",
-		"meltingPoint":336.53
+		"meltingPoint":"336.53",
+		"boilingPoint":"1032"
 	},
 	{
 		"eLabel":20,
@@ -157,7 +176,8 @@
 		"abbreviation":"Ca",
 		"block":"s",
 		"atomicMass":"40.078",
-		"meltingPoint":"1115"
+		"meltingPoint":"1115",
+		"boilingPoint":"1757"
 	},
 	{
 		"eLabel":21,
@@ -165,7 +185,8 @@
 		"abbreviation":"Sc",
 		"block":"d",
 		"atomicMass":"44.955908",
-		"meltingPoint":"1814"
+		"meltingPoint":"1814",
+		"boilingPoint":"3103"
 	},
 	{
 		"eLabel":22,
@@ -173,7 +194,8 @@
 		"abbreviation":"Ti",
 		"block":"d",
 		"atomicMass":"47.867",
-		"meltingPoint":"1941"
+		"meltingPoint":"1941",
+		"boilingPoint":"3560"
 	},
 	{
 		"eLabel":23,
@@ -181,7 +203,8 @@
 		"abbreviation":"V",
 		"block":"d",
 		"atomicMass":"50.9415",
-		"meltingPoint":"2183"
+		"meltingPoint":"2183",
+		"boilingPoint":"3680"
 	},
 	{
 		"eLabel":24,
@@ -189,7 +212,8 @@
 		"abbreviation":"Cr",
 		"block":"d",
 		"atomicMass":"51.9961",
-		"meltingPoint":"2180"
+		"meltingPoint":"2180",
+		"boilingPoint":"2944"
 	},
 	{
 		"eLabel":25,
@@ -197,7 +221,8 @@
 		"abbreviation":"Mn",
 		"block":"d",
 		"atomicMass":"54.938044",
-		"meltingPoint":"1519"
+		"meltingPoint":"1519",
+		"boilingPoint":"2334"
 	},
 	{
 		"eLabel":26,
@@ -205,7 +230,8 @@
 		"abbreviation":"Fe",
 		"block":"d",
 		"atomicMass":"55.845",
-		"meltingPoint":"1811"
+		"meltingPoint":"1811",
+		"boilingPoint":"3134"
 	},
 	{
 		"eLabel":27,
@@ -213,7 +239,8 @@
 		"abbreviation":"Co",
 		"block":"d",
 		"atomicMass":"58.933194",
-		"meltingPoint":"1768"
+		"meltingPoint":"1768",
+		"boilingPoint":"3200"
 	},
 	{
 		"eLabel":28,
@@ -221,7 +248,8 @@
 		"abbreviation":"Ni",
 		"block":"d",
 		"atomicMass":"58.6934",
-		"meltingPoint":"1728"
+		"meltingPoint":"1728",
+		"boilingPoint":"3186"
 	},
 	{
 		"eLabel":29,
@@ -229,7 +257,8 @@
 		"abbreviation":"Cu",
 		"block":"d",
 		"atomicMass":"63.546",
-		"meltingPoint":1357.77
+		"meltingPoint":"1357.77",
+		"boilingPoint":"2835"
 	},
 	{
 		"eLabel":30,
@@ -237,7 +266,8 @@
 		"abbreviation":"Zn",
 		"block":"d",
 		"atomicMass":"65.38",
-		"meltingPoint":692.68
+		"meltingPoint":"692.68",
+		"boilingPoint":"1180"
 	},
 	{
 		"eLabel":31,
@@ -245,7 +275,8 @@
 		"abbreviation":"Ga",
 		"block":"p",
 		"atomicMass":"69.723",
-		"meltingPoint":302.91
+		"meltingPoint":"302.91",
+		"boilingPoint":"2477"
 	},
 	{
 		"eLabel":32,
@@ -253,7 +284,8 @@
 		"abbreviation":"Ge",
 		"block":"p",
 		"atomicMass":"72.630",
-		"meltingPoint":1211.4
+		"meltingPoint":"1211.4",
+		"boilingPoint":"3093"
 	},
 	{
 		"eLabel":33,
@@ -261,7 +293,8 @@
 		"abbreviation":"As",
 		"block":"p",
 		"atomicMass":"74.921595",
-		"meltingPoint":"1090"
+		"meltingPoint":"1090",
+		"boilingPoint":"887"
 	},
 	{
 		"eLabel":34,
@@ -269,7 +302,8 @@
 		"abbreviation":"Se",
 		"block":"p",
 		"atomicMass":"78.971",
-		"meltingPoint":"494"
+		"meltingPoint":"494",
+		"boilingPoint":"958"
 	},
 	{
 		"eLabel":35,
@@ -277,7 +311,8 @@
 		"abbreviation":"Br",
 		"block":"p",
 		"atomicMass":"79.904",
-		"meltingPoint":265.8
+		"meltingPoint":"265.8",
+		"boilingPoint":"332"
 	},
 	{
 		"eLabel":36,
@@ -285,7 +320,8 @@
 		"abbreviation":"Kr",
 		"block":"p",
 		"atomicMass":"83.798",
-		"meltingPoint":115.79
+		"meltingPoint":"115.79",
+		"boilingPoint":"119.93"
 	},
 	{
 		"eLabel":37,
@@ -293,7 +329,8 @@
 		"abbreviation":"Rb",
 		"block":"s",
 		"atomicMass":"85.4678",
-		"meltingPoint":312.46
+		"meltingPoint":"312.46",
+		"boilingPoint":"961"
 	},
 	{
 		"eLabel":38,
@@ -301,7 +338,8 @@
 		"abbreviation":"Sr",
 		"block":"s",
 		"atomicMass":"87.62",
-		"meltingPoint":"1050"
+		"meltingPoint":"1050",
+		"boilingPoint":"1655"
 	},
 	{
 		"eLabel":39,
@@ -309,7 +347,8 @@
 		"abbreviation":"Y",
 		"block":"d",
 		"atomicMass":"88.90584",
-		"meltingPoint":"1799"
+		"meltingPoint":"1799",
+		"boilingPoint":"3618"
 	},
 	{
 		"eLabel":40,
@@ -317,7 +356,8 @@
 		"abbreviation":"Zr",
 		"block":"d",
 		"atomicMass":"91.224",
-		"meltingPoint":"2128"
+		"meltingPoint":"2128",
+		"boilingPoint":"4682"
 	},
 	{
 		"eLabel":41,
@@ -325,7 +365,8 @@
 		"abbreviation":"Nb",
 		"block":"d",
 		"atomicMass":"92.90637",
-		"meltingPoint":"2750"
+		"meltingPoint":"2750",
+		"boilingPoint":"5017"
 	},
 	{
 		"eLabel":42,
@@ -333,15 +374,17 @@
 		"abbreviation":"Mo",
 		"block":"d",
 		"atomicMass":"95.95",
-		"meltingPoint":"2896"
+		"meltingPoint":"2896",
+		"boilingPoint":"4912"
 	},
 	{
 		"eLabel":43,
 		"name":"Technetium",
 		"abbreviation":"Tc",
 		"block":"d",
-		"atomicMass":"(97)",
-		"meltingPoint":"2430"
+		"atomicMass":"97",
+		"meltingPoint":"2430",
+		"boilingPoint":"4538"
 	},
 	{
 		"eLabel":44,
@@ -349,7 +392,8 @@
 		"abbreviation":"Ru",
 		"block":"d",
 		"atomicMass":"101.07",
-		"meltingPoint":"2607"
+		"meltingPoint":"2607",
+		"boilingPoint":"4423"
 	},
 	{
 		"eLabel":45,
@@ -357,7 +401,8 @@
 		"abbreviation":"Rh",
 		"block":"d",
 		"atomicMass":"102.90550",
-		"meltingPoint":"2237"
+		"meltingPoint":"2237",
+		"boilingPoint":"3968"
 	},
 	{
 		"eLabel":46,
@@ -365,7 +410,8 @@
 		"abbreviation":"Pd",
 		"block":"d",
 		"atomicMass":"106.42",
-		"meltingPoint":1828.05
+		"meltingPoint":"1828.05",
+		"boilingPoint":"3236"
 	},
 	{
 		"eLabel":47,
@@ -373,7 +419,8 @@
 		"abbreviation":"Ag",
 		"block":"d",
 		"atomicMass":"107.8682",
-		"meltingPoint":1234.93
+		"meltingPoint":"1234.93",
+		"boilingPoint":"2435"
 	},
 	{
 		"eLabel":48,
@@ -381,7 +428,8 @@
 		"abbreviation":"Cd",
 		"block":"d",
 		"atomicMass":"112.414",
-		"meltingPoint":594.22
+		"meltingPoint":"594.22",
+		"boilingPoint":"1040"
 	},
 	{
 		"eLabel":49,
@@ -389,7 +437,8 @@
 		"abbreviation":"In",
 		"block":"p",
 		"atomicMass":"114.818",
-		"meltingPoint":429.75
+		"meltingPoint":"429.75",
+		"boilingPoint":"2345"
 	},
 	{
 		"eLabel":50,
@@ -397,7 +446,8 @@
 		"abbreviation":"Sn",
 		"block":"p",
 		"atomicMass":"118.710",
-		"meltingPoint":505.08
+		"meltingPoint":"505.08",
+		"boilingPoint":"2875"
 	},
 	{
 		"eLabel":51,
@@ -405,7 +455,8 @@
 		"abbreviation":"Sb",
 		"block":"p",
 		"atomicMass":"121.760",
-		"meltingPoint":903.78
+		"meltingPoint":"903.78",
+		"boilingPoint":"1860"
 	},
 	{
 		"eLabel":52,
@@ -413,7 +464,8 @@
 		"abbreviation":"Te",
 		"block":"p",
 		"atomicMass":"127.60",
-		"meltingPoint":722.66
+		"meltingPoint":"722.66",
+		"boilingPoint":"1261"
 	},
 	{
 		"eLabel":53,
@@ -421,7 +473,8 @@
 		"abbreviation":"I",
 		"block":"p",
 		"atomicMass":"126.90447",
-		"meltingPoint":386.85
+		"meltingPoint":"386.85",
+		"boilingPoint":"457.4"
 	},
 	{
 		"eLabel":54,
@@ -429,7 +482,8 @@
 		"abbreviation":"Xe",
 		"block":"p",
 		"atomicMass":"131.293",
-		"meltingPoint":161.3
+		"meltingPoint":"161.3",
+		"boilingPoint":"165.1"
 	},
 	{
 		"eLabel":55,
@@ -437,7 +491,8 @@
 		"abbreviation":"Cs",
 		"block":"s",
 		"atomicMass":"132.90545196",
-		"meltingPoint":301.59
+		"meltingPoint":"301.59",
+		"boilingPoint":"944"
 	},
 	{
 		"eLabel":56,
@@ -445,7 +500,8 @@
 		"abbreviation":"Ba",
 		"block":"s",
 		"atomicMass":"137.327",
-		"meltingPoint":1.0e3
+		"meltingPoint":"1000",
+		"boilingPoint":"2143"
 	},
 	{
 		"eLabel":57,
@@ -453,7 +509,8 @@
 		"abbreviation":"La",
 		"block":"f",
 		"atomicMass":"138.90547",
-		"meltingPoint":"1193"
+		"meltingPoint":"1193",
+		"boilingPoint":"3737"
 	},
 	{
 		"eLabel":58,
@@ -461,7 +518,8 @@
 		"abbreviation":"Ce",
 		"block":"f",
 		"atomicMass":"140.116",
-		"meltingPoint":"1071"
+		"meltingPoint":"1071",
+		"boilingPoint":"3633"
 	},
 	{
 		"eLabel":59,
@@ -469,7 +527,8 @@
 		"abbreviation":"Pr",
 		"block":"f",
 		"atomicMass":"140.90766",
-		"meltingPoint":"1204"
+		"meltingPoint":"1204",
+		"boilingPoint":"3563"
 	},
 	{
 		"eLabel":60,
@@ -477,15 +536,17 @@
 		"abbreviation":"Nd",
 		"block":"f",
 		"atomicMass":"144.242",
-		"meltingPoint":"1294"
+		"meltingPoint":"1294",
+		"boilingPoint":"3373"
 	},
 	{
 		"eLabel":61,
 		"name":"Promethium",
 		"abbreviation":"Pm",
 		"block":"f",
-		"atomicMass":"(145)",
-		"meltingPoint":"1373"
+		"atomicMass":"145",
+		"meltingPoint":"1373",
+		"boilingPoint":"3273"
 	},
 	{
 		"eLabel":62,
@@ -493,7 +554,8 @@
 		"abbreviation":"Sm",
 		"block":"f",
 		"atomicMass":"150.36",
-		"meltingPoint":"1345"
+		"meltingPoint":"1345",
+		"boilingPoint":"2076"
 	},
 	{
 		"eLabel":63,
@@ -501,7 +563,8 @@
 		"abbreviation":"Eu",
 		"block":"f",
 		"atomicMass":"151.964",
-		"meltingPoint":"1095"
+		"meltingPoint":"1095",
+		"boilingPoint":"1800"
 	},
 	{
 		"eLabel":64,
@@ -509,7 +572,8 @@
 		"abbreviation":"Gd",
 		"block":"f",
 		"atomicMass":"157.25",
-		"meltingPoint":"1586"
+		"meltingPoint":"1586",
+		"boilingPoint":"3523"
 	},
 	{
 		"eLabel":65,
@@ -517,7 +581,8 @@
 		"abbreviation":"Tb",
 		"block":"f",
 		"atomicMass":"158.92535",
-		"meltingPoint":"1629"
+		"meltingPoint":"1629",
+		"boilingPoint":"3503"
 	},
 	{
 		"eLabel":66,
@@ -525,7 +590,8 @@
 		"abbreviation":"Dy",
 		"block":"f",
 		"atomicMass":"162.500",
-		"meltingPoint":"1685"
+		"meltingPoint":"1685",
+		"boilingPoint":"2840"
 	},
 	{
 		"eLabel":67,
@@ -533,7 +599,8 @@
 		"abbreviation":"Ho",
 		"block":"f",
 		"atomicMass":"164.93033",
-		"meltingPoint":"1747"
+		"meltingPoint":"1747",
+		"boilingPoint":"2973"
 	},
 	{
 		"eLabel":68,
@@ -541,7 +608,8 @@
 		"abbreviation":"Er",
 		"block":"f",
 		"atomicMass":"167.259",
-		"meltingPoint":"1770"
+		"meltingPoint":"1770",
+		"boilingPoint":"3141"
 	},
 	{
 		"eLabel":69,
@@ -549,7 +617,8 @@
 		"abbreviation":"Tm",
 		"block":"f",
 		"atomicMass":"168.93422",
-		"meltingPoint":"1818"
+		"meltingPoint":"1818",
+		"boilingPoint":"2223"
 	},
 	{
 		"eLabel":70,
@@ -557,7 +626,8 @@
 		"abbreviation":"Yb",
 		"block":"f",
 		"atomicMass":"173.045",
-		"meltingPoint":"1092"
+		"meltingPoint":"1092",
+		"boilingPoint":"1469"
 	},
 	{
 		"eLabel":71,
@@ -565,7 +635,8 @@
 		"abbreviation":"Lu",
 		"block":"d",
 		"atomicMass":"174.9668",
-		"meltingPoint":"1936"
+		"meltingPoint":"1936",
+		"boilingPoint":"3675"
 	},
 	{
 		"eLabel":72,
@@ -573,7 +644,8 @@
 		"abbreviation":"Hf",
 		"block":"d",
 		"atomicMass":"178.49",
-		"meltingPoint":"2506"
+		"meltingPoint":"2506",
+		"boilingPoint":"4876"
 	},
 	{
 		"eLabel":73,
@@ -581,7 +653,8 @@
 		"abbreviation":"Ta",
 		"block":"d",
 		"atomicMass":"180.94788",
-		"meltingPoint":"3290"
+		"meltingPoint":"3290",
+		"boilingPoint":"5731"
 	},
 	{
 		"eLabel":74,
@@ -589,7 +662,8 @@
 		"abbreviation":"W",
 		"block":"d",
 		"atomicMass":"183.84",
-		"meltingPoint":"3695"
+		"meltingPoint":"3695",
+		"boilingPoint":"5828"
 	},
 	{
 		"eLabel":75,
@@ -597,7 +671,8 @@
 		"abbreviation":"Re",
 		"block":"d",
 		"atomicMass":"186.207",
-		"meltingPoint":"3459"
+		"meltingPoint":"3459",
+		"boilingPoint":"5869"
 	},
 	{
 		"eLabel":76,
@@ -605,7 +680,8 @@
 		"abbreviation":"Os",
 		"block":"d",
 		"atomicMass":"190.23",
-		"meltingPoint":"3306"
+		"meltingPoint":"3306",
+		"boilingPoint":"5285"
 	},
 	{
 		"eLabel":77,
@@ -613,7 +689,8 @@
 		"abbreviation":"Ir",
 		"block":"d",
 		"atomicMass":"192.217",
-		"meltingPoint":"2739"
+		"meltingPoint":"2739",
+		"boilingPoint":"4701"
 	},
 	{
 		"eLabel":78,
@@ -621,7 +698,8 @@
 		"abbreviation":"Pt",
 		"block":"d",
 		"atomicMass":"195.084",
-		"meltingPoint":2041.4
+		"meltingPoint":"2041.4",
+		"boilingPoint":"4098"
 	},
 	{
 		"eLabel":79,
@@ -629,7 +707,8 @@
 		"abbreviation":"Au",
 		"block":"d",
 		"atomicMass":"196.966569",
-		"meltingPoint":1337.33
+		"meltingPoint":"1337.33",
+		"boilingPoint":"3129"
 	},
 	{
 		"eLabel":80,
@@ -637,7 +716,8 @@
 		"abbreviation":"Hg",
 		"block":"d",
 		"atomicMass":"200.592",
-		"meltingPoint":234.32
+		"meltingPoint":"234.32",
+		"boilingPoint":"629.88"
 	},
 	{
 		"eLabel":81,
@@ -645,7 +725,8 @@
 		"abbreviation":"Tl",
 		"block":"p",
 		"atomicMass":"204.38",
-		"meltingPoint":"577"
+		"meltingPoint":"577",
+		"boilingPoint":"1746"
 	},
 	{
 		"eLabel":82,
@@ -653,7 +734,8 @@
 		"abbreviation":"Pb",
 		"block":"p",
 		"atomicMass":"207.2",
-		"meltingPoint":600.61
+		"meltingPoint":"600.61",
+		"boilingPoint":"2022"
 	},
 	{
 		"eLabel":83,
@@ -661,55 +743,62 @@
 		"abbreviation":"Bi",
 		"block":"p",
 		"atomicMass":"208.98040",
-		"meltingPoint":544.4
+		"meltingPoint":"544.4",
+		"boilingPoint":"1837"
 	},
 	{
 		"eLabel":84,
 		"name":"Polonium",
 		"abbreviation":"Po",
 		"block":"p",
-		"atomicMass":"(209)",
-		"meltingPoint":"528"
+		"atomicMass":"209",
+		"meltingPoint":"528",
+		"boilingPoint":"1235"
 	},
 	{
 		"eLabel":85,
 		"name":"Astatine",
 		"abbreviation":"At",
 		"block":"p",
-		"atomicMass":"(210)",
-		"meltingPoint":"577"
+		"atomicMass":"210",
+		"meltingPoint":"577",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":86,
 		"name":"Radon",
 		"abbreviation":"Rn",
 		"block":"p",
-		"atomicMass":"(222)",
-		"meltingPoint":"202"
+		"atomicMass":"222",
+		"meltingPoint":"202",
+		"boilingPoint":"211.3"
 	},
 	{
 		"eLabel":87,
 		"name":"Francium",
 		"abbreviation":"Fr",
 		"block":"s",
-		"atomicMass":"(223)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"223",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":88,
 		"name":"Radium",
 		"abbreviation":"Ra",
 		"block":"s",
-		"atomicMass":"(226)",
-		"meltingPoint":"973"
+		"atomicMass":"226",
+		"meltingPoint":"973",
+		"boilingPoint":"2010"
 	},
 	{
 		"eLabel":89,
 		"name":"Actinium",
 		"abbreviation":"Ac",
 		"block":"f",
-		"atomicMass":"(227)",
-		"meltingPoint":"1323"
+		"atomicMass":"227",
+		"meltingPoint":"1323",
+		"boilingPoint":"3473"
 	},
 	{
 		"eLabel":90,
@@ -717,7 +806,8 @@
 		"abbreviation":"Th",
 		"block":"f",
 		"atomicMass":"232.0377",
-		"meltingPoint":"2023"
+		"meltingPoint":"2023",
+		"boilingPoint":"5093"
 	},
 	{
 		"eLabel":91,
@@ -725,7 +815,8 @@
 		"abbreviation":"Pa",
 		"block":"f",
 		"atomicMass":"231.03588",
-		"meltingPoint":"1845"
+		"meltingPoint":"1845",
+		"boilingPoint":"4273"
 	},
 	{
 		"eLabel":92,
@@ -733,214 +824,241 @@
 		"abbreviation":"U",
 		"block":"f",
 		"atomicMass":"238.02891",
-		"meltingPoint":"1408"
+		"meltingPoint":"1408",
+		"boilingPoint":"4200"
 	},
 	{
 		"eLabel":93,
 		"name":"Neptunium",
 		"abbreviation":"Np",
 		"block":"f",
-		"atomicMass":"(237)",
-		"meltingPoint":"917"
+		"atomicMass":"237",
+		"meltingPoint":"917",
+		"boilingPoint":"4273"
 	},
 	{
 		"eLabel":94,
 		"name":"Plutonium",
 		"abbreviation":"Pu",
 		"block":"f",
-		"atomicMass":"(244)",
-		"meltingPoint":"913"
+		"atomicMass":"244",
+		"meltingPoint":"913",
+		"boilingPoint":"3503"
 	},
 	{
 		"eLabel":95,
 		"name":"Americium",
 		"abbreviation":"Am",
 		"block":"f",
-		"atomicMass":"(243)",
-		"meltingPoint":"1449"
+		"atomicMass":"243",
+		"meltingPoint":"1449",
+		"boilingPoint":"2284"
 	},
 	{
 		"eLabel":96,
 		"name":"Curium",
 		"abbreviation":"Cm",
 		"block":"f",
-		"atomicMass":"(247)",
-		"meltingPoint":"1618"
+		"atomicMass":"247",
+		"meltingPoint":"1618",
+		"boilingPoint":"3383"
 	},
 	{
 		"eLabel":97,
 		"name":"Berkelium",
 		"abbreviation":"Bk",
 		"block":"f",
-		"atomicMass":"(247)",
-		"meltingPoint":"1323"
+		"atomicMass":"247",
+		"meltingPoint":"1323",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":98,
 		"name":"Californium",
 		"abbreviation":"Cf",
 		"block":"f",
-		"atomicMass":"(251)",
-		"meltingPoint":"1173"
+		"atomicMass":"251",
+		"meltingPoint":"1173",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":99,
 		"name":"Einsteinium",
 		"abbreviation":"Es",
 		"block":"f",
-		"atomicMass":"(252)",
-		"meltingPoint":"1133"
+		"atomicMass":"252",
+		"meltingPoint":"1133",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":100,
 		"name":"Fermium",
 		"abbreviation":"Fm",
 		"block":"f",
-		"atomicMass":"(257)",
-		"meltingPoint":1.8e3
+		"atomicMass":"257",
+		"meltingPoint":"1800",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":101,
 		"name":"Mendelevium",
 		"abbreviation":"Md",
 		"block":"f",
-		"atomicMass":"(258)",
-		"meltingPoint":1.1e3
+		"atomicMass":"258",
+		"meltingPoint":"1100",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":102,
 		"name":"Nobelium",
 		"abbreviation":"No",
 		"block":"f",
-		"atomicMass":"(259)",
-		"meltingPoint":1.1e3
+		"atomicMass":"259",
+		"meltingPoint":"1100",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":103,
 		"name":"Lawrencium",
 		"abbreviation":"Lr",
 		"block":"d",
-		"atomicMass":"(262)",
-		"meltingPoint":1.9e3
+		"atomicMass":"262",
+		"meltingPoint":"1900",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":104,
 		"name":"Rutherfordium",
 		"abbreviation":"Rf",
 		"block":"d",
-		"atomicMass":"(267)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"267",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":105,
 		"name":"Dubnium",
 		"abbreviation":"Db",
 		"block":"d",
-		"atomicMass":"(270)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"270",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":106,
 		"name":"Seaborgium",
 		"abbreviation":"Sg",
 		"block":"d",
-		"atomicMass":"(269)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"269",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":107,
 		"name":"Bohrium",
 		"abbreviation":"Bh",
 		"block":"d",
-		"atomicMass":"(270)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"270",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":108,
 		"name":"Hassium",
 		"abbreviation":"Hs",
 		"block":"d",
-		"atomicMass":"(270)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"270",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":109,
 		"name":"Meitnerium",
 		"abbreviation":"Mt",
 		"block":"d",
-		"atomicMass":"(278)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"278",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":110,
 		"name":"Darmstadtium",
 		"abbreviation":"Ds",
 		"block":"d",
-		"atomicMass":"(281)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"281",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":111,
 		"name":"Roentgenium",
 		"abbreviation":"Rg",
 		"block":"d",
-		"atomicMass":"(281)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"281",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":112,
 		"name":"Copernicium",
 		"abbreviation":"Cn",
 		"block":"d",
-		"atomicMass":"(285)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"285",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":113,
 		"name":"Nihonium",
 		"abbreviation":"Nh",
 		"block":"p",
-		"atomicMass":"(286)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"286",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":114,
 		"name":"Flerovium",
 		"abbreviation":"Fl",
 		"block":"p",
-		"atomicMass":"(289)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"289",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":115,
 		"name":"Moscovium",
 		"abbreviation":"Mc",
 		"block":"p",
-		"atomicMass":"(289)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"289",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":116,
 		"name":"Livermorium",
 		"abbreviation":"Lv",
 		"block":"p",
-		"atomicMass":"(293)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"293",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":117,
 		"name":"Tennessine",
 		"abbreviation":"Ts",
 		"block":"p",
-		"atomicMass":"(293)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"293",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	},
 	{
 		"eLabel":118,
 		"name":"Oganesson",
 		"abbreviation":"Og",
 		"block":"p",
-		"atomicMass":"(294)",
-		"meltingPoint":"Unknown"
+		"atomicMass":"294",
+		"meltingPoint":"Unknown",
+		"boilingPoint":"Unknown"
 	}
 ]

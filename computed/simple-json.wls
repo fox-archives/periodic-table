@@ -1,47 +1,67 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetDirectory["/Users/edwin/Documents/All/MathematicaScript/"]
+SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"]
 DeleteFile["simple.json"]
-
 (* Prevents the return of units *)
 SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
 periodicTable = {};
 
+(* SETTING UP COMMON FUNCTIONS *)
+removeEndingPeriod[str_]:=
+	If[StringEndsQ[str, "."],
+		newStr = StringTake[str, StringLength[str] - 1];
+		Return[newStr];,
+		(* Else *)
+		Return[str];
+	];
+	
+(* Replaces the stringified version of the error / no data message with a human readable one *)
+convertToUnknownNA[str_]:=
+	If[str == "Missing[NotAvailable]" ||
+		str == "Missing[Unknown]",
+		
+		Return["Unknown"];,
+		(* Else *)
+		If[str == "Missing[NotApplicable]",
+			Return["N / A"];,
+			
+			(* Else *)
+			Return[str];
+		];
+	];
+	
+	
+scientificToRegular[num_]:=
+	If[NumberQ[num],
+		Return[N[num]];,
+		(* Else *)
+		Return[num];
+	];
+	
 Do[
 	name = ElementData[i, "StandardName"];
 	abbreviation = ElementData[i, "Abbreviation"];
 	block = ElementData[i, "Block"];
-	atomicWeight = ToString[QuantityMagnitude @ ElementData[i, "AtomicWeight"]];
+	atomicWeight = ElementData[i, "AtomicWeight"];
 	meltingPoint = ElementData[i, "AbsoluteMeltingPoint"];
 	boilingPoint = ElementData[i, "AbsoluteBoilingPoint"];
 	
 	(* FORMAT ATOMICWEIGHT ACCORDINGLY *)
-	(* StringEndsQ returns true or false, depending on if "." is the last letter in atomicWeight *)
-	If[StringEndsQ[atomicWeight, "."],
-		(* Converts atomicWeight to number only, removing "." *)
-		atomicWeight = StringReplace[atomicWeight, "." -> ""];
-		(* Adds Parenthesis to atomicWeight, indicating there is no stable isotope *)
-		atomicWeight = StringJoin["(", atomicWeight, ")"];
-	];
+	atomicWeight = ToString[atomicWeight];
+	atomicWeight = removeEndingPeriod[atomicWeight];
 	
 	(* FORMAT MELTINGPOINT ACCORDINGLY *)
-	stringifiedMeltingPoint = ToString[meltingPoint];
-	If[stringifiedMeltingPoint == "Missing[NotAvailable]" ||
-		stringifiedMeltingPoint == "Missing[Unknown]",
-		
-		meltingPoint = "Unknown";
-	];
-	If[stringifiedMeltingPoint == "Missing[NotApplicable]",
-		meltingPoint = "N / A";
-	];
-	If[StringEndsQ[stringifiedMeltingPoint, "."],
-		meltingPoint = StringReplace[stringifiedMeltingPoint, "." -> ""];
-	];
-	Print[meltingPoint];
-	If[NumberQ[meltingPoint],
-		Print[DecimalForm[meltingPoint]]
-	];
+	meltingPoint = scientificToRegular[meltingPoint];
+	meltingPoint = ToString[meltingPoint];
+	meltingPoint = convertToUnknownNA[meltingPoint];
+	meltingPoint = removeEndingPeriod[meltingPoint];
+	
+	(* FORMAT BOILINGPOINT ACCORDINGLY *)
+	boilingPoint = scientificToRegular[boilingPoint];
+	boilingPoint = ToString[boilingPoint];
+	boilingPoint = convertToUnknownNA[boilingPoint];
+	boilingPoint = removeEndingPeriod[boilingPoint];
 	
 	newElement = {
 		"eLabel" -> i,
@@ -49,14 +69,17 @@ Do[
 		"abbreviation" -> abbreviation,
 		"block" -> block,
 		"atomicMass" -> atomicWeight,
-		"meltingPoint" -> meltingPoint
-		(*"boilingPoint" -> boilingPoint*)
+		"meltingPoint" -> meltingPoint,
+		"boilingPoint" -> boilingPoint
 	};
 	
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
 Export["simple.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
+
+
+
 
 
 
