@@ -13,18 +13,11 @@ $elementRatio: 0.6;
   border-radius: $border-radius;
 }
 
-.info-side .heightSame #grid-container-outer {
-  // So scrollbar has rounded edges
-  overflow: auto;
-}
+//.heightSame #grid-container-outer {
+//  overflow: scroll;
+//}
 
-.info-top .heightSame #grid-container-outer {
-  // If .heightSame is removed, then the box-shadow is clipped (for some info-top layout)
-  // So scrollbar has rounded edges
-  overflow: auto;
-
-}
-
+// This stuff was commented out before
 //.info-top .heightDifferent #grid-container-outer {
 //  overflow: auto;
 //}
@@ -40,12 +33,8 @@ $elementRatio: 0.6;
   border-radius: $border-radius;
 }
 
-.info-side .heightSame #grid-container {
+.heightSame #grid-container {
   overflow: auto;
-}
-
-.info-top .heightSame #grid-container {
-   overflow: auto;
 }
 
 .info-top .heightDifferent #grid-container {
@@ -61,7 +50,7 @@ $elementRatio: 0.6;
   width: 100%;
   padding-bottom: 100% * $elementRatio;
   transition: createTransitions((box-shadow, background-color));
-  overflow: auto;
+  overflow: none;
 }
 
 .info-top .heightDifferent #grid-outer {

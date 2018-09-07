@@ -27,6 +27,10 @@ Vue.use(Vuesax);
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
+// Simple Bar
+import SimpleBar from 'simplebar';
+import 'simplebar/dist/simplebar.css';
+
 
 // Mount Vue Instance to the DOM
 new Vue({

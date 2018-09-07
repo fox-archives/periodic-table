@@ -3,7 +3,7 @@
     <div id="textual-inner">
       <div class="stat" v-for="n in 15">
         <div class="stat-icon">
-          <p></p>
+          <p>Lorem</p>
         </div>
         <div class="stat-text">
 
@@ -15,12 +15,20 @@
 
 <script>
   import { mapGetters } from 'vuex';
+  import SimpleBar from 'simplebar';
+
   export default {
     name: 'PanelTextual',
     computed: {
       ...mapGetters([
         'options'
       ])
+    },
+    mounted() {
+      // data-simplebar
+      new SimpleBar(document.getElementById('textual-inner'), {
+        autoHide: true
+      }, 500);
     }
 
   }
@@ -77,7 +85,7 @@
   // INFO SIDE
   .info-side #textual {
     position: relative;
-    overflow: auto;
+    // overflow: auto;
   }
 
   .info-side #textual-inner {
