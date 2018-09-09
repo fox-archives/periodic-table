@@ -28,7 +28,8 @@ import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
 // Simple Bar
-import SimpleBar from 'simplebar';
+import PerfectScrollbar from 'perfect-scrollbar';
+import 'simplebar';
 import 'simplebar/dist/simplebar.css';
 
 

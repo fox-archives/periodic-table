@@ -13,10 +13,6 @@ $elementRatio: 0.6;
   border-radius: $border-radius;
 }
 
-//.heightSame #grid-container-outer {
-//  overflow: scroll;
-//}
-
 // This stuff was commented out before
 //.info-top .heightDifferent #grid-container-outer {
 //  overflow: auto;
@@ -50,7 +46,6 @@ $elementRatio: 0.6;
   width: 100%;
   padding-bottom: 100% * $elementRatio;
   transition: createTransitions((box-shadow, background-color));
-  overflow: none;
 }
 
 .info-top .heightDifferent #grid-outer {
