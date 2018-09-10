@@ -27,8 +27,12 @@ Vue.use(Vuesax);
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
+// Perfect Scrollbar
 import PerfectScrollbar from 'perfect-scrollbar';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
+
+// Overlay Scrollbar
+import OverlayScrollbars from 'overlayscrollbars/css/OverlayScrollbars.min.css';
 
 // Mount Vue Instance to the DOM
 new Vue({

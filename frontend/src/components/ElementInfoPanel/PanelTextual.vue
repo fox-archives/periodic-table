@@ -19,6 +19,8 @@
 <script>
   import { mapGetters } from 'vuex';
   import PerfectScrollbar from 'perfect-scrollbar';
+  import OverlayScrollbars from 'overlayscrollbars';
+  // import OverlayScrollbars from 'overlayscrollbars/js/OverlayScrollbars.min.js';
 
   export default {
     name: 'PanelTextual',
@@ -28,12 +30,19 @@
       ])
     },
     mounted() {
-      let ps = new PerfectScrollbar('#textual-inner', {
+      let psPanelTextual = new PerfectScrollbar('#textual-inner', {
         swipeEasing: true, // Default
       });
 
+      // OverlayScrollbars(document.querySelectorAll("#textual-buffer"), {
+      //   overflowBehavior: {
+      //     x: "hidden",
+      //   }
+      // });
 
-
+      // document.addEventListener("DOMContentLoaded", function() {
+      //         OverlayScrollbars(document.querySelectorAll("#textual-inner"), { });
+      // });
     }
 
   }
@@ -78,6 +87,18 @@
     height: 100%;
     overflow: auto;
   }
+  // #textual-inner:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   pointer-events: none;
+  //   background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+  //   width: 100%;
+  //   height: 30px;
+  //   border-radius: $border-radius;
+  // }
 
   #textual-buffer {
     // Buffer because the direct div under the element with scroll (textual-inner) cannot be flex
@@ -119,6 +140,10 @@
     background-color: $oc-gray-2;
     border-radius: $border-radius-small;
     margin: 2px;
+  }
+
+  .info-top #textual-content {
+    padding: 5px;
   }
 
 </style>

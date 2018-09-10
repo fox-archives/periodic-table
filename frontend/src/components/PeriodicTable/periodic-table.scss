@@ -13,12 +13,6 @@ $elementRatio: 0.6;
   border-radius: $border-radius;
 }
 
-// This stuff was commented out before
-//.info-top .heightDifferent #grid-container-outer {
-//  overflow: auto;
-//}
-
-
 // GRID-CONTAINER \\
 #grid-container {
   position: absolute;
@@ -27,15 +21,16 @@ $elementRatio: 0.6;
   bottom: 0px;
   left: 0px;
   border-radius: $border-radius;
-}
-
-.heightSame #grid-container {
   overflow: auto;
 }
 
-.info-top .heightDifferent #grid-container {
-  overflow: auto;
-}
+//.heightSame #grid-container {
+//  overflow: auto;
+//}
+//
+//.info-top .heightDifferent #grid-container {
+//  overflow: auto;
+//}
 
 
 // GRID-OUTER \\
@@ -43,8 +38,9 @@ $elementRatio: 0.6;
 #grid-outer {
   position: relative;
   height: 0px;
-  width: 100%;
+  // width: 100%;
   padding-bottom: 100% * $elementRatio;
+  border-radius: $border-radius;
   transition: createTransitions((box-shadow, background-color));
 }
 
@@ -56,9 +52,9 @@ $elementRatio: 0.6;
   transition: createTransitions((box-shadow, background-color));
 }
 
-.heightDifferent #grid-outer {
-  border-radius: $border-radius; // Only want this border when there is no scrollbar
-}
+//.heightDifferent #grid-outer {
+//  border-radius: $border-radius; // Only want this border when there is no scrollbar
+//}
 
 // GRID \\
 // Main grid

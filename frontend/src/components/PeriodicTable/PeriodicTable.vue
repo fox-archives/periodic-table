@@ -51,6 +51,7 @@
 <script type="text/javascript">
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
+  import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
     name: 'PeriodicTable',
@@ -327,6 +328,15 @@
     created() {
       // Load element data via Axios / Fetch API requests to backend
       this.$store.dispatch('loadElementData');
+    },
+    mounted() {
+      let psPeriodicTable = new PerfectScrollbar('#grid-container', {
+        swipeEasing: true, // Default
+      });
+
+      // OverlayScrollbars(document.querySelectorAll("#grid-container"), {
+      //
+      // });
     }
   }
 </script>
