@@ -17,6 +17,20 @@ export default {
       return this.$store.getters.options;
     }
   },
+  mounted() {
+      // Add style to scrollbars
+      let scrollsx = document.getElementsByClassName('ps__rail-x');
+      console.log('test');
+      console.log(scrollsx);
+      for(let i = 0; i < scrollsx.length; i++) {
+        scrollsx[i].style.opacity = 0.6;
+      }
+
+      let scrollsy =  document.getElementsByClassName('ps__rail-y');
+      for(let i = 0; i < scrollsy.length; i++) {
+        scrollsy[i].style.opacity = 0.6;
+      }
+  },
   components: {
     Navigation,
     Footer

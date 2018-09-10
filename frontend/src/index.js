@@ -27,11 +27,8 @@ Vue.use(Vuesax);
 import VueFeatherIcon from 'vue-feather-icon';
 Vue.use(VueFeatherIcon);
 
-// Simple Bar
 import PerfectScrollbar from 'perfect-scrollbar';
-import 'simplebar';
-import 'simplebar/dist/simplebar.css';
-
+import 'perfect-scrollbar/css/perfect-scrollbar.css';
 
 // Mount Vue Instance to the DOM
 new Vue({
