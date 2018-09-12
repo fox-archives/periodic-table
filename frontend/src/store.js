@@ -331,9 +331,9 @@ export default new Vuex.Store({
       }
     },
     setMobilePeriodicTableWidth: function(state) {
-      if(/*this.options.infoLocationType === 'info-top' && */state.contentState === 'heightDifferent') {
+      if(state.contentState === 'heightDifferent') {
         // To change the length of the #grid-container (so #grid-outer scrolls to fit)
-        let gridContainer = document.getElementById('grid');
+        let gridContainer = document.getElementById('grid-container');
 
         // Be sure to change the ratio in periodictable.scss if changed here
         let periodicTableRatio = 0.6;
@@ -343,7 +343,7 @@ export default new Vuex.Store({
         gridContainer.style.width = (gridContainer.clientHeight - 2) / 0.6 + 'px';
       }
       else {
-        document.getElementById('grid').style.width = '';
+        document.getElementById('grid-container').style.width = '';
       }
     }
   },

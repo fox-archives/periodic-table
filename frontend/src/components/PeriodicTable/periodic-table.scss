@@ -11,6 +11,7 @@ $elementRatio: 0.6;
 #grid-container-outer {
   position: relative;
   border-radius: $border-radius;
+  overflow: auto;
 }
 
 // GRID-CONTAINER \\
@@ -22,6 +23,14 @@ $elementRatio: 0.6;
   left: 0px;
   border-radius: $border-radius;
   overflow: auto;
+}
+
+#grid-container-buffer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  border-radius: $border-radius;
 }
 
 //.heightSame #grid-container {
@@ -38,23 +47,20 @@ $elementRatio: 0.6;
 #grid-outer {
   position: relative;
   height: 0px;
-  // width: 100%;
+  width: 100%;
   padding-bottom: 100% * $elementRatio;
   border-radius: $border-radius;
   transition: createTransitions((box-shadow, background-color));
 }
 
 .info-top .heightDifferent #grid-outer {
+  // 2px so #grid-outer still has height difference
   height: calc(100% - 2px);
 }
 
 #grid-outer:hover {
   transition: createTransitions((box-shadow, background-color));
 }
-
-//.heightDifferent #grid-outer {
-//  border-radius: $border-radius; // Only want this border when there is no scrollbar
-//}
 
 // GRID \\
 // Main grid
