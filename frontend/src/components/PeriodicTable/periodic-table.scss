@@ -69,4 +69,5 @@ $elementRatio: 0.6;
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
   grid-template-rows: 5% repeat($total-rows, 1fr);
   padding: 10px 10px 10px 10px;
+  border-radius: $border-radius;
 }

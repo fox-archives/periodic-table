@@ -7,26 +7,34 @@
 @mixin periodicTableThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
   // @include shadow('#grid-outer', $hasShadow, $shadow, $shadowHover);
 
-  #grid-outer {
+  #grid {
     background-color: $background;
   }
 
 
+  // The following change how the shadow and background-color change places, depending on the layout
+  // There are four possibilities, as shown below
 
-  //// Add shadow to grid outer
-  //@include shadow('#grid-outer', $hasShadow, $shadow, $shadowHover);
-  //
-  //// Add shadow to
-  //.info-side .heightSame {
-  //  @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
-  //}
-  //#grid-outer {
-  //  background-color: $background;
-  //}
-  //
-  //// Recall that the shadow does not show properly on #grid-container when there are scrollbars
-  //.info-top .heightSame {
-  //  @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
-  //}
+  // Add shadow, depending on if .info-side or .info-top
+  .info-side .heightDifferent {
+    @include shadow('#grid', $hasShadow, $shadow, $shadowHover);
+  }
+
+  .info-top .heightDifferent {
+    @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
+    #grid-outer, #grid-container {
+      background-color: $background;
+    }
+  }
+
+  // Add shadow to #grid-container-outer (rather than #grid) for all .heightSame
+  .info-side .heightSame {
+    @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
+  }
+
+  // Recall that the shadow does not show properly on #grid-container when there are scrollbars
+  .info-top .heightSame {
+    @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
+  }
 }
 
