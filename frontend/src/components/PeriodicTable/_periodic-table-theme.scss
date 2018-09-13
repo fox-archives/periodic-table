@@ -5,10 +5,7 @@
 
 // Purpose: To color the colors behind all the elements (periodic table)
 @mixin periodicTableThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
-
-
-
-  @include shadow('#grid-outer', $hasShadow, $shadow, $shadowHover);
+  // @include shadow('#grid-outer', $hasShadow, $shadow, $shadowHover);
 
   #grid-outer {
     background-color: $background;
