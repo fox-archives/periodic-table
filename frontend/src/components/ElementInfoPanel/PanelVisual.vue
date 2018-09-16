@@ -7,7 +7,7 @@
         </div>
       </div>
       <div id="text">
-
+        {{ activeElement.name }}
       </div>
     </div>
   </div>
@@ -98,6 +98,11 @@
   #icon-inner:hover {
     border-radius: $border-radius * 1.75;
     transition: createTransitions((border-radius));
+  }
+
+  #text {
+    font-family: robotoregular;
+    font-weight: normal;
   }
 
 </style>

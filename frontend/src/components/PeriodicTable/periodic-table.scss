@@ -11,6 +11,11 @@ $elementRatio: 0.6;
 #grid-container-outer {
   position: relative;
   border-radius: $border-radius;
+  transition: createTransitions((box-shadow, background-color));
+}
+
+#grid-container-outer:hover {
+  transition: createTransitions((box-shadow, background-color));
 }
 
 // GRID-CONTAINER \\
@@ -24,15 +29,6 @@ $elementRatio: 0.6;
   overflow: auto;
 }
 
-//.heightSame #grid-container {
-//  overflow: auto;
-//}
-//
-//.info-top .heightDifferent #grid-container {
-//  overflow: auto;
-//}
-
-
 // GRID-OUTER \\
 // Holds aspect ratio
 #grid-outer {
@@ -41,20 +37,11 @@ $elementRatio: 0.6;
   // width: 100%;
   padding-bottom: 100% * $elementRatio;
   border-radius: $border-radius;
-  transition: createTransitions((box-shadow, background-color));
 }
 
 .info-top .heightDifferent #grid-outer {
   height: calc(100% - 2px);
 }
-
-#grid-outer:hover {
-  transition: createTransitions((box-shadow, background-color));
-}
-
-//.heightDifferent #grid-outer {
-//  border-radius: $border-radius; // Only want this border when there is no scrollbar
-//}
 
 // GRID \\
 // Main grid
@@ -66,8 +53,16 @@ $elementRatio: 0.6;
   left: 0px;
 
   display: grid;
+  // IF You change the 2.8% and 5.8%, then all the font size scaling will have to readjust
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
   grid-template-rows: 5% repeat($total-rows, 1fr);
   padding: 10px 10px 10px 10px;
   border-radius: $border-radius;
+  transition: createTransitions((box-shadow, background-color));
+}
+
+// I think this works
+// TODO: Check if this works
+#grid #grid-outer:hover {
+  transition: createTransitions((box-shadow, background-color));
 }

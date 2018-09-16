@@ -171,6 +171,7 @@
         }
       },
 
+      // Sets the color of a label manually, rather than by CSS hover (
       setLabelColor: function(index, isMouseOver) {
         // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
         // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
@@ -223,7 +224,7 @@
         }
       },
 
-      // When element is clicked, darken it
+      // When element is clicked, darken it, or undarken it
       clickElement: function(index) {
         // Change element info and label color (in case the mouse does not movein or moveout the element)
         this.clickedElement.active = false;
@@ -271,17 +272,9 @@
         }
       },
 
+      // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
       labelClassToNone: function(labelNumber) {
         return labelNumber.substring(2);
-      },
-      labelNoneToClass: function(labelNumber, type) {
-        // className are the classes that need to be highlighted "p" stands for period.json, "g" stands for group
-        if(type === 'period') {
-          return 'p-' + (labelNumber);
-        }
-        else if(type === 'group') {
-          return 'g-' + (labelNumber);
-        }
       },
       // OUTPUT: Group 1 / Period 7
       getPeriodGroupName: function(type, number) {
@@ -292,6 +285,7 @@
           return 'Group ' + number;
         }
       },
+      // Sends a notification of the period
       periodNotification: function(index) {
         this.$vs.notify({
           title: this.getPeriodGroupName('period', this.periodData[index].display),
@@ -299,6 +293,7 @@
           time: 3000
         });
       },
+      // Sends a notification of the group
       groupNotification: function(index) {
         this.$vs.notify({
           title: this.getPeriodGroupName('group', this.groupData[index].display),
@@ -336,20 +331,18 @@
         swipeEasing: true, // Default
       });
 
+      // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
       window.addEventListener('resize', () => {
         if(!throttled) {
           psPeriodicTable.update();
+          this.sizeElementText = true;
           throttled = true;
           setTimeout(() => {
             throttled = false;
           }, 50);
         }
 
-      })
-
-      // OverlayScrollbars(document.querySelectorAll("#grid-container"), {
-      //
-      // });
+      });
     }
   }
 </script>

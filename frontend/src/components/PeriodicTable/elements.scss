@@ -1,6 +1,7 @@
+$elementMargin: 0.11vw;
 .element {
   border-radius: $border-radius-small;
-  margin: 0.11vw;
+  margin: $elementMargin;
   user-select: none;
   overflow: hidden;
 }
@@ -11,28 +12,71 @@
 }
 
 .element-inner {
-  justify-self: center; //Center horizontally
+  justify-self: center; // Center horizontally
   margin-top: 2px;
   margin-left: 4px;
 
   .primary-text {
     font-family: latobold;
     font-weight: normal;
-    // TODO: REMOVE below temporary "fix" and make text size relative to parent div
     // font-size: 1.4em;
-    font-size: 1.2vw;
+    // font-size: 1.2vw;
     white-space: nowrap;
   }
 
   .secondary-text {
     font-family: latoregular;
     font-weight: normal;
-    // TODO: REMOVE below temporary "fix" and make text size relative to parent div
-    //font-size: 0.8em;
-    font-size: 0.9vw;
+    // font-size: 0.8em;
+    // font-size: 0.9vw;
     white-space: nowrap;
   }
 }
+
+// Scratch this for a JavaScript Solution, which should work if the page layout changes slightly
+//// Font-sizes for each possible display configuration
+//// The - (20px * 2) is for the padding for inside the periodic table
+//$baseWidth: calc(100vw - (#{$body-margin} * 2) - (10px * 2));
+//// 48px = navBar with its padding, 29.5 is footer with its padding
+//$baseHeight: calc(100vw - (48px));
+//// Primary text
+//.info-top .heightDifferent {
+//  .primary-text {
+//    font-size: calc((#{$baseHeight} - 20vw - (#{$body-margin})) * .02);
+//  }
+//  .secondary-text {
+//    font-size: calc((#{$baseHeight} - 20vw - (#{$body-margin})) * .018);
+//  }
+//}
+//
+//.info-top .heightSame {
+//  .primary-text {
+//
+//  }
+//  .secondary-text {
+//
+//  }
+//}
+//
+//.info-side .heightDifferent {
+//  .primary-text {
+//
+//  }
+//  .secondary-text {
+//
+//  }
+//}
+//
+//.info-side .heightDifferent {
+//  .primary-text {
+//
+//  }
+//  .secondary-text {
+//
+//  }
+//}
+
+
 
 // Element Classes, which correspond to position on the CSS grid
 

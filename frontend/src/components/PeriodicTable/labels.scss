@@ -35,7 +35,7 @@
 }
 
 .info-top .label-text{
-  font-size: calc( (100vw - (#{$body-margin} * 2) - #{$spacing} - 20vw - (10px * 2)) * 0.0172 );
+  font-size: calc( (100vw - (#{$body-margin} * 2) - #{$spacing} - (10px * 2)) * 0.0172 );
 }
 
 .info-side .label-text {
