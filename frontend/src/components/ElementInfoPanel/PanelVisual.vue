@@ -58,6 +58,8 @@
     height: 100%;
     border-radius: $border-radius;
     transition: createTransitions((box-shadow, background-color));
+
+    --elementNameTextSize: 12px;
   }
 
   #visual-inner:hover {
@@ -96,6 +98,7 @@
   }
 
   #icon-inner:hover {
+    cursor: pointer;
     border-radius: $border-radius * 1.75;
     transition: createTransitions((border-radius));
   }
@@ -103,6 +106,7 @@
   #text {
     font-family: robotoregular;
     font-weight: normal;
+    font-size: var(--elementNameTextSize);
   }
 
 </style>

@@ -66,19 +66,7 @@
       window.addEventListener('resize', () => {
         this.setClassLayout();
         this.setMobilePeriodicTableWidth();
-      });
-
-      // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
-      window.addEventListener('resize', () => {
-        if(!throttled) {
-          this.sizeElementText();
-
-          throttled = true;
-          setTimeout(() => {
-            throttled = false;
-          }, 50);
-        }
-
+        this.sizeElementText();
       });
     },
     components: {

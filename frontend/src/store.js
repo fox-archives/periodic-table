@@ -351,13 +351,25 @@ export default new Vuex.Store({
     },
 
     // This changes the CSS variable to size the element text
+    // Recall the CSS variables are declared in grid.scss
     sizeElementText: function() {
-      let elementWidth = document.getElementById('grid').childNodes[0].clientWidth;
+      // For periodicTable.vue
+      let grid = document.getElementById('grid');
+      let elementWidth = grid.childNodes[0].clientWidth;
       let primaryFontSize = (elementWidth * 0.32) + 'px';
       let secondaryFontSize = (elementWidth * 0.2) + 'px';
+      let labelFontSize = (elementWidth * 0.3) + 'px';
+
+      // For PanelVisual.vue and PanelTextual.vue
+      let visualInnerWidth = document.getElementById('visual-inner');
+      let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
+      console.log(elementNameFontSize);
+
+      // Setting CSS Variables for All Elements
       grid.style.setProperty('--primaryTextSize', primaryFontSize);
       grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
-
+      grid.style.setProperty('--labelTextSize', labelFontSize);
+      visualInnerWidth.style.setProperty('--elementNameTextSize', elementNameFontSize);
     }
 
   },

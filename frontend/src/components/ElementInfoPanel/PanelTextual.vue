@@ -65,6 +65,7 @@
     @include panelTextualThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover);
   }
 
+  // BOTH INFO-SIDE AND INFO-TOP
   #textual {
     position: relative;
     width: 100%;
@@ -106,6 +107,10 @@
     width: 100%;
     height: 100%;
     box-sizing: content-box;
+  }
+
+  .stat:hover {
+    cursor: pointer;
   }
 
   // INFO-SIDE
