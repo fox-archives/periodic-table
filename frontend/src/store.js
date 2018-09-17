@@ -98,6 +98,9 @@ export default new Vuex.Store({
     },
     contentState: function(state) {
       return state.contentState;
+    },
+    sizeElementText: function(state) {
+      return state.sizeElementText();
     }
   },
   mutations: {
@@ -345,7 +348,18 @@ export default new Vuex.Store({
       else {
         document.getElementById('grid').style.width = '';
       }
+    },
+
+    // This changes the CSS variable to size the element text
+    sizeElementText: function() {
+      let elementWidth = document.getElementById('grid').childNodes[0].clientWidth;
+      let primaryFontSize = (elementWidth * 0.32) + 'px';
+      let secondaryFontSize = (elementWidth * 0.2) + 'px';
+      grid.style.setProperty('--primaryTextSize', primaryFontSize);
+      grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
+
     }
+
   },
   // Allow to run Async code
   actions: {

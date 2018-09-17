@@ -59,6 +59,10 @@ $elementRatio: 0.6;
   padding: 10px 10px 10px 10px;
   border-radius: $border-radius;
   transition: createTransitions((box-shadow, background-color));
+
+  // Contains CSS vars for text sizing
+  --primaryTextSize: 24px;
+  --secondaryTextSize: 16px;
 }
 
 // I think this works

@@ -325,6 +325,7 @@
       this.$store.dispatch('loadElementData');
     },
     mounted() {
+      // This controls perfect scrollbar only
       let throttled = false;
 
       let psPeriodicTable = new PerfectScrollbar('#grid-container', {
@@ -335,7 +336,6 @@
       window.addEventListener('resize', () => {
         if(!throttled) {
           psPeriodicTable.update();
-          this.sizeElementText = true;
           throttled = true;
           setTimeout(() => {
             throttled = false;
