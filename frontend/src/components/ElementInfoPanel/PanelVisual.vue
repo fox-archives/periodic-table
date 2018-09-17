@@ -59,7 +59,7 @@
     border-radius: $border-radius;
     transition: createTransitions((box-shadow, background-color));
 
-    --elementNameTextSize: 12px;
+    --elementNameTextSize: 0px;
   }
 
   #visual-inner:hover {

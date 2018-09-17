@@ -48,6 +48,10 @@
         }
       }, 100);
 
+      this.setClassLayout();
+      this.setMobilePeriodicTableWidth();
+      this.sizeElementText();
+
       // Apparently this doesn't work (probably because when DOM content is loaded, it doesn't necessarily mean that Vue has finished mounting el
       // But again, why can't I enter these commands directly after mounted?
       // document.addEventListener('DOMContentLoaded', () => {
@@ -56,8 +60,9 @@
       //   this.sizeElementText();
       // }, false);
 
-      // Apparently the first setInterval was not working, but this apparently works
+      // Apparently you need a set interval after this Vue component is created, especially for the method setMobilePeriodicTableWidth
       setTimeout(() => {
+        this.setClassLayout();
         this.setMobilePeriodicTableWidth();
         this.sizeElementText();
       }, 1000);

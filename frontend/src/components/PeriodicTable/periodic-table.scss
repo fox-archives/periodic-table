@@ -61,9 +61,9 @@ $elementRatio: 0.6;
   transition: createTransitions((box-shadow, background-color));
 
   // Contains CSS vars for text sizing
-  --primaryTextSize: 24px;
-  --secondaryTextSize: 16px;
-  --labelTextSize: 12px;
+  --primaryTextSize: 0px;
+  --secondaryTextSize: 0px;
+  --labelTextSize: 0px;
 }
 
 // I think this works
