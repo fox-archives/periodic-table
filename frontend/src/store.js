@@ -363,7 +363,7 @@ export default new Vuex.Store({
       // For PanelVisual.vue and PanelTextual.vue
       let visualInnerWidth = document.getElementById('visual-inner');
       let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
-      console.log(elementNameFontSize);
+      // console.log(elementNameFontSize);
 
       // Setting CSS Variables for All Elements
       grid.style.setProperty('--primaryTextSize', primaryFontSize);

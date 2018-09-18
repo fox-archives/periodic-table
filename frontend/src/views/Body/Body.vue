@@ -32,11 +32,8 @@
       ])
     },
     created() {
-      let throttled = false;
-
-
-
       // TODO: Clean this up and make the required updates in the DOM instantaneously, when the DOM is ready
+      // Not sure how to do that
       let setClassLayoutFirstLoad = setInterval(() => {
         // If the document is loaded, clear the timer, setClassLayout
         // should only be activated on page resize
@@ -48,9 +45,17 @@
         }
       }, 100);
 
-      this.setClassLayout();
-      this.setMobilePeriodicTableWidth();
-      this.sizeElementText();
+      window.addEventListener('resize', () => {
+        setTimeout(() => {
+          this.setClassLayout();
+          this.setMobilePeriodicTableWidth();
+          this.sizeElementText();
+        }, 500);
+      });
+
+      // this.setClassLayout();
+      // this.setMobilePeriodicTableWidth();
+      // this.sizeElementText();
 
       // Apparently this doesn't work (probably because when DOM content is loaded, it doesn't necessarily mean that Vue has finished mounting el
       // But again, why can't I enter these commands directly after mounted?

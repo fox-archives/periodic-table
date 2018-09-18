@@ -28,8 +28,13 @@
   font-weight: normal;
 }
 
-// For some reason this does not work all the time
+// For some reason this does not work all the time (or at all, I believe this is for SimpleBar, not sure)
 .ps__rail-x,
 .ps__rail-y {
   opacity: 0.6 !important;
 }
+
+.con-title-after {
+  font-family: robotoregular;
+}
+
