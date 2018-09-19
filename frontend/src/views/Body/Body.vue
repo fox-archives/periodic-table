@@ -34,14 +34,20 @@
     created() {
       // TODO: Clean this up and make the required updates in the DOM instantaneously, when the DOM is ready
       // Not sure how to do that
+
       let setClassLayoutFirstLoad = setInterval(() => {
         // If the document is loaded, clear the timer, setClassLayout
         // should only be activated on page resize
         if(document.readyState === 'complete') {
-          this.setClassLayout();
-          this.setMobilePeriodicTableWidth();
-          this.sizeElementText();
-          clearInterval(setClassLayoutFirstLoad);
+          if(document.getElementById('grid-outer') !== null) {
+            this.setClassLayout();
+            this.setMobilePeriodicTableWidth();
+            this.sizeElementText();
+            clearInterval(setClassLayoutFirstLoad);
+          }
+          else {
+            console.warn('Grid-outer cannot be found. Perhaps the periodic table data cannot be fetched?');
+          }
         }
       }, 100);
 
