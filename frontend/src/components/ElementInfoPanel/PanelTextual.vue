@@ -135,9 +135,24 @@
     grid-row-gap: 0.5vw;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
     width: 100%;
     height: 100%;
+  }
+
+  @media(min-width: 660px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+  @media(max-width: 660px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+  @media(max-width: 660px) {
+
   }
 
   .info-top .stat {
