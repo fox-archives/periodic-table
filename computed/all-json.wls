@@ -1,43 +1,11 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"]
-DeleteFile["simple.json"]
-(* Prevents the return of units *)
-SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
-periodicTable = {};
+(* Setup *)
+Import["common-methods.wls"];
+DeleteFile["all.json"];
 
-(* SETTING UP COMMON FUNCTIONS *)
-removeEndingPeriod[str_]:=
-	If[StringEndsQ[str, "."],
-		newStr = StringTake[str, StringLength[str] - 1];
-		Return[newStr];,
-		(* Else *)
-		Return[str];
-	];
-	
-(* Replaces the stringified version of the error / no data message with a human readable one *)
-convertToUnknownNA[str_]:=
-	If[str == "Missing[NotAvailable]" ||
-		str == "Missing[Unknown]",
-		
-		Return["Unknown"];,
-		(* Else *)
-		If[str == "Missing[NotApplicable]",
-			Return["N / A"];,
-			
-			(* Else *)
-			Return[str];
-		];
-	];
-	
-	
-scientificToRegular[num_]:=
-	If[NumberQ[num],
-		Return[N[num]];,
-		(* Else *)
-		Return[num];
-	];
+periodicTable = {};
 	
 Do[
 	name = ElementData[i, "StandardName"];
@@ -64,28 +32,14 @@ Do[
 	boilingPoint = removeEndingPeriod[boilingPoint];
 	
 	newElement = {
-		"eLabel" -> i,
+		"label" -> i,
 		"name" -> name,
 		"abbreviation" -> abbreviation,
 		"block" -> block,
-		"atomicMass" -> atomicWeight,
-		"meltingPoint" -> meltingPoint,
-		"boilingPoint" -> boilingPoint
+		"atomicMass" -> atomicWeight
 	};
 	
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["simple.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
-
-
-
-
-
-
-
-
-
-
-
-
+Export["all.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
