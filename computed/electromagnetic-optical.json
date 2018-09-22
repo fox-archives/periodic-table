@@ -1,0 +1,1182 @@
+[
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000248",
+		"molarMagneticSusceptibility":"-0.00000000004999",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.00000000223"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000059",
+		"molarMagneticSusceptibility":"-0.0000000000236",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.00000000105"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"11000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000256",
+		"molarMagneticSusceptibility":"0.000000000178",
+		"resistivity":"0.000000094",
+		"volumeMagneticSusceptibility":"0.0000137"
+	},
+	{
+		"color":"SlateGray",
+		"electricalConductivity":"25000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000126",
+		"molarMagneticSusceptibility":"-0.0000000001136",
+		"resistivity":"0.00000004",
+		"volumeMagneticSusceptibility":"-0.00002328"
+	},
+	{
+		"color":"Black",
+		"electricalConductivity":"0.0001",
+		"electricalType":"EntityClass[Element, Insulator]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000087",
+		"molarMagneticSusceptibility":"-0.0000000000941",
+		"resistivity":"10000",
+		"volumeMagneticSusceptibility":"-0.0000214"
+	},
+	{
+		"color":"Black",
+		"electricalConductivity":"100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000062",
+		"molarMagneticSusceptibility":"-0.0000000000745",
+		"resistivity":"0.00001",
+		"volumeMagneticSusceptibility":"-0.000014"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000054",
+		"molarMagneticSusceptibility":"-0.00000000015",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.0000000068"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000001335",
+		"molarMagneticSusceptibility":"0.0000000427184",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"0.00000190772"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000041",
+		"molarMagneticSusceptibility":"-0.0000000000827",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.00000000369"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"21000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000088",
+		"molarMagneticSusceptibility":"0.0000000002",
+		"resistivity":"0.000000047",
+		"volumeMagneticSusceptibility":"0.0000086"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"23000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000069",
+		"molarMagneticSusceptibility":"0.000000000168",
+		"resistivity":"0.000000044",
+		"volumeMagneticSusceptibility":"0.000012"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"38000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000078",
+		"molarMagneticSusceptibility":"0.00000000021",
+		"resistivity":"0.000000026",
+		"volumeMagneticSusceptibility":"0.0000211"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"1000",
+		"electricalType":"EntityClass[Element, Semiconductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000016",
+		"molarMagneticSusceptibility":"-0.0000000000449",
+		"resistivity":"0.001",
+		"volumeMagneticSusceptibility":"-0.00000373"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"10000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000113",
+		"molarMagneticSusceptibility":"-0.00000000035",
+		"resistivity":"0.0000001",
+		"volumeMagneticSusceptibility":"-0.0000206"
+	},
+	{
+		"color":"Yellow",
+		"electricalConductivity":"0.000000000000001",
+		"electricalType":"EntityClass[Element, Insulator]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000062",
+		"molarMagneticSusceptibility":"-0.000000000199",
+		"resistivity":"1000000000000000",
+		"volumeMagneticSusceptibility":"-0.0000122"
+	},
+	{
+		"color":"Yellow",
+		"electricalConductivity":"0.01",
+		"electricalType":"EntityClass[Element, Insulator]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000072",
+		"molarMagneticSusceptibility":"-0.000000000511",
+		"resistivity":"100",
+		"volumeMagneticSusceptibility":"-0.0000000231"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.000000006",
+		"molarMagneticSusceptibility":"-0.00000000024",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.0000000107"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"14000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000067",
+		"molarMagneticSusceptibility":"0.000000000262",
+		"resistivity":"0.00000007",
+		"volumeMagneticSusceptibility":"0.00000574"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"29000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000138",
+		"molarMagneticSusceptibility":"0.0000000005531",
+		"resistivity":"0.000000034",
+		"volumeMagneticSusceptibility":"0.00002139"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1800000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000000088",
+		"molarMagneticSusceptibility":"0.000000003956",
+		"resistivity":"0.00000055",
+		"volumeMagneticSusceptibility":"0.0002627"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"2500000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000401",
+		"molarMagneticSusceptibility":"0.000000001919",
+		"resistivity":"0.0000004",
+		"volumeMagneticSusceptibility":"0.0001807"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"5000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000628",
+		"molarMagneticSusceptibility":"0.000000003199",
+		"resistivity":"0.0000002",
+		"volumeMagneticSusceptibility":"0.0003837"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"7900000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Antiferromagnetic]",
+		"massMagneticSusceptibility":"0.0000000445",
+		"molarMagneticSusceptibility":"0.000000002314",
+		"resistivity":"0.00000013",
+		"volumeMagneticSusceptibility":"0.0003177"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"620000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000000121",
+		"molarMagneticSusceptibility":"0.0000000066475",
+		"resistivity":"0.0000016",
+		"volumeMagneticSusceptibility":"0.00090387"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"10000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Ferromagnetic]",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.000000097",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"17000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Ferromagnetic]",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.00000006",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"14000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Ferromagnetic]",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.00000007",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Copper",
+		"electricalConductivity":"59000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.00000000108",
+		"molarMagneticSusceptibility":"-0.0000000000686",
+		"resistivity":"0.000000017",
+		"volumeMagneticSusceptibility":"-0.00000963"
+	},
+	{
+		"color":"SlateGray",
+		"electricalConductivity":"17000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.00000000221",
+		"molarMagneticSusceptibility":"-0.000000000145",
+		"resistivity":"0.000000059",
+		"volumeMagneticSusceptibility":"-0.0000158"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"7100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.000000003",
+		"molarMagneticSusceptibility":"-0.000000000209",
+		"resistivity":"0.00000014",
+		"volumeMagneticSusceptibility":"-0.0000177"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"2000",
+		"electricalType":"EntityClass[Element, Semiconductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000015",
+		"molarMagneticSusceptibility":"-0.000000000109",
+		"resistivity":"0.0005",
+		"volumeMagneticSusceptibility":"-0.00000798"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"3300000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000039",
+		"molarMagneticSusceptibility":"-0.000000000292",
+		"resistivity":"0.0000003",
+		"volumeMagneticSusceptibility":"-0.0000223"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.000000004",
+		"molarMagneticSusceptibility":"-0.000000000316",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"-0.0000193"
+	},
+	{
+		"color":"Red",
+		"electricalConductivity":"0.0000000001",
+		"electricalType":"EntityClass[Element, Insulator]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000049",
+		"molarMagneticSusceptibility":"-0.000000000783",
+		"resistivity":"10000000000",
+		"volumeMagneticSusceptibility":"-0.0000153"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000044",
+		"molarMagneticSusceptibility":"-0.000000000369",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.0000000165"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"8300000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000026",
+		"molarMagneticSusceptibility":"0.000000000222",
+		"resistivity":"0.00000012",
+		"volumeMagneticSusceptibility":"0.00000398"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"7700000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000000132",
+		"molarMagneticSusceptibility":"0.000000000116",
+		"resistivity":"0.00000013",
+		"volumeMagneticSusceptibility":"0.00000347"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1800000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000666",
+		"molarMagneticSusceptibility":"0.000000005921",
+		"resistivity":"0.00000057",
+		"volumeMagneticSusceptibility":"0.0002978"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"2400000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000168",
+		"molarMagneticSusceptibility":"0.00000000153",
+		"resistivity":"0.00000042",
+		"volumeMagneticSusceptibility":"0.000109"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"6700000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000276",
+		"molarMagneticSusceptibility":"0.00000000256",
+		"resistivity":"0.00000015",
+		"volumeMagneticSusceptibility":"0.000237"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"20000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000117",
+		"molarMagneticSusceptibility":"0.000000001122",
+		"resistivity":"0.00000005",
+		"volumeMagneticSusceptibility":"0.0001203"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"5000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000342",
+		"molarMagneticSusceptibility":"0.000000003352",
+		"resistivity":"0.0000002",
+		"volumeMagneticSusceptibility":"0.0003933"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"14000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000000542",
+		"molarMagneticSusceptibility":"0.000000000548",
+		"resistivity":"0.00000007",
+		"volumeMagneticSusceptibility":"0.000067"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"23000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000136",
+		"molarMagneticSusceptibility":"0.0000000014",
+		"resistivity":"0.000000043",
+		"volumeMagneticSusceptibility":"0.0001693"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"10000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000657",
+		"molarMagneticSusceptibility":"0.000000006992",
+		"resistivity":"0.0000001",
+		"volumeMagneticSusceptibility":"0.0007899"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"62000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.00000000227",
+		"molarMagneticSusceptibility":"-0.000000000245",
+		"resistivity":"0.000000016",
+		"volumeMagneticSusceptibility":"-0.0000238"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"14000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000023",
+		"molarMagneticSusceptibility":"-0.000000000259",
+		"resistivity":"0.00000007",
+		"volumeMagneticSusceptibility":"-0.0000199"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"12000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000014",
+		"molarMagneticSusceptibility":"-0.000000000161",
+		"resistivity":"0.00000008",
+		"volumeMagneticSusceptibility":"-0.0000102"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"9100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000031",
+		"molarMagneticSusceptibility":"-0.000000000368",
+		"resistivity":"0.00000011",
+		"volumeMagneticSusceptibility":"-0.0000227"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"2500000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000109",
+		"molarMagneticSusceptibility":"-0.000000001327",
+		"resistivity":"0.0000004",
+		"volumeMagneticSusceptibility":"-0.000073"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"10000",
+		"electricalType":"EntityClass[Element, Semiconductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000039",
+		"molarMagneticSusceptibility":"-0.000000000498",
+		"resistivity":"0.0001",
+		"volumeMagneticSusceptibility":"-0.0000243"
+	},
+	{
+		"color":"SlateGray",
+		"electricalConductivity":"0.0000001",
+		"electricalType":"EntityClass[Element, Insulator]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000045",
+		"molarMagneticSusceptibility":"-0.00000000114",
+		"resistivity":"10000000",
+		"volumeMagneticSusceptibility":"-0.0000222"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000043",
+		"molarMagneticSusceptibility":"-0.000000000565",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"-0.0000000254"
+	},
+	{
+		"color":"Yellow",
+		"electricalConductivity":"5000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000028",
+		"molarMagneticSusceptibility":"0.000000000372",
+		"resistivity":"0.0000002",
+		"volumeMagneticSusceptibility":"0.00000526"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"2900000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000113",
+		"molarMagneticSusceptibility":"0.000000001552",
+		"resistivity":"0.00000035",
+		"volumeMagneticSusceptibility":"0.00003966"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1600000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000000011",
+		"molarMagneticSusceptibility":"0.000000001528",
+		"resistivity":"0.00000061",
+		"volumeMagneticSusceptibility":"0.00006761"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1400000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000022",
+		"molarMagneticSusceptibility":"0.000000030826",
+		"resistivity":"0.00000075",
+		"volumeMagneticSusceptibility":"0.0014716"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1400000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000000423",
+		"molarMagneticSusceptibility":"0.000000059604",
+		"resistivity":"0.0000007",
+		"volumeMagneticSusceptibility":"0.0028087"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1600000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000048",
+		"molarMagneticSusceptibility":"0.000000069235",
+		"resistivity":"0.00000064",
+		"volumeMagneticSusceptibility":"0.0033648"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1300000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.00000075",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000000111",
+		"molarMagneticSusceptibility":"0.00000001669",
+		"resistivity":"0.00000094",
+		"volumeMagneticSusceptibility":"0.00081618"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.000000276",
+		"molarMagneticSusceptibility":"0.000000041942",
+		"resistivity":"0.0000009",
+		"volumeMagneticSusceptibility":"0.0014473"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"770000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Ferromagnetic]",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.0000013",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"830000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000136",
+		"molarMagneticSusceptibility":"0.00000216139",
+		"resistivity":"0.0000012",
+		"volumeMagneticSusceptibility":"0.111778"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000545",
+		"molarMagneticSusceptibility":"0.000000885625",
+		"resistivity":"0.00000091",
+		"volumeMagneticSusceptibility":"0.046603"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1100000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000549",
+		"molarMagneticSusceptibility":"0.000000905467",
+		"resistivity":"0.00000094",
+		"volumeMagneticSusceptibility":"0.0482845"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1200000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000377",
+		"molarMagneticSusceptibility":"0.000000630566",
+		"resistivity":"0.00000086",
+		"volumeMagneticSusceptibility":"0.0341788"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1400000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000199",
+		"molarMagneticSusceptibility":"0.000000336179",
+		"resistivity":"0.0000007",
+		"volumeMagneticSusceptibility":"0.0185488"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"3600000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000059",
+		"molarMagneticSusceptibility":"0.00000000102",
+		"resistivity":"0.00000028",
+		"volumeMagneticSusceptibility":"0.0000388"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1800000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000012",
+		"molarMagneticSusceptibility":"0.00000000021",
+		"resistivity":"0.00000057",
+		"volumeMagneticSusceptibility":"0.0000118"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"3300000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000053",
+		"molarMagneticSusceptibility":"0.000000000946",
+		"resistivity":"0.0000003",
+		"volumeMagneticSusceptibility":"0.0000705"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"7700000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000107",
+		"molarMagneticSusceptibility":"0.000000001936",
+		"resistivity":"0.00000013",
+		"volumeMagneticSusceptibility":"0.0001782"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"20000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000000459",
+		"molarMagneticSusceptibility":"0.000000000844",
+		"resistivity":"0.00000005",
+		"volumeMagneticSusceptibility":"0.0000884"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"5600000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000000456",
+		"molarMagneticSusceptibility":"0.000000000849",
+		"resistivity":"0.00000018",
+		"volumeMagneticSusceptibility":"0.0000959"
+	},
+	{
+		"color":"SlateGray",
+		"electricalConductivity":"12000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000006",
+		"molarMagneticSusceptibility":"0.00000000011",
+		"resistivity":"0.00000008",
+		"volumeMagneticSusceptibility":"0.000014"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"21000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.00000000167",
+		"molarMagneticSusceptibility":"0.000000000321",
+		"resistivity":"0.000000047",
+		"volumeMagneticSusceptibility":"0.0000377"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"9400000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000122",
+		"molarMagneticSusceptibility":"0.00000000238",
+		"resistivity":"0.00000011",
+		"volumeMagneticSusceptibility":"0.0002573"
+	},
+	{
+		"color":"Gold",
+		"electricalConductivity":"45000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.00000000178",
+		"molarMagneticSusceptibility":"-0.000000000351",
+		"resistivity":"0.000000022",
+		"volumeMagneticSusceptibility":"-0.0000344"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000021",
+		"molarMagneticSusceptibility":"-0.000000000421",
+		"resistivity":"0.00000096",
+		"volumeMagneticSusceptibility":"-0.0000284"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"6700000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.000000003",
+		"molarMagneticSusceptibility":"-0.000000000613",
+		"resistivity":"0.00000015",
+		"volumeMagneticSusceptibility":"-0.0000356"
+	},
+	{
+		"color":"SlateGray",
+		"electricalConductivity":"4800000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.0000000015",
+		"molarMagneticSusceptibility":"-0.000000000311",
+		"resistivity":"0.00000021",
+		"volumeMagneticSusceptibility":"-0.000017"
+	},
+	{
+		"color":"Gray",
+		"electricalConductivity":"770000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Diamagnetic]",
+		"massMagneticSusceptibility":"-0.000000017",
+		"molarMagneticSusceptibility":"-0.0000000036",
+		"resistivity":"0.0000013",
+		"volumeMagneticSusceptibility":"-0.00017"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"2300000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.00000043",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Colorless",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"N \/ A",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"1000000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.000001",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"6700000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000072",
+		"molarMagneticSusceptibility":"0.0000000017",
+		"resistivity":"0.00000015",
+		"volumeMagneticSusceptibility":"0.000084"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"5600000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000325",
+		"molarMagneticSusceptibility":"0.000000007509",
+		"resistivity":"0.00000018",
+		"volumeMagneticSusceptibility":"0.0004995"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"3600000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000216",
+		"molarMagneticSusceptibility":"0.00000000514",
+		"resistivity":"0.00000028",
+		"volumeMagneticSusceptibility":"0.000411"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"830000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"0.0000012",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"670000",
+		"electricalType":"EntityClass[Element, Conductor]",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000317",
+		"molarMagneticSusceptibility":"0.000000007735",
+		"resistivity":"0.0000015",
+		"volumeMagneticSusceptibility":"0.0006282"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"EntityClass[Element, Paramagnetic]",
+		"massMagneticSusceptibility":"0.0000000515",
+		"molarMagneticSusceptibility":"0.00000001251",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"0.000704"
+	},
+	{
+		"color":"Silver",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	},
+	{
+		"color":"Unknown",
+		"electricalConductivity":"Unknown",
+		"electricalType":"Unknown",
+		"magneticType":"Unknown",
+		"massMagneticSusceptibility":"Unknown",
+		"molarMagneticSusceptibility":"Unknown",
+		"resistivity":"Unknown",
+		"volumeMagneticSusceptibility":"Unknown"
+	}
+]

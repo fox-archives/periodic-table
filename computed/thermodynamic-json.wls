@@ -6,7 +6,7 @@ Import["common-methods.wls"];
 DeleteFile["thermodynamic.json"];
 
 periodicTable = {};
-	
+	 
 Do[
 	absoluteBoilingPoint = ElementData[i, "AbsoluteBoilingPoint"];
 	absoluteMeltingPoint = ElementData[i, "AbsoluteMeltingPoint"];
@@ -54,4 +54,4 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["thermodynamic.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
+Export["thermodynamic.json", periodicTable, "JSON"];

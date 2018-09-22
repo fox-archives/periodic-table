@@ -1,0 +1,710 @@
+[
+	{
+		"electronAffinity":"72.8",
+		"electronegativity":"2.2",
+		"gasAtomicMultiplicities":"2",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"N \/ A",
+		"gasAtomicMultiplicities":"1",
+		"valence":"0"
+	},
+	{
+		"electronAffinity":"59.6",
+		"electronegativity":"0.98",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"1.57",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"26.7",
+		"electronegativity":"2.04",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"153.9",
+		"electronegativity":"2.55",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"7",
+		"electronegativity":"3.04",
+		"gasAtomicMultiplicities":"2",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"141",
+		"electronegativity":"3.44",
+		"gasAtomicMultiplicities":"2",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"328",
+		"electronegativity":"3.98",
+		"gasAtomicMultiplicities":"2",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"N \/ A",
+		"gasAtomicMultiplicities":"1",
+		"valence":"0"
+	},
+	{
+		"electronAffinity":"52.8",
+		"electronegativity":"0.93",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"1.31",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"42.5",
+		"electronegativity":"1.61",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"133.6",
+		"electronegativity":"1.9",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"71",
+		"electronegativity":"2.19",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"200",
+		"electronegativity":"2.58",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"349",
+		"electronegativity":"3.16",
+		"gasAtomicMultiplicities":"2",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"N \/ A",
+		"gasAtomicMultiplicities":"1",
+		"valence":"0"
+	},
+	{
+		"electronAffinity":"48.4",
+		"electronegativity":"0.82",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"2.37",
+		"electronegativity":"1",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"18.1",
+		"electronegativity":"1.36",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"7.6",
+		"electronegativity":"1.54",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"50.6",
+		"electronegativity":"1.63",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"64.3",
+		"electronegativity":"1.66",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"1.55",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"15.7",
+		"electronegativity":"1.83",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"63.7",
+		"electronegativity":"1.88",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"112",
+		"electronegativity":"1.91",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"118.4",
+		"electronegativity":"1.9",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"1.65",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"28.9",
+		"electronegativity":"1.81",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"119",
+		"electronegativity":"2.01",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"78",
+		"electronegativity":"2.18",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"195",
+		"electronegativity":"2.55",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"324.6",
+		"electronegativity":"2.96",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"3",
+		"gasAtomicMultiplicities":"1",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"46.9",
+		"electronegativity":"0.82",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"5.03",
+		"electronegativity":"0.95",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"29.6",
+		"electronegativity":"1.22",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"41.1",
+		"electronegativity":"1.33",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"86.1",
+		"electronegativity":"1.6",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"71.9",
+		"electronegativity":"2.16",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"53",
+		"electronegativity":"1.9",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"101.3",
+		"electronegativity":"2.2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"109.7",
+		"electronegativity":"2.28",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"53.7",
+		"electronegativity":"2.2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"125.6",
+		"electronegativity":"1.93",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"1.69",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"28.9",
+		"electronegativity":"1.78",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"107.3",
+		"electronegativity":"1.96",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"103.2",
+		"electronegativity":"2.05",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"190.2",
+		"electronegativity":"2.1",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"295.2",
+		"electronegativity":"2.66",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"7"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"2.6",
+		"gasAtomicMultiplicities":"1",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"45.5",
+		"electronegativity":"0.79",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"13.95",
+		"electronegativity":"0.89",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"48",
+		"electronegativity":"1.1",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.12",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.13",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.14",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.17",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.22",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.23",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.24",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.25",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"50",
+		"electronegativity":"1.27",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"31",
+		"electronegativity":"1.5",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"78.6",
+		"electronegativity":"2.36",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"14.5",
+		"electronegativity":"1.9",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"7"
+	},
+	{
+		"electronAffinity":"106.1",
+		"electronegativity":"2.2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"151",
+		"electronegativity":"2.2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"205.3",
+		"electronegativity":"2.28",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"222.8",
+		"electronegativity":"2.54",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"19.2",
+		"electronegativity":"1.62",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"35.1",
+		"electronegativity":"2.33",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"91.2",
+		"electronegativity":"2.02",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"183.3",
+		"electronegativity":"2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"270.1",
+		"electronegativity":"2.2",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"7"
+	},
+	{
+		"electronAffinity":"0",
+		"electronegativity":"N \/ A",
+		"gasAtomicMultiplicities":"1",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"0.7",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"1"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"0.9",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"2"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.1",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.5",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.38",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.36",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.28",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"1.3",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"3"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"4"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"5"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"6"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"7"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	},
+	{
+		"electronAffinity":"Unknown",
+		"electronegativity":"Unknown",
+		"gasAtomicMultiplicities":"N \/ A",
+		"valence":"Unknown"
+	}
+]
