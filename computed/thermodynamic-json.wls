@@ -15,10 +15,10 @@ Do[
 	criticalTemperature = ElementData[i, "CriticalTemperature"];
 	curiePoint = ElementData[i, "CuriePoint"]; (* Not included in output *)
 	fusionHeat = ElementData[i, "FusionHeat"];
-	neelPoint = ElementData[i, "NeelPoint"];
+	neelPoint = ElementData[i, "NeelPoint"]; (* Not included in output *)
 	phase = ElementData[i, "Phase"];
 	specificHeat = ElementData[i, "SpecificHeat"];
-	superconductingPoint = ElementData[i, "SuperconductingPoint"];
+	superconductingPoint = ElementData[i, "SuperconductingPoint"]; (* Not included in output *)
 	vaporizationHeat = ElementData[i, "VaporizationHeat"];
 	
 	

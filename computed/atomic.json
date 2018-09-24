@@ -1,0 +1,1182 @@
+[
+	{
+		"atomicRadius":"53",
+		"covalentRadius":"31",
+		"electronConfiguration":"{{1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{1}",
+		"ionizationEnergies":"{1312.0}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"120"
+	},
+	{
+		"atomicRadius":"31",
+		"covalentRadius":"28",
+		"electronConfiguration":"{{2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2}",
+		"ionizationEnergies":"{2372.3, 5250.5}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"140"
+	},
+	{
+		"atomicRadius":"167",
+		"covalentRadius":"128",
+		"electronConfiguration":"{{2}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 1}",
+		"ionizationEnergies":"{520.2, 7298.1, 11815.0}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"182"
+	},
+	{
+		"atomicRadius":"112",
+		"covalentRadius":"96",
+		"electronConfiguration":"{{2}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 2}",
+		"ionizationEnergies":"{899.5, 1757.1, 14848.7, 21006.6}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"87",
+		"covalentRadius":"85",
+		"electronConfiguration":"{{2}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 3}",
+		"ionizationEnergies":"{800.6, 2427.1, 3659.7, 25025.8, 32826.7}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"67",
+		"covalentRadius":"76",
+		"electronConfiguration":"{{2}, {2, 2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 4}",
+		"ionizationEnergies":"{1086.5, 2352.6, 4620.5, 6222.7, 37831., 47277.0}",
+		"quantumNumbers":"3\n P\n  0",
+		"vanDerWaalsRadius":"170"
+	},
+	{
+		"atomicRadius":"56",
+		"covalentRadius":"71",
+		"electronConfiguration":"{{2}, {2, 3}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 5}",
+		"ionizationEnergies":"{1402.3, 2856., 4578.1, 7475.0, 9444.9, 53266.6, 64360.}",
+		"quantumNumbers":"4\n S\n  3\/2",
+		"vanDerWaalsRadius":"155"
+	},
+	{
+		"atomicRadius":"48",
+		"covalentRadius":"66",
+		"electronConfiguration":"{{2}, {2, 4}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 6}",
+		"ionizationEnergies":"{1313.9, 3388.3, 5300.5, 7469.2, 10989.5, 13326.5, 71330., 84078.0}",
+		"quantumNumbers":"3\n P\n  2",
+		"vanDerWaalsRadius":"152"
+	},
+	{
+		"atomicRadius":"42",
+		"covalentRadius":"57",
+		"electronConfiguration":"{{2}, {2, 5}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 7}",
+		"ionizationEnergies":"{1681.0, 3374.2, 6050.4, 8407.7, 11022.7, 15164.1, 17868., 92038.1, 106434.3}",
+		"quantumNumbers":"2\n P\n  3\/2",
+		"vanDerWaalsRadius":"147"
+	},
+	{
+		"atomicRadius":"38",
+		"covalentRadius":"58",
+		"electronConfiguration":"{{2}, {2, 6}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8}",
+		"ionizationEnergies":"{2080.7, 3952.3, 6122., 9371., 12177., 15238., 19999.0, 23069.5, 115379.5, 131432.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"154"
+	},
+	{
+		"atomicRadius":"190",
+		"covalentRadius":"166",
+		"electronConfiguration":"{{2}, {2, 6}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 1}",
+		"ionizationEnergies":"{495.8, 4562., 6910.3, 9543., 13354., 16613., 20117., 25496., 28932., 141362.}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"227"
+	},
+	{
+		"atomicRadius":"145",
+		"covalentRadius":"141",
+		"electronConfiguration":"{{2}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 2}",
+		"ionizationEnergies":"{737.7, 1450.7, 7732.7, 10542.5, 13630., 18020., 21711., 25661., 31653., 35458.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"173"
+	},
+	{
+		"atomicRadius":"118",
+		"covalentRadius":"121",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 3}",
+		"ionizationEnergies":"{577.5, 1816.7, 2744.8, 11577., 14842., 18379., 23326., 27465., 31853., 38473.}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"111",
+		"covalentRadius":"111",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 4}",
+		"ionizationEnergies":"{786.5, 1577.1, 3231.6, 4355.5, 16091., 19805., 23780., 29287., 33878., 38726.}",
+		"quantumNumbers":"3\n P\n  0",
+		"vanDerWaalsRadius":"210"
+	},
+	{
+		"atomicRadius":"98",
+		"covalentRadius":"107",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 3}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 5}",
+		"ionizationEnergies":"{1011.8, 1907., 2914.1, 4963.6, 6273.9, 21267., 25431., 29872., 35905., 40950.}",
+		"quantumNumbers":"4\n S\n  3\/2",
+		"vanDerWaalsRadius":"180"
+	},
+	{
+		"atomicRadius":"87",
+		"covalentRadius":"105",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 4}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 6}",
+		"ionizationEnergies":"{999.6, 2252., 3357., 4556., 7004.3, 8495.8, 27107., 31719., 36621., 43177.}",
+		"quantumNumbers":"3\n P\n  2",
+		"vanDerWaalsRadius":"180"
+	},
+	{
+		"atomicRadius":"79",
+		"covalentRadius":"102",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 5}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 7}",
+		"ionizationEnergies":"                                                                    4\n{1251.2, 2298., 3822., 5158.6, 6542., 9362., 11018., 33604., 3.86 10 , 43961.}",
+		"quantumNumbers":"2\n P\n  3\/2",
+		"vanDerWaalsRadius":"175"
+	},
+	{
+		"atomicRadius":"71",
+		"covalentRadius":"106",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 8}",
+		"ionizationEnergies":"{1520.6, 2665.8, 3931., 5771., 7238., 8781., 11995., 13842., 40760., 46186.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"188"
+	},
+	{
+		"atomicRadius":"243",
+		"covalentRadius":"203",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 8, 1}",
+		"ionizationEnergies":"{418.8, 3052., 4420., 5877., 7975., 9590., 11343., 14944., 16963.7, 48610.}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"275"
+	},
+	{
+		"atomicRadius":"194",
+		"covalentRadius":"176",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 8, 2}",
+		"ionizationEnergies":"{589.8, 1145.4, 4912.4, 6491., 8153., 10496., 12270., 14206., 18191., 20385., 57110.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"184",
+		"covalentRadius":"170",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 9, 2}",
+		"ionizationEnergies":"                                                                                                                              4          5         5\n{633.1, 1235.0, 2388.6, 7090.6, 8843., 10679., 13310., 15250., 17370., 21726., 24102., 66320., 73010., 80160., 89490., 9.74 10 , 1.056 10 , 1.17 10 , 124270., 547530., 582163.}",
+		"quantumNumbers":"2\n D\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"176",
+		"covalentRadius":"160",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 2}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 10, 2}",
+		"ionizationEnergies":"                                                                                                                               5          5          5          5\n{658.8, 1309.8, 2652.5, 4174.6, 9581., 11533., 13590., 16440., 18530., 20833., 25575., 28125., 76015., 83280., 90880., 1.007 10 , 1.091 10 , 1.178 10 , 1.299 10 , 137530., 602930.}",
+		"quantumNumbers":"3\n F\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"171",
+		"covalentRadius":"153",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 3}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 11, 2}",
+		"ionizationEnergies":"                                                                                                                             5          5          5          5          5\n{650.9, 1414., 2830., 4507., 6298.7, 12363., 14530., 16730., 19860., 22240., 24670., 29730., 32446., 86450., 94170., 1.023 10 , 1.127 10 , 1.216 10 , 1.307 10 , 1.434 10 , 151440.}",
+		"quantumNumbers":"4\n F\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"166",
+		"covalentRadius":"139",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 5}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 13, 1}",
+		"ionizationEnergies":"                                                                                                                             5          5          5          5          5          5\n{652.9, 1590.6, 2987., 4743., 6702., 8744.9, 15455., 17820., 20190., 23580., 26130., 28750., 34230., 37066., 97510., 1.058 10 , 1.143 10 , 1.253 10 , 1.347 10 , 1.443 10 , 1.577 10 }",
+		"quantumNumbers":"7\n S\n  3",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"161",
+		"covalentRadius":"139",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 5}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 13, 2}",
+		"ionizationEnergies":"                                                   4                 4                                                                   5          5          5          5          5\n{717.3, 1509.0, 3248., 4940., 6990., 9220., 1.15 10 , 18770., 2.14 10 , 23960., 27590., 30330., 33150., 38880., 41987., 109480., 1.181 10 , 1.271 10 , 1.386 10 , 1.485 10 , 1.586 10 }",
+		"quantumNumbers":"6\n S\n  5\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"156",
+		"covalentRadius":"132",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 14, 2}",
+		"ionizationEnergies":"                                                                                  4                                 4                  5         5          5          5         5\n{762.5, 1561.9, 2957., 5290., 7240., 9560., 12060., 14580., 22540., 25290., 2.8 10 , 31920., 34830., 37840., 4.41 10 , 47206., 1.222 10 , 1.31 10 , 1.405 10 , 1.526 10 , 1.63 10 }",
+		"quantumNumbers":"5\n D\n  4",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"152",
+		"covalentRadius":"126",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 7}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 15, 2}",
+		"ionizationEnergies":"                                                                                  4         4         4         4         4                                            5          5\n{760.4, 1648., 3232., 4950., 7670., 9840., 12440., 15230., 17959., 26570., 2.94 10 , 3.24 10 , 3.66 10 , 3.97 10 , 4.28 10 , 49396., 52737., 134810., 145170., 1.547 10 , 1.674 10 }",
+		"quantumNumbers":"4\n F\n  9\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"149",
+		"covalentRadius":"124",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 8}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 16, 2}",
+		"ionizationEnergies":"                             3                4         4         4         4                        4         4         4         4         4                          5         5          5\n{737.1, 1753.0, 3395., 5.3 10 , 7339., 1.04 10 , 1.28 10 , 1.56 10 , 1.86 10 , 21670., 30970., 3.4 10 , 3.71 10 , 4.15 10 , 4.48 10 , 4.81 10 , 55101., 58570., 1.487 10 , 1.59 10 , 1.694 10 }",
+		"quantumNumbers":"3\n F\n  4",
+		"vanDerWaalsRadius":"163"
+	},
+	{
+		"atomicRadius":"145",
+		"covalentRadius":"132",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 1}",
+		"ionizationEnergies":"                                    3        3         4        4         4         4         4         4         4        4         4         4         4         4                  5          5\n{745.5, 1957.9, 3555., 5536., 7.7 10 , 9.9 10 , 1.34 10 , 1.6 10 , 1.92 10 , 2.24 10 , 2.56 10 , 3.56 10 , 3.87 10 , 4.2 10 , 4.67 10 , 5.02 10 , 5.37 10 , 6.11 10 , 64702., 1.637 10 , 1.741 10 }",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"140"
+	},
+	{
+		"atomicRadius":"142",
+		"covalentRadius":"122",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 2}",
+		"ionizationEnergies":"                                            4         4         4         4        4         4                         4         4         4         4         4         4         4          5\n{906.4, 1733.3, 3833., 5731., 7970., 1.04 10 , 1.29 10 , 1.68 10 , 1.96 10 , 2.3 10 , 2.64 10 , 29990., 40490., 4.38 10 , 4.73 10 , 5.23 10 , 5.59 10 , 5.97 10 , 6.73 10 , 7.12 10 , 1.791 10 }",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"139"
+	},
+	{
+		"atomicRadius":"136",
+		"covalentRadius":"122",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 3}",
+		"ionizationEnergies":"{578.8, 1979.3, 2963., 6180.}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"187"
+	},
+	{
+		"atomicRadius":"125",
+		"covalentRadius":"120",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 4}",
+		"ionizationEnergies":"{762., 1537.5, 3302.1, 4411., 9020.}",
+		"quantumNumbers":"3\n P\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"114",
+		"covalentRadius":"119",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 3}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 5}",
+		"ionizationEnergies":"{947.0, 1798., 2735., 4837., 6043., 12310.}",
+		"quantumNumbers":"4\n S\n  3\/2",
+		"vanDerWaalsRadius":"185"
+	},
+	{
+		"atomicRadius":"103",
+		"covalentRadius":"120",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 4}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 6}",
+		"ionizationEnergies":"{941.0, 2045., 2973.7, 4144., 6590., 7880., 14990.}",
+		"quantumNumbers":"3\n P\n  2",
+		"vanDerWaalsRadius":"190"
+	},
+	{
+		"atomicRadius":"94",
+		"covalentRadius":"120",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 5}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 7}",
+		"ionizationEnergies":"                                                          4\n{1139.9, 2103., 3470., 4560., 5760., 8550., 9940., 1.86 10 }",
+		"quantumNumbers":"2\n P\n  3\/2",
+		"vanDerWaalsRadius":"185"
+	},
+	{
+		"atomicRadius":"87",
+		"covalentRadius":"116",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 8}",
+		"ionizationEnergies":"                                                                                    4         4         4         4         4         4         4         4         4         4         4\n{1350.8, 2350.4, 3565., 5070., 6240., 7570., 10710., 12138., 22274., 25880., 2.97 10 , 3.38 10 , 3.77 10 , 4.31 10 , 4.75 10 , 5.22 10 , 5.71 10 , 6.18 10 , 7.58 10 , 8.04 10 , 8.53 10 }",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"202"
+	},
+	{
+		"atomicRadius":"265",
+		"covalentRadius":"220",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 8, 1}",
+		"ionizationEnergies":"                                                                 4\n{403.0, 2633., 3860., 5080., 6850., 8140., 9570., 13120., 1.45 10 , 26740.}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"219",
+		"covalentRadius":"195",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 8, 2}",
+		"ionizationEnergies":"                             3                               4         4         4\n{549.5, 1064.2, 4138., 5.5 10 , 6910., 8760., 10230., 1.18 10 , 1.56 10 , 1.71 10 }",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"212",
+		"covalentRadius":"190",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 9, 2}",
+		"ionizationEnergies":"       2                                                                    4\n{6.0 10 , 1180., 1980., 5847., 7430., 8970., 11190., 12450., 14110., 1.84 10 }",
+		"quantumNumbers":"2\n D\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"206",
+		"covalentRadius":"175",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 2}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 10, 2}",
+		"ionizationEnergies":"                                          3\n{640.1, 1270., 2218., 3313., 7752., 9.5 10 }",
+		"quantumNumbers":"3\n F\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"198",
+		"covalentRadius":"164",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 4}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 12, 1}",
+		"ionizationEnergies":"                            3                       4\n{652.1, 1380., 2416., 3.7 10 , 4877., 9847., 1.21 10 }",
+		"quantumNumbers":"6\n D\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"190",
+		"covalentRadius":"154",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 5}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 13, 1}",
+		"ionizationEnergies":"                                                                                                                          4         4         4        4         4        4\n{684.3, 1560., 2618., 4480., 5257., 6640.8, 12125., 13860., 15835., 17980., 20190., 22219., 26930., 29196., 52490., 5.5 10 , 6.14 10 , 6.77 10 , 7.4 10 , 8.04 10 , 8.7 10 }",
+		"quantumNumbers":"7\n S\n  3",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"183",
+		"covalentRadius":"147",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 5}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 13, 2}",
+		"ionizationEnergies":"{702., 1470., 2850.}",
+		"quantumNumbers":"6\n S\n  5\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"178",
+		"covalentRadius":"146",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 7}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 15, 1}",
+		"ionizationEnergies":"{710.2, 1620., 2747.}",
+		"quantumNumbers":"5\n F\n  5",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"173",
+		"covalentRadius":"142",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 8}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 16, 1}",
+		"ionizationEnergies":"{719.7, 1740., 2997.}",
+		"quantumNumbers":"4\n F\n  9\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"169",
+		"covalentRadius":"139",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18}",
+		"ionizationEnergies":"{804.4, 1870., 3177.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"163"
+	},
+	{
+		"atomicRadius":"165",
+		"covalentRadius":"145",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 1}",
+		"ionizationEnergies":"{731.0, 2070., 3361.}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"172"
+	},
+	{
+		"atomicRadius":"161",
+		"covalentRadius":"144",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 2}",
+		"ionizationEnergies":"{867.8, 1631.4, 3616.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"158"
+	},
+	{
+		"atomicRadius":"156",
+		"covalentRadius":"142",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 3}",
+		"ionizationEnergies":"{558.3, 1820.7, 2704., 5210.}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"193"
+	},
+	{
+		"atomicRadius":"145",
+		"covalentRadius":"139",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 4}",
+		"ionizationEnergies":"{708.6, 1411.8, 2943.0, 3930.3, 7456.}",
+		"quantumNumbers":"3\n P\n  0",
+		"vanDerWaalsRadius":"217"
+	},
+	{
+		"atomicRadius":"133",
+		"covalentRadius":"139",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 3}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 5}",
+		"ionizationEnergies":"                                   3         4\n{834., 1594.9, 2440., 4260., 5.4 10 , 1.04 10 }",
+		"quantumNumbers":"4\n S\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"123",
+		"covalentRadius":"138",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 4}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 6}",
+		"ionizationEnergies":"                                                  4\n{869.3, 1790., 2698., 3610., 5668., 6820., 1.32 10 }",
+		"quantumNumbers":"3\n P\n  2",
+		"vanDerWaalsRadius":"206"
+	},
+	{
+		"atomicRadius":"115",
+		"covalentRadius":"139",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 5}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 7}",
+		"ionizationEnergies":"{1008.4, 1845.9, 3180.}",
+		"quantumNumbers":"2\n P\n  3\/2",
+		"vanDerWaalsRadius":"198"
+	},
+	{
+		"atomicRadius":"108",
+		"covalentRadius":"140",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 8}",
+		"ionizationEnergies":"{1170.4, 2046.4, 3099.4}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"216"
+	},
+	{
+		"atomicRadius":"298",
+		"covalentRadius":"244",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 8, 1}",
+		"ionizationEnergies":"                      3\n{375.7, 2234.3, 3.4 10 }",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"253",
+		"covalentRadius":"215",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 8, 2}",
+		"ionizationEnergies":"                     3\n{502.9, 965.2, 3.6 10 }",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"207",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 18, 9, 2}",
+		"ionizationEnergies":"{538.1, 1067., 1850.3, 4819., 5940.}",
+		"quantumNumbers":"2\n D\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"204",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 1}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 19, 9, 2}",
+		"ionizationEnergies":"{534.4, 1050., 1949., 3547., 6325., 7490.}",
+		"quantumNumbers":"1\n G\n  4",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"247",
+		"covalentRadius":"203",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 3}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 21, 8, 2}",
+		"ionizationEnergies":"{527., 1020., 2086., 3761., 5551.}",
+		"quantumNumbers":"4\n I\n  9\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"206",
+		"covalentRadius":"201",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 4}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 22, 8, 2}",
+		"ionizationEnergies":"                            3\n{533.1, 1040., 2130., 3.9 10 }",
+		"quantumNumbers":"5\n I\n  4",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"205",
+		"covalentRadius":"199",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 5}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 23, 8, 2}",
+		"ionizationEnergies":"{540., 1050., 2150., 3970.}",
+		"quantumNumbers":"6\n H\n  5\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"238",
+		"covalentRadius":"198",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 6}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 24, 8, 2}",
+		"ionizationEnergies":"{544.5, 1070., 2260., 3990.}",
+		"quantumNumbers":"7\n F\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"231",
+		"covalentRadius":"198",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 7}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 25, 8, 2}",
+		"ionizationEnergies":"{547.1, 1085., 2404., 4120.}",
+		"quantumNumbers":"8\n S\n  7\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"233",
+		"covalentRadius":"196",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 7}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 25, 9, 2}",
+		"ionizationEnergies":"{593.4, 1170., 1990., 4250.}",
+		"quantumNumbers":"9\n D\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"225",
+		"covalentRadius":"194",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 9}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 27, 8, 2}",
+		"ionizationEnergies":"{565.8, 1110., 2114., 3839.}",
+		"quantumNumbers":"6\n H\n  15\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"228",
+		"covalentRadius":"192",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 10}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 28, 8, 2}",
+		"ionizationEnergies":"                     3\n{573.0, 1130., 2.2 10 , 3990.}",
+		"quantumNumbers":"5\n I\n  8",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"226",
+		"covalentRadius":"192",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 11}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 29, 8, 2}",
+		"ionizationEnergies":"                            3\n{581.0, 1140., 2204., 4.1 10 }",
+		"quantumNumbers":"4\n I\n  15\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"226",
+		"covalentRadius":"189",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 12}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 30, 8, 2}",
+		"ionizationEnergies":"{589.3, 1150., 2194., 4120.}",
+		"quantumNumbers":"3\n H\n  6",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"222",
+		"covalentRadius":"190",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 13}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 31, 8, 2}",
+		"ionizationEnergies":"{596.7, 1160., 2285., 4120.}",
+		"quantumNumbers":"2\n F\n  7\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"222",
+		"covalentRadius":"187",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 8, 2}",
+		"ionizationEnergies":"{603.4, 1174.8, 2417., 4203.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"217",
+		"covalentRadius":"187",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 9, 2}",
+		"ionizationEnergies":"{523.5, 1340., 2022.3, 4370., 6445.}",
+		"quantumNumbers":"2\n D\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"208",
+		"covalentRadius":"175",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 2}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 10, 2}",
+		"ionizationEnergies":"{658.5, 1440., 2250., 3216.}",
+		"quantumNumbers":"3\n F\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"200",
+		"covalentRadius":"170",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 3}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 11, 2}",
+		"ionizationEnergies":"             3\n{761., 1.5 10 }",
+		"quantumNumbers":"4\n F\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"193",
+		"covalentRadius":"162",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 4}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 12, 2}",
+		"ionizationEnergies":"             3\n{770., 1.7 10 }",
+		"quantumNumbers":"5\n D\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"188",
+		"covalentRadius":"151",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 5}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 13, 2}",
+		"ionizationEnergies":"{760., 1260., 2510., 3640.}",
+		"quantumNumbers":"6\n S\n  5\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"185",
+		"covalentRadius":"144",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 14, 2}",
+		"ionizationEnergies":"             3\n{840., 1.6 10 }",
+		"quantumNumbers":"5\n D\n  4",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"180",
+		"covalentRadius":"141",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 7}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 15, 2}",
+		"ionizationEnergies":"             3\n{880., 1.6 10 }",
+		"quantumNumbers":"4\n F\n  9\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"177",
+		"covalentRadius":"136",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 9}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 17, 1}",
+		"ionizationEnergies":"{870., 1791.}",
+		"quantumNumbers":"3\n D\n  3",
+		"vanDerWaalsRadius":"175"
+	},
+	{
+		"atomicRadius":"174",
+		"covalentRadius":"136",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 1}",
+		"ionizationEnergies":"{890.1, 1980.}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"166"
+	},
+	{
+		"atomicRadius":"171",
+		"covalentRadius":"132",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 2}",
+		"ionizationEnergies":"                      3\n{1007.1, 1810., 3.3 10 }",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"155"
+	},
+	{
+		"atomicRadius":"156",
+		"covalentRadius":"145",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 3}",
+		"ionizationEnergies":"{589.4, 1971., 2878.}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"196"
+	},
+	{
+		"atomicRadius":"154",
+		"covalentRadius":"146",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 4}",
+		"ionizationEnergies":"{715.6, 1450.5, 3081.5, 4083., 6640.}",
+		"quantumNumbers":"3\n P\n  0",
+		"vanDerWaalsRadius":"202"
+	},
+	{
+		"atomicRadius":"143",
+		"covalentRadius":"148",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 3}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 5}",
+		"ionizationEnergies":"                                  3\n{703., 1610., 2466., 4370., 5.4 10 , 8520.}",
+		"quantumNumbers":"4\n S\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"135",
+		"covalentRadius":"140",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 4}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 6}",
+		"ionizationEnergies":"{812.1}",
+		"quantumNumbers":"3\n P\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"127",
+		"covalentRadius":"150",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 5}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 7}",
+		"ionizationEnergies":"{920.}",
+		"quantumNumbers":"2\n P\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"120",
+		"covalentRadius":"150",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 8}",
+		"ionizationEnergies":"{1037.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"260",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 8, 1}",
+		"ionizationEnergies":"{380.}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"221",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 8, 2}",
+		"ionizationEnergies":"{509.3, 979.0}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"215",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 9, 2}",
+		"ionizationEnergies":"{499., 1170.}",
+		"quantumNumbers":"2\n D\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"206",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6, 2}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 18, 10, 2}",
+		"ionizationEnergies":"{587., 1110., 1930., 2780.}",
+		"quantumNumbers":"3\n F\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"200",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 2}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 20, 9, 2}",
+		"ionizationEnergies":"{568.}",
+		"quantumNumbers":"4\n K\n  11\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"196",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 3}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 21, 9, 2}",
+		"ionizationEnergies":"{597.6, 1420.}",
+		"quantumNumbers":"5\n L\n  6",
+		"vanDerWaalsRadius":"186"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"190",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 4}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 22, 9, 2}",
+		"ionizationEnergies":"{604.5}",
+		"quantumNumbers":"6\n L\n  11\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"187",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 6}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 24, 8, 2}",
+		"ionizationEnergies":"{584.7}",
+		"quantumNumbers":"7\n F\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"180",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 7}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 25, 8, 2}",
+		"ionizationEnergies":"{578.}",
+		"quantumNumbers":"8\n S\n  7\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"169",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 7}, {2, 6, 1}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 25, 9, 2}",
+		"ionizationEnergies":"{581.}",
+		"quantumNumbers":"9\n D\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 9}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 27, 8, 2}",
+		"ionizationEnergies":"{601.}",
+		"quantumNumbers":"6\n H\n  15\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 10}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 28, 8, 2}",
+		"ionizationEnergies":"{608.}",
+		"quantumNumbers":"5\n I\n  8",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 11}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 29, 8, 2}",
+		"ionizationEnergies":"{619.}",
+		"quantumNumbers":"5\n I\n  15\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 12}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 30, 8, 2}",
+		"ionizationEnergies":"{627.}",
+		"quantumNumbers":"3\n H\n  6",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 13}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 31, 8, 2}",
+		"ionizationEnergies":"{635.}",
+		"quantumNumbers":"2\n F\n  7\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 8, 2}",
+		"ionizationEnergies":"{642.}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 8, 3}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 2}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 10, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"3\n F\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 3}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 11, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"4\n F\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 4}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 12, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"5\n D\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 5}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 13, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"6\n S\n  5\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 6}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 14, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"5\n D\n  4",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 7}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 15, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"4\n F\n  9\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 9}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 17, 1}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"3\n D\n  3",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 1}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"2\n S\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 2}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 1}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 3}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"2\n P\n  1\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 2}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 4}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"3\n P\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 3}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 5}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"4\n S\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 4}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 6}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"3\n P\n  2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 5}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 7}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"2\n P\n  3\/2",
+		"vanDerWaalsRadius":"Unknown"
+	},
+	{
+		"atomicRadius":"Unknown",
+		"covalentRadius":"Unknown",
+		"electronConfiguration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}}",
+		"electronConfigurationString":null,
+		"electronShellConfiguration":"{2, 8, 18, 32, 32, 18, 8}",
+		"ionizationEnergies":"{}",
+		"quantumNumbers":"1\n S\n  0",
+		"vanDerWaalsRadius":"Unknown"
+	}
+]

@@ -57,4 +57,4 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["material.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
+Export["material.json", periodicTable, "JSON"];

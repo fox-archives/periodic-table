@@ -1,4 +1,12 @@
 #!/bin/bash
+./all-json.wls
+./atomic-json.wls
+./basic-chemical-json.wls
+./colors.wls
+./electromagnetic-optical-json.wls
+./material-json.wls
+./nuclear-json.wls
+./thermodynamic-json.wls
 
 # tell subroutine tells user what script is being run
 tell() {
@@ -13,39 +21,46 @@ then
   echo "Enter param"
 
 # Else, if theere are parameters, check and see if there any matching ones. If not, tell that there are no matching parameters
-else
+# else
 
-  if [ "$1" == "-all" ]
-  then
-    tell "all"
-    ./all-json.wls
+#   if [ "$1" == "-all" ]
+#   then
+#     tell "all"
+#     ./all-json.wls
   
-  elif [ "$1" == "-col" ]
-  then
-    tell "colors"
-    ./colors.wls
+#   elif [ "$1" == "-col" ]
+#   then
+#     tell "colors"
+#     ./colors.wls
   
-  elif [ "$1" == "-com" ]
-  then
-    tell "common-methods"
-    ./common-methods.wls
+#   elif [ "$1" == "-com" ]
+#   then
+#     tell "common-methods"
+#     ./common-methods.wls
   
-  elif [ "$1" == "-mat" ]
-  then
-    tell "material"
-    ./material-json.wls
+#   elif [ "$1" == "-mat" ]
+#   then
+#     tell "material"
+#     ./material-json.wls
   
-  elif [ "$1" == "-therm" ]
-  then
-    tell "thermodynamic"
-    ./thermodynamic-json.wls
+#   elif [ "$1" == "-therm" ]
+#   then
+#     tell "thermodynamic"
+#     ./thermodynamic-json.wls
   
-  elif [ "$1" == "-electromag" ]
-  then
-    tell "electromagnet-optical"
-    ./electromagnetic-optical-json.wls
-  else
-    echo "Param invalid"
-  fi
+#   elif [ "$1" == "-electromag" ]
+#   then
+#     tell "electromagnet-optical"
+#     ./electromagnetic-optical-json.wls
+
+#   elif [ "$1" == "-basic-chem" ]
+#   then
+#     tell "basic chemistry"
+#     ./basic-chemical-json.wls
+
+#   else
+#     echo "Param invalid"
+
+#   fi
 
 fi

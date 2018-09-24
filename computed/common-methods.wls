@@ -35,6 +35,7 @@ convertToUnknownNA[str_]:=
 scientificToRegular[num_]:=
 	If[NumberQ[num],
 		Return[DecimalForm[N[num]]];,
+		(* Return[N[num]];, *)
 		(* Else *)
 		Return[num];
 	];
@@ -46,5 +47,27 @@ transformProperty[prop_]:=
 		newProp = ToString[newProp];
 		newProp = convertToUnknownNA[newProp];
 		newProp = removeEndingPeriod[newProp];
+		Return[newProp];
+	];
+
+
+objectToObject[prop_]:=
+	(* Use the "if" statement just like last time *)
+	If["true" === "true",
+		newProp = ToString[prop];
+		Return[newProp];
+	];
+
+toHTMLSuperScript[]:=
+	If["true" === "true",
+		(* Unprotects Mathematica's Superscript method, so it can be overriden *)
+		Unprotect[Superscript];
+		Superscript[x_, y_] := Return[StringJoin[ToString[x], "<sup>", ToString[y], "</sup>"]];
+
+		newProp = ToString@ElementData[i, "ElectronConfigurationString"];
+		(* Restores Mathematica's Superscript method *)
+		Superscript[x_, y_]=.
+
+		Print@newProp
 		Return[newProp];
 	];

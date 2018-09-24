@@ -12,24 +12,11 @@ Do[
 	abbreviation = ElementData[i, "Abbreviation"];
 	block = ElementData[i, "Block"];
 	atomicWeight = ElementData[i, "AtomicWeight"];
-	meltingPoint = ElementData[i, "AbsoluteMeltingPoint"];
-	boilingPoint = ElementData[i, "AbsoluteBoilingPoint"];
 	
 	(* FORMAT ATOMICWEIGHT ACCORDINGLY *)
-	atomicWeight = ToString[atomicWeight];
-	atomicWeight = removeEndingPeriod[atomicWeight];
-	
-	(* FORMAT MELTINGPOINT ACCORDINGLY *)
-	meltingPoint = scientificToRegular[meltingPoint];
-	meltingPoint = ToString[meltingPoint];
-	meltingPoint = convertToUnknownNA[meltingPoint];
-	meltingPoint = removeEndingPeriod[meltingPoint];
-	
-	(* FORMAT BOILINGPOINT ACCORDINGLY *)
-	boilingPoint = scientificToRegular[boilingPoint];
-	boilingPoint = ToString[boilingPoint];
-	boilingPoint = convertToUnknownNA[boilingPoint];
-	boilingPoint = removeEndingPeriod[boilingPoint];
+	(* atomicWeight = ToString[atomicWeight];
+	atomicWeight = removeEndingPeriod[atomicWeight]; *)
+	atomicWeight = transformProperty[atomicWeight];
 	
 	newElement = {
 		"label" -> i,

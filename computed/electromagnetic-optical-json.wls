@@ -31,10 +31,10 @@ Do[
 	volumeMagneticSusceptibility = transformProperty[volumeMagneticSusceptibility];
 	
 	newElement = {
-		"color" -> color,
+		"color" -> color, (* Prob don't need this *)
 		"electricalConductivity" -> electricalConductivity,
-		"electricalType" -> electricalType,
-		"magneticType" -> magneticType,
+		"electricalType" -> electricalType, (* Prob don't need this *)
+		"magneticType" -> magneticType, (* Maybe don't need this *)
 		"massMagneticSusceptibility" -> massMagneticSusceptibility,
 		"molarMagneticSusceptibility" -> molarMagneticSusceptibility,
 		(* RefractiveIndex *)

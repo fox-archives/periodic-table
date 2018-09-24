@@ -11,7 +11,7 @@
 		"name":"Helium",
 		"abbreviation":"He",
 		"block":"s",
-		"atomicMass":"4.002602"
+		"atomicMass":"4.0026"
 	},
 	{
 		"label":3,
@@ -25,7 +25,7 @@
 		"name":"Beryllium",
 		"abbreviation":"Be",
 		"block":"s",
-		"atomicMass":"9.0121831"
+		"atomicMass":"9.01218"
 	},
 	{
 		"label":5,
@@ -60,7 +60,7 @@
 		"name":"Fluorine",
 		"abbreviation":"F",
 		"block":"p",
-		"atomicMass":"18.998403163"
+		"atomicMass":"18.9984"
 	},
 	{
 		"label":10,
@@ -74,7 +74,7 @@
 		"name":"Sodium",
 		"abbreviation":"Na",
 		"block":"s",
-		"atomicMass":"22.98976928"
+		"atomicMass":"22.9898"
 	},
 	{
 		"label":12,
@@ -88,7 +88,7 @@
 		"name":"Aluminum",
 		"abbreviation":"Al",
 		"block":"p",
-		"atomicMass":"26.9815385"
+		"atomicMass":"26.9815"
 	},
 	{
 		"label":14,
@@ -102,7 +102,7 @@
 		"name":"Phosphorus",
 		"abbreviation":"P",
 		"block":"p",
-		"atomicMass":"30.973761998"
+		"atomicMass":"30.9738"
 	},
 	{
 		"label":16,
@@ -144,7 +144,7 @@
 		"name":"Scandium",
 		"abbreviation":"Sc",
 		"block":"d",
-		"atomicMass":"44.955908"
+		"atomicMass":"44.9559"
 	},
 	{
 		"label":22,
@@ -172,7 +172,7 @@
 		"name":"Manganese",
 		"abbreviation":"Mn",
 		"block":"d",
-		"atomicMass":"54.938044"
+		"atomicMass":"54.938"
 	},
 	{
 		"label":26,
@@ -186,7 +186,7 @@
 		"name":"Cobalt",
 		"abbreviation":"Co",
 		"block":"d",
-		"atomicMass":"58.933194"
+		"atomicMass":"58.9332"
 	},
 	{
 		"label":28,
@@ -221,14 +221,14 @@
 		"name":"Germanium",
 		"abbreviation":"Ge",
 		"block":"p",
-		"atomicMass":"72.630"
+		"atomicMass":"72.63"
 	},
 	{
 		"label":33,
 		"name":"Arsenic",
 		"abbreviation":"As",
 		"block":"p",
-		"atomicMass":"74.921595"
+		"atomicMass":"74.9216"
 	},
 	{
 		"label":34,
@@ -270,7 +270,7 @@
 		"name":"Yttrium",
 		"abbreviation":"Y",
 		"block":"d",
-		"atomicMass":"88.90584"
+		"atomicMass":"88.9058"
 	},
 	{
 		"label":40,
@@ -284,7 +284,7 @@
 		"name":"Niobium",
 		"abbreviation":"Nb",
 		"block":"d",
-		"atomicMass":"92.90637"
+		"atomicMass":"92.9064"
 	},
 	{
 		"label":42,
@@ -312,7 +312,7 @@
 		"name":"Rhodium",
 		"abbreviation":"Rh",
 		"block":"d",
-		"atomicMass":"102.90550"
+		"atomicMass":"102.906"
 	},
 	{
 		"label":46,
@@ -326,7 +326,7 @@
 		"name":"Silver",
 		"abbreviation":"Ag",
 		"block":"d",
-		"atomicMass":"107.8682"
+		"atomicMass":"107.868"
 	},
 	{
 		"label":48,
@@ -347,28 +347,28 @@
 		"name":"Tin",
 		"abbreviation":"Sn",
 		"block":"p",
-		"atomicMass":"118.710"
+		"atomicMass":"118.71"
 	},
 	{
 		"label":51,
 		"name":"Antimony",
 		"abbreviation":"Sb",
 		"block":"p",
-		"atomicMass":"121.760"
+		"atomicMass":"121.76"
 	},
 	{
 		"label":52,
 		"name":"Tellurium",
 		"abbreviation":"Te",
 		"block":"p",
-		"atomicMass":"127.60"
+		"atomicMass":"127.6"
 	},
 	{
 		"label":53,
 		"name":"Iodine",
 		"abbreviation":"I",
 		"block":"p",
-		"atomicMass":"126.90447"
+		"atomicMass":"126.904"
 	},
 	{
 		"label":54,
@@ -382,7 +382,7 @@
 		"name":"Cesium",
 		"abbreviation":"Cs",
 		"block":"s",
-		"atomicMass":"132.90545196"
+		"atomicMass":"132.905"
 	},
 	{
 		"label":56,
@@ -396,7 +396,7 @@
 		"name":"Lanthanum",
 		"abbreviation":"La",
 		"block":"f",
-		"atomicMass":"138.90547"
+		"atomicMass":"138.905"
 	},
 	{
 		"label":58,
@@ -410,7 +410,7 @@
 		"name":"Praseodymium",
 		"abbreviation":"Pr",
 		"block":"f",
-		"atomicMass":"140.90766"
+		"atomicMass":"140.908"
 	},
 	{
 		"label":60,
@@ -452,21 +452,21 @@
 		"name":"Terbium",
 		"abbreviation":"Tb",
 		"block":"f",
-		"atomicMass":"158.92535"
+		"atomicMass":"158.925"
 	},
 	{
 		"label":66,
 		"name":"Dysprosium",
 		"abbreviation":"Dy",
 		"block":"f",
-		"atomicMass":"162.500"
+		"atomicMass":"162.5"
 	},
 	{
 		"label":67,
 		"name":"Holmium",
 		"abbreviation":"Ho",
 		"block":"f",
-		"atomicMass":"164.93033"
+		"atomicMass":"164.93"
 	},
 	{
 		"label":68,
@@ -480,7 +480,7 @@
 		"name":"Thulium",
 		"abbreviation":"Tm",
 		"block":"f",
-		"atomicMass":"168.93422"
+		"atomicMass":"168.934"
 	},
 	{
 		"label":70,
@@ -494,7 +494,7 @@
 		"name":"Lutetium",
 		"abbreviation":"Lu",
 		"block":"d",
-		"atomicMass":"174.9668"
+		"atomicMass":"174.967"
 	},
 	{
 		"label":72,
@@ -508,7 +508,7 @@
 		"name":"Tantalum",
 		"abbreviation":"Ta",
 		"block":"d",
-		"atomicMass":"180.94788"
+		"atomicMass":"180.948"
 	},
 	{
 		"label":74,
@@ -550,7 +550,7 @@
 		"name":"Gold",
 		"abbreviation":"Au",
 		"block":"d",
-		"atomicMass":"196.966569"
+		"atomicMass":"196.967"
 	},
 	{
 		"label":80,
@@ -578,7 +578,7 @@
 		"name":"Bismuth",
 		"abbreviation":"Bi",
 		"block":"p",
-		"atomicMass":"208.98040"
+		"atomicMass":"208.98"
 	},
 	{
 		"label":84,
@@ -627,21 +627,21 @@
 		"name":"Thorium",
 		"abbreviation":"Th",
 		"block":"f",
-		"atomicMass":"232.0377"
+		"atomicMass":"232.038"
 	},
 	{
 		"label":91,
 		"name":"Protactinium",
 		"abbreviation":"Pa",
 		"block":"f",
-		"atomicMass":"231.03588"
+		"atomicMass":"231.036"
 	},
 	{
 		"label":92,
 		"name":"Uranium",
 		"abbreviation":"U",
 		"block":"f",
-		"atomicMass":"238.02891"
+		"atomicMass":"238.029"
 	},
 	{
 		"label":93,
