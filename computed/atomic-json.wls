@@ -11,23 +11,22 @@ Do[
 	atomicRadius = ElementData[i, "AtomicRadius"];
 	covalentRadius = ElementData[i, "CovalentRadius"];
 	electronConfiguration = ElementData[i, "ElectronConfiguration"];
-	(* electronConfigurationString = ElementData[i, "ElectronConfigurationString"]; *)
+	electronConfigurationString = toHTMLSuperScript[i, "ElectronConfigurationString"];
 	electronShellConfiguration = ElementData[i, "ElectronShellConfiguration"];
-	ionizationEnergies = ElementData[i, "IonizationEnergies"];
-	quantumNumbers = ElementData[i, "QuantumNumbers"];
+	ionizationEnergies = customFunction[i, "IonizationEnergies"];
+	(* ionizationEnergies = ElementData[i, "IonizationEnergies"]; *)
+	(* quantumNumbers = ElementData[i, "QuantumNumbers"]; *)
 	vanDerWaalsRadius = ElementData[i, "VanDerWaalsRadius"];
 
 	(* Format all Properties *)
 	atomicRadius = transformProperty[atomicRadius];
 	covalentRadius = transformProperty[covalentRadius];
 	electronConfiguration = objectToObject[electronConfiguration];
-	electronConfigurationString = toHTMLSuperScript[];
+	(*  electronConfigurationString *)
 	electronShellConfiguration = objectToObject[electronShellConfiguration];
-	ionizationEnergies = objectToObject[ionizationEnergies];
-	quantumNumbers = transformProperty[quantumNumbers];
+	(* ionizationEnergies = objectToObject[ionizationEnergies]; *)
+	(* quantumNumbers = toHTMLSuperScript[i]; *)
 	vanDerWaalsRadius = transformProperty[vanDerWaalsRadius];
-
-	Print@electronConfigurationString;
 	
 	newElement = {
 		"atomicRadius" -> atomicRadius,
@@ -36,7 +35,7 @@ Do[
 		"electronConfigurationString" -> electronConfigurationString,
 		"electronShellConfiguration" -> electronShellConfiguration,
 		"ionizationEnergies" -> ionizationEnergies,
-		"quantumNumbers" -> quantumNumbers,
+		(* quantumNumbers *)
 		"vanDerWaalsRadius" -> vanDerWaalsRadius
 	};
 	
@@ -44,6 +43,9 @@ Do[
 , {i, 1, 118}];
 
 Export["atomic.json", periodicTable, "JSON"];
+
+
+
 
 
 

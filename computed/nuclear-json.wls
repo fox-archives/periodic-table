@@ -49,3 +49,6 @@ Do[
 , {i, 1, 118}];
 
 Export["atomic.json", periodicTable, "JSON"];
+
+
+

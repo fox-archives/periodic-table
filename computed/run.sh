@@ -1,16 +1,28 @@
 #!/bin/bash
-./all-json.wls
-./atomic-json.wls
-./basic-chemical-json.wls
-./colors.wls
-./electromagnetic-optical-json.wls
-./material-json.wls
-./nuclear-json.wls
-./thermodynamic-json.wls
+
+exall() {
+  echo "EXEC all.json-wls"
+  ./all-json.wls
+  echo "EXEC atomic-json.wls"
+  ./atomic-json.wls
+  echo "EXEC basic-chemical-json.wls"
+  ./basic-chemical-json.wls
+  echo "EXEC colors.wls"
+  ./colors.wls
+  echo "EXEC electromagnetic-optical-json.wls"
+  ./electromagnetic-optical-json.wls
+  echo "EXEC material-json.wls"
+  ./material-json.wls
+  echo "EXEC nuclear-json.wls"
+  ./nuclear-json.wls
+  echo "EXEC thermodynamic-json.wls"
+  ./thermodynamic-json.wls
+}
+
 
 # tell subroutine tells user what script is being run
 tell() {
-	echo "Exec $1"
+  echo "Exec $1"
 }
 
 # $1 represents the first parameter being passed through
@@ -21,7 +33,10 @@ then
   echo "Enter param"
 
 # Else, if theere are parameters, check and see if there any matching ones. If not, tell that there are no matching parameters
-# else
+else
+    if [ "$1" == "-all" ]
+    then
+      exall
 
 #   if [ "$1" == "-all" ]
 #   then
@@ -58,9 +73,9 @@ then
 #     tell "basic chemistry"
 #     ./basic-chemical-json.wls
 
-#   else
-#     echo "Param invalid"
+  else
+    echo "Param invalid"
 
-#   fi
+  fi
 
 fi
