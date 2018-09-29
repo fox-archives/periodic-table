@@ -4,8 +4,8 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
   mode: 'development',
-  // devtool: 'inline-source-map', // this puts code from original source into browser (in dev tools, code looks like source)
-  devtool: 'eval',
+  devtool: 'cheap-module-eval-source-map',
+  // devtool: 'eval',
   output: {
     publicPath: '/'
   },

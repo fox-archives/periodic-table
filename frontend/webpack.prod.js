@@ -12,6 +12,8 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  // devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -35,7 +37,9 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin(), // Minify JS
+      new UglifyJsPlugin({
+        sourceMap: true
+      }), // Minify JS
       new OptimizeCssAssetsPlugin(), // Minify CSS
       new CompressionPlugin(), // Gzip JS and CSS
     ]
