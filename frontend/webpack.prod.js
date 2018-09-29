@@ -2,12 +2,13 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const webpack = require('webpack');
 const path = require('path');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 // Unique to Production Environment
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -34,12 +35,9 @@ module.exports = merge(common, {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
-        sourceMap: false
-      }),
-      new OptimizeCssAssetsPlugin({
-
-      })
+      new UglifyJsPlugin(), // Minify JS
+      new OptimizeCssAssetsPlugin(), // Minify CSS
+      new CompressionPlugin(), // Gzip JS and CSS
     ]
   },
   plugins: [

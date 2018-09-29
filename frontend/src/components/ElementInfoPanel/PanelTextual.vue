@@ -19,8 +19,6 @@
 <script>
   import { mapGetters } from 'vuex';
   import PerfectScrollbar from 'perfect-scrollbar';
-  import OverlayScrollbars from 'overlayscrollbars';
-  // import OverlayScrollbars from 'overlayscrollbars/js/OverlayScrollbars.min.js';
 
   export default {
     name: 'PanelTextual',
@@ -33,16 +31,6 @@
       let psPanelTextual = new PerfectScrollbar('#textual-inner', {
         swipeEasing: true, // Default
       });
-
-      // OverlayScrollbars(document.querySelectorAll("#textual-buffer"), {
-      //   overflowBehavior: {
-      //     x: "hidden",
-      //   }
-      // });
-
-      // document.addEventListener("DOMContentLoaded", function() {
-      //         OverlayScrollbars(document.querySelectorAll("#textual-inner"), { });
-      // });
     }
 
   }

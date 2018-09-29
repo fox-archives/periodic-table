@@ -1,7 +1,7 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
 
 module.exports = {
   entry: './src/index.js',
@@ -67,7 +67,8 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new CompressionPlugin(),
+
+    new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
 
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',

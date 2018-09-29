@@ -8,7 +8,6 @@
 </template>
 
 <script>
-  import PerfectScrollbar from 'perfect-scrollbar';
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
   import PeriodicTable from '../../components/PeriodicTable/PeriodicTable.vue';
