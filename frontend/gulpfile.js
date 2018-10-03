@@ -10,18 +10,18 @@ gulp.task('deploy-html', function() {
 
 gulp.task('deploy-json', function() {
   // Pipe uncompressed and compressed assets
-  gulp.src('../computed/*.json')
-  .pipe(gulp.dest('../backend/uncompressed-assets/data'))
+  gulp.src('../computed/json/*.json')
+  .pipe(gulp.dest('../backend/assets-uncompressed/data'))
   .pipe(jsonminify())
   .pipe(gulp.dest('../backend/assets/data'));
 
   // Pipe compressed, then gziped assets
-  gulp.src('../computed/*.json')
+  gulp.src('../computed/json/*.json')
   .pipe(gzip())
   .pipe(gulp.dest('../backend/assets/data'));
 
   // Pipe compressed, then brotlized assets
-  gulp.src('../computed/*.json')
+  gulp.src('../computed/json/*.json')
   .pipe(brotli.compress())
   .pipe(gulp.dest('../backend/assets/data'));
 });
