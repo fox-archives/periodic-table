@@ -3,7 +3,7 @@
 
 (* Setup *)
 Import["common-methods.wls"];
-DeleteFile["all.json"];
+DeleteFile["json/all.json"];
 
 periodicTable = {};
 	
@@ -29,4 +29,4 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["all.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
+Export["json/all.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];

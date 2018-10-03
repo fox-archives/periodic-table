@@ -8,6 +8,7 @@ DeleteFile["basic-chemical.json"];
 periodicTable = {};
 	 
 Do[
+	(* Supposed to be other stuff *)
 	electronAffinity = ElementData[i, "ElectronAffinity"];
 	electronegativity = ElementData[i, "Electronegativity"];
 	gasAtomicMultiplicities = ElementData[i, "GasAtomicMultiplicities"];

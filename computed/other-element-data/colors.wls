@@ -3,7 +3,7 @@
 
 (* Setup *)
 Import["common-functions"];
-DeleteFile["colors.json"];
+DeleteFile["json/colors.json"];
 
 periodicTable = {};
 
@@ -23,4 +23,4 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["colors.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
+Export["json/colors.json", periodicTable, "JSON"(*, "Compact" \[Rule] True*)];
