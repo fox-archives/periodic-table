@@ -10,31 +10,24 @@
         </ul>
 
         <ul id="nav-items">
-          <li class="nav-item text" id="simple-wide">
-          <router-link class="nav-item-body link" to="/simple">
-            <type-icon class="icon feather-icon"></type-icon>
-            <h2 class="heading"> Simple </h2>
-          </router-link>
-          </li>
-
           <li class="nav-item text" id="properties-wide">
           <router-link class="nav-item-body link" to="/properties">
             <list-icon class="icon feather-icon"></list-icon>
-            <h2 class="heading">Properties</h2>
+            <h2 class="heading" v-on:click="loadOtherData"> Properties </h2>
           </router-link>
           </li>
 
           <li class="nav-item text" id="electrons-wide">
           <router-link class="nav-item-body link" to="/electrons">
             <electrons class="icon custom-icon"></electrons>
-            <h2 class="heading">Electrons </h2>
+            <h2 class="heading"> Electrons </h2>
           </router-link>
           </li>
 
           <li class="nav-item text" id="orbitals-wide">
           <router-link class="nav-item-body link" to="/orbitals">
             <orbitals class="icon custom-icon"></orbitals>
-            <h2 class="heading">Orbitals</h2>
+            <h2 class="heading"> Orbitals </h2>
           </router-link>
           </li>
 
@@ -100,6 +93,7 @@
 
 <script type="text/javascript">
   import { mapGetters } from 'vuex';
+  import { mapActions } from 'vuex';
   import blurBackground from '../../mixins/blurBackground.js';
 
 
@@ -133,6 +127,9 @@
       }
     },
     methods: {
+      ...mapActions([
+        'loadOtherData'
+      ]),
       infoPopup: function(state) {
         // TODO: Add blur (Try to use Vuesax event for popup close, if it exists)
         if(state === "on") {

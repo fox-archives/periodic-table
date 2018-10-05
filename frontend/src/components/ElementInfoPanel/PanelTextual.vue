@@ -5,7 +5,7 @@
         <div id="textual-content">
           <div class="stat" v-for="n in 15">
             <div class="stat-icon">
-              <p>Lorem</p>
+              <p> {{ activeElement.density }} </p>
             </div>
             <div class="stat-text">
             </div>
@@ -24,7 +24,8 @@
     name: 'PanelTextual',
     computed: {
       ...mapGetters([
-        'options'
+        'options',
+        'activeElement'
       ])
     },
     mounted() {

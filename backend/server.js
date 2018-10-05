@@ -1,88 +1,40 @@
 const express = require('express');
+const compression = require('compression');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const morgan = require('morgan');
 
-const app = express();
+const cors = require('cors');
 const path = require('path');
 
-// Use Morgan log generator
-app.use(morgan('combined'));
+const app = express();
+app.use(compression()); // Allow for Gzip compression
+app.use(bodyParser.json()); // Allow express to parse .json requests sent in
+app.use(morgan('combined')); // Use Morgan log generator
 
-// Allow express to parse .json requests sent in
-app.use(bodyParser.json());
+// app.use(express.static('public')); // This replaces the bottom two lines
+app.use('/old', express.static(path.join(__dirname, 'public/old')));
+app.use('/element-data', express.static(path.join(__dirname, 'public/element-data')));
 
-//app.use(cors());
+app.get('*.json', function(req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+});
 
-// Import .json from element
-const color = require('./assets/element/color.json');
-const discovered = require('./assets/element/discovered.json');
-const placement = require('./assets/element/placement.json');
-const simple = require('./assets/element/simple.json');
+// app.use(cors());
 
-// Import .json from label
-const period = require('./assets/label/period.json');
-const group = require('./assets/label/group.json');
-
-
-// Respond with "Hello World" on get request to the home page
-// TODO: Convert functions below from ES5 to ES6 syntax
+// Respond with 'Working' on get request to the home page
 app.get('/', function(req, res) {
-  res.send('Working')
+  res.send('<p style="font-family: Arial; font-size: 1.5em;">Working</p>')
 });
-
-// TODO: Add favicon and make server sends favicon on request
-app.get('/favicon.ico', function(req, res) {
-
-});
-
-// Element Information
-// Each element color
-app.get('/api/data/element/color', function(req, res) {
-  res.json(color)
-});
-
-// Discovery Data and Discoverer
-app.get('/api/data/element/discovered', function(req, res) {
-  res.json(discovered)
-});
-
-// Placement in Array
-app.get('/api/data/element/placement', function(req, res) {
-  res.json(placement)
-});
-
-// All simple element data
-app.get('/api/data/element/simple', function(req, res) {
-  res.json(simple)
-});
-
-// Period labels
-app.get('/api/data/label/period', function(req, res) {
-  res.json(period)
-});
-
-// Group Labels
-app.get('/api/data/label/group', function(req, res) {
-  res.json(group)
-});
-
 
 // Catch-all request (if user goes to a URL that only the client can resolve (AKA vue-router),
 // send the user the .html file, rather than trying to resolve the URL server-side
-// If this is disabled, would get something like 'Cannot GET /simple'
+// If this is disabled, would get something like 'Cannot GET /orbitals, if client navigates to /orbitals tab'
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'), function(err) {
     if (err) {
       res.status(500).send(err)
     }
-  })
-});
-
-// Some unimplemented registration route
-app.post('/register', (req, res) => {
-  res.send({
-    message: `${req.body.email} was registered`
   })
 });
 

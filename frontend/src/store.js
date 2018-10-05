@@ -33,6 +33,7 @@ export default new Vuex.Store({
       discoveryDate: '1766',
       discoveredBy: 'Henry Cavendish',
       index: 0,
+      density: ''
     },
 
     // Data about a clicked element
@@ -55,7 +56,8 @@ export default new Vuex.Store({
       blurType: 'no-blur'
     },
 
-    contentState: ''
+    contentState: '',
+    extraElementData: []
 
   },
   getters: {
@@ -80,7 +82,8 @@ export default new Vuex.Store({
     },
 
     // Value determining if the data is ready to be rendered (after all Axios requests)
-    // 'ready' value changes to 'true' after *some* Axios requests, but good enough
+    // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
+    // TODO: Fix this
     ready: function(state) {
       return state.ready;
     },
@@ -117,6 +120,8 @@ export default new Vuex.Store({
         state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
         state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
         state.activeElement.color = state.eColors[index].defaultColor;
+
+        state.activeElement.density = state.extraElementData[index].density;
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
@@ -130,6 +135,8 @@ export default new Vuex.Store({
       state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
       state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
       state.activeElement.color = state.eColors[index].defaultColor;
+
+      state.activeElement.density = state.extraElementData[index].density;
     },
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
@@ -373,32 +380,32 @@ export default new Vuex.Store({
     }
 
   },
-  // Allow to run Async code
+  // Runs async code
   actions: {
     loadElementData: function() {
       // Element Calls
-      axios.get('/api/data/element/color')
+      axios.get('/old/element/color.json')
         .then((response) => {
           this.state.eColors = response.data;
           console.log("Color Complete");
         })
         .catch((error) => console.log(error));
 
-      axios.get('/api/data/element/discovered')
+      axios.get('/old/element/discovered.json')
         .then((response) => {
           this.state.eDiscovered = response.data;
           console.log("Discovered Complete");
         })
         .catch((error) => console.log(error));
 
-      axios.get('/api/data/element/placement')
+      axios.get('/old/element/placement.json')
         .then((response) => {
           this.state.ePlacements = response.data;
           console.log("Placement Complete");
         })
         .catch((error) => console.log(error));
 
-      axios.get('/api/data/element/simple')
+      axios.get('/old/element/simple.json')
         .then((response) => {
           this.state.simpleData = response.data;
           this.state.ready = true;
@@ -407,19 +414,27 @@ export default new Vuex.Store({
         .catch((error) => console.log(error));
 
       // Period / Group calls
-      axios.get('/api/data/label/period')
+      axios.get('/old/label/period.json')
         .then((response) => {
           this.state.periodData = response.data;
           console.log("Period Complete");
         })
         .catch((error) => console.log(error));
 
-      axios.get('/api/data/label/group')
+      axios.get('/old/label/group.json')
         .then((response) => {
           this.state.groupData = response.data;
           console.log("Group Complete");
         })
         .catch((error) => console.log(error));
+    },
+    loadOtherData: function() {
+      axios.get('/element-data/properties.json')
+      .then((response) => {
+        this.state.extraElementData = response.data;
+        console.log('Other Data Complete');
+      })
+      .catch((error) => console.log(error));
     }
   }
 });

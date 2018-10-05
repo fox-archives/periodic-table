@@ -12,10 +12,6 @@ const myRoutes = [
     component: Body
   },
   {
-    path: '/simple',
-    component: Body
-  },
-  {
     path: '/properties',
     component: Body
   },

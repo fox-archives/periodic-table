@@ -8,6 +8,7 @@ gulp.task('deploy-html', function() {
   .pipe(gulp.dest('../backend'));
 });
 
+// TODO: Clear out files before copying new ones over
 gulp.task('deploy-json', function() {
   // Pipe uncompressed and compressed assets
   gulp.src('../computed/json/*.json')
@@ -17,11 +18,13 @@ gulp.task('deploy-json', function() {
 
   // Pipe compressed, then gziped assets
   gulp.src('../computed/json/*.json')
+  .pipe(jsonminify())
   .pipe(gzip())
   .pipe(gulp.dest('../backend/assets/data'));
 
   // Pipe compressed, then brotlized assets
   gulp.src('../computed/json/*.json')
+  .pipe(jsonminify())
   .pipe(brotli.compress())
   .pipe(gulp.dest('../backend/assets/data'));
 });

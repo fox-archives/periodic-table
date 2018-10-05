@@ -29,6 +29,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^0.1.19",
+    "compression": "^1.7.3",
     "compression-webpack-plugin": "^1.1.12",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.11",
