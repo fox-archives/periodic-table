@@ -12,7 +12,6 @@ gulp.task('deploy-html', function() {
 gulp.task('deploy-json', function() {
   // Pipe uncompressed and compressed assets
   gulp.src('../computed/json/*.json')
-  .pipe(gulp.dest('../backend/assets-uncompressed/data'))
   .pipe(jsonminify())
   .pipe(gulp.dest('../backend/assets/data'));
 
