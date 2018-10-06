@@ -138,6 +138,7 @@ export default new Vuex.Store({
 
       state.activeElement.density = state.extraElementData[index].density;
     },
+    // updateActiveElementCategory
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
     // @param #object 'payload' contains properties:
