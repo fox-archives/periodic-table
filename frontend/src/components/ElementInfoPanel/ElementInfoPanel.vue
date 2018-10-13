@@ -1,14 +1,12 @@
 <template>
   <section id="panel">
-    <PanelVisual></PanelVisual>
-    <PanelTextual></PanelTextual>
+    <router-view name="visualInfo"></router-view>
+    <router-view name="textualInfo"></router-view>
   </section>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
-import PanelVisual from './PanelVisual.vue';
-import PanelTextual from './PanelTextual.vue';
 
   export default {
     name: 'ElementInfoPanel',
@@ -16,10 +14,6 @@ import PanelTextual from './PanelTextual.vue';
       ...mapGetters([
         'options'
       ])
-    },
-    components: {
-      PanelVisual,
-      PanelTextual
     }
   }
 </script>

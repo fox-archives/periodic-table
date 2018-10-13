@@ -10,8 +10,9 @@
 <script>
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import PeriodicTable from '../../components/PeriodicTable/PeriodicTable.vue';
-  import ElementInfoPanel from '../../components/ElementInfoPanel/ElementInfoPanel.vue';
+  import debounce from 'lodash/debounce';
+  import PeriodicTable from '@/components/PeriodicTable/PeriodicTable.vue';
+  import ElementInfoPanel from '@/components/ElementInfoPanel/ElementInfoPanel.vue';
 
 
   export default {
@@ -34,6 +35,13 @@
       // TODO: Clean this up and make the required updates in the DOM instantaneously, when the DOM is ready
       // Not sure how to do that
 
+      let that = this;
+      function calculateLayout() {
+        that.setClassLayout();
+        that.setMobilePeriodicTableWidth();
+        that.sizeElementText();
+      }
+
       let setClassLayoutFirstLoad = setInterval(() => {
         // If the document is loaded, clear the timer, setClassLayout
         // should only be activated on page resize
@@ -50,6 +58,8 @@
         }
       }, 100);
 
+
+
       window.addEventListener('resize', () => {
         setTimeout(() => {
           this.setClassLayout();
@@ -57,18 +67,12 @@
           this.sizeElementText();
         }, 500);
       });
-
-      // this.setClassLayout();
-      // this.setMobilePeriodicTableWidth();
-      // this.sizeElementText();
-
-      // Apparently this doesn't work (probably because when DOM content is loaded, it doesn't necessarily mean that Vue has finished mounting el
-      // But again, why can't I enter these commands directly after mounted?
-      // document.addEventListener('DOMContentLoaded', () => {
-      //   this.setClassLayout();
-      //   this.setMobilePeriodicTableWidth();
-      //   this.sizeElementText();
-      // }, false);
+      // Below is supposed to clean up code directly above, but cannot get it to work
+      // window.addEventListener('resize', () => {
+      //   console.log(debounce);
+      //   debounce(calculateLayout(), 500, {'trailing': true});
+      // });
+      //
 
       // Apparently you need a set interval after this Vue component is created, especially for the method setMobilePeriodicTableWidth
       setTimeout(() => {
@@ -76,13 +80,19 @@
         this.setMobilePeriodicTableWidth();
         this.sizeElementText();
       }, 1000);
+      // Below is supposed to fix code directly above, but does not
+      // Vue.nextTick(() => {
+      //   this.setClassLayout();
+      //   this.setMobilePeriodicTableWidth();
+      //   this.sizeElementText();
+      // });
 
-      // TODO: Would be better to make on event listener for resize, but do we want the classLayouts to delay by 50ms? I don't think so
-      window.addEventListener('resize', () => {
-        this.setClassLayout();
-        this.setMobilePeriodicTableWidth();
-        this.sizeElementText();
-      });
+      // // TODO: Would be better to make on event listener for resize, but do we want the classLayouts to delay by 50ms? I don't think so
+      // window.addEventListener('resize', () => {
+      //   this.setClassLayout();
+      //   this.setMobilePeriodicTableWidth();
+      //   this.sizeElementText();
+      // });
     },
     components: {
       ElementInfoPanel,

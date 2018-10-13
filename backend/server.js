@@ -26,7 +26,7 @@ app.get('/*', function(req, res) {
     if (err) {
       res.status(500).send(err)
     }
-  })
+  });
 });
 
 const port = process.env.PORT || 3000;

@@ -120,8 +120,6 @@ export default new Vuex.Store({
         state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
         state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
         state.activeElement.color = state.eColors[index].defaultColor;
-
-        state.activeElement.density = state.extraElementData[index].density;
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
@@ -135,8 +133,6 @@ export default new Vuex.Store({
       state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
       state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
       state.activeElement.color = state.eColors[index].defaultColor;
-
-      state.activeElement.density = state.extraElementData[index].density;
     },
     // updateActiveElementCategory
 

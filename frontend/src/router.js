@@ -3,21 +3,37 @@ import VueRouter from 'vue-router'
 import Body from './views/Body/Body.vue';
 import Explore from './views/Explore/Explore.vue';
 import Trivia from './views/Trivia/Trivia.vue';
+import PanelTextualProperties from './components/ElementInfoPanel/PanelTextual.vue';
+import PanelVisualColor from './components/ElementInfoPanel/PanelVisual.vue';
 
 Vue.use(VueRouter);
 
 const myRoutes = [
   {
     path: '/',
-    component: Body
+    redirect: '/properties'
   },
   {
     path: '/properties',
-    component: Body
+    component: Body,
+    children: [{
+      path: '',
+      components: {
+        textualInfo: PanelTextualProperties,
+        visualInfo: PanelVisualColor
+      }
+    }]
   },
   {
     path: '/electrons',
-    component: Body
+    component: Body,
+    children: [{
+      path: '',
+      components: {
+        textualInfo: PanelTextualProperties,
+        visualInfo: PanelVisualColor
+      }
+    }]
   },
   {
     path: '/orbitals',
