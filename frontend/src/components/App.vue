@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Navigation from './Navigation/Navigation.vue';
-import Footer from './Footer/Footer.vue';
+import Navigation from './navigation/Navigation.vue';
+import Footer from './footer/Footer.vue';
 
 export default {
   computed: {

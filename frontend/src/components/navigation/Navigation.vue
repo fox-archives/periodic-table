@@ -112,9 +112,9 @@
   import { Menu } from 'vue-feather-icon';
 
   // Import Popups
-  import InfoPopup from '../Popups/Info.vue';
-  import MenuPopup from '../Popups/Menu.vue';
-  import OptionsPopup from '../Popups/Options.vue';
+  import InfoPopup from '../popups/Info.vue';
+  import MenuPopup from '../popups/Menu.vue';
+  import OptionsPopup from '../popups/Options.vue';
 
   export default {
     name: 'Navigation',

@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Body from './views/Body/Body.vue';
-import Explore from './views/Explore/Explore.vue';
-import Trivia from './views/Trivia/Trivia.vue';
+import Body from './views/body/Body.vue';
+import Explore from './views/explore/Explore.vue';
+import Trivia from './views/trivia/Trivia.vue';
 import PanelTextualProperties from './components/detailed-element-info/properties-info.vue';
 import PanelVisualColor from './components/detailed-element-visual/properties-visual.vue';
 
