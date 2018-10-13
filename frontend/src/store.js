@@ -359,15 +359,20 @@ export default new Vuex.Store({
     sizeElementText: function() {
       // For periodicTable.vue
       let grid = document.getElementById('grid');
-      let elementWidth = grid.childNodes[0].clientWidth;
-      let primaryFontSize = (elementWidth * 0.32) + 'px';
-      let secondaryFontSize = (elementWidth * 0.2) + 'px';
-      let labelFontSize = (elementWidth * 0.3) + 'px';
+      console.log(grid);
+      // if(grid !== null) {
+        let elementWidth = grid.childNodes[0].clientWidth;
+        let primaryFontSize = (elementWidth * 0.32) + 'px';
+        let secondaryFontSize = (elementWidth * 0.2) + 'px';
+        let labelFontSize = (elementWidth * 0.3) + 'px';
+      // }
 
       // For properties-visual.vue and properties-info.vue
       let visualInnerWidth = document.getElementById('visual-inner');
-      let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
+      if(visualInnerWidth !== null) {
+        let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
       // console.log(elementNameFontSize);
+      }
 
       // Setting CSS Variables for All Elements
       grid.style.setProperty('--primaryTextSize', primaryFontSize);

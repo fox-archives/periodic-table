@@ -40,6 +40,6 @@
 
 <style scoped lang="scss">
   @import '../../styles/variables.scss';
-  @import 'properties-info-theme';
+  @import 'info-theme';
   @import 'detailed-info';
 </style>

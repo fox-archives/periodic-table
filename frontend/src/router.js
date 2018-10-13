@@ -3,8 +3,10 @@ import VueRouter from 'vue-router'
 import Body from './views/body/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
-import PanelTextualProperties from './components/detailed-element-info/properties-info.vue';
-import PanelVisualColor from './components/detailed-element-visual/properties-visual.vue';
+import propertiesInfo from './components/detailed-element-info/properties-info.vue';
+import propertiesVisual from './components/detailed-element-visual/properties-visual.vue';
+import electronsVisual from './components/detailed-element-visual/electrons-visual.vue';
+import orbitalsVisual from './components/detailed-element-visual/orbitals-visual.vue';
 
 
 Vue.use(VueRouter);
@@ -20,8 +22,8 @@ const myRoutes = [
     children: [{
       path: '',
       components: {
-        textualInfo: PanelTextualProperties,
-        visualInfo: PanelVisualColor
+        textualInfo: propertiesInfo,
+        visualInfo: propertiesVisual
       }
     }]
   },
@@ -31,18 +33,32 @@ const myRoutes = [
     children: [{
       path: '',
       components: {
-        textualInfo: PanelTextualProperties,
-        visualInfo: PanelVisualColor
+        textualInfo: propertiesInfo,
+        visualInfo: electronsVisual
       }
     }]
   },
   {
     path: '/orbitals',
-    component: Body
+    component: Body,
+    children: [{
+      path: '',
+      components: {
+        textualInfo: propertiesInfo,
+        visualInfo: orbitalsVisual
+      }
+    }]
   },
   {
     path: '/isotopes',
-    component: Body
+    component: Body,
+    children: [{
+      path: '',
+      components: {
+        textualInfo: propertiesInfo,
+        visualInfo: propertiesVisual
+      }
+    }]
   },
   {
     path: '/explore',

@@ -29,6 +29,6 @@
 
 <style scoped lang="scss">
   @import '../../styles/variables';
-  @import 'propereties-visual-theme';
+  @import 'visual-themes';
   @import 'detailed-visual';
 </style>
