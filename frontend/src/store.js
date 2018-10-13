@@ -359,26 +359,31 @@ export default new Vuex.Store({
     sizeElementText: function() {
       // For periodicTable.vue
       let grid = document.getElementById('grid');
-      console.log(grid);
+      // console.log(grid);
+
       // if(grid !== null) {
         let elementWidth = grid.childNodes[0].clientWidth;
         let primaryFontSize = (elementWidth * 0.32) + 'px';
         let secondaryFontSize = (elementWidth * 0.2) + 'px';
         let labelFontSize = (elementWidth * 0.3) + 'px';
       // }
+      // Setting CSS Variables for All Elements
+      grid.style.setProperty('--primaryTextSize', primaryFontSize);
+      grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
+      grid.style.setProperty('--labelTextSize', labelFontSize);
+
 
       // For properties-visual.vue and properties-info.vue
       let visualInnerWidth = document.getElementById('visual-inner');
       if(visualInnerWidth !== null) {
         let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
+        visualInnerWidth.style.setProperty('--elementNameTextSize', elementNameFontSize);
       // console.log(elementNameFontSize);
       }
+      else {
+        console.warn('VisualInnerWidth div element not defined');
+      }
 
-      // Setting CSS Variables for All Elements
-      grid.style.setProperty('--primaryTextSize', primaryFontSize);
-      grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
-      grid.style.setProperty('--labelTextSize', labelFontSize);
-      visualInnerWidth.style.setProperty('--elementNameTextSize', elementNameFontSize);
     }
 
   },

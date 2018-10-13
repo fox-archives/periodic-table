@@ -26,6 +26,6 @@
   @import 'detailed-visual';
 
   #visual-inner {
-    background-color: $oc-gray-9 !important;
+    background-color: $oc-gray-3 !important;
   }
 </style>
