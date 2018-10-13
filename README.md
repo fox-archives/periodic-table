@@ -11,6 +11,10 @@ Element   | Edge    | Firefox | Chrome    | Safari   | iOS Safari
 ----      | ----    | ------- | -------   | ------   | -----------
 Flexbox   | 12+     | 28+     | 29+, 21+* | 9+, 7+*  | 9.2+, 7.1+*
 Grid      | 16+     | 52+     | 57+       | 10.1+    | 10.3+
-VueJS     | 12+     | 21+     | 23+       | 6+       | 6.1+
+Vue 2.X   | 12+     | 21+     | 23+       | 6+       | 6.1+
 
 \* Supports with extension -moz, -webkit, etc.</br>
+
+## Project Status
+- Migrate to Babel 7
+- Migrate to Vue 3.X, once released
