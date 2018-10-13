@@ -1,10 +1,5 @@
 <template>
     <ul v-bind:class="options.themeType" id="popup-items">
-      <li class="popup-item" id="simple-mobile">
-        <type-icon class="icon feather-icon"></type-icon>
-        <h2 class="heading">Simple</h2>
-      </li>
-
       <li class="popup-item" id="properties-mobile">
         <list-icon class="icon feather-icon"></list-icon>
         <h2 class="heading">Properties</h2>
@@ -40,17 +35,17 @@
   import { mapGetters } from 'vuex';
 
   // Importing to-be-used SVG icons
-  import { Type } from 'vue-feather-icon';
-  import { List } from 'vue-feather-icon';
+  import Type from 'vue-feather-icon/components/type.vue';
+  import List from 'vue-feather-icon/components/list.vue';
   import Electrons from '../../assets/svg/icons/electrons.svg';
   import Orbitals from '../../assets/svg/icons/orbitals.svg';
   import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
   import Isotopes from '../../assets/svg/icons/isotopes.svg';
-  import { Map } from 'vue-feather-icon'; // Explore
-  import { Check } from 'vue-feather-icon'; // Trivia
-  import { Info } from 'vue-feather-icon';
-  import { Settings } from 'vue-feather-icon';
-  import { Search } from 'vue-feather-icon';
+  import Map from 'vue-feather-icon/components/map.vue'; // Explore
+  import Check from 'vue-feather-icon/components/check.vue'; // Trivia
+  import Info from 'vue-feather-icon/components/info.vue';
+  import Settings from 'vue-feather-icon/components/settings.vue';
+  import Search from 'vue-feather-icon/components/search.vue';
 
   export default {
     name: "Menu",
@@ -61,17 +56,17 @@
     },
     components: {
       // Icon Components
-      TypeIcon: Type.default,
-      ListIcon: List.default,
+      TypeIcon: Type,
+      ListIcon: List,
       Electrons,
       Orbitals,
       Orbitals2,
       Isotopes,
-      MapIcon: Map.default, // Explore
-      CheckIcon: Check.default, // Trivia
-      InfoIcon: Info.default,
-      SettingsIcon: Settings.default,
-      SearchIcon: Search.default,
+      MapIcon: Map, // Explore
+      CheckIcon: Check, // Trivia
+      InfoIcon: Info,
+      SettingsIcon: Settings,
+      SearchIcon: Search,
     }
   }
 </script>

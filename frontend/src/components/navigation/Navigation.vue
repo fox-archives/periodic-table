@@ -98,18 +98,17 @@
 
 
   // Importing to-be-used SVG icons
-  import { Type } from 'vue-feather-icon';
-  import { List } from 'vue-feather-icon';
+  import List from 'vue-feather-icon/components/list.vue';
   import Electrons from '../../assets/svg/icons/electrons.svg'
   import Orbitals from '../../assets/svg/icons/orbitals.svg';
   import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
   import Isotopes from '../../assets/svg/icons/isotopes.svg';
-  import { Map } from 'vue-feather-icon'; // Explore
-  import { Check } from 'vue-feather-icon'; // Trivia
-  import { Info } from 'vue-feather-icon';
-  import { Settings } from 'vue-feather-icon';
-  import { Search } from 'vue-feather-icon';
-  import { Menu } from 'vue-feather-icon';
+  import Map from 'vue-feather-icon/components/map.vue'; // Explore
+  import Check from 'vue-feather-icon/components/check.vue'; // Trivia
+  import Info from 'vue-feather-icon/components/info.vue';
+  import Settings from 'vue-feather-icon/components/settings.vue';
+  import Search from 'vue-feather-icon/components/search.vue';
+  import Menu from 'vue-feather-icon/components/menu.vue';
 
   // Import Popups
   import InfoPopup from '../popups/Info.vue';
@@ -180,18 +179,17 @@
       OptionsPopup,
 
       // Icon Components
-      TypeIcon: Type.default,
-      ListIcon: List.default,
+      ListIcon: List,
       Electrons,
       Orbitals,
       Orbitals2,
       Isotopes,
-      MapIcon: Map.default, // Explore
-      CheckIcon: Check.default, // Trivia
-      InfoIcon: Info.default,
-      SettingsIcon: Settings.default,
-      SearchIcon: Search.default,
-      MenuIcon: Menu.default,
+      MapIcon: Map, // Explore
+      CheckIcon: Check, // Trivia
+      InfoIcon: Info,
+      SettingsIcon: Settings,
+      SearchIcon: Search,
+      MenuIcon: Menu,
     },
     mixins: [
       blurBackground

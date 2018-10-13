@@ -25,8 +25,8 @@ Vue.use(Vuesax);
 
 // Feather Icons
 // For some reason, I do not need this declaration, probably because I import vue-feather-icon in other places
-import VueFeatherIcon from 'vue-feather-icon';
-Vue.use(VueFeatherIcon);
+// import VueFeatherIcon from 'vue-feather-icon';
+// Vue.use(VueFeatherIcon);
 
 // Perfect Scrollbar
 import PerfectScrollbar from 'perfect-scrollbar';
