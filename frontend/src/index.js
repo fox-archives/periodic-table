@@ -20,13 +20,15 @@ import 'material-icons/iconfont/material-icons.css';
 
 // VueSax (CSS and Components)
 import Vuesax from 'vuesax';
+// import { vsButton, vsSelect, vsPopup } from 'vuesax/dist/components';
+// import vsButton from 'vuesax/dist/components/vsButton.vue';
+// import vsSelect from 'vuesax/dist/components/vsSelect.vue';
+// import vsPopup from 'vuesax/dist/components/vsPopup.vue';
 import 'vuesax/dist/vuesax.css';
 Vue.use(Vuesax);
-
-// Feather Icons
-// For some reason, I do not need this declaration, probably because I import vue-feather-icon in other places
-// import VueFeatherIcon from 'vue-feather-icon';
-// Vue.use(VueFeatherIcon);
+// Vue.use(vsButton);
+// Vue.use(vsSelect);
+// Vue.use(vsPopup);
 
 // Perfect Scrollbar
 import PerfectScrollbar from 'perfect-scrollbar';
