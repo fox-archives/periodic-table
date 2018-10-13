@@ -19,7 +19,7 @@ import { mapGetters } from 'vuex';
 </script>
 
 <style scoped lang="scss">
-    @import '../../styles/variables.scss';
+    @import '../styles/variables';
 
     // INFO SIDE
     .info-side #panel {

@@ -364,7 +364,7 @@ export default new Vuex.Store({
       let secondaryFontSize = (elementWidth * 0.2) + 'px';
       let labelFontSize = (elementWidth * 0.3) + 'px';
 
-      // For PanelVisual.vue and PanelTextual.vue
+      // For properties-visual.vue and properties-info.vue
       let visualInnerWidth = document.getElementById('visual-inner');
       let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
       // console.log(elementNameFontSize);

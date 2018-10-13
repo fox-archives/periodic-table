@@ -11,8 +11,8 @@
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
   import debounce from 'lodash/debounce';
-  import PeriodicTable from '@/components/PeriodicTable/PeriodicTable.vue';
-  import ElementInfoPanel from '@/components/ElementInfoPanel/ElementInfoPanel.vue';
+  import PeriodicTable from '../../components/PeriodicTable/PeriodicTable.vue';
+  import ElementInfoPanel from '../../components/element-info-visual-container.vue';
 
 
   export default {

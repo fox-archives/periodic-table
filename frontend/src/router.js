@@ -3,8 +3,9 @@ import VueRouter from 'vue-router'
 import Body from './views/Body/Body.vue';
 import Explore from './views/Explore/Explore.vue';
 import Trivia from './views/Trivia/Trivia.vue';
-import PanelTextualProperties from './components/ElementInfoPanel/PanelTextual.vue';
-import PanelVisualColor from './components/ElementInfoPanel/PanelVisual.vue';
+import PanelTextualProperties from './components/detailed-element-info/properties-info.vue';
+import PanelVisualColor from './components/detailed-element-visual/properties-visual.vue';
+
 
 Vue.use(VueRouter);
 

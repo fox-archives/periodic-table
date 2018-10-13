@@ -8,7 +8,7 @@ import store from './store.js';
 import router from './router.js';
 
 // Import Main Application Component
-import App from 'Components/App.vue';
+import App from './components/App.vue';
 
 
 // Import global styles and material design
