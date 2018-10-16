@@ -35,6 +35,8 @@
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
   import blurBackground from '../../mixins/blurBackground.js';
+  import debounce from 'lodash/debounce';
+  import throttle from 'lodash/throttle';
 
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
   export default {
@@ -113,21 +115,15 @@
         let infoChosen = this.infoLocationTypes[this.infoLocationNum - 1];
 
         // Then, set it to global options
-        this.setOptions({
-          infoLocationType: infoChosen
-        });
+        this.setOptions({ infoLocationType: infoChosen });
 
         // Then set the global options for if the info location type is auto
         if(infoChosen === 'info-auto') {
-          this.setOptions({
-            infoLocationTypeIsAuto: true
-          });
+          this.setOptions({ infoLocationTypeIsAuto: true });
           this.updateInfoLocation();
         }
         else {
-          this.setOptions({
-            infoLocationTypeIsAuto: false,
-          });
+          this.setOptions({ infoLocationTypeIsAuto: false });
         }
 
       },
@@ -149,10 +145,19 @@
         ])
     },
     mounted() {
-      this.updateInfoLocation();
+      this.$nextTick(() => {
+        this.updateInfoLocation();
+      });
+      // this.updateInfoLocation();
       window.addEventListener('resize', () => {
         this.updateInfoLocation();
       });
+      // debounce(window.addEventListener('resize', () => {
+      //   this.updateInfoLocation();
+      // }), 50);
+      // window.addEventListener('resize', () => {
+      //   throttle(() => {this.updateInfoLocation()}, 1000);
+      // });
     },
     components: {
       AdvancedOptionsPopUp
