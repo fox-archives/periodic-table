@@ -55,6 +55,52 @@
 
   export default {
     name: 'PeriodicTable',
+    created() {
+      // Load element data via Axios / Fetch API requests to backend
+      this.$store.dispatch('loadElementData');
+
+      console.log(this.$route);
+    },
+    mounted() {
+      // This controls perfect scrollbar only
+      let throttled = false;
+
+      let psPeriodicTable = new PerfectScrollbar('#grid-container', {
+        swipeEasing: true, // Default
+      });
+
+      // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
+      window.addEventListener('resize', () => {
+        if(!throttled) {
+          psPeriodicTable.update();
+          throttled = true;
+          setTimeout(() => {
+            throttled = false;
+          }, 50);
+        }
+
+      });
+    },
+    watch: {
+      '$route': 'fetchData'
+    },
+    computed: {
+      // Mix the getters into computed with object spread operator
+      ...mapGetters([
+        'simpleData',
+        'ePlacements',
+        'eColors',
+        'periodData',
+        'groupData',
+        'eDiscovered',
+
+        'ready',
+
+        'activeElement',
+        'clickedElement',
+        'options'
+      ])
+    },
     methods: {
       ...mapMutations([
         'updateActiveElement',
@@ -301,48 +347,6 @@
           time: 3000
         });
       }
-    },
-    computed: {
-      // Mix the getters into computed with object spread operator
-      ...mapGetters([
-        'simpleData',
-        'ePlacements',
-        'eColors',
-        'periodData',
-        'groupData',
-        'eDiscovered',
-
-        'ready',
-
-        'activeElement',
-        'clickedElement',
-        'options'
-      ]),
-
-    },
-    created() {
-      // Load element data via Axios / Fetch API requests to backend
-      this.$store.dispatch('loadElementData');
-    },
-    mounted() {
-      // This controls perfect scrollbar only
-      let throttled = false;
-
-      let psPeriodicTable = new PerfectScrollbar('#grid-container', {
-        swipeEasing: true, // Default
-      });
-
-      // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
-      window.addEventListener('resize', () => {
-        if(!throttled) {
-          psPeriodicTable.update();
-          throttled = true;
-          setTimeout(() => {
-            throttled = false;
-          }, 50);
-        }
-
-      });
     }
   }
 </script>

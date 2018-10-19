@@ -22,7 +22,7 @@
       ...mapGetters([
         'activeElement',
         'options'
-    ])
+      ])
     }
   }
 </script>

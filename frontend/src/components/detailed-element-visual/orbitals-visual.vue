@@ -15,7 +15,7 @@
       ...mapGetters([
         'activeElement',
         'options'
-    ])
+      ])
     }
   }
 </script>

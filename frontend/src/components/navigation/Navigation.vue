@@ -125,6 +125,11 @@
         settingsPopupActive: false,
       }
     },
+    computed: {
+      ...mapGetters([
+        'options'
+      ]),
+    },
     methods: {
       ...mapActions([
         'loadOtherData'
@@ -166,11 +171,6 @@
           // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
         }
       }
-    },
-    computed: {
-      ...mapGetters([
-        'options'
-      ]),
     },
     components: {
       // Component Popups

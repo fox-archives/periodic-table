@@ -40,7 +40,31 @@
 
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
   export default {
-    name: "Options",
+    name: 'Options',
+    computed: {
+      ...mapGetters([
+        'options'
+      ])
+    },
+    mounted() {
+      this.$nextTick(() => {
+        this.updateInfoLocation();
+      });
+      // this.updateInfoLocation();
+      window.addEventListener('resize', () => {
+        this.updateInfoLocation();
+      });
+      // debounce(window.addEventListener('resize', () => {
+      //   this.updateInfoLocation();
+      // }), 50);
+      // window.addEventListener('resize', () => {
+      //   throttle(() => {this.updateInfoLocation()}, 1000);
+      // });
+    },
+    components: {
+      AdvancedOptionsPopUp
+    },
+
     data() {
       return {
         advancedSettingsPopupActive: false,
@@ -139,32 +163,9 @@
         }
       }
     },
-    computed: {
-        ...mapGetters([
-          'options'
-        ])
-    },
-    mounted() {
-      this.$nextTick(() => {
-        this.updateInfoLocation();
-      });
-      // this.updateInfoLocation();
-      window.addEventListener('resize', () => {
-        this.updateInfoLocation();
-      });
-      // debounce(window.addEventListener('resize', () => {
-      //   this.updateInfoLocation();
-      // }), 50);
-      // window.addEventListener('resize', () => {
-      //   throttle(() => {this.updateInfoLocation()}, 1000);
-      // });
-    },
-    components: {
-      AdvancedOptionsPopUp
-    },
     mixins: [
       blurBackground
-    ]
+    ],
   }
 </script>
 
