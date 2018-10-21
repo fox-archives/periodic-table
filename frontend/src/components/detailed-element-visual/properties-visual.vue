@@ -15,9 +15,18 @@
 
 <script>
   import { mapGetters } from 'vuex';
+  import { mapMutations } from 'vuex';
 
   export default {
     name: 'PanelVisual',
+    methods: {
+      ...mapMutations([
+        'sizeElementText'
+      ])
+    },
+    mounted() {
+      this.sizeElementText()
+    },
     computed: {
       ...mapGetters([
         'activeElement',
