@@ -387,17 +387,8 @@ export default new Vuex.Store({
     }
 
   },
-  // Runs async code
   actions: {
     loadElementData: function() {
-      // Element Calls
-      axios.get('/old/element/color.json')
-        .then((response) => {
-          this.state.eColors = response.data;
-          console.log("Color Complete");
-        })
-        .catch((error) => console.log(error));
-
       axios.get('/old/element/discovered.json')
         .then((response) => {
           this.state.eDiscovered = response.data;
@@ -442,6 +433,14 @@ export default new Vuex.Store({
         console.log('Other Data Complete');
       })
       .catch((error) => console.log(error));
+    },
+    loadElementColors: function(state, payload) {
+      // console.log(payload.colorScheme);
+      axios.get('/element-data/' + payload.colorScheme + '.json')
+        .then((response) => {
+          this.state.eColors = response.data;
+        })
+        .catch((error) => console.log(error));
     }
   }
 });

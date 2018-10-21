@@ -51,6 +51,7 @@
 <script type="text/javascript">
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
+  import { mapActions } from 'vuex';
   import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
@@ -59,7 +60,9 @@
       // Load element data via Axios / Fetch API requests to backend
       this.$store.dispatch('loadElementData');
 
-      console.log(this.$route);
+      this.updateColor();
+
+      // console.log(this.$route.params);
     },
     mounted() {
       // This controls perfect scrollbar only
@@ -82,7 +85,9 @@
       });
     },
     watch: {
-      '$route': 'fetchData'
+      '$route'() {
+        this.updateColor();
+      }
     },
     computed: {
       // Mix the getters into computed with object spread operator
@@ -119,6 +124,26 @@
         'setColorOfOneGroup',
         'setColorOfOneElement'
       ]),
+      ...mapActions([
+        'loadElementColors'
+      ]),
+      // @ param none
+      // Updates color scheme of the periodic table
+      updateColor: function() {
+        console.log('Updating color');
+        console.log(this.$route.path);
+
+        let routePath = this.$route.path.substring(1);
+        if(routePath === 'properties' || routePath === "isotopes") {
+          this.loadElementColors( { colorScheme: 'type' } );
+        }
+        else if(routePath === "electrons" || routePath === "orbitals") {
+          this.loadElementColors( { colorScheme: 'block' } );
+        }
+        else {
+          this.loadElementColors( { colorScheme: 'type' } );
+        }
+      },
 
       // @param #String 'type' can be:
       //   'period'  Want to darken a period
