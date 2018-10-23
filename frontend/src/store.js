@@ -357,6 +357,7 @@ export default new Vuex.Store({
     // This changes the CSS variable to size the element text
     // Recall the CSS variables are declared in grid.scss
     sizeElementText: function() {
+      console.log('test');
       // For periodicTable.vue
       let grid = document.getElementById('grid');
       // console.log(grid);

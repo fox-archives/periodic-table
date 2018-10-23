@@ -19,14 +19,14 @@
 
   export default {
     name: 'PropertiesVisual',
-    afterMounted() {
-      this.sizeElementText();
-    },
-    watch: {
-      '$route'() {
-        this.sizeElementText();
-      }
-    },
+    // afterMounted() {
+    //   this.sizeElementText();
+    // },
+    // watch: {
+    //   '$route'() {
+    //     this.sizeElementText();
+    //   }
+    // },
     computed: {
       ...mapGetters([
         'activeElement',
@@ -35,7 +35,7 @@
     },
     methods: {
       ...mapMutations([
-        'sizeElementText'
+        // 'sizeElementText'
       ])
     }
   }

@@ -61,6 +61,7 @@
       this.$store.dispatch('loadElementData');
 
       this.updateColor();
+      this.sizeElementText();
     },
     mounted() {
       // This controls perfect scrollbar only
@@ -82,9 +83,13 @@
 
       });
     },
+    afterMounted() {
+
+    },
     watch: {
       '$route'() {
         this.updateColor();
+        this.sizeElementText();
       }
     },
     computed: {
@@ -120,7 +125,9 @@
 
         'setColorOfOnePeriod',
         'setColorOfOneGroup',
-        'setColorOfOneElement'
+        'setColorOfOneElement',
+
+        'sizeElementText'
       ]),
       ...mapActions([
         'loadElementColors'
