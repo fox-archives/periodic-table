@@ -15,6 +15,9 @@ gulp.task('deploy-dist', function() {
 
   gulp.src('./dist/bundle.css')
     .pipe(gulp.dest('../backend'));
+
+  gulp.src('./dist/assets/*')
+    .pipe(gulp.dest('../backend/public/assets'));
 });
 
 // TODO: Clear out files before copying new ones over
