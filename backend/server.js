@@ -12,13 +12,24 @@ app.use(morgan('combined')); // Use Morgan log generator
 // app.use(express.static('public')); // This replaces the bottom two lines
 app.use('/old', express.static(path.join(__dirname, 'public/old')));
 app.use('/element-data', express.static(path.join(__dirname, 'public/element-data')));
+app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 // Respond with 'Working' on get request to the home page
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
+    res.sendFile(path.join(__dirname, '/index.html'), function(err) {
+
+  });
+});
+
+app.get('/bundle.js', function(req, res) {
+  res.sendFile(path.join(__dirname, '/bundle.js'), function(err) {
+
+  });
+});
+
+app.get('/bundle.css', function(req, res) {
+  res.sendFile(path.join(__dirname, '/bundle.css'), function(err) {
+
   });
 });
 
@@ -26,10 +37,8 @@ app.get('/', function(req, res) {
 // send the user the .html file, rather than trying to resolve the URL server-side
 // If this is disabled, would get something like 'Cannot GET /orbitals, if client navigates to /orbitals tab'
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'), function(err) {
-    if (err) {
-      res.status(500).send(err)
-    }
+  res.sendFile(path.join(__dirname, '/index.html'), function(err) {
+
   });
 });
 
