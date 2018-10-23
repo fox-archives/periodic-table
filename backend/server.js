@@ -15,7 +15,11 @@ app.use('/element-data', express.static(path.join(__dirname, 'public/element-dat
 
 // Respond with 'Working' on get request to the home page
 app.get('/', function(req, res) {
-  res.send('<p style="font-family: Arial; font-size: 1.5em;">Working</p>')
+    res.sendFile(path.join(__dirname, 'index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  });
 });
 
 // Catch-all request (if user goes to a URL that only the client can resolve (AKA vue-router),
