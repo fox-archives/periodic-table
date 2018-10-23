@@ -10,7 +10,7 @@
   import { mapGetters } from 'vuex';
 
   export default {
-    name: 'PanelVisual',
+    name: 'OrbitalsVisual',
     computed: {
       ...mapGetters([
         'activeElement',

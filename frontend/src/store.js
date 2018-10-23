@@ -392,14 +392,14 @@ export default new Vuex.Store({
       axios.get('/old/element/discovered.json')
         .then((response) => {
           this.state.eDiscovered = response.data;
-          console.log("Discovered Complete");
+          // console.log("Discovered Complete");
         })
         .catch((error) => console.log(error));
 
       axios.get('/old/element/placement.json')
         .then((response) => {
           this.state.ePlacements = response.data;
-          console.log("Placement Complete");
+          // console.log("Placement Complete");
         })
         .catch((error) => console.log(error));
 
@@ -407,7 +407,7 @@ export default new Vuex.Store({
         .then((response) => {
           this.state.simpleData = response.data;
           this.state.ready = true;
-          console.log("Simple Complete");
+          // console.log("Simple Complete");
         })
         .catch((error) => console.log(error));
 
@@ -415,14 +415,14 @@ export default new Vuex.Store({
       axios.get('/old/label/period.json')
         .then((response) => {
           this.state.periodData = response.data;
-          console.log("Period Complete");
+          // console.log("Period Complete");
         })
         .catch((error) => console.log(error));
 
       axios.get('/old/label/group.json')
         .then((response) => {
           this.state.groupData = response.data;
-          console.log("Group Complete");
+          // console.log("Group Complete");
         })
         .catch((error) => console.log(error));
     },
@@ -430,7 +430,7 @@ export default new Vuex.Store({
       axios.get('/element-data/properties.json')
       .then((response) => {
         this.state.extraElementData = response.data;
-        console.log('Other Data Complete');
+        // console.log('Other Data Complete');
       })
       .catch((error) => console.log(error));
     },
@@ -439,6 +439,13 @@ export default new Vuex.Store({
       axios.get('/element-data/' + payload.colorScheme + '.json')
         .then((response) => {
           this.state.eColors = response.data;
+        })
+        .catch((error) => console.log(error));
+    },
+    loadElementProperties: function(state, payload) {
+      axios.get('/element-data/' + '.json')
+        .then((response) =>  {
+          // this.state.
         })
         .catch((error) => console.log(error));
     }

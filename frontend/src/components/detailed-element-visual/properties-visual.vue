@@ -18,19 +18,24 @@
   import { mapMutations } from 'vuex';
 
   export default {
-    name: 'PanelVisual',
-    methods: {
-      ...mapMutations([
-        'sizeElementText'
-      ])
+    name: 'PropertiesVisual',
+    afterMounted() {
+      this.sizeElementText();
     },
-    mounted() {
-      this.sizeElementText()
+    watch: {
+      '$route'() {
+        this.sizeElementText();
+      }
     },
     computed: {
       ...mapGetters([
         'activeElement',
         'options'
+      ])
+    },
+    methods: {
+      ...mapMutations([
+        'sizeElementText'
       ])
     }
   }

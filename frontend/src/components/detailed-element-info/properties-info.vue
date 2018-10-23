@@ -19,20 +19,41 @@
 
 <script>
   import { mapGetters } from 'vuex';
+  import { mapActions } from 'vuex';
   import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
-    name: 'PanelTextual',
+    name: 'PropertiesInfo',
+    created() {
+      this.updateProperties();
+    },
+    mounted() {
+      let psPanelTextual = new PerfectScrollbar('#textual-inner', {
+        swipeEasing: true, // Default
+      });
+    },
+    watch: {
+      '$route'() {
+        this.updateProperties();
+      }
+    },
     computed: {
       ...mapGetters([
         'options',
         'activeElement'
       ])
     },
-    mounted() {
-      let psPanelTextual = new PerfectScrollbar('#textual-inner', {
-        swipeEasing: true, // Default
-      });
+
+    methods: {
+      ...mapActions([
+        'loadElementProperties'
+      ]),
+
+      // Fetch properties of elements
+      updateProperties: function() {
+        // console.log(this.$store.simpleData);
+        this.loadElementProperties();
+      }
     }
 
   }
