@@ -16,6 +16,7 @@
 <script>
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
+  import { EventBus } from "../event-bus";
   import throttle from 'lodash/debounce';
 
   export default {
@@ -28,6 +29,10 @@
       window.addEventListener('resize',
         throttle(this.newSizeInfoVisualText, 50)
       );
+
+      EventBus.$on('set-info-location', payload => {
+        this.newSizeInfoVisualText();
+      });
 
     },
     watch: {
