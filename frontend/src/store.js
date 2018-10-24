@@ -102,8 +102,8 @@ export default new Vuex.Store({
     contentState: function(state) {
       return state.contentState;
     },
-    sizeElementText: function(state) {
-      return state.sizeElementText();
+    sizeElementsText: function(state) {
+      return state.sizeElementsText();
     }
   },
   mutations: {
@@ -288,11 +288,11 @@ export default new Vuex.Store({
       }
     },
 
-    // Sets the color of any elements in the periodic table (NOT the default color)
+    // Purpose: To set the color of any elements in the periodic table (NOT the default color)
+    // @param #object 'payload' contains properties:
+    //   (req) .i  ith term to change the color of (starts at 0)
+    //   (req) .prefix  Prefix to prefix to the color
     setColorOfOneElement: function(state, payload) {
-      // Payload contains an object containing properties
-      //console.log("setColorOfOneElement Called");
-
       let defaultColor = state.eColors[payload.i].defaultColor;
       Vue.set(state.eColors[payload.i], 'color', (payload.prefix + defaultColor));
     },
@@ -318,15 +318,12 @@ export default new Vuex.Store({
     // bigger than the browser on info-side
     setClassLayout: function(state) {
       // Test if the height of periodic-table and element-info-panel are the same
-      // This assumes the element-info panel goes all the way to bottom of window (stops right above footer)
+      // This assumes the properties-visual.vue goes all the way to bottom of window (stops right above footer)
 
       let panelHeight = document.getElementById('grid-container').offsetHeight;
       let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
 
-      // console.log(panelHeight);
-      // console.log(periodicTableHeight);
-
-      // Only change the style if the periodic-table has a greater or equal height fo element info panel
+      // Only change the style if the periodic-table has a greater or equal height for properties-visual.vue
       if (periodicTableHeight >= panelHeight && periodicTableHeight !== 0 && panelHeight !== 0) {
         // This means if panel and periodic-table fill whole window height, increasing
         // width will not increase size of periodic-table, instead it creates whitespace;
@@ -342,7 +339,7 @@ export default new Vuex.Store({
         // To change the length of the #grid-container (so #grid-outer scrolls to fit)
         let gridContainer = document.getElementById('grid');
 
-        // Be sure to change the ratio in periodictable.scss if changed here
+        // Be sure to change the ratio in periodic-table.scss if changed here
         let periodicTableRatio = 0.6;
 
         // Subtract 2 because recall CSS says the height is calc(100% - 2px)
@@ -355,38 +352,21 @@ export default new Vuex.Store({
     },
 
     // This changes the CSS variable to size the element text
-    // Recall the CSS variables are declared in grid.scss
-    sizeElementText: function() {
-      console.log('test');
-      // For periodicTable.vue
+    // Recall the CSS variables are declared in periodic-table.scss
+    sizeElementsText: function() {
       let grid = document.getElementById('grid');
-      // console.log(grid);
 
-      // if(grid !== null) {
-        let elementWidth = grid.childNodes[0].clientWidth;
-        let primaryFontSize = (elementWidth * 0.32) + 'px';
-        let secondaryFontSize = (elementWidth * 0.2) + 'px';
-        let labelFontSize = (elementWidth * 0.3) + 'px';
-      // }
+      let elementWidth = grid.childNodes[0].clientWidth;
+      let primaryFontSize = (elementWidth * 0.32) + 'px';
+      let secondaryFontSize = (elementWidth * 0.2) + 'px';
+      let labelFontSize = (elementWidth * 0.3) + 'px';
+
       // Setting CSS Variables for All Elements
+      // Variables stores in grid
       grid.style.setProperty('--primaryTextSize', primaryFontSize);
       grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
       grid.style.setProperty('--labelTextSize', labelFontSize);
-
-
-      // For properties-visual.vue and properties-info.vue
-      let visualInnerWidth = document.getElementById('visual-inner');
-      if(visualInnerWidth !== null) {
-        let elementNameFontSize = (visualInnerWidth.clientWidth * 0.12) + 'px';
-        visualInnerWidth.style.setProperty('--elementNameTextSize', elementNameFontSize);
-      // console.log(elementNameFontSize);
-      }
-      else {
-        console.warn('VisualInnerWidth div element not defined');
-      }
-
     }
-
   },
   actions: {
     loadElementData: function() {

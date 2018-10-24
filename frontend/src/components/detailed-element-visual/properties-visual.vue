@@ -16,17 +16,25 @@
 <script>
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
+  import throttle from 'lodash/debounce';
 
   export default {
     name: 'PropertiesVisual',
-    // afterMounted() {
-    //   this.sizeElementText();
-    // },
-    // watch: {
-    //   '$route'() {
-    //     this.sizeElementText();
-    //   }
-    // },
+    mounted() {
+      //TODO: Fix this bug with adding delay?
+      setTimeout(() => this.newSizeInfoVisualText(), 20);
+      // this.newSizeInfoVisualText();
+
+      window.addEventListener('resize',
+        throttle(this.newSizeInfoVisualText, 50)
+      );
+
+    },
+    watch: {
+      '$route'() {
+        this.newSizeInfoVisualText();
+      }
+    },
     computed: {
       ...mapGetters([
         'activeElement',
@@ -34,9 +42,12 @@
       ])
     },
     methods: {
-      ...mapMutations([
-        // 'sizeElementText'
-      ])
+      newSizeInfoVisualText: function() {
+          // container is the large color box with large abbreviation, and the area around that (the square)
+          let container = document.getElementById('visual-inner');
+          let fontSize = (container.clientWidth * 0.12) + 'px';
+          container.style.setProperty('--elementNameTextSize', fontSize);
+      }
     }
   }
 </script>

@@ -57,13 +57,13 @@
   export default {
     name: 'PeriodicTable',
     created() {
+      this.updateColor();
       // Load element data via Axios / Fetch API requests to backend
       this.$store.dispatch('loadElementData');
-
-      this.updateColor();
-      this.sizeElementText();
     },
     mounted() {
+      // this.setClassLayout();
+
       // This controls perfect scrollbar only
       let throttled = false;
 
@@ -83,13 +83,9 @@
 
       });
     },
-    afterMounted() {
-
-    },
     watch: {
       '$route'() {
         this.updateColor();
-        this.sizeElementText();
       }
     },
     computed: {
@@ -127,7 +123,7 @@
         'setColorOfOneGroup',
         'setColorOfOneElement',
 
-        'sizeElementText'
+        'setClassLayout'
       ]),
       ...mapActions([
         'loadElementColors'
