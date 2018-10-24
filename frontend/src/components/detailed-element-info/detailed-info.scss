@@ -1,13 +1,13 @@
 .light-def {
-  @include panelTextualThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover);
+  @include panelTextualThemeDefault($ld-background, $ld-background-accent, true, $ld-shadow, $ld-shadow-hover, $ld-text);
 }
 
 .light-con {
-  @include panelTextualThemeDefault($lc-background, true, $lc-shadow, $lc-shadow-hover);
+  @include panelTextualThemeDefault($lc-background, $lc-background-accent, true, $lc-shadow, $lc-shadow-hover, $lc-text);
 }
 
 .dark-def {
-  @include panelTextualThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover);
+  @include panelTextualThemeDefault($dd-background, $dd-background-accent, false, $dd-shadow, $dd-shadow-hover, $dd-text);
 }
 
 // BOTH INFO-SIDE AND INFO-TOP

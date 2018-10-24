@@ -3,11 +3,11 @@
     <div id="visual-inner">
       <div id="icon">
         <div id="icon-inner" v-bind:class="activeElement.color">
-            {{ activeElement.abbreviation }}
+          <p>{{ activeElement.abbreviation }}</p>
         </div>
       </div>
       <div id="text">
-        {{ activeElement.name }}
+        <p>{{ activeElement.name }}</p>
       </div>
     </div>
   </div>

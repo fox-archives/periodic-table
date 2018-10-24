@@ -25,7 +25,21 @@
   @import 'visual-themes';
   @import 'detailed-visual';
 
-  #visual-inner {
-    background-color: $oc-gray-3 !important;
+  .light-def {
+    #visual-inner {
+      background-color: $ld-background !important;
+    }
+  }
+
+  .light-con {
+    #visual-inner {
+      background-color: $lc-background !important;
+    }
+  }
+
+  .dark-def {
+    #visual-inner {
+      background-color: $dd-background !important;
+    }
   }
 </style>
