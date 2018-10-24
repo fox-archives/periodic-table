@@ -189,16 +189,15 @@ export default new Vuex.Store({
 
 
     // ## MANIPULATING ARRAY OF COLORS ## \\
-    // TODO: Change setColorOfAllElements to receieve object rather than string as payload (continuity)
     // Purpose: To set a variant of the default color to all elements
-    // @param #string 'prefix':
-    //   (req) Prefix to be added before the original color of an element
-    setColorOfAllElements: function(state, prefix) {
+    // @param #object 'payload' contains properties:
+    //   (req) .prefix  Prefix to be added before the original color of element
+    setColorOfAllElements: function(state, payload) {
       for(let i = 0; i < state.ePlacements.length; i++) {
         // defaultColor represents default color of a given periodic table element
         let defaultColor = state.eColors[i].defaultColor;
 
-        Vue.set(state.eColors[i], 'color', (prefix + defaultColor));
+        Vue.set(state.eColors[i], 'color', (payload + defaultColor));
       }
     },
 
