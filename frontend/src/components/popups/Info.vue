@@ -10,7 +10,7 @@
   </ul>
   <br>
   <p class="heading">Note</p>
-  <p class="text">Note that this version of the web application is not the latest version.</p>
+  <p class="text">Note that this application is in alpha stage; it is far from appearing complete.</p>
 </aside>
 </template>
 
@@ -25,12 +25,12 @@ export default {
   @import '../../styles/tags.scss';
 
   // TODO: Fix this formatting and add classes to relevant html
-  .info, .heading, .items, .item, .text, .link {
-    margin: 0px;
-    padding: 0px;
-    outline: 0px;
-    box-sizing: border-box;
-  }
+  /*.info, .heading, .items, .item, .text, .link {*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+    /*outline: 0px;*/
+    /*box-sizing: border-box;*/
+  /*}*/
 
   .heading {
     font-size: 1.125em;

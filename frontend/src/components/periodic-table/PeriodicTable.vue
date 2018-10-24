@@ -62,8 +62,6 @@
       this.$store.dispatch('loadElementData');
     },
     mounted() {
-      // this.setClassLayout();
-
       // This controls perfect scrollbar only
       let throttled = false;
 

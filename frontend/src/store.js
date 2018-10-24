@@ -107,9 +107,12 @@ export default new Vuex.Store({
     }
   },
   mutations: {
-    // TODO: Remove the 'Force'
+    // ## PERIODIC TABLE ELEMENT STUFF ## \\
     updateActiveElement: function(state, index) {
       // Update Store variables with Element information according to index
+      // Purpose: To change all properties of active element only when element is on 'clicked' mode
+      // @param #int 'index':
+      //   (req)  Index of element, where activeElement properties will get info from
       if(state.clickedElement.active === false) {
         state.activeElement.index = state.index;
         state.activeElement.abbreviation = state.simpleData[index].abbreviation;
@@ -123,6 +126,9 @@ export default new Vuex.Store({
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
+    // Purpose: To change all properties of active element, in any case
+    // @param #int 'index':
+    //   (req)  Index of element, where activeElement properties will get info from
     updateActiveElementForce: function(state, index) {
       state.activeElement.index = state.index;
       state.activeElement.abbreviation = state.simpleData[index].abbreviation;
@@ -134,7 +140,6 @@ export default new Vuex.Store({
       state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
       state.activeElement.color = state.eColors[index].defaultColor;
     },
-    // updateActiveElementCategory
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
     // @param #object 'payload' contains properties:
@@ -165,6 +170,7 @@ export default new Vuex.Store({
         }
       }
     },
+
     // Purpose: Change the properties of the clicked element, or the element that was clicked on
     // @param #object 'payload' contains properties:
     //   (opt) .active #boolean If an element has been clicked, or a click was activated
@@ -181,9 +187,12 @@ export default new Vuex.Store({
       }
     },
 
-    // NEW METHODS (MORE EFFICIENT)
-    // @param #object 'payload' contains properties:
-    //   (req)  .prefix  Prefix to be added before the original color of an element
+
+    // ## MANIPULATING ARRAY OF COLORS ## \\
+    // TODO: Change setColorOfAllElements to receieve object rather than string as payload (continuity)
+    // Purpose: To set a variant of the default color to all elements
+    // @param #string 'prefix':
+    //   (req) Prefix to be added before the original color of an element
     setColorOfAllElements: function(state, prefix) {
       for(let i = 0; i < state.ePlacements.length; i++) {
         // defaultColor represents default color of a given periodic table element
@@ -193,6 +202,7 @@ export default new Vuex.Store({
       }
     },
 
+    // Purpose: To set a variant of the default color to all but one period
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Period to exclude setting the color of
@@ -212,6 +222,7 @@ export default new Vuex.Store({
       }
     },
 
+    // Purpose: To set a variant of the default color to all but one group
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Group to be excluded setting the color of
@@ -231,6 +242,7 @@ export default new Vuex.Store({
       }
     },
 
+    // Purpose: To set a variant of the default color to all but one element
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Element to be excluded setting the color of (index)
@@ -250,6 +262,7 @@ export default new Vuex.Store({
       }
     },
 
+    // Purpose: To set a variant of the default color to any one period
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Period to include setting the color of
@@ -269,6 +282,7 @@ export default new Vuex.Store({
       }
     },
 
+    // Purpose: To set a variant of the default color to any one group
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Group to be included setting the color of
@@ -288,7 +302,7 @@ export default new Vuex.Store({
       }
     },
 
-    // Purpose: To set the color of any elements in the periodic table (NOT the default color)
+    // Purpose: To set a variant of the default color to any one element
     // @param #object 'payload' contains properties:
     //   (req) .i  ith term to change the color of (starts at 0)
     //   (req) .prefix  Prefix to prefix to the color
@@ -298,7 +312,8 @@ export default new Vuex.Store({
     },
 
 
-    // NAVIGATION STUFF
+    // ## NAVIGATION STUFF ## \\
+    // Purpose: To replace the state options with new ones
     // @param #object 'payload' contains properties:
     //   (req) .themeType #String  The theme that is active
     //   (opt) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
@@ -313,7 +328,7 @@ export default new Vuex.Store({
       }
     },
 
-    // LAYOUT STUFF
+    // ## LAYOUT STUFF ## \\
     // This script makes the periodic-table and element info panel not have a height
     // bigger than the browser on info-side
     setClassLayout: function(state) {
@@ -373,14 +388,12 @@ export default new Vuex.Store({
       axios.get('/old/element/discovered.json')
         .then((response) => {
           this.state.eDiscovered = response.data;
-          // console.log("Discovered Complete");
         })
         .catch((error) => console.log(error));
 
       axios.get('/old/element/placement.json')
         .then((response) => {
           this.state.ePlacements = response.data;
-          // console.log("Placement Complete");
         })
         .catch((error) => console.log(error));
 
@@ -388,7 +401,6 @@ export default new Vuex.Store({
         .then((response) => {
           this.state.simpleData = response.data;
           this.state.ready = true;
-          // console.log("Simple Complete");
         })
         .catch((error) => console.log(error));
 
@@ -396,14 +408,12 @@ export default new Vuex.Store({
       axios.get('/old/label/period.json')
         .then((response) => {
           this.state.periodData = response.data;
-          // console.log("Period Complete");
         })
         .catch((error) => console.log(error));
 
       axios.get('/old/label/group.json')
         .then((response) => {
           this.state.groupData = response.data;
-          // console.log("Group Complete");
         })
         .catch((error) => console.log(error));
     },
@@ -411,12 +421,10 @@ export default new Vuex.Store({
       axios.get('/element-data/properties.json')
       .then((response) => {
         this.state.extraElementData = response.data;
-        // console.log('Other Data Complete');
       })
       .catch((error) => console.log(error));
     },
     loadElementColors: function(state, payload) {
-      // console.log(payload.colorScheme);
       axios.get('/element-data/' + payload.colorScheme + '.json')
         .then((response) => {
           this.state.eColors = response.data;
@@ -426,7 +434,6 @@ export default new Vuex.Store({
     loadElementProperties: function(state, payload) {
       axios.get('/element-data/' + '.json')
         .then((response) =>  {
-          // this.state.
         })
         .catch((error) => console.log(error));
     }
