@@ -1,9 +1,9 @@
 // Shadow
+// Purpose: To create a shadow of an element, that is darkened further on hover
 // @param 1  $element  The element to be styled to have a shadow
 // @param 2  $hasShadow  Boolean determining if there is a shadow. If no shadow, then no styles for shadow are created
 // @param 3  $shadow  Regular shadow of the element
 // @param 4  $shadowHover  Shadow of the element on hover
-// Purpose: To create a shadow of an element, that is darkened further on hover
 @mixin shadow($element, $hasShadow, $shadow, $shadowHover) {
   @if($hasShadow) {
     #{$element} {

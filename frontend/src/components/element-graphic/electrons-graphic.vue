@@ -10,7 +10,7 @@
   import { mapGetters } from 'vuex';
 
   export default {
-    name: 'OrbitalsVisual',
+    name: 'ElectronsVisual',
     computed: {
       ...mapGetters([
         'activeElement',
@@ -22,9 +22,8 @@
 
 <style scoped lang="scss">
   @import '../../styles/variables';
-  @import 'visual-themes';
-  @import 'detailed-visual';
-
+  @import 'theme';
+  @import 'element-graphic';
 
   .light-def {
     #visual-inner {

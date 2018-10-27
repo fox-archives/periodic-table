@@ -59,6 +59,6 @@
 
 <style scoped lang="scss">
   @import '../../styles/variables';
-  @import 'visual-themes';
-  @import 'detailed-visual';
+  @import 'theme';
+  @import 'element-graphic';
 </style>

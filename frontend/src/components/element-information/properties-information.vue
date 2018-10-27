@@ -102,6 +102,6 @@
 
 <style scoped lang="scss">
   @import '../../styles/variables.scss';
-  @import 'info-theme';
-  @import 'detailed-info';
+  @import 'theme';
+  @import 'element-information';
 </style>

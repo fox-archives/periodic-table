@@ -5,7 +5,7 @@
 
         <ul id="logo-container">
           <li id="logo">
-            <a href="/simple"><img src="../../assets/placeholder.png" alt="logo" height="32px"></a>
+            <a href="/"><img src="../../assets/placeholder.png" alt="logo" height="32px"></a>
           </li>
         </ul>
 
@@ -205,7 +205,7 @@
   // Structure
   @import './navigation.scss';
   @import './navigation-mobile.scss';
-  @import './navigation-theme.scss';
+  @import 'theme';
 
   .light-def {
     @include navigationThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $oc-gray-2,

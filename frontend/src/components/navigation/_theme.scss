@@ -1,3 +1,5 @@
+// Purpose: To change nav bar shadow depending on hover of nav bar, and change nav bar elements, depending on hover of each individual element
+
 // @param 1  $background  Background color of the navigation bar
 // @param 2  $hasShadow  Boolean for if there is a shadow, if so, shadow selectors are not created
 // @param 2  $shadow  Shadow that appears below the navigation bar (no hover)
@@ -10,8 +12,6 @@
 // @param 8  $icon  The color of all icons
 
 // Note: There is no $navItem because the background of this will be the same as $background, or the background of the nav bar as a whole
-
-// Purpose: To change nav bar shadow depending on hover of nav bar, and change nav bar elements, depending on hover of each individual element
 @mixin navigationThemeDefault($background, $hasShadow, $shadow, $shadowHover, $navItemHover,
                                $navItemClick, $navItemActive, $heading, $icon) {
   // Make navigation bar have a shadow
