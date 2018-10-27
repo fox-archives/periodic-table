@@ -1,23 +1,95 @@
 [
 	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"pink",
+		"color":"pink"
+	},
+	{
+		"defaultColor":"blue",
+		"color":"blue"
+	},
+	{
+		"defaultColor":"violet",
+		"color":"violet"
+	},
+	{
+		"defaultColor":"indigo",
+		"color":"indigo"
+	},
+	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"teal",
+		"color":"teal"
+	},
+	{
+		"defaultColor":"pink",
+		"color":"pink"
+	},
+	{
+		"defaultColor":"blue",
+		"color":"blue"
+	},
+	{
+		"defaultColor":"violet",
+		"color":"violet"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"indigo",
+		"color":"indigo"
+	},
+	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"teal",
+		"color":"teal"
+	},
+	{
+		"defaultColor":"pink",
+		"color":"pink"
+	},
+	{
+		"defaultColor":"blue",
+		"color":"blue"
+	},
+	{
+		"defaultColor":"violet",
+		"color":"violet"
+	},
+	{
 		"defaultColor":"red",
 		"color":"red"
 	},
 	{
-		"defaultColor":"violet",
-		"color":"violet"
+		"defaultColor":"red",
+		"color":"red"
 	},
 	{
-		"defaultColor":"cyan",
-		"color":"cyan"
-	},
-	{
-		"defaultColor":"lime",
-		"color":"lime"
-	},
-	{
-		"defaultColor":"pink",
-		"color":"pink"
+		"defaultColor":"red",
+		"color":"red"
 	},
 	{
 		"defaultColor":"red",
@@ -28,116 +100,124 @@
 		"color":"red"
 	},
 	{
-		"defaultColor":"indigo",
-		"color":"indigo"
-	},
-	{
-		"defaultColor":"teal",
-		"color":"teal"
-	},
-	{
-		"defaultColor":"violet",
-		"color":"violet"
-	},
-	{
-		"defaultColor":"cyan",
-		"color":"cyan"
-	},
-	{
-		"defaultColor":"lime",
-		"color":"lime"
-	},
-	{
-		"defaultColor":"yellow",
-		"color":"yellow"
-	},
-	{
-		"defaultColor":"pink",
-		"color":"pink"
+		"defaultColor":"red",
+		"color":"red"
 	},
 	{
 		"defaultColor":"red",
 		"color":"red"
 	},
 	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
 		"defaultColor":"indigo",
 		"color":"indigo"
 	},
 	{
-		"defaultColor":"teal",
-		"color":"teal"
-	},
-	{
-		"defaultColor":"violet",
-		"color":"violet"
-	},
-	{
-		"defaultColor":"cyan",
-		"color":"cyan"
-	},
-	{
-		"defaultColor":"lime",
-		"color":"lime"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"indigo",
+		"color":"indigo"
 	},
 	{
 		"defaultColor":"yellow",
 		"color":"yellow"
+	},
+	{
+		"defaultColor":"teal",
+		"color":"teal"
 	},
 	{
 		"defaultColor":"pink",
 		"color":"pink"
 	},
 	{
+		"defaultColor":"blue",
+		"color":"blue"
+	},
+	{
+		"defaultColor":"violet",
+		"color":"violet"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"indigo",
+		"color":"indigo"
+	},
+	{
+		"defaultColor":"yellow",
+		"color":"yellow"
+	},
+	{
+		"defaultColor":"teal",
+		"color":"teal"
+	},
+	{
 		"defaultColor":"pink",
 		"color":"pink"
 	},
 	{
-		"defaultColor":"indigo",
-		"color":"indigo"
-	},
-	{
-		"defaultColor":"teal",
-		"color":"teal"
+		"defaultColor":"blue",
+		"color":"blue"
 	},
 	{
 		"defaultColor":"violet",
@@ -148,140 +228,152 @@
 		"color":"cyan"
 	},
 	{
-		"defaultColor":"lime",
-		"color":"lime"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
 	},
 	{
-		"defaultColor":"grape",
-		"color":"grape"
+		"defaultColor":"cyan",
+		"color":"cyan"
+	},
+	{
+		"defaultColor":"cyan",
+		"color":"cyan"
+	},
+	{
+		"defaultColor":"cyan",
+		"color":"cyan"
+	},
+	{
+		"defaultColor":"cyan",
+		"color":"cyan"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
 	},
 	{
 		"defaultColor":"yellow",
 		"color":"yellow"
 	},
 	{
-		"defaultColor":"yellow",
-		"color":"yellow"
+		"defaultColor":"teal",
+		"color":"teal"
 	},
 	{
 		"defaultColor":"pink",
 		"color":"pink"
 	},
 	{
-		"defaultColor":"indigo",
-		"color":"indigo"
-	},
-	{
-		"defaultColor":"teal",
-		"color":"teal"
+		"defaultColor":"blue",
+		"color":"blue"
 	},
 	{
 		"defaultColor":"violet",
 		"color":"violet"
 	},
 	{
-		"defaultColor":"cyan",
-		"color":"cyan"
+		"defaultColor":"grape",
+		"color":"grape"
 	},
 	{
-		"defaultColor":"lime",
-		"color":"lime"
+		"defaultColor":"grape",
+		"color":"grape"
 	},
 	{
-		"defaultColor":"orange",
-		"color":"orange"
+		"defaultColor":"grape",
+		"color":"grape"
 	},
 	{
-		"defaultColor":"blue",
-		"color":"blue"
+		"defaultColor":"grape",
+		"color":"grape"
 	},
 	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
-	},
-	{
-		"defaultColor":"blue",
-		"color":"blue"
+		"defaultColor":"grape",
+		"color":"grape"
 	},
 	{
 		"defaultColor":"grape",
@@ -324,159 +416,67 @@
 		"color":"grape"
 	},
 	{
-		"defaultColor":"yellow",
-		"color":"yellow"
+		"defaultColor":"red",
+		"color":"red"
 	},
 	{
-		"defaultColor":"yellow",
-		"color":"yellow"
+		"defaultColor":"red",
+		"color":"red"
 	},
 	{
-		"defaultColor":"yellow",
-		"color":"yellow"
+		"defaultColor":"red",
+		"color":"red"
 	},
 	{
-		"defaultColor":"indigo",
-		"color":"indigo"
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"red",
+		"color":"red"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
+	},
+	{
+		"defaultColor":"green",
+		"color":"green"
 	},
 	{
 		"defaultColor":"teal",
 		"color":"teal"
 	},
 	{
-		"defaultColor":"violet",
-		"color":"violet"
-	},
-	{
-		"defaultColor":"cyan",
-		"color":"cyan"
-	},
-	{
-		"defaultColor":"lime",
-		"color":"lime"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"green",
-		"color":"green"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"grape",
-		"color":"grape"
-	},
-	{
-		"defaultColor":"yellow",
-		"color":"yellow"
-	},
-	{
-		"defaultColor":"yellow",
-		"color":"yellow"
-	},
-	{
-		"defaultColor":"yellow",
-		"color":"yellow"
-	},
-	{
-		"defaultColor":"yellow",
-		"color":"yellow"
-	},
-	{
-		"defaultColor":"teal",
-		"color":"teal"
-	},
-	{
-		"defaultColor":"violet",
-		"color":"violet"
+		"defaultColor":"pink",
+		"color":"pink"
 	}
 ]

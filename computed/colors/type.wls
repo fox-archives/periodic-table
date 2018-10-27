@@ -27,31 +27,31 @@ For[i = 1, i < 119, i++,
 	(*type = getType[ElementData[i, "Series"]];*)
 	series = ElementData[i, "Series"];
 	type = "Unexpected Values";
-	Print@series;
+	(* Colors Not Included: Orange, Lime *)
 	Switch[
 		series,
 		"Nonmetal",
-		type = "red",
+		type = "yellow",
 		"NobleGas",
-		type = "violet",
-		"AlkaliMetal",
-		type = "cyan",
-		"AlkalineEarthMetal",
-		type = "lime";,
-		"Metalloid",
 		type = "pink",
-		"Chalcogen",
+		"AlkaliMetal",
+		type = "blue",
+		"AlkalineEarthMetal",
+		type = "violet";,
+		"Metalloid",
 		type = "indigo",
+		"Chalcogen",
+		type = "yellow",
 		"Halogen",
 		type = "teal",
 		"PoorMetal",
-		type = "yellow",
+		type = "green",
 		"TransitionMetal",
-		type = "grape",
+		type = "red",
 		"Lanthanide",
-		type = "blue",
+		type = "cyan",
 		"Actinide",
-		type = "green"
+		type = "grape"
 	];
 	newElement = {
 		"defaultColor" -> type,
@@ -63,8 +63,8 @@ For[i = 1, i < 119, i++,
 	(* Case for Lanthanites *)
 	If[i == 56,
 		lanth = {
-			"defaultColor" -> "blue",
-			"color" -> "blue"
+			"defaultColor" -> "cyan",
+			"color" -> "cyan"
 		};
 		periodicTable = Append[periodicTable, lanth];
 	];
@@ -72,12 +72,13 @@ For[i = 1, i < 119, i++,
 	(* Case for Actinides *)
 	If[i == 88,
 		act = {
-			"defaultColor" -> "green",
-			"color" -> "green"
+			"defaultColor" -> "grape",
+			"color" -> "grape"
 		};
 		periodicTable = Append[periodicTable, act];
 	];
 ];
+Print["Done"];
 Export["json/type.json", periodicTable, "JSON"];
 
 
