@@ -83,14 +83,14 @@ const myRoutes = [
   {
     path: '/explore',
     components: {
-      default: Body,
+      default: Explore,
       navigation: Navigation
     }
   },
   {
     path: '/trivia',
     components: {
-      default: Body,
+      default: Trivia,
       navigation: Navigation
     }
   },
