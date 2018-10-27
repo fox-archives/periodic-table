@@ -1,7 +1,7 @@
 <template>
   <div id="content" v-bind:class="[options.themeType, options.infoLocationType]">
   <!--<div id="content" v-bind:class="options.blurType">-->
-    <Navigation></Navigation>
+    <router-view name="navigation"></router-view>
     <router-view></router-view>
     <Footer></Footer>
   </div>

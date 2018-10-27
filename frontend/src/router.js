@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
+import Navigation from './components/navigation/Navigation.vue';
+import Footer from './components/footer/Footer.vue';
+
 import Body from './views/body/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
@@ -7,6 +11,9 @@ import propertiesInfo from './components/element-information/properties-informat
 import propertiesVisual from './components/element-graphic/properties-graphic.vue';
 import electronsVisual from './components/element-graphic/electrons-graphic.vue';
 import orbitalsVisual from './components/element-graphic/orbitals-graphic.vue';
+
+import About from './components/about/about.vue';
+import Feedback from './components/feedback/feedback.vue';
 
 
 Vue.use(VueRouter);
@@ -18,7 +25,11 @@ const myRoutes = [
   },
   {
     path: '/properties',
-    component: Body,
+    components: {
+      default: Body,
+      navigation: Navigation
+
+    },
     children: [{
       path: '',
       components: {
@@ -29,7 +40,10 @@ const myRoutes = [
   },
   {
     path: '/electrons',
-    component: Body,
+    components: {
+      default: Body,
+      navigation: Navigation
+    },
     children: [{
       path: '',
       components: {
@@ -40,7 +54,10 @@ const myRoutes = [
   },
   {
     path: '/orbitals',
-    component: Body,
+    components: {
+      default: Body,
+      navigation: Navigation
+    },
     children: [{
       path: '',
       components: {
@@ -51,7 +68,10 @@ const myRoutes = [
   },
   {
     path: '/isotopes',
-    component: Body,
+    components: {
+      default: Body,
+      navigation: Navigation
+    },
     children: [{
       path: '',
       components: {
@@ -62,11 +82,17 @@ const myRoutes = [
   },
   {
     path: '/explore',
-    component: Explore
+    components: {
+      default: Body,
+      navigation: Navigation
+    }
   },
   {
     path: '/trivia',
-    component: Trivia
+    components: {
+      default: Body,
+      navigation: Navigation
+    }
   },
   {
     path: '/info',
@@ -79,6 +105,18 @@ const myRoutes = [
   {
     path: '/search',
     component: Body
+  },
+  {
+    path: '/about',
+    components: {
+      default: About
+    }
+  },
+  {
+    path: '/feedback',
+    components: {
+      default: Feedback
+    }
   }
 ];
 

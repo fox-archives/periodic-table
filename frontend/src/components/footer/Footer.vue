@@ -3,9 +3,13 @@
     <p class="text" id="name1">© 2018 Edwin Kofler</p>
     <p class="text" id="name2">© E. Kofler</p>
     <p class="text" id="name3">©</p>
-    <a class="link" href="#">About</a>
-    <a class="link" href="#">Feedback</a>
-    <a class="link" href="https://discord.gg/eZMuVnu">Discord</a>
+    <router-link to="/about">
+      <a class="link">About</a>
+    </router-link>
+    <router-link to="/feedback">
+      <a class="link">Feedback</a>
+    </router-link>
+    <!--<a class="link" href="https://discord.gg/eZMuVnu">Discord</a>-->
   </footer>
 </template>
 
