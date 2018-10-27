@@ -7,7 +7,18 @@ const path = require('path');
 
 const app = express();
 app.use(bodyParser.json()); // Allow express to parse .json requests sent in
-app.use(morgan('combined')); // Use Morgan log generator
+
+const mor = new morgan(function(tokens, req, res) {
+  return [
+    tokens.method(req, res),
+    tokens.url(req, res),
+    tokens.status(req, res),
+    tokens.res(req, res, 'content-length'), '-',
+    tokens['response-time'](req, res), 'ms', '-',
+    tokens.date(req, res)
+  ].join(' ')
+});
+app.use(mor); // Use Morgan log generator
 
 // app.use(express.static('public')); // This replaces the bottom two lines
 app.use('/old', express.static(path.join(__dirname, 'public/old')));
