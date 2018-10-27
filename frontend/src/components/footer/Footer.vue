@@ -9,7 +9,7 @@
     <router-link to="/feedback">
       <a class="link">Feedback</a>
     </router-link>
-    <!--<a class="link" href="https://discord.gg/eZMuVnu">Discord</a>-->
+    <!--<a class="link" href="https://discord.gg/eZMuVnu" target="_blank">Discord</a>-->
   </footer>
 </template>
 

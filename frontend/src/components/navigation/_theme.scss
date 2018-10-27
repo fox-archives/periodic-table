@@ -39,6 +39,11 @@
     background-color: $navItemActive;
   }
 
+  // If click on current active route
+  .nav-item-body.router-link-active.nav-item-body:active {
+    background-color: $navItemClick;
+  }
+
   // Color of of headings
   .heading {
     color: $heading;
