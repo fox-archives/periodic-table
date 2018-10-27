@@ -12,6 +12,7 @@ export default new Vuex.Store({
     // Placement and Colors of Each Element
     ePlacements: [],
     eColors: [],
+    currentElementProperties: [],
 
     // Placement and data of each Period and Group Label
     periodData: [],
@@ -30,15 +31,11 @@ export default new Vuex.Store({
       atomicMass: 1.008,
       block: 's',
       color: 'blue', // This actually changes the color
-      discoveryDate: '1766',
-      discoveredBy: 'Henry Cavendish',
-      index: 0,
       density: ''
     },
 
     // Data about a clicked element
     clickedElement: {
-      // COMMENTED OUT OLD VALUES
       active: false,
 
       // When user clicks, want to make clicked element darker than if it was highlighted
@@ -55,8 +52,8 @@ export default new Vuex.Store({
       infoLocationTypeIsAuto: true,
       blurType: 'no-blur'
     },
-
-    contentState: '',
+    // Content format type
+    periodicTableFormat: '',
     extraElementData: []
 
   },
@@ -70,6 +67,9 @@ export default new Vuex.Store({
     },
     eColors: function(state) {
       return state.eColors;
+    },
+    currentElementProperties: function(state) {
+      return state.currentElementProperties;
     },
     periodData: function(state) {
       return state.periodData;
@@ -99,11 +99,8 @@ export default new Vuex.Store({
     options: function(state) {
       return state.options;
     },
-    contentState: function(state) {
-      return state.contentState;
-    },
-    sizeElementsText: function(state) {
-      return state.sizeElementsText();
+    periodicTableFormat: function(state) {
+      return state.periodicTableFormat;
     }
   },
   mutations: {
@@ -114,7 +111,6 @@ export default new Vuex.Store({
       // @param #int 'index':
       //   (req)  Index of element, where activeElement properties will get info from
       if(state.clickedElement.active === false) {
-        state.activeElement.index = state.index;
         state.activeElement.abbreviation = state.simpleData[index].abbreviation;
         state.activeElement.name = state.simpleData[index].name;
         state.activeElement.atomicMass = state.simpleData[index].atomicMass;
@@ -130,7 +126,6 @@ export default new Vuex.Store({
     // @param #int 'index':
     //   (req)  Index of element, where activeElement properties will get info from
     updateActiveElementForce: function(state, index) {
-      state.activeElement.index = state.index;
       state.activeElement.abbreviation = state.simpleData[index].abbreviation;
       state.activeElement.name = state.simpleData[index].name;
       state.activeElement.atomicMass = state.simpleData[index].atomicMass;
@@ -342,14 +337,14 @@ export default new Vuex.Store({
         // This means if panel and periodic-table fill whole window height, increasing
         // width will not increase size of periodic-table, instead it creates whitespace;
         // periodic-table will only increase if the height of browser window increases
-        state.contentState = 'heightSame';
+        state.periodicTableFormat = 'heightSame';
       }
       else {
-        state.contentState = 'heightDifferent';
+        state.periodicTableFormat = 'heightDifferent';
       }
     },
     setMobilePeriodicTableWidth: function(state) {
-      if(/*this.options.infoLocationType === 'info-top' && */state.contentState === 'heightDifferent') {
+      if(/*this.options.infoLocationType === 'info-top' && */state.periodicTableFormat === 'heightDifferent') {
         // To change the length of the #grid-container (so #grid-outer scrolls to fit)
         let gridContainer = document.getElementById('grid');
 
@@ -430,9 +425,13 @@ export default new Vuex.Store({
         })
         .catch((error) => console.log(error));
     },
+    // Purpose to fetch data related to properties from server
+    // @param #object 'payload' container properties
+    //   (req) .propertyType  Type of properties to return (ex. properties, orbitals, electrons)
     loadElementProperties: function(state, payload) {
-      axios.get('/element-data/' + '.json')
+      axios.get('/element-data/' + payload.propertyType + '.json')
         .then((response) =>  {
+          this.state.currentElementProperties = response.data;
         })
         .catch((error) => console.log(error));
     }

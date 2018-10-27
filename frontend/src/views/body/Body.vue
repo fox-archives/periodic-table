@@ -1,5 +1,5 @@
 <template>
-  <div id="display" v-bind:class="[contentState, options.themeType, options.infoLocationType]">
+  <div id="display" v-bind:class="[periodicTableFormat, options.themeType, options.infoLocationType]">
     <ElementInfoPanel></ElementInfoPanel>
     <PeriodicTable></PeriodicTable>
   </div>
@@ -68,7 +68,7 @@
     computed: {
       ...mapGetters([
         'options',
-        'contentState'
+        'periodicTableFormat'
       ])
     },
     components: {

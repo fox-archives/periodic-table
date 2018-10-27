@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="visual-inner">
+    <div v-if="" id="visual-inner">
       <div id="icon">
         <div id="icon-inner" v-bind:class="activeElement.color">
           <p>{{ activeElement.abbreviation }}</p>
@@ -22,7 +22,7 @@
   export default {
     name: 'PropertiesVisual',
     mounted() {
-      //TODO: Fix this bug with adding delay?
+      // TODO: Fix this bug with adding 20ms delay?
       setTimeout(() => this.newSizeInfoVisualText(), 20);
       // this.newSizeInfoVisualText();
 

@@ -129,9 +129,6 @@
       // @ param none
       // Updates color scheme of the periodic table
       updateColor: function() {
-        // console.log('Updating color');
-        // console.log(this.$route.path);
-
         let routePath = this.$route.path.substring(1);
         if(routePath === 'properties' || routePath === "isotopes") {
           this.loadElementColors( { colorScheme: 'type' } );
