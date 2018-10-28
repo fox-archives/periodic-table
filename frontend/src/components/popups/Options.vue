@@ -3,15 +3,15 @@
   <aside id="options">
     <ul>
       <li class="option">
-        <p class="text">Theme</p>
-        <vs-select class="option-theme" label="themes" v-model="theme" v-on:change="setTheme">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in themes" />
+        <!--<p class="text">Theme</p>-->
+        <vs-select class="option-theme" label="Themes" v-model="theme" v-on:change="setTheme">
+          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in themes" />
         </vs-select>
       </li>
       <li class="option">
-        <p class="text">Element Info Location</p>
-        <vs-select class="option-theme" label="infoLocations" v-model="infoLocationNum" v-on:change="setInfoLocation">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
+        <!--<p class="text">Element Info Location</p>-->
+        <vs-select class="option-theme" label="Element Info Location" v-model="infoLocationNum" v-on:change="setInfoLocation">
+          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in infoLocations" />
         </vs-select>
       </li>
       <li class="option">

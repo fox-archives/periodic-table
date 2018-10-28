@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import Navigation from './components/navigation/Navigation.vue';
 import Footer from './components/footer/Footer.vue';
 
-import Body from './views/body/Body.vue';
+import Body from './views/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
 import propertiesInfo from './components/element-information/properties-information.vue';

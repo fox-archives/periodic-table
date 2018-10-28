@@ -9,8 +9,8 @@
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
   import throttle from 'lodash/throttle';
-  import PeriodicTable from '../../components/periodic-table/PeriodicTable.vue';
-  import ElementInfoPanel from '../../components/element-info-visual-container.vue';
+  import PeriodicTable from '../components/periodic-table/PeriodicTable.vue';
+  import ElementInfoPanel from '../components/element-info-visual-container.vue';
 
 
   export default {
@@ -79,7 +79,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '../../styles/variables.scss';
+  @import '../styles/variables';
 
   #display {
     margin-left: $body-margin;

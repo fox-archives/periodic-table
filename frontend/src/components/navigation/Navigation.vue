@@ -13,7 +13,7 @@
           <li class="nav-item text" id="properties-wide">
           <router-link class="nav-item-body link" to="/properties">
             <list-icon class="icon feather-icon"></list-icon>
-            <h2 class="heading" v-on:click="loadOtherData"> Properties </h2>
+            <h2 class="heading"> Properties </h2>
           </router-link>
           </li>
 

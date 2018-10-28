@@ -2,21 +2,21 @@
   <aside>
     <ul id="options">
       <li class="option">
-        <p>Group Labels</p>
-        <vs-select label="groupTypes" v-model="groupType">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in groupTypes" />
+        <!--<p>Group Labels</p>-->
+        <vs-select label="Group Labels" v-model="groupType">
+          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in groupTypes" />
         </vs-select>
       </li>
       <li class="option">
-        <p>Decimal Count</p>
-        <vs-select label="decimalCountTypes" v-model="decimalCountType">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in decimalCountTypes" />
+        <!--<p>Decimal Count</p>-->
+        <vs-select label="Decimal Count" v-model="decimalCountType">
+          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in decimalCountTypes" />
         </vs-select>
       </li>
       <li class="option">
-        <p>Transitions and Effects</p>
-        <vs-select label="transitionTypes" v-model="transitionType" v-bind:options="transitionTypes">
-          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in transitionTypes" />
+        <!--<p>Transitions and Effects</p>-->
+        <vs-select label="Transitions and Effects" v-model="transitionType" v-bind:options="transitionTypes">
+          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in transitionTypes" />
         </vs-select>
       </li>
     </ul>
