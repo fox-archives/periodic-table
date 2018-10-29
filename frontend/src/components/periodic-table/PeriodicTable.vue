@@ -5,17 +5,17 @@
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div class="element"
-               v-for="(ePlacement, index) in ePlacements"
+               v-for="(placement, index) in placementElementData"
                v-on:mouseover="[setElementPrefix(index, 'dark-'), setLabelColor(index, 'true'), updateActiveElement(index)]"
                v-on:mouseleave="[setElementPrefix(index, ''), setLabelColor(index, 'false'), updateActiveElement(index)]"
                v-on:click="[clickElement(index)]"
-               v-bind:class="[ePlacement.column, ePlacement.row, ePlacement.period, ePlacement.group, eColors[index].color]"
+               v-bind:class="[placement.column, placement.row, placement.period, placement.group]"
           >
             <div v-cloak class="element-inner">
-              <p class="secondary-text test">{{ ePlacement.eLabel }}</p>
-              <p class="primary-text">{{ simpleData[index].abbreviation }}</p>
-              <p class="secondary-text">{{ simpleData[index].name }}</p>
-              <p class="secondary-text">{{ simpleData[index].atomicMass }}</p>
+              <p class="secondary-text test">{{ ubiquitousElementData[index].label }}</p>
+              <p class="primary-text">{{ ubiquitousElementData[index].abbreviation }}</p>
+              <p class="secondary-text">{{ ubiquitousElementData[index].name }}</p>
+              <p class="secondary-text">{{ ubiquitousElementData[index].atomicMass }}</p>
             </div>
           </div>
 
@@ -52,14 +52,20 @@
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
   import { mapActions } from 'vuex';
+  import throttle from 'lodash/throttle';
   import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
     name: 'PeriodicTable',
     created() {
       this.updateColor();
-      // Load element data via Axios / Fetch API requests to backend
-      this.$store.dispatch('loadElementData');
+
+      this.loadElementData();
+      this.loadPeriodGroupLabels();
+
+      setInterval(() => {
+        // console.log(this.ubiquitousElementData)
+      }, 100);
     },
     mounted() {
       // This controls perfect scrollbar only
@@ -87,21 +93,21 @@
       }
     },
     computed: {
-      // Mix the getters into computed with object spread operator
       ...mapGetters([
-        'simpleData',
-        'ePlacements',
-        'eColors',
+        'ubiquitousElementData',
+        'placementElementData',
+        'colorBlockElementData',
+        'colorCategoryElementData',
         'periodData',
         'groupData',
-        'eDiscovered',
 
         'ready',
 
         'activeElement',
         'clickedElement',
         'options'
-      ])
+      ]),
+
     },
     methods: {
       ...mapMutations([
@@ -121,23 +127,35 @@
         'setColorOfOneGroup',
         'setColorOfOneElement',
 
-        'setClassLayout'
+        'setClassLayout',
+        'newLoadElementData'
       ]),
       ...mapActions([
-        'loadElementColors'
+        'loadElementData', // This should be a temp action that will be replaced soon
+        'fetchElementColors',
+        'loadPeriodGroupLabels'
       ]),
-      // @ param none
-      // Updates color scheme of the periodic table
+
+      // Purpose: Updates color scheme of the periodic table
+      // @param none
       updateColor: function() {
         let routePath = this.$route.path.substring(1);
-        if(routePath === 'properties' || routePath === "isotopes") {
-          this.loadElementColors( { colorScheme: 'type' } );
+
+        if (routePath === 'properties' || routePath === 'isotopes') {
+          if(this.colorCategoryElementData === undefined) {
+            this.fetchElementColors({colorScheme: 'type'});
+          }
+          // else {
+            this.newLoadElementData({ colorScheme: 'type'})
+          // }
         }
-        else if(routePath === "electrons" || routePath === "orbitals") {
-          this.loadElementColors( { colorScheme: 'block' } );
-        }
-        else {
-          this.loadElementColors( { colorScheme: 'type' } );
+        else if(routePath === 'electrons' || routePath === 'orbitals') {
+          if(this.colorBlockElementData === undefined) {
+            this.fetchElementColors({colorScheme: 'block'});
+          }
+          // else {
+            this.newLoadElementData({ colorScheme: 'block'})
+          // }
         }
       },
 
@@ -244,8 +262,8 @@
         // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
 
         // Get the period.json or group value corresponding to the hovered over element (ex. c-11, p-5)
-        let periodFull = this.ePlacements[index].period;
-        let groupFull = this.ePlacements[index].group;
+        let periodFull = this.placementElementData[index].period;
+        let groupFull = this.placementElementData[index].group;
 
         // Concatenate period.json or group values to a number (ex. 11, 5)
         let period = this.labelClassToNone(periodFull);
@@ -304,8 +322,8 @@
         if(this.clickedElement.index === -1 || this.clickedElement.index !== index) {
           this.setClickedElement({
             index: index,
-            period: this.labelClassToNone( this.ePlacements[index].period ),
-            group: this.labelClassToNone( this.ePlacements[index].group )
+            period: this.labelClassToNone( this.placementElementData[index].period ),
+            group: this.labelClassToNone( this.placementElementData[index].group )
           });
 
           // Sets color of all elements in periodic table

@@ -1,16 +1,7 @@
 <template>
 <aside class="info">
-  <p class="heading">Tools</p>
-  <ul id="items">
-    <li class="item"> <p class="text">Logic from <a class="link" href="https://vuejs.org/">VueJS</a></p> </li>
-    <li class="item"> <p class="text">U.I. elements from <a class="link" href="https://lusaxweb.github.io/vuesax/">VueSax</a></p> </li>
-    <li class="item"> <p class="text">Icons from <a class="link" href="https://feather-icons.com/">Feather Icons</a></p> </li>
-    <li class="item"> <p class="text">Data from <a class="link" href="http://www.rsc.org/periodic-table/">Royal Society of Chemistry</a></p> </li>
-    <li class="item"> <p class="text">Colors from  <a class="link" href="https://yeun.github.io/open-color/">Open Color</a></p> </li>
-  </ul>
-  <br>
   <p class="heading">Note</p>
-  <p class="text">Note that this application is in alpha stage; it is far from appearing complete.</p>
+  <p class="text">Note that this application is in a very early stage; it is far from any 'Alpha' or 'Beta' stage.</p>
 </aside>
 </template>
 

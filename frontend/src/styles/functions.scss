@@ -1,5 +1,4 @@
-// createTransitions
-// Purpose: To create a function that can add transitions to the CSS property. The only mandatory parameter to pass are the proeprties to transitions, the rest will defualt
+// Purpose: To create a function that can add transitions to the CSS property. The only mandatory parameter to pass are the properties to transitions, the rest will be defualt
 // @param 1  $transitionProperties   List of all the transitions to use. All of these transitions will have the same transition duration and timing function
 // @param 2  $isExtraTransitions  Boolean for if there is extra transitions after using the function. In other words, this is true if you are adding more transitions, either manually or with the transition function after using the transition function
 // @param 3  $transitionDuration  Specify the duration of the transition. Default is $transition-duration

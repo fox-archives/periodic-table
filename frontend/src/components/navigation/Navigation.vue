@@ -111,7 +111,7 @@
   import Menu from 'vue-feather-icon/components/menu.vue';
 
   // Import Popups
-  import InfoPopup from '../popups/Info.vue';
+  import InfoPopup from '../popups/Information.vue';
   import MenuPopup from '../popups/Menu.vue';
   import OptionsPopup from '../popups/Options.vue';
 
@@ -131,9 +131,6 @@
       ]),
     },
     methods: {
-      ...mapActions([
-        'loadOtherData'
-      ]),
       infoPopup: function(state) {
         // TODO: Add blur (Try to use Vuesax event for popup close, if it exists)
         if(state === "on") {

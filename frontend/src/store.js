@@ -6,20 +6,17 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Simple data about each element
-    simpleData: [],
+    // Arrays of data for all elements
+    ubiquitousElementData: undefined,
+    placementElementData: undefined,
 
-    // Placement and Colors of Each Element
-    ePlacements: [],
-    eColors: [],
-    currentElementProperties: [],
+    colorShownElementData: [], // Where color data actually comes from
+    colorBlockElementData: undefined,
+    colorCategoryElementData: undefined,
 
     // Placement and data of each Period and Group Label
     periodData: [],
     groupData: [],
-
-    // Discovery Date of Elements
-    eDiscovered: [],
 
     ready: false,
 
@@ -29,8 +26,9 @@ export default new Vuex.Store({
       abbreviation: 'H',
       name: 'Hydrogen',
       atomicMass: 1.008,
-      block: 's',
       color: 'blue', // This actually changes the color
+
+      block: 's',
       density: ''
     },
 
@@ -54,31 +52,30 @@ export default new Vuex.Store({
     },
     // Content format type
     periodicTableFormat: '',
-    extraElementData: []
 
   },
   getters: {
     // ACCESSING ARRAYS
-    simpleData: function(state) {
-      return state.simpleData;
+    ubiquitousElementData: function(state) {
+      return state.ubiquitousElementData;
     },
-    ePlacements: function(state) {
-      return state.ePlacements;
+    placementElementData: function(state) {
+      return state.placementElementData;
     },
-    eColors: function(state) {
-      return state.eColors;
+    colorBlockElementData: function(state) {
+      return state.colorBlockElementData;
     },
-    currentElementProperties: function(state) {
-      return state.currentElementProperties;
+    colorCategoryElementData: function(state) {
+      return state.colorCategoryElementData;
+    },
+    colorShownElementData: function(state) {
+      return state.colorShownElementData;
     },
     periodData: function(state) {
       return state.periodData;
     },
     groupData: function(state) {
       return state.groupData;
-    },
-    eDiscovered: function(state) {
-      return state.eDiscovered;
     },
 
     // Value determining if the data is ready to be rendered (after all Axios requests)
@@ -111,14 +108,11 @@ export default new Vuex.Store({
       // @param #int 'index':
       //   (req)  Index of element, where activeElement properties will get info from
       if(state.clickedElement.active === false) {
-        state.activeElement.abbreviation = state.simpleData[index].abbreviation;
-        state.activeElement.name = state.simpleData[index].name;
-        state.activeElement.atomicMass = state.simpleData[index].atomicMass;
-
-        // Update element description (right box)
-        state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
-        state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
-        state.activeElement.color = state.eColors[index].defaultColor;
+        state.activeElement.atomicNumber = state.ubiquitousElementData[index].atomicNumber;
+        state.activeElement.abbreviation = state.ubiquitousElementData[index].abbreviation;
+        state.activeElement.name = state.ubiquitousElementData[index].name;
+        state.activeElement.atomicMass = state.ubiquitousElementData[index].atomicMass;
+        state.activeElement.color = state.colorShownElementData[index].defaultColor;
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
@@ -126,14 +120,29 @@ export default new Vuex.Store({
     // @param #int 'index':
     //   (req)  Index of element, where activeElement properties will get info from
     updateActiveElementForce: function(state, index) {
-      state.activeElement.abbreviation = state.simpleData[index].abbreviation;
-      state.activeElement.name = state.simpleData[index].name;
-      state.activeElement.atomicMass = state.simpleData[index].atomicMass;
+      state.activeElement.atomicNumber = state.ubiquitousElementData[index].atomicNumber;
+      state.activeElement.abbreviation = state.ubiquitousElementData[index].abbreviation;
+      state.activeElement.name = state.ubiquitousElementData[index].name;
+      state.activeElement.atomicMass = state.ubiquitousElementData[index].atomicMass;
+      state.activeElement.color = state.colorShownElementData[index].defaultColor;
+    },
 
-      // Update element description (right box)
-      state.activeElement.discoveryDate = state.eDiscovered[index].discoveryDate;
-      state.activeElement.discoveredBy = state.eDiscovered[index].discoveredBy;
-      state.activeElement.color = state.eColors[index].defaultColor;
+    // Purpose: To update predefined properties of activeElement (as per payload object)
+    // @param #array 'newProperties' contains elements:
+    //   (opt)  atomicNumber
+    //   (opt)  abbreviation
+    //   (opt)  name
+    //   (opt)  atomicMass
+    //   (opt)  block
+    //   (opt)  color
+    //   (opt)  density
+    newUpdateActiveElement: function(state, newProperties) {
+      // These properties should replace the properties in the activeElement object
+      for(let property in newProperties) {
+        if(state.options.hasOwnProperty(property)) {
+          state.options[property] = newProperties[property];
+        }
+      }
     },
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
@@ -169,7 +178,7 @@ export default new Vuex.Store({
     // Purpose: Change the properties of the clicked element, or the element that was clicked on
     // @param #object 'payload' contains properties:
     //   (opt) .active #boolean If an element has been clicked, or a click was activated
-    //   (opt) .index #int Integer of the clicked element (placement in the ePlacements array)
+    //   (opt) .index #int Integer of the clicked element (placement in the placementElementData array)
     //   (opt) .period #int Period number of the clicked element (actual period, does not start at 0)
     //   (opt) .group #int Group number of the clicked element (actual group, does not start at 0)
     setClickedElement: function(state, newProperties) {
@@ -188,11 +197,11 @@ export default new Vuex.Store({
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     setColorOfAllElements: function(state, payload) {
-      for(let i = 0; i < state.ePlacements.length; i++) {
+      for(let i = 0; i < state.placementElementData.length; i++) {
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor;
+        let defaultColor = state.colorShownElementData[i].defaultColor;
 
-        Vue.set(state.eColors[i], 'color', (payload + defaultColor));
+        Vue.set(state.colorShownElementData[i], 'color', (payload + defaultColor));
       }
     },
 
@@ -201,17 +210,17 @@ export default new Vuex.Store({
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Period to exclude setting the color of
     setColorOfAllButOnePeriod: function(state, payload) {
-      for(let i = 0; i < state.ePlacements.length; i++) {
+      for(let i = 0; i < state.placementElementData.length; i++) {
         // elementPeriod represents the period number of a given periodic table element
-        let elementPeriod = state.ePlacements[i].period.substring(2);
+        let elementPeriod = state.placementElementData[i].period.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor;
+        let defaultColor = state.colorShownElementData[i].defaultColor;
 
         // If the element period is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementPeriod != payload.exclude) {
-          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -221,17 +230,17 @@ export default new Vuex.Store({
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Group to be excluded setting the color of
     setColorOfAllButOneGroup: function(state, payload) {
-      for(let i = 0; i < state.ePlacements.length; i++) {
+      for(let i = 0; i < state.placementElementData.length; i++) {
         // elementGroup represents the group number of a given periodic table element
-        let elementGroup = state.ePlacements[i].group.substring(2);
+        let elementGroup = state.placementElementData[i].group.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor;
+        let defaultColor = state.colorShownElementData[i].defaultColor;
 
         // If the element group is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementGroup != payload.exclude) {
-          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -241,17 +250,17 @@ export default new Vuex.Store({
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Element to be excluded setting the color of (index)
     setColorOfAllButOneElement: function(state, payload) {
-      for(let i = 0; i < state.ePlacements.length; i++) {
+      for(let i = 0; i < state.placementElementData.length; i++) {
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor;
+        let defaultColor = state.colorShownElementData[i].defaultColor;
 
         // If the element group is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
 
         // i represents the index of the element to be excluded
         if(i != payload.exclude) {
-          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -261,17 +270,17 @@ export default new Vuex.Store({
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Period to include setting the color of
     setColorOfOnePeriod: function(state, payload) {
-      for(let i = 0; i < state.ePlacements.length; i++) {
+      for(let i = 0; i < state.placementElementData.length; i++) {
         // elementPeriod represents the period number of a given periodic table element
-        let elementPeriod = state.ePlacements[i].period.substring(2);
+        let elementPeriod = state.placementElementData[i].period.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor;
+        let defaultColor = state.colorShownElementData[i].defaultColor;
 
         // If the element period is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementPeriod == payload.include) {
-          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -281,17 +290,17 @@ export default new Vuex.Store({
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Group to be included setting the color of
     setColorOfOneGroup: function(state, payload) {
-      for(let i = 0; i < state.ePlacements.length; i++) {
+      for(let i = 0; i < state.placementElementData.length; i++) {
         // elementGroup represents the group number of a given periodic table element
-        let elementGroup = state.ePlacements[i].group.substring(2);
+        let elementGroup = state.placementElementData[i].group.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.eColors[i].defaultColor;
+        let defaultColor = state.colorShownElementData[i].defaultColor;
 
         // If the element group is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementGroup == payload.include) {
-          Vue.set(state.eColors[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -301,8 +310,8 @@ export default new Vuex.Store({
     //   (req) .i  ith term to change the color of (starts at 0)
     //   (req) .prefix  Prefix to prefix to the color
     setColorOfOneElement: function(state, payload) {
-      let defaultColor = state.eColors[payload.i].defaultColor;
-      Vue.set(state.eColors[payload.i], 'color', (payload.prefix + defaultColor));
+      let defaultColor = state.colorShownElementData[payload.i].defaultColor;
+      Vue.set(state.colorShownElementData[payload.i], 'color', (payload.prefix + defaultColor));
     },
 
 
@@ -314,7 +323,7 @@ export default new Vuex.Store({
     //   (opt) Any other properties of options
     setOptions: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeElement object (from the vuex state) has
+      // These properties should replace the properties the options object (from the vuex state)
       for(let property in newProperties) {
         if(state.options.hasOwnProperty(property)) {
           state.options[property] = newProperties[property];
@@ -375,63 +384,54 @@ export default new Vuex.Store({
       grid.style.setProperty('--primaryTextSize', primaryFontSize);
       grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
       grid.style.setProperty('--labelTextSize', labelFontSize);
+    },
+    newLoadElementData: function(state, payload) {
+      if(payload.colorScheme === 'type') {
+        state.colorShownElementData = state.colorCategoryElementData;
+      }
+      else if(payload.colorScheme === 'block') {
+        state.colorShownElementData = state.colorBlockElementData;
+      }
     }
   },
   actions: {
     loadElementData: function() {
-      axios.get('/old/element/discovered.json')
+      axios.get('/element-data/placement.json')
         .then((response) => {
-          this.state.eDiscovered = response.data;
+          this.state.placementElementData = response.data;
         })
         .catch((error) => console.log(error));
 
-      axios.get('/old/element/placement.json')
+      axios.get('/element-data/ubiquitous.json')
         .then((response) => {
-          this.state.ePlacements = response.data;
-        })
-        .catch((error) => console.log(error));
-
-      axios.get('/old/element/simple.json')
-        .then((response) => {
-          this.state.simpleData = response.data;
+          this.state.ubiquitousElementData = response.data;
           this.state.ready = true;
         })
         .catch((error) => console.log(error));
-
-      // Period / Group calls
-      axios.get('/old/label/period.json')
+    },
+    loadPeriodGroupLabels: function(state, payload) {
+      axios.get('/element-data/period.json')
         .then((response) => {
           this.state.periodData = response.data;
         })
         .catch((error) => console.log(error));
 
-      axios.get('/old/label/group.json')
+      axios.get('/element-data/group.json')
         .then((response) => {
           this.state.groupData = response.data;
         })
         .catch((error) => console.log(error));
     },
-    loadOtherData: function() {
-      axios.get('/element-data/properties.json')
-      .then((response) => {
-        this.state.extraElementData = response.data;
-      })
-      .catch((error) => console.log(error));
-    },
-    loadElementColors: function(state, payload) {
+    fetchElementColors: function(state, payload) {
       axios.get('/element-data/' + payload.colorScheme + '.json')
         .then((response) => {
-          this.state.eColors = response.data;
-        })
-        .catch((error) => console.log(error));
-    },
-    // Purpose to fetch data related to properties from server
-    // @param #object 'payload' container properties
-    //   (req) .propertyType  Type of properties to return (ex. properties, orbitals, electrons)
-    loadElementProperties: function(state, payload) {
-      axios.get('/element-data/' + payload.propertyType + '.json')
-        .then((response) =>  {
-          this.state.currentElementProperties = response.data;
+          if(payload.colorScheme === 'type') {
+            state.colorCategoryElementData = response.data;
+          }
+          else if(payload.colorScheme === 'block') {
+            state.colorBlockElementData = response.data;
+          }
+          this.state.colorShownElementData = response.data;
         })
         .catch((error) => console.log(error));
     }

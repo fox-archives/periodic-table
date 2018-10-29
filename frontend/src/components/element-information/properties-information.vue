@@ -10,7 +10,8 @@
             <div class="stat-text">
               <!--<p> {{ currentElementProperties[activeElement.atomicNumber][properties[index].propertyName] }} </p>-->
               <!--{{ currentElementProperties[activeElement.atomicNumber] }}-->
-              {{ activeElement.atomicNumber }}
+              <!-- currentElementProperties, has been deleted, please recall -->
+              {{ activeElement.atomicMass }}
             </div>
           </div>
         </div>
@@ -42,8 +43,6 @@
     },
     created() {
       this.updateProperties();
-
-
     },
     mounted() {
       let psPanelTextual = new PerfectScrollbar('#textual-inner', {
@@ -59,7 +58,6 @@
       ...mapGetters([
         'options',
         'activeElement',
-        'currentElementProperties'
       ]),
       routePath: function() {
         return this.$route.path.substring(1)
@@ -76,23 +74,23 @@
 
         // Fetch data on a per-route basis
         if(routePath === 'properties') {
-          this.loadElementProperties({ propertyType: 'properties' });
+          // this.loadElementProperties({ propertyType: 'properties' });
         }
         else if (routePath === 'isotopes')
         {
-          this.loadElementProperties({ propertyType: 'isotopes' });
+          // this.loadElementProperties({ propertyType: 'isotopes' });
         }
         else if(routePath === 'electrons') {
-          this.loadElementProperties({ propertyType: 'block' });
+          // this.loadElementProperties({ propertyType: 'block' });
         }
         else if (routePath === 'orbitals') {
-          this.loadElementProperties({ propertyType: 'orbitals' });
+          // this.loadElementProperties({ propertyType: 'orbitals' });
         }
         else if(routePath === 'isotopes') {
-          this.loadElementProperties ({ propertyType: 'isotopes' });
+          // this.loadElementProperties ({ propertyType: 'isotopes' });
         }
         else {
-          this.loadElementProperties({ propertyType: 'properties' });
+          // this.loadElementProperties({ propertyType: 'properties' });
         }
       }
     }
