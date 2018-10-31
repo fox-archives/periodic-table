@@ -52,35 +52,23 @@
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
   import { mapActions } from 'vuex';
-  import throttle from 'lodash/throttle';
+  import debounce from 'lodash/debounce';
   import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
     name: 'PeriodicTable',
     created() {
-      this.fetchElementColors();
-      this.loadElementData();
-      this.loadPeriodGroupLabels();
+      this.$store.dispatch('fetchElementColors');
+      this.$store.dispatch('loadElementData'); // This should be a temp action that will be replaced soon
+      this.$store.dispatch('loadPeriodGroupLabels');
     },
     mounted() {
       // This controls perfect scrollbar only
-      let throttled = false;
-
-      let psPeriodicTable = new PerfectScrollbar('#grid-container', {
-        swipeEasing: true, // Default
-      });
-
-      // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
-      window.addEventListener('resize', () => {
-        if(!throttled) {
-          psPeriodicTable.update();
-          throttled = true;
-          setTimeout(() => {
-            throttled = false;
-          }, 50);
-        }
-
-      });
+      let psPeriodicTable = new PerfectScrollbar('#grid-container', { swipeEasing: true });
+      // I don't think this works
+      window.addEventListener('resize',
+        debounce(psPeriodicTable.update, 50)
+      );
     },
     computed: {
       ...mapGetters([
@@ -111,27 +99,15 @@
       ...mapMutations([
         'updateActiveElement',
         'updateActiveElementForce',
-
         'clearLabelExcept',
-        'setActiveElement',
         'setClickedElement',
 
-        'setColorOfAllElements',
         'setColorOfAllButOnePeriod',
         'setColorOfAllButOneGroup',
         'setColorOfAllButOneElement',
-
         'setColorOfOnePeriod',
         'setColorOfOneGroup',
         'setColorOfOneElement',
-
-        'setClassLayout'
-      ]),
-      ...mapActions([
-        'loadElementData', // This should be a temp action that will be replaced soon
-        'loadPeriodGroupLabels',
-
-        'fetchElementColors'
       ]),
 
       // @param #String 'type' can be:

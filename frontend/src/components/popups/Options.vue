@@ -52,15 +52,12 @@
         this.updateInfoLocation();
       });
       // this.updateInfoLocation();
-      window.addEventListener('resize', () => {
-        this.updateInfoLocation();
-      });
-      // debounce(window.addEventListener('resize', () => {
-      //   this.updateInfoLocation();
-      // }), 50);
       // window.addEventListener('resize', () => {
-      //   throttle(() => {this.updateInfoLocation()}, 1000);
+      //   this.updateInfoLocation();
       // });
+      window.addEventListener('resize',
+        throttle(this.updateInfoLocation, 10)
+      );
     },
     components: {
       AdvancedOptionsPopUp

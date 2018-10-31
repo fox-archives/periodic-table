@@ -144,19 +144,6 @@ export default new Vuex.Store({
       }
     },
 
-    // Purpose: Change the properties of the active element, or the element that was clicked on
-    // @param #object 'payload' contains properties:
-    //   Each possible property are the same properties as this.activeElement
-    setActiveElement: function(state, newProperties) {
-      // Payload contains an object containing properties
-      // These properties should replace the properties the activeElement object (from the vuex state) has
-      for(let property in newProperties) {
-        if(state.activeElement.hasOwnProperty(property)) {
-          state.activeElement[property] = newProperties[property];
-        }
-      }
-    },
-
     // Purpose: Change the properties of the clicked element, or the element that was clicked on
     // @param #object 'payload' contains properties:
     //   (opt) .active #boolean If an element has been clicked, or a click was activated
