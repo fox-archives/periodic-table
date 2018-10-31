@@ -101,11 +101,12 @@ export default new Vuex.Store({
   },
   mutations: {
     // ## PERIODIC TABLE ELEMENT STUFF ## \\
+
+    // Purpose: To change all properties of active element only when element is on 'clicked' mode
+    // @param #int 'index':
+    //   (req)  Index of element, where activeElement properties will get info from
     updateActiveElement: function(state, index) {
       // Update Store variables with Element information according to index
-      // Purpose: To change all properties of active element only when element is on 'clicked' mode
-      // @param #int 'index':
-      //   (req)  Index of element, where activeElement properties will get info from
       if(state.clickedElement.active === false) {
         state.activeElement.atomicNumber = state.ubiquitousElementData[index].atomicNumber;
         state.activeElement.abbreviation = state.ubiquitousElementData[index].abbreviation;
@@ -124,24 +125,6 @@ export default new Vuex.Store({
       state.activeElement.name = state.ubiquitousElementData[index].name;
       state.activeElement.atomicMass = state.ubiquitousElementData[index].atomicMass;
       state.activeElement.color = state.colorShownElementData[index].defaultColor;
-    },
-
-    // Purpose: To update predefined properties of activeElement (as per payload object)
-    // @param #array 'newProperties' contains elements:
-    //   (opt)  atomicNumber
-    //   (opt)  abbreviation
-    //   (opt)  name
-    //   (opt)  atomicMass
-    //   (opt)  block
-    //   (opt)  color
-    //   (opt)  density
-    newUpdateActiveElement: function(state, newProperties) {
-      // These properties should replace the properties in the activeElement object
-      for(let property in newProperties) {
-        if(state.options.hasOwnProperty(property)) {
-          state.options[property] = newProperties[property];
-        }
-      }
     },
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
@@ -204,7 +187,7 @@ export default new Vuex.Store({
       }
     },
 
-    // Purpose: To set a variant of the default color to all but one period
+    // Purpose: To set a variant of the default color to all but one element period
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Period to exclude setting the color of
@@ -224,7 +207,7 @@ export default new Vuex.Store({
       }
     },
 
-    // Purpose: To set a variant of the default color to all but one group
+    // Purpose: To set a variant of the default color to all but one element group
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Group to be excluded setting the color of
@@ -264,7 +247,7 @@ export default new Vuex.Store({
       }
     },
 
-    // Purpose: To set a variant of the default color to any one period
+    // Purpose: To set a variant of the default color to any one element period
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Period to include setting the color of
@@ -284,7 +267,7 @@ export default new Vuex.Store({
       }
     },
 
-    // Purpose: To set a variant of the default color to any one group
+    // Purpose: To set a variant of the default color to any one element group
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .include  Group to be included setting the color of

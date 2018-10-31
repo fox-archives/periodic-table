@@ -54,7 +54,6 @@
   import { mapActions } from 'vuex';
   import throttle from 'lodash/throttle';
   import PerfectScrollbar from 'perfect-scrollbar';
-  import axios from 'axios';
 
   export default {
     name: 'PeriodicTable',
@@ -82,11 +81,6 @@
         }
 
       });
-    },
-    watch: {
-      '$route'() {
-
-      }
     },
     computed: {
       ...mapGetters([
@@ -145,62 +139,33 @@
       //   'group'  Want to darken a group
       highlightSection: function(index, type) {
         // Before highlighting the elements, make sure that the period / group labels are not highlighted
-        this.clearLabelExcept({
-          periodExclude: -1,
-          groupExclude: -1,
-        });
+        this.clearLabelExcept({ periodExclude: -1, groupExclude: -1, });
 
         if(type === 'period') {
           let period = index + 1;
-          this.setColorOfAllButOnePeriod({
-            // ES6: prefix,
-            prefix: 'light-', // want this to be light
-            exclude: period
-          });
-          this.setColorOfOnePeriod({
-            prefix: 'dark-', // want this to be dark
-            include: period
-          });
+          this.setColorOfAllButOnePeriod({ prefix: 'light-', exclude: period });
+          this.setColorOfOnePeriod({ prefix: 'dark-',  include: period });
         }
         if(type === 'group') {
           let group = index + 1;
-          this.setColorOfAllButOneGroup({
-            prefix: 'light-', // want this to be  light
-            exclude: group
-          });
-          this.setColorOfOneGroup({
-            prefix: 'dark-', // want this to be dark
-            include: group
-          });
+          this.setColorOfAllButOneGroup({ prefix: 'light-', exclude: group });
+          this.setColorOfOneGroup({ prefix: 'dark-', include: group });
         }
       },
 
       // @param #String 'type' can be:
-      //   'period'  Want to darken a period
-      //   'group'  Want to darken a group
+      //   'period'  Want to darken an element period
+      //   'group'  Want to darken an element group
       unHighlightSection: function(index, type) {
         if(type === 'period') {
           let period = index + 1;
-          this.setColorOfAllButOnePeriod({
-            // ES6: prefix,
-            prefix: '', // want this to be light
-            exclude: period
-          });
-          this.setColorOfOnePeriod({
-            prefix: '', // want this to be dark
-            include: period
-          });
+          this.setColorOfAllButOnePeriod({ prefix: '', exclude: period }); // Light
+          this.setColorOfOnePeriod({ prefix: '',  include: period }); // Dark
         }
         if(type === 'group') {
           let group = index + 1;
-          this.setColorOfAllButOneGroup({
-            prefix: '', // want this to be  light
-            exclude: group
-          });
-          this.setColorOfOneGroup({
-            prefix: '', // want this to be dark
-            include: group
-          });
+          this.setColorOfAllButOneGroup({ prefix: '', exclude: group }); // Light
+          this.setColorOfOneGroup({ prefix: '', include: group }); // Dark
         }
 
         // OTHER STUFF TO DO ON UNHIGHLIGHT
@@ -217,11 +182,7 @@
             this.groupData[this.clickedElement.group - 1].color = 'dark';
           }
 
-          this.setColorOfOneElement({
-            prefix: 'supdark-',
-            i: this.clickedElement.index
-          });
-
+          this.setColorOfOneElement({ prefix: 'supdark-', i: this.clickedElement.index });
         }
       },
 
@@ -230,10 +191,7 @@
         // When user clicks on an element and hovers over a different element, the original element that was clicked
         // on still has prefix 'superdark'
         if(this.clickedElement.index !== index) {
-          this.setColorOfOneElement({
-            prefix: prefix,
-            i: index
-          });
+          this.setColorOfOneElement({ prefix: prefix, i: index });
         }
       },
 
@@ -308,14 +266,8 @@
           });
 
           // Sets color of all elements in periodic table
-          this.setColorOfAllButOneElement({
-            prefix: '',
-            exclude: index,
-          });
-          this.setColorOfOneElement({
-            prefix: 'supdark-',
-            i: index
-          });
+          this.setColorOfAllButOneElement({ prefix: '', exclude: index });
+          this.setColorOfOneElement({ prefix: 'supdark-', i: index });
         }
         // If clicking on the same element twice, cancel the 'supdark-' prefix and element hold
         else if(this.clickedElement.index === index) {
@@ -327,14 +279,8 @@
           });
 
           // Sets color of all elements in periodic table
-          this.setColorOfAllButOneElement({
-            prefix: '',
-            exclude: index,
-          });
-          this.setColorOfOneElement({
-            prefix: 'dark-',
-            i: index
-          });
+          this.setColorOfAllButOneElement({ prefix: '', exclude: index });
+          this.setColorOfOneElement({ prefix: 'dark-',  i: index });
         }
       },
 
