@@ -60,7 +60,7 @@
         'activeElement',
       ]),
       routePath: function() {
-        return this.$route.path.substring(1)
+        return this.$route.path.substring(1);
       }
     },
 
@@ -68,30 +68,8 @@
       ...mapActions([
         'loadElementProperties'
       ]),
-      // Fetch the data, depending on the route
       updateProperties: function() {
-        let routePath = this.$route.path.substring(1);
 
-        // Fetch data on a per-route basis
-        if(routePath === 'properties') {
-          // this.loadElementProperties({ propertyType: 'properties' });
-        }
-        else if (routePath === 'isotopes')
-        {
-          // this.loadElementProperties({ propertyType: 'isotopes' });
-        }
-        else if(routePath === 'electrons') {
-          // this.loadElementProperties({ propertyType: 'block' });
-        }
-        else if (routePath === 'orbitals') {
-          // this.loadElementProperties({ propertyType: 'orbitals' });
-        }
-        else if(routePath === 'isotopes') {
-          // this.loadElementProperties ({ propertyType: 'isotopes' });
-        }
-        else {
-          // this.loadElementProperties({ propertyType: 'properties' });
-        }
       }
     }
 

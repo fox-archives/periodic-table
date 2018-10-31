@@ -10,9 +10,8 @@ export default new Vuex.Store({
     ubiquitousElementData: undefined,
     placementElementData: undefined,
 
-    colorShownElementData: [], // Where color data actually comes from
-    colorBlockElementData: undefined,
-    colorCategoryElementData: undefined,
+    colorBlockElementData: [],
+    colorCategoryElementData: [],
 
     // Placement and data of each Period and Group Label
     periodData: [],
@@ -384,14 +383,6 @@ export default new Vuex.Store({
       grid.style.setProperty('--primaryTextSize', primaryFontSize);
       grid.style.setProperty('--secondaryTextSize', secondaryFontSize);
       grid.style.setProperty('--labelTextSize', labelFontSize);
-    },
-    newLoadElementData: function(state, payload) {
-      if(payload.colorScheme === 'type') {
-        state.colorShownElementData = state.colorCategoryElementData;
-      }
-      else if(payload.colorScheme === 'block') {
-        state.colorShownElementData = state.colorBlockElementData;
-      }
     }
   },
   actions: {
@@ -422,18 +413,20 @@ export default new Vuex.Store({
         })
         .catch((error) => console.log(error));
     },
-    fetchElementColors: function(state, payload) {
-      axios.get('/element-data/' + payload.colorScheme + '.json')
-        .then((response) => {
-          if(payload.colorScheme === 'type') {
-            state.colorCategoryElementData = response.data;
-          }
-          else if(payload.colorScheme === 'block') {
-            state.colorBlockElementData = response.data;
-          }
-          this.state.colorShownElementData = response.data;
-        })
-        .catch((error) => console.log(error));
+    fetchElementColors: function(state) {
+      function getElementBlockColors() { return axios.get('/element-data/block.json'); }
+      function getCategoryDataColors() { return axios.get('/element-data/type.json'); }
+
+      axios.all([getElementBlockColors(), getCategoryDataColors()])
+        .then(axios.spread(function(blockData, categoryData) {
+          // console.log(blockData.data);
+          // console.log(categoryData.data);
+          // TODO: Temp and DIRTY fix
+          state.state.colorBlockElementData = blockData.data;
+          state.state.colorCategoryElementData = categoryData.data;
+          // state.colorBlockElementData = blockData.data;
+          // state.colorCategoryElementData = categoryData.data;
+        }));
     }
   }
 });

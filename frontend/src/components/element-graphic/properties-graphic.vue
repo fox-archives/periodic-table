@@ -27,7 +27,7 @@
       // this.newSizeInfoVisualText();
 
       window.addEventListener('resize',
-        throttle(this.newSizeInfoVisualText, 50)
+        throttle(this.newSizeInfoVisualText, 25)
       );
 
       EventBus.$on('set-info-location', payload => {

@@ -9,7 +9,7 @@
                v-on:mouseover="[setElementPrefix(index, 'dark-'), setLabelColor(index, 'true'), updateActiveElement(index)]"
                v-on:mouseleave="[setElementPrefix(index, ''), setLabelColor(index, 'false'), updateActiveElement(index)]"
                v-on:click="[clickElement(index)]"
-               v-bind:class="[placement.column, placement.row, placement.period, placement.group]"
+               v-bind:class="[placement.column, placement.row, placement.period, placement.group, currentElementColors[index].color]"
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">{{ ubiquitousElementData[index].label }}</p>
@@ -54,18 +54,14 @@
   import { mapActions } from 'vuex';
   import throttle from 'lodash/throttle';
   import PerfectScrollbar from 'perfect-scrollbar';
+  import axios from 'axios';
 
   export default {
     name: 'PeriodicTable',
     created() {
-      this.updateColor();
-
+      this.fetchElementColors();
       this.loadElementData();
       this.loadPeriodGroupLabels();
-
-      setInterval(() => {
-        // console.log(this.ubiquitousElementData)
-      }, 100);
     },
     mounted() {
       // This controls perfect scrollbar only
@@ -89,7 +85,7 @@
     },
     watch: {
       '$route'() {
-        this.updateColor();
+
       }
     },
     computed: {
@@ -107,7 +103,15 @@
         'clickedElement',
         'options'
       ]),
-
+      currentElementColors: function() {
+        let route = this.$route.path.substring(1);
+        if(route === 'properties' || route === 'isotopes') {
+          return this.colorBlockElementData;
+        }
+        else if(route === 'electrons' || route === 'orbitals') {
+          return this.colorCategoryElementData;
+        }
+      }
     },
     methods: {
       ...mapMutations([
@@ -127,37 +131,14 @@
         'setColorOfOneGroup',
         'setColorOfOneElement',
 
-        'setClassLayout',
-        'newLoadElementData'
+        'setClassLayout'
       ]),
       ...mapActions([
         'loadElementData', // This should be a temp action that will be replaced soon
-        'fetchElementColors',
-        'loadPeriodGroupLabels'
+        'loadPeriodGroupLabels',
+
+        'fetchElementColors'
       ]),
-
-      // Purpose: Updates color scheme of the periodic table
-      // @param none
-      updateColor: function() {
-        let routePath = this.$route.path.substring(1);
-
-        if (routePath === 'properties' || routePath === 'isotopes') {
-          if(this.colorCategoryElementData === undefined) {
-            this.fetchElementColors({colorScheme: 'type'});
-          }
-          // else {
-            this.newLoadElementData({ colorScheme: 'type'})
-          // }
-        }
-        else if(routePath === 'electrons' || routePath === 'orbitals') {
-          if(this.colorBlockElementData === undefined) {
-            this.fetchElementColors({colorScheme: 'block'});
-          }
-          // else {
-            this.newLoadElementData({ colorScheme: 'block'})
-          // }
-        }
-      },
 
       // @param #String 'type' can be:
       //   'period'  Want to darken a period
