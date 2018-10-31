@@ -59,8 +59,8 @@
     name: 'PeriodicTable',
     created() {
       this.$store.dispatch('fetchElementColors');
-      this.$store.dispatch('loadElementData'); // This should be a temp action that will be replaced soon
-      this.$store.dispatch('loadPeriodGroupLabels');
+      this.$store.dispatch('fetchRequiredElementData'); // This should be a temp action that will be replaced soon
+      this.$store.dispatch('fetchPeriodGroupLabels');
     },
     mounted() {
       // This controls perfect scrollbar only

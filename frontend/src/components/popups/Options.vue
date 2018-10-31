@@ -34,7 +34,7 @@
 <script>
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import { EventBus } from "../event-bus";
+  import { EventBus } from '../event-bus';
   import blurBackground from '../../mixins/blurBackground.js';
   import debounce from 'lodash/debounce';
   import throttle from 'lodash/throttle';
@@ -131,8 +131,8 @@
         // .1s after setInfoLocation is called, update the className that determines the layout
         // Probably can't do it right away because the div elements have just moved / changed positions
         setTimeout(() => {
-          this.setClassLayout();
-          this.setMobilePeriodicTableWidth();
+          // this.setClassLayout();
+          // this.setMobilePeriodicTableWidth();
           EventBus.$emit('set-info-location', 1);
         }, 100);
 
