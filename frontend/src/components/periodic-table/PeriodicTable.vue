@@ -80,10 +80,7 @@
         'groupData',
 
         'ready',
-
-        'activeElement',
-        'clickedElement',
-        'options'
+        'clickedElement'
       ]),
       currentElementColors: function() {
         let route = this.$route.path.substring(1);
@@ -107,7 +104,7 @@
         'setColorOfAllButOneElement',
         'setColorOfOnePeriod',
         'setColorOfOneGroup',
-        'setColorOfOneElement',
+        'setColorOfOneElement'
       ]),
 
       // @param #String 'type' can be:

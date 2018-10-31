@@ -300,6 +300,7 @@ export default new Vuex.Store({
       }
     },
 
+    // TODO: Move these to a local component
     // ## LAYOUT STUFF ## \\
     // This script makes the periodic-table and element info panel not have a height
     // bigger than the browser on info-side
@@ -356,46 +357,36 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    loadElementData: function() {
-      axios.get('/element-data/placement.json')
-        .then((response) => {
-          this.state.placementElementData = response.data;
-        })
-        .catch((error) => console.log(error));
+    loadElementData: function(context) {
+      // Load the placement of the elements and the bare minimum information
+      function getElementPlacementData() { return axios.get('/element-data/placement.json'); }
+      function getElementUbiquitousData() { return axios.get('/element-data/ubiquitous.json'); }
 
-      axios.get('/element-data/ubiquitous.json')
-        .then((response) => {
-          this.state.ubiquitousElementData = response.data;
-          this.state.ready = true;
-        })
-        .catch((error) => console.log(error));
+      axios.all([getElementPlacementData(), getElementUbiquitousData()])
+        .then(axios.spread(function(elementPlacement, elementUbiquitous) {
+          context.state.placementElementData = elementPlacement.data;
+          context.state.ubiquitousElementData = elementUbiquitous.data;
+          context.state.ready = true;
+        }));
     },
-    loadPeriodGroupLabels: function(state, payload) {
-      axios.get('/element-data/period.json')
-        .then((response) => {
-          this.state.periodData = response.data;
-        })
-        .catch((error) => console.log(error));
+    loadPeriodGroupLabels: function(context) {
+      function getPeriodLabelData() { return axios.get('/element-data/period.json'); }
+      function getGroupLabelData() { return axios.get('/element-data/group.json'); }
 
-      axios.get('/element-data/group.json')
-        .then((response) => {
-          this.state.groupData = response.data;
-        })
-        .catch((error) => console.log(error));
+      axios.all([getPeriodLabelData(), getGroupLabelData()])
+        .then(axios.spread(function(periodLabel, groupLabel) {
+          context.state.periodData = periodLabel.data;
+          context.state.groupData = groupLabel.data;
+        }));
     },
-    fetchElementColors: function(state) {
+    fetchElementColors: function(context) {
       function getElementBlockColors() { return axios.get('/element-data/block.json'); }
       function getCategoryDataColors() { return axios.get('/element-data/type.json'); }
 
       axios.all([getElementBlockColors(), getCategoryDataColors()])
         .then(axios.spread(function(blockData, categoryData) {
-          // console.log(blockData.data);
-          // console.log(categoryData.data);
-          // TODO: Temp and DIRTY fix
-          state.state.colorBlockElementData = blockData.data;
-          state.state.colorCategoryElementData = categoryData.data;
-          // state.colorBlockElementData = blockData.data;
-          // state.colorCategoryElementData = categoryData.data;
+          context.state.colorBlockElementData = blockData.data;
+          context.state.colorCategoryElementData = categoryData.data;
         }));
     }
   }
