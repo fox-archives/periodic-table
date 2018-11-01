@@ -26,7 +26,7 @@
   import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
-    name: 'PropertiesInfo',
+    name: 'PropertiesData',
     data() {
       return {
         properties: [

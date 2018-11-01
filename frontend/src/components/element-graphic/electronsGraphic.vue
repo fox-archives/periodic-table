@@ -10,7 +10,7 @@
   import { mapGetters } from 'vuex';
 
   export default {
-    name: 'ElectronsVisual',
+    name: 'ElectroncGraphic',
     computed: {
       ...mapGetters([
         'activeElement',

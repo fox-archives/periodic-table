@@ -1,17 +1,17 @@
 // TODO: Make elementsThemeColors global rather than importing the _elements-theme.scss file, which is mixins and variables
 @import '../periodic-table/elements-theme.scss';
 .light-def {
-  @include elementGraphicThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $ld-text);
+  @include commonGraphicThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $ld-text);
   @include elementsThemeColors('', true, 2, 9);
 }
 
 .light-con {
-  @include elementGraphicThemeDefault($lc-background, true, $lc-shadow, $lc-shadow-hover, $lc-text);
+  @include commonGraphicThemeDefault($lc-background, true, $lc-shadow, $lc-shadow-hover, $lc-text);
   @include elementsThemeColors('', true, 4, 9);
 }
 
 .dark-def {
-  @include elementGraphicThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover, $dd-text);
+  @include commonGraphicThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover, $dd-text);
   @include elementsThemeColors('', true, 7, 1);
 
 }

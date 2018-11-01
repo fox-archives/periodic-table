@@ -9,7 +9,7 @@
 import { mapGetters } from 'vuex';
 
   export default {
-    name: 'ElementInfoPanel',
+    name: 'PropertiesInformationContainer',
     computed: {
       ...mapGetters([
         'options'

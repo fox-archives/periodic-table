@@ -20,7 +20,7 @@
   import throttle from 'lodash/debounce';
 
   export default {
-    name: 'PropertiesVisual',
+    name: 'PropertiesGraphic',
     mounted() {
       // TODO: Fix this bug with adding 20ms delay?
       // this.sizePropertiesGraphicText();
