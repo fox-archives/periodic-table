@@ -23,7 +23,7 @@
 <style scoped lang="scss">
   @import '../../styles/variables';
   @import 'theme';
-  @import 'element-graphic';
+  @import 'common-graphic';
 
 
   .light-def {

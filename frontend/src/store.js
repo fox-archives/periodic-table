@@ -275,21 +275,16 @@ export default new Vuex.Store({
       Vue.set(state.colorShownElementData[payload.i], 'color', (payload.prefix + defaultColor));
     },
 
-    // TODO: Make this reactive (We have to assign properties to Vue objects using Vue API)
     // ## NAVIGATION STUFF ## \\
     // Purpose: To replace the state options with new ones
     // @param #object 'payload' contains properties:
     //   (req) .themeType #String  The theme that is active
     //   (opt) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
-    //   (opt) Any other properties of options
+    //   (opt) Any other properties of options (see store)
     setOptions: function(state, newProperties) {
       // Payload contains an object containing properties
       // These properties should replace the properties the options object (from the vuex state)
-      for(let property in newProperties) {
-        if(state.options.hasOwnProperty(property)) {
-          state.options[property] = newProperties[property];
-        }
-      }
+      state.options = Object.assign({}, state.options, newProperties);
     }
   },
   actions: {

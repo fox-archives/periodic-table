@@ -42,7 +42,7 @@
       }
     },
     created() {
-      this.updateProperties();
+      this.updatePropertiesData();
     },
     mounted() {
       let psPanelTextual = new PerfectScrollbar('#textual-inner', {
@@ -51,7 +51,7 @@
     },
     watch: {
       '$route'() {
-        this.updateProperties();
+        this.updatePropertiesData();
       }
     },
     computed: {
@@ -65,10 +65,7 @@
     },
 
     methods: {
-      ...mapActions([
-        'loadElementProperties'
-      ]),
-      updateProperties: function() {
+      updatePropertiesData: function() {
 
       }
     }
@@ -79,5 +76,5 @@
 <style scoped lang="scss">
   @import '../../styles/variables.scss';
   @import 'theme';
-  @import 'element-information';
+  @import 'properties-data';
 </style>

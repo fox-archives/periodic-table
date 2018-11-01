@@ -23,21 +23,22 @@
     name: 'PropertiesVisual',
     mounted() {
       // TODO: Fix this bug with adding 20ms delay?
-      setTimeout(() => this.newSizeInfoVisualText(), 20);
-      // this.newSizeInfoVisualText();
+      // this.sizePropertiesGraphicText();
+      setTimeout(() => this.sizePropertiesGraphicText(), 20);
+
 
       window.addEventListener('resize',
-        throttle(this.newSizeInfoVisualText, 25)
+        throttle(this.sizePropertiesGraphicText, 25)
       );
 
-      EventBus.$on('set-info-location', payload => {
-        this.newSizeInfoVisualText();
+      EventBus.$on('set-information-container-location', payload => {
+        this.sizePropertiesGraphicText();
       });
 
     },
     watch: {
       '$route'() {
-        this.newSizeInfoVisualText();
+        this.sizePropertiesGraphicText();
       }
     },
     computed: {
@@ -47,7 +48,7 @@
       ])
     },
     methods: {
-      newSizeInfoVisualText: function() {
+      sizePropertiesGraphicText: function() {
           // container is the large color box with large abbreviation, and the area around that (the square)
           let container = document.getElementById('visual-inner');
           let fontSize = (container.clientWidth * 0.12) + 'px';
@@ -60,5 +61,5 @@
 <style scoped lang="scss">
   @import '../../styles/variables';
   @import 'theme';
-  @import 'element-graphic';
+  @import 'common-graphic';
 </style>

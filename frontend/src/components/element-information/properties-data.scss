@@ -1,13 +1,13 @@
 .light-def {
-  @include elementInformationThemeDefault($ld-background, $ld-background-accent, true, $ld-shadow, $ld-shadow-hover, $ld-text);
+  @include elementDataThemeDefault($ld-background, $ld-background-accent, true, $ld-shadow, $ld-shadow-hover, $ld-text);
 }
 
 .light-con {
-  @include elementInformationThemeDefault($lc-background, $lc-background-accent, true, $lc-shadow, $lc-shadow-hover, $lc-text);
+  @include elementDataThemeDefault($lc-background, $lc-background-accent, true, $lc-shadow, $lc-shadow-hover, $lc-text);
 }
 
 .dark-def {
-  @include elementInformationThemeDefault($dd-background, $dd-background-accent, false, $dd-shadow, $dd-shadow-hover, $dd-text);
+  @include elementDataThemeDefault($dd-background, $dd-background-accent, false, $dd-shadow, $dd-shadow-hover, $dd-text);
 }
 
 // BOTH INFO-SIDE AND INFO-TOP

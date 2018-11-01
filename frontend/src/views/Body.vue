@@ -1,6 +1,6 @@
 <template>
   <div id="display" v-bind:class="[periodicTableFormat, options.themeType, options.infoLocationType]">
-    <ElementInfoPanel></ElementInfoPanel>
+    <PropertiesInformationContainer></PropertiesInformationContainer>
     <PeriodicTable></PeriodicTable>
   </div>
 </template>
@@ -11,7 +11,7 @@
   import { EventBus } from '../components/event-bus';
   import throttle from 'lodash/throttle';
   import PeriodicTable from '../components/periodic-table/PeriodicTable.vue';
-  import ElementInfoPanel from '../components/element-info-visual-container.vue';
+  import PropertiesInformationContainer from '../components/propertiesInformationContainer.vue';
 
 
   export default {
@@ -22,52 +22,46 @@
       }
     },
     created() {
+      // Right when grid-outer is not null, resize text and calculate layout
       let setClassLayoutFirstLoad = setInterval(() => {
         // If the document is loaded, clear the timer, setClassLayout
         // should only be activated on page resize
         if(document.getElementById('grid-outer') !== null) {
-          this.setMobilePeriodicTableWidth();
-          this.sizeElementsText();
-          this.setClassLayout();
+          this.calculateLayout();
           clearInterval(setClassLayoutFirstLoad);
         }
         else {
-          console.warn('Grid-outer cannot be found. Perhaps the periodic table data cannot be fetched?');
+          console.warn('Grid-outer not loaded in yet.');
         }
       }, 100);
 
 
       // Apparently you need a set interval after this Vue component is created, especially for the method setMobilePeriodicTableWidth
       setTimeout(() => {
-        this.setMobilePeriodicTableWidth();
-        this.sizeElementsText();
-        this.setClassLayout();
+        this.calculateLayout();
       }, 1000);
 
-
+      // Update layout (concerning the body component) on resize
       window.addEventListener('resize',
-        throttle(this.calculateLayout, 100)
+        throttle(this.calculateLayout, 25)
       );
 
-
-    },
-    mounted() {
-      setTimeout(() => {
-        // this.setMobilePeriodicTableWidth();
-        // this.sizeElementsText();
-      }, 20);
-
-      EventBus.$on('set-info-location', payload => {
-        this.setClassLayout();
-        this.setMobilePeriodicTableWidth();
+      // Update layout when the settings for container location changes
+      EventBus.$on('set-information-container-location', payload => {
+        this.calculateLayout();
       });
+    },
+    computed: {
+      ...mapGetters([
+        'options',
+      ])
     },
     methods: {
       calculateLayout: function() {
         if(document.getElementById('grid-outer') !== null) {
           this.setMobilePeriodicTableWidth();
-          this.sizeElementsText();
           this.setClassLayout();
+          this.sizeElementsText();
         }
       },
       // This changes the CSS variable to size the element text
@@ -97,7 +91,7 @@
         let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
 
         // Only change the style if the periodic-table has a greater or equal height for properties-visual.vue
-        if (periodicTableHeight >= panelHeight && periodicTableHeight !== 0 && panelHeight !== 0) {
+        if(periodicTableHeight >= panelHeight && periodicTableHeight !== 0 && panelHeight !== 0) {
           // This means if panel and periodic-table fill whole window height, increasing
           // width will not increase size of periodic-table, instead it creates whitespace;
           // periodic-table will only increase if the height of browser window increases
@@ -125,13 +119,8 @@
         }
       }
     },
-    computed: {
-      ...mapGetters([
-        'options',
-      ])
-    },
     components: {
-      ElementInfoPanel,
+      PropertiesInformationContainer,
       PeriodicTable
     }
   }

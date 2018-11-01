@@ -7,13 +7,13 @@ import Footer from './components/footer/Footer.vue';
 import Body from './views/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
-import propertiesInfo from './components/element-information/properties-information.vue';
-import propertiesVisual from './components/element-graphic/properties-graphic.vue';
-import electronsVisual from './components/element-graphic/electrons-graphic.vue';
-import orbitalsVisual from './components/element-graphic/orbitals-graphic.vue';
+import propertiesInfo from './components/element-information/propertiesData.vue';
+import propertiesVisual from './components/element-graphic/propertiesGraphic.vue';
+import electronsVisual from './components/element-graphic/electronsGraphic.vue';
+import orbitalsVisual from './components/element-graphic/orbitalsGraphic.vue';
 
 import About from './components/about/about.vue';
-import Feedback from './components/feedback/feedback.vue';
+import Feedback from './components/feedback/Feedback.vue';
 
 
 Vue.use(VueRouter);

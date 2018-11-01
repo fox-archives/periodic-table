@@ -205,7 +205,7 @@
           }
           // Only darken the period / group label if the element actually has a valid group number (within the actual range of the periodic table)
           // Recall Act. and Lan. have group of 0, and they don't have period.json / group labels
-          if (group > 0) {
+          if(group > 0) {
             // Darken the labels if the mouse is entering an element
             if(isMouseOver === 'true') {
               this.groupData[group - 1].color = 'dark';

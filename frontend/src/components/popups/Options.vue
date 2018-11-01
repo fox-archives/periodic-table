@@ -42,27 +42,6 @@
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
   export default {
     name: 'Options',
-    computed: {
-      ...mapGetters([
-        'options'
-      ])
-    },
-    mounted() {
-      this.$nextTick(() => {
-        this.updateInfoLocation();
-      });
-      // this.updateInfoLocation();
-      // window.addEventListener('resize', () => {
-      //   this.updateInfoLocation();
-      // });
-      window.addEventListener('resize',
-        throttle(this.updateInfoLocation, 10)
-      );
-    },
-    components: {
-      AdvancedOptionsPopUp
-    },
-
     data() {
       return {
         advancedSettingsPopupActive: false,
@@ -84,6 +63,20 @@
           { text: 'Excluded', value: 4 }
         ]
       }
+    },
+    mounted() {
+      this.$nextTick(() => {
+        this.updateInfoLocation();
+      });
+
+      window.addEventListener('resize',
+        throttle(this.updateInfoLocation, 10)
+      );
+    },
+    computed: {
+      ...mapGetters([
+        'options'
+      ])
     },
     methods: {
       ...mapMutations([
@@ -133,7 +126,7 @@
         setTimeout(() => {
           // this.setClassLayout();
           // this.setMobilePeriodicTableWidth();
-          EventBus.$emit('set-info-location', 1);
+          EventBus.$emit('set-information-container-location', 1);
         }, 100);
 
         // First, convert infoLocation number to a string
@@ -145,7 +138,8 @@
         // Then set the global options for if the info location type is auto
         if(infoChosen === 'info-auto') {
           this.setOptions({ infoLocationTypeIsAuto: true });
-          this.updateInfoLocation();
+          // this.updateInfoLocation();
+          EventBus.$emit('set-information-container-location', 1);
         }
         else {
           this.setOptions({ infoLocationTypeIsAuto: false });
@@ -163,6 +157,10 @@
           }
         }
       }
+
+    },
+    components: {
+      AdvancedOptionsPopUp
     },
     mixins: [
       blurBackground
