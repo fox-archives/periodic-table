@@ -312,7 +312,7 @@ export default new Vuex.Store({
     },
     fetchElementColors: function(context) {
       function getElementBlockColors() { return axios.get('/element-data/block.json'); }
-      function getCategoryDataColors() { return axios.get('/element-data/type.json'); }
+      function getCategoryDataColors() { return axios.get('/element-data/categories.json'); }
 
       axios.all([getElementBlockColors(), getCategoryDataColors()])
         .then(axios.spread(function(blockData, categoryData) {
