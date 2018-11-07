@@ -3,7 +3,7 @@
 
 SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
 Import["common-methods.wls"];
-DeleteFile["json/ubiquitous.json"];
+DeleteFile["json/required-data-ubiquitous.json"];
 
 periodicTable = {};
 	
@@ -38,7 +38,7 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["json/ubiquitous.json", periodicTable, "JSON"];
+Export["json/required-data-ubiquitous.json", periodicTable, "JSON"];
 
 
 

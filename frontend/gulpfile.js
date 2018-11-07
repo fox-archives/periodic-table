@@ -4,7 +4,7 @@ var gzip = require('gulp-gzip');
 var brotli = require('gulp-brotli');
 
 const inDir = '../computed/json/*.json';
-const outDir = '../backend/public/element-data';
+const outDir = '../backend/public/data';
 
 gulp.task('deploy-dist', function() {
   gulp.src('./dist/index.html')

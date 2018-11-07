@@ -3,7 +3,7 @@
 
 SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
 Import["common-methods.wls"];
-DeleteFile["json/categories.json"];
+DeleteFile["json/color-data-classification.json"];
 
 periodicTable = {};
 
@@ -79,4 +79,4 @@ For[i = 1, i < 119, i++,
 	];
 ];
 Print["Done"];
-Export["json/categories.json", periodicTable, "JSON"];
+Export["json/color-data-classification.json", periodicTable, "JSON"];

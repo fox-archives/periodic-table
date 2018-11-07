@@ -3,7 +3,7 @@
 
 SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
 Import["common-methods.wls"];
-DeleteFile["json/placement.json"];
+DeleteFile["json/required-data-placement.json"];
 
 periodicTable = {};
 
@@ -87,7 +87,7 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["json/placement.json", periodicTable, "JSON"];
+Export["json/required-data-placement.json", periodicTable, "JSON"];
 
 
 
