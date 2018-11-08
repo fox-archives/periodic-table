@@ -1,7 +1,7 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
-      <div v-if="ready" id="grid-outer">
+      <div v-if="ready1 && ready2" id="grid-outer">
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div class="element"
@@ -9,9 +9,8 @@
                v-on:mouseover="[setElementPrefix(index, 'dark-'), setLabelColor(index, 'true'), updateActiveElement(index)]"
                v-on:mouseleave="[setElementPrefix(index, ''), setLabelColor(index, 'false'), updateActiveElement(index)]"
                v-on:click="[clickElement(index)]"
-               v-bind:class="[placement.column, placement.row, placement.period, placement.group]"
+               v-bind:class="[placement.column, placement.row, placement.period, placement.group, useElementColorData[index].color]"
           >
-               <!--v-bind:class="[placement.column, placement.row, placement.period, placement.group, getElementColorsData[index].color]"-->
             <div v-cloak class="element-inner">
               <p class="secondary-text test">{{ ubiquitousElementData[index].label }}</p>
               <p class="primary-text">{{ ubiquitousElementData[index].abbreviation }}</p>
@@ -61,11 +60,12 @@
     name: 'PeriodicTable',
     data() {
       return {
-        ready: false
+        ready1: false,
+        ready2: false
       }
     },
     created() {
-      let success1 = this.fetchRequiredElementData();
+      this.fetchRequiredElementData();
       this.fetchElementColorData();
     },
     mounted() {
@@ -75,6 +75,11 @@
       window.addEventListener('resize',
         debounce(psPeriodicTable.update, 50)
       );
+    },
+    watch: {
+      '$route'() {
+       // this.fetchElementColorData();
+      }
     },
     computed: {
       ...mapGetters([
@@ -91,7 +96,20 @@
         'groupLabelData',
 
         'clickedElement'
-      ])
+      ]),
+      allReady: function() {
+        return this.ready1 && this.ready2;
+      },
+      useElementColorData: function() {
+        this.fetchElementColorData();
+        let route = this.$route.path;
+        if(route === '/properties' || route === '/isotopes') {
+          return this.$store.state.colorElementDataClassification;
+        }
+        else if(route === '/electrons' || route === '/orbitals') {
+          return this.$store.state.colorElementDataBlock;
+        }
+      }
     },
     methods: {
       ...mapMutations([
@@ -122,7 +140,7 @@
             that.$store.commit('setPlacementElementData', elementPlacement.data);
             that.$store.commit('setPeriodLabelData', periodLabelData.data);
             that.$store.commit('setGroupLabelData', groupLabelData.data);
-            that.ready = true;
+            that.ready1 = true;
           }));
       },
       fetchElementColorData: function() {
@@ -145,7 +163,7 @@
             else if(typeOfFetchedColorData === 'color-data-block') {
               that.$store.commit('setColorElementDataBlock', response.data);
             }
-            return true;
+            that.ready = true;
           })
           .catch((error) => {
             console.log(error);
