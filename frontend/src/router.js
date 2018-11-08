@@ -9,8 +9,12 @@ import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
 import propertiesInfo from './components/element-information/propertiesData.vue';
 import propertiesVisual from './components/element-graphic/propertiesGraphic.vue';
-import electronsVisual from './components/element-graphic/electronsGraphic.vue';
-import orbitalsVisual from './components/element-graphic/orbitalsGraphic.vue';
+
+// This is temporary, until we have 3D visualization
+import electronsVisual from './components/element-graphic/propertiesGraphic.vue';
+import orbitalsVisual from './components/element-graphic/propertiesGraphic.vue';
+// import electronsVisual from './components/element-graphic/electronsGraphic.vue';
+// import orbitalsVisual from './components/element-graphic/orbitalsGraphic.vue';
 
 import About from './components/about/about.vue';
 import Feedback from './components/feedback/Feedback.vue';

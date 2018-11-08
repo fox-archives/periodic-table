@@ -9,20 +9,21 @@
                v-on:mouseover="[setElementPrefix(index, 'dark-'), setLabelColor(index, 'true'), updateActiveElement(index)]"
                v-on:mouseleave="[setElementPrefix(index, ''), setLabelColor(index, 'false'), updateActiveElement(index)]"
                v-on:click="[clickElement(index)]"
-               v-bind:class="[placement.column, placement.row, placement.period, placement.group, currentElementColors[index].color]"
+               v-bind:class="[placement.column, placement.row, placement.period, placement.group]"
           >
+               <!--v-bind:class="[placement.column, placement.row, placement.period, placement.group, getElementColorsData[index].color]"-->
             <div v-cloak class="element-inner">
               <p class="secondary-text test">{{ ubiquitousElementData[index].label }}</p>
               <p class="primary-text">{{ ubiquitousElementData[index].abbreviation }}</p>
               <p class="secondary-text">{{ ubiquitousElementData[index].name }}</p>
-              <p class="secondary-text">{{ ubiquitousElementData[index].atomicMass }}</p>
+              <p class="secondary-text"></p>
             </div>
           </div>
 
           <!-- PERIOD LABELS -->
-          <div class="label-period label" v-for="(period, index) in periodData" v-bind:class="[period.row, period.column]">
+          <div class="label-period label" v-for="(period, index) in periodLabelData" v-bind:class="[period.row, period.column]">
             <div v-cloak class="label-period-inner label-inner"
-                 v-bind:class="periodData[index].color"
+                 v-bind:class="periodLabelData[index].color"
                  v-on:mouseover="[highlightSection(index, 'period')]"
                  v-on:mouseleave="[unHighlightSection(index, 'period')]"
                  v-on:click="periodNotification(index)"
@@ -32,9 +33,9 @@
           </div>
 
           <!-- GROUP LABELS -->
-          <div class="label-group label" v-for="(group, index) in groupData" v-bind:class="[group.row, group.column]">
+          <div class="label-group label" v-for="(group, index) in groupLabelData" v-bind:class="[group.row, group.column]">
             <div v-cloak class="label-group-inner label-inner"
-                 v-bind:class="groupData[index].color"
+                 v-bind:class="groupLabelData[index].color"
                  v-on:mouseover="[highlightSection(index, 'group')]"
                  v-on:mouseleave="[unHighlightSection(index, 'group')]"
                  v-on:click="groupNotification(index)"
@@ -53,14 +54,19 @@
   import { mapMutations } from 'vuex';
   import { mapActions } from 'vuex';
   import debounce from 'lodash/debounce';
+  import axios from 'axios';
   import PerfectScrollbar from 'perfect-scrollbar';
 
   export default {
     name: 'PeriodicTable',
+    data() {
+      return {
+        ready: false
+      }
+    },
     created() {
-      this.$store.dispatch('fetchElementColors');
-      this.$store.dispatch('fetchRequiredElementData'); // This should be a temp action that will be replaced soon
-      this.$store.dispatch('fetchPeriodGroupLabels');
+      let success1 = this.fetchRequiredElementData();
+      this.fetchElementColorData();
     },
     mounted() {
       // This controls perfect scrollbar only
@@ -72,25 +78,20 @@
     },
     computed: {
       ...mapGetters([
-        'ubiquitousElementData',
-        'placementElementData',
-        'colorBlockElementData',
-        'colorCategoryElementData',
-        'periodData',
-        'groupData',
+        // Data for all elements
+        'ubiquitousElementData', // This data does not change and is required
+        'placementElementData', // For placement of elements
 
-        'ready',
+        // Holds color values
+        'colorElementDataBlock',
+        'colorElementDataClassification',
+
+        // Placement of Period / Group labels
+        'periodLabelData',
+        'groupLabelData',
+
         'clickedElement'
-      ]),
-      currentElementColors: function() {
-        let route = this.$route.path.substring(1);
-        if(route === 'properties' || route === 'isotopes') {
-          return this.colorBlockElementData;
-        }
-        else if(route === 'electrons' || route === 'orbitals') {
-          return this.colorCategoryElementData;
-        }
-      }
+      ])
     },
     methods: {
       ...mapMutations([
@@ -104,9 +105,55 @@
         'setColorOfAllButOneElement',
         'setColorOfOnePeriod',
         'setColorOfOneGroup',
-        'setColorOfOneElement'
+        'setColorOfOneElement',
       ]),
+      // FETCHING DATA
+      fetchRequiredElementData: function() {
+        // Load the placement of the elements and the bare minimum information
+        function getElementUbiquitousData() { return axios.get('/data/required-data-ubiquitous.json'); }
+        function getElementPlacementData() { return axios.get('/data/required-data-placement.json'); }
+        function getPeriodLabelData() { return axios.get('/data/label/period.json'); }
+        function getGroupLabelData() { return axios.get('/data/label/group.json'); }
 
+        let that = this;
+        axios.all([getElementUbiquitousData(), getElementPlacementData(), getPeriodLabelData(), getGroupLabelData()])
+          .then(axios.spread(function(elementUbiquitous, elementPlacement, periodLabelData, groupLabelData) {
+            that.$store.commit('setUbiquitousElementData', elementUbiquitous.data);
+            that.$store.commit('setPlacementElementData', elementPlacement.data);
+            that.$store.commit('setPeriodLabelData', periodLabelData.data);
+            that.$store.commit('setGroupLabelData', groupLabelData.data);
+            that.ready = true;
+          }));
+      },
+      fetchElementColorData: function() {
+        let route = this.$route.path;
+
+        let typeOfFetchedColorData;
+        if(route === '/properties' || route === '/isotopes') {
+          typeOfFetchedColorData = 'color-data-classification';
+        }
+        else if(route === '/electrons' || route === '/orbitals') {
+          typeOfFetchedColorData = 'color-data-block';
+        }
+
+        let that = this;
+        axios.get('/data/' + typeOfFetchedColorData + '.json')
+          .then((response) => {
+            if(typeOfFetchedColorData === 'color-data-classification') {
+              that.$store.commit('setColorElementDataClassification', response.data);
+            }
+            else if(typeOfFetchedColorData === 'color-data-block') {
+              that.$store.commit('setColorElementDataBlock', response.data);
+            }
+            return true;
+          })
+          .catch((error) => {
+            console.log(error);
+            return false;
+          })
+      },
+
+      // OTHER
       // @param #String 'type' can be:
       //   'period'  Want to darken a period
       //   'group'  Want to darken a group
@@ -149,10 +196,10 @@
           // We don't want to change color when this.clickedElement.period / group is 0 that value is for groupless elements (lanth. and act. elements)
           // Nor do we want to change color when this.clickedElement.period / group is -1, because that occurs when this.clickedElement.active is false (I think this is already covered, but just a precaution)
           if(this.clickedElement.period > 0) {
-            this.periodData[this.clickedElement.period - 1].color = 'dark';
+            this.periodLabelData[this.clickedElement.period - 1].color = 'dark';
           }
           if(this.clickedElement.group > 0) {
-            this.groupData[this.clickedElement.group - 1].color = 'dark';
+            this.groupLabelData[this.clickedElement.group - 1].color = 'dark';
           }
 
           this.setColorOfOneElement({ prefix: 'supdark-', i: this.clickedElement.index });
@@ -193,11 +240,11 @@
           if(period > 0) {
             // Darken the labels if the mouse is entering an element
             if(isMouseOver === 'true') {
-              this.periodData[period - 1].color = 'dark';
+              this.periodLabelData[period - 1].color = 'dark';
             }
             // Lighten the labels if the mouse is leaving an element
             else if(isMouseOver === 'false') {
-              this.periodData[period - 1].color = 'light';
+              this.periodLabelData[period - 1].color = 'light';
             }
             else {
               console.warn("Unexpected parameter for isMouseOver passed through setLabelColor.");
@@ -208,11 +255,11 @@
           if(group > 0) {
             // Darken the labels if the mouse is entering an element
             if(isMouseOver === 'true') {
-              this.groupData[group - 1].color = 'dark';
+              this.groupLabelData[group - 1].color = 'dark';
             }
             // Lighten the labels if the moues is leaving an element
             else if(isMouseOver === 'false') {
-              this.groupData[group - 1].color = 'light';
+              this.groupLabelData[group - 1].color = 'light';
             }
             else {
               console.warn("Unexpected parameter for isMouseOver passed through setLabelColor.");
@@ -273,16 +320,16 @@
       // Sends a notification of the period
       periodNotification: function(index) {
         this.$vs.notify({
-          title: this.getPeriodGroupName('period', this.periodData[index].display),
-          text: this.periodData[index].name,
+          title: this.getPeriodGroupName('period', this.periodLabelData[index].display),
+          text: this.periodLabelData[index].name,
           time: 3000
         });
       },
       // Sends a notification of the group
       groupNotification: function(index) {
         this.$vs.notify({
-          title: this.getPeriodGroupName('group', this.groupData[index].display),
-          text: this.groupData[index].name,
+          title: this.getPeriodGroupName('group', this.groupLabelData[index].display),
+          text: this.groupLabelData[index].name,
           time: 3000
         });
       }

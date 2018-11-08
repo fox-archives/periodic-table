@@ -7,17 +7,17 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     // Arrays of data for all elements
-    ubiquitousElementData: undefined,
-    placementElementData: undefined,
+    ubiquitousElementData: [],
+    placementElementData: [],
 
-    colorBlockElementData: [],
-    colorCategoryElementData: [],
+    colorElementDataBlock: [],
+    colorElementDataClassification: [],
+
+
 
     // Placement and data of each Period and Group Label
-    periodData: [],
-    groupData: [],
-
-    ready: false,
+    periodLabelData: [],
+    groupLabelData: [],
 
     // Element Defaults
     activeElement: {
@@ -57,23 +57,17 @@ export default new Vuex.Store({
     placementElementData: function(state) {
       return state.placementElementData;
     },
-    colorBlockElementData: function(state) {
-      return state.colorBlockElementData;
+    colorElementDataBlock: function(state) {
+      return state.colorElementDataBlock;
     },
-    colorCategoryElementData: function(state) {
-      return state.colorCategoryElementData;
+    colorElementDataClassification: function(state) {
+      return state.colorElementDataClassification;
     },
-    colorShownElementData: function(state) {
-      return state.colorShownElementData;
+    periodLabelData: function(state) {
+      return state.periodLabelData;
     },
-    periodData: function(state) {
-      return state.periodData;
-    },
-    groupData: function(state) {
-      return state.groupData;
-    },
-    ready: function(state) {
-      return state.ready;
+    groupLabelData: function(state) {
+      return state.groupLabelData;
     },
 
     // Info about the hovered element
@@ -92,8 +86,28 @@ export default new Vuex.Store({
     }
   },
   mutations: {
-    // ## PERIODIC TABLE ELEMENT STUFF ## \\
+    // ## SIMPLE SET MUTATIONS ## //
+    setUbiquitousElementData: function(state, newValue) {
+      state.ubiquitousElementData = newValue;
+    },
+    setPlacementElementData: function(state, newValue) {
+      state.placementElementData = newValue;
+    },
+    setPeriodLabelData: function(state, newValue) {
+      state.periodLabelData = newValue;
+    },
+    setGroupLabelData: function(state, newValue) {
+      state.groupLabelData = newValue;
+    },
+    setColorElementDataBlock: function(state, newValue) {
+      state.colorElementDataBlock = newValue;
+    },
+    setColorElementDataClassification: function(state, newValue) {
+      state.colorElementDataClassification = newValue;
+    },
 
+
+    // ## PERIODIC TABLE ELEMENT STUFF ## \\
     // Purpose: To change all properties of active element only when element is on 'clicked' mode
     // @param #int 'index':
     //   (req)  Index of element, where activeElement properties will get info from
@@ -124,14 +138,14 @@ export default new Vuex.Store({
     //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
     //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
     clearLabelExcept: function(state, payload) {
-      for(let i = 0; i < state.periodData.length; i++) {
+      for(let i = 0; i < state.periodLabelData.length; i++) {
         if(i !== payload.periodExclude) {
-          state.periodData[i].color = 'light';
+          state.periodLabelData[i].color = 'light';
         }
       }
-      for(let i = 0; i < state.groupData.length; i++) {
+      for(let i = 0; i < state.groupLabelData.length; i++) {
         if(i !== payload.groupExclude) {
-          state.groupData[i].color = 'light';
+          state.groupLabelData[i].color = 'light';
         }
       }
     },
@@ -145,12 +159,14 @@ export default new Vuex.Store({
     setClickedElement: function(state, newProperties) {
       // Payload contains an object containing properties
       // These properties should replace the properties the activeElement object (from the vuex state) has
+      // TODO: Replace this object the Vue way (Object.assign, etc)
       for(let property in newProperties) {
         if(state.clickedElement.hasOwnProperty(property)) {
           state.clickedElement[property] = newProperties[property];
         }
       }
     },
+
 
 
     // ## MANIPULATING ARRAY OF COLORS ## \\
@@ -285,40 +301,6 @@ export default new Vuex.Store({
       // Payload contains an object containing properties
       // These properties should replace the properties the options object (from the vuex state)
       state.options = Object.assign({}, state.options, newProperties);
-    }
-  },
-  actions: {
-    fetchRequiredElementData: function(context) {
-      // Load the placement of the elements and the bare minimum information
-      function getElementPlacementData() { return axios.get('/element-data/placement.json'); }
-      function getElementUbiquitousData() { return axios.get('/element-data/ubiquitous.json'); }
-
-      axios.all([getElementPlacementData(), getElementUbiquitousData()])
-        .then(axios.spread(function(elementPlacement, elementUbiquitous) {
-          context.state.placementElementData = elementPlacement.data;
-          context.state.ubiquitousElementData = elementUbiquitous.data;
-          context.state.ready = true;
-        }));
-    },
-    fetchPeriodGroupLabels: function(context) {
-      function getPeriodLabelData() { return axios.get('/element-data/period.json'); }
-      function getGroupLabelData() { return axios.get('/element-data/group.json'); }
-
-      axios.all([getPeriodLabelData(), getGroupLabelData()])
-        .then(axios.spread(function(periodLabel, groupLabel) {
-          context.state.periodData = periodLabel.data;
-          context.state.groupData = groupLabel.data;
-        }));
-    },
-    fetchElementColors: function(context) {
-      function getElementBlockColors() { return axios.get('/element-data/block.json'); }
-      function getCategoryDataColors() { return axios.get('/element-data/categories.json'); }
-
-      axios.all([getElementBlockColors(), getCategoryDataColors()])
-        .then(axios.spread(function(blockData, categoryData) {
-          context.state.colorBlockElementData = blockData.data;
-          context.state.colorCategoryElementData = categoryData.data;
-        }));
     }
   }
 });
