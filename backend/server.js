@@ -22,7 +22,7 @@ app.use(mor); // Use Morgan log generator
 
 // app.use(express.static('public')); // This replaces the bottom two lines
 app.use('/old', express.static(path.join(__dirname, 'public/old')));
-app.use('/element-data', express.static(path.join(__dirname, 'public/element-data')));
+app.use('/data', express.static(path.join(__dirname, 'public/data')));
 app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 // Respond with 'Working' on get request to the home page
