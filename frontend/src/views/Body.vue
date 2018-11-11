@@ -53,7 +53,7 @@
     },
     computed: {
       ...mapGetters([
-        'options',
+        'options'
       ])
     },
     methods: {

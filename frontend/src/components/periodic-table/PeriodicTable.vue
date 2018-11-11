@@ -9,7 +9,7 @@
                v-on:mouseover="[setElementPrefix(index, 'dark-'), setLabelColor(index, 'true'), updateActiveElement(index)]"
                v-on:mouseleave="[setElementPrefix(index, ''), setLabelColor(index, 'false'), updateActiveElement(index)]"
                v-on:click="[clickElement(index)]"
-               v-bind:class="[placement.column, placement.row, placement.period, placement.group, useElementColorData[index].color]"
+               v-bind:class="[placement.column, placement.row, placement.period, placement.group, colorElementData[index].color]"
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">{{ ubiquitousElementData[index].label }}</p>
@@ -51,7 +51,6 @@
 <script type="text/javascript">
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import { mapActions } from 'vuex';
   import debounce from 'lodash/debounce';
   import axios from 'axios';
   import PerfectScrollbar from 'perfect-scrollbar';
@@ -61,12 +60,13 @@
     data() {
       return {
         ready1: false,
-        ready2: false
+        ready2: false,
+        ready3: false,
       }
     },
     created() {
-      this.fetchRequiredElementData();
       this.fetchElementColorData();
+      this.fetchRequiredElementData();
     },
     mounted() {
       // This controls perfect scrollbar only
@@ -78,7 +78,7 @@
     },
     watch: {
       '$route'() {
-       // this.fetchElementColorData();
+       this.fetchElementColorData();
       }
     },
     computed: {
@@ -86,6 +86,7 @@
         // Data for all elements
         'ubiquitousElementData', // This data does not change and is required
         'placementElementData', // For placement of elements
+        'colorElementData', // For coloring of elements
 
         // Holds color values
         'colorElementDataBlock',
@@ -96,20 +97,7 @@
         'groupLabelData',
 
         'clickedElement'
-      ]),
-      allReady: function() {
-        return this.ready1 && this.ready2;
-      },
-      useElementColorData: function() {
-        this.fetchElementColorData();
-        let route = this.$route.path;
-        if(route === '/properties' || route === '/isotopes') {
-          return this.$store.state.colorElementDataClassification;
-        }
-        else if(route === '/electrons' || route === '/orbitals') {
-          return this.$store.state.colorElementDataBlock;
-        }
-      }
+      ])
     },
     methods: {
       ...mapMutations([
@@ -125,7 +113,7 @@
         'setColorOfOneGroup',
         'setColorOfOneElement',
       ]),
-      // FETCHING DATA
+      // FETCHING / USING DATA
       fetchRequiredElementData: function() {
         // Load the placement of the elements and the bare minimum information
         function getElementUbiquitousData() { return axios.get('/data/required-data-ubiquitous.json'); }
@@ -157,18 +145,10 @@
         let that = this;
         axios.get('/data/' + typeOfFetchedColorData + '.json')
           .then((response) => {
-            if(typeOfFetchedColorData === 'color-data-classification') {
-              that.$store.commit('setColorElementDataClassification', response.data);
-            }
-            else if(typeOfFetchedColorData === 'color-data-block') {
-              that.$store.commit('setColorElementDataBlock', response.data);
-            }
-            that.ready = true;
+            that.$store.commit('setColorElementData', response.data);
+            that.ready2 = true;
           })
-          .catch((error) => {
-            console.log(error);
-            return false;
-          })
+          .catch((error) => { console.log(error); })
       },
 
       // OTHER

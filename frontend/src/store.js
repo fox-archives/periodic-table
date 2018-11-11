@@ -10,8 +10,7 @@ export default new Vuex.Store({
     ubiquitousElementData: [],
     placementElementData: [],
 
-    colorElementDataBlock: [],
-    colorElementDataClassification: [],
+    colorElementData: [],
 
 
 
@@ -41,7 +40,6 @@ export default new Vuex.Store({
       period: -1,
       group: -1
     },
-
     // Changeable options
     options: {
       themeType: 'light-def',
@@ -57,11 +55,8 @@ export default new Vuex.Store({
     placementElementData: function(state) {
       return state.placementElementData;
     },
-    colorElementDataBlock: function(state) {
-      return state.colorElementDataBlock;
-    },
-    colorElementDataClassification: function(state) {
-      return state.colorElementDataClassification;
+    colorElementData: function(state) {
+      return state.colorElementData;
     },
     periodLabelData: function(state) {
       return state.periodLabelData;
@@ -80,9 +75,6 @@ export default new Vuex.Store({
 
     options: function(state) {
       return state.options;
-    },
-    periodicTableFormat: function(state) {
-      return state.periodicTableFormat;
     }
   },
   mutations: {
@@ -93,19 +85,15 @@ export default new Vuex.Store({
     setPlacementElementData: function(state, newValue) {
       state.placementElementData = newValue;
     },
+    setColorElementData: function(state, newValue) {
+      state.colorElementData = newValue;
+    },
     setPeriodLabelData: function(state, newValue) {
       state.periodLabelData = newValue;
     },
     setGroupLabelData: function(state, newValue) {
       state.groupLabelData = newValue;
     },
-    setColorElementDataBlock: function(state, newValue) {
-      state.colorElementDataBlock = newValue;
-    },
-    setColorElementDataClassification: function(state, newValue) {
-      state.colorElementDataClassification = newValue;
-    },
-
 
     // ## PERIODIC TABLE ELEMENT STUFF ## \\
     // Purpose: To change all properties of active element only when element is on 'clicked' mode
@@ -118,7 +106,7 @@ export default new Vuex.Store({
         state.activeElement.abbreviation = state.ubiquitousElementData[index].abbreviation;
         state.activeElement.name = state.ubiquitousElementData[index].name;
         state.activeElement.atomicMass = state.ubiquitousElementData[index].atomicMass;
-        state.activeElement.color = state.colorShownElementData[index].defaultColor;
+        state.activeElement.color = state.colorElementData[index].defaultColor;
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
@@ -130,7 +118,7 @@ export default new Vuex.Store({
       state.activeElement.abbreviation = state.ubiquitousElementData[index].abbreviation;
       state.activeElement.name = state.ubiquitousElementData[index].name;
       state.activeElement.atomicMass = state.ubiquitousElementData[index].atomicMass;
-      state.activeElement.color = state.colorShownElementData[index].defaultColor;
+      state.activeElement.color = state.colorElementData[index].defaultColor;
     },
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
@@ -176,9 +164,9 @@ export default new Vuex.Store({
     setColorOfAllElements: function(state, payload) {
       for(let i = 0; i < state.placementElementData.length; i++) {
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.colorShownElementData[i].defaultColor;
+        let defaultColor = state.colorElementData[i].defaultColor;
 
-        Vue.set(state.colorShownElementData[i], 'color', (payload + defaultColor));
+        Vue.set(state.colorElementData[i], 'color', (payload + defaultColor));
       }
     },
 
@@ -192,12 +180,12 @@ export default new Vuex.Store({
         let elementPeriod = state.placementElementData[i].period.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.colorShownElementData[i].defaultColor;
+        let defaultColor = state.colorElementData[i].defaultColor;
 
         // If the element period is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementPeriod != payload.exclude) {
-          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -212,12 +200,12 @@ export default new Vuex.Store({
         let elementGroup = state.placementElementData[i].group.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.colorShownElementData[i].defaultColor;
+        let defaultColor = state.colorElementData[i].defaultColor;
 
         // If the element group is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementGroup != payload.exclude) {
-          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -230,14 +218,14 @@ export default new Vuex.Store({
       for(let i = 0; i < state.placementElementData.length; i++) {
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.colorShownElementData[i].defaultColor;
+        let defaultColor = state.colorElementData[i].defaultColor;
 
         // If the element group is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
 
         // i represents the index of the element to be excluded
         if(i != payload.exclude) {
-          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -252,12 +240,12 @@ export default new Vuex.Store({
         let elementPeriod = state.placementElementData[i].period.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.colorShownElementData[i].defaultColor;
+        let defaultColor = state.colorElementData[i].defaultColor;
 
         // If the element period is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementPeriod == payload.include) {
-          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -272,12 +260,12 @@ export default new Vuex.Store({
         let elementGroup = state.placementElementData[i].group.substring(2);
 
         // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.colorShownElementData[i].defaultColor;
+        let defaultColor = state.colorElementData[i].defaultColor;
 
         // If the element group is excluded (from @param 'payload')
         // Allow type coercion (so '1' == 1)
         if(elementGroup == payload.include) {
-          Vue.set(state.colorShownElementData[i], 'color', (payload.prefix + defaultColor));
+          Vue.set(state.colorElementData[i], 'color', (payload.prefix + defaultColor));
         }
       }
     },
@@ -287,8 +275,8 @@ export default new Vuex.Store({
     //   (req) .i  ith term to change the color of (starts at 0)
     //   (req) .prefix  Prefix to prefix to the color
     setColorOfOneElement: function(state, payload) {
-      let defaultColor = state.colorShownElementData[payload.i].defaultColor;
-      Vue.set(state.colorShownElementData[payload.i], 'color', (payload.prefix + defaultColor));
+      let defaultColor = state.colorElementData[payload.i].defaultColor;
+      Vue.set(state.colorElementData[payload.i], 'color', (payload.prefix + defaultColor));
     },
 
     // ## NAVIGATION STUFF ## \\
