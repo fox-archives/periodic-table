@@ -125,7 +125,7 @@
         settingsPopupActive: false,
       }
     },
-    created() {
+    mounted() {
       setTimeout(() => {
         this.infoPopupActive = true;
       }, 1000)
