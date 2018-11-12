@@ -1,45 +1,32 @@
 <template>
     <ul v-bind:class="options.themeType" id="popup-items">
       <li class="popup-item" id="properties-mobile">
-        <router-link to="/properties">
-          <list-icon class="icon feather-icon"></list-icon>
-          <h2 class="heading"> Properties </h2>
-        </router-link>
+        <list-icon class="icon feather-icon"></list-icon>
+        <h2 class="heading">Properties</h2>
       </li>
 
       <li class="popup-item" id="electrons-mobile">
-        <router-link to="/electrons">
-          <electrons class="icon custom-icon"></electrons>
-          <h2 class="heading"> Electrons </h2>
-        </router-link>
+        <electrons class="icon custom-icon"></electrons>
+        <h2 class="heading">Electrons</h2>
       </li>
 
       <li class="popup-item" id="orbitals-mobile">
-        <router-link to="/orbitals">
-          <orbitals2 class="icon custom-icon"></orbitals2>
-          <h2 class="heading"> Orbitals </h2>
-        </router-link>
+        <orbitals2 class="icon custom-icon"></orbitals2>
+        <h2 class="heading">Orbitals</h2>
       </li>
 
       <li class="popup-item" id="isotopes-mobile">
-        <router-link to="/isotopes">
-          <isotopes class="icon custom-icon"></isotopes>
-          <h2 class="heading"> Isotopes </h2>
-        </router-link>
+        <isotopes class="icon custom-icon"></isotopes>
+        <h2 class="heading">Isotopes</h2>
       </li>
 
       <li class="popup-item" id="explore-mobile">
-        <router-link to="/explore">
-          <map-icon class="icon feather-icon"></map-icon>
-          <h2 class="heading"> Explore </h2>
-        </router-link>
-      </li>
+        <map-icon class="icon feather-icon"></map-icon>
+        <h2 class="heading">Explore</h2> </li>
 
       <li class="popup-item" id="trivia-mobile">
-        <router-link to="/trivia">
-          <check-icon class="icon feather-icon"></check-icon>
-          <h2 class="heading"> Trivia </h2>
-        </router-link>
+        <check-icon class="icon feather-icon"></check-icon>
+        <h2 class="heading">Trivia</h2>
       </li>
     </ul>
 </template>
@@ -103,7 +90,7 @@
     user-select: none;
   }
 
-  .popup-item a {
+  .popup-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,11 +123,12 @@
     stroke-width: 1.125;
   }
 
-  // Purpose: To style each menu item, depending on hover and click of each menu item, and the theme
   // @param 1  $menuItemHover  The background of each menu button on hover
   // @param 2  $menuItemClick  The background of each menu button on click (note, this uses CSS class :active, which is basically on click)
   // @param 3  $heading  The color of each heading text element
   // @param 4  $icon  The color of all icons
+
+  // Purpose: To style each menu item, depending on hover and click of each menu item, and the theme
   @mixin menuThemeDefault($menuItemHover, $menuItemClick, $heading, $icon) {
     // Do not add .popup-items and set the background-color, as this should be taken care of by Vuesax
 

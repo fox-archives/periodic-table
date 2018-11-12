@@ -5,7 +5,7 @@
 
         <ul id="logo-container">
           <li id="logo">
-            <a href="/"><img src="../../assets/placeholder.png" alt="logo" height="32px"></a>
+            <a href="/simple"><img src="../../assets/placeholder.png" alt="logo" height="32px"></a>
           </li>
         </ul>
 
@@ -13,7 +13,7 @@
           <li class="nav-item text" id="properties-wide">
           <router-link class="nav-item-body link" to="/properties">
             <list-icon class="icon feather-icon"></list-icon>
-            <h2 class="heading"> Properties </h2>
+            <h2 class="heading" v-on:click="loadOtherData"> Properties </h2>
           </router-link>
           </li>
 
@@ -111,7 +111,7 @@
   import Menu from 'vue-feather-icon/components/menu.vue';
 
   // Import Popups
-  import InfoPopup from '../popups/Information.vue';
+  import InfoPopup from '../popups/Info.vue';
   import MenuPopup from '../popups/Menu.vue';
   import OptionsPopup from '../popups/Options.vue';
 
@@ -125,12 +125,20 @@
         settingsPopupActive: false,
       }
     },
+    created() {
+      setTimeout(() => {
+        this.infoPopupActive = true;
+      }, 1000)
+    },
     computed: {
       ...mapGetters([
         'options'
       ]),
     },
     methods: {
+      ...mapActions([
+        'loadOtherData'
+      ]),
       infoPopup: function(state) {
         // TODO: Add blur (Try to use Vuesax event for popup close, if it exists)
         if(state === "on") {
@@ -202,7 +210,7 @@
   // Structure
   @import './navigation.scss';
   @import './navigation-mobile.scss';
-  @import 'theme';
+  @import './navigation-theme.scss';
 
   .light-def {
     @include navigationThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $oc-gray-2,

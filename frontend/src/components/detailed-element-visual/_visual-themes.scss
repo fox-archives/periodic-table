@@ -1,0 +1,15 @@
+// Param 1  $background  Define the background color of the visual part of the element info panel
+
+// Purpose: To style the visual part of the element info panel (like the large abbreviation, 2D model of elements in each shell, or 3D model of orbital)
+@mixin panelVisualThemeDefault($background, $hasShadow, $shadow, $shadowHover, $text) {
+  // Add shadow to visual part of element info panel
+  @include shadow('#visual-inner', $hasShadow, $shadow, $shadowHover);
+
+  #visual-inner {
+    background-color: $background;
+  }
+
+  #visual-inner p {
+    color: $text;
+  }
+}

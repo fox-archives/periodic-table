@@ -3,15 +3,15 @@
   <aside id="options">
     <ul>
       <li class="option">
-        <!--<p class="text">Theme</p>-->
-        <vs-select class="option-theme" label="Themes" v-model="theme" v-on:change="setTheme">
-          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in themes" />
+        <p class="text">Theme</p>
+        <vs-select class="option-theme" label="themes" v-model="theme" v-on:change="setTheme">
+          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in themes" />
         </vs-select>
       </li>
       <li class="option">
-        <!--<p class="text">Element Info Location</p>-->
-        <vs-select class="option-theme" label="Element Info Location" v-model="infoLocationNum" v-on:change="setInfoLocation">
-          <vs-select-item :key="index" :value="item.value" :text="item.text" v-for="(item, index) in infoLocations" />
+        <p class="text">Element Info Location</p>
+        <vs-select class="option-theme" label="infoLocations" v-model="infoLocationNum" v-on:change="setInfoLocation">
+          <vs-select-item :key="index" :vs-value="item.value" :vs-text="item.text" v-for="(item, index) in infoLocations" />
         </vs-select>
       </li>
       <li class="option">
@@ -34,7 +34,7 @@
 <script>
   import { mapGetters } from 'vuex';
   import { mapMutations } from 'vuex';
-  import { EventBus } from '../event-bus';
+  import { EventBus } from "../event-bus";
   import blurBackground from '../../mixins/blurBackground.js';
   import debounce from 'lodash/debounce';
   import throttle from 'lodash/throttle';
@@ -42,6 +42,30 @@
   import AdvancedOptionsPopUp from './AdvancedOptions.vue';
   export default {
     name: 'Options',
+    computed: {
+      ...mapGetters([
+        'options'
+      ])
+    },
+    mounted() {
+      this.$nextTick(() => {
+        this.updateInfoLocation();
+      });
+      // this.updateInfoLocation();
+      window.addEventListener('resize', () => {
+        this.updateInfoLocation();
+      });
+      // debounce(window.addEventListener('resize', () => {
+      //   this.updateInfoLocation();
+      // }), 50);
+      // window.addEventListener('resize', () => {
+      //   throttle(() => {this.updateInfoLocation()}, 1000);
+      // });
+    },
+    components: {
+      AdvancedOptionsPopUp
+    },
+
     data() {
       return {
         advancedSettingsPopupActive: false,
@@ -63,20 +87,6 @@
           { text: 'Excluded', value: 4 }
         ]
       }
-    },
-    mounted() {
-      this.$nextTick(() => {
-        this.updateInfoLocation();
-      });
-
-      window.addEventListener('resize',
-        throttle(this.updateInfoLocation, 10)
-      );
-    },
-    computed: {
-      ...mapGetters([
-        'options'
-      ])
     },
     methods: {
       ...mapMutations([
@@ -124,9 +134,9 @@
         // .1s after setInfoLocation is called, update the className that determines the layout
         // Probably can't do it right away because the div elements have just moved / changed positions
         setTimeout(() => {
-          // this.setClassLayout();
-          // this.setMobilePeriodicTableWidth();
-          EventBus.$emit('set-information-container-location', 1);
+          this.setClassLayout();
+          this.setMobilePeriodicTableWidth();
+          EventBus.$emit('set-info-location', 1);
         }, 100);
 
         // First, convert infoLocation number to a string
@@ -138,8 +148,7 @@
         // Then set the global options for if the info location type is auto
         if(infoChosen === 'info-auto') {
           this.setOptions({ infoLocationTypeIsAuto: true });
-          // this.updateInfoLocation();
-          EventBus.$emit('set-information-container-location', 1);
+          this.updateInfoLocation();
         }
         else {
           this.setOptions({ infoLocationTypeIsAuto: false });
@@ -157,10 +166,6 @@
           }
         }
       }
-
-    },
-    components: {
-      AdvancedOptionsPopUp
     },
     mixins: [
       blurBackground

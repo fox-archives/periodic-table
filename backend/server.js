@@ -7,22 +7,11 @@ const path = require('path');
 
 const app = express();
 app.use(bodyParser.json()); // Allow express to parse .json requests sent in
-
-const mor = new morgan(function(tokens, req, res) {
-  return [
-    tokens.method(req, res),
-    tokens.url(req, res),
-    tokens.status(req, res),
-    tokens.res(req, res, 'content-length'), '-',
-    tokens['response-time'](req, res), 'ms', '-',
-    tokens.date(req, res)
-  ].join(' ')
-});
-app.use(mor); // Use Morgan log generator
+app.use(morgan('combined')); // Use Morgan log generator
 
 // app.use(express.static('public')); // This replaces the bottom two lines
 app.use('/old', express.static(path.join(__dirname, 'public/old')));
-app.use('/data', express.static(path.join(__dirname, 'public/data')));
+app.use('/element-data', express.static(path.join(__dirname, 'public/element-data')));
 app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 // Respond with 'Working' on get request to the home page

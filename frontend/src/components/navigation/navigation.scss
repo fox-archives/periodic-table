@@ -51,7 +51,6 @@
   height: 100%;
   border-radius: $border-radius-small;
   padding: 10px 15px 10px 15px;
-  transition: createTransitions((background-color), false, .15);
 }
 
 .nav-item-body:hover {

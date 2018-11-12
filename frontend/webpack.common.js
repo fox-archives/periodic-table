@@ -72,8 +72,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',
       filename: 'index.html',
-      template: './index.html',
-      minify: true // This doesn't seem to work
+      template: './index.html'
     })
   ]
 };

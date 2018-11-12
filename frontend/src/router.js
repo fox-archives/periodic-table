@@ -1,23 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
-import Navigation from './components/navigation/Navigation.vue';
-import Footer from './components/footer/Footer.vue';
-
-import Body from './views/Body.vue';
+import Body from './views/body/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
-import propertiesInfo from './components/element-information/propertiesData.vue';
-import propertiesVisual from './components/element-graphic/propertiesGraphic.vue';
-
-// This is temporary, until we have 3D visualization
-import electronsVisual from './components/element-graphic/propertiesGraphic.vue';
-import orbitalsVisual from './components/element-graphic/propertiesGraphic.vue';
-// import electronsVisual from './components/element-graphic/electronsGraphic.vue';
-// import orbitalsVisual from './components/element-graphic/orbitalsGraphic.vue';
-
-import About from './components/about/about.vue';
-import Feedback from './components/feedback/Feedback.vue';
+import propertiesInfo from './components/detailed-element-info/properties-info.vue';
+import propertiesVisual from './components/detailed-element-visual/properties-visual.vue';
+import electronsVisual from './components/detailed-element-visual/electrons-visual.vue';
+import orbitalsVisual from './components/detailed-element-visual/orbitals-visual.vue';
 
 
 Vue.use(VueRouter);
@@ -29,11 +18,7 @@ const myRoutes = [
   },
   {
     path: '/properties',
-    components: {
-      default: Body,
-      navigation: Navigation
-
-    },
+    component: Body,
     children: [{
       path: '',
       components: {
@@ -44,10 +29,7 @@ const myRoutes = [
   },
   {
     path: '/electrons',
-    components: {
-      default: Body,
-      navigation: Navigation
-    },
+    component: Body,
     children: [{
       path: '',
       components: {
@@ -58,10 +40,7 @@ const myRoutes = [
   },
   {
     path: '/orbitals',
-    components: {
-      default: Body,
-      navigation: Navigation
-    },
+    component: Body,
     children: [{
       path: '',
       components: {
@@ -72,10 +51,7 @@ const myRoutes = [
   },
   {
     path: '/isotopes',
-    components: {
-      default: Body,
-      navigation: Navigation
-    },
+    component: Body,
     children: [{
       path: '',
       components: {
@@ -86,17 +62,11 @@ const myRoutes = [
   },
   {
     path: '/explore',
-    components: {
-      default: Explore,
-      navigation: Navigation
-    }
+    component: Explore
   },
   {
     path: '/trivia',
-    components: {
-      default: Trivia,
-      navigation: Navigation
-    }
+    component: Trivia
   },
   {
     path: '/info',
@@ -109,18 +79,6 @@ const myRoutes = [
   {
     path: '/search',
     component: Body
-  },
-  {
-    path: '/about',
-    components: {
-      default: About
-    }
-  },
-  {
-    path: '/feedback',
-    components: {
-      default: Feedback
-    }
   }
 ];
 
