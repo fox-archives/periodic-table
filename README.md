@@ -16,5 +16,4 @@ Vue 2.X   | 12+     | 21+     | 23+       | 6+       | 6.1+
 \* Supports with extension -moz, -webkit, etc.</br>
 
 ## Project Status
-- Migrate to Babel 7
-- Migrate to Vue 3.X, once released
+* This is an old version of my website. This does not take advantage of all the features of Vue. The version in production is not public.
