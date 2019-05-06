@@ -1,5 +1,5 @@
 # Periodic Table
-Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
+Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop. Build process set up manually.
 
 ## Current Development
 ![Periodic Table Image](https://github.com/EanKeen/periodic-table/blob/master/periodic-table.png)
