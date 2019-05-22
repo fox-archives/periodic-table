@@ -5,7 +5,7 @@
 // @param 4  $shadowHover  Shadow of the element on hover
 // Purpose: To create a shadow of an element, that is darkened further on hover
 @mixin shadow($element, $hasShadow, $shadow, $shadowHover) {
-  @if($hasShadow) {
+  @if ($hasShadow) {
     #{$element} {
       box-shadow: 2px 2px 3px $shadow;
     }

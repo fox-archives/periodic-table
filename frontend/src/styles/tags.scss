@@ -13,7 +13,10 @@
 }
 
 // NO HIGHLIGHT EFFECT ON SOME VUESAX ELEMENTS, AMONG OTHER ELEMENTS
-.vs-noti-contenedor, .con-popup, .con-options, .activeItem {
+.vs-noti-contenedor,
+.con-popup,
+.con-options,
+.activeItem {
   user-select: none;
 }
 
@@ -37,4 +40,3 @@
 .con-title-after {
   font-family: robotoregular;
 }
-

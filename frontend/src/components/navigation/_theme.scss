@@ -12,8 +12,17 @@
 // @param 8  $icon  The color of all icons
 
 // Note: There is no $navItem because the background of this will be the same as $background, or the background of the nav bar as a whole
-@mixin navigationThemeDefault($background, $hasShadow, $shadow, $shadowHover, $navItemHover,
-                               $navItemClick, $navItemActive, $heading, $icon) {
+@mixin navigationThemeDefault(
+  $background,
+  $hasShadow,
+  $shadow,
+  $shadowHover,
+  $navItemHover,
+  $navItemClick,
+  $navItemActive,
+  $heading,
+  $icon
+) {
   // Make navigation bar have a shadow
   @include shadow('#nav', $hasShadow, $shadow, $shadowHover);
 
@@ -69,5 +78,4 @@
     color: $icon;
     stroke-width: 1.125;
   }
-
 }

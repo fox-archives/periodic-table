@@ -4,7 +4,8 @@
 // @param 2  Color of Underline when mouse hovers over link (a tag)
 // @param 3  Background color of footer element
 @mixin footerThemeDefault($text, $underline, $background) {
-  .text, .link {
+  .text,
+  .link {
     color: $text;
   }
 

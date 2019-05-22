@@ -8,9 +8,7 @@
               <p>{{ activeElement.density }}</p>
             </div>
             <div class="stat-text">
-              <p style="font-family: latoregular;">
-                Lorem Ipsum
-              </p>
+              <p style="font-family: latoregular;">Lorem Ipsum</p>
             </div>
           </div>
         </div>

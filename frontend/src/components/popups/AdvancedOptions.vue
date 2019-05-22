@@ -25,11 +25,7 @@
       </li>
       <li class="option">
         <p>Transitions and Effects</p>
-        <vs-select
-          v-model="transitionType"
-          label="transitionTypes"
-          :options="transitionTypes"
-        >
+        <vs-select v-model="transitionType" label="transitionTypes" :options="transitionTypes">
           <vs-select-item
             v-for="(item, index) in transitionTypes"
             :key="index"
