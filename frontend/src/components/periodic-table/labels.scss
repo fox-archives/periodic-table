@@ -10,7 +10,6 @@
   user-select: none;
 }
 
-
 // Group Labels
 .label-group-inner {
   display: flex;
@@ -31,10 +30,9 @@
 .label-text {
   font-family: latolight;
   font-weight: normal;
-
 }
 
-.info-top .label-text{
+.info-top .label-text {
   // font-size: calc( (100vw - (#{$body-margin} * 2) - #{$spacing} - (10px * 2)) * 0.0172 );
   font-size: var(--labelTextSize);
 }
@@ -42,7 +40,6 @@
 .info-side .label-text {
   // font-size: calc( (100vw - (#{$body-margin} * 2) - #{$spacing} - 20vw - (10px * 2)) * 0.0166 );
   font-size: var(--labelTextSize);
-
 }
 
 // Period and Group Labels

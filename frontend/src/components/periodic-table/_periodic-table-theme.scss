@@ -4,13 +4,17 @@
 // @param 4  $shadowHover  Color of shadow on hover of element
 
 // Purpose: To color the colors behind all the elements (periodic table)
-@mixin periodicTableThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
+@mixin periodicTableThemeDefault(
+  $background,
+  $hasShadow,
+  $shadow,
+  $shadowHover
+) {
   // @include shadow('#grid-outer', $hasShadow, $shadow, $shadowHover);
 
   #grid {
     background-color: $background;
   }
-
 
   // The following change how the shadow and background-color change places, depending on the layout
   // There are four possibilities, as shown below
@@ -22,7 +26,8 @@
 
   .info-top .heightDifferent {
     @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
-    #grid-outer, #grid-container {
+    #grid-outer,
+    #grid-container {
       background-color: $background;
     }
   }
@@ -37,4 +42,3 @@
     @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
   }
 }
-

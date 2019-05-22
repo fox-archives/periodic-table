@@ -1,7 +1,5 @@
 <template>
-  <h1 id="heading">
-    Welcome to Explore
-  </h1>
+  <h1 id="heading">Welcome to Explore</h1>
 </template>
 
 <script>

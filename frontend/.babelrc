@@ -1,7 +1,16 @@
 {
-   "presets": ["env"],
-   "plugins": [
-     ["transform-object-rest-spread", { "useBuiltIns": true }],
-     ["syntax-dynamic-import"]
- ]
+  "presets": [
+    "env"
+  ],
+  "plugins": [
+    [
+      "transform-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ],
+    [
+      "syntax-dynamic-import"
+    ]
+  ]
 }

@@ -5,7 +5,12 @@ module.exports = {
     commonjs: true,
     es6: true
   },
-  extends: ['eslint:recommended', 'plugin:vue/recommended', 'plugin:prettier/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/recommended',
+    'plugin:prettier/recommended',
+    'prettier'
+  ],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2017

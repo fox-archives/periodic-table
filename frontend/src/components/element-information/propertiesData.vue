@@ -2,13 +2,10 @@
   <div id="textual">
     <div id="textual-inner">
       <div id="textual-buffer">
-        <div v-if="routePath === 'properties'"
-id="textual-content">
+        <div v-if="routePath === 'properties'" id="textual-content">
           <div v-for="(property, index) in properties" class="strat">
             <div class="stat-icon">
-              <p style="font-family: Arial;">
-                {{ properties[index].name }}
-              </p>
+              <p style="font-family: Arial;">{{ properties[index].name }}</p>
             </div>
             <div class="stat-text">
               <!--<p> {{ currentElementProperties[activeElement.atomicNumber][properties[index].propertyName] }} </p>-->
