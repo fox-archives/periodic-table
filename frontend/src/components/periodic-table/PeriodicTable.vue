@@ -75,6 +75,7 @@ class="element-inner">
             v-for="(group, index) in groupData"
             class="label-group label"
             :class="[group.row, group.column]"
+            :key="group.row + group.index"
           >
             <div
               v-cloak
@@ -96,9 +97,7 @@ class="element-inner">
 </template>
 
 <script type="text/javascript">
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
-import { mapActions } from 'vuex';
+import { mapGetters, mapMutations, mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
