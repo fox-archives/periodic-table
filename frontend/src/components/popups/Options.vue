@@ -3,26 +3,18 @@
     <aside id="options">
       <ul>
         <li class="option">
-          <p class="text">
-            Theme
-          </p>
-          <vs-select
-            v-model="theme"
-            class="option-theme"
-            label="themes"
-            @change="setTheme"
-          >
+          <p class="text">Theme</p>
+          <vs-select v-model="theme" class="option-theme" label="themes" @change="setTheme">
             <vs-select-item
               v-for="(item, index) in themes"
               :vs-value="item.value"
               :vs-text="item.text"
+              :key="item.text"
             />
           </vs-select>
         </li>
         <li class="option">
-          <p class="text">
-            Element Info Location
-          </p>
+          <p class="text">Element Info Location</p>
           <vs-select
             v-model="infoLocationNum"
             class="option-theme"
@@ -33,22 +25,19 @@
               v-for="(item, index) in infoLocations"
               :vs-value="item.value"
               :vs-text="item.text"
+              :key="item.text"
             />
           </vs-select>
         </li>
         <li class="option">
-          <p class="text">
-            Advanced Options
-          </p>
+          <p class="text">Advanced Options</p>
           <!-- I don't know why this div tag stops the button from having a length of 100% -->
           <div>
             <vs-button
               color="primary"
               vs-type="filled"
               @click="advancedSettingsPopup('on')"
-            >
-              Advanced
-            </vs-button>
+            >Advanced</vs-button>
           </div>
         </li>
       </ul>
@@ -60,7 +49,7 @@
       :active.sync="advancedSettingsPopupActive"
       @vs-cancel="advancedSettingsPopup('off')"
     >
-      <AdvancedOptionsPopUp />
+      <AdvancedOptionsPopUp/>
     </vs-popup>
   </div>
 </template>

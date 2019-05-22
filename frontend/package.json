@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
     "prod": "webpack --progress --config webpack.prod.js",
-    "lint": "eslint -c .eslintrc.js \"./src/**/*.{js,vue}\" --fix",
+    "lint": "eslint -c .eslintrc.js \"./src/**/*.{js,vue}\"",
+    "lint:fix": "eslint -c .eslintrc.js \"./src/**/*.{js,vue}\" --fix",
     "deploy": "gulp deploy"
   },
   "keywords": [],

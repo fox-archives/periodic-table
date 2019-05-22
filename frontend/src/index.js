@@ -1,4 +1,5 @@
 import Vue from 'vue';
+window.Vue = Vue;
 
 // Use Vuex
 import store from './store.js';

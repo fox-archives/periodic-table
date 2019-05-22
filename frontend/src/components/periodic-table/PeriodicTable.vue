@@ -7,6 +7,7 @@ id="grid-outer">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div
             v-for="(ePlacement, index) in ePlacements"
+            :key="ePlacement.column + ePlacement.row"
             class="element"
             :class="[
               ePlacement.column,
@@ -51,6 +52,7 @@ class="element-inner">
           <!-- PERIOD LABELS -->
           <div
             v-for="(period, index) in periodData"
+            :key="period.row + period.column"
             class="label-period label"
             :class="[period.row, period.column]"
           >
