@@ -6,7 +6,7 @@
           <p class="text">Theme</p>
           <vs-select v-model="theme" class="option-theme" label="themes" @change="setTheme">
             <vs-select-item
-              v-for="(item, index) in themes"
+              v-for="(item) in themes"
               :vs-value="item.value"
               :vs-text="item.text"
               :key="item.text"
@@ -22,7 +22,7 @@
             @change="setInfoLocation"
           >
             <vs-select-item
-              v-for="(item, index) in infoLocations"
+              v-for="(item) in infoLocations"
               :vs-value="item.value"
               :vs-text="item.text"
               :key="item.text"
@@ -55,8 +55,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 import { EventBus } from '../event-bus';
 import blurBackground from '../../mixins/blurBackground.js';
 import debounce from 'lodash/debounce';

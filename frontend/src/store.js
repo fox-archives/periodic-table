@@ -365,7 +365,7 @@ export default new Vuex.Store({
         // Subtract 2 because recall CSS says the height is calc(100% - 2px)
         // All I know is that when 2 is removed, then scrollbar is shown for small widths for info-side
         gridContainer.style.width = `${(gridContainer.clientHeight - 2) /
-          0.6}px`;
+          periodicTableRatio}px`;
       } else {
         document.getElementById('grid').style.width = '';
       }
@@ -395,6 +395,7 @@ export default new Vuex.Store({
         .then(response => {
           this.state.eDiscovered = response.data;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
 
       axios
@@ -402,6 +403,7 @@ export default new Vuex.Store({
         .then(response => {
           this.state.ePlacements = response.data;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
 
       axios
@@ -410,6 +412,7 @@ export default new Vuex.Store({
           this.state.simpleData = response.data;
           this.state.ready = true;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
 
       // Period / Group calls
@@ -418,6 +421,7 @@ export default new Vuex.Store({
         .then(response => {
           this.state.periodData = response.data;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
 
       axios
@@ -425,6 +429,7 @@ export default new Vuex.Store({
         .then(response => {
           this.state.groupData = response.data;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
     },
     loadOtherData: function() {
@@ -433,6 +438,7 @@ export default new Vuex.Store({
         .then(response => {
           this.state.extraElementData = response.data;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
     },
     loadElementColors: function(state, payload) {
@@ -441,12 +447,14 @@ export default new Vuex.Store({
         .then(response => {
           this.state.eColors = response.data;
         })
+        // eslint-disable-next-line
         .catch(error => console.log(error));
     },
     loadElementProperties: function(state, payload) {
       axios
         .get('/element-data/' + '.json')
         .then(response => {})
+        // eslint-disable-next-line
         .catch(error => console.log(error));
     }
   }

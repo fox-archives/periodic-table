@@ -15,8 +15,7 @@ v-bind:class="activeElement.color">
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 import { EventBus } from '../event-bus';
 import throttle from 'lodash/debounce';
 
