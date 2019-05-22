@@ -26,7 +26,16 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        use: [
+          'babel-loader',
+          {
+            loader: 'eslint-loader',
+            options: {
+              fix: true,
+              cache: true
+            }
+          }
+        ],
         // JS in Vue script tags run when in node_modules https://vue-loader.vuejs.org/guide/pre-processors.html#excluding-node-modules
         exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file)
       },
