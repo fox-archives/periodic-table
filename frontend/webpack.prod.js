@@ -27,12 +27,8 @@ module.exports = merge(common, {
       },
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader'
-        ]
-      },
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      }
     ]
   },
   optimization: {
@@ -41,7 +37,7 @@ module.exports = merge(common, {
         sourceMap: true
       }), // Minify JS
       new OptimizeCssAssetsPlugin(), // Minify CSS
-      new CompressionPlugin(), // Gzip JS and CSS
+      new CompressionPlugin() // Gzip JS and CSS
     ]
   },
   plugins: [

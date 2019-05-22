@@ -1,4 +1,4 @@
-    <template>
+<template>
   <div>
     <div v-if="" id="visual-inner">
       <div id="icon">
@@ -14,52 +14,48 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex';
-  import { mapMutations } from 'vuex';
-  import { EventBus } from "../event-bus";
-  import throttle from 'lodash/debounce';
+import { mapGetters } from 'vuex';
+import { mapMutations } from 'vuex';
+import { EventBus } from '../event-bus';
+import throttle from 'lodash/debounce';
 
-  export default {
-    name: 'PropertiesGraphic',
-    mounted() {
-      // TODO: Fix this bug with adding 20ms delay?
-      // this.sizePropertiesGraphicText();
-      setTimeout(() => this.sizePropertiesGraphicText(), 20);
+export default {
+  name: 'PropertiesGraphic',
+  watch: {
+    $route() {
+      this.sizePropertiesGraphicText();
+    }
+  },
+  mounted() {
+    // TODO: Fix this bug with adding 20ms delay?
+    // this.sizePropertiesGraphicText();
+    setTimeout(() => this.sizePropertiesGraphicText(), 20);
 
+    window.addEventListener(
+      'resize',
+      throttle(this.sizePropertiesGraphicText, 25)
+    );
 
-      window.addEventListener('resize',
-        throttle(this.sizePropertiesGraphicText, 25)
-      );
-
-      EventBus.$on('set-information-container-location', payload => {
-        this.sizePropertiesGraphicText();
-      });
-
-    },
-    watch: {
-      '$route'() {
-        this.sizePropertiesGraphicText();
-      }
-    },
-    computed: {
-      ...mapGetters([
-        'activeElement',
-        'options'
-      ])
-    },
-    methods: {
-      sizePropertiesGraphicText: function() {
-          // container is the large color box with large abbreviation, and the area around that (the square)
-          let container = document.getElementById('visual-inner');
-          let fontSize = (container.clientWidth * 0.12) + 'px';
-          container.style.setProperty('--elementNameTextSize', fontSize);
-      }
+    EventBus.$on('set-information-container-location', payload => {
+      this.sizePropertiesGraphicText();
+    });
+  },
+  computed: {
+    ...mapGetters(['activeElement', 'options'])
+  },
+  methods: {
+    sizePropertiesGraphicText: function() {
+      // container is the large color box with large abbreviation, and the area around that (the square)
+      let container = document.getElementById('visual-inner');
+      let fontSize = container.clientWidth * 0.12 + 'px';
+      container.style.setProperty('--elementNameTextSize', fontSize);
     }
   }
+};
 </script>
 
 <style scoped lang="scss">
-  @import '../../styles/variables';
-  @import 'theme';
-  @import 'common-graphic';
+@import '../../styles/variables';
+@import 'theme';
+@import 'common-graphic';
 </style>

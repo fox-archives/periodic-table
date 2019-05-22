@@ -21,17 +21,14 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         // JS in Vue script tags run when in node_modules https://vue-loader.vuejs.org/guide/pre-processors.html#excluding-node-modules
-        exclude: file => (
-          /node_modules/.test(file) &&
-          !/\.vue\.js/.test(file)
-        )
+        exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file)
       },
       // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
       {
@@ -53,9 +50,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        use: [
-          'vue-svg-icon-loader'
-        ],
+        use: ['vue-svg-icon-loader']
       }
     ]
   },

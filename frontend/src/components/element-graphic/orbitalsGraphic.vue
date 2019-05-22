@@ -1,46 +1,40 @@
 <template>
   <div>
-    <div id="visual-inner">
-
-    </div>
+    <div id="visual-inner" />
   </div>
 </template>
 
 <script>
-  import { mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 
-  export default {
-    name: 'OrbitalsGraphic',
-    computed: {
-      ...mapGetters([
-        'activeElement',
-        'options'
-      ])
-    }
+export default {
+  name: 'OrbitalsGraphic',
+  computed: {
+    ...mapGetters(['activeElement', 'options'])
   }
+};
 </script>
 
 <style scoped lang="scss">
-  @import '../../styles/variables';
-  @import 'theme';
-  @import 'common-graphic';
+@import '../../styles/variables';
+@import 'theme';
+@import 'common-graphic';
 
-
-  .light-def {
-    #visual-inner {
-      background-color: $ld-background !important;
-    }
+.light-def {
+  #visual-inner {
+    background-color: $ld-background !important;
   }
+}
 
-  .light-con {
-    #visual-inner {
-      background-color: $lc-background !important;
-    }
+.light-con {
+  #visual-inner {
+    background-color: $lc-background !important;
   }
+}
 
-  .dark-def {
-    #visual-inner {
-      background-color: $dd-background !important;
-    }
+.dark-def {
+  #visual-inner {
+    background-color: $dd-background !important;
   }
+}
 </style>

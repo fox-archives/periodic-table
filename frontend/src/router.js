@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 import Body from './views/body/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
@@ -7,7 +7,6 @@ import propertiesInfo from './components/detailed-element-info/properties-info.v
 import propertiesVisual from './components/detailed-element-visual/properties-visual.vue';
 import electronsVisual from './components/detailed-element-visual/electrons-visual.vue';
 import orbitalsVisual from './components/detailed-element-visual/orbitals-visual.vue';
-
 
 Vue.use(VueRouter);
 
@@ -19,46 +18,54 @@ const myRoutes = [
   {
     path: '/properties',
     component: Body,
-    children: [{
-      path: '',
-      components: {
-        textualInfo: propertiesInfo,
-        visualInfo: propertiesVisual
+    children: [
+      {
+        path: '',
+        components: {
+          textualInfo: propertiesInfo,
+          visualInfo: propertiesVisual
+        }
       }
-    }]
+    ]
   },
   {
     path: '/electrons',
     component: Body,
-    children: [{
-      path: '',
-      components: {
-        textualInfo: propertiesInfo,
-        visualInfo: electronsVisual
+    children: [
+      {
+        path: '',
+        components: {
+          textualInfo: propertiesInfo,
+          visualInfo: electronsVisual
+        }
       }
-    }]
+    ]
   },
   {
     path: '/orbitals',
     component: Body,
-    children: [{
-      path: '',
-      components: {
-        textualInfo: propertiesInfo,
-        visualInfo: orbitalsVisual
+    children: [
+      {
+        path: '',
+        components: {
+          textualInfo: propertiesInfo,
+          visualInfo: orbitalsVisual
+        }
       }
-    }]
+    ]
   },
   {
     path: '/isotopes',
     component: Body,
-    children: [{
-      path: '',
-      components: {
-        textualInfo: propertiesInfo,
-        visualInfo: propertiesVisual
+    children: [
+      {
+        path: '',
+        components: {
+          textualInfo: propertiesInfo,
+          visualInfo: propertiesVisual
+        }
       }
-    }]
+    ]
   },
   {
     path: '/explore',
@@ -85,4 +92,4 @@ const myRoutes = [
 export default new VueRouter({
   routes: myRoutes,
   mode: 'history'
-})
+});

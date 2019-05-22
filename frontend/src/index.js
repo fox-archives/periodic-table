@@ -10,7 +10,6 @@ import router from './router.js';
 // Import Main Application Component
 import App from './components/App.vue';
 
-
 // Import global styles and material design
 import './styles/variables.scss';
 import './styles/fonts.scss';

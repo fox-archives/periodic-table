@@ -11,7 +11,7 @@
 
 module.exports = {
   plugins: {
-    'autoprefixer': {
+    autoprefixer: {
       grid: false
     }
   }
