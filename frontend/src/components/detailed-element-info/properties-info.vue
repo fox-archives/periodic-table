@@ -3,9 +3,7 @@
     <div id="textual-inner">
       <div id="textual-buffer">
         <div id="textual-content">
-          <div
-v-for="n in 22" class="stat"
->
+          <div v-for="n in 22" class="stat">
             <div class="stat-icon">
               <p>{{ activeElement.density }}</p>
             </div>

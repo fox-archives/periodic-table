@@ -5,9 +5,7 @@
         Trivia
       </h3>
       <ul id="trivias">
-        <li
-v-for="trivia in trivias" class="trivia"
->
+        <li v-for="trivia in trivias" class="trivia">
           <div class="trivia-inner">
             <p class="subtitle">
               {{ trivia.title }}

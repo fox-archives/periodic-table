@@ -1,55 +1,41 @@
 <template>
-  <ul
-id="popup-items" :class="options.themeType"
->
-    <li
-id="properties-mobile" class="popup-item"
->
+  <ul id="popup-items" :class="options.themeType">
+    <li id="properties-mobile" class="popup-item">
       <list-icon class="icon feather-icon" />
       <h2 class="heading">
         Properties
       </h2>
     </li>
 
-    <li
-id="electrons-mobile" class="popup-item"
->
+    <li id="electrons-mobile" class="popup-item">
       <electrons class="icon custom-icon" />
       <h2 class="heading">
         Electrons
       </h2>
     </li>
 
-    <li
-id="orbitals-mobile" class="popup-item"
->
+    <li id="orbitals-mobile" class="popup-item">
       <orbitals2 class="icon custom-icon" />
       <h2 class="heading">
         Orbitals
       </h2>
     </li>
 
-    <li
-id="isotopes-mobile" class="popup-item"
->
+    <li id="isotopes-mobile" class="popup-item">
       <isotopes class="icon custom-icon" />
       <h2 class="heading">
         Isotopes
       </h2>
     </li>
 
-    <li
-id="explore-mobile" class="popup-item"
->
+    <li id="explore-mobile" class="popup-item">
       <map-icon class="icon feather-icon" />
       <h2 class="heading">
         Explore
       </h2>
     </li>
 
-    <li
-id="trivia-mobile" class="popup-item"
->
+    <li id="trivia-mobile" class="popup-item">
       <check-icon class="icon feather-icon" />
       <h2 class="heading">
         Trivia

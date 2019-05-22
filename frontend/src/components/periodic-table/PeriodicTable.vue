@@ -1,7 +1,8 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
-      <div v-if="ready" id="grid-outer">
+      <div v-if="ready"
+id="grid-outer">
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div
@@ -30,7 +31,8 @@
             "
             @click="[clickElement(index)]"
           >
-            <div v-cloak class="element-inner">
+            <div v-cloak
+class="element-inner">
               <p class="secondary-text test">
                 {{ ePlacement.eLabel }}
               </p>

@@ -3,9 +3,7 @@
     <ul id="options">
       <li class="option">
         <p>Group Labels</p>
-        <vs-select
-v-model="groupType" label="groupTypes"
->
+        <vs-select v-model="groupType" label="groupTypes">
           <vs-select-item
             v-for="(item, index) in groupTypes"
             :key="index"
@@ -16,9 +14,7 @@ v-model="groupType" label="groupTypes"
       </li>
       <li class="option">
         <p>Decimal Count</p>
-        <vs-select
-v-model="decimalCountType" label="decimalCountTypes"
->
+        <vs-select v-model="decimalCountType" label="decimalCountTypes">
           <vs-select-item
             v-for="(item, index) in decimalCountTypes"
             :key="index"

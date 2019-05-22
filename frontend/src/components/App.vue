@@ -1,5 +1,6 @@
 <template>
-  <div id="content" :class="[options.themeType, options.infoLocationType]">
+  <div id="content"
+:class="[options.themeType, options.infoLocationType]">
     <!--<div id="content" v-bind:class="options.blurType">-->
     <Navigation />
     <router-view />

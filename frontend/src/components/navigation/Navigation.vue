@@ -1,5 +1,6 @@
 <template>
-  <nav id="nav" v-bind:class="options.themeType">
+  <nav id="nav"
+v-bind:class="options.themeType">
     <ul id="nav-content">
       <ul id="left-nav">
         <ul id="logo-container">
@@ -12,22 +13,22 @@ alt="logo" height="32px"/></a>
         </ul>
 
         <ul id="nav-items">
-          <li
-id="properties-wide" class="nav-item text"
->
-            <router-link class="nav-item-body link" to="/properties">
+          <li id="properties-wide"
+class="nav-item text">
+            <router-link class="nav-item-body link"
+to="/properties">
               <list-icon class="icon feather-icon" />
-              <h2
-class="heading" v-on:click="loadOtherData">
+              <h2 class="heading"
+v-on:click="loadOtherData">
                 Properties
               </h2>
             </router-link>
           </li>
 
-          <li
-id="electrons-wide" class="nav-item text"
->
-            <router-link class="nav-item-body link" to="/electrons">
+          <li id="electrons-wide"
+class="nav-item text">
+            <router-link class="nav-item-body link"
+to="/electrons">
               <electrons class="icon custom-icon" />
               <h2 class="heading">
                 Electrons
@@ -35,10 +36,10 @@ id="electrons-wide" class="nav-item text"
             </router-link>
           </li>
 
-          <li
-id="orbitals-wide" class="nav-item text"
->
-            <router-link class="nav-item-body link" to="/orbitals">
+          <li id="orbitals-wide"
+class="nav-item text">
+            <router-link class="nav-item-body link"
+to="/orbitals">
               <orbitals class="icon custom-icon" />
               <h2 class="heading">
                 Orbitals
@@ -46,10 +47,10 @@ id="orbitals-wide" class="nav-item text"
             </router-link>
           </li>
 
-          <li
-id="isotopes-wide" class="nav-item text"
->
-            <router-link class="nav-item-body link" to="/isotopes">
+          <li id="isotopes-wide"
+class="nav-item text">
+            <router-link class="nav-item-body link"
+to="/isotopes">
               <isotopes class="icon custom-icon" />
               <h2 class="heading">
                 Isotopes
@@ -57,10 +58,10 @@ id="isotopes-wide" class="nav-item text"
             </router-link>
           </li>
 
-          <li
-id="explore-wide" class="nav-item text"
->
-            <router-link class="nav-item-body link" to="/explore">
+          <li id="explore-wide"
+class="nav-item text">
+            <router-link class="nav-item-body link"
+to="/explore">
               <map-icon class="icon feather-icon" />
               <h2 class="heading">
                 Explore
@@ -68,10 +69,10 @@ id="explore-wide" class="nav-item text"
             </router-link>
           </li>
 
-          <li
-id="trivia-wide" class="nav-item text"
->
-            <router-link class="nav-item-body link" to="/trivia">
+          <li id="trivia-wide"
+class="nav-item text">
+            <router-link class="nav-item-body link"
+to="/trivia">
               <check-icon class="icon feather-icon" />
               <h2 class="heading">
                 Trivia
@@ -99,9 +100,8 @@ id="trivia-wide" class="nav-item text"
           <settings-icon class="icon feather-icon" />
         </li>
 
-        <li
-id="search" class="nav-item nav-item-body no-text"
->
+        <li id="search"
+class="nav-item nav-item-body no-text">
           <search-icon class="icon feather-icon" />
         </li>
 
