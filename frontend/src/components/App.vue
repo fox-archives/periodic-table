@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Navigation from './navigation/Navigation.vue';
+import Navigation from './navbar/Navigation.vue';
 import Footer from './footer/Footer.vue';
 
 export default {

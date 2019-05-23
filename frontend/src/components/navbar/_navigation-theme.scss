@@ -1,17 +1,17 @@
-// Purpose: To change nav bar shadow depending on hover of nav bar, and change nav bar elements, depending on hover of each individual element
-
-// @param 1  $background  Background color of the navigation bar
+// @param 1  $background  Background color of the navbar
 // @param 2  $hasShadow  Boolean for if there is a shadow, if so, shadow selectors are not created
-// @param 2  $shadow  Shadow that appears below the navigation bar (no hover)
-// @param 3  $shadowHover  Shadow that appears below the navigation bar (on hover)
-// @param 4  $navItemHover  The background of each navigation button on hover
+// @param 2  $shadow  Shadow that appears below the navbar (no hover)
+// @param 3  $shadowHover  Shadow that appears below the navbar (on hover)
+// @param 4  $navItemHover  The background of each nav button on hover
 
-// @param 5  $navItemClick  The background of each navigation button on click (note, this uses CSS class :active, which is basically on click)
-// @param 6  $navItemActive  The background of each navigation button when selected, and page redirects according to the nav button that was pressed
+// @param 5  $navItemClick  The background of each nav button on click (note, this uses CSS class :active, which is basically on click)
+// @param 6  $navItemActive  The background of each nav button when selected, and page redirects according to the nav button that was pressed
 // @param 7  $heading  The color of each heading text element
 // @param 8  $icon  The color of all icons
 
 // Note: There is no $navItem because the background of this will be the same as $background, or the background of the nav bar as a whole
+
+// Purpose: To change nav bar shadow depending on hover of nav bar, and change nav bar elements, depending on hover of each individual element
 @mixin navigationThemeDefault(
   $background,
   $hasShadow,
@@ -23,10 +23,10 @@
   $heading,
   $icon
 ) {
-  // Make navigation bar have a shadow
+  // Make navbar bar have a shadow
   @include shadow('#nav', $hasShadow, $shadow, $shadowHover);
 
-  // Color of main navigation bar
+  // Color of main navbar bar
   #nav {
     background-color: $background;
   }
@@ -46,11 +46,6 @@
 
   .nav-item-body.router-link-active {
     background-color: $navItemActive;
-  }
-
-  // If click on current active route
-  .nav-item-body.router-link-active.nav-item-body:active {
-    background-color: $navItemClick;
   }
 
   // Color of of headings
