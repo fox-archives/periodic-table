@@ -1,13 +1,21 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+const fs = require("fs");
 // const cors = require('cors');
 // app.use(cors());
 const path = require("path");
 
 const app = express();
 app.use(bodyParser.json()); // Allow express to parse .json requests sent in
-app.use(morgan("tiny")); // Use Morgan log generator
+app.use(morgan("common")); // Use Morgan log generator
+app.use(
+  morgan("common", {
+    stream: fs.createWriteStream("./morgan.log", {
+      flags: "a"
+    })
+  })
+);
 
 // app.use(express.static('public')); // This replaces the bottom two lines
 app.use("/old", express.static(path.join(__dirname, "public/old")));

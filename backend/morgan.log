@@ -1,0 +1,10 @@
+::ffff:127.0.0.1 - - [23/May/2019:00:26:44 +0000] "GET /properties HTTP/1.1" 200 816
+::ffff:127.0.0.1 - - [23/May/2019:00:26:45 +0000] "GET /bundle.css HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:45 +0000] "GET /element-data/.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:45 +0000] "GET /element-data/type.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:46 +0000] "GET /old/element/discovered.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:46 +0000] "GET /old/element/placement.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:46 +0000] "GET /old/element/simple.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:46 +0000] "GET /old/label/period.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:46 +0000] "GET /old/label/group.json HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [23/May/2019:00:26:46 +0000] "GET /favicon.ico HTTP/1.1" 200 816
