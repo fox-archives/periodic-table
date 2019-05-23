@@ -1,5 +1,5 @@
 # main
-frontend/dist/
+dist/
 
 # npm
 node_modules/

@@ -15,6 +15,9 @@ app.use(
   })
 );
 
+// Serve files built for prod
+app.use(express.static(path.join(__dirname, "prod")));
+
 // app.use(express.static('public')); // This replaces the bottom two lines
 app.use("/old", express.static(path.join(__dirname, "public/old")));
 app.use(
@@ -23,18 +26,18 @@ app.use(
 );
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
-// Respond with 'Working' on get request to the home page
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/index.html"), err => {});
-});
+// // Respond with 'Working' on get request to the home page
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(__dirname, "/index.html"), err => {});
+// });
 
-app.get("/bundle.js", (req, res) => {
-  res.sendFile(path.join(__dirname, "/bundle.js"), err => {});
-});
+// app.get("/bundle.js", (req, res) => {
+//   res.sendFile(path.join(__dirname, "/bundle.js"), err => {});
+// });
 
-app.get("/bundle.css", (req, res) => {
-  res.sendFile(path.join(__dirname, "/bundle.css"), err => {});
-});
+// app.get("/bundle.css", (req, res) => {
+//   res.sendFile(path.join(__dirname, "/bundle.css"), err => {});
+// });
 
 // Catch-all request (if user goes to a URL that only the client can resolve (AKA vue-router),
 // send the user the .html file, rather than trying to resolve the URL server-side
