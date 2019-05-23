@@ -1,3 +1,5 @@
+let path = require('path');
+
 let merge = require('webpack-merge');
 let common = require('./webpack.common.js');
 let webpack = require('webpack');
@@ -16,7 +18,9 @@ module.exports = merge.smart(common, {
       },
       {
         test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader', 'postcss-loader']
+        use: ['vue-style-loader', 'css-loader', {
+          loader: 'postcss-loader'
+        }]
       }
     ]
   },
