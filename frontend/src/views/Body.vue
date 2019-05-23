@@ -1,7 +1,10 @@
 <template>
-  <div id="display" :class="[periodicTableFormat, options.themeType, options.infoLocationType]">
-    <PropertiesInformationContainer/>
-    <PeriodicTable/>
+  <div
+    id="display"
+    :class="[periodicTableFormat, options.themeType, options.infoLocationType]"
+  >
+    <PropertiesInformationContainer />
+    <PeriodicTable />
   </div>
 </template>
 

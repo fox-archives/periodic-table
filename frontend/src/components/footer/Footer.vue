@@ -1,6 +1,5 @@
 <template>
-  <footer id="footer"
-v-bind:class="this.options.themeType">
+  <footer id="footer" :class="this.options.themeType">
     <p id="name1" class="text">
       © 2018 Edwin Kofler
     </p>
@@ -10,12 +9,9 @@ v-bind:class="this.options.themeType">
     <p id="name3" class="text">
       ©
     </p>
-    <a class="link"
-href="#">About</a>
-    <a class="link"
-href="#">Feedback</a>
-    <a class="link"
-href="https://discord.gg/eZMuVnu">Discord</a>
+    <a class="link" href="#">About</a>
+    <a class="link" href="#">Feedback</a>
+    <a class="link" href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
 </template>
 

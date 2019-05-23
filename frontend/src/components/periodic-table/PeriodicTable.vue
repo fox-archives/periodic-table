@@ -1,8 +1,7 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
-      <div v-if="ready"
-id="grid-outer">
+      <div v-if="ready" id="grid-outer">
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div
@@ -32,8 +31,7 @@ id="grid-outer">
             "
             @click="[clickElement(index)]"
           >
-            <div v-cloak
-class="element-inner">
+            <div v-cloak class="element-inner">
               <p class="secondary-text test">
                 {{ ePlacement.eLabel }}
               </p>
@@ -73,9 +71,9 @@ class="element-inner">
           <!-- GROUP LABELS -->
           <div
             v-for="(group, index) in groupData"
+            :key="group.row + group.column"
             class="label-group label"
             :class="[group.row, group.column]"
-            :key="group.row + group.column"
           >
             <div
               v-cloak

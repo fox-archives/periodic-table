@@ -1,11 +1,15 @@
 <template>
-  <nav id="nav" v-bind:class="options.themeType">
+  <nav id="nav" :class="options.themeType">
     <ul id="nav-content">
       <ul id="left-nav">
         <ul id="logo-container">
           <li id="logo">
             <a href="/simple">
-              <img src="../../assets/placeholder.png" alt="logo" height="32px">
+              <img
+                src="../../assets/placeholder.png"
+                alt="logo"
+                height="32px"
+              >
             </a>
           </li>
         </ul>
@@ -13,43 +17,55 @@
         <ul id="nav-items">
           <li id="properties-wide" class="nav-item text">
             <router-link class="nav-item-body link" to="/properties">
-              <list-icon class="icon feather-icon"/>
-              <h2 class="heading" v-on:click="loadOtherData">Properties</h2>
+              <list-icon class="icon feather-icon" />
+              <h2 class="heading" @click="loadOtherData">
+                Properties
+              </h2>
             </router-link>
           </li>
 
           <li id="electrons-wide" class="nav-item text">
             <router-link class="nav-item-body link" to="/electrons">
-              <electrons class="icon custom-icon"/>
-              <h2 class="heading">Electrons</h2>
+              <electrons class="icon custom-icon" />
+              <h2 class="heading">
+                Electrons
+              </h2>
             </router-link>
           </li>
 
           <li id="orbitals-wide" class="nav-item text">
             <router-link class="nav-item-body link" to="/orbitals">
-              <orbitals class="icon custom-icon"/>
-              <h2 class="heading">Orbitals</h2>
+              <orbitals class="icon custom-icon" />
+              <h2 class="heading">
+                Orbitals
+              </h2>
             </router-link>
           </li>
 
           <li id="isotopes-wide" class="nav-item text">
             <router-link class="nav-item-body link" to="/isotopes">
-              <isotopes class="icon custom-icon"/>
-              <h2 class="heading">Isotopes</h2>
+              <isotopes class="icon custom-icon" />
+              <h2 class="heading">
+                Isotopes
+              </h2>
             </router-link>
           </li>
 
           <li id="explore-wide" class="nav-item text">
             <router-link class="nav-item-body link" to="/explore">
-              <map-icon class="icon feather-icon"/>
-              <h2 class="heading">Explore</h2>
+              <map-icon class="icon feather-icon" />
+              <h2 class="heading">
+                Explore
+              </h2>
             </router-link>
           </li>
 
           <li id="trivia-wide" class="nav-item text">
             <router-link class="nav-item-body link" to="/trivia">
-              <check-icon class="icon feather-icon"/>
-              <h2 class="heading">Trivia</h2>
+              <check-icon class="icon feather-icon" />
+              <h2 class="heading">
+                Trivia
+              </h2>
             </router-link>
           </li>
         </ul>
@@ -57,37 +73,61 @@
       <!-- End Left Nav -->
 
       <ul id="right-nav">
-        <li id="info" class="nav-item nav-item-body no-text" @click="infoPopup('on')">
-          <info-icon class="icon feather-icon"/>
+        <li
+          id="info"
+          class="nav-item nav-item-body no-text"
+          @click="infoPopup('on')"
+        >
+          <info-icon class="icon feather-icon" />
         </li>
 
-        <li id="settings" class="nav-item nav-item-body no-text" @click="optionsPopup('on')">
-          <settings-icon class="icon feather-icon"/>
+        <li
+          id="settings"
+          class="nav-item nav-item-body no-text"
+          @click="optionsPopup('on')"
+        >
+          <settings-icon class="icon feather-icon" />
         </li>
 
         <li id="search" class="nav-item nav-item-body no-text">
-          <search-icon class="icon feather-icon"/>
+          <search-icon class="icon feather-icon" />
         </li>
 
-        <li id="menu-mobile" class="nav-item nav-item-body no-text" @click="menuPopup('on')">
-          <menu-icon class="icon feather-icon"/>
+        <li
+          id="menu-mobile"
+          class="nav-item nav-item-body no-text"
+          @click="menuPopup('on')"
+        >
+          <menu-icon class="icon feather-icon" />
         </li>
       </ul>
     </ul>
 
     <!-- POPUP FOR INFO -->
-    <vs-popup title="Information" :active.sync="infoPopupActive" @vs-cancel="infoPopup('off')">
-      <InfoPopup/>
+    <vs-popup
+      title="Information"
+      :active.sync="infoPopupActive"
+      @vs-cancel="infoPopup('off')"
+    >
+      <InfoPopup />
     </vs-popup>
 
     <!-- POPUP FOR HAMBURGER NAV (MENU)-->
-    <vs-popup title="Choose a View" :active.sync="menuPopupActive" @vs-cancel="menuPopup('off')">
-      <MenuPopup/>
+    <vs-popup
+      title="Choose a View"
+      :active.sync="menuPopupActive"
+      @vs-cancel="menuPopup('off')"
+    >
+      <MenuPopup />
     </vs-popup>
 
     <!-- POPUP FOR SETTINGS / OPTIONS -->
-    <vs-popup title="Options" :active.sync="settingsPopupActive" @vs-cancel="optionsPopup('off')">
-      <OptionsPopup/>
+    <vs-popup
+      title="Options"
+      :active.sync="settingsPopupActive"
+      @vs-cancel="optionsPopup('off')"
+    >
+      <OptionsPopup />
     </vs-popup>
   </nav>
 </template>

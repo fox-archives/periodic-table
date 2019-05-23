@@ -1,6 +1,8 @@
 <template>
   <aside class="info">
-    <p class="heading">Note</p>
+    <p class="heading">
+      Note
+    </p>
     <p class="text">
       Note that this application is in a very early stage; it is far from any
       'Alpha' or 'Beta' stage.

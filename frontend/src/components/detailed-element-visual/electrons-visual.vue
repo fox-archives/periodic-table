@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="visual-inner"/>
+    <div id="visual-inner" />
   </div>
 </template>
 

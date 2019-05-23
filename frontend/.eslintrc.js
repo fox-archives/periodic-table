@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: ['prettier', 'babel'],
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'vue/max-attributes-per-line': 'off'
   }
 };

@@ -1,7 +1,10 @@
 <template>
-  <div id="display" :class="[contentState, options.themeType, options.infoLocationType]">
-    <ElementInfoPanel/>
-    <PeriodicTable/>
+  <div
+    id="display"
+    :class="[contentState, options.themeType, options.infoLocationType]"
+  >
+    <ElementInfoPanel />
+    <PeriodicTable />
   </div>
 </template>
 
