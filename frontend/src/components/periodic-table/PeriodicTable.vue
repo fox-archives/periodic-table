@@ -94,9 +94,10 @@
   </div>
 </template>
 
-<script type="text/javascript">
+<script>
 import { mapGetters, mapMutations, mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
+import { throttle, debounce } from 'lodash';
 
 export default {
   name: 'PeriodicTable',
@@ -112,22 +113,22 @@ export default {
   },
   mounted() {
     // This controls perfect scrollbar only
-    let throttled = false;
-
     let psPeriodicTable = new PerfectScrollbar('#grid-container', {
       swipeEasing: true // Default
     });
 
-    // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
-    window.addEventListener('resize', () => {
-      if (!throttled) {
-        psPeriodicTable.update();
-        throttled = true;
-        setTimeout(() => {
-          throttled = false;
-        }, 50);
-      }
-    });
+    window.addEventListener(
+      'resize',
+      throttle(() => psPeriodicTable.update(), 333)
+    );
+    window.addEventListener(
+      'resize',
+      debounce(() => psPeriodicTable.update(), 2000)
+    );
+    window.addEventListener(
+      'resize',
+      debounce(() => psPeriodicTable.update(), 10000)
+    );
   },
   computed: {
     // Mix the getters into computed with object spread operator
