@@ -70,7 +70,6 @@
 <script>
 import { mapGetters, mapMutations } from 'vuex';
 import { EventBus } from '../event-bus';
-import blurBackground from '../../mixins/blurBackground.js';
 import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
 
@@ -132,11 +131,9 @@ export default {
         // TODO: use the setOptions mutator in store.js to manipulate this.options
         this.options.blurType = 'blur-large';
 
-        // this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
         this.advancedSettingsPopupActive = true;
       } else if (state === 'off') {
         this.options.blurType = 'blur';
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
         this.advancedSettingsPopupActive = false;
       }
     },
@@ -195,7 +192,6 @@ export default {
       }
     }
   },
-  mixins: [blurBackground]
 };
 </script>
 

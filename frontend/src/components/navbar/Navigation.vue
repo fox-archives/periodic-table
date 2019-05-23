@@ -103,14 +103,6 @@
       </ul>
     </ul>
 
-    <!-- POPUP FOR INFO -->
-    <vs-popup
-      title="Information"
-      :active.sync="infoPopupActive"
-      @vs-cancel="infoPopup('off')"
-    >
-      <InfoPopup />
-    </vs-popup>
 
     <!-- POPUP FOR HAMBURGER NAV (MENU)-->
     <vs-popup
@@ -134,7 +126,6 @@
 
 <script type="text/javascript">
 import { mapGetters, mapActions } from 'vuex';
-import blurBackground from '../../mixins/blurBackground.js';
 
 // Importing to-be-used SVG icons
 import List from '@eankeen/vue-feather-icons/components/list.vue';
@@ -179,33 +170,27 @@ export default {
       if (state === 'on') {
         this.options.blurType = 'blur';
         this.infoPopupActive = true;
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
       } else if (state === 'off') {
         this.options.blurType = 'no-blur';
         this.infoPopupActive = false;
-        // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
       }
     },
     menuPopup: function(state) {
       if (state === 'on') {
         this.options.blurType = 'blur';
         this.menuPopupActive = true;
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
       } else if (state === 'off') {
         this.options.blurType = 'no-blur';
         this.menuPopupActive = false;
-        // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
       }
     },
     optionsPopup: function(state) {
       if (state === 'on') {
         this.options.blurType = 'blur';
         this.settingsPopupActive = true;
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
       } else if (state === 'off') {
         this.options.blurType = 'no-blur';
         this.settingsPopupActive = false;
-        // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
       }
     }
   },
@@ -228,7 +213,6 @@ export default {
     SearchIcon: Search,
     MenuIcon: Menu
   },
-  mixins: [blurBackground]
 };
 </script>
 
