@@ -48,17 +48,17 @@
 import { mapGetters } from 'vuex';
 
 // Importing to-be-used SVG icons
-import Type from 'vue-feather-icon/components/type.vue';
-import List from 'vue-feather-icon/components/list.vue';
+import Type from '@eankeen/vue-feather-icons/components/type.vue';
+import List from '@eankeen/vue-feather-icons/components/list.vue';
 import Electrons from '../../assets/svg/icons/electrons.svg';
 import Orbitals from '../../assets/svg/icons/orbitals.svg';
 import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
 import Isotopes from '../../assets/svg/icons/isotopes.svg';
-import Map from 'vue-feather-icon/components/map.vue'; // Explore
-import Check from 'vue-feather-icon/components/check.vue'; // Trivia
-import Info from 'vue-feather-icon/components/info.vue';
-import Settings from 'vue-feather-icon/components/settings.vue';
-import Search from 'vue-feather-icon/components/search.vue';
+import Map from '@eankeen/vue-feather-icons/components/map.vue'; // Explore
+import Check from '@eankeen/vue-feather-icons/components/check.vue'; // Trivia
+import Info from '@eankeen/vue-feather-icons/components/info.vue';
+import Settings from '@eankeen/vue-feather-icons/components/settings.vue';
+import Search from '@eankeen/vue-feather-icons/components/search.vue';
 
 export default {
   name: 'Menu',

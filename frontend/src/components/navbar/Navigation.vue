@@ -19,7 +19,7 @@
             <router-link class="nav-item-body link" to="/properties">
               <list-icon class="icon feather-icon" />
               <h2 class="heading" @click="loadOtherData">
-                Properties
+                Propertiess
               </h2>
             </router-link>
           </li>
@@ -137,17 +137,17 @@ import { mapGetters, mapActions } from 'vuex';
 import blurBackground from '../../mixins/blurBackground.js';
 
 // Importing to-be-used SVG icons
-import List from 'vue-feather-icon/components/list.vue';
+import List from '@eankeen/vue-feather-icons/components/list.vue';
 import Electrons from '../../assets/svg/icons/electrons.svg';
 import Orbitals from '../../assets/svg/icons/orbitals.svg';
 import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
 import Isotopes from '../../assets/svg/icons/isotopes.svg';
-import Map from 'vue-feather-icon/components/map.vue'; // Explore
-import Check from 'vue-feather-icon/components/check.vue'; // Trivia
-import Info from 'vue-feather-icon/components/info.vue';
-import Settings from 'vue-feather-icon/components/settings.vue';
-import Search from 'vue-feather-icon/components/search.vue';
-import Menu from 'vue-feather-icon/components/menu.vue';
+import Map from '@eankeen/vue-feather-icons/components/map.vue'; // Explore
+import Check from '@eankeen/vue-feather-icons/components/check.vue'; // Trivia
+import Info from '@eankeen/vue-feather-icons/components/info.vue';
+import Settings from '@eankeen/vue-feather-icons/components/settings.vue';
+import Search from '@eankeen/vue-feather-icons/components/search.vue';
+import Menu from '@eankeen/vue-feather-icons/components/menu.vue';
 
 // Import Popups
 import InfoPopup from '../popups/Info.vue';
