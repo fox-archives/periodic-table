@@ -27,6 +27,12 @@ export default {
 <style lang="scss">
 @import '../styles/variables.scss';
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 // The top three templates have the following IDs respectively: #nav, #display, #footer
 #content {
   display: grid;

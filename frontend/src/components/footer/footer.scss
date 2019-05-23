@@ -1,12 +1,3 @@
-#footer,
-.text,
-.link {
-  padding: 0px;
-  margin: 0px;
-  outline: 0px;
-  box-sizing: border-box;
-}
-
 // Main footer (there is only one footer)
 #footer {
   display: flex;
@@ -17,33 +8,29 @@
 }
 
 // Text in footer
-.text,
-.link {
-  // Font Family is roboto because it is not exactly content, but a title sort of
-  font-family: robotoregular;
+p, a {
+  font-family: robotoregular, serif;
   font-size: 1em;
   margin-left: 9px;
   margin-right: 9px;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.link:hover {
+a:hover {
   text-decoration: underline;
 }
 
 // Show large copyright notice (name1) on regular browser length
-p#name2,
-p#name3 {
+p#name2, p#name3 {
   display: none;
 }
 
 // Show medium copyright notice (name 2) on browser starting from 410px
 @media (max-width: 410px) {
-  p#name1,
-  p#name3 {
+  p#name1, p#name3 {
     display: none;
   }
 
@@ -54,8 +41,7 @@ p#name3 {
 
 // Show small copyright notice (name 3) on browser starting from 340px
 @media (max-width: 340px) {
-  p#name1,
-  p#name2 {
+  p#name1, p#name2 {
     display: none;
   }
 
