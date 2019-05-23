@@ -1,17 +1,19 @@
+# main
+frontend/dist/
+
+# npm
 node_modules/
 package-lock.json
+
+# ide
+.code/
 .idea/
-.idea
-.idea/workspace.xml
-.DS_Store
 
-# macOS OSX #
+# log
+*.log
+
+
+# os
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
 .Trashes
-ehthumbs.db
 Thumbs.db
-
-frontend/dist
