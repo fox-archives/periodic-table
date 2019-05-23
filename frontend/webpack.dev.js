@@ -1,11 +1,10 @@
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
-const webpack = require('webpack');
+let merge = require('webpack-merge');
+let common = require('./webpack.common.js');
+let webpack = require('webpack');
 
-module.exports = merge(common, {
+module.exports = merge.smart(common, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
-  // devtool: 'eval',
   output: {
     publicPath: '/'
   },
@@ -26,24 +25,17 @@ module.exports = merge(common, {
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    // Automatically do not open the website at startup
     open: false,
     hot: true,
     host: 'localhost',
     port: 8080,
     compress: true,
+    historyApiFallback: true,
 
-    // Proxy URL to separate backend development server
     proxy: {
-      // changeOrigin: true, // All this does is rewrite the origin of the hostheader (localhost:8080) to the target URL (localhost:3000)
-      // '/api/*': {
-      //   target: 'http://localhost:3000/api'
-      // }
       '/': {
         target: 'http://localhost:3000/'
       }
-    },
-    // This makes is so when you press 'back' button on browser, it goes back to the previous route without refreshing the page
-    historyApiFallback: true
+    }
   }
 });

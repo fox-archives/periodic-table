@@ -1,8 +1,8 @@
 <template>
   <footer id="footer">
-    <p id="name1">© 2018 Edwin Kofler</p>
-    <p id="name2">© E. Kofler</p>
-    <p id="name3">©</p>
+    <p id="name-lg">© 2018 Edwin Kofler</p>
+    <p id="name-md">© E. Kofler</p>
+    <p id="name-sm">©</p>
     <a href="#">About</a>
     <a href="#">Feedback</a>
     <a href="https://discord.gg/eZMuVnu">Discord</a>

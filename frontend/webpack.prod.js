@@ -1,18 +1,16 @@
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
-const webpack = require('webpack');
-const path = require('path');
+let merge = require('webpack-merge');
+let common = require('./webpack.common.js');
+let webpack = require('webpack');
+let path = require('path');
 
-// Unique to Production Environment
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
+let CleanWebpackPlugin = require('clean-webpack-plugin');
+let MiniCssExtractPlugin = require('mini-css-extract-plugin');
+let OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+let UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+let CompressionPlugin = require('compression-webpack-plugin');
 
-module.exports = merge(common, {
+module.exports = merge.smart(common, {
   mode: 'production',
-  // devtool: 'cheap-module-source-map',
   devtool: 'source-map',
   module: {
     rules: [
