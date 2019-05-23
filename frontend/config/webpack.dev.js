@@ -37,8 +37,14 @@ module.exports = merge.smart(common, {
     historyApiFallback: true,
 
     proxy: {
-      '/': {
-        target: 'http://localhost:3000/'
+      '/assets': {
+        target: 'http://localhost:3000'
+      },
+      '/element-data': {
+        target: 'http://localhost:3000'
+      },
+      '/old': {
+        target: 'http://localhost:3000'
       }
     }
   }
