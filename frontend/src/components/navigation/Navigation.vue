@@ -145,7 +145,7 @@ class="nav-item nav-item-body no-text">
 </template>
 
 <script type="text/javascript">
-import { mapGetter, mapActions } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import blurBackground from '../../mixins/blurBackground.js';
 
 // Importing to-be-used SVG icons

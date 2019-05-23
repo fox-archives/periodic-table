@@ -75,7 +75,7 @@ class="element-inner">
             v-for="(group, index) in groupData"
             class="label-group label"
             :class="[group.row, group.column]"
-            :key="group.row + group.index"
+            :key="group.row + group.column"
           >
             <div
               v-cloak
