@@ -331,13 +331,13 @@ export default new Vuex.Store({
     // bigger than the browser on info-side
     setClassLayout: function(state) {
       // Test if the height of periodic-table and element-info-panel are the same
-      // This assumes the properties-visual.vue goes all the way to bottom of window (stops right above footer)
+      // This assumes the AtomGraphicProperties.vue goes all the way to bottom of window (stops right above footer)
 
       let panelHeight = document.getElementById('grid-container').offsetHeight;
       let periodicTableHeight = document.getElementById('grid-outer')
         .offsetHeight;
 
-      // Only change the style if the periodic-table has a greater or equal height for properties-visual.vue
+      // Only change the style if the periodic-table has a greater or equal height for AtomGraphicProperties.vue
       if (
         periodicTableHeight >= panelHeight &&
         periodicTableHeight !== 0 &&
@@ -359,7 +359,7 @@ export default new Vuex.Store({
         // To change the length of the #grid-container (so #grid-outer scrolls to fit)
         let gridContainer = document.getElementById('grid');
 
-        // Be sure to change the ratio in periodic-table.scss if changed here
+        // Be sure to change the ratio in periodicTable.scss if changed here
         let periodicTableRatio = 0.6;
 
         // Subtract 2 because recall CSS says the height is calc(100% - 2px)
@@ -372,7 +372,7 @@ export default new Vuex.Store({
     },
 
     // This changes the CSS variable to size the element text
-    // Recall the CSS variables are declared in periodic-table.scss
+    // Recall the CSS variables are declared in periodicTable.scss
     sizeElementsText: function() {
       let grid = document.getElementById('grid');
 

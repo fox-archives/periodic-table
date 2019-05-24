@@ -57,6 +57,6 @@ export default {
 
 <style scoped lang="scss">
 @import '../../styles/variables.scss';
-@import 'info-theme';
-@import 'detailed-info';
+@import 'atomInfoTheme';
+@import 'atomInfo';
 </style>

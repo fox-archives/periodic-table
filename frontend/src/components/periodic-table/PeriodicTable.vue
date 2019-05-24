@@ -426,8 +426,8 @@ export default {
 @import '../../styles/variables';
 
 // PERIODIC TABLE \\
-@import './periodic-table.scss';
-@import './periodic-table-theme.scss';
+@import 'periodicTable';
+@import 'periodicTableTheme';
 
 .light-def {
   @include periodicTableThemeDefault(
@@ -457,8 +457,8 @@ export default {
 }
 
 // ELEMENTS \\
-@import './elements.scss';
-@import './elements-theme.scss';
+@import 'elements';
+@import 'elementsTheme';
 
 .light-def {
   @include elementsThemeColors('supdark-', true, 4, 9);
@@ -485,8 +485,8 @@ export default {
 }
 
 // LABELS \\
-@import './labels.scss';
-@import './labels-theme.scss';
+@import 'labels';
+@import 'labelsTheme';
 
 .light-def {
   @include labelsThemeDefault($oc-gray-0, $oc-gray-2, $oc-gray-9);

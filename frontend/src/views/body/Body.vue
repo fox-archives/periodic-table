@@ -12,7 +12,7 @@
 import { mapGetters, mapMutations } from 'vuex';
 import throttle from 'lodash/throttle';
 import PeriodicTable from '../../components/periodic-table/PeriodicTable.vue';
-import ElementInfoPanel from '../../components/element-info-visual-container.vue';
+import ElementInfoPanel from '../../components/SideBarInterface.vue';
 
 export default {
   name: 'Body',

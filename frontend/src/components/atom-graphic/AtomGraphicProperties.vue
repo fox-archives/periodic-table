@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex';
+import { mapGetters } from 'vuex';
 import { EventBus } from '../event-bus';
 import throttle from 'lodash/debounce';
 
@@ -52,6 +52,6 @@ export default {
 
 <style scoped lang="scss">
 @import '../../styles/variables';
-@import 'visual-themes';
-@import 'detailed-visual';
+@import 'atomGraphicTheme';
+@import 'atomGraphic';
 </style>

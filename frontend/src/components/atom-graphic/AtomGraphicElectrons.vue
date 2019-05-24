@@ -17,8 +17,8 @@ export default {
 
 <style scoped lang="scss">
 @import '../../styles/variables';
-@import 'visual-themes';
-@import 'detailed-visual';
+@import 'atomGraphicTheme';
+@import 'atomGraphic';
 
 .light-def {
   #visual-inner {

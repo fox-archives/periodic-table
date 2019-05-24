@@ -1,5 +1,5 @@
-// TODO: Make elementsThemeColors global rather than importing the _elements-theme.scss file, which is mixins and variables
-@import '../periodic-table/elements-theme.scss';
+// TODO: Make elementsThemeColors global rather than importing the elementsTheme.scss file, which is mixins and variables
+@import '../periodic-table/elementsTheme';
 .light-def {
   @include panelVisualThemeDefault(
     $ld-background,

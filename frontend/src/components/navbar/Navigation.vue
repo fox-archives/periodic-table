@@ -222,9 +222,9 @@ export default {
 @import '../../styles/tags.scss';
 
 // Structure
-@import './navigation.scss';
-@import './navigation-mobile.scss';
-@import './navigation-theme.scss';
+@import './navigation';
+@import 'navigationMobile';
+@import 'navigationTheme';
 
 .light-def {
   @include navigationThemeDefault(

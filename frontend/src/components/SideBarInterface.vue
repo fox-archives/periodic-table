@@ -9,7 +9,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'PropertiesInformationContainer',
+  name: 'SideBarInterface',
   computed: {
     ...mapGetters(['options'])
   }

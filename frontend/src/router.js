@@ -3,10 +3,10 @@ import VueRouter from 'vue-router';
 import Body from './views/body/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
-import atomInfoProperties from './components/atom-info/properties-info.vue';
-import atomGraphicProperties from './components/atom-graphic/properties-visual.vue';
-import atomGraphicElectrons from './components/atom-graphic/electrons-visual.vue';
-import atomGraphicOrbitals from './components/atom-graphic/orbitals-visual.vue';
+import atomInfoProperties from './components/atom-info/AtomInfo.vue';
+import atomGraphicProperties from './components/atom-graphic/AtomGraphicProperties.vue';
+import atomGraphicElectrons from './components/atom-graphic/AtomGraphicElectrons.vue';
+import atomGraphicOrbitals from './components/atom-graphic/AtomGraphicOrbitals.vue';
 
 Vue.use(VueRouter);
 
