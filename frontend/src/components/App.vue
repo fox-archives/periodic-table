@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import Navigation from './navbar/Navigation.vue';
 import Footer from './footer/Footer.vue';
 
@@ -16,9 +17,7 @@ export default {
     Footer
   },
   computed: {
-    options: function() {
-      return this.$store.getters.options;
-    }
+    ...mapGetters(['options'])
   }
 };
 </script>
