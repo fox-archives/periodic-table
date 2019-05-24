@@ -3,10 +3,10 @@ import VueRouter from 'vue-router';
 import Body from './views/body/Body.vue';
 import Explore from './views/explore/Explore.vue';
 import Trivia from './views/trivia/Trivia.vue';
-import propertiesInfo from './components/atom-info/properties-info.vue';
-import propertiesVisual from './components/atom-visual/properties-visual.vue';
-import electronsVisual from './components/atom-visual/electrons-visual.vue';
-import orbitalsVisual from './components/atom-visual/orbitals-visual.vue';
+import atomInfoProperties from './components/atom-info/properties-info.vue';
+import atomGraphicProperties from './components/atom-graphic/properties-visual.vue';
+import atomGraphicElectrons from './components/atom-graphic/electrons-visual.vue';
+import atomGraphicOrbitals from './components/atom-graphic/orbitals-visual.vue';
 
 Vue.use(VueRouter);
 
@@ -22,8 +22,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: propertiesInfo,
-          visualInfo: propertiesVisual
+          textualInfo: atomInfoProperties,
+          visualInfo: atomGraphicProperties
         }
       }
     ]
@@ -35,8 +35,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: propertiesInfo,
-          visualInfo: electronsVisual
+          textualInfo: atomInfoProperties,
+          visualInfo: atomGraphicElectrons
         }
       }
     ]
@@ -48,8 +48,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: propertiesInfo,
-          visualInfo: orbitalsVisual
+          textualInfo: atomInfoProperties,
+          visualInfo: atomGraphicOrbitals
         }
       }
     ]
@@ -61,8 +61,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: propertiesInfo,
-          visualInfo: propertiesVisual
+          textualInfo: atomInfoProperties,
+          visualInfo: atomGraphicOrbitals
         }
       }
     ]

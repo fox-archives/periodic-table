@@ -33,11 +33,12 @@ export default {
     }, 100);
 
     // Apparently you need a set interval after this Vue component is created, especially for the method setMobilePeriodicTableWidth
-    setTimeout(() => {
-      this.setMobilePeriodicTableWidth();
-      this.sizeElementsText();
-      this.setClassLayout();
-    }, 1000);
+    // setTimeout(() => {
+    //   this.setMobilePeriodicTableWidth();
+    //   this.sizeElementsText();
+    //   this.setClassLayout();
+    // }, 1000);
+
 
     window.addEventListener('resize', throttle(this.calculateLayout, 100));
   },
@@ -46,6 +47,12 @@ export default {
       // this.setMobilePeriodicTableWidth();
       // this.sizeElementsText();
     }, 20);
+
+    // this.$nextTick(() => {
+    //   this.setMobilePeriodicTableWidth();
+    //   this.sizeElementsText();
+    //   this.setClassLayout();
+    // });
   },
   methods: {
     ...mapMutations([
