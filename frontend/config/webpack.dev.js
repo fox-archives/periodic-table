@@ -14,13 +14,26 @@ module.exports = merge.smart(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'postcss-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+            implementation: require('dart-sass')
+          }
+        }]
       },
       {
         test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader', {
-          loader: 'postcss-loader'
-        }]
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader'
+          }
+        ]
       }
     ]
   },

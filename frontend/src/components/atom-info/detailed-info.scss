@@ -108,13 +108,17 @@
 }
 
 @media (min-width: 660px) {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  #textual-content { // not sure if correct selector
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 @media (max-width: 660px) {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  #textual-content { // not sure if correct selector
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 @media (max-width: 660px) {
