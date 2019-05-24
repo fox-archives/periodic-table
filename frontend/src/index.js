@@ -12,11 +12,6 @@ import './styles/tags.scss';
 
 import 'material-icons/iconfont/material-icons.css';
 
-// VueSax
-import Vuesax from 'vuesax';
-import 'vuesax/dist/vuesax.css';
-Vue.use(Vuesax);
-
 // Perfect Scrollbar
 import PerfectScrollbar from 'perfect-scrollbar';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';

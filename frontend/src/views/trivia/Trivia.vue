@@ -4,7 +4,7 @@
       <h3 class="title">
         Trivia
       </h3>
-      <ul id="trivias">
+      <ul id="trivia">
         <li v-for="trivia in trivias" :key="trivia" class="trivia">
           <div class="trivia-inner">
             <p class="subtitle">
@@ -16,49 +16,13 @@
           </div>
         </li>
       </ul>
-      <!-- <vs-row vs-justify="center">
-      <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-w="6">
-        <vs-card class="cardx">
-          <div slot="header">
-            <h3>Thing here</h3>
-          </div>
-        </vs-card>
-      </vs-col>
-      </vs-row>-->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Trivia',
-  data() {
-    return {
-      trivias: [
-        {
-          title: 'Properties',
-          desc: 'Memorize properties various properties of elements'
-        },
-        {
-          title: 'Electron Levels',
-          desc: 'Know the electron levels of elements'
-        },
-        { title: 'Orbitals', desc: 'Learn the structure of quantum orbitals' },
-        {
-          title: 'Isotopes',
-          desc: 'Know the abundance and other facts of each isotope'
-        },
-        {
-          title: 'Scientists',
-          desc: 'Learn which scientists discovered which elements'
-        },
-        {
-          title: 'Graphs',
-          desc: 'Identify the variuos graphs of the periodic table'
-        }
-      ]
-    };
-  }
+  name: 'Trivia'
 };
 </script>
 
@@ -66,21 +30,21 @@ export default {
 @import '../../styles/variables.scss';
 
 .boundary {
-  margin: 0px 10px 0px 10px;
+  margin: 0 10px 0 10px;
 }
 
 .boundary {
   .title {
-    font-family: robotoregular;
+    font-family: robotoregular, serif;
     font-size: 2em;
   }
   .subtitle {
-    font-family: latobold;
+    font-family: latobold, serif;
     margin-bottom: 10px;
     font-size: 1.5em;
   }
   .text {
-    font-family: latolight;
+    font-family: latolight, serif;
     font-size: 1em;
     line-height: 1.25em;
   }

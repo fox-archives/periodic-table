@@ -12,31 +12,8 @@
   filter: blur(20px);
 }
 
-// NO HIGHLIGHT EFFECT ON SOME VUESAX ELEMENTS, AMONG OTHER ELEMENTS
-.vs-noti-contenedor,
-.con-popup,
-.con-options,
-.activeItem {
-  user-select: none;
-}
-
-// VUESAX
-// Notification conts
-.con-text-noti h3 {
-  font-family: robotoregular;
-  font-weight: normal;
-}
-.con-text-noti p {
-  font-family: robotolight;
-  font-weight: normal;
-}
-
 // For some reason this does not work all the time (or at all, I believe this is for SimpleBar, not sure)
 .ps__rail-x,
 .ps__rail-y {
   opacity: 0.6 !important;
-}
-
-.con-title-after {
-  font-family: robotoregular;
 }

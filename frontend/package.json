@@ -21,7 +21,6 @@
     "perfect-scrollbar": "^1.4.0",
     "sass": "^1.20.1",
     "vue": "^2.6.10",
-    "vuesax": "^3.8.65",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
