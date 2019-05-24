@@ -1,6 +1,5 @@
 <template>
-  <div id="content"
-:class="[options.themeType, options.infoLocationType]">
+  <div id="content" :class="[options.themeType, options.infoLocationType]">
     <!--<div id="content" v-bind:class="options.blurType">-->
     <Navigation />
     <router-view />
@@ -9,7 +8,7 @@
 </template>
 
 <script>
-import Navigation from './navigation/Navigation.vue';
+import Navigation from './navbar/Navigation.vue';
 import Footer from './footer/Footer.vue';
 
 export default {
@@ -27,6 +26,12 @@ export default {
 
 <style lang="scss">
 @import '../styles/variables.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 // The top three templates have the following IDs respectively: #nav, #display, #footer
 #content {

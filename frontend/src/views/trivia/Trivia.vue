@@ -1,12 +1,18 @@
 <template>
   <div>
     <div class="boundary">
-      <h3 class="title">Trivia</h3>
+      <h3 class="title">
+        Trivia
+      </h3>
       <ul id="trivias">
-        <li v-for="trivia in trivias" class="trivia" :key="trivia">
+        <li v-for="trivia in trivias" :key="trivia" class="trivia">
           <div class="trivia-inner">
-            <p class="subtitle">{{ trivia.title }}</p>
-            <p class="text">{{ trivia.desc }}</p>
+            <p class="subtitle">
+              {{ trivia.title }}
+            </p>
+            <p class="text">
+              {{ trivia.desc }}
+            </p>
           </div>
         </li>
       </ul>

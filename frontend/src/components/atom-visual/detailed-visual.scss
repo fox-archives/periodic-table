@@ -1,19 +1,36 @@
 // TODO: Make elementsThemeColors global rather than importing the _elements-theme.scss file, which is mixins and variables
 @import '../periodic-table/elements-theme.scss';
 .light-def {
-  @include panelVisualThemeDefault($ld-background, true, $ld-shadow, $ld-shadow-hover, $ld-text);
+  @include panelVisualThemeDefault(
+    $ld-background,
+    true,
+    $ld-shadow,
+    $ld-shadow-hover,
+    $ld-text
+  );
   @include elementsThemeColors('', true, 2, 9);
 }
 
 .light-con {
-  @include panelVisualThemeDefault($lc-background, true, $lc-shadow, $lc-shadow-hover, $lc-text);
+  @include panelVisualThemeDefault(
+    $lc-background,
+    true,
+    $lc-shadow,
+    $lc-shadow-hover,
+    $lc-text
+  );
   @include elementsThemeColors('', true, 4, 9);
 }
 
 .dark-def {
-  @include panelVisualThemeDefault($dd-background, false, $dd-shadow, $dd-shadow-hover, $dd-text);
+  @include panelVisualThemeDefault(
+    $dd-background,
+    false,
+    $dd-shadow,
+    $dd-shadow-hover,
+    $dd-text
+  );
   @include elementsThemeColors('', true, 7, 1);
-
 }
 
 #visual-inner {

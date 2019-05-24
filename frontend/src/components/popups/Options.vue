@@ -3,18 +3,27 @@
     <aside id="options">
       <ul>
         <li class="option">
-          <p class="text">Theme</p>
-          <vs-select v-model="theme" class="option-theme" label="themes" @change="setTheme">
+          <p class="text">
+            Theme
+          </p>
+          <vs-select
+            v-model="theme"
+            class="option-theme"
+            label="themes"
+            @change="setTheme"
+          >
             <vs-select-item
-              v-for="(item, index) in themes"
+              v-for="item in themes"
+              :key="item.text"
               :vs-value="item.value"
               :vs-text="item.text"
-              :key="item.text"
             />
           </vs-select>
         </li>
         <li class="option">
-          <p class="text">Element Info Location</p>
+          <p class="text">
+            Element Info Location
+          </p>
           <vs-select
             v-model="infoLocationNum"
             class="option-theme"
@@ -22,22 +31,26 @@
             @change="setInfoLocation"
           >
             <vs-select-item
-              v-for="(item, index) in infoLocations"
+              v-for="item in infoLocations"
+              :key="item.text"
               :vs-value="item.value"
               :vs-text="item.text"
-              :key="item.text"
             />
           </vs-select>
         </li>
         <li class="option">
-          <p class="text">Advanced Options</p>
+          <p class="text">
+            Advanced Options
+          </p>
           <!-- I don't know why this div tag stops the button from having a length of 100% -->
           <div>
             <vs-button
               color="primary"
               vs-type="filled"
               @click="advancedSettingsPopup('on')"
-            >Advanced</vs-button>
+            >
+              Advanced
+            </vs-button>
           </div>
         </li>
       </ul>
@@ -49,16 +62,14 @@
       :active.sync="advancedSettingsPopupActive"
       @vs-cancel="advancedSettingsPopup('off')"
     >
-      <AdvancedOptionsPopUp/>
+      <AdvancedOptionsPopUp />
     </vs-popup>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 import { EventBus } from '../event-bus';
-import blurBackground from '../../mixins/blurBackground.js';
 import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
 
@@ -120,11 +131,9 @@ export default {
         // TODO: use the setOptions mutator in store.js to manipulate this.options
         this.options.blurType = 'blur-large';
 
-        // this.addClassToNotif(['blur-large'], ['no-blur', 'blur']);
         this.advancedSettingsPopupActive = true;
       } else if (state === 'off') {
         this.options.blurType = 'blur';
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
         this.advancedSettingsPopupActive = false;
       }
     },
@@ -183,7 +192,6 @@ export default {
       }
     }
   },
-  mixins: [blurBackground]
 };
 </script>
 

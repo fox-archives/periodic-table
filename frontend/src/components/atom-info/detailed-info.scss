@@ -1,13 +1,34 @@
 .light-def {
-  @include panelTextualThemeDefault($ld-background, $ld-background-accent, true, $ld-shadow, $ld-shadow-hover, $ld-text);
+  @include panelTextualThemeDefault(
+    $ld-background,
+    $ld-background-accent,
+    true,
+    $ld-shadow,
+    $ld-shadow-hover,
+    $ld-text
+  );
 }
 
 .light-con {
-  @include panelTextualThemeDefault($lc-background, $lc-background-accent, true, $lc-shadow, $lc-shadow-hover, $lc-text);
+  @include panelTextualThemeDefault(
+    $lc-background,
+    $lc-background-accent,
+    true,
+    $lc-shadow,
+    $lc-shadow-hover,
+    $lc-text
+  );
 }
 
 .dark-def {
-  @include panelTextualThemeDefault($dd-background, $dd-background-accent, false, $dd-shadow, $dd-shadow-hover, $dd-text);
+  @include panelTextualThemeDefault(
+    $dd-background,
+    $dd-background-accent,
+    false,
+    $dd-shadow,
+    $dd-shadow-hover,
+    $dd-text
+  );
 }
 
 // BOTH INFO-SIDE AND INFO-TOP
@@ -86,18 +107,21 @@
   height: 100%;
 }
 
-@media(min-width: 660px) {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+@media (min-width: 660px) {
+  #textual-content { // not sure if correct selector
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
-@media(max-width: 660px) {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+@media (max-width: 660px) {
+  #textual-content { // not sure if correct selector
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
-@media(max-width: 660px) {
-
+@media (max-width: 660px) {
 }
 
 .info-top .stat {

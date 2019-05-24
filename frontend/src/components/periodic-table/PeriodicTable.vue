@@ -1,8 +1,7 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
-      <div v-if="ready"
-id="grid-outer">
+      <div v-if="ready" id="grid-outer">
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div
@@ -32,8 +31,7 @@ id="grid-outer">
             "
             @click="[clickElement(index)]"
           >
-            <div v-cloak
-class="element-inner">
+            <div v-cloak class="element-inner">
               <p class="secondary-text test">
                 {{ ePlacement.eLabel }}
               </p>
@@ -73,6 +71,7 @@ class="element-inner">
           <!-- GROUP LABELS -->
           <div
             v-for="(group, index) in groupData"
+            :key="group.row + group.column"
             class="label-group label"
             :class="[group.row, group.column]"
           >
@@ -95,11 +94,10 @@ class="element-inner">
   </div>
 </template>
 
-<script type="text/javascript">
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
-import { mapActions } from 'vuex';
+<script>
+import { mapGetters, mapMutations, mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
+import { throttle, debounce } from 'lodash';
 
 export default {
   name: 'PeriodicTable',
@@ -115,22 +113,22 @@ export default {
   },
   mounted() {
     // This controls perfect scrollbar only
-    let throttled = false;
-
     let psPeriodicTable = new PerfectScrollbar('#grid-container', {
       swipeEasing: true // Default
     });
 
-    // On window resize (after some throttling, update size of perfectScroll scrollbar and update size of text))
-    window.addEventListener('resize', () => {
-      if (!throttled) {
-        psPeriodicTable.update();
-        throttled = true;
-        setTimeout(() => {
-          throttled = false;
-        }, 50);
-      }
-    });
+    window.addEventListener(
+      'resize',
+      throttle(() => psPeriodicTable.update(), 333)
+    );
+    window.addEventListener(
+      'resize',
+      debounce(() => psPeriodicTable.update(), 2000)
+    );
+    window.addEventListener(
+      'resize',
+      debounce(() => psPeriodicTable.update(), 10000)
+    );
   },
   computed: {
     // Mix the getters into computed with object spread operator

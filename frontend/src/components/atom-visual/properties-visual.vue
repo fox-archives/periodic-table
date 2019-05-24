@@ -2,8 +2,7 @@
   <div>
     <div id="visual-inner">
       <div id="icon">
-        <div id="icon-inner"
-v-bind:class="activeElement.color">
+        <div id="icon-inner" :class="activeElement.color">
           <p>{{ activeElement.abbreviation }}</p>
         </div>
       </div>
@@ -15,8 +14,7 @@ v-bind:class="activeElement.color">
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import { mapMutations } from 'vuex';
+import { mapGetters, mapMutations } from 'vuex';
 import { EventBus } from '../event-bus';
 import throttle from 'lodash/debounce';
 

@@ -1,34 +1,31 @@
 <template>
-  <nav id="nav"
-v-bind:class="options.themeType">
+  <nav id="nav" :class="options.themeType">
     <ul id="nav-content">
       <ul id="left-nav">
         <ul id="logo-container">
           <li id="logo">
-            <a
-href="/simple"><img
-src="../../assets/placeholder.png"
-alt="logo" height="32px"/></a>
+            <a href="/simple">
+              <img
+                src="../../assets/placeholder.png"
+                alt="logo"
+                height="32px"
+              >
+            </a>
           </li>
         </ul>
 
         <ul id="nav-items">
-          <li id="properties-wide"
-class="nav-item text">
-            <router-link class="nav-item-body link"
-to="/properties">
+          <li id="properties-wide" class="nav-item text">
+            <router-link class="nav-item-body link" to="/properties">
               <list-icon class="icon feather-icon" />
-              <h2 class="heading"
-v-on:click="loadOtherData">
-                Properties
+              <h2 class="heading" @click="loadOtherData">
+                Propertiess
               </h2>
             </router-link>
           </li>
 
-          <li id="electrons-wide"
-class="nav-item text">
-            <router-link class="nav-item-body link"
-to="/electrons">
+          <li id="electrons-wide" class="nav-item text">
+            <router-link class="nav-item-body link" to="/electrons">
               <electrons class="icon custom-icon" />
               <h2 class="heading">
                 Electrons
@@ -36,10 +33,8 @@ to="/electrons">
             </router-link>
           </li>
 
-          <li id="orbitals-wide"
-class="nav-item text">
-            <router-link class="nav-item-body link"
-to="/orbitals">
+          <li id="orbitals-wide" class="nav-item text">
+            <router-link class="nav-item-body link" to="/orbitals">
               <orbitals class="icon custom-icon" />
               <h2 class="heading">
                 Orbitals
@@ -47,10 +42,8 @@ to="/orbitals">
             </router-link>
           </li>
 
-          <li id="isotopes-wide"
-class="nav-item text">
-            <router-link class="nav-item-body link"
-to="/isotopes">
+          <li id="isotopes-wide" class="nav-item text">
+            <router-link class="nav-item-body link" to="/isotopes">
               <isotopes class="icon custom-icon" />
               <h2 class="heading">
                 Isotopes
@@ -58,10 +51,8 @@ to="/isotopes">
             </router-link>
           </li>
 
-          <li id="explore-wide"
-class="nav-item text">
-            <router-link class="nav-item-body link"
-to="/explore">
+          <li id="explore-wide" class="nav-item text">
+            <router-link class="nav-item-body link" to="/explore">
               <map-icon class="icon feather-icon" />
               <h2 class="heading">
                 Explore
@@ -69,10 +60,8 @@ to="/explore">
             </router-link>
           </li>
 
-          <li id="trivia-wide"
-class="nav-item text">
-            <router-link class="nav-item-body link"
-to="/trivia">
+          <li id="trivia-wide" class="nav-item text">
+            <router-link class="nav-item-body link" to="/trivia">
               <check-icon class="icon feather-icon" />
               <h2 class="heading">
                 Trivia
@@ -100,8 +89,7 @@ to="/trivia">
           <settings-icon class="icon feather-icon" />
         </li>
 
-        <li id="search"
-class="nav-item nav-item-body no-text">
+        <li id="search" class="nav-item nav-item-body no-text">
           <search-icon class="icon feather-icon" />
         </li>
 
@@ -115,14 +103,6 @@ class="nav-item nav-item-body no-text">
       </ul>
     </ul>
 
-    <!-- POPUP FOR INFO -->
-    <vs-popup
-      title="Information"
-      :active.sync="infoPopupActive"
-      @vs-cancel="infoPopup('off')"
-    >
-      <InfoPopup />
-    </vs-popup>
 
     <!-- POPUP FOR HAMBURGER NAV (MENU)-->
     <vs-popup
@@ -145,22 +125,20 @@ class="nav-item nav-item-body no-text">
 </template>
 
 <script type="text/javascript">
-import { mapGetters } from 'vuex';
-import { mapActions } from 'vuex';
-import blurBackground from '../../mixins/blurBackground.js';
+import { mapGetters, mapActions } from 'vuex';
 
 // Importing to-be-used SVG icons
-import List from 'vue-feather-icon/components/list.vue';
+import List from '@eankeen/vue-feather-icons/components/list.vue';
 import Electrons from '../../assets/svg/icons/electrons.svg';
 import Orbitals from '../../assets/svg/icons/orbitals.svg';
 import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
 import Isotopes from '../../assets/svg/icons/isotopes.svg';
-import Map from 'vue-feather-icon/components/map.vue'; // Explore
-import Check from 'vue-feather-icon/components/check.vue'; // Trivia
-import Info from 'vue-feather-icon/components/info.vue';
-import Settings from 'vue-feather-icon/components/settings.vue';
-import Search from 'vue-feather-icon/components/search.vue';
-import Menu from 'vue-feather-icon/components/menu.vue';
+import Map from '@eankeen/vue-feather-icons/components/map.vue'; // Explore
+import Check from '@eankeen/vue-feather-icons/components/check.vue'; // Trivia
+import Info from '@eankeen/vue-feather-icons/components/info.vue';
+import Settings from '@eankeen/vue-feather-icons/components/settings.vue';
+import Search from '@eankeen/vue-feather-icons/components/search.vue';
+import Menu from '@eankeen/vue-feather-icons/components/menu.vue';
 
 // Import Popups
 import InfoPopup from '../popups/Info.vue';
@@ -192,33 +170,27 @@ export default {
       if (state === 'on') {
         this.options.blurType = 'blur';
         this.infoPopupActive = true;
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
       } else if (state === 'off') {
         this.options.blurType = 'no-blur';
         this.infoPopupActive = false;
-        // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
       }
     },
     menuPopup: function(state) {
       if (state === 'on') {
         this.options.blurType = 'blur';
         this.menuPopupActive = true;
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
       } else if (state === 'off') {
         this.options.blurType = 'no-blur';
         this.menuPopupActive = false;
-        // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
       }
     },
     optionsPopup: function(state) {
       if (state === 'on') {
         this.options.blurType = 'blur';
         this.settingsPopupActive = true;
-        // this.addClassToNotif(['blur'], ['no-blur', 'blur-large']);
       } else if (state === 'off') {
         this.options.blurType = 'no-blur';
         this.settingsPopupActive = false;
-        // this.addClassToNotif(['no-blur'], ['blur', 'blur-large']);
       }
     }
   },
@@ -241,7 +213,6 @@ export default {
     SearchIcon: Search,
     MenuIcon: Menu
   },
-  mixins: [blurBackground]
 };
 </script>
 

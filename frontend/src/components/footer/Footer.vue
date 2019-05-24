@@ -1,49 +1,49 @@
 <template>
-  <footer id="footer"
-v-bind:class="this.options.themeType">
-    <p id="name1" class="text">
-      © 2018 Edwin Kofler
-    </p>
-    <p id="name2" class="text">
-      © E. Kofler
-    </p>
-    <p id="name3" class="text">
-      ©
-    </p>
-    <a class="link"
-href="#">About</a>
-    <a class="link"
-href="#">Feedback</a>
-    <a class="link"
-href="https://discord.gg/eZMuVnu">Discord</a>
+  <footer id="footer">
+    <p id="name-lg">© 2018 Edwin Kofler</p>
+    <p id="name-md">© E. Kofler</p>
+    <p id="name-sm">©</p>
+    <a href="#">About</a>
+    <a href="#">Feedback</a>
+    <a href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
 </template>
 
-<script type="text/javascript">
-import { mapGetters } from 'vuex';
-
+<script>
 export default {
-  name: 'Footer',
-  computed: {
-    ...mapGetters(['options'])
-  }
-};
+  name: 'Footer'
+}
 </script>
 
 <style scoped lang="scss">
 @import '../../styles/variables.scss';
 @import './footer.scss';
-@import './footer-theme.scss';
 
 .light-def {
-  @include footerThemeDefault($oc-gray-9, $oc-gray-3, white);
-}
+  p, a {
+    color: $oc-gray-9;
+  }
 
-.light-con {
-  @include footerThemeDefault($oc-gray-9, $oc-gray-4, white);
+  a {
+    text-decoration-color: $oc-gray-3;
+  }
+
+  #footer {
+    background-color: white;
+  }
 }
 
 .dark-def {
-  @include footerThemeDefault($oc-gray-1, $oc-gray-7, $oc-gray-9);
+  p, a {
+    color: $oc-gray-1;
+  }
+
+  a {
+    text-decoration-color: $oc-gray-7;
+  }
+
+  #footer {
+    background-color: $oc-gray-9;
+  }
 }
 </style>
