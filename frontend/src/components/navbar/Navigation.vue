@@ -4,7 +4,7 @@
       <ul id="left-nav">
         <ul id="logo-container">
           <li id="logo">
-            <a href="/simple">
+            <a href="/">
               <img
                 src="../../assets/placeholder.png"
                 alt="logo"
@@ -76,7 +76,6 @@
         <li
           id="info"
           class="nav-item nav-item-body no-text"
-          @click="infoPopup('on')"
         >
           <info-icon class="icon feather-icon" />
         </li>
@@ -84,7 +83,6 @@
         <li
           id="settings"
           class="nav-item nav-item-body no-text"
-          @click="optionsPopup('on')"
         >
           <settings-icon class="icon feather-icon" />
         </li>
@@ -96,35 +94,15 @@
         <li
           id="menu-mobile"
           class="nav-item nav-item-body no-text"
-          @click="menuPopup('on')"
         >
           <menu-icon class="icon feather-icon" />
         </li>
       </ul>
     </ul>
-
-
-    <!-- POPUP FOR HAMBURGER NAV (MENU)-->
-    <vs-popup
-      title="Choose a View"
-      :active.sync="menuPopupActive"
-      @vs-cancel="menuPopup('off')"
-    >
-      <MenuPopup />
-    </vs-popup>
-
-    <!-- POPUP FOR SETTINGS / OPTIONS -->
-    <vs-popup
-      title="Options"
-      :active.sync="settingsPopupActive"
-      @vs-cancel="optionsPopup('off')"
-    >
-      <OptionsPopup />
-    </vs-popup>
   </nav>
 </template>
 
-<script type="text/javascript">
+<script>
 import { mapGetters, mapActions } from 'vuex';
 
 // Importing to-be-used SVG icons
@@ -140,21 +118,8 @@ import Settings from '@eankeen/vue-feather-icons/components/settings.vue';
 import Search from '@eankeen/vue-feather-icons/components/search.vue';
 import Menu from '@eankeen/vue-feather-icons/components/menu.vue';
 
-// Import Popups
-import InfoPopup from '../popups/Info.vue';
-import MenuPopup from '../popups/Menu.vue';
-import OptionsPopup from '../popups/Options.vue';
-
 export default {
   name: 'Navigation',
-  data() {
-    return {
-      // DATA FOR POPUPS
-      menuPopupActive: false,
-      infoPopupActive: false,
-      settingsPopupActive: false
-    };
-  },
   mounted() {
     setTimeout(() => {
       this.infoPopupActive = true;
@@ -165,25 +130,6 @@ export default {
   },
   methods: {
     ...mapActions(['loadOtherData']),
-    infoPopup: function(state) {
-      // TODO: Add blur (Try to use Vuesax event for popup close, if it exists)
-      if (state === 'on') {
-        this.options.blurType = 'blur';
-        this.infoPopupActive = true;
-      } else if (state === 'off') {
-        this.options.blurType = 'no-blur';
-        this.infoPopupActive = false;
-      }
-    },
-    menuPopup: function(state) {
-      if (state === 'on') {
-        this.options.blurType = 'blur';
-        this.menuPopupActive = true;
-      } else if (state === 'off') {
-        this.options.blurType = 'no-blur';
-        this.menuPopupActive = false;
-      }
-    },
     optionsPopup: function(state) {
       if (state === 'on') {
         this.options.blurType = 'blur';
@@ -195,11 +141,6 @@ export default {
     }
   },
   components: {
-    // Component Popups
-    InfoPopup,
-    MenuPopup,
-    OptionsPopup,
-
     // Icon Components
     ListIcon: List,
     Electrons,
@@ -217,6 +158,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+/*@import '../../styles/common/options';*/
 // Variables, mixins, and common components
 @import '../../styles/variables.scss';
 @import '../../styles/tags.scss';
