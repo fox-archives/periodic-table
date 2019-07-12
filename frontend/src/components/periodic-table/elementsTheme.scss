@@ -23,7 +23,7 @@ $list-of-oc-colors: (
 
 // Purpose: For each of the 118 elements, change their background color and text color,
 // depending on if they are not hovered, hovered, or clicked.
-@mixin elementsThemeColors(
+@mixin elementsThematomColors(
   $colorShade,
   $hasBackgroundColor,
   $backgroundColor,
@@ -42,7 +42,7 @@ $list-of-oc-colors: (
   }
 }
 
-//  Example output from using: @include elementsThemeColors('light-', true, 1, 6);
+//  Example output from using: @include elementsThematomColors('light-', true, 1, 6);
 //  .light-blue {
 //    background-color: #d0ebff;
 //  }

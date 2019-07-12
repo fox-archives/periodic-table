@@ -5,7 +5,7 @@
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div
-            v-for="(ePlacement, index) in ePlacements"
+            v-for="(ePlacement, index) in atomPlacements"
             :key="ePlacement.column + ePlacement.row"
             class="element"
             :class="[
@@ -13,7 +13,7 @@
               ePlacement.row,
               ePlacement.period,
               ePlacement.group,
-              eColors[index].color
+              atomColors[index].color
             ]"
             @mouseover="
               [
@@ -36,20 +36,20 @@
                 {{ ePlacement.eLabel }}
               </p>
               <p class="primary-text">
-                {{ simpleData[index].abbreviation }}
+                {{ atomSimpleData[index].abbreviation }}
               </p>
               <p class="secondary-text">
-                {{ simpleData[index].name }}
+                {{ atomSimpleData[index].name }}
               </p>
               <p class="secondary-text">
-                {{ simpleData[index].atomicMass }}
+                {{ atomSimpleData[index].atomicMass }}
               </p>
             </div>
           </div>
 
           <!-- PERIOD LABELS -->
           <div
-            v-for="(period, index) in periodData"
+            v-for="(period, index) in atomLabelPeriods"
             :key="period.row + period.column"
             class="label-period label"
             :class="[period.row, period.column]"
@@ -57,7 +57,7 @@
             <div
               v-cloak
               class="label-period-inner label-inner"
-              :class="periodData[index].color"
+              :class="atomLabelPeriods[index].color"
               @mouseover="[highlightSection(index, 'period')]"
               @mouseleave="[unHighlightSection(index, 'period')]"
               @click="periodNotification(index)"
@@ -70,7 +70,7 @@
 
           <!-- GROUP LABELS -->
           <div
-            v-for="(group, index) in groupData"
+            v-for="(group, index) in atomLabelGroups"
             :key="group.row + group.column"
             class="label-group label"
             :class="[group.row, group.column]"
@@ -78,7 +78,7 @@
             <div
               v-cloak
               class="label-group-inner label-inner"
-              :class="groupData[index].color"
+              :class="atomLabelGroups[index].color"
               @mouseover="[highlightSection(index, 'group')]"
               @mouseleave="[unHighlightSection(index, 'group')]"
               @click="groupNotification(index)"
@@ -133,12 +133,12 @@ export default {
   computed: {
     // Mix the getters into computed with object spread operator
     ...mapGetters([
-      'simpleData',
-      'ePlacements',
-      'eColors',
-      'periodData',
-      'groupData',
-      'eDiscovered',
+      'atomSimpleData',
+      'atomPlacements',
+      'atomColors',
+      'atomLabelPeriods',
+      'atomLabelGroups',
+      'atomDiscovered',
 
       'ready',
 
@@ -255,10 +255,10 @@ export default {
         // We don't want to change color when this.clickedElement.period / group is 0 that value is for groupless elements (lanth. and act. elements)
         // Nor do we want to change color when this.clickedElement.period / group is -1, because that occurs when this.clickedElement.active is false (I think this is already covered, but just a precaution)
         if (this.clickedElement.period > 0) {
-          this.periodData[this.clickedElement.period - 1].color = 'dark';
+          this.atomLabelPeriods[this.clickedElement.period - 1].color = 'dark';
         }
         if (this.clickedElement.group > 0) {
-          this.groupData[this.clickedElement.group - 1].color = 'dark';
+          this.atomLabelGroups[this.clickedElement.group - 1].color = 'dark';
         }
 
         this.setColorOfOneElement({
@@ -286,8 +286,8 @@ export default {
       // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
 
       // Get the period.json or group value corresponding to the hovered over element (ex. c-11, p-5)
-      let periodFull = this.ePlacements[index].period;
-      let groupFull = this.ePlacements[index].group;
+      let periodFull = this.atomPlacements[index].period;
+      let groupFull = this.atomPlacements[index].group;
 
       // Concatenate period.json or group values to a number (ex. 11, 5)
       let period = this.labelClassToNone(periodFull);
@@ -305,11 +305,11 @@ export default {
         if (period > 0) {
           // Darken the labels if the mouse is entering an element
           if (isMouseOver === 'true') {
-            this.periodData[period - 1].color = 'dark';
+            this.atomLabelPeriods[period - 1].color = 'dark';
           }
           // Lighten the labels if the mouse is leaving an element
           else if (isMouseOver === 'false') {
-            this.periodData[period - 1].color = 'light';
+            this.atomLabelPeriods[period - 1].color = 'light';
           } else {
             console.warn(
               'Unexpected parameter for isMouseOver passed through setLabelColor.'
@@ -321,11 +321,11 @@ export default {
         if (group > 0) {
           // Darken the labels if the mouse is entering an element
           if (isMouseOver === 'true') {
-            this.groupData[group - 1].color = 'dark';
+            this.atomLabelGroups[group - 1].color = 'dark';
           }
           // Lighten the labels if the moues is leaving an element
           else if (isMouseOver === 'false') {
-            this.groupData[group - 1].color = 'light';
+            this.atomLabelGroups[group - 1].color = 'light';
           } else {
             console.warn(
               'Unexpected parameter for isMouseOver passed through setLabelColor.'
@@ -351,8 +351,8 @@ export default {
       ) {
         this.setClickedElement({
           index: index,
-          period: this.labelClassToNone(this.ePlacements[index].period),
-          group: this.labelClassToNone(this.ePlacements[index].group)
+          period: this.labelClassToNone(this.atomPlacements[index].period),
+          group: this.labelClassToNone(this.atomPlacements[index].group)
         });
 
         // Sets color of all elements in periodic table
@@ -442,26 +442,26 @@ export default {
 @import 'elementsTheme';
 
 .light-def {
-  @include elementsThemeColors('supdark-', true, 4, 9);
-  @include elementsThemeColors('dark-', true, 3, 9);
-  @include elementsThemeColors('', true, 2, 9);
-  @include elementsThemeColors('light-', true, 1, 6);
+  @include elementsThematomColors('supdark-', true, 4, 9);
+  @include elementsThematomColors('dark-', true, 3, 9);
+  @include elementsThematomColors('', true, 2, 9);
+  @include elementsThematomColors('light-', true, 1, 6);
   @include elementsThemeShadow(true, $oc-gray-3, $oc-gray-4);
 }
 
 .light-con {
-  @include elementsThemeColors('supdark-', true, 6, 9);
-  @include elementsThemeColors('dark-', true, 5, 9);
-  @include elementsThemeColors('', true, 4, 9);
-  @include elementsThemeColors('light-', true, 2, 6);
+  @include elementsThematomColors('supdark-', true, 6, 9);
+  @include elementsThematomColors('dark-', true, 5, 9);
+  @include elementsThematomColors('', true, 4, 9);
+  @include elementsThematomColors('light-', true, 2, 6);
   @include elementsThemeShadow(true, $oc-gray-4, $oc-gray-5);
 }
 
 .dark-def {
-  @include elementsThemeColors('supdark-', true, 9, 1);
-  @include elementsThemeColors('dark-', true, 8, 1);
-  @include elementsThemeColors('', true, 7, 1);
-  @include elementsThemeColors('light-', true, 4, 5);
+  @include elementsThematomColors('supdark-', true, 9, 1);
+  @include elementsThematomColors('dark-', true, 8, 1);
+  @include elementsThematomColors('', true, 7, 1);
+  @include elementsThematomColors('light-', true, 4, 5);
   @include elementsThemeShadow(false, $oc-gray-8, $oc-gray-7);
 }
 

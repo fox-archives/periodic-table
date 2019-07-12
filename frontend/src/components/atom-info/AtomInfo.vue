@@ -62,7 +62,7 @@ export default {
 
     // Fetch properties of elements
     updateProperties: function() {
-      // console.log(this.$store.simpleData);
+      // console.log(this.$store.atomSimpleData);
       this.loadAtomProperties();
     }
   }
