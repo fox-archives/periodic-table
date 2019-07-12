@@ -1,9 +1,9 @@
 last 2 versions
 last 4 iOS versions
-last 4 Safari versions
-last 4 Chrome versions
-last 4 Firefox versions
-> 1%
+last 3 Safari versions
+last 3 Chrome versions
+last 3 Firefox versions
+> 2%
 not ie <= 11
 not last 2 ie_mob versions
 not last 2 op_mob versions
