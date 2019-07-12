@@ -3,7 +3,7 @@ let common = require('./webpack.common.js');
 let webpack = require('webpack');
 let path = require('path');
 
-let CleanWebpackPlugin = require('clean-webpack-plugin');
+let CleanWebpackPlugin = require('clean-webpack-plugin/dist/clean-webpack-plugin');
 let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 let UglifyJsPlugin = require('uglifyjs-webpack-plugin');

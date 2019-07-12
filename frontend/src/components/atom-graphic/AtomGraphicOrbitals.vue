@@ -8,7 +8,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'OrbitalsVisual',
+  name: 'AtomGraphicOrbitals',
   computed: {
     ...mapGetters(['activeElement', 'options'])
   }

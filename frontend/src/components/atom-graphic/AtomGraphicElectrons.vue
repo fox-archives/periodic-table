@@ -8,7 +8,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'ElectronsVisual',
+  name: 'AtomGraphicElectrons',
   computed: {
     ...mapGetters(['activeElement', 'options'])
   }

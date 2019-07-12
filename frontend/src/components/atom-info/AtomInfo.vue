@@ -25,7 +25,21 @@ import { mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
 
 export default {
-  name: 'PropertiesInfo',
+  name: 'AtomInfo',
+  data() {
+    return {
+      properties: [
+        { name: 'Density', propertyName: 'density' },
+        { name: 'Liquid Density', propertyName: 'liquidDensity' },
+        { name: 'Molar Volume', propertyName: 'molarVolume' },
+        { name: 'Critical Pressure', propertyName: 'criticalTemperature' },
+        { name: 'Critical Temperature', propertyName: 'criticalTemperature' },
+        { name: 'Electron Affinity', propertyName: 'electronAffinity' },
+        { name: 'Electronegativity', propertyName: 'electronegativity' },
+        { name: 'Vaporization Heat', propertyName: 'vaporizationHeat' }
+      ]
+    };
+  },
   watch: {
     $route() {
       this.updateProperties();

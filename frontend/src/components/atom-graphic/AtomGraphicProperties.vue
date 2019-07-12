@@ -19,7 +19,7 @@ import { EventBus } from '../event-bus';
 import throttle from 'lodash/debounce';
 
 export default {
-  name: 'PropertiesVisual',
+  name: 'AtomGraphicProperties',
   watch: {
     $route() {
       this.newSizeInfoVisualText();
