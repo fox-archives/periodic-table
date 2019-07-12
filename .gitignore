@@ -3,7 +3,6 @@ dist/
 
 # npm
 node_modules/
-package-lock.json
 
 # ide
 .code/
@@ -12,8 +11,8 @@ package-lock.json
 # log
 *.log
 
-
 # os
 .DS_Store
 .Trashes
 Thumbs.db
+.Spotlight-V100

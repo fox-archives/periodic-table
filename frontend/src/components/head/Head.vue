@@ -1,9 +1,8 @@
 <template>
   <nav id="nav" :class="options.themeType">
     <ul id="nav-content">
-      <ul id="left-nav">
-        <ul id="logo-container">
-          <li id="logo">
+        <div id="logo-container">
+          <div id="logo">
             <a href="/">
               <img
                 src="../../assets/placeholder.png"
@@ -11,70 +10,64 @@
                 height="32px"
               >
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
 
-        <ul id="nav-items">
-          <li id="properties-wide" class="nav-item text">
-            <router-link class="nav-item-body link" to="/properties">
-              <list-icon class="icon feather-icon" />
-              <h2 class="heading" @click="loadOtherData">
-                Properties
-              </h2>
-            </router-link>
-          </li>
+        <li id="properties-wide" class="nav-item text">
+          <router-link class="nav-item-body link" to="/properties">
+            <list-icon class="icon feather-icon" />
+            <h2 class="heading" @click="loadOtherData">
+              Properties
+            </h2>
+          </router-link>
+        </li>
 
-          <li id="electrons-wide" class="nav-item text">
-            <router-link class="nav-item-body link" to="/electrons">
-              <electrons class="icon custom-icon" />
-              <h2 class="heading">
-                Electrons
-              </h2>
-            </router-link>
-          </li>
+        <li id="electrons-wide" class="nav-item text">
+          <router-link class="nav-item-body link" to="/electrons">
+            <electrons class="icon custom-icon" />
+            <h2 class="heading">
+              Electrons
+            </h2>
+          </router-link>
+        </li>
 
-          <li id="orbitals-wide" class="nav-item text">
-            <router-link class="nav-item-body link" to="/orbitals">
-              <orbitals class="icon custom-icon" />
-              <h2 class="heading">
-                Orbitals
-              </h2>
-            </router-link>
-          </li>
+        <li id="orbitals-wide" class="nav-item text">
+          <router-link class="nav-item-body link" to="/orbitals">
+            <orbitals class="icon custom-icon" />
+            <h2 class="heading">
+              Orbitals
+            </h2>
+          </router-link>
+        </li>
 
-          <li id="isotopes-wide" class="nav-item text">
-            <router-link class="nav-item-body link" to="/isotopes">
-              <isotopes class="icon custom-icon" />
-              <h2 class="heading">
-                Isotopes
-              </h2>
-            </router-link>
-          </li>
+        <li id="isotopes-wide" class="nav-item text">
+          <router-link class="nav-item-body link" to="/isotopes">
+            <isotopes class="icon custom-icon" />
+            <h2 class="heading">
+              Isotopes
+            </h2>
+          </router-link>
+        </li>
 
-          <li id="explore-wide" class="nav-item text">
-            <router-link class="nav-item-body link" to="/explore">
-              <map-icon class="icon feather-icon" />
-              <h2 class="heading">
-                Explore
-              </h2>
-            </router-link>
-          </li>
+        <li id="explore-wide" class="nav-item text">
+          <router-link class="nav-item-body link" to="/explore">
+            <map-icon class="icon feather-icon" />
+            <h2 class="heading">
+              Explore
+            </h2>
+          </router-link>
+        </li>
 
-          <li id="trivia-wide" class="nav-item text">
-            <router-link class="nav-item-body link" to="/trivia">
-              <check-icon class="icon feather-icon" />
-              <h2 class="heading">
-                Trivia
-              </h2>
-            </router-link>
-          </li>
-        </ul>
-      </ul>
-      <!-- End Left Nav -->
+        <li id="trivia-wide" class="nav-item text">
+          <router-link class="nav-item-body link" to="/trivia">
+            <check-icon class="icon feather-icon" />
+            <h2 class="heading">
+              Trivia
+            </h2>
+          </router-link>
+        </li>
 
-      <ul id="right-nav">
-        <li
-          id="info"
+      <li id="info"
           class="nav-item nav-item-body no-text"
         >
           <info-icon class="icon feather-icon" />
@@ -98,7 +91,6 @@
           <menu-icon class="icon feather-icon" />
         </li>
       </ul>
-    </ul>
   </nav>
 </template>
 

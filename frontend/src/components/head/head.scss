@@ -14,14 +14,9 @@
 // Just head, no popups
 #nav-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
-}
-
-// Left Nav Stuff
-#left-nav {
-  display: flex;
-  align-items: center;
+  list-style-type: none;
 }
 
 #logo-container {
@@ -34,14 +29,8 @@
   padding-right: 10px;
 }
 
-#nav-items {
-  display: flex;
-  list-style-type: none;
-}
-
-// Right Nav Stuff
-#right-nav {
-  display: flex;
+#info {
+  margin-left: auto;
 }
 
 // This is router-link. If there is no router-link (like search button), then it is list-element

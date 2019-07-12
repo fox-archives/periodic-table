@@ -75,14 +75,6 @@ const myRoutes = [
     component: Trivia
   },
   {
-    path: '/info',
-    component: Body
-  },
-  {
-    path: '/options',
-    component: Body
-  },
-  {
     path: '/search',
     component: Body
   }
