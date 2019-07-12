@@ -1,9 +1,0 @@
-[
-  { "display": 1,   "column": "cc-1",   "row": "rr-2",  "color": "light", "name": "Period 1" },
-  { "display": 2,   "column": "cc-1",   "row": "rr-4",  "color": "light", "name": "Period 2" },
-  { "display": 3,   "column": "cc-1",   "row": "rr-6",  "color": "light", "name": "Period 3" },
-  { "display": 4,   "column": "cc-1",   "row": "rr-8",  "color": "light", "name": "Period 4" },
-  { "display": 5,   "column": "cc-1",   "row": "rr-10", "color": "light", "name": "Period 5" },
-  { "display": 6,   "column": "cc-1",   "row": "rr-12", "color": "light", "name": "Period 6" },
-  { "display": 7,   "column": "cc-1",   "row": "rr-14", "color": "light", "name": "Period 7" }
-]
