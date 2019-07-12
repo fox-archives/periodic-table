@@ -8,8 +8,8 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import Navigation from './navbar/Navigation.vue';
-import Footer from './footer/Footer.vue';
+import Navigation from './components/head/Head.vue';
+import Footer from './components/foot/Foot.vue';
 
 export default {
   components: {
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/variables.scss';
+@import 'styles/variables';
 
 * {
   padding: 0;
@@ -31,7 +31,7 @@ export default {
   box-sizing: border-box;
 }
 
-// The top three templates have the following IDs respectively: #nav, #display, #footer
+// The top three templates have the following IDs respectively: #nav, #display, #foot
 #content {
   display: grid;
   grid-template-rows: max-content 1fr max-content;

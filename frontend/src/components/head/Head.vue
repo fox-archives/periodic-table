@@ -119,7 +119,7 @@ import Search from '@eankeen/vue-feather-icons/components/search.vue';
 import Menu from '@eankeen/vue-feather-icons/components/menu.vue';
 
 export default {
-  name: 'Navigation',
+  name: 'Head',
   mounted() {
     setTimeout(() => {
       this.infoPopupActive = true;
@@ -164,9 +164,9 @@ export default {
 @import '../../styles/tags.scss';
 
 // Structure
-@import './navigation';
-@import 'navigationMobile';
-@import 'navigationTheme';
+@import 'head';
+@import 'headMobile';
+@import 'headTheme';
 
 .light-def {
   @include navigationThemeDefault(

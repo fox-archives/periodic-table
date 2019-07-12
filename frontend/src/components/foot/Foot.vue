@@ -4,20 +4,19 @@
     <p id="name-md">© E. Kofler</p>
     <p id="name-sm">©</p>
     <a href="#">About</a>
-    <a href="#">Feedback</a>
     <a href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Foot'
 }
 </script>
 
 <style scoped lang="scss">
 @import '../../styles/variables.scss';
-@import './footer.scss';
+@import 'foot';
 
 .light-def {
   p, a {

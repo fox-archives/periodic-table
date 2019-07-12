@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Explore',
+  name: 'TabExplore',
   data() {
     return {};
   }
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../styles/variables.scss';
+@import '../styles/variables';
 
 .heading {
   font-family: robotoregular;

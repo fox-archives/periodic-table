@@ -3,7 +3,7 @@ window.Vue = Vue;
 
 import store from './store.js';
 import router from './router.js';
-import App from './components/App.vue';
+import App from './App.vue';
 
 // Import global styles and material design
 import './styles/variables.scss';

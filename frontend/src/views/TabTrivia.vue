@@ -22,12 +22,12 @@
 
 <script>
 export default {
-  name: 'Trivia'
+  name: 'TabTrivia'
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../styles/variables.scss';
+@import '../styles/variables';
 
 .boundary {
   margin: 0 10px 0 10px;

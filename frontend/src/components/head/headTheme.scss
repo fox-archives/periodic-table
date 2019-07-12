@@ -1,7 +1,7 @@
-// @param 1  $background  Background color of the navbar
+// @param 1  $background  Background color of the head
 // @param 2  $hasShadow  Boolean for if there is a shadow, if so, shadow selectors are not created
-// @param 2  $shadow  Shadow that appears below the navbar (no hover)
-// @param 3  $shadowHover  Shadow that appears below the navbar (on hover)
+// @param 2  $shadow  Shadow that appears below the head (no hover)
+// @param 3  $shadowHover  Shadow that appears below the head (on hover)
 // @param 4  $navItemHover  The background of each nav button on hover
 
 // @param 5  $navItemClick  The background of each nav button on click (note, this uses CSS class :active, which is basically on click)
@@ -23,10 +23,10 @@
   $heading,
   $icon
 ) {
-  // Make navbar bar have a shadow
+  // Make head bar have a shadow
   @include shadow('#nav', $hasShadow, $shadow, $shadowHover);
 
-  // Color of main navbar bar
+  // Color of main head bar
   #nav {
     background-color: $background;
   }

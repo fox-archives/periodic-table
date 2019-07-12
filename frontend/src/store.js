@@ -331,7 +331,7 @@ export default new Vuex.Store({
     // bigger than the browser on info-side
     setClassLayout: function(state) {
       // Test if the height of periodic-table and element-info-panel are the same
-      // This assumes the AtomGraphicProperties.vue goes all the way to bottom of window (stops right above footer)
+      // This assumes the AtomGraphicProperties.vue goes all the way to bottom of window (stops right above foot)
 
       let panelHeight = document.getElementById('grid-container').offsetHeight;
       let periodicTableHeight = document.getElementById('grid-outer')

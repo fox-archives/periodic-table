@@ -9,7 +9,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'SideBarInterface',
+  name: 'AtomInfoPanel',
   computed: {
     ...mapGetters(['options'])
   }

@@ -3,7 +3,7 @@
     id="display"
     :class="[contentState, options.themeType, options.infoLocationType]"
   >
-    <ElementInfoPanel />
+    <atom-info-panel />
     <PeriodicTable />
   </div>
 </template>
@@ -11,11 +11,18 @@
 <script>
 import { mapGetters, mapMutations } from 'vuex';
 import throttle from 'lodash/throttle';
-import PeriodicTable from '../../components/periodic-table/PeriodicTable.vue';
-import ElementInfoPanel from '../../components/SideBarInterface.vue';
+import PeriodicTable from '../components/periodic-table/PeriodicTable.vue';
+import AtomInfoPanel from '../components/AtomInfoPanel.vue';
 
 export default {
-  name: 'Body',
+  name: 'TabGeneric',
+  computed: {
+    ...mapGetters(['options', 'contentState'])
+  },
+  components: {
+    'atom-info-panel': AtomInfoPanel,
+    PeriodicTable
+  },
   created() {
     let setClassLayoutFirstLoad = setInterval(() => {
       // If the document is loaded, clear the timer, setClassLayout
@@ -139,19 +146,12 @@ export default {
         }
       }
     }
-  },
-  computed: {
-    ...mapGetters(['options', 'contentState'])
-  },
-  components: {
-    ElementInfoPanel,
-    PeriodicTable
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import '../../styles/variables.scss';
+@import '../styles/variables';
 
 #display {
   margin-left: $body-margin;
