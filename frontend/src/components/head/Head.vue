@@ -1,7 +1,7 @@
 <template>
   <nav id="nav" :class="options.themeType">
     <ul id="nav-content">
-        <div id="logo-container">
+        <li id="logo-container">
           <div id="logo">
             <a href="/">
               <img
@@ -11,7 +11,7 @@
               >
             </a>
           </div>
-        </div>
+        </li>
 
         <li id="properties-wide" class="nav-item text">
           <router-link class="nav-item-body link" to="/properties">

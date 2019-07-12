@@ -67,7 +67,7 @@
   bottom: 0px;
   left: 0px;
   border-radius: $border-radius;
-  font-family: robotoregular;
+  font-family: robotoregular, Arial, 'sans-serif';
   font-weight: normal;
 }
 
@@ -80,7 +80,7 @@
 }
 
 #text {
-  font-family: robotoregular;
+  font-family: robotoregular, Arial, 'sans-serif';
   font-weight: normal;
   font-size: var(--elementNameTextSize);
 }

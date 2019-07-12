@@ -19,14 +19,14 @@ $elementMargin: 0.11vw;
   margin-left: 4px;
 
   .primary-text {
-    font-family: latobold;
+    font-family: latobold, Arial, 'sans-serif';
     font-weight: normal;
     font-size: var(--primaryTextSize);
     white-space: nowrap;
   }
 
   .secondary-text {
-    font-family: latoregular;
+    font-family: latoregular, Arial, 'sans-serif';
     font-weight: normal;
     font-size: var(--secondaryTextSize);
     white-space: nowrap;

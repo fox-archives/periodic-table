@@ -17,7 +17,7 @@ export default {
 @import '../styles/variables';
 
 .heading {
-  font-family: robotoregular;
+  font-family: robotoregular, Arial, 'sans-serif';
   font-style: normal;
   font-size: 3em;
 }

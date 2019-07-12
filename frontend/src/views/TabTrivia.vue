@@ -35,7 +35,7 @@ export default {
 
 .boundary {
   .title {
-    font-family: robotoregular, serif;
+    font-family: robotoregular, Arial, 'sans-serif';
     font-size: 2em;
   }
   .subtitle {
@@ -44,7 +44,7 @@ export default {
     font-size: 1.5em;
   }
   .text {
-    font-family: latolight, serif;
+    font-family: latolight, Arial, 'sans-serif';
     font-size: 1em;
     line-height: 1.25em;
   }

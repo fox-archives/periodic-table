@@ -1,7 +1,7 @@
 {
   "name": "periodic-table",
-  "version": "",
-  "description": "",
+  "version": "0.10.0",
+  "description": "shows the periodic table of elements",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
@@ -11,8 +11,8 @@
     "deploy": "gulp deploy"
   },
   "keywords": [],
-  "author": "",
-  "license": "",
+  "author": "Edwin Kofler",
+  "license": "none",
   "dependencies": {
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
