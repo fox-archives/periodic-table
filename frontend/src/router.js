@@ -1,12 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Body from './views/TabGeneric.vue';
-import Explore from './views/TabExplore.vue';
-import Trivia from './views/TabTrivia.vue';
-import atomInfoProperties from './components/atom-info/AtomInfo.vue';
-import atomGraphicProperties from './components/atom-graphic/AtomGraphicProperties.vue';
-import atomGraphicElectrons from './components/atom-graphic/AtomGraphicElectrons.vue';
-import atomGraphicOrbitals from './components/atom-graphic/AtomGraphicOrbitals.vue';
+import Body from './views/TabGenericPeriodicTableInterface';
+import Explore from './views/TabExplore';
+import Trivia from './views/TabTrivia';
+import atomInfoProperties from './components/atom-info/AtomInfo';
+import atomGraphicProperties from './components/atom-graphic/AtomGraphicProperties';
+import atomGraphicOrbitals from './components/atom-graphic/AtomGraphicOrbitals';
 
 Vue.use(VueRouter);
 
@@ -22,8 +21,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: atomInfoProperties,
-          visualInfo: atomGraphicProperties
+          'atom-info': atomInfoProperties,
+          'atom-graphic': atomGraphicProperties
         }
       }
     ]
@@ -35,8 +34,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: atomInfoProperties,
-          visualInfo: atomGraphicElectrons
+          'atom-info': atomInfoProperties,
+          'atom-graphic': atomGraphicProperties
         }
       }
     ]
@@ -48,8 +47,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: atomInfoProperties,
-          visualInfo: atomGraphicOrbitals
+          'atom-info': atomInfoProperties,
+          'atom-graphic': atomGraphicOrbitals
         }
       }
     ]
@@ -61,8 +60,8 @@ const myRoutes = [
       {
         path: '',
         components: {
-          textualInfo: atomInfoProperties,
-          visualInfo: atomGraphicOrbitals
+          'atom-info': atomInfoProperties,
+          'atom-graphic': atomGraphicOrbitals
         }
       }
     ]

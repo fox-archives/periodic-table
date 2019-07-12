@@ -19,7 +19,7 @@
             <router-link class="nav-item-body link" to="/properties">
               <list-icon class="icon feather-icon" />
               <h2 class="heading" @click="loadOtherData">
-                Propertiess
+                Properties
               </h2>
             </router-link>
           </li>

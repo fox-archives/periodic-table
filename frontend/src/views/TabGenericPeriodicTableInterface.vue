@@ -4,7 +4,7 @@
     :class="[contentState, options.themeType, options.infoLocationType]"
   >
     <atom-info-panel />
-    <PeriodicTable />
+    <periodic-table />
   </div>
 </template>
 
@@ -15,13 +15,13 @@ import PeriodicTable from '../components/periodic-table/PeriodicTable.vue';
 import AtomInfoPanel from '../components/AtomInfoPanel.vue';
 
 export default {
-  name: 'TabGeneric',
+  name: 'TabGenericPeriodicTableInterface',
   computed: {
     ...mapGetters(['options', 'contentState'])
   },
   components: {
     'atom-info-panel': AtomInfoPanel,
-    PeriodicTable
+    'periodic-table': PeriodicTable
   },
   created() {
     let setClassLayoutFirstLoad = setInterval(() => {
@@ -50,7 +50,7 @@ export default {
     window.addEventListener('resize', throttle(this.calculateLayout, 100));
   },
   mounted() {
-    setTimeout(() => {
+    window.setTimeout(() => {
       // this.setMobilePeriodicTableWidth();
       // this.sizeElementsText();
     }, 20);

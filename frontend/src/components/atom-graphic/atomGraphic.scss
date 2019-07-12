@@ -67,7 +67,6 @@
   bottom: 0px;
   left: 0px;
   border-radius: $border-radius;
-  transition: createTransitions((border-radius, background-color));
   font-family: robotoregular;
   font-weight: normal;
 }
@@ -78,12 +77,6 @@
 
 .info-side #icon-inner {
   font-size: calc(17vw * 0.75 * 0.48);
-}
-
-#icon-inner:hover {
-  cursor: pointer;
-  border-radius: $border-radius * 1.75;
-  transition: createTransitions((border-radius));
 }
 
 #text {
