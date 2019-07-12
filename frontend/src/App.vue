@@ -1,20 +1,20 @@
 <template>
   <div id="content" :class="[options.themeType, options.infoLocationType]">
-    <Navigation />
+    <head />
     <router-view />
-    <Footer />
+    <foot />
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
-import Navigation from './components/head/Head.vue';
-import Footer from './components/foot/Foot.vue';
+import Head from './components/nav/Navigation.vue';
+import Foot from './components/foot/Foot.vue';
 
 export default {
   components: {
-    Navigation,
-    Footer
+    'head': Head,
+    'foot': Foot
   },
   computed: {
     ...mapGetters(['options'])

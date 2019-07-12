@@ -17,7 +17,7 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
 
 new Vue({
-  el: '#content',
+  el: '#app',
   router,
   store,
   mode: 'history',
