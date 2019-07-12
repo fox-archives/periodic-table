@@ -167,7 +167,7 @@ export default {
 
       'setClassLayout'
     ]),
-    ...mapActions(['loadElementColors']),
+    ...mapActions(['loadAtomColors']),
     // @ param none
     // Updates color scheme of the periodic table
     updateColor: function() {
@@ -176,11 +176,11 @@ export default {
 
       let routePath = this.$route.path.substring(1);
       if (routePath === 'properties' || routePath === 'isotopes') {
-        this.loadElementColors({ colorScheme: 'type' });
+        this.loadAtomColors({ colorScheme: 'type' });
       } else if (routePath === 'electrons' || routePath === 'orbitals') {
-        this.loadElementColors({ colorScheme: 'block' });
+        this.loadAtomColors({ colorScheme: 'block' });
       } else {
-        this.loadElementColors({ colorScheme: 'type' });
+        this.loadAtomColors({ colorScheme: 'type' });
       }
     },
 
@@ -397,25 +397,6 @@ export default {
       } else if (type === 'group') {
         return 'Group ' + number;
       }
-    },
-    // Sends a notification of the period
-    periodNotification: function(index) {
-      this.$vs.notify({
-        title: this.getPeriodGroupName(
-          'period',
-          this.periodData[index].display
-        ),
-        text: this.periodData[index].name,
-        time: 3000
-      });
-    },
-    // Sends a notification of the group
-    groupNotification: function(index) {
-      this.$vs.notify({
-        title: this.getPeriodGroupName('group', this.groupData[index].display),
-        text: this.groupData[index].name,
-        time: 3000
-      });
     }
   }
 };

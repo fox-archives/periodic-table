@@ -16,7 +16,7 @@
         <li id="properties-wide" class="nav-item text">
           <router-link class="nav-item-body link" to="/properties">
             <list-icon class="icon feather-icon" />
-            <h2 class="heading" @click="loadOtherData">
+            <h2 class="heading" @click="loadAtomProperties">
               Properties
             </h2>
           </router-link>
@@ -121,7 +121,7 @@ export default {
     ...mapGetters(['options'])
   },
   methods: {
-    ...mapActions(['loadOtherData']),
+    ...mapActions(['loadAtomProperties']),
     optionsPopup: function(state) {
       if (state === 'on') {
         this.options.blurType = 'blur';

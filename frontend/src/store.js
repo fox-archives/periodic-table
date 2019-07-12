@@ -432,28 +432,21 @@ export default new Vuex.Store({
         // eslint-disable-next-line
         .catch(error => console.log(error));
     },
-    loadOtherData: function() {
+    loadAtomColors: function(state, payload) {
       axios
-        .get('/element-data/properties.json')
-        .then(response => {
-          this.state.extraElementData = response.data;
-        })
-        // eslint-disable-next-line
-        .catch(error => console.log(error));
-    },
-    loadElementColors: function(state, payload) {
-      axios
-        .get(`/element-data/${payload.colorScheme}.json`)
+        .get(`/d/${payload.colorScheme}.json`)
         .then(response => {
           this.state.eColors = response.data;
         })
         // eslint-disable-next-line
         .catch(error => console.log(error));
     },
-    loadElementProperties: function(state, payload) {
+    loadAtomProperties: function(state, payload) {
       axios
-        .get('/element-data/' + '.json')
-        .then(response => {})
+        .get('/d/' + 'properties.json')
+        .then(response => {
+          this.state.extraElementData = response.data;
+        })
         // eslint-disable-next-line
         .catch(error => console.log(error));
     }

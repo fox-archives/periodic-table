@@ -53,7 +53,7 @@ module.exports = merge.smart(common, {
       '/assets': {
         target: 'http://localhost:3000'
       },
-      '/element-data': {
+      '/d': {
         target: 'http://localhost:3000'
       },
       '/old': {

@@ -58,12 +58,12 @@ export default {
   },
 
   methods: {
-    ...mapActions(['loadElementProperties']),
+    ...mapActions(['loadAtomProperties']),
 
     // Fetch properties of elements
     updateProperties: function() {
       // console.log(this.$store.simpleData);
-      this.loadElementProperties();
+      this.loadAtomProperties();
     }
   }
 };
