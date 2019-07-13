@@ -15,7 +15,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import { EventBus } from '../event-bus';
+import { EventBus } from '../eventBus';
 import throttle from 'lodash/debounce';
 
 export default {

@@ -1,5 +1,5 @@
 @media (max-width: $small-laptop-width) {
-  .nav-item-body {
+  .nav-item-inner {
     padding: 10px 11px 10px 11px;
   }
 
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .nav-item-body {
+  .nav-item-inner {
     padding: 10px 9px 10px 9px;
   }
 
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: $tiny-mobile-width) {
-  .nav-item-body {
+  .nav-item-inner {
     padding: 7px 10px 7px 10px;
   }
 }

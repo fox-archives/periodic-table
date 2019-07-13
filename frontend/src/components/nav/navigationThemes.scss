@@ -36,15 +36,15 @@
     // Background should automatically be $background
   }
 
-  .nav-item-body:hover {
+  .nav-item-inner:hover {
     background-color: $navItemHover;
   }
 
-  .nav-item-body:active {
+  .nav-item-inner:active {
     background-color: $navItemClick;
   }
 
-  .nav-item-body.router-link-active {
+  .nav-item-inner.router-link-active {
     background-color: $navItemActive;
   }
 

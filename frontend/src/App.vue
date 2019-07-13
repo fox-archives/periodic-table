@@ -1,6 +1,6 @@
 <template>
   <div id="content" :class="[options.themeType, options.infoLocationType]">
-    <head />
+    <navigation />
     <router-view />
     <foot />
   </div>
@@ -8,12 +8,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import Head from './components/nav/Navigation.vue';
+import Navigation from './components/nav/Navigation.vue';
 import Foot from './components/foot/Foot.vue';
 
 export default {
   components: {
-    'head': Head,
+    'navigation': Navigation,
     'foot': Foot
   },
   computed: {

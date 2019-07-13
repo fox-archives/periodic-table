@@ -13,8 +13,8 @@
         </div>
       </li>
 
-      <li id="properties-wide" class="nav-item text">
-        <router-link class="nav-item-body link" to="/properties">
+      <li class="nav-item">
+        <router-link class="nav-item-inner link" to="/properties">
           <list-icon class="icon feather-icon"/>
           <h2 class="heading" @click="loadAtomProperties">
             Properties
@@ -22,8 +22,8 @@
         </router-link>
       </li>
 
-      <li id="electrons-wide" class="nav-item text">
-        <router-link class="nav-item-body link" to="/electrons">
+      <li class="nav-item">
+        <router-link class="nav-item-inner link" to="/electrons">
           <electrons class="icon custom-icon"/>
           <h2 class="heading">
             Electrons
@@ -31,8 +31,8 @@
         </router-link>
       </li>
 
-      <li id="orbitals-wide" class="nav-item text">
-        <router-link class="nav-item-body link" to="/orbitals">
+      <li class="nav-item">
+        <router-link class="nav-item-inner link" to="/orbitals">
           <orbitals class="icon custom-icon"/>
           <h2 class="heading">
             Orbitals
@@ -40,8 +40,8 @@
         </router-link>
       </li>
 
-      <li id="isotopes-wide" class="nav-item text">
-        <router-link class="nav-item-body link" to="/isotopes">
+      <li class="nav-item">
+        <router-link class="nav-item-inner link" to="/isotopes">
           <isotopes class="icon custom-icon"/>
           <h2 class="heading">
             Isotopes
@@ -49,8 +49,8 @@
         </router-link>
       </li>
 
-      <li id="explore-wide" class="nav-item text">
-        <router-link class="nav-item-body link" to="/explore">
+      <li class="nav-item">
+        <router-link class="nav-item-inner link" to="/explore">
           <map-icon class="icon feather-icon"/>
           <h2 class="heading">
             Explore
@@ -58,8 +58,8 @@
         </router-link>
       </li>
 
-      <li id="trivia-wide" class="nav-item text">
-        <router-link class="nav-item-body link" to="/trivia">
+      <li class="nav-item">
+        <router-link class="nav-item-inner link" to="/trivia">
           <check-icon class="icon feather-icon"/>
           <h2 class="heading">
             Trivia
@@ -67,26 +67,25 @@
         </router-link>
       </li>
 
-      <li id="info"
-          class="nav-item nav-item-body no-text"
+      <li id="info-nav-item"
+          class="nav-item nav-item-inner no-text"
       >
         <info-icon class="icon feather-icon"/>
       </li>
 
       <li
-          id="settings"
-          class="nav-item nav-item-body no-text"
+          class="nav-item nav-item-inner no-text"
       >
         <settings-icon class="icon feather-icon"/>
       </li>
 
-      <li id="search" class="nav-item nav-item-body no-text">
+      <li class="nav-item nav-item-inner">
         <search-icon class="icon feather-icon"/>
       </li>
 
       <li
           id="menu-mobile"
-          class="nav-item nav-item-body no-text"
+          class="nav-item nav-item-inner no-text"
       >
         <menu-icon class="icon feather-icon"/>
       </li>

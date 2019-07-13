@@ -11,7 +11,6 @@
   transition: createTransitions((box-shadow, background-color));
 }
 
-// Just nav, no popups
 #nav-content {
   display: flex;
   justify-content: flex-start;
@@ -19,6 +18,7 @@
   list-style-type: none;
 }
 
+// Logo
 #logo-container {
   display: flex;
   justify-content: center;
@@ -29,12 +29,11 @@
   padding-right: 10px;
 }
 
-#info {
+#info-nav-item {
   margin-left: auto;
 }
 
-// This is router-link. If there is no router-link (like search button), then it is list-element
-.nav-item-body {
+.nav-item-inner {
   display: flex;
   align-items: center;
   height: 100%;
@@ -42,11 +41,11 @@
   padding: 10px 15px 10px 15px;
 }
 
-.nav-item-body:hover {
+.nav-item-inner:hover {
   cursor: pointer;
 }
 
-.nav-item-body:active {
+.nav-item-inner:active {
   transition: createTransitions((background-color));
 }
 
