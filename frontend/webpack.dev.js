@@ -4,6 +4,9 @@ let merge = require('webpack-merge');
 let common = require('./webpack.common.js');
 let webpack = require('webpack');
 
+let FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+let DashboardPlugin = require('webpack-dashboard/plugin');
+
 module.exports = merge.smart(common, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
@@ -39,7 +42,9 @@ module.exports = merge.smart(common, {
   },
   plugins: [
     // Need to instantiate this when declaring hot: true as a property of the webpack-dev-server
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new FriendlyErrorsWebpackPlugin(),
+    new DashboardPlugin()
   ],
   devServer: {
     open: false,
@@ -48,6 +53,7 @@ module.exports = merge.smart(common, {
     port: 8080,
     compress: true,
     historyApiFallback: true,
+    quiet: true,
 
     proxy: {
       '/assets': {

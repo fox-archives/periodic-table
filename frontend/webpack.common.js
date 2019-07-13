@@ -71,9 +71,7 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-
     // new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
-
     new HtmlWebpackPlugin({
       title: 'A Periodic Table',
       filename: 'index.html',
