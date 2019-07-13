@@ -39,6 +39,3 @@ For[i = 1, i < 119, i++,
 ];
 
 Export["json/ubiquitous.json", periodicTable, "JSON"];
-
-
-

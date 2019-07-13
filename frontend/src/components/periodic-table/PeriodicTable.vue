@@ -138,7 +138,6 @@ export default {
       'atomColors',
       'atomLabelPeriods',
       'atomLabelGroups',
-      'atomDiscovered',
 
       'ready',
 

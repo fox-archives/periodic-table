@@ -17,9 +17,6 @@ export default new Vuex.Store({
     atomLabelPeriods: [],
     atomLabelGroups: [],
 
-    // Discovery Date of Elements
-    atomDiscovered: [],
-
     ready: false,
 
     // Element Defaults
@@ -76,9 +73,6 @@ export default new Vuex.Store({
     atomLabelGroups: function(state) {
       return state.atomLabelGroups;
     },
-    atomDiscovered: function(state) {
-      return state.atomDiscovered;
-    },
 
     // Value determining if the data is ready to be rendered (after all Axios requests)
     // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
@@ -119,10 +113,6 @@ export default new Vuex.Store({
         state.activeElement.atomicMass = state.atomSimpleData[index].atomicMass;
 
         // Update element description (right box)
-        state.activeElement.discoveryDate =
-          state.atomDiscovered[index].discoveryDate;
-        state.activeElement.discoveredBy =
-          state.atomDiscovered[index].discoveredBy;
         state.activeElement.color = state.atomColors[index].defaultColor;
       }
     },
@@ -137,9 +127,6 @@ export default new Vuex.Store({
       state.activeElement.atomicMass = state.atomSimpleData[index].atomicMass;
 
       // Update element description (right box)
-      state.activeElement.discoveryDate =
-        state.atomDiscovered[index].discoveryDate;
-      state.activeElement.discoveredBy = state.atomDiscovered[index].discoveredBy;
       state.activeElement.color = state.atomColors[index].defaultColor;
     },
 
@@ -390,14 +377,6 @@ export default new Vuex.Store({
   },
   actions: {
     loadElementData: function() {
-      axios
-        .get('/old/element/discovered.json')
-        .then(response => {
-          this.state.atomDiscovered = response.data;
-        })
-        // eslint-disable-next-line
-        .catch(error => console.log(error));
-
       axios
         .get('/old/element/placement.json')
         .then(response => {

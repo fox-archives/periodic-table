@@ -19,7 +19,7 @@ app.use(
 app.use("/old", express.static(path.join(__dirname, "public/old")));
 app.use(
   "/d",
-  express.static(path.join(__dirname, "public/atom-data"))
+  express.static(path.join(__dirname, "public/data"))
 );
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 // Catch-all request (if user goes to a URL that only the client can resolve (AKA vue-router),
