@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-  loadElementData: function() {
+  loadAtomData: function() {
     axios
         .get('/old/element/placement.json')
         .then(response => {
@@ -45,11 +45,11 @@ export default {
         // eslint-disable-next-line
         .catch(error => console.log(error));
   },
-  loadAtomProperties: function(state, payload) {
+  loadAtomTabProperties: function(state, payload) {
     axios
         .get('/d/' + 'atomTabProperties.json')
         .then(response => {
-          this.state.extraElementData = response.data;
+          this.state.atomTabData = response.data;
         })
         // eslint-disable-next-line
         .catch(error => console.log(error));

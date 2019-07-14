@@ -81,7 +81,6 @@
               :class="atomLabelGroups[index].color"
               @mouseover="[highlightSection(index, 'group')]"
               @mouseleave="[unHighlightSection(index, 'group')]"
-              @click="groupNotification(index)"
             >
               <p class="label-text">
                 {{ group.display }}
@@ -109,7 +108,7 @@ export default {
   created() {
     this.updateColor();
     // Load element data via Axios / Fetch API requests to backend
-    this.$store.dispatch('loadElementData');
+    this.$store.dispatch('loadAtomData');
   },
   mounted() {
     // This controls perfect scrollbar only

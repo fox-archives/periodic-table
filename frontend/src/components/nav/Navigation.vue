@@ -16,7 +16,7 @@
       <li class="nav-item">
         <router-link class="nav-item-inner link" to="/properties">
           <list-icon class="icon feather-icon"/>
-          <h2 class="heading" @click="loadAtomProperties">
+          <h2 class="heading" @click="loadAtomTabProperties">
             Properties
           </h2>
         </router-link>
@@ -94,7 +94,7 @@
 </template>
 
 <script>
-  import {mapGetters, mapActions} from 'vuex';
+  import { mapGetters, mapActions } from 'vuex';
 
   // Importing to-be-used SVG icons
   import List from '@eankeen/vue-feather-icons/components/list.vue';
@@ -111,25 +111,11 @@
 
   export default {
     name: 'Navigation',
-    mounted() {
-      setTimeout(() => {
-        this.infoPopupActive = true;
-      }, 1000);
-    },
     computed: {
       ...mapGetters(['options'])
     },
     methods: {
-      ...mapActions(['loadAtomProperties']),
-      optionsPopup: function (state) {
-        if (state === 'on') {
-          this.options.blurType = 'blur';
-          this.settingsPopupActive = true;
-        } else if (state === 'off') {
-          this.options.blurType = 'no-blur';
-          this.settingsPopupActive = false;
-        }
-      }
+      ...mapActions(['loadAtomTabProperties'])
     },
     components: {
       // Icon Components

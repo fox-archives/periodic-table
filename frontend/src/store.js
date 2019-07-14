@@ -18,6 +18,11 @@ export default new Vuex.Store({
     atomLabelPeriods: [],
     atomLabelGroups: [],
 
+    // atom tab data (dependent on the selected tab) for *all* elements
+    atomTabData: [],
+    // atom tab data for *only* the active element (one being clicked on or hovered over
+    atomTabDataActive: {},
+
     ready: false,
 
     // Element Defaults
@@ -55,7 +60,6 @@ export default new Vuex.Store({
     },
 
     contentState: '',
-    extraElementData: []
   },
   getters: {
     // ACCESSING ARRAYS
@@ -115,6 +119,10 @@ export default new Vuex.Store({
 
         // Update element description (right box)
         state.activeElement.color = state.atomColors[index].defaultColor;
+
+        // TODO: Make less messy
+        // state.updateAtomTabDataActive()
+        state.atomTabDataActive = state.atomTabData[index];
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
@@ -129,7 +137,12 @@ export default new Vuex.Store({
 
       // Update element description (right box)
       state.activeElement.color = state.atomColors[index].defaultColor;
+
+      // TODO: Make less messy
+      // this.updateAtomTabDataActive();
+      state.atomTabDataActive = state.atomTabData[index];
     },
+
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
     // @param #object 'payload' contains properties:

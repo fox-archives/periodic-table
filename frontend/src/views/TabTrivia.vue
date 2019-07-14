@@ -39,7 +39,7 @@ export default {
     font-size: 2em;
   }
   .subtitle {
-    font-family: latobold, serif;
+    font-family: latobold, Arial, 'sans-serif';
     margin-bottom: 10px;
     font-size: 1.5em;
   }
