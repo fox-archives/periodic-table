@@ -1,42 +1,34 @@
 <template>
-  <div id="textual">
-    <div v-if="ready" id="textual-inner">
-      <div id="textual-buffer">
-        <div id="textual-content">
-          <div v-for="atomTabDataMember in atomTabDataActiveModified" class="stat">
-            <div class="stat-icon">
-              <p>{{ activeElement.density }}</p>
-            </div>
-            <div class="stat-text">
-              <p>
-                {{ atomTabDataMember[0] }}: {{ atomTabDataMember[1] }}
-              </p>
-            </div>
+  <div v-if="ready" class="atom-info-wrapper">
+    <div class="atom-info">
+      <simplebar class="simplebar" data-simplebar-auto-hide="false">
+        <div class="atom-info-inner">
+          <div class="atom-stat" v-for="atomTabDataMember in atomTabDataActiveModified">
+            <p class="atom-stat-text">
+              {{ atomTabDataMember[0] }}: {{ atomTabDataMember[1] }}
+            </p>
           </div>
         </div>
-      </div>
+      </simplebar>
     </div>
   </div>
 </template>
 
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex';
-import PerfectScrollbar from 'perfect-scrollbar';
+import simplebar from 'simplebar-vue';
+import 'simplebar/dist/simplebar.min.css';
 
 export default {
   name: 'AtomInfo',
+  components: {
+    simplebar
+  },
   watch: {
     $route() {
       // TODO: Make this route watcher on TabGenericPeriodicTableInterface.vue element
       this.updateProperties();
     },
-    ready() {
-      this.$nextTick(() => {
-        let psPanelTextual = new PerfectScrollbar('#textual-inner', {
-          swipeEasing: true // Default
-        });
-      });
-    }
   },
   created() {
     this.updateProperties();
@@ -65,7 +57,38 @@ export default {
 @import 'atomInfoTheme';
 @import 'atomInfo';
 
-.stat-text {
-  font-family: latoregular, Arial, 'sans-serif';
+
+
+.light-def {
+  @include panelTextualThemeDefault(
+      $ld-background,
+      $ld-background-accent,
+      true,
+      $ld-shadow,
+      $ld-shadow-hover,
+      $ld-text
+  );
+}
+
+.light-con {
+  @include panelTextualThemeDefault(
+      $lc-background,
+      $lc-background-accent,
+      true,
+      $lc-shadow,
+      $lc-shadow-hover,
+      $lc-text
+  );
+}
+
+.dark-def {
+  @include panelTextualThemeDefault(
+      $dd-background,
+      $dd-background-accent,
+      false,
+      $dd-shadow,
+      $dd-shadow-hover,
+      $dd-text
+  );
 }
 </style>
