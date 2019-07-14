@@ -1,10 +1,8 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
-Import["common-methods.wls"];
-DeleteFile["json/required-data-placement.json"];
-
+Import["../common-methods.wls"];
+DeleteFile["placement.json"];
 periodicTable = {};
 
 reformatGroup[value_, i_]:=
@@ -87,7 +85,7 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["json/required-data-placement.json", periodicTable, "JSON"];
+Export["placement.json", periodicTable, "JSON"];
 
 
 

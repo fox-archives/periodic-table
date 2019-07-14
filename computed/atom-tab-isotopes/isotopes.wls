@@ -2,8 +2,8 @@
 (* ::Package:: *)
 
 (* Setup *)
-Import["common-methods.wls"];
-DeleteFile["json/atomic.json"];
+Import["../common-methods.wls"];
+DeleteFile["atomic.json"];
 
 periodicTable = {};
 	 
@@ -48,7 +48,7 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["json/atomic.json", periodicTable, "JSON"];
+Export["atomic.json", periodicTable, "JSON"];
 
 
 

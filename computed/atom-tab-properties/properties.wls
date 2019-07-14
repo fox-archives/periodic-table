@@ -2,9 +2,8 @@
 (* ::Package:: *)
 
 (* Setup *)
-SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
-Import["common-methods.wls"];
-DeleteFile["json/properties.json"];
+Import["../common-methods.wls"];
+DeleteFile["category-data-properties.json"];
 
 periodicTable = {};
 	
@@ -221,7 +220,7 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["json/properties.json", periodicTable, "JSON"];
+Export["category-data-properties.json", periodicTable, "JSON"];
 
 
 

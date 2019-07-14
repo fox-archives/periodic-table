@@ -1,15 +1,16 @@
 # main
 dist/
+computed/*.json
 
 # npm
 node_modules/
 
+# log
+*.log
+
 # ide
 .code/
 .idea/
-
-# log
-*.log
 
 # os
 .DS_Store

@@ -1,9 +1,8 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
-Import["common-methods.wls"];
-DeleteFile["json/block.json"];
+Import["../common-methods.wls"];
+DeleteFile["block.json"];
 
 periodicTable = {};
 
@@ -46,7 +45,7 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["json/block.json", periodicTable, "JSON"];
+Export["block.json", periodicTable, "JSON"];
 
 
 

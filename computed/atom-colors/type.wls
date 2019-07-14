@@ -1,9 +1,8 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
-Import["common-methods.wls"];
-DeleteFile["json/color-data-classification.json"];
+Import["../common-methods.wls"];
+DeleteFile["type.json"];
 
 periodicTable = {};
 
@@ -27,31 +26,31 @@ For[i = 1, i < 119, i++,
 	(*type = getType[ElementData[i, "Series"]];*)
 	series = ElementData[i, "Series"];
 	type = "Unexpected Values";
-	(* Colors Not Included: Orange, Lime *)
+	Print@series;
 	Switch[
 		series,
 		"Nonmetal",
-		type = "yellow",
+		type = "red",
 		"NobleGas",
-		type = "pink",
+		type = "violet",
 		"AlkaliMetal",
-		type = "blue",
+		type = "cyan",
 		"AlkalineEarthMetal",
-		type = "violet";,
+		type = "lime";,
 		"Metalloid",
-		type = "indigo",
+		type = "pink",
 		"Chalcogen",
-		type = "yellow",
+		type = "indigo",
 		"Halogen",
 		type = "teal",
 		"PoorMetal",
-		type = "green",
+		type = "yellow",
 		"TransitionMetal",
-		type = "red",
+		type = "grape",
 		"Lanthanide",
-		type = "cyan",
+		type = "blue",
 		"Actinide",
-		type = "grape"
+		type = "green"
 	];
 	newElement = {
 		"defaultColor" -> type,
@@ -63,8 +62,8 @@ For[i = 1, i < 119, i++,
 	(* Case for Lanthanites *)
 	If[i == 56,
 		lanth = {
-			"defaultColor" -> "cyan",
-			"color" -> "cyan"
+			"defaultColor" -> "blue",
+			"color" -> "blue"
 		};
 		periodicTable = Append[periodicTable, lanth];
 	];
@@ -72,11 +71,11 @@ For[i = 1, i < 119, i++,
 	(* Case for Actinides *)
 	If[i == 88,
 		act = {
-			"defaultColor" -> "grape",
-			"color" -> "grape"
+			"defaultColor" -> "green",
+			"color" -> "green"
 		};
 		periodicTable = Append[periodicTable, act];
 	];
 ];
-Print["Done"];
-Export["json/color-data-classification.json", periodicTable, "JSON"];
+
+Export["type.json", periodicTable, "JSON"];

@@ -1,22 +1,21 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-(* Set current working directory *)
-SetDirectory["/Users/edwin/Documents/All/Programs/periodic-table/computed/"];
 (* Prevent returning units from queries *)
 SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
 
 (* Removes the ending period in some of the numbers *)
-removeEndingPeriod[str_]:=
+removeEndingPeriod[str_]:= (
 	If[StringEndsQ[str, "."],
 		newStr = StringTake[str, StringLength[str] - 1];
 		Return[newStr];,
 		(* Else *)
 		Return[str];
 	];
+)
 	
 (* Replaces the stringified version of the error / no data message with a human readable one *)
-convertToUnknownNA[str_]:=
+convertToUnknownNA[str_]:= (
 	If[str == "Missing[NotAvailable]" ||
 		str == "Missing[Unknown]",
 		
@@ -29,18 +28,20 @@ convertToUnknownNA[str_]:=
 			Return[str];
 		];
 	];
+)
 	
 (* Converts scientific form to regular integer form *)
-scientificToRegular[num_]:=
+scientificToRegular[num_]:= (
 	If[NumberQ[num],
 		Return[DecimalForm[N[num]]];,
-		(* Possibly use AccountingForm instead, since it does not ouput scientific notation at all *)
+		(* Possibly use AccountingForm instead, since it does not output scientific notation at all *)
 		(* Return[N[num]];, *)
 		(* Else *)
 		Return[num];
 	];
+)
 	
-transformProperty[prop_]:=
+transformProperty[prop_]:= (
 	(* Apparently, this function will not work without the "If" statement *)
 	If["true" === "true",
 		(*newProp = scientificToRegular[prop];
@@ -48,22 +49,24 @@ transformProperty[prop_]:=
 		newProp = convertToUnknownNA[newProp];
 		newProp = removeEndingPeriod[newProp];*)
 		
-		(* This works, but seems to have a problem with atomic.wls, abeit, above has a problem witht that also *)
+		(* This works, but seems to have a problem with atomic.wls, albeit, above has a problem with that also *)
 		newProp = removeEndingPeriod@ToString@AccountingForm@N@prop;
 		newProp = convertToUnknownNA[newProp];
 		Return[newProp];
 	];
+)
 
-objectToObject[prop_]:=
+objectToObject[prop_]:= (
 	(* Use the "if" statement just like last time *)
 	If["true" === "true",
 		newProp = ToString[prop];
 		Return[newProp];
 	];
+)
 
-toHTMLSuperScript[i_, fn_]:=
+toHTMLSuperScript[i_, fn_]:= (
 	If["true" === "true",
-		(* Unprotects Mathematica's Superscript method, so it can be overriden *)
+		(* Unprotects Mathematica's Superscript method, so it can be overridden *)
 		Unprotect[Superscript];
 		Superscript[x_, y_] := Return[StringJoin[ToString[x], "<sup>", ToString[y], "</sup>", " "]];
 		Subscript[x_, y_] := Return[StringJoin[ToString[x], "<sub>", ToString[y], "</sub>", " "]];
@@ -76,6 +79,7 @@ toHTMLSuperScript[i_, fn_]:=
 		newProp = StringReplace[newProp, "]" -> "] ", 1];
 		Return[newProp];
 	];
+)
 
 customFunction[i_, fn_]:=
 	If["true" === "true",
@@ -88,3 +92,7 @@ customFunction[i_, fn_]:=
 		, {j, 1, Length[newProp]}];
 		Return[newProp];
 	];
+
+doCrap[]:= (
+	Print["random crap"];
+)
