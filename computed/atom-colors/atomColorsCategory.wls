@@ -2,7 +2,7 @@
 (* ::Package:: *)
 
 Import["../common-methods.wls"];
-DeleteFile["type.json"];
+DeleteFile["atomColorsCategory.json"];
 
 periodicTable = {};
 
@@ -26,7 +26,6 @@ For[i = 1, i < 119, i++,
 	(*type = getType[ElementData[i, "Series"]];*)
 	series = ElementData[i, "Series"];
 	type = "Unexpected Values";
-	Print@series;
 	Switch[
 		series,
 		"Nonmetal",
@@ -78,4 +77,4 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["type.json", periodicTable, "JSON"];
+Export["atomColorsCategory.json", periodicTable, "JSON"];

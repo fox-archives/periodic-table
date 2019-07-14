@@ -1,6 +1,5 @@
 # main
 dist/
-computed/*.json
 
 # npm
 node_modules/
@@ -9,7 +8,7 @@ node_modules/
 *.log
 
 # ide
-.code/
+.vscode/
 .idea/
 
 # os

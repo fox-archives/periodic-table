@@ -2,7 +2,7 @@
 (* ::Package:: *)
 
 Import["../common-methods.wls"];
-DeleteFile["block.json"];
+DeleteFile["atomColorsOrbitalBlock.json"];
 
 periodicTable = {};
 
@@ -45,7 +45,4 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["block.json", periodicTable, "JSON"];
-
-
-
+Export["atomColorsOrbitalBlock.json", periodicTable, "JSON"];

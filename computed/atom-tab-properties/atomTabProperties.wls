@@ -3,7 +3,7 @@
 
 (* Setup *)
 Import["../common-methods.wls"];
-DeleteFile["category-data-properties.json"];
+DeleteFile["atomTabProperties.json"];
 
 periodicTable = {};
 	
@@ -220,7 +220,7 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["category-data-properties.json", periodicTable, "JSON"];
+Export["atomTabProperties.json", periodicTable, "JSON"];
 
 
 

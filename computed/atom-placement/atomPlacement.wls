@@ -2,7 +2,7 @@
 (* ::Package:: *)
 
 Import["../common-methods.wls"];
-DeleteFile["placement.json"];
+DeleteFile["atomPlacement.json"];
 periodicTable = {};
 
 reformatGroup[value_, i_]:=
@@ -85,10 +85,4 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["placement.json", periodicTable, "JSON"];
-
-
-
-
-
-
+Export["atomPlacement.json", periodicTable, "JSON"];

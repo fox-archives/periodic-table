@@ -3,7 +3,7 @@
 
 (* Setup *)
 Import["../common-methods.wls"];
-DeleteFile["atomic.json"];
+DeleteFile["atomTabIsotopes.json"];
 
 periodicTable = {};
 	 
@@ -48,7 +48,7 @@ Do[
 	periodicTable = Append[periodicTable, newElement];
 , {i, 1, 118}];
 
-Export["atomic.json", periodicTable, "JSON"];
+Export["atomTabIsotopes.json", periodicTable, "JSON"];
 
 
 
