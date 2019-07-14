@@ -47,7 +47,7 @@ export default {
   },
   loadAtomProperties: function(state, payload) {
     axios
-        .get('/d/' + 'properties.json')
+        .get('/d/' + 'atomTabProperties.json')
         .then(response => {
           this.state.extraElementData = response.data;
         })

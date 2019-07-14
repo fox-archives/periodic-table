@@ -175,11 +175,11 @@ export default {
 
       let routePath = this.$route.path.substring(1);
       if (routePath === 'properties' || routePath === 'isotopes') {
-        this.loadAtomColors({ colorScheme: 'type' });
+        this.loadAtomColors({ colorScheme: 'atomColorsCategory' });
       } else if (routePath === 'electrons' || routePath === 'orbitals') {
-        this.loadAtomColors({ colorScheme: 'block' });
+        this.loadAtomColors({ colorScheme: 'atomColorsOrbitalBlock' });
       } else {
-        this.loadAtomColors({ colorScheme: 'type' });
+        this.loadAtomColors({ colorScheme: 'atomColorsCategory' });
       }
     },
 
