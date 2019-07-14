@@ -49,6 +49,3 @@ Do[
 , {i, 1, 118}];
 
 Export["atomTabIsotopes.json", periodicTable, "JSON"];
-
-
-

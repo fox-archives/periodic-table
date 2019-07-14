@@ -221,6 +221,3 @@ Do[
 , {i, 1, 118}];
 
 Export["atomTabProperties.json", periodicTable, "JSON"];
-
-
-
