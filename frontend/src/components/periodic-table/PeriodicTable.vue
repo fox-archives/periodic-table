@@ -5,14 +5,14 @@
         <main id="grid">
           <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
           <div
-            v-for="(ePlacement, index) in atomPlacements"
-            :key="ePlacement.column + ePlacement.row"
+            v-for="(atomPlacement, index) in atomPlacements"
+            :key="atomPlacement.column + atomPlacement.row"
             class="element"
             :class="[
-              ePlacement.column,
-              ePlacement.row,
-              ePlacement.period,
-              ePlacement.group,
+              atomPlacement.column,
+              atomPlacement.row,
+              atomPlacement.period,
+              atomPlacement.group,
               atomColors[index].color
             ]"
             @mouseover="
@@ -33,7 +33,7 @@
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">
-                {{ ePlacement.eLabel }}
+                {{ atomPlacement.eLabel }}
               </p>
               <p class="primary-text">
                 {{ atomSimpleData[index].abbreviation }}
@@ -60,7 +60,6 @@
               :class="atomLabelPeriods[index].color"
               @mouseover="[highlightSection(index, 'period')]"
               @mouseleave="[unHighlightSection(index, 'period')]"
-              @click="periodNotification(index)"
             >
               <p class="label-text">
                 {{ period.display }}
