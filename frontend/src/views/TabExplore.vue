@@ -1,7 +1,7 @@
 <template>
-  <h1 id="heading">
-    Welcome to Explore
-  </h1>
+  <div id="explore">
+    <h1>'Explore' Coming soon</h1>
+  </div>
 </template>
 
 <script>
@@ -16,9 +16,15 @@ export default {
 <style scoped lang="scss">
 @import '../styles/variables';
 
-.heading {
-  font-family: robotoregular, Arial, 'sans-serif';
-  font-style: normal;
-  font-size: 3em;
+#explore {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  padding-bottom: 30vh;
 }
 </style>

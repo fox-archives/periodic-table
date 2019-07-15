@@ -29,6 +29,7 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: latolight, Arial, 'sans-serif';
 }
 
 // The top three templates have the following IDs respectively: #nav, #display, #foot
