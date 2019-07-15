@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 import { EventBus } from '../eventBus';
 import throttle from 'lodash/debounce';
 
@@ -37,7 +37,7 @@ export default {
     });
   },
   computed: {
-    ...mapGetters(['activeElement', 'options'])
+    ...mapState(['activeElement', 'options'])
   },
   methods: {
     newSizeInfoVisualText: function() {

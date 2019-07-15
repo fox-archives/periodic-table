@@ -94,7 +94,7 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex';
+  import { mapState, mapActions } from 'vuex';
 
   // Importing to-be-used SVG icons
   import List from '@eankeen/vue-feather-icons/components/list.vue';
@@ -112,7 +112,7 @@
   export default {
     name: 'Navigation',
     computed: {
-      ...mapGetters(['options'])
+      ...mapState(['options'])
     },
     methods: {
       ...mapActions(['loadAtomTabProperties'])

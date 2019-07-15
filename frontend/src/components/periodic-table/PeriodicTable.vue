@@ -93,7 +93,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations, mapActions } from 'vuex';
+import { mapState, mapMutations, mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
 import { throttle, debounce } from 'lodash';
 
@@ -130,7 +130,10 @@ export default {
   },
   computed: {
     // Mix the getters into wolfram with object spread operator
-    ...mapGetters([
+    ...mapState([
+
+    ]),
+    ...mapState([
       'atomSimpleData',
       'atomPlacements',
       'atomColors',

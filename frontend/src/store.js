@@ -23,6 +23,8 @@ export default new Vuex.Store({
     // atom tab data for *only* the active element (one being clicked on or hovered over
     atomTabDataActive: {},
 
+    // Value determining if the data is ready to be rendered (after all Axios requests)
+    // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
     ready: false,
 
     // Element Defaults
@@ -60,49 +62,6 @@ export default new Vuex.Store({
     },
 
     contentState: '',
-  },
-  getters: {
-    // ACCESSING ARRAYS
-    atomSimpleData: function(state) {
-      return state.atomSimpleData;
-    },
-    atomPlacements: function(state) {
-      return state.atomPlacements;
-    },
-    atomColors: function(state) {
-      return state.atomColors;
-    },
-    atomLabelPeriods: function(state) {
-      return state.atomLabelPeriods;
-    },
-    atomLabelGroups: function(state) {
-      return state.atomLabelGroups;
-    },
-
-    // Value determining if the data is ready to be rendered (after all Axios requests)
-    // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
-    // TODO: Fix this
-    ready: function(state) {
-      return state.ready;
-    },
-
-    // Info about the hovered element
-    activeElement: function(state) {
-      return state.activeElement;
-    },
-    clickedElement: function(state) {
-      return state.clickedElement;
-    },
-
-    options: function(state) {
-      return state.options;
-    },
-    contentState: function(state) {
-      return state.contentState;
-    },
-    sizeElementsText: function(state) {
-      return state.sizeElementsText();
-    }
   },
   mutations: {
     // ## PERIODIC TABLE ELEMENT STUFF ## \\

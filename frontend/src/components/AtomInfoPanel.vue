@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 
 export default {
   name: 'AtomInfoPanel',
   computed: {
-    ...mapGetters(['options'])
+    ...mapState(['options'])
   }
 };
 </script>

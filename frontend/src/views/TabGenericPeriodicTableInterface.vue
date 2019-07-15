@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 import throttle from 'lodash/throttle';
 import PeriodicTable from '../components/periodic-table/PeriodicTable.vue';
 import AtomInfoPanel from '../components/AtomInfoPanel.vue';
@@ -17,7 +17,7 @@ import AtomInfoPanel from '../components/AtomInfoPanel.vue';
 export default {
   name: 'TabGenericPeriodicTableInterface',
   computed: {
-    ...mapGetters(['options', 'contentState'])
+    ...mapState(['options', 'contentState'])
   },
   components: {
     'atom-info-panel': AtomInfoPanel,

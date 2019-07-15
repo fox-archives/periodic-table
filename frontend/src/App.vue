@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 import Navigation from './components/nav/Navigation.vue';
 import Foot from './components/foot/Foot.vue';
 
@@ -17,7 +17,7 @@ export default {
     'foot': Foot
   },
   computed: {
-    ...mapGetters(['options'])
+    ...mapState(['options'])
   }
 };
 </script>

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { mapState, mapGetters, mapActions } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 import simplebar from 'simplebar-vue';
 import 'simplebar/dist/simplebar.min.css';
 
@@ -34,8 +34,7 @@ export default {
     this.updateProperties();
   },
   computed: {
-    ...mapGetters(['options', 'activeElement']),
-    ...mapState(['atomTabData', 'atomTabDataActive', 'ready']),
+    ...mapState(['atomTabData', 'atomTabDataActive', 'ready', 'options', 'activeElement']),
     atomTabDataActiveModified() {
       return Object.entries(this.atomTabDataActive);
     }
