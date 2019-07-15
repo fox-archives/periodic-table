@@ -160,7 +160,6 @@ export default {
       'setColorOfAllButOnePeriod',
       'setColorOfAllButOneGroup',
       'setColorOfAllButOneAtom',
-
       'setColorOfOnePeriod',
       'setColorOfOneGroup',
       'setColorOfOneAtom',

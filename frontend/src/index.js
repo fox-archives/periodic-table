@@ -1,7 +1,7 @@
 import Vue from 'vue';
 window.Vue = Vue;
 
-import store from './store.js';
+import store from './store/store.js';
 import router from './router.js';
 import App from './App.vue';
 

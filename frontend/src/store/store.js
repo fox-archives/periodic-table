@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import axios from 'axios';
-import FetchData from './api/fetchData';
+import { setColorOfOneAtom, setColorOfOneGroup, setColorOfOnePeriod, setColorOfAllButOneAtom, setColorOfAllButOnePeriod, setColorOfAllButOneGroup, setColorOfAllAtoms } from "./atomHighlighting";
+import { loadAtomData, loadAtomColors, loadAtomTabProperties }from '../api/fetchData';
 
 Vue.use(Vuex);
 
@@ -64,6 +64,13 @@ export default new Vuex.Store({
     contentState: '',
   },
   mutations: {
+    setColorOfOneAtom,
+    setColorOfOneGroup,
+    setColorOfOnePeriod,
+    setColorOfAllButOneAtom,
+    setColorOfAllButOnePeriod,
+    setColorOfAllButOneGroup,
+    setColorOfAllAtoms,
     // ## PERIODIC TABLE ELEMENT STUFF ## \\
     updateActiveAtom: function(state, index) {
       // Update Store variables with Element information according to index
@@ -149,127 +156,6 @@ export default new Vuex.Store({
       }
     },
 
-    // ## MANIPULATING ARRAY OF COLORS ## \\
-    // Purpose: To set a variant of the default color to all elements
-    // @param #object 'payload' contains properties:
-    //   (req) .prefix  Prefix to be added before the original color of element
-    setColorOfAllAtoms: function(state, payload) {
-      for (let i = 0; i < state.atomPlacements.length; i++) {
-        // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.atomColors[i].defaultColor;
-
-        Vue.set(state.atomColors[i], 'color', payload + defaultColor);
-      }
-    },
-
-    // Purpose: To set a variant of the default color to all but one period
-    // @param #object 'payload' contains properties:
-    //   (req) .prefix  Prefix to be added before the original color of element
-    //   (req) .exclude  Period to exclude setting the color of
-    setColorOfAllButOnePeriod: function(state, payload) {
-      for (let i = 0; i < state.atomPlacements.length; i++) {
-        // elementPeriod represents the period number of a given periodic table element
-        let elementPeriod = state.atomPlacements[i].period.substring(2);
-
-        // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.atomColors[i].defaultColor;
-
-        // If the element period is excluded (from @param 'payload')
-        // Allow type coercion (so '1' == 1)
-        if (elementPeriod != payload.exclude) {
-          Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
-        }
-      }
-    },
-
-    // Purpose: To set a variant of the default color to all but one group
-    // @param #object 'payload' contains properties:
-    //   (req) .prefix  Prefix to be added before the original color of element
-    //   (req) .exclude  Group to be excluded setting the color of
-    setColorOfAllButOneGroup: function(state, payload) {
-      for (let i = 0; i < state.atomPlacements.length; i++) {
-        // elementGroup represents the group number of a given periodic table element
-        let elementGroup = state.atomPlacements[i].group.substring(2);
-
-        // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.atomColors[i].defaultColor;
-
-        // If the element group is excluded (from @param 'payload')
-        // Allow type coercion (so '1' == 1)
-        if (elementGroup != payload.exclude) {
-          Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
-        }
-      }
-    },
-
-    // Purpose: To set a variant of the default color to all but one element
-    // @param #object 'payload' contains properties:
-    //   (req) .prefix  Prefix to be added before the original color of element
-    //   (req) .exclude  Element to be excluded setting the color of (index)
-    setColorOfAllButOneAtom: function(state, payload) {
-      for (let i = 0; i < state.atomPlacements.length; i++) {
-        // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.atomColors[i].defaultColor;
-
-        // If the element group is excluded (from @param 'payload')
-        // Allow type coercion (so '1' == 1)
-
-        // i represents the index of the element to be excluded
-        if (i != payload.exclude) {
-          Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
-        }
-      }
-    },
-
-    // Purpose: To set a variant of the default color to any one period
-    // @param #object 'payload' contains properties:
-    //   (req) .prefix  Prefix to be added before the original color of element
-    //   (req) .include  Period to include setting the color of
-    setColorOfOnePeriod: function(state, payload) {
-      for (let i = 0; i < state.atomPlacements.length; i++) {
-        // elementPeriod represents the period number of a given periodic table element
-        let elementPeriod = state.atomPlacements[i].period.substring(2);
-
-        // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.atomColors[i].defaultColor;
-
-        // If the element period is excluded (from @param 'payload')
-        // Allow type coercion (so '1' == 1)
-        if (elementPeriod == payload.include) {
-          Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
-        }
-      }
-    },
-
-    // Purpose: To set a variant of the default color to any one group
-    // @param #object 'payload' contains properties:
-    //   (req) .prefix  Prefix to be added before the original color of element
-    //   (req) .include  Group to be included setting the color of
-    setColorOfOneGroup: function(state, payload) {
-      for (let i = 0; i < state.atomPlacements.length; i++) {
-        // elementGroup represents the group number of a given periodic table element
-        let elementGroup = state.atomPlacements[i].group.substring(2);
-
-        // defaultColor represents default color of a given periodic table element
-        let defaultColor = state.atomColors[i].defaultColor;
-
-        // If the element group is excluded (from @param 'payload')
-        // Allow type coercion (so '1' == 1)
-        if (elementGroup == payload.include) {
-          Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
-        }
-      }
-    },
-
-    // Purpose: To set a variant of the default color to any one element
-    // @param #object 'payload' contains properties:
-    //   (req) .i  ith term to change the color of (starts at 0)
-    //   (req) .prefix  Prefix to prefix to the color
-    setColorOfOneAtom: function(state, payload) {
-      let defaultColor = state.atomColors[payload.i].defaultColor;
-      Vue.set(state.atomColors[payload.i], 'color', payload.prefix + defaultColor);
-    },
-
     // ## NAVIGATION STUFF ## \\
     // Purpose: To replace the state options with new ones
     // @param #object 'payload' contains properties:
@@ -311,6 +197,7 @@ export default new Vuex.Store({
         state.contentState = 'heightDifferent';
       }
     },
+
     setMobilePeriodicTableWidth: function(state) {
       if (
         /*this.options.infoLocationType === 'info-top' && */ state.contentState ===
@@ -348,5 +235,9 @@ export default new Vuex.Store({
       grid.style.setProperty('--labelTextSize', labelFontSize);
     }
   },
-  actions: FetchData
+  actions: {
+    loadAtomData,
+    loadAtomColors,
+    loadAtomTabProperties
+  }
 });
