@@ -1,21 +1,10 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
   "main": "index.js",
+  "license": "unlicensed",
+  "private": true,
   "scripts": {
     "transferComputed": "gulp transferComputed"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eankeen/periodic-table.git"
-  },
-  "author": "",
-  "license": "none",
-  "bugs": {
-    "url": "https://github.com/eankeen/periodic-table/issues"
-  },
-  "homepage": "https://github.com/eankeen/periodic-table#readme",
   "devDependencies": {
     "del": "^5.0.0",
     "gulp": "^4.0.2",

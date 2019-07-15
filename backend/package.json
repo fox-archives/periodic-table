@@ -1,13 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "",
-  "license": "none",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

@@ -12,10 +12,6 @@ import './styles/tags.scss';
 
 import 'material-icons/iconfont/material-icons.css';
 
-// Perfect Scrollbar
-import PerfectScrollbar from 'perfect-scrollbar';
-import 'perfect-scrollbar/css/perfect-scrollbar.css';
-
 new Vue({
   el: '#app',
   router,

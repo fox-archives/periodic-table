@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd atom-colors
 wolframscript -script atomColorsCategory.wls
 wolframscript -script atomColorsOrbitalBlock.wls

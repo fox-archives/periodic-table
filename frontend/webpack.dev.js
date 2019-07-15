@@ -1,11 +1,9 @@
-let path = require('path');
+let webpack = require('webpack');
+let FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+let DashboardPlugin = require('webpack-dashboard/plugin');
 
 let merge = require('webpack-merge');
 let common = require('./webpack.common.js');
-let webpack = require('webpack');
-
-let FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-let DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = merge.smart(common, {
   mode: 'development',

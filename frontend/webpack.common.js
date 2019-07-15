@@ -25,7 +25,8 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        // JS in Vue script tags run when in node_modules https://vue-loader.vuejs.org/guide/pre-processors.html#excluding-node-modules
+        exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
         use: [
           'babel-loader'
           // {
@@ -35,9 +36,7 @@ module.exports = {
           //     cache: true
           //   }
           // }
-        ],
-        // JS in Vue script tags run when in node_modules https://vue-loader.vuejs.org/guide/pre-processors.html#excluding-node-modules
-        exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file)
+        ]
       },
       // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
       {

@@ -95,6 +95,7 @@
 <script>
 import { mapState, mapMutations, mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
+import 'perfect-scrollbar/css/perfect-scrollbar.css';
 import { throttle, debounce } from 'lodash';
 
 import { highlightLabelSection, unhighlightLabelSection } from './utils/hoverLabelsHandlers';
@@ -151,20 +152,15 @@ export default {
     ...mapMutations([
       'updateActiveAtom',
       'updateActiveAtomForce',
-
       'clearLabelExcept',
-      'setActiveAtom',
       'setClickedAtom',
 
-      'setColorOfAllAtoms',
       'setColorOfAllButOnePeriod',
       'setColorOfAllButOneGroup',
       'setColorOfAllButOneAtom',
       'setColorOfOnePeriod',
       'setColorOfOneGroup',
       'setColorOfOneAtom',
-
-      'setClassLayout'
     ]),
     ...mapActions(['loadAtomColors']),
 
@@ -187,15 +183,10 @@ export default {
       }
     },
 
-
-
-
-
     // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
     labelClassToNone: function(labelNumber) {
       return labelNumber.substring(2);
     },
-
 
     setElementPrefix(index, prefix) {
       // This if statement is important
