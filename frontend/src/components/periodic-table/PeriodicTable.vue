@@ -19,17 +19,17 @@
               [
                 setElementPrefix(index, 'dark-'),
                 setLabelColor(index, 'true'),
-                updateActiveElement(index)
+                updateActiveAtom(index)
               ]
             "
             @mouseleave="
               [
                 setElementPrefix(index, ''),
                 setLabelColor(index, 'false'),
-                updateActiveElement(index)
+                updateActiveAtom(index)
               ]
             "
-            @click="[clickElement(index)]"
+            @click="[updateClickedAtom(index)]"
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">
@@ -58,8 +58,8 @@
               v-cloak
               class="label-period-inner label-inner"
               :class="atomLabelPeriods[index].color"
-              @mouseover="[highlightSection(index, 'period')]"
-              @mouseleave="[unHighlightSection(index, 'period')]"
+              @mouseover="[highlightLabelSection(index, 'period')]"
+              @mouseleave="[unhighlightLabelSection(index, 'period')]"
             >
               <p class="label-text">
                 {{ period.display }}
@@ -78,8 +78,8 @@
               v-cloak
               class="label-group-inner label-inner"
               :class="atomLabelGroups[index].color"
-              @mouseover="[highlightSection(index, 'group')]"
-              @mouseleave="[unHighlightSection(index, 'group')]"
+              @mouseover="[highlightLabelSection(index, 'group')]"
+              @mouseleave="[unhighlightLabelSection(index, 'group')]"
             >
               <p class="label-text">
                 {{ group.display }}
@@ -96,6 +96,10 @@
 import { mapState, mapMutations, mapActions } from 'vuex';
 import PerfectScrollbar from 'perfect-scrollbar';
 import { throttle, debounce } from 'lodash';
+
+import { highlightLabelSection, unhighlightLabelSection } from './utils/hoverLabelsHandlers';
+import { setLabelColor } from "./utils/hoverAtomHandlers";
+import { updateClickedAtom } from "./utils/clickAtomHandlers";
 
 export default {
   name: 'PeriodicTable',
@@ -129,10 +133,6 @@ export default {
     );
   },
   computed: {
-    // Mix the getters into wolfram with object spread operator
-    ...mapState([
-
-    ]),
     ...mapState([
       'atomSimpleData',
       'atomPlacements',
@@ -142,38 +142,42 @@ export default {
 
       'ready',
 
-      'activeElement',
-      'clickedElement',
+      'activeAtom',
+      'clickedAtom',
       'options'
     ])
   },
   methods: {
     ...mapMutations([
-      'updateActiveElement',
-      'updateActiveElementForce',
+      'updateActiveAtom',
+      'updateActiveAtomForce',
 
       'clearLabelExcept',
-      'setActiveElement',
-      'setClickedElement',
+      'setActiveAtom',
+      'setClickedAtom',
 
-      'setColorOfAllElements',
+      'setColorOfAllAtoms',
       'setColorOfAllButOnePeriod',
       'setColorOfAllButOneGroup',
-      'setColorOfAllButOneElement',
+      'setColorOfAllButOneAtom',
 
       'setColorOfOnePeriod',
       'setColorOfOneGroup',
-      'setColorOfOneElement',
+      'setColorOfOneAtom',
 
       'setClassLayout'
     ]),
     ...mapActions(['loadAtomColors']),
+
+    // imported in from periodic-table-specific utils
+    highlightLabelSection,
+    unhighlightLabelSection,
+    setLabelColor,
+    updateClickedAtom,
+
     // @ param none
     // Updates color scheme of the periodic table
     updateColor: function() {
-      // console.log('Updating color');
-      // console.log(this.$route.path);
-
       let routePath = this.$route.path.substring(1);
       if (routePath === 'properties' || routePath === 'isotopes') {
         this.loadAtomColors({ colorScheme: 'atomColorsCategory' });
@@ -184,220 +188,27 @@ export default {
       }
     },
 
-    // @param #String 'type' can be:
-    //   'period'  Want to darken a period
-    //   'group'  Want to darken a group
-    highlightSection: function(index, type) {
-      // Before highlighting the elements, make sure that the period / group labels are not highlighted
-      this.clearLabelExcept({
-        periodExclude: -1,
-        groupExclude: -1
-      });
 
-      if (type === 'period') {
-        let period = index + 1;
-        this.setColorOfAllButOnePeriod({
-          // ES6: prefix,
-          prefix: 'light-', // want this to be light
-          exclude: period
-        });
-        this.setColorOfOnePeriod({
-          prefix: 'dark-', // want this to be dark
-          include: period
-        });
-      }
-      if (type === 'group') {
-        let group = index + 1;
-        this.setColorOfAllButOneGroup({
-          prefix: 'light-', // want this to be  light
-          exclude: group
-        });
-        this.setColorOfOneGroup({
-          prefix: 'dark-', // want this to be dark
-          include: group
-        });
-      }
-    },
 
-    // @param #String 'type' can be:
-    //   'period'  Want to darken a period
-    //   'group'  Want to darken a group
-    unHighlightSection: function(index, type) {
-      if (type === 'period') {
-        let period = index + 1;
-        this.setColorOfAllButOnePeriod({
-          // ES6: prefix,
-          prefix: '', // want this to be light
-          exclude: period
-        });
-        this.setColorOfOnePeriod({
-          prefix: '', // want this to be dark
-          include: period
-        });
-      }
-      if (type === 'group') {
-        let group = index + 1;
-        this.setColorOfAllButOneGroup({
-          prefix: '', // want this to be  light
-          exclude: group
-        });
-        this.setColorOfOneGroup({
-          prefix: '', // want this to be dark
-          include: group
-        });
-      }
 
-      // OTHER STUFF TO DO ON UNHIGHLIGHT
-      // By 'click' being active, mean that the user clicked on an element, and wants to display that element, even if mouse moves away from element
-      // If click is active, on mouse leave of label, show the previous element that was clicked on (because it got 'erased' on mouseover of label)
-      if (this.clickedElement.active === true) {
-        // Recall that this.clickedElement.period and this.clickedElement.group are NOT indexes; they are actual values
-        // We don't want to change color when this.clickedElement.period / group is 0 that value is for groupless elements (lanth. and act. elements)
-        // Nor do we want to change color when this.clickedElement.period / group is -1, because that occurs when this.clickedElement.active is false (I think this is already covered, but just a precaution)
-        if (this.clickedElement.period > 0) {
-          this.atomLabelPeriods[this.clickedElement.period - 1].color = 'dark';
-        }
-        if (this.clickedElement.group > 0) {
-          this.atomLabelGroups[this.clickedElement.group - 1].color = 'dark';
-        }
-
-        this.setColorOfOneElement({
-          prefix: 'supdark-',
-          i: this.clickedElement.index
-        });
-      }
-    },
-
-    setElementPrefix(index, prefix) {
-      // This if statement is important
-      // When user clicks on an element and hovers over a different element, the original element that was clicked
-      // on still has prefix 'superdark'
-      if (this.clickedElement.index !== index) {
-        this.setColorOfOneElement({
-          prefix: prefix,
-          i: index
-        });
-      }
-    },
-
-    // Sets the color of a label manually, rather than by CSS hover (
-    setLabelColor: function(index, isMouseOver) {
-      // isMouseOver is true when the moues is entering an element. isMouesOver is false when the mouse is leaving an element
-      // The element that the mouse is entering or leaving is determined by its index in the Vue v-for loop
-
-      // Get the period.json or group value corresponding to the hovered over element (ex. c-11, p-5)
-      let periodFull = this.atomPlacements[index].period;
-      let groupFull = this.atomPlacements[index].group;
-
-      // Concatenate period.json or group values to a number (ex. 11, 5)
-      let period = this.labelClassToNone(periodFull);
-      let group = this.labelClassToNone(groupFull);
-
-      if (this.clickedElement.active === false) {
-        // When changing a label color, make sure all others are turned off first
-        this.clearLabelExcept({
-          periodExclude: -1,
-          groupExclude: -1
-        });
-
-        // Only darken the period / group label if the element actually has a valid period.json number (within the actual range of the periodic table)
-        // Recall Act. and Lan. have period.json of 0, and they don't have period.json / group labels
-        if (period > 0) {
-          // Darken the labels if the mouse is entering an element
-          if (isMouseOver === 'true') {
-            this.atomLabelPeriods[period - 1].color = 'dark';
-          }
-          // Lighten the labels if the mouse is leaving an element
-          else if (isMouseOver === 'false') {
-            this.atomLabelPeriods[period - 1].color = 'light';
-          } else {
-            console.warn(
-              'Unexpected parameter for isMouseOver passed through setLabelColor.'
-            );
-          }
-        }
-        // Only darken the period / group label if the element actually has a valid group number (within the actual range of the periodic table)
-        // Recall Act. and Lan. have group of 0, and they don't have period.json / group labels
-        if (group > 0) {
-          // Darken the labels if the mouse is entering an element
-          if (isMouseOver === 'true') {
-            this.atomLabelGroups[group - 1].color = 'dark';
-          }
-          // Lighten the labels if the moues is leaving an element
-          else if (isMouseOver === 'false') {
-            this.atomLabelGroups[group - 1].color = 'light';
-          } else {
-            console.warn(
-              'Unexpected parameter for isMouseOver passed through setLabelColor.'
-            );
-          }
-        }
-      }
-    },
-
-    // When element is clicked, darken it, or undarken it
-    clickElement: function(index) {
-      // Change element info and label color (in case the mouse does not movein or moveout the element)
-      this.clickedElement.active = false;
-      this.setLabelColor(index, 'true');
-      this.updateActiveElementForce(index); // This does not require clickedElement.active to be false setLabelColor apparently does
-      this.clickedElement.active = true;
-
-      // What to do if clicking for the first time, or clicking on a different element
-      // Save the index (element index, period.json index, and group index) of the clicked on element
-      if (
-        this.clickedElement.index === -1 ||
-        this.clickedElement.index !== index
-      ) {
-        this.setClickedElement({
-          index: index,
-          period: this.labelClassToNone(this.atomPlacements[index].period),
-          group: this.labelClassToNone(this.atomPlacements[index].group)
-        });
-
-        // Sets color of all elements in periodic table
-        this.setColorOfAllButOneElement({
-          prefix: '',
-          exclude: index
-        });
-        this.setColorOfOneElement({
-          prefix: 'supdark-',
-          i: index
-        });
-      }
-      // If clicking on the same element twice, cancel the 'supdark-' prefix and element hold
-      else if (this.clickedElement.index === index) {
-        this.setClickedElement({
-          active: false,
-          index: -1,
-          period: -1,
-          group: -1
-        });
-
-        // Sets color of all elements in periodic table
-        this.setColorOfAllButOneElement({
-          prefix: '',
-          exclude: index
-        });
-        this.setColorOfOneElement({
-          prefix: 'dark-',
-          i: index
-        });
-      }
-    },
 
     // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
     labelClassToNone: function(labelNumber) {
       return labelNumber.substring(2);
     },
-    // OUTPUT: Group 1 / Period 7
-    getPeriodGroupName: function(type, number) {
-      if (type === 'period') {
-        return 'Period ' + number;
-      } else if (type === 'group') {
-        return 'Group ' + number;
+
+
+    setElementPrefix(index, prefix) {
+      // This if statement is important
+      // When user clicks on an element and hovers over a different element, the original element that was clicked
+      // on still has prefix 'superdark'
+      if (this.clickedAtom.index !== index) {
+        this.setColorOfOneAtom({
+          prefix: prefix,
+          i: index
+        });
       }
-    }
+    },
   }
 };
 </script>

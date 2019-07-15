@@ -34,7 +34,7 @@ export default {
     this.updateProperties();
   },
   computed: {
-    ...mapState(['atomTabData', 'atomTabDataActive', 'ready', 'options', 'activeElement']),
+    ...mapState(['atomTabData', 'atomTabDataActive', 'ready', 'options', 'activeAtom']),
     atomTabDataActiveModified() {
       return Object.entries(this.atomTabDataActive);
     }

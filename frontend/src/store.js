@@ -28,7 +28,7 @@ export default new Vuex.Store({
     ready: false,
 
     // Element Defaults
-    activeElement: {
+    activeAtom: {
       atomicNumber: '1',
       abbreviation: 'H',
       name: 'Hydrogen',
@@ -42,7 +42,7 @@ export default new Vuex.Store({
     },
 
     // Data about a clicked element
-    clickedElement: {
+    clickedAtom: {
       // COMMENTED OUT OLD VALUES
       active: false,
 
@@ -65,19 +65,19 @@ export default new Vuex.Store({
   },
   mutations: {
     // ## PERIODIC TABLE ELEMENT STUFF ## \\
-    updateActiveElement: function(state, index) {
+    updateActiveAtom: function(state, index) {
       // Update Store variables with Element information according to index
       // Purpose: To change all properties of active element only when element is on 'clicked' mode
       // @param #int 'index':
-      //   (req)  Index of element, where activeElement properties will get info from
-      if (state.clickedElement.active === false) {
-        state.activeElement.index = state.index;
-        state.activeElement.abbreviation = state.atomSimpleData[index].abbreviation;
-        state.activeElement.name = state.atomSimpleData[index].name;
-        state.activeElement.atomicMass = state.atomSimpleData[index].atomicMass;
+      //   (req)  Index of element, where activeAtom properties will get info from
+      if (state.clickedAtom.active === false) {
+        state.activeAtom.index = state.index;
+        state.activeAtom.abbreviation = state.atomSimpleData[index].abbreviation;
+        state.activeAtom.name = state.atomSimpleData[index].name;
+        state.activeAtom.atomicMass = state.atomSimpleData[index].atomicMass;
 
         // Update element description (right box)
-        state.activeElement.color = state.atomColors[index].defaultColor;
+        state.activeAtom.color = state.atomColors[index].defaultColor;
 
         // TODO: Make less messy
         // state.updateAtomTabDataActive()
@@ -87,15 +87,15 @@ export default new Vuex.Store({
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
     // Purpose: To change all properties of active element, in any case
     // @param #int 'index':
-    //   (req)  Index of element, where activeElement properties will get info from
-    updateActiveElementForce: function(state, index) {
-      state.activeElement.index = state.index;
-      state.activeElement.abbreviation = state.atomSimpleData[index].abbreviation;
-      state.activeElement.name = state.atomSimpleData[index].name;
-      state.activeElement.atomicMass = state.atomSimpleData[index].atomicMass;
+    //   (req)  Index of element, where activeAtom properties will get info from
+    updateActiveAtomForce: function(state, index) {
+      state.activeAtom.index = state.index;
+      state.activeAtom.abbreviation = state.atomSimpleData[index].abbreviation;
+      state.activeAtom.name = state.atomSimpleData[index].name;
+      state.activeAtom.atomicMass = state.atomSimpleData[index].atomicMass;
 
       // Update element description (right box)
-      state.activeElement.color = state.atomColors[index].defaultColor;
+      state.activeAtom.color = state.atomColors[index].defaultColor;
 
       // TODO: Make less messy
       // this.updateAtomTabDataActive();
@@ -122,13 +122,13 @@ export default new Vuex.Store({
 
     // Purpose: Change the properties of the active element, or the element that was clicked on
     // @param #object 'payload' contains properties:
-    //   Each possible property are the same properties as this.activeElement
-    setActiveElement: function(state, newProperties) {
+    //   Each possible property are the same properties as this.activeAtom
+    setActiveAtom: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeElement object (from the vuex state) has
+      // These properties should replace the properties the activeAtom object (from the vuex state) has
       for (let property in newProperties) {
-        if (state.activeElement.hasOwnProperty(property)) {
-          state.activeElement[property] = newProperties[property];
+        if (state.activeAtom.hasOwnProperty(property)) {
+          state.activeAtom[property] = newProperties[property];
         }
       }
     },
@@ -139,12 +139,12 @@ export default new Vuex.Store({
     //   (opt) .index #int Integer of the clicked element (placement in the atomPlacements array)
     //   (opt) .period #int Period number of the clicked element (actual period, does not start at 0)
     //   (opt) .group #int Group number of the clicked element (actual group, does not start at 0)
-    setClickedElement: function(state, newProperties) {
+    setClickedAtom: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeElement object (from the vuex state) has
+      // These properties should replace the properties the activeAtom object (from the vuex state) has
       for (let property in newProperties) {
-        if (state.clickedElement.hasOwnProperty(property)) {
-          state.clickedElement[property] = newProperties[property];
+        if (state.clickedAtom.hasOwnProperty(property)) {
+          state.clickedAtom[property] = newProperties[property];
         }
       }
     },
@@ -153,7 +153,7 @@ export default new Vuex.Store({
     // Purpose: To set a variant of the default color to all elements
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
-    setColorOfAllElements: function(state, payload) {
+    setColorOfAllAtoms: function(state, payload) {
       for (let i = 0; i < state.atomPlacements.length; i++) {
         // defaultColor represents default color of a given periodic table element
         let defaultColor = state.atomColors[i].defaultColor;
@@ -206,7 +206,7 @@ export default new Vuex.Store({
     // @param #object 'payload' contains properties:
     //   (req) .prefix  Prefix to be added before the original color of element
     //   (req) .exclude  Element to be excluded setting the color of (index)
-    setColorOfAllButOneElement: function(state, payload) {
+    setColorOfAllButOneAtom: function(state, payload) {
       for (let i = 0; i < state.atomPlacements.length; i++) {
         // defaultColor represents default color of a given periodic table element
         let defaultColor = state.atomColors[i].defaultColor;
@@ -265,7 +265,7 @@ export default new Vuex.Store({
     // @param #object 'payload' contains properties:
     //   (req) .i  ith term to change the color of (starts at 0)
     //   (req) .prefix  Prefix to prefix to the color
-    setColorOfOneElement: function(state, payload) {
+    setColorOfOneAtom: function(state, payload) {
       let defaultColor = state.atomColors[payload.i].defaultColor;
       Vue.set(state.atomColors[payload.i], 'color', payload.prefix + defaultColor);
     },
@@ -278,7 +278,7 @@ export default new Vuex.Store({
     //   (opt) Any other properties of options
     setOptions: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeElement object (from the vuex state) has
+      // These properties should replace the properties the activeAtom object (from the vuex state) has
       for (let property in newProperties) {
         if (state.options.hasOwnProperty(property)) {
           state.options[property] = newProperties[property];
