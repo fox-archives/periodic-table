@@ -7,7 +7,7 @@ let jsonminify = require("gulp-jsonminify");
 let del = require("del");
 
 async function transferComputed() {
-  let from = "computed/**/*.json";
+  let from = "wolfram/**/*.json";
   let to = "backend/public/data";
   
   del([to + "/**", "!" + to])

@@ -129,7 +129,7 @@ export default {
     );
   },
   computed: {
-    // Mix the getters into computed with object spread operator
+    // Mix the getters into wolfram with object spread operator
     ...mapGetters([
       'atomSimpleData',
       'atomPlacements',
