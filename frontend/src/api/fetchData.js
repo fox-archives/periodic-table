@@ -1,6 +1,7 @@
 import axios from "axios";
 
-function loadAtomData({ state, dispatch }) {
+// TODO: rename so one and only initial load is clear
+function initAtomData({ state, dispatch }) {
   Promise.all([
     axios.get('/data/old.atomPlacement.json'),
     axios.get('/data/atomTabAll.json'),
@@ -22,7 +23,6 @@ function loadAtomData({ state, dispatch }) {
       });
     })
     .catch(e => console.log(e));
-
 }
 
 function loadAtomColors({ state }, payload) {
@@ -69,7 +69,7 @@ function switchAtomTabData({ state }, payload) {
 }
 
 export {
-  loadAtomData,
+  initAtomData,
   loadAtomColors,
   loadAtomTabProperties,
   switchAtomTabData

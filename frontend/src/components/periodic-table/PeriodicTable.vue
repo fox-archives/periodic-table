@@ -105,7 +105,7 @@ import { updateClickedAtom } from "@/components/periodic-table/utils/clickAtomHa
 export default {
   name: 'PeriodicTable',
   created() {
-    this.loadAtomData();
+    this.initAtomData();
   },
   mounted() {
     // This controls perfect scrollbar only
@@ -155,7 +155,7 @@ export default {
       'setColorOfOneGroup',
       'setColorOfOneAtom',
     ]),
-    ...mapActions(['loadAtomColors', 'loadAtomData']),
+    ...mapActions(['loadAtomColors', 'initAtomData']),
 
     // imported in from periodic-table-specific utils
     highlightLabelSection,

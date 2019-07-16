@@ -13,7 +13,7 @@
         </div>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" @click="switchAtomTabDataWrapper('properties')">
         <router-link class="nav-item-inner link" to="/properties">
           <list-icon class="icon feather-icon"/>
           <h2 class="heading">
@@ -22,7 +22,7 @@
         </router-link>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" @click="switchAtomTabDataWrapper('electrons')">
         <router-link class="nav-item-inner link" to="/electrons">
           <electrons class="icon custom-icon"/>
           <h2 class="heading">
@@ -31,7 +31,7 @@
         </router-link>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" @click="switchAtomTabDataWrapper('orbitals')">
         <router-link class="nav-item-inner link" to="/orbitals">
           <orbitals class="icon custom-icon"/>
           <h2 class="heading">
@@ -40,7 +40,7 @@
         </router-link>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" @click="switchAtomTabDataWrapper('isotopes')">
         <router-link class="nav-item-inner link" to="/isotopes">
           <isotopes class="icon custom-icon"/>
           <h2 class="heading">
@@ -49,7 +49,7 @@
         </router-link>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" @click="switchAtomTabDataWrapper('explore')">
         <router-link class="nav-item-inner link" to="/explore">
           <map-icon class="icon feather-icon"/>
           <h2 class="heading">
@@ -58,7 +58,7 @@
         </router-link>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" @click="switchAtomTabDataWrapper('trivia')">
         <router-link class="nav-item-inner link" to="/trivia">
           <check-icon class="icon feather-icon"/>
           <h2 class="heading">
@@ -111,9 +111,6 @@
 
   export default {
     name: 'Navigation',
-    computed: {
-      ...mapState(['options'])
-    },
     components: {
       // Icon Components
       ListIcon: List,
@@ -128,6 +125,33 @@
       SearchIcon: Search,
       MenuIcon: Menu
     },
+    computed: {
+      ...mapState(['options'])
+    },
+    methods: {
+      ...mapActions(['switchAtomTabData']),
+      switchAtomTabDataWrapper: function(atomTabToSwitchTo) {
+        if(atomTabToSwitchTo === 'properties') {
+          this.switchAtomTabData({
+            atomColorAppearance: 'Category',
+            atomTab: 'Properties'
+          });
+        }
+        else if(atomTabToSwitchTo === 'electrons') {
+          this.switchAtomTabData({
+            atomColorAppearance: 'OrbitalBlock',
+            atomTab: 'Isotopes'
+          })
+        }
+        else if(atomTabToSwitchTo === 'orbitals') {
+
+        }
+        else if(atomTabToSwitchTo === 'isotopes') {
+
+        }
+        // explore, trivia, excluded
+      }
+    }
   };
 </script>
 
