@@ -2,7 +2,7 @@ import axios from "axios";
 
 function loadAtomData() {
   axios
-    .get('/d/old.atomPlacement.json')
+    .get('/data/old.atomPlacement.json')
     .then(response => {
       this.state.atomPlacements = response.data;
     })
@@ -10,7 +10,7 @@ function loadAtomData() {
     .catch(error => console.log(error));
 
   axios
-    .get('/d/atomTabAll.json')
+    .get('/data/atomTabAll.json')
     .then(response => {
       this.state.atomSimpleData = response.data;
       this.state.ready = true;
@@ -20,7 +20,7 @@ function loadAtomData() {
 
   // Period / Group calls
   axios
-    .get('/d/labelPlacement.json')
+    .get('/data/labelPlacement.json')
     .then(response => {
       this.state.atomLabelPeriods = response.data.labelPeriods;
       this.state.atomLabelGroups = response.data.labelGroups;
@@ -31,7 +31,7 @@ function loadAtomData() {
 
 function loadAtomColors(state, payload) {
   axios
-    .get(`/d/${payload.colorScheme}.json`)
+    .get(`/data/${payload.colorScheme}.json`)
     .then(response => {
       this.state.atomColors = response.data;
     })
@@ -41,7 +41,7 @@ function loadAtomColors(state, payload) {
 
 function loadAtomTabProperties(state, payload) {
   axios
-    .get('/d/' + 'atomTabProperties.json')
+    .get('/data/atomTabProperties.json')
     .then(response => {
       this.state.atomTabData = response.data;
     })
