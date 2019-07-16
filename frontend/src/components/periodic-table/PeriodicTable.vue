@@ -33,7 +33,7 @@
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">
-                {{ atomPlacement.eLabel }}
+                {{ atomPlacement.display }}
               </p>
               <p class="primary-text">
                 {{ atomSimpleData[index].abbreviation }}

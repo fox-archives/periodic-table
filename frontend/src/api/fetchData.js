@@ -2,7 +2,7 @@ import axios from "axios";
 
 function loadAtomData() {
   axios
-    .get('/old/element/placement.json')
+    .get('/d/old.atomPlacement.json')
     .then(response => {
       this.state.atomPlacements = response.data;
     })
@@ -10,7 +10,7 @@ function loadAtomData() {
     .catch(error => console.log(error));
 
   axios
-    .get('/old/element/simple.json')
+    .get('/d/atomTabAll.json')
     .then(response => {
       this.state.atomSimpleData = response.data;
       this.state.ready = true;
