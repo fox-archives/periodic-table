@@ -5,7 +5,7 @@
         <div id="logo">
           <a href="/">
             <img
-                src="../../assets/placeholder.png"
+                src="@/assets/placeholder.png"
                 alt="logo"
                 height="32px"
             >
@@ -16,7 +16,7 @@
       <li class="nav-item">
         <router-link class="nav-item-inner link" to="/properties">
           <list-icon class="icon feather-icon"/>
-          <h2 class="heading" @click="loadAtomTabProperties">
+          <h2 class="heading">
             Properties
           </h2>
         </router-link>
@@ -113,9 +113,6 @@
     name: 'Navigation',
     computed: {
       ...mapState(['options'])
-    },
-    methods: {
-      ...mapActions(['loadAtomTabProperties'])
     },
     components: {
       // Icon Components

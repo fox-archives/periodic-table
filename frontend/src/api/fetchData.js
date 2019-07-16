@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function loadAtomData() {
+function loadAtomData({ state, dispatch }) {
   Promise.all([
     axios.get('/data/old.atomPlacement.json'),
     axios.get('/data/atomTabAll.json'),
@@ -9,40 +9,68 @@ function loadAtomData() {
     .then(responses => {
       let atomPlacementsResult = responses[0];
       let atomTabAllResult = responses[1];
-      let labelPlacementResults = responses[2];
+      let labelPlacementsResult = responses[2];
 
-      this.state.atomPlacements = atomPlacementsResult.data;
-      this.state.atomSimpleData = atomTabAllResult.data;
-      this.state.atomLabelPeriods = labelPlacementResults.data.labelPeriods;
-      this.state.atomLabelGroups = labelPlacementResults.data.labelGroups;
+      state.atomPlacements = atomPlacementsResult.data;
+      state.atomSimpleData = atomTabAllResult.data;
+      state.atomLabelPeriods = labelPlacementsResult.data.labelPeriods;
+      state.atomLabelGroups = labelPlacementsResult.data.labelGroups;
 
-      this.state.ready = true;
+      dispatch('switchAtomTabData', {
+        atomColorAppearance: 'Category',
+        atomTab: 'Properties'
+      });
     })
     .catch(e => console.log(e));
+
 }
 
-function loadAtomColors(state, payload) {
+function loadAtomColors({ state }, payload) {
   axios
     .get(`/data/${payload.colorScheme}.json`)
     .then(response => {
-      this.state.atomColors = response.data;
+      state.atomColors = response.data;
     })
     // eslint-disable-next-line
-    .catch(error => console.log(error));
+    .catch(e => console.log(e));
 }
 
-function loadAtomTabProperties(state, payload) {
+function loadAtomTabProperties({ state }, payload) {
   axios
     .get('/data/atomTabProperties.json')
     .then(response => {
-      this.state.atomTabData = response.data;
+      state.atomTabData = response.data;
     })
     // eslint-disable-next-line
-    .catch(error => console.log(error));
+    .catch(e => console.log(e));
+}
+
+// executes when we switch a tab (and want all data to update)
+function switchAtomTabData({ state }, payload) {
+  let atomColorAppearance = payload.atomColorAppearance;
+  let atomTab = payload.atomTab;
+
+  Promise.all([
+    // ex. atomColorsCategory, atomColorsOrbitalBlock
+    axios.get(`/data/atomColors${atomColorAppearance}.json`),
+
+    // ex. atomTabIsotopes, atomTabProperties
+    axios.get(`/data/atomTab${atomTab}.json`)
+  ])
+    .then(responses => {
+      let atomColorAppearanceResult = responses[0];
+      let atomTabResult = responses[1];
+
+      state.atomColors = atomColorAppearanceResult.data;
+      state.atomTabData = atomTabResult.data;
+
+      state.ready = true;
+    })
 }
 
 export {
   loadAtomData,
   loadAtomColors,
-  loadAtomTabProperties
+  loadAtomTabProperties,
+  switchAtomTabData
 };

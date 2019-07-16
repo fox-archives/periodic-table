@@ -104,16 +104,8 @@ import { updateClickedAtom } from "@/components/periodic-table/utils/clickAtomHa
 
 export default {
   name: 'PeriodicTable',
-  watch: {
-    $route() {
-      this.updateColor();
-    }
-  },
   created() {
-    this.updateColor();
-    // Load element data via Axios / Fetch API requests to backend
-    // TODO: actually call the method in a better way
-    this.$store.dispatch('loadAtomData');
+    this.loadAtomData();
   },
   mounted() {
     // This controls perfect scrollbar only
@@ -163,7 +155,7 @@ export default {
       'setColorOfOneGroup',
       'setColorOfOneAtom',
     ]),
-    ...mapActions(['loadAtomColors']),
+    ...mapActions(['loadAtomColors', 'loadAtomData']),
 
     // imported in from periodic-table-specific utils
     highlightLabelSection,
