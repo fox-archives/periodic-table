@@ -1,6 +1,5 @@
 # main
 dist/
-wolfram/**/*.json
 
 # npm
 node_modules/
