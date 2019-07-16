@@ -14,7 +14,7 @@ export default new Vuex.Store({
     atomPlacements: [],
     atomColors: [],
 
-    // Placement and data of each Period and Group Label
+    // placement, color status, and name of period and group labels
     atomLabelPeriods: [],
     atomLabelGroups: [],
 

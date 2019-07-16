@@ -20,17 +20,10 @@ function loadAtomData() {
 
   // Period / Group calls
   axios
-    .get('/old/label/period.json')
+    .get('/d/labelPlacement.json')
     .then(response => {
-      this.state.atomLabelPeriods = response.data;
-    })
-    // eslint-disable-next-line
-    .catch(error => console.log(error));
-
-  axios
-    .get('/old/label/group.json')
-    .then(response => {
-      this.state.atomLabelGroups = response.data;
+      this.state.atomLabelPeriods = response.data.labelPeriods;
+      this.state.atomLabelGroups = response.data.labelGroups;
     })
     // eslint-disable-next-line
     .catch(error => console.log(error));
