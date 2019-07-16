@@ -1,32 +1,24 @@
 import axios from "axios";
 
 function loadAtomData() {
-  axios
-    .get('/data/old.atomPlacement.json')
-    .then(response => {
-      this.state.atomPlacements = response.data;
-    })
-    // eslint-disable-next-line
-    .catch(error => console.log(error));
+  Promise.all([
+    axios.get('/data/old.atomPlacement.json'),
+    axios.get('/data/atomTabAll.json'),
+    axios.get('/data/labelPlacement.json')
+  ])
+    .then(responses => {
+      let atomPlacementsResult = responses[0];
+      let atomTabAllResult = responses[1];
+      let labelPlacementResults = responses[2];
 
-  axios
-    .get('/data/atomTabAll.json')
-    .then(response => {
-      this.state.atomSimpleData = response.data;
+      this.state.atomPlacements = atomPlacementsResult.data;
+      this.state.atomSimpleData = atomTabAllResult.data;
+      this.state.atomLabelPeriods = labelPlacementResults.data.labelPeriods;
+      this.state.atomLabelGroups = labelPlacementResults.data.labelGroups;
+
       this.state.ready = true;
     })
-    // eslint-disable-next-line
-    .catch(error => console.log(error));
-
-  // Period / Group calls
-  axios
-    .get('/data/labelPlacement.json')
-    .then(response => {
-      this.state.atomLabelPeriods = response.data.labelPeriods;
-      this.state.atomLabelGroups = response.data.labelGroups;
-    })
-    // eslint-disable-next-line
-    .catch(error => console.log(error));
+    .catch(e => console.log(e));
 }
 
 function loadAtomColors(state, payload) {

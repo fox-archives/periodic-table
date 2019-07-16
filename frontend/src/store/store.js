@@ -7,25 +7,24 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // Simple data about each element
+    // GENERAL
+    // Value determining if the data is ready to be rendered (after all Axios requests)
+    // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
+    ready: false,
+
+    // ATOM
+    // shared atom data across all tabs (from atomTabAll.json)
     atomSimpleData: [],
 
-    // Placement and Colors of Each Element
+    // atom placement data (in the css grid, and in the periodic table itself)
     atomPlacements: [],
+    // atom colors (color and deafultColor)
     atomColors: [],
-
-    // placement, color status, and name of period and group labels
-    atomLabelPeriods: [],
-    atomLabelGroups: [],
 
     // atom tab data (dependent on the selected tab) for *all* elements
     atomTabData: [],
     // atom tab data for *only* the active element (one being clicked on or hovered over
     atomTabDataActive: {},
-
-    // Value determining if the data is ready to be rendered (after all Axios requests)
-    // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
-    ready: false,
 
     // Element Defaults
     activeAtom: {
@@ -35,10 +34,7 @@ export default new Vuex.Store({
       atomicMass: 1.008,
       block: 's',
       color: 'blue', // This actually changes the color
-      discoveryDate: '1766',
-      discoveredBy: 'Henry Cavendish',
       index: 0,
-      density: ''
     },
 
     // Data about a clicked element
@@ -53,6 +49,12 @@ export default new Vuex.Store({
       group: -1
     },
 
+    // LABEL
+    // placement, color status, and name of period and group labels
+    atomLabelPeriods: [],
+    atomLabelGroups: [],
+
+    // OPTIONS
     // Changeable options
     options: {
       themeType: 'light-def',
@@ -60,7 +62,6 @@ export default new Vuex.Store({
       infoLocationTypeIsAuto: true,
       blurType: 'no-blur'
     },
-
     contentState: '',
   },
   mutations: {
