@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// TODO: rename so one and only initial load is clear
 function initAtomData({ state, dispatch }) {
   Promise.all([
     axios.get('/data/old.atomPlacement.json'),
@@ -22,16 +21,6 @@ function initAtomData({ state, dispatch }) {
         atomTab: 'Properties'
       });
     })
-    .catch(e => console.log(e));
-}
-
-function loadAtomColors({ state }, payload) {
-  axios
-    .get(`/data/${payload.colorScheme}.json`)
-    .then(response => {
-      state.atomColors = response.data;
-    })
-    // eslint-disable-next-line
     .catch(e => console.log(e));
 }
 
@@ -70,7 +59,6 @@ function switchAtomTabData({ state }, payload) {
 
 export {
   initAtomData,
-  loadAtomColors,
   loadAtomTabProperties,
   switchAtomTabData
 };

@@ -155,26 +155,13 @@ export default {
       'setColorOfOneGroup',
       'setColorOfOneAtom',
     ]),
-    ...mapActions(['loadAtomColors', 'initAtomData']),
+    ...mapActions(['initAtomData']),
 
     // imported in from periodic-table-specific utils
     highlightLabelSection,
     unhighlightLabelSection,
     setLabelColor,
     updateClickedAtom,
-
-    // @ param none
-    // Updates color scheme of the periodic table
-    updateColor: function() {
-      let routePath = this.$route.path.substring(1);
-      if (routePath === 'properties' || routePath === 'isotopes') {
-        this.loadAtomColors({ colorScheme: 'atomColorsCategory' });
-      } else if (routePath === 'electrons' || routePath === 'orbitals') {
-        this.loadAtomColors({ colorScheme: 'atomColorsOrbitalBlock' });
-      } else {
-        this.loadAtomColors({ colorScheme: 'atomColorsCategory' });
-      }
-    },
 
     // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
     labelClassToNone: function(labelNumber) {

@@ -1,6 +1,6 @@
 <template>
-  <div v-if="ready" class="atom-info-wrapper">
-    <div class="atom-info">
+  <div class="atom-info-wrapper">
+    <div class="atom-info" v-if="ready">
       <simplebar class="simplebar" data-simplebar-auto-hide="false">
         <div class="atom-info-inner">
           <div class="atom-stat" v-for="atomTabDataMember in atomTabDataActiveModified">
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState } from 'vuex';
 import simplebar from 'simplebar-vue';
 import 'simplebar/dist/simplebar.min.css';
 
@@ -24,28 +24,10 @@ export default {
   components: {
     simplebar
   },
-  watch: {
-    $route() {
-      // TODO: Make this route watcher on TabGenericPeriodicTableInterface.vue element
-      this.updateProperties();
-    },
-  },
-  created() {
-    this.updateProperties();
-  },
   computed: {
-    ...mapState(['atomTabData', 'atomTabDataActive', 'ready', 'options', 'activeAtom']),
+    ...mapState(['atomTabDataActive', 'ready']),
     atomTabDataActiveModified() {
       return Object.entries(this.atomTabDataActive);
-    }
-  },
-
-  methods: {
-    ...mapActions(['loadAtomTabProperties']),
-    // Fetch properties of elements
-    updateProperties: function() {
-      // console.log(this.$store.atomSimpleData);
-      this.loadAtomTabProperties();
     }
   }
 };
@@ -55,8 +37,6 @@ export default {
 @import '~@/styles/variables.scss';
 @import 'atomInfoTheme';
 @import 'atomInfo';
-
-
 
 .light-def {
   @include panelTextualThemeDefault(
