@@ -98,10 +98,10 @@
 
   // Importing to-be-used SVG icons
   import List from '@eankeen/vue-feather-icons/components/list.vue';
-  import Electrons from '../../assets/svg/icons/electrons.svg';
-  import Orbitals from '../../assets/svg/icons/orbitals.svg';
-  import Orbitals2 from '../../assets/svg/icons/orbitals2.svg';
-  import Isotopes from '../../assets/svg/icons/isotopes.svg';
+  import Electrons from '@/assets/svg/icons/electrons.svg';
+  import Orbitals from '@/assets/svg/icons/orbitals.svg';
+  import Orbitals2 from '@/assets/svg/icons/orbitals2.svg';
+  import Isotopes from '@/assets/svg/icons/isotopes.svg';
   import Map from '@eankeen/vue-feather-icons/components/map.vue'; // Explore
   import Check from '@eankeen/vue-feather-icons/components/check.vue'; // Trivia
   import Info from '@eankeen/vue-feather-icons/components/info.vue';
@@ -135,10 +135,9 @@
 </script>
 
 <style scoped lang="scss">
-  /*@import '../../styles/common/options';*/
   // Variables, mixins, and common components
-  @import '../../styles/variables.scss';
-  @import '../../styles/tags.scss';
+  @import '~@/styles/variables.scss';
+  @import '~@/styles/tags.scss';
   // Structure
   @import 'navigation';
   @import 'navigationMobile';

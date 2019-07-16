@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { setColorOfOneAtom, setColorOfOneGroup, setColorOfOnePeriod, setColorOfAllButOneAtom, setColorOfAllButOnePeriod, setColorOfAllButOneGroup, setColorOfAllAtoms } from "./atomHighlighting";
-import { loadAtomData, loadAtomColors, loadAtomTabProperties }from '../api/fetchData';
+import { setColorOfOneAtom, setColorOfOneGroup, setColorOfOnePeriod, setColorOfAllButOneAtom, setColorOfAllButOnePeriod, setColorOfAllButOneGroup, setColorOfAllAtoms } from "@/store/atomHighlighting";
+import { loadAtomData, loadAtomColors, loadAtomTabProperties }from '@/api/fetchData';
 
 Vue.use(Vuex);
 

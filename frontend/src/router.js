@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Body from './views/TabGenericPeriodicTableInterface';
-import Explore from './views/TabExplore';
-import Trivia from './views/TabTrivia';
-import atomInfoProperties from './components/atom-info/AtomInfo';
-import atomGraphicProperties from './components/atom-graphic/AtomGraphicProperties';
-import atomGraphicOrbitals from './components/atom-graphic/AtomGraphicOrbitals';
+import Body from '@/views/TabGenericPeriodicTableInterface';
+import Explore from '@/views/TabExplore';
+import Trivia from '@/views/TabTrivia';
+import atomInfoProperties from '@/components/atom-info/AtomInfo';
+import atomGraphicProperties from '@/components/atom-graphic/AtomGraphicProperties';
+import atomGraphicOrbitals from '@/components/atom-graphic/AtomGraphicOrbitals';
 
 Vue.use(VueRouter);
 

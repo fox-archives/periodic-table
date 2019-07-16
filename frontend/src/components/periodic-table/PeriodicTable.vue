@@ -98,9 +98,9 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import 'perfect-scrollbar/css/perfect-scrollbar.css';
 import { throttle, debounce } from 'lodash';
 
-import { highlightLabelSection, unhighlightLabelSection } from './utils/hoverLabelsHandlers';
-import { setLabelColor } from "./utils/hoverAtomHandlers";
-import { updateClickedAtom } from "./utils/clickAtomHandlers";
+import { highlightLabelSection, unhighlightLabelSection } from '@/components/periodic-table/utils/hoverLabelsHandlers';
+import { setLabelColor } from "@/components/periodic-table/utils/hoverAtomHandlers";
+import { updateClickedAtom } from "@/components/periodic-table/utils/clickAtomHandlers";
 
 export default {
   name: 'PeriodicTable',
@@ -112,6 +112,7 @@ export default {
   created() {
     this.updateColor();
     // Load element data via Axios / Fetch API requests to backend
+    // TODO: actually call the method in a better way
     this.$store.dispatch('loadAtomData');
   },
   mounted() {
@@ -205,7 +206,7 @@ export default {
 
 <style scoped lang="scss">
 // Variables, mixins, and common components
-@import '../../styles/variables';
+@import '~@/styles/variables';
 
 // PERIODIC TABLE \\
 @import 'periodicTable';

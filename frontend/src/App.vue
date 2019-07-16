@@ -8,8 +8,8 @@
 
 <script>
 import { mapState } from 'vuex';
-import Navigation from './components/nav/Navigation.vue';
-import Foot from './components/foot/Foot.vue';
+import Navigation from '@/components/nav/Navigation.vue';
+import Foot from '@/components/foot/Foot.vue';
 
 export default {
   components: {

@@ -11,8 +11,8 @@
 <script>
 import { mapState, mapMutations } from 'vuex';
 import throttle from 'lodash/throttle';
-import PeriodicTable from '../components/periodic-table/PeriodicTable.vue';
-import AtomInfoPanel from '../components/AtomInfoPanel.vue';
+import PeriodicTable from '@/components/periodic-table/PeriodicTable.vue';
+import AtomInfoPanel from '@/components/AtomInfoPanel.vue';
 
 export default {
   name: 'TabGenericPeriodicTableInterface',
@@ -151,7 +151,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/variables';
+@import '~@/styles/variables';
 
 #display {
   margin-left: $body-margin;

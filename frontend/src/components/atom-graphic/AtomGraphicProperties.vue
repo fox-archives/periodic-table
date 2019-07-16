@@ -15,7 +15,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import { EventBus } from '../eventBus';
+import { EventBus } from '@/eventBus';
 import throttle from 'lodash/debounce';
 
 export default {
@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../styles/variables';
+@import '~@/styles/variables';
 @import 'atomGraphicTheme';
 @import 'atomGraphic';
 </style>

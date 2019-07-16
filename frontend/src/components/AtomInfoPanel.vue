@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../styles/variables';
+@import '~@/styles/variables';
 
 // INFO SIDE
 .info-side #panel {
