@@ -24,16 +24,6 @@ function initAtomData({ state, dispatch }) {
     .catch(e => console.log(e));
 }
 
-function loadAtomTabProperties({ state }, payload) {
-  axios
-    .get('/data/atomTabProperties.json')
-    .then(response => {
-      state.atomTabData = response.data;
-    })
-    // eslint-disable-next-line
-    .catch(e => console.log(e));
-}
-
 // executes when we switch a tab (and want all data to update)
 function switchAtomTabData({ state }, payload) {
   let atomColorAppearance = payload.atomColorAppearance;
@@ -59,6 +49,5 @@ function switchAtomTabData({ state }, payload) {
 
 export {
   initAtomData,
-  loadAtomTabProperties,
   switchAtomTabData
 };
