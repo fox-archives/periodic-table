@@ -145,75 +145,75 @@ Do[
 	
 	newElement = {
 		(* START MATERIAL-JSON.WLS *)
-		"brinelHardness" -> brinelHardness,
-		"bulkModulus" -> bulkModulus,
-		"density" -> density,
-		"liquidDensity" -> liquidDensity,
-		"mohsHardness" -> mohsHardness,
-		"molarVolume" -> molarVolume,
-		"poissonRatio" -> poissonRatio,
-		"shearModulus" -> shearModulus,
-		"soundSpeed" -> soundSpeed,
-		"thermalConductivity" -> thermalConductivity,
-		"thermalExpansion" -> thermalExpansion,
-		"vickersHardness" -> vickersHardness, (* Probably Don't need this *)
-		"youngModulus" -> youngModulus,
+		"Brinel Hardness" -> brinelHardness,
+		"Bulk Modulus" -> bulkModulus,
+		"Density" -> density,
+		"Liquid Density" -> liquidDensity,
+		"Mohs Hardness" -> mohsHardness,
+		"Molar Volume" -> molarVolume,
+		"Poisson Ratio" -> poissonRatio,
+		"Shear Modulus" -> shearModulus,
+		"Sound Speed" -> soundSpeed,
+		"Thermal Conductivity" -> thermalConductivity,
+		"Thermal Expansion" -> thermalExpansion,
+		"Vickers Hardness" -> vickersHardness, (* Probably Don't need this *)
+		"Young Modulus" -> youngModulus,
 		(* END MATERIAL-JSON.WLS *)
 		
 		
 		(* START THERMODYNAMIC-JSON.WLS *)
-		"absoluteBoilingPoint" -> absoluteBoilingPoint,
-		"absoluteMeltingPoint" -> absoluteMeltingPoint,
+		"Absolute Boiling Point" -> absoluteBoilingPoint,
+		"Absolute Melting Point" -> absoluteMeltingPoint,
 		(* abiabaticIndex *)
-		"criticalPressure" -> criticalPressure,
-		"criticalTemperature" -> criticalTemperature,
+		"Critical Pressure" -> criticalPressure,
+		"Critical Temperature" -> criticalTemperature,
 		(* curiePoint *)
-		"fusionHeat" -> fusionHeat,
+		"Fusion Heat" -> fusionHeat,
 		(* neelPoint *)
-		"phase" -> phase,
-		"specificHeat" -> specificHeat,
+		"Phase" -> phase,
+		"SpecificHeat" -> specificHeat,
 		(* superConductingPoint *)
-		"vaporizationHeat" -> vaporizationHeat,
+		"Vaporization Heat" -> vaporizationHeat,
 		(* END THERMODYNAMIC-JSON.WLS *)
 		
 		
 		(* START ELECTROMAGNETIC-OPTICAL-JSON.WLS *)
-		"color" -> color, (* Prob don't need this *)
-		"electricalConductivity" -> electricalConductivity,
-		"electricalType" -> electricalType, (* Prob don't need this *)
-		"magneticType" -> magneticType, (* Maybe don't need this *)
-		"massMagneticSusceptibility" -> massMagneticSusceptibility,
-		"molarMagneticSusceptibility" -> molarMagneticSusceptibility,
+		"Color" -> color, (* Prob don't need this *)
+		"Electrical Conductivity" -> electricalConductivity,
+		"Electrical Type" -> electricalType, (* Prob don't need this *)
+		"Magnetic Type" -> magneticType, (* Maybe don't need this *)
+		"Mass Magnetic Susceptibility" -> massMagneticSusceptibility,
+		"Molar Magnetic Susceptibility" -> molarMagneticSusceptibility,
 		(* RefractiveIndex *)
-		"resistivity" -> resistivity,
-		"volumeMagneticSusceptibility" -> volumeMagneticSusceptibility,
+		"Resistivity" -> resistivity,
+		"Volume Magnetic Susceptibility" -> volumeMagneticSusceptibility,
 		(* END ELECTROMAGNETIC-OPTICAL-JSON.WLS *)
 		
 		
 		(* START BASIC-CHEMICAL.WLS AKA ABUNDANCE AND BASIC-CHEMICAL DATA *)
 		(* AllotropicMultiplicities *)
 		(* CommonCompoundNames *)
-		"electronAffinity" -> electronAffinity,
-		"electronegativity" -> electronegativity,
-		"gasAtomicMultiplicities" -> gasAtomicMultiplicities,
-		"valence" -> valence,
-		"crustAbundance" -> crustAbundance,
-		"humanAbundance" -> humanAbundance,
-		"meteoriteAbundance" -> meteoriteAbundance,
-		"oceanAbundance" -> oceanAbundance,
-		"solarAbundance" -> solarAbundance,
-		"universeAbundance" -> universeAbundance,
+		"Electron Affinity" -> electronAffinity,
+		"Electronegativity" -> electronegativity,
+		"Gas Atomic Multiplicities" -> gasAtomicMultiplicities,
+		"Valence" -> valence,
+		"Crust Abundance" -> crustAbundance,
+		"Human Abundance" -> humanAbundance,
+		"Meteorite Abundance" -> meteoriteAbundance,
+		"Ocean Abundance" -> oceanAbundance,
+		"Solar Abundance" -> solarAbundance,
+		"Universe Abundance" -> universeAbundance,
 		(* END BASIC-CHEMICAL.WLS AKA ABUNDANCE AND BASIC-CHEMICAL DATA *)
 		
 		(* START ATOMIC-JSON.WLS *)
-		"atomicRadius" -> atomicRadius,
-		"covalentRadius" -> covalentRadius,
-		"electronConfiguration" -> electronConfiguration,
-		"electronConfigurationString" -> electronConfigurationString,
-		"electronShellConfiguration" -> electronShellConfiguration,
-		"ionizationEnergies" -> ionizationEnergies,
+		"Atomic Radius" -> atomicRadius,
+		"Covalent Radius" -> covalentRadius,
+		"Electron Configuration" -> electronConfiguration,
+		"Electron Configuration String" -> electronConfigurationString,
+		"Electron Shell Configuration" -> electronShellConfiguration,
+		"Ionization Energies" -> ionizationEnergies,
 		(* quantumNumbers *)
-		"vanDerWaalsRadius" -> vanDerWaalsRadius
+		"Van Der Waals Radius" -> vanDerWaalsRadius
 		(* END ATOMIC-JSON.WLS *)
 	};
 	
