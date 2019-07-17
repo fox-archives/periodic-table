@@ -3,7 +3,7 @@
     <div class="atom-info" v-if="ready">
       <simplebar class="simplebar" data-simplebar-auto-hide="false">
         <div class="atom-info-inner">
-          <div class="atom-stat" v-for="atomTabDataMember in atomTabDataActiveModified">
+          <div class="atom-stat" v-for="atomTabDataMember in atomActiveSidebarDataModified">
             <p class="atom-stat-text">
               {{ atomTabDataMember[0] }}: {{ atomTabDataMember[1] }}
             </p>
@@ -20,14 +20,14 @@ import simplebar from 'simplebar-vue';
 import 'simplebar/dist/simplebar.min.css';
 
 export default {
-  name: 'AtomInfo',
+  name: 'AtomSidebar',
   components: {
     simplebar
   },
   computed: {
-    ...mapState(['atomTabDataActive', 'ready']),
-    atomTabDataActiveModified() {
-      return Object.entries(this.atomTabDataActive);
+    ...mapState(['atomActiveSidebarData', 'ready']),
+    atomActiveSidebarDataModified() {
+      return Object.entries(this.atomActiveSidebarData);
     }
   }
 };
@@ -35,8 +35,8 @@ export default {
 
 <style scoped lang="scss">
 @import '~@/styles/variables.scss';
-@import 'atomInfoTheme';
-@import 'atomInfo';
+@import 'atomSidebarTheme';
+@import 'atomSidebar';
 
 .light-def {
   @include panelTextualThemeDefault(

@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import Body from '@/views/TabGenericPeriodicTableInterface';
 import Explore from '@/views/TabExplore';
 import Trivia from '@/views/TabTrivia';
-import atomInfoProperties from '@/components/atom-info/AtomInfo';
+import atomInfoProperties from '@/components/atom-sidebar/AtomSidebar';
 import atomGraphicProperties from '@/components/atom-graphic/AtomGraphicProperties';
 import atomGraphicOrbitals from '@/components/atom-graphic/AtomGraphicOrbitals';
 

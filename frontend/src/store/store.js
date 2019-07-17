@@ -15,19 +15,7 @@ export default new Vuex.Store({
     // ATOM
     // shared atom data across all tabs (from atomTabAll.json)
     atomSimpleData: [],
-
-    // atom placement data (in the css grid, and in the periodic table itself)
-    atomPlacements: [],
-    // atom colors (color and deafultColor)
-    atomColors: [],
-
-    // atom tab data (dependent on the selected tab) for *all* elements
-    atomTabData: [],
-    // atom tab data for *only* the active element (one being clicked on or hovered over
-    atomTabDataActive: {},
-
-    // Element Defaults
-    activeAtom: {
+    atomActiveSimpleData: {
       atomicNumber: '1',
       abbreviation: 'H',
       name: 'Hydrogen',
@@ -36,6 +24,15 @@ export default new Vuex.Store({
       color: 'blue', // This actually changes the color
       index: 0,
     },
+
+    // atom sidebar data (dependent on the selected tab) for *all* elements
+    atomSidebarData: [],
+    atomActiveSidebarData: {},
+
+    // atom placement data (in the css grid, and in the periodic table itself)
+    atomPlacements: [],
+    // atom colors (color and deafultColor)
+    atomColors: [],
 
     // Data about a clicked element
     clickedAtom: {
@@ -77,37 +74,31 @@ export default new Vuex.Store({
       // Update Store variables with Element information according to index
       // Purpose: To change all properties of active element only when element is on 'clicked' mode
       // @param #int 'index':
-      //   (req)  Index of element, where activeAtom properties will get info from
+      //   (req)  Index of element, where atomActiveSimpleData properties will get info from
       if (state.clickedAtom.active === false) {
-        state.activeAtom.index = state.index;
-        state.activeAtom.abbreviation = state.atomSimpleData[index].abbreviation;
-        state.activeAtom.name = state.atomSimpleData[index].name;
-        state.activeAtom.atomicMass = state.atomSimpleData[index].atomicMass;
-
-        // Update element description (right box)
-        state.activeAtom.color = state.atomColors[index].defaultColor;
+        state.atomActiveSimpleData.index = state.index;
+        state.atomActiveSimpleData.abbreviation = state.atomSimpleData[index].abbreviation;
+        state.atomActiveSimpleData.name = state.atomSimpleData[index].name;
+        state.atomActiveSimpleData.atomicMass = state.atomSimpleData[index].atomicMass;
+        state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
 
         // TODO: Make less messy
-        // state.updateAtomTabDataActive()
-        state.atomTabDataActive = state.atomTabData[index];
+        state.atomActiveSidebarData = state.atomSidebarData[index];
       }
     },
     // Only call this when user clicks on element (element update is locked) and user clicks on another element
     // Purpose: To change all properties of active element, in any case
     // @param #int 'index':
-    //   (req)  Index of element, where activeAtom properties will get info from
+    //   (req)  Index of element, where atomActiveSimpleData properties will get info from
     updateActiveAtomForce: function(state, index) {
-      state.activeAtom.index = state.index;
-      state.activeAtom.abbreviation = state.atomSimpleData[index].abbreviation;
-      state.activeAtom.name = state.atomSimpleData[index].name;
-      state.activeAtom.atomicMass = state.atomSimpleData[index].atomicMass;
-
-      // Update element description (right box)
-      state.activeAtom.color = state.atomColors[index].defaultColor;
+      state.atomActiveSimpleData.index = state.index;
+      state.atomActiveSimpleData.abbreviation = state.atomSimpleData[index].abbreviation;
+      state.atomActiveSimpleData.name = state.atomSimpleData[index].name;
+      state.atomActiveSimpleData.atomicMass = state.atomSimpleData[index].atomicMass;
+      state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
 
       // TODO: Make less messy
-      // this.updateAtomTabDataActive();
-      state.atomTabDataActive = state.atomTabData[index];
+      state.atomActiveSidebarData = state.atomSidebarData[index];
     },
 
 
@@ -130,13 +121,13 @@ export default new Vuex.Store({
 
     // Purpose: Change the properties of the active element, or the element that was clicked on
     // @param #object 'payload' contains properties:
-    //   Each possible property are the same properties as this.activeAtom
+    //   Each possible property are the same properties as this.atomActiveSimpleData
     setActiveAtom: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeAtom object (from the vuex state) has
+      // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
       for (let property in newProperties) {
-        if (state.activeAtom.hasOwnProperty(property)) {
-          state.activeAtom[property] = newProperties[property];
+        if (state.atomActiveSimpleData.hasOwnProperty(property)) {
+          state.atomActiveSimpleData[property] = newProperties[property];
         }
       }
     },
@@ -149,7 +140,7 @@ export default new Vuex.Store({
     //   (opt) .group #int Group number of the clicked element (actual group, does not start at 0)
     setClickedAtom: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeAtom object (from the vuex state) has
+      // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
       for (let property in newProperties) {
         if (state.clickedAtom.hasOwnProperty(property)) {
           state.clickedAtom[property] = newProperties[property];
@@ -164,7 +155,7 @@ export default new Vuex.Store({
     //   (opt) Any other properties of options
     setOptions: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the activeAtom object (from the vuex state) has
+      // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
       for (let property in newProperties) {
         if (state.options.hasOwnProperty(property)) {
           state.options[property] = newProperties[property];

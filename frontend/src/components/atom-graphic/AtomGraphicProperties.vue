@@ -2,12 +2,12 @@
   <div>
     <div id="visual-inner">
       <div id="icon">
-        <div id="icon-inner" :class="activeAtom.color">
-          <p>{{ activeAtom.abbreviation }}</p>
+        <div id="icon-inner" :class="atomActiveSimpleData.color">
+          <p>{{ atomActiveSimpleData.abbreviation }}</p>
         </div>
       </div>
       <div id="text">
-        <p>{{ activeAtom.name }}</p>
+        <p>{{ atomActiveSimpleData.name }}</p>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@ export default {
     });
   },
   computed: {
-    ...mapState(['activeAtom', 'options'])
+    ...mapState(['atomActiveSimpleData', 'options'])
   },
   methods: {
     newSizeInfoVisualText: function() {

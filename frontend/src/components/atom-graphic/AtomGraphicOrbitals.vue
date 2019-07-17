@@ -10,7 +10,7 @@ import { mapState } from 'vuex';
 export default {
   name: 'AtomGraphicOrbitals',
   computed: {
-    ...mapState(['activeAtom', 'options'])
+    ...mapState(['atomActiveSimpleData', 'options'])
   }
 };
 </script>

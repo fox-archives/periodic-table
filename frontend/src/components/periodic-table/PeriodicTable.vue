@@ -3,7 +3,7 @@
     <div id="grid-container">
       <div v-if="ready" id="grid-outer">
         <main id="grid">
-          <!-- DUPLICATED ELEMENTS FROM PERIODIC TABLE -->
+          <!-- ATOMS FROM PERIODIC TABLE -->
           <div
             v-for="(atomPlacement, index) in atomPlacements"
             :key="atomPlacement.column + atomPlacement.row"
@@ -33,7 +33,7 @@
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">
-                {{ atomPlacement.display }}
+                {{ atomSimpleData[index].display }}
               </p>
               <p class="primary-text">
                 {{ atomSimpleData[index].abbreviation }}
@@ -136,7 +136,6 @@ export default {
 
       'ready',
 
-      'activeAtom',
       'clickedAtom',
       'options'
     ])

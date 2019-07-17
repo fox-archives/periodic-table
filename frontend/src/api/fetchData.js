@@ -2,7 +2,7 @@ import axios from "axios";
 
 function initAtomData({ state, dispatch }) {
   Promise.all([
-    axios.get('/data/old.atomPlacement.json'),
+    axios.get('/data/atomPlacement.json'),
     axios.get('/data/atomTabAll.json'),
     axios.get('/data/labelPlacement.json')
   ])
@@ -38,10 +38,10 @@ function switchAtomTabData({ state }, payload) {
   ])
     .then(responses => {
       let atomColorAppearanceResult = responses[0];
-      let atomTabResult = responses[1];
+      let atomSidebarDataResult = responses[1];
 
       state.atomColors = atomColorAppearanceResult.data;
-      state.atomTabData = atomTabResult.data;
+      state.atomSidebarData = atomSidebarDataResult.data;
 
       state.ready = true;
     })
