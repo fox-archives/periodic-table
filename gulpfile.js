@@ -18,7 +18,7 @@ async function transferWolfram() {
         .pipe(jsonminify())
         .pipe(dest(to));
     })
-    .catch(e => console.log(e));
+    .catch(e => console.error(e));
 }
 
 async function transferFrontend() {
@@ -31,7 +31,7 @@ async function transferFrontend() {
         .pipe(htmlmin())
         .pipe(dest(to));
     })
-    .catch(e => console.log(e));
+    .catch(e => console.error(e));
 }
 
 exports.transferWolfram = transferWolfram;

@@ -1,7 +1,7 @@
 <template>
   <div
     id="display"
-    :class="[contentState, options.themeType, options.infoLocationType]"
+    :class="[options.contentState, options.themeType, options.infoLocationType]"
   >
     <atom-info-panel />
     <periodic-table />
@@ -17,7 +17,7 @@ import AtomInfoPanel from '@/components/AtomInfoPanel.vue';
 export default {
   name: 'TabGenericPeriodicTableInterface',
   computed: {
-    ...mapState(['options', 'contentState'])
+    ...mapState(['options'])
   },
   components: {
     'atom-info-panel': AtomInfoPanel,
@@ -71,7 +71,7 @@ export default {
     });
   },
   methods: {
-    ...mapMutations(['setOptions', 'setContentState']),
+    ...mapMutations(['setOptions']),
     calculateLayout: function() {
       if (document.getElementById('grid-outer') !== null) {
         this.setMobilePeriodicTableWidth();
@@ -155,15 +155,19 @@ export default {
         // This means if panel and periodic-table fill whole window height, increasing
         // width will not increase size of periodic-table, instead it creates whitespace;
         // periodic-table will only increase if the height of browser window increases
-        this.setContentState('heightSame');
+        this.setOptions({
+          contentState: 'heightSame'
+        });
       } else {
-        this.setContentState('heightDifferent');
+        this.setOptions({
+          contentState: 'heightDifferent'
+        });
       }
     },
 
     setMobilePeriodicTableWidth: function() {
       if (
-        /*this.options.infoLocationType === 'info-top' && */ this.contentState ===
+        /*this.options.infoLocationType === 'info-top' && */ this.options.contentState ===
         'heightDifferent'
       ) {
         // To change the length of the #grid-container (so #grid-outer scrolls to fit)

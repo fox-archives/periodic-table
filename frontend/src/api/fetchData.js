@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function initAtomData({ state, dispatch }) {
+function initAtomData({ state, dispatch, commit }) {
   Promise.all([
     axios.get('/data/atomPlacement.json'),
     axios.get('/data/atomTabAll.json'),
@@ -19,9 +19,12 @@ function initAtomData({ state, dispatch }) {
       dispatch('switchAtomTabData', {
         atomColorAppearance: 'Category',
         atomTab: 'Properties'
-      });
+      })
+        .then(() => {
+          commit('updateActiveAtomForce', 0);
+        });
     })
-    .catch(e => console.log(e));
+    .catch(e => console.error(e));
 }
 
 // executes when we switch a tab (and want all data to update)
@@ -29,22 +32,30 @@ function switchAtomTabData({ state }, payload) {
   let atomColorAppearance = payload.atomColorAppearance;
   let atomTab = payload.atomTab;
 
-  Promise.all([
-    // ex. atomColorsCategory, atomColorsOrbitalBlock
-    axios.get(`/data/atomColors${atomColorAppearance}.json`),
+  return new Promise((resolve, reject) => {
+    Promise.all([
+      // ex. atomColorsCategory, atomColorsOrbitalBlock
+      axios.get(`/data/atomColors${atomColorAppearance}.json`),
 
-    // ex. atomTabIsotopes, atomTabProperties
-    axios.get(`/data/atomTab${atomTab}.json`)
-  ])
-    .then(responses => {
-      let atomColorAppearanceResult = responses[0];
-      let atomSidebarDataResult = responses[1];
+      // ex. atomTabIsotopes, atomTabProperties
+      axios.get(`/data/atomTab${atomTab}.json`)
+    ])
+      .then(responses => {
+        let atomColorAppearanceResult = responses[0];
+        let atomSidebarDataResult = responses[1];
 
-      state.atomColors = atomColorAppearanceResult.data;
-      state.atomSidebarData = atomSidebarDataResult.data;
+        state.atomColors = atomColorAppearanceResult.data;
+        state.atomSidebarData = atomSidebarDataResult.data;
 
-      state.ready = true;
-    })
+        state.ready = true;
+        resolve();
+      })
+      .catch(e => {
+        console.error(e);
+        reject();
+      });
+  });
+
 }
 
 export {

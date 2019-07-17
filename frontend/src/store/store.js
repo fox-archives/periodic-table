@@ -15,15 +15,7 @@ export default new Vuex.Store({
     // ATOM
     // shared atom data across all tabs (from atomTabAll.json)
     atomSimpleData: [],
-    atomActiveSimpleData: {
-      atomicNumber: '1',
-      abbreviation: 'H',
-      name: 'Hydrogen',
-      atomicMass: 1.008,
-      block: 's',
-      color: 'blue', // This actually changes the color
-      index: 0,
-    },
+    atomActiveSimpleData: {},
 
     // atom sidebar data (dependent on the selected tab) for *all* elements
     atomSidebarData: [],
@@ -57,9 +49,10 @@ export default new Vuex.Store({
       themeType: 'light-def',
       infoLocationType: 'info-auto',
       infoLocationTypeIsAuto: true,
-      blurType: 'no-blur'
+      blurType: 'no-blur',
+
+      contentState: ''
     },
-    contentState: '',
   },
   mutations: {
     setColorOfOneAtom,
@@ -76,13 +69,9 @@ export default new Vuex.Store({
       // @param #int 'index':
       //   (req)  Index of element, where atomActiveSimpleData properties will get info from
       if (state.clickedAtom.active === false) {
-        state.atomActiveSimpleData.index = state.index;
-        state.atomActiveSimpleData.abbreviation = state.atomSimpleData[index].abbreviation;
-        state.atomActiveSimpleData.name = state.atomSimpleData[index].name;
-        state.atomActiveSimpleData.atomicMass = state.atomSimpleData[index].atomicMass;
-        state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
-
         // TODO: Make less messy
+        state.atomActiveSimpleData = state.atomSimpleData[index];
+        state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
         state.atomActiveSidebarData = state.atomSidebarData[index];
       }
     },
@@ -91,13 +80,9 @@ export default new Vuex.Store({
     // @param #int 'index':
     //   (req)  Index of element, where atomActiveSimpleData properties will get info from
     updateActiveAtomForce: function(state, index) {
-      state.atomActiveSimpleData.index = state.index;
-      state.atomActiveSimpleData.abbreviation = state.atomSimpleData[index].abbreviation;
-      state.atomActiveSimpleData.name = state.atomSimpleData[index].name;
-      state.atomActiveSimpleData.atomicMass = state.atomSimpleData[index].atomicMass;
-      state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
-
       // TODO: Make less messy
+      state.atomActiveSimpleData = state.atomSimpleData[index];
+      state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
       state.atomActiveSidebarData = state.atomSidebarData[index];
     },
 
@@ -161,9 +146,6 @@ export default new Vuex.Store({
           state.options[property] = newProperties[property];
         }
       }
-    },
-    setContentState: function(state, newContentState) {
-      state.contentState = newContentState;
     }
   },
   actions: {
