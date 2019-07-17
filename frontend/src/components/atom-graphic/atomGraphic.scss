@@ -8,7 +8,7 @@
     $ld-shadow-hover,
     $ld-text
   );
-  @include elementsThematomColors('', true, 2, 9);
+  @include elementsThemeAtomColors('', true, 2, 9);
 }
 
 .light-con {
@@ -19,7 +19,7 @@
     $lc-shadow-hover,
     $lc-text
   );
-  @include elementsThematomColors('', true, 4, 9);
+  @include elementsThemeAtomColors('', true, 4, 9);
 }
 
 .dark-def {
@@ -30,7 +30,7 @@
     $dd-shadow-hover,
     $dd-text
   );
-  @include elementsThematomColors('', true, 7, 1);
+  @include elementsThemeAtomColors('', true, 7, 1);
 }
 
 #visual-inner {
@@ -52,7 +52,7 @@
 #icon {
   position: relative;
   margin-top: 8px; // Don't think this should be $spacing
-  height: 0px;
+  height: 0;
   width: 75%;
   padding-bottom: 75%;
 }
@@ -62,10 +62,10 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: $border-radius;
   font-family: robotoregular, Arial, 'sans-serif';
   font-weight: normal;

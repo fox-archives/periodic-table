@@ -80,27 +80,6 @@ export default {
       }
     },
 
-    // FROM OPTIONS
-    // Changes local theme
-    setTheme: function() {
-      // This changes options.themeType (in Vuex options object)
-      // i represents each element in themeTypes array
-      for (let i = 0; i < this.themeTypes.length; i++) {
-        // i + 1 because theme
-        if (this.theme === i + 1) {
-          this.options.themeType = this.themeTypes[i];
-
-          // Add it to the main body tag
-          let bodyTag = document.getElementById('body');
-          bodyTag.classList.add(this.themeTypes[i]);
-          for (let j = 0; j < this.themeTypes.length; j++) {
-            if (this.themeTypes[i] !== this.themeTypes[j]) {
-              bodyTag.classList.remove(this.themeTypes[j]);
-            }
-          }
-        }
-      }
-    },
     // Changes placement of info-location (and calls setClassLayout)
     setInfoLocation: function() {
       // .1s after setInfoLocation is called, update the className that determines the layout
@@ -108,7 +87,6 @@ export default {
       setTimeout(() => {
         this.setClassLayout();
         this.setMobilePeriodicTableWidth();
-        EventBus.$emit('set-info-location', 1);
       }, 100);
 
       // First, convert infoLocation number to a string

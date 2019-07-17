@@ -23,7 +23,7 @@ $list-of-oc-colors: (
 
 // Purpose: For each of the 118 elements, change their background color and text color,
 // depending on if they are not hovered, hovered, or clicked.
-@mixin elementsThematomColors(
+@mixin elementsThemeAtomColors(
   $colorShade,
   $hasBackgroundColor,
   $backgroundColor,

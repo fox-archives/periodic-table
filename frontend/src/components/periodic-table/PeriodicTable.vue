@@ -222,26 +222,26 @@ export default {
 @import 'elementsTheme';
 
 .light-def {
-  @include elementsThematomColors('supdark-', true, 4, 9);
-  @include elementsThematomColors('dark-', true, 3, 9);
-  @include elementsThematomColors('', true, 2, 9);
-  @include elementsThematomColors('light-', true, 1, 6);
+  @include elementsThemeAtomColors('supdark-', true, 4, 9);
+  @include elementsThemeAtomColors('dark-', true, 3, 9);
+  @include elementsThemeAtomColors('', true, 2, 9);
+  @include elementsThemeAtomColors('light-', true, 1, 6);
   @include elementsThemeShadow(true, $oc-gray-3, $oc-gray-4);
 }
 
 .light-con {
-  @include elementsThematomColors('supdark-', true, 6, 9);
-  @include elementsThematomColors('dark-', true, 5, 9);
-  @include elementsThematomColors('', true, 4, 9);
-  @include elementsThematomColors('light-', true, 2, 6);
+  @include elementsThemeAtomColors('supdark-', true, 6, 9);
+  @include elementsThemeAtomColors('dark-', true, 5, 9);
+  @include elementsThemeAtomColors('', true, 4, 9);
+  @include elementsThemeAtomColors('light-', true, 2, 6);
   @include elementsThemeShadow(true, $oc-gray-4, $oc-gray-5);
 }
 
 .dark-def {
-  @include elementsThematomColors('supdark-', true, 9, 1);
-  @include elementsThematomColors('dark-', true, 8, 1);
-  @include elementsThematomColors('', true, 7, 1);
-  @include elementsThematomColors('light-', true, 4, 5);
+  @include elementsThemeAtomColors('supdark-', true, 9, 1);
+  @include elementsThemeAtomColors('dark-', true, 8, 1);
+  @include elementsThemeAtomColors('', true, 7, 1);
+  @include elementsThemeAtomColors('light-', true, 4, 5);
   @include elementsThemeShadow(false, $oc-gray-8, $oc-gray-7);
 }
 

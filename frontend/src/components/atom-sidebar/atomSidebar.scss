@@ -35,15 +35,15 @@
 .info-side .atom-info-inner {
   display: flex;
   flex-direction: column;
-  padding: 5px 5px 0px 5px;
+  padding: 5px 5px 0 5px;
   box-sizing: content-box;
 }
 
 .info-side .atom-stat {
   background-color: $oc-gray-2;
   border-radius: $border-radius-small;
-  margin: 0px 5px 5px 0px;
-  padding: 3px 0px 3px 0px;
+  margin: 0 5px 5px 0;
+  padding: 3px 0 3px 0;
 }
 
 // INFO-TOP
