@@ -1,8 +1,8 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
-      <div v-if="ready" id="grid-outer">
-        <main id="grid">
+      <div id="grid-outer" v-if="ready">
+        <main id="grid" :style="atomTextSizes">
           <!-- ATOMS FROM PERIODIC TABLE -->
           <div
             v-for="(atomPlacement, index) in atomPlacements"
@@ -104,27 +104,38 @@ import { updateClickedAtom } from "@/components/periodic-table/utils/clickAtomHa
 
 export default {
   name: 'PeriodicTable',
+  data() {
+    return {
+      atomTextSizes: {
+        '--primaryTextSize': '0px',
+        '--secondaryTextSize': '0px',
+        '--labelTextSize': '0px'
+      }
+    }
+  },
+  watch: {
+    ready() {
+      this.$nextTick(() => {
+        this.formatPage();
+      });
+    }
+  },
   created() {
     this.initAtomData();
   },
   mounted() {
     // This controls perfect scrollbar only
-    let psPeriodicTable = new PerfectScrollbar('#grid-container', {
-      swipeEasing: true // Default
-    });
+    let psPeriodicTable = new PerfectScrollbar('#grid-container');
 
     window.addEventListener(
       'resize',
-      throttle(() => psPeriodicTable.update(), 333)
+      throttle(psPeriodicTable.update, 500)
     );
     window.addEventListener(
       'resize',
-      debounce(() => psPeriodicTable.update(), 2000)
+      debounce(psPeriodicTable.update, 250)
     );
-    window.addEventListener(
-      'resize',
-      debounce(() => psPeriodicTable.update(), 10000)
-    );
+    window.addEventListener('resize', throttle(this.formatPage, 250))
   },
   computed: {
     ...mapState([
@@ -153,10 +164,12 @@ export default {
       'setColorOfOnePeriod',
       'setColorOfOneGroup',
       'setColorOfOneAtom',
+
+      'setOptions'
     ]),
     ...mapActions(['initAtomData']),
 
-    // imported in from periodic-table-specific utils
+    // imported from periodic-table-specific utils
     highlightLabelSection,
     unhighlightLabelSection,
     setLabelColor,
@@ -167,7 +180,7 @@ export default {
       return labelNumber.substring(2);
     },
 
-    setElementPrefix(index, prefix) {
+    setElementPrefix: function(index, prefix) {
       // This if statement is important
       // When user clicks on an element and hovers over a different element, the original element that was clicked
       // on still has prefix 'superdark'
@@ -178,6 +191,77 @@ export default {
         });
       }
     },
+
+    formatPage: function() {
+      this.$nextTick(() => {
+        this.updatePeriodicTableHeightLayout();
+        this.$nextTick(() => {
+          this.updatePeriodicTableWidth();
+          this.$nextTick(() => {
+            this.updateAtomFontSizes();
+            this.$nextTick(() => {
+              this.updateAtomFontSizes();
+            })
+          });
+        });
+      });
+    },
+
+    updatePeriodicTableWidth: function() {
+      if (
+        this.options.periodicTableHeightLayoutState === 'periodicTableHeightMax'
+      ) {
+        let gridContainer = document.getElementById('grid');
+
+        // change the ratio in periodicTable.scss if changed here
+        let periodicTableRatio = 0.6;
+
+        // Subtract 2 because recall CSS says the height is calc(100% - 2px)
+        // All I know is that when 2 is removed, then scrollbar is shown for small widths for panel-side
+        gridContainer.style.width = `${(gridContainer.clientHeight - 2) / periodicTableRatio}px`;
+      }
+      this.updateAtomFontSizes();
+    },
+
+    // This script makes the periodic-table and element info panel not have a height
+    // bigger than the browser on panel-side
+    updatePeriodicTableHeightLayout: function() {
+      let panelHeight = document.getElementById('grid-container').offsetHeight;
+      let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
+
+      // Only change the style if the periodic-table has a greater or equal height for AtomInfoPanel.vue
+      if (periodicTableHeight >= panelHeight) {
+        // This means if panel and periodic-table fill whole window height, increasing
+        // width will not increase size of periodic-table, instead it creates whitespace;
+        // periodic-table will only increase if the height of browser window increases
+        this.setOptions({
+          periodicTableHeightLayoutState: 'periodicTableHeightMax'
+        });
+      } else {
+        this.setOptions({
+          periodicTableHeightLayoutState: 'periodicTableHeightConstrained'
+        });
+      }
+    },
+
+    // This changes the CSS variable to size the element text
+    // Recall the CSS variables are declared in periodicTable.scss
+    updateAtomFontSizes: function() {
+      let grid = document.getElementById('grid');
+
+      let elementWidth = grid.childNodes[0].clientWidth;
+      let primaryFontSize = `${elementWidth * 0.32}px`;
+      let secondaryFontSize = `${elementWidth * 0.2}px`;
+      let labelFontSize = `${elementWidth * 0.3}px`;
+
+      // Setting CSS Variables for All Elements
+      // Variables stores in grid
+      this.atomTextSizes = {
+        '--primaryTextSize': primaryFontSize,
+        '--secondaryTextSize': secondaryFontSize,
+        '--labelTextSize': labelFontSize
+      }
+    }
   }
 };
 </script>

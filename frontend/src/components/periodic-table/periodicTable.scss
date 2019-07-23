@@ -39,9 +39,10 @@ $elementRatio: 0.6;
   border-radius: $border-radius;
 }
 
-.info-top .heightDifferent #grid-outer {
+.panel-top.periodicTableHeightConstrained #grid-outer {
   height: calc(100% - 2px);
 }
+
 
 // GRID \\
 // Main grid

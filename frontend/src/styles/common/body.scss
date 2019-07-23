@@ -5,13 +5,13 @@
   margin-right: $body-margin;
 }
 
-.info-top #display {
+.panel-top #display {
   display: grid;
   grid-template-rows: max-content auto;
   // grid-row-gap: $spacing;
 }
 
-.info-side #display {
+.panel-side #display {
   display: grid;
   grid-template-columns: max-content auto;
   grid-column-gap: $spacing;

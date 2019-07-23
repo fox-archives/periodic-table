@@ -19,12 +19,12 @@
   // The following change how the shadow and background-color change places, depending on the layout
   // There are four possibilities, as shown below
 
-  // Add shadow, depending on if .info-side or .info-top
-  .info-side .heightDifferent {
+  // Add shadow, depending on if .panel-side or .panel-top
+  .panel-side .heightDifferent {
     @include shadow('#grid', $hasShadow, $shadow, $shadowHover);
   }
 
-  .info-top .heightDifferent {
+  .panel-top .heightDifferent {
     @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
     #grid-outer,
     #grid-container {
@@ -33,12 +33,12 @@
   }
 
   // Add shadow to #grid-container-outer (rather than #grid) for all .heightSame
-  .info-side .heightSame {
+  .panel-side .heightSame {
     @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
   }
 
   // Recall that the shadow does not show properly on #grid-container when there are scrollbars
-  .info-top .heightSame {
+  .panel-top .heightSame {
     @include shadow('#grid-container-outer', $hasShadow, $shadow, $shadowHover);
   }
 }

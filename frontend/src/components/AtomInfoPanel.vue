@@ -20,7 +20,7 @@ export default {
 @import '~@/styles/variables';
 
 // INFO SIDE
-.info-side #panel {
+.panel-side #panel {
   display: grid;
   grid-template-columns: 17vw;
   grid-template-rows: 17vw auto;
@@ -29,7 +29,7 @@ export default {
 }
 
 // INFO TOP
-.info-top #panel {
+.panel-top #panel {
   display: grid;
   grid-template-columns: 20vw auto;
   grid-template-rows: 20vw;

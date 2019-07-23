@@ -1,4 +1,4 @@
-// BOTH INFO-SIDE AND INFO-TOP
+// BOTH panel-side AND panel-top
 .atom-info-wrapper {
   position: relative;
   width: 100%;
@@ -31,23 +31,23 @@
   font-family: latoregular, Arial, 'sans-serif';
 }
 
-// INFO-SIDE
-.info-side .atom-info-inner {
+// panel-side
+.panel-side .atom-info-inner {
   display: flex;
   flex-direction: column;
   padding: 5px 5px 0 5px;
   box-sizing: content-box;
 }
 
-.info-side .atom-stat {
+.panel-side .atom-stat {
   background-color: $oc-gray-2;
   border-radius: $border-radius-small;
   margin: 0 5px 5px 0;
   padding: 3px 0 3px 0;
 }
 
-// INFO-TOP
-.info-top .atom-info-inner {
+// panel-top
+.panel-top .atom-info-inner {
   display: grid;
   grid-column-gap: 0.5vw;
   grid-row-gap: 0.5vw;
@@ -59,13 +59,13 @@
   height: 100%;
 }
 
-.info-top .atom-stat {
+.panel-top .atom-stat {
   display: flex;
   background-color: $oc-gray-2;
   border-radius: $border-radius-small;
   margin: 2px;
 }
 
-.info-top .atom-info-inner {
+.panel-top .atom-info-inner {
   padding: 5px;
 }

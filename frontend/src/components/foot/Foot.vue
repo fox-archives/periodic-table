@@ -1,6 +1,6 @@
 <template>
   <footer id="footer">
-    <p id="name-lg">© 2018 Edwin Kofler</p>
+    <p id="name-lg">© 2019 Edwin Kofler</p>
     <p id="name-md">© E. Kofler</p>
     <p id="name-sm">©</p>
     <a href="#">About</a>

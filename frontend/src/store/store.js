@@ -47,11 +47,10 @@ export default new Vuex.Store({
     // Changeable options
     options: {
       themeType: 'light-def',
-      infoLocationType: 'info-auto',
-      infoLocationTypeIsAuto: true,
+      panelLayout: '',
       blurType: 'no-blur',
 
-      contentState: ''
+      periodicTableHeightLayoutState: ''
     },
   },
   mutations: {
@@ -136,7 +135,7 @@ export default new Vuex.Store({
     // Purpose: To replace the state options with new ones
     // @param #object 'payload' contains properties:
     //   (req) .themeType #String  The theme that is active
-    //   (opt) .infoLocationType #String  Location of element information box (the thing that gets changed on element hover etc.)
+    //   (opt) .panelLayout #String  Location of element information box (the thing that gets changed on element hover etc.)
     //   (opt) Any other properties of options
     setOptions: function(state, newProperties) {
       // Payload contains an object containing properties

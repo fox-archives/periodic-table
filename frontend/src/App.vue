@@ -1,5 +1,5 @@
 <template>
-  <div id="content" :class="[options.themeType, options.infoLocationType]">
+  <div id="content" :class="[options.themeType, options.panelLayout]">
     <navigation />
     <router-view />
     <foot />
