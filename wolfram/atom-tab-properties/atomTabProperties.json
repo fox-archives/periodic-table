@@ -1,56 +1,6 @@
 [
 	{
-		"Brinel Hardness":"N \/ A",
-		"Bulk Modulus":"N \/ A",
-		"Density":"0.0899",
-		"Liquid Density":"Unknown",
-		"Mohs Hardness":"N \/ A",
-		"Molar Volume":"0.0112125",
-		"Poisson Ratio":"N \/ A",
-		"Shear Modulus":"N \/ A",
-		"Sound Speed":"1270",
-		"Thermal Conductivity":"0.1805",
-		"Thermal Expansion":"N \/ A",
-		"Vickers Hardness":"N \/ A",
-		"Young Modulus":"N \/ A",
-		"Absolute Boiling Point":"20.28",
-		"Absolute Melting Point":"14.01",
-		"Critical Pressure":"1.293",
-		"Critical Temperature":"32.97",
-		"Fusion Heat":"0.558",
-		"Phase":"EntityClass[Element, Gas]",
-		"SpecificHeat":"14300",
-		"Vaporization Heat":"0.452",
-		"Color":"Colorless",
-		"Electrical Conductivity":"Unknown",
-		"Electrical Type":"Unknown",
-		"Magnetic Type":"EntityClass[Element, Diamagnetic]",
-		"Mass Magnetic Susceptibility":"(0.0000000248)",
-		"Molar Magnetic Susceptibility":"(0.00000000004999)",
-		"Resistivity":"N \/ A",
-		"Volume Magnetic Susceptibility":"(0.00000000223)",
-		"Electron Affinity":"72.8",
-		"Electronegativity":"2.2",
-		"Gas Atomic Multiplicities":"2",
-		"Valence":"1",
-		"Crust Abundance":"0.0015",
-		"Human Abundance":"0.1",
-		"Meteorite Abundance":"0.024",
-		"Ocean Abundance":"0.11",
-		"Solar Abundance":"0.75",
-		"Universe Abundance":"0.75",
-		"Atomic Radius":"53",
-		"Covalent Radius":"31",
-		"Electron Configuration":"{{1}}",
-		"Electron Configuration String":"1s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{1}",
-		"Ionization Energies":[
-			"1312.0"
-		],
-		"Van Der Waals Radius":"120"
-	},
-	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"0.1785",
 		"Liquid Density":"Unknown",
@@ -88,20 +38,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.0000000000072",
 		"Solar Abundance":"0.23",
-		"Universe Abundance":"0.23",
-		"Atomic Radius":"31",
-		"Covalent Radius":"28",
-		"Electron Configuration":"{{2}}",
-		"Electron Configuration String":"1s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2}",
-		"Ionization Energies":[
-			"2372.3",
-			"5250.5"
-		],
-		"Van Der Waals Radius":"140"
+		"Universe Abundance":"0.23"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"11",
 		"Density":"535",
 		"Liquid Density":"512",
@@ -139,21 +79,10 @@
 		"Meteorite Abundance":"0.0000017",
 		"Ocean Abundance":"0.00000018",
 		"Solar Abundance":"0.00000000006",
-		"Universe Abundance":"0.000000006",
-		"Atomic Radius":"167",
-		"Covalent Radius":"128",
-		"Electron Configuration":"{{2}, {1}}",
-		"Electron Configuration String":"[He] 2s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 1}",
-		"Ionization Energies":[
-			"520.2",
-			"7298.1",
-			"11815.0"
-		],
-		"Van Der Waals Radius":"182"
+		"Universe Abundance":"0.000000006"
 	},
 	{
-		"Brinel Hardness":"600",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"130",
 		"Density":"1848",
 		"Liquid Density":"1690",
@@ -191,22 +120,10 @@
 		"Meteorite Abundance":"0.000000029",
 		"Ocean Abundance":"0.0000000000006",
 		"Solar Abundance":"0.0000000001",
-		"Universe Abundance":"0.000000001",
-		"Atomic Radius":"112",
-		"Covalent Radius":"96",
-		"Electron Configuration":"{{2}, {2}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 2}",
-		"Ionization Energies":[
-			"899.5",
-			"1757.1",
-			"14848.7",
-			"21006.6"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"320",
 		"Density":"2460",
 		"Liquid Density":"2080",
@@ -244,23 +161,10 @@
 		"Meteorite Abundance":"0.0000016",
 		"Ocean Abundance":"0.0000044",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.000000001",
-		"Atomic Radius":"87",
-		"Covalent Radius":"85",
-		"Electron Configuration":"{{2}, {2, 1}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> 2p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 3}",
-		"Ionization Energies":[
-			"800.6",
-			"2427.1",
-			"3659.7",
-			"25025.8",
-			"32826.7"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"33",
 		"Density":"2260",
 		"Liquid Density":"Unknown",
@@ -298,24 +202,10 @@
 		"Meteorite Abundance":"0.015",
 		"Ocean Abundance":"0.000028",
 		"Solar Abundance":"0.003",
-		"Universe Abundance":"0.005",
-		"Atomic Radius":"67",
-		"Covalent Radius":"76",
-		"Electron Configuration":"{{2}, {2, 2}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> 2p<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 4}",
-		"Ionization Energies":[
-			"1086.5",
-			"2352.6",
-			"4620.5",
-			"6222.7",
-			"37831",
-			"47277.0"
-		],
-		"Van Der Waals Radius":"170"
+		"Universe Abundance":"0.005"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.251",
 		"Liquid Density":"Unknown",
@@ -353,25 +243,10 @@
 		"Meteorite Abundance":"0.0014",
 		"Ocean Abundance":"0.0000005",
 		"Solar Abundance":"0.001",
-		"Universe Abundance":"0.001",
-		"Atomic Radius":"56",
-		"Covalent Radius":"71",
-		"Electron Configuration":"{{2}, {2, 3}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> 2p<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 5}",
-		"Ionization Energies":[
-			"1402.3",
-			"2856",
-			"4578.1",
-			"7475.0",
-			"9444.9",
-			"53266.6",
-			"64360"
-		],
-		"Van Der Waals Radius":"155"
+		"Universe Abundance":"0.001"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.429",
 		"Liquid Density":"Unknown",
@@ -409,26 +284,10 @@
 		"Meteorite Abundance":"0.4",
 		"Ocean Abundance":"0.86",
 		"Solar Abundance":"0.009",
-		"Universe Abundance":"0.01",
-		"Atomic Radius":"48",
-		"Covalent Radius":"66",
-		"Electron Configuration":"{{2}, {2, 4}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> 2p<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 6}",
-		"Ionization Energies":[
-			"1313.9",
-			"3388.3",
-			"5300.5",
-			"7469.2",
-			"10989.5",
-			"13326.5",
-			"71330",
-			"84078.0"
-		],
-		"Van Der Waals Radius":"152"
+		"Universe Abundance":"0.01"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.696",
 		"Liquid Density":"Unknown",
@@ -466,27 +325,10 @@
 		"Meteorite Abundance":"0.000087",
 		"Ocean Abundance":"0.0000013",
 		"Solar Abundance":"0.0000005",
-		"Universe Abundance":"0.0000004",
-		"Atomic Radius":"42",
-		"Covalent Radius":"57",
-		"Electron Configuration":"{{2}, {2, 5}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> 2p<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 7}",
-		"Ionization Energies":[
-			"1681.0",
-			"3374.2",
-			"6050.4",
-			"8407.7",
-			"11022.7",
-			"15164.1",
-			"17868",
-			"92038.1",
-			"106434.3"
-		],
-		"Van Der Waals Radius":"147"
+		"Universe Abundance":"0.0000004"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"0.9",
 		"Liquid Density":"Unknown",
@@ -524,28 +366,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.00000000012",
 		"Solar Abundance":"0.001",
-		"Universe Abundance":"0.0013",
-		"Atomic Radius":"38",
-		"Covalent Radius":"58",
-		"Electron Configuration":"{{2}, {2, 6}}",
-		"Electron Configuration String":"[He] 2s<sup>2<\/sup> 2p<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8}",
-		"Ionization Energies":[
-			"2080.7",
-			"3952.3",
-			"6122",
-			"9371",
-			"12177",
-			"15238",
-			"19999.0",
-			"23069.5",
-			"115379.5",
-			"131432"
-		],
-		"Van Der Waals Radius":"154"
+		"Universe Abundance":"0.0013"
 	},
 	{
-		"Brinel Hardness":"0.69",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"6.3",
 		"Density":"968",
 		"Liquid Density":"927",
@@ -583,28 +407,10 @@
 		"Meteorite Abundance":"0.0055",
 		"Ocean Abundance":"0.011",
 		"Solar Abundance":"0.00004",
-		"Universe Abundance":"0.00002",
-		"Atomic Radius":"190",
-		"Covalent Radius":"166",
-		"Electron Configuration":"{{2}, {2, 6}, {1}}",
-		"Electron Configuration String":"[Ne] 3s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 1}",
-		"Ionization Energies":[
-			"495.8",
-			"4562",
-			"6910.3",
-			"9543",
-			"13354",
-			"16613",
-			"20117",
-			"25496",
-			"28932",
-			"141362"
-		],
-		"Van Der Waals Radius":"227"
+		"Universe Abundance":"0.00002"
 	},
 	{
-		"Brinel Hardness":"260",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"45",
 		"Density":"1738",
 		"Liquid Density":"1584",
@@ -642,28 +448,10 @@
 		"Meteorite Abundance":"0.12",
 		"Ocean Abundance":"0.0013",
 		"Solar Abundance":"0.0007",
-		"Universe Abundance":"0.00059",
-		"Atomic Radius":"145",
-		"Covalent Radius":"141",
-		"Electron Configuration":"{{2}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 2}",
-		"Ionization Energies":[
-			"737.7",
-			"1450.7",
-			"7732.7",
-			"10542.5",
-			"13630",
-			"18020",
-			"21711",
-			"25661",
-			"31653",
-			"35458"
-		],
-		"Van Der Waals Radius":"173"
+		"Universe Abundance":"0.00059"
 	},
 	{
-		"Brinel Hardness":"245",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"76",
 		"Density":"2700",
 		"Liquid Density":"2375",
@@ -701,28 +489,10 @@
 		"Meteorite Abundance":"0.009",
 		"Ocean Abundance":"0.000000005",
 		"Solar Abundance":"0.00006",
-		"Universe Abundance":"0.00005",
-		"Atomic Radius":"118",
-		"Covalent Radius":"121",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 1}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> 3p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 3}",
-		"Ionization Energies":[
-			"577.5",
-			"1816.7",
-			"2744.8",
-			"11577",
-			"14842",
-			"18379",
-			"23326",
-			"27465",
-			"31853",
-			"38473"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00005"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"100",
 		"Density":"2330",
 		"Liquid Density":"2570",
@@ -760,28 +530,10 @@
 		"Meteorite Abundance":"0.14",
 		"Ocean Abundance":"0.000001",
 		"Solar Abundance":"0.0009",
-		"Universe Abundance":"0.0007",
-		"Atomic Radius":"111",
-		"Covalent Radius":"111",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 2}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> 3p<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 4}",
-		"Ionization Energies":[
-			"786.5",
-			"1577.1",
-			"3231.6",
-			"4355.5",
-			"16091",
-			"19805",
-			"23780",
-			"29287",
-			"33878",
-			"38726"
-		],
-		"Van Der Waals Radius":"210"
+		"Universe Abundance":"0.0007"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"11",
 		"Density":"1823",
 		"Liquid Density":"Unknown",
@@ -819,28 +571,10 @@
 		"Meteorite Abundance":"0.0011",
 		"Ocean Abundance":"0.00000007",
 		"Solar Abundance":"0.000007",
-		"Universe Abundance":"0.000007",
-		"Atomic Radius":"98",
-		"Covalent Radius":"107",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 3}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> 3p<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 5}",
-		"Ionization Energies":[
-			"1011.8",
-			"1907",
-			"2914.1",
-			"4963.6",
-			"6273.9",
-			"21267",
-			"25431",
-			"29872",
-			"35905",
-			"40950"
-		],
-		"Van Der Waals Radius":"180"
+		"Universe Abundance":"0.000007"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"7.7",
 		"Density":"1960",
 		"Liquid Density":"1819",
@@ -878,28 +612,10 @@
 		"Meteorite Abundance":"0.04",
 		"Ocean Abundance":"0.00093",
 		"Solar Abundance":"0.0004",
-		"Universe Abundance":"0.0005",
-		"Atomic Radius":"87",
-		"Covalent Radius":"105",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 4}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> 3p<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 6}",
-		"Ionization Energies":[
-			"999.6",
-			"2252",
-			"3357",
-			"4556",
-			"7004.3",
-			"8495.8",
-			"27107",
-			"31719",
-			"36621",
-			"43177"
-		],
-		"Van Der Waals Radius":"180"
+		"Universe Abundance":"0.0005"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"1.1",
 		"Density":"3.214",
 		"Liquid Density":"Unknown",
@@ -937,28 +653,10 @@
 		"Meteorite Abundance":"0.00037",
 		"Ocean Abundance":"0.02",
 		"Solar Abundance":"0.000008",
-		"Universe Abundance":"0.000001",
-		"Atomic Radius":"79",
-		"Covalent Radius":"102",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 5}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> 3p<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 7}",
-		"Ionization Energies":[
-			"1251.2",
-			"2298",
-			"3822",
-			"5158.6",
-			"6542",
-			"9362",
-			"11018",
-			"33604",
-			"38600",
-			"43961"
-		],
-		"Van Der Waals Radius":"175"
+		"Universe Abundance":"0.000001"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.784",
 		"Liquid Density":"Unknown",
@@ -996,28 +694,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.00000045",
 		"Solar Abundance":"0.00007",
-		"Universe Abundance":"0.0002",
-		"Atomic Radius":"71",
-		"Covalent Radius":"106",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6}}",
-		"Electron Configuration String":"[Ne] 3s<sup>2<\/sup> 3p<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 8}",
-		"Ionization Energies":[
-			"1520.6",
-			"2665.8",
-			"3931",
-			"5771",
-			"7238",
-			"8781",
-			"11995",
-			"13842",
-			"40760",
-			"46186"
-		],
-		"Van Der Waals Radius":"188"
+		"Universe Abundance":"0.0002"
 	},
 	{
-		"Brinel Hardness":"0.363",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"3.1",
 		"Density":"856",
 		"Liquid Density":"828",
@@ -1055,28 +735,10 @@
 		"Meteorite Abundance":"0.0007",
 		"Ocean Abundance":"0.00042",
 		"Solar Abundance":"0.000004",
-		"Universe Abundance":"0.000003",
-		"Atomic Radius":"243",
-		"Covalent Radius":"203",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6}, {1}}",
-		"Electron Configuration String":"[Ar] 4s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 8, 1}",
-		"Ionization Energies":[
-			"418.8",
-			"3052",
-			"4420",
-			"5877",
-			"7975",
-			"9590",
-			"11343",
-			"14944",
-			"16963.7",
-			"48610"
-		],
-		"Van Der Waals Radius":"275"
+		"Universe Abundance":"0.000003"
 	},
 	{
-		"Brinel Hardness":"167",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"17",
 		"Density":"1550",
 		"Liquid Density":"1378",
@@ -1114,29 +776,10 @@
 		"Meteorite Abundance":"0.011",
 		"Ocean Abundance":"0.0000042",
 		"Solar Abundance":"0.00007",
-		"Universe Abundance":"0.00007",
-		"Atomic Radius":"194",
-		"Covalent Radius":"176",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 8, 2}",
-		"Ionization Energies":[
-			"589.8",
-			"1145.4",
-			"4912.4",
-			"6491",
-			"8153",
-			"10496",
-			"12270",
-			"14206",
-			"18191",
-			"20385",
-			"57110"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00007"
 	},
 	{
-		"Brinel Hardness":"750",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"57",
 		"Density":"2985",
 		"Liquid Density":"2800",
@@ -1174,39 +817,10 @@
 		"Meteorite Abundance":"0.0000064",
 		"Ocean Abundance":"0.0000000000015",
 		"Solar Abundance":"0.00000004",
-		"Universe Abundance":"0.00000003",
-		"Atomic Radius":"184",
-		"Covalent Radius":"170",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 9, 2}",
-		"Ionization Energies":[
-			"633.1",
-			"1235.0",
-			"2388.6",
-			"7090.6",
-			"8843",
-			"10679",
-			"13310",
-			"15250",
-			"17370",
-			"21726",
-			"24102",
-			"66320",
-			"73010",
-			"80160",
-			"89490",
-			"97400",
-			"105600",
-			"117000",
-			"124270",
-			"547530",
-			"582163"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000003"
 	},
 	{
-		"Brinel Hardness":"715",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"110",
 		"Density":"4507",
 		"Liquid Density":"4110",
@@ -1244,39 +858,10 @@
 		"Meteorite Abundance":"0.00054",
 		"Ocean Abundance":"0.000000001",
 		"Solar Abundance":"0.000004",
-		"Universe Abundance":"0.000003",
-		"Atomic Radius":"176",
-		"Covalent Radius":"160",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 2}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 10, 2}",
-		"Ionization Energies":[
-			"658.8",
-			"1309.8",
-			"2652.5",
-			"4174.6",
-			"9581",
-			"11533",
-			"13590",
-			"16440",
-			"18530",
-			"20833",
-			"25575",
-			"28125",
-			"76015",
-			"83280",
-			"90880",
-			"100700",
-			"109100",
-			"117800",
-			"129900",
-			"137530",
-			"602930"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000003"
 	},
 	{
-		"Brinel Hardness":"628",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"160",
 		"Density":"6110",
 		"Liquid Density":"5500",
@@ -1314,39 +899,10 @@
 		"Meteorite Abundance":"0.000061",
 		"Ocean Abundance":"0.0000000015",
 		"Solar Abundance":"0.0000004",
-		"Universe Abundance":"0.000001",
-		"Atomic Radius":"171",
-		"Covalent Radius":"153",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 3}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 11, 2}",
-		"Ionization Energies":[
-			"650.9",
-			"1414",
-			"2830",
-			"4507",
-			"6298.7",
-			"12363",
-			"14530",
-			"16730",
-			"19860",
-			"22240",
-			"24670",
-			"29730",
-			"32446",
-			"86450",
-			"94170",
-			"102300",
-			"112700",
-			"121600",
-			"130700",
-			"143400",
-			"151440"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000001"
 	},
 	{
-		"Brinel Hardness":"1120",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"160",
 		"Density":"7190",
 		"Liquid Density":"6300",
@@ -1384,39 +940,10 @@
 		"Meteorite Abundance":"0.003",
 		"Ocean Abundance":"0.0000000006",
 		"Solar Abundance":"0.00002",
-		"Universe Abundance":"0.000015",
-		"Atomic Radius":"166",
-		"Covalent Radius":"139",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 5}, {1}}",
-		"Electron Configuration String":"[Ar] 4s<sup>1<\/sup> 3d<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 13, 1}",
-		"Ionization Energies":[
-			"652.9",
-			"1590.6",
-			"2987",
-			"4743",
-			"6702",
-			"8744.9",
-			"15455",
-			"17820",
-			"20190",
-			"23580",
-			"26130",
-			"28750",
-			"34230",
-			"37066",
-			"97510",
-			"105800",
-			"114300",
-			"125300",
-			"134700",
-			"144300",
-			"157700"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000015"
 	},
 	{
-		"Brinel Hardness":"196",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"120",
 		"Density":"7470",
 		"Liquid Density":"5950",
@@ -1454,39 +981,10 @@
 		"Meteorite Abundance":"0.0027",
 		"Ocean Abundance":"0.000000002",
 		"Solar Abundance":"0.00001",
-		"Universe Abundance":"0.000008",
-		"Atomic Radius":"161",
-		"Covalent Radius":"139",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 5}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 13, 2}",
-		"Ionization Energies":[
-			"717.3",
-			"1509.0",
-			"3248",
-			"4940",
-			"6990",
-			"9220",
-			"11500",
-			"18770",
-			"21400",
-			"23960",
-			"27590",
-			"30330",
-			"33150",
-			"38880",
-			"41987",
-			"109480",
-			"118100",
-			"127100",
-			"138600",
-			"148500",
-			"158600"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000008"
 	},
 	{
-		"Brinel Hardness":"490",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"170",
 		"Density":"7874",
 		"Liquid Density":"6980",
@@ -1524,39 +1022,10 @@
 		"Meteorite Abundance":"0.22",
 		"Ocean Abundance":"0.000000003",
 		"Solar Abundance":"0.001",
-		"Universe Abundance":"0.0011",
-		"Atomic Radius":"156",
-		"Covalent Radius":"132",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 6}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 14, 2}",
-		"Ionization Energies":[
-			"762.5",
-			"1561.9",
-			"2957",
-			"5290",
-			"7240",
-			"9560",
-			"12060",
-			"14580",
-			"22540",
-			"25290",
-			"28000",
-			"31920",
-			"34830",
-			"37840",
-			"44100",
-			"47206",
-			"122200",
-			"131000",
-			"140500",
-			"152600",
-			"163000"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0011"
 	},
 	{
-		"Brinel Hardness":"700",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"180",
 		"Density":"8900",
 		"Liquid Density":"7750",
@@ -1594,39 +1063,10 @@
 		"Meteorite Abundance":"0.00059",
 		"Ocean Abundance":"0.00000000008",
 		"Solar Abundance":"0.000004",
-		"Universe Abundance":"0.000003",
-		"Atomic Radius":"152",
-		"Covalent Radius":"126",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 7}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>7<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 15, 2}",
-		"Ionization Energies":[
-			"760.4",
-			"1648",
-			"3232",
-			"4950",
-			"7670",
-			"9840",
-			"12440",
-			"15230",
-			"17959",
-			"26570",
-			"29400",
-			"32400",
-			"36600",
-			"39700",
-			"42800",
-			"49396",
-			"52737",
-			"134810",
-			"145170",
-			"154700",
-			"167400"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000003"
 	},
 	{
-		"Brinel Hardness":"700",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"180",
 		"Density":"8908",
 		"Liquid Density":"7810",
@@ -1664,39 +1104,10 @@
 		"Meteorite Abundance":"0.013",
 		"Ocean Abundance":"0.000000002",
 		"Solar Abundance":"0.00008",
-		"Universe Abundance":"0.00006",
-		"Atomic Radius":"149",
-		"Covalent Radius":"124",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 8}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>8<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 16, 2}",
-		"Ionization Energies":[
-			"737.1",
-			"1753.0",
-			"3395",
-			"5300",
-			"7339",
-			"10400",
-			"12800",
-			"15600",
-			"18600",
-			"21670",
-			"30970",
-			"34000",
-			"37100",
-			"41500",
-			"44800",
-			"48100",
-			"55101",
-			"58570",
-			"148700",
-			"159000",
-			"169400"
-		],
-		"Van Der Waals Radius":"163"
+		"Universe Abundance":"0.00006"
 	},
 	{
-		"Brinel Hardness":"874",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"140",
 		"Density":"8960",
 		"Liquid Density":"8020",
@@ -1734,39 +1145,10 @@
 		"Meteorite Abundance":"0.00011",
 		"Ocean Abundance":"0.000000003",
 		"Solar Abundance":"0.0000007",
-		"Universe Abundance":"0.00000006",
-		"Atomic Radius":"145",
-		"Covalent Radius":"132",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {1}}",
-		"Electron Configuration String":"[Ar] 4s<sup>1<\/sup> 3d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 1}",
-		"Ionization Energies":[
-			"745.5",
-			"1957.9",
-			"3555",
-			"5536",
-			"7700",
-			"9900",
-			"13400",
-			"16000",
-			"19200",
-			"22400",
-			"25600",
-			"35600",
-			"38700",
-			"42000",
-			"46700",
-			"50200",
-			"53700",
-			"61100",
-			"64702",
-			"163700",
-			"174100"
-		],
-		"Van Der Waals Radius":"140"
+		"Universe Abundance":"0.00000006"
 	},
 	{
-		"Brinel Hardness":"412",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"70",
 		"Density":"7140",
 		"Liquid Density":"6570",
@@ -1804,39 +1186,10 @@
 		"Meteorite Abundance":"0.00018",
 		"Ocean Abundance":"0.000000005",
 		"Solar Abundance":"0.000002",
-		"Universe Abundance":"0.0000003",
-		"Atomic Radius":"142",
-		"Covalent Radius":"122",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 2}",
-		"Ionization Energies":[
-			"906.4",
-			"1733.3",
-			"3833",
-			"5731",
-			"7970",
-			"10400",
-			"12900",
-			"16800",
-			"19600",
-			"23000",
-			"26400",
-			"29990",
-			"40490",
-			"43800",
-			"47300",
-			"52300",
-			"55900",
-			"59700",
-			"67300",
-			"71200",
-			"179100"
-		],
-		"Van Der Waals Radius":"139"
+		"Universe Abundance":"0.0000003"
 	},
 	{
-		"Brinel Hardness":"60",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"5904",
 		"Liquid Density":"6095",
@@ -1874,22 +1227,10 @@
 		"Meteorite Abundance":"0.0000076",
 		"Ocean Abundance":"0.00000000003",
 		"Solar Abundance":"0.00000004",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"136",
-		"Covalent Radius":"122",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 1}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> 4p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 3}",
-		"Ionization Energies":[
-			"578.8",
-			"1979.3",
-			"2963",
-			"6180"
-		],
-		"Van Der Waals Radius":"187"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"7273.4",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"5323",
 		"Liquid Density":"5600",
@@ -1927,23 +1268,10 @@
 		"Meteorite Abundance":"0.000021",
 		"Ocean Abundance":"0.00000000006",
 		"Solar Abundance":"0.0000002",
-		"Universe Abundance":"0.0000002",
-		"Atomic Radius":"125",
-		"Covalent Radius":"120",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 2}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> 4p<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 4}",
-		"Ionization Energies":[
-			"762",
-			"1537.5",
-			"3302.1",
-			"4411",
-			"9020"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000002"
 	},
 	{
-		"Brinel Hardness":"1440",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"22",
 		"Density":"5727",
 		"Liquid Density":"5220",
@@ -1981,24 +1309,10 @@
 		"Meteorite Abundance":"0.0000018",
 		"Ocean Abundance":"0.0000000023",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.000000008",
-		"Atomic Radius":"114",
-		"Covalent Radius":"119",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 3}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> 4p<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 5}",
-		"Ionization Energies":[
-			"947.0",
-			"1798",
-			"2735",
-			"4837",
-			"6043",
-			"12310"
-		],
-		"Van Der Waals Radius":"185"
+		"Universe Abundance":"0.000000008"
 	},
 	{
-		"Brinel Hardness":"736",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"8.3",
 		"Density":"4819",
 		"Liquid Density":"3990",
@@ -2036,25 +1350,10 @@
 		"Meteorite Abundance":"0.000013",
 		"Ocean Abundance":"0.00000000045",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.00000003",
-		"Atomic Radius":"103",
-		"Covalent Radius":"120",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 4}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> 4p<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 6}",
-		"Ionization Energies":[
-			"941.0",
-			"2045",
-			"2973.7",
-			"4144",
-			"6590",
-			"7880",
-			"14990"
-		],
-		"Van Der Waals Radius":"190"
+		"Universe Abundance":"0.00000003"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"1.9",
 		"Density":"3120",
 		"Liquid Density":"3120",
@@ -2092,26 +1391,10 @@
 		"Meteorite Abundance":"0.0000012",
 		"Ocean Abundance":"0.000066",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.000000007",
-		"Atomic Radius":"94",
-		"Covalent Radius":"120",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 5}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> 4p<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 7}",
-		"Ionization Energies":[
-			"1139.9",
-			"2103",
-			"3470",
-			"4560",
-			"5760",
-			"8550",
-			"9940",
-			"18600"
-		],
-		"Van Der Waals Radius":"185"
+		"Universe Abundance":"0.000000007"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"3.75",
 		"Liquid Density":"Unknown",
@@ -2149,39 +1432,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.00000000021",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.00000004",
-		"Atomic Radius":"87",
-		"Covalent Radius":"116",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6}}",
-		"Electron Configuration String":"[Ar] 4s<sup>2<\/sup> 3d<sup>10<\/sup> 4p<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 8}",
-		"Ionization Energies":[
-			"1350.8",
-			"2350.4",
-			"3565",
-			"5070",
-			"6240",
-			"7570",
-			"10710",
-			"12138",
-			"22274",
-			"25880",
-			"29700",
-			"33800",
-			"37700",
-			"43100",
-			"47500",
-			"52200",
-			"57100",
-			"61800",
-			"75800",
-			"80400",
-			"85300"
-		],
-		"Van Der Waals Radius":"202"
+		"Universe Abundance":"0.00000004"
 	},
 	{
-		"Brinel Hardness":"0.216",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"2.5",
 		"Density":"1532",
 		"Liquid Density":"1460",
@@ -2219,28 +1473,10 @@
 		"Meteorite Abundance":"0.0000032",
 		"Ocean Abundance":"0.00000012",
 		"Solar Abundance":"0.00000003",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"265",
-		"Covalent Radius":"220",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6}, {1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 8, 1}",
-		"Ionization Energies":[
-			"403.0",
-			"2633",
-			"3860",
-			"5080",
-			"6850",
-			"8140",
-			"9570",
-			"13120",
-			"14500",
-			"26740"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"2630",
 		"Liquid Density":"2375",
@@ -2278,28 +1514,10 @@
 		"Meteorite Abundance":"0.0000086",
 		"Ocean Abundance":"0.000008",
 		"Solar Abundance":"0.00000005",
-		"Universe Abundance":"0.00000004",
-		"Atomic Radius":"219",
-		"Covalent Radius":"195",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 8, 2}",
-		"Ionization Energies":[
-			"549.5",
-			"1064.2",
-			"4138",
-			"5500",
-			"6910",
-			"8760",
-			"10230",
-			"11800",
-			"15600",
-			"17100"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000004"
 	},
 	{
-		"Brinel Hardness":"588",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"41",
 		"Density":"4472",
 		"Liquid Density":"4240",
@@ -2337,28 +1555,10 @@
 		"Meteorite Abundance":"0.0000019",
 		"Ocean Abundance":"0.000000000013",
 		"Solar Abundance":"0.0000000099",
-		"Universe Abundance":"0.000000007",
-		"Atomic Radius":"212",
-		"Covalent Radius":"190",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 9, 2}",
-		"Ionization Energies":[
-			"600",
-			"1180",
-			"1980",
-			"5847",
-			"7430",
-			"8970",
-			"11190",
-			"12450",
-			"14110",
-			"18400"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000007"
 	},
 	{
-		"Brinel Hardness":"650",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"6511",
 		"Liquid Density":"5800",
@@ -2396,24 +1596,10 @@
 		"Meteorite Abundance":"0.0000066",
 		"Ocean Abundance":"0.000000000026",
 		"Solar Abundance":"0.00000004",
-		"Universe Abundance":"0.00000005",
-		"Atomic Radius":"206",
-		"Covalent Radius":"175",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 2}, {2}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 10, 2}",
-		"Ionization Energies":[
-			"640.1",
-			"1270",
-			"2218",
-			"3313",
-			"7752",
-			"9500"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000005"
 	},
 	{
-		"Brinel Hardness":"736",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"170",
 		"Density":"8570",
 		"Liquid Density":"Unknown",
@@ -2451,25 +1637,10 @@
 		"Meteorite Abundance":"0.00000019",
 		"Ocean Abundance":"0.000000000001",
 		"Solar Abundance":"0.000000004",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"198",
-		"Covalent Radius":"164",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 4}, {1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>1<\/sup> 4d<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 12, 1}",
-		"Ionization Energies":[
-			"652.1",
-			"1380",
-			"2416",
-			"3700",
-			"4877",
-			"9847",
-			"12100"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"1500",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"230",
 		"Density":"10280",
 		"Liquid Density":"9330",
@@ -2507,39 +1678,10 @@
 		"Meteorite Abundance":"0.0000012",
 		"Ocean Abundance":"0.0000000099",
 		"Solar Abundance":"0.000000009",
-		"Universe Abundance":"0.000000005",
-		"Atomic Radius":"190",
-		"Covalent Radius":"154",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 5}, {1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>1<\/sup> 4d<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 13, 1}",
-		"Ionization Energies":[
-			"684.3",
-			"1560",
-			"2618",
-			"4480",
-			"5257",
-			"6640.8",
-			"12125",
-			"13860",
-			"15835",
-			"17980",
-			"20190",
-			"22219",
-			"26930",
-			"29196",
-			"52490",
-			"55000",
-			"61400",
-			"67700",
-			"74000",
-			"80400",
-			"87000"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000005"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"11500",
 		"Liquid Density":"Unknown",
@@ -2577,21 +1719,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"183",
-		"Covalent Radius":"147",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 5}, {2}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 13, 2}",
-		"Ionization Energies":[
-			"702",
-			"1470",
-			"2850"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"2160",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"220",
 		"Density":"12370",
 		"Liquid Density":"10650",
@@ -2629,21 +1760,10 @@
 		"Meteorite Abundance":"0.00000081",
 		"Ocean Abundance":"0.0000000000007",
 		"Solar Abundance":"0.000000005",
-		"Universe Abundance":"0.000000004",
-		"Atomic Radius":"178",
-		"Covalent Radius":"146",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 7}, {1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>1<\/sup> 4d<sup>7<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 15, 1}",
-		"Ionization Energies":[
-			"710.2",
-			"1620",
-			"2747"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000004"
 	},
 	{
-		"Brinel Hardness":"1100",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"380",
 		"Density":"12450",
 		"Liquid Density":"10700",
@@ -2681,21 +1801,10 @@
 		"Meteorite Abundance":"0.00000018",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.0000000006",
-		"Atomic Radius":"173",
-		"Covalent Radius":"142",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 8}, {1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>1<\/sup> 4d<sup>8<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 16, 1}",
-		"Ionization Energies":[
-			"719.7",
-			"1740",
-			"2997"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000006"
 	},
 	{
-		"Brinel Hardness":"37.2",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"180",
 		"Density":"12023",
 		"Liquid Density":"10380",
@@ -2733,21 +1842,10 @@
 		"Meteorite Abundance":"0.00000065",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"0.000000003",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"169",
-		"Covalent Radius":"139",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}}",
-		"Electron Configuration String":"[Kr] 4d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18}",
-		"Ionization Energies":[
-			"804.4",
-			"1870",
-			"3177"
-		],
-		"Van Der Waals Radius":"163"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"24.5",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"100",
 		"Density":"10490",
 		"Liquid Density":"9320",
@@ -2785,21 +1883,10 @@
 		"Meteorite Abundance":"0.00000014",
 		"Ocean Abundance":"0.0000000001",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000006",
-		"Atomic Radius":"165",
-		"Covalent Radius":"145",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>1<\/sup> 4d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 1}",
-		"Ionization Energies":[
-			"731.0",
-			"2070",
-			"3361"
-		],
-		"Van Der Waals Radius":"172"
+		"Universe Abundance":"0.0000000006"
 	},
 	{
-		"Brinel Hardness":"203",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"42",
 		"Density":"8650",
 		"Liquid Density":"7996",
@@ -2837,21 +1924,10 @@
 		"Meteorite Abundance":"0.00000044",
 		"Ocean Abundance":"0.00000000005",
 		"Solar Abundance":"0.000000006",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"161",
-		"Covalent Radius":"144",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 2}",
-		"Ionization Energies":[
-			"867.8",
-			"1631.4",
-			"3616"
-		],
-		"Van Der Waals Radius":"158"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"8.83",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"7310",
 		"Liquid Density":"7020",
@@ -2889,22 +1965,10 @@
 		"Meteorite Abundance":"0.000000044",
 		"Ocean Abundance":"0.0000000000001",
 		"Solar Abundance":"0.000000004",
-		"Universe Abundance":"0.0000000003",
-		"Atomic Radius":"156",
-		"Covalent Radius":"142",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 1}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> 5p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 3}",
-		"Ionization Energies":[
-			"558.3",
-			"1820.7",
-			"2704",
-			"5210"
-		],
-		"Van Der Waals Radius":"193"
+		"Universe Abundance":"0.0000000003"
 	},
 	{
-		"Brinel Hardness":"51",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"58",
 		"Density":"7310",
 		"Liquid Density":"6990",
@@ -2942,23 +2006,10 @@
 		"Meteorite Abundance":"0.0000012",
 		"Ocean Abundance":"0.0000000000099",
 		"Solar Abundance":"0.000000009",
-		"Universe Abundance":"0.000000004",
-		"Atomic Radius":"145",
-		"Covalent Radius":"139",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 2}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> 5p<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 4}",
-		"Ionization Energies":[
-			"708.6",
-			"1411.8",
-			"2943.0",
-			"3930.3",
-			"7456"
-		],
-		"Van Der Waals Radius":"217"
+		"Universe Abundance":"0.000000004"
 	},
 	{
-		"Brinel Hardness":"294",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"42",
 		"Density":"6697",
 		"Liquid Density":"6530",
@@ -2996,24 +2047,10 @@
 		"Meteorite Abundance":"0.00000012",
 		"Ocean Abundance":"0.0000000002",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000004",
-		"Atomic Radius":"133",
-		"Covalent Radius":"139",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 3}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> 5p<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 5}",
-		"Ionization Energies":[
-			"834",
-			"1594.9",
-			"2440",
-			"4260",
-			"5400",
-			"10400"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000004"
 	},
 	{
-		"Brinel Hardness":"180",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"64",
 		"Density":"6240",
 		"Liquid Density":"5700",
@@ -3051,25 +2088,10 @@
 		"Meteorite Abundance":"0.0000021",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.000000009",
-		"Atomic Radius":"123",
-		"Covalent Radius":"138",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 4}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> 5p<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 6}",
-		"Ionization Energies":[
-			"869.3",
-			"1790",
-			"2698",
-			"3610",
-			"5668",
-			"6820",
-			"13200"
-		],
-		"Van Der Waals Radius":"206"
+		"Universe Abundance":"0.000000009"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"7.7",
 		"Density":"4940",
 		"Liquid Density":"Unknown",
@@ -3107,21 +2129,10 @@
 		"Meteorite Abundance":"0.00000025",
 		"Ocean Abundance":"0.00000006",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.000000001",
-		"Atomic Radius":"115",
-		"Covalent Radius":"139",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 5}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> 5p<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 7}",
-		"Ionization Energies":[
-			"1008.4",
-			"1845.9",
-			"3180"
-		],
-		"Van Der Waals Radius":"198"
+		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"5.9",
 		"Liquid Density":"Unknown",
@@ -3159,21 +2170,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.000000000005",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"108",
-		"Covalent Radius":"140",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6}}",
-		"Electron Configuration String":"[Kr] 5s<sup>2<\/sup> 4d<sup>10<\/sup> 5p<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 8}",
-		"Ionization Energies":[
-			"1170.4",
-			"2046.4",
-			"3099.4"
-		],
-		"Van Der Waals Radius":"216"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"0.14",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"1.6",
 		"Density":"1879",
 		"Liquid Density":"1843",
@@ -3211,21 +2211,10 @@
 		"Meteorite Abundance":"0.00000014",
 		"Ocean Abundance":"0.0000000005",
 		"Solar Abundance":"0.000000008",
-		"Universe Abundance":"0.0000000008",
-		"Atomic Radius":"298",
-		"Covalent Radius":"244",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6}, {1}}",
-		"Electron Configuration String":"[Xe] 6s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 8, 1}",
-		"Ionization Energies":[
-			"375.7",
-			"2234.3",
-			"3400"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000008"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"9.4",
 		"Density":"3510",
 		"Liquid Density":"3338",
@@ -3263,21 +2252,13 @@
 		"Meteorite Abundance":"0.0000027",
 		"Ocean Abundance":"0.00000003",
 		"Solar Abundance":"0.0000000099",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"253",
-		"Covalent Radius":"215",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 8, 2}",
-		"Ionization Energies":[
-			"502.9",
-			"965.2",
-			"3600"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"363",
+		"decayMode":"unknown"
+	},
+	{
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"28",
 		"Density":"6146",
 		"Liquid Density":"5940",
@@ -3315,23 +2296,10 @@
 		"Meteorite Abundance":"0.00000028",
 		"Ocean Abundance":"0.0000000000034",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"207",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 5d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 18, 9, 2}",
-		"Ionization Energies":[
-			"538.1",
-			"1067",
-			"1850.3",
-			"4819",
-			"5940"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"412",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"22",
 		"Density":"6689",
 		"Liquid Density":"6550",
@@ -3369,24 +2337,10 @@
 		"Meteorite Abundance":"0.00000075",
 		"Ocean Abundance":"0.0000000000012",
 		"Solar Abundance":"0.000000004",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"204",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 1}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>1<\/sup> 5d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 19, 9, 2}",
-		"Ionization Energies":[
-			"534.4",
-			"1050",
-			"1949",
-			"3547",
-			"6325",
-			"7490"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"481",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"29",
 		"Density":"6640",
 		"Liquid Density":"6500",
@@ -3424,23 +2378,10 @@
 		"Meteorite Abundance":"0.000000099",
 		"Ocean Abundance":"0.0000000000006",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"247",
-		"Covalent Radius":"203",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 3}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 21, 8, 2}",
-		"Ionization Energies":[
-			"527",
-			"1020",
-			"2086",
-			"3761",
-			"5551"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"265",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"32",
 		"Density":"7010",
 		"Liquid Density":"6890",
@@ -3478,22 +2419,10 @@
 		"Meteorite Abundance":"0.0000005",
 		"Ocean Abundance":"0.0000000000028",
 		"Solar Abundance":"0.000000003",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"206",
-		"Covalent Radius":"201",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 4}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 22, 8, 2}",
-		"Ionization Energies":[
-			"533.1",
-			"1040",
-			"2130",
-			"3900"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"33",
 		"Density":"7264",
 		"Liquid Density":"Unknown",
@@ -3531,22 +2460,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"205",
-		"Covalent Radius":"199",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 5}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 23, 8, 2}",
-		"Ionization Energies":[
-			"540",
-			"1050",
-			"2150",
-			"3970"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"441",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"38",
 		"Density":"7353",
 		"Liquid Density":"7160",
@@ -3584,22 +2501,10 @@
 		"Meteorite Abundance":"0.00000017",
 		"Ocean Abundance":"0.00000000000045",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.000000005",
-		"Atomic Radius":"238",
-		"Covalent Radius":"198",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 6}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 24, 8, 2}",
-		"Ionization Energies":[
-			"544.5",
-			"1070",
-			"2260",
-			"3990"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000005"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"8.3",
 		"Density":"5244",
 		"Liquid Density":"5130",
@@ -3637,22 +2542,10 @@
 		"Meteorite Abundance":"0.000000059",
 		"Ocean Abundance":"0.00000000000013",
 		"Solar Abundance":"0.0000000005",
-		"Universe Abundance":"0.0000000005",
-		"Atomic Radius":"231",
-		"Covalent Radius":"198",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 7}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>7<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 25, 8, 2}",
-		"Ionization Energies":[
-			"547.1",
-			"1085",
-			"2404",
-			"4120"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"38",
 		"Density":"7901",
 		"Liquid Density":"7400",
@@ -3690,22 +2583,10 @@
 		"Meteorite Abundance":"0.00000023",
 		"Ocean Abundance":"0.0000000000007",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"233",
-		"Covalent Radius":"196",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 7}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>7<\/sup> 5d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 25, 9, 2}",
-		"Ionization Energies":[
-			"593.4",
-			"1170",
-			"1990",
-			"4250"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"677",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"38.7",
 		"Density":"8219",
 		"Liquid Density":"7650",
@@ -3743,22 +2624,10 @@
 		"Meteorite Abundance":"0.000000039",
 		"Ocean Abundance":"0.00000000000014",
 		"Solar Abundance":"0.0000000001",
-		"Universe Abundance":"0.0000000005",
-		"Atomic Radius":"225",
-		"Covalent Radius":"194",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 9}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>9<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 27, 8, 2}",
-		"Ionization Energies":[
-			"565.8",
-			"1110",
-			"2114",
-			"3839"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"500",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"41",
 		"Density":"8551",
 		"Liquid Density":"8370",
@@ -3796,22 +2665,10 @@
 		"Meteorite Abundance":"0.00000027",
 		"Ocean Abundance":"0.00000000000091",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"228",
-		"Covalent Radius":"192",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 10}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 28, 8, 2}",
-		"Ionization Energies":[
-			"573.0",
-			"1130",
-			"2200",
-			"3990"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"746",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"40",
 		"Density":"8795",
 		"Liquid Density":"8340",
@@ -3849,22 +2706,10 @@
 		"Meteorite Abundance":"0.000000059",
 		"Ocean Abundance":"0.00000000000022",
 		"Solar Abundance":"0",
-		"Universe Abundance":"0.0000000005",
-		"Atomic Radius":"226",
-		"Covalent Radius":"192",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 11}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>11<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 29, 8, 2}",
-		"Ionization Energies":[
-			"581.0",
-			"1140",
-			"2204",
-			"4100"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"814",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"44",
 		"Density":"9066",
 		"Liquid Density":"8860",
@@ -3902,22 +2747,10 @@
 		"Meteorite Abundance":"0.00000018",
 		"Ocean Abundance":"0.0000000000009",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"226",
-		"Covalent Radius":"189",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 12}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>12<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 30, 8, 2}",
-		"Ionization Energies":[
-			"589.3",
-			"1150",
-			"2194",
-			"4120"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"471",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"45",
 		"Density":"9320",
 		"Liquid Density":"8560",
@@ -3955,22 +2788,10 @@
 		"Meteorite Abundance":"0.000000029",
 		"Ocean Abundance":"0.0000000000002",
 		"Solar Abundance":"0.0000000002",
-		"Universe Abundance":"0.0000000001",
-		"Atomic Radius":"222",
-		"Covalent Radius":"190",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 13}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>13<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 31, 8, 2}",
-		"Ionization Energies":[
-			"596.7",
-			"1160",
-			"2285",
-			"4120"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000001"
 	},
 	{
-		"Brinel Hardness":"343",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"31",
 		"Density":"6570",
 		"Liquid Density":"6210",
@@ -4008,22 +2829,10 @@
 		"Meteorite Abundance":"0.00000018",
 		"Ocean Abundance":"0.0000000000008",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"222",
-		"Covalent Radius":"187",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 8, 2}",
-		"Ionization Energies":[
-			"603.4",
-			"1174.8",
-			"2417",
-			"4203"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"893",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"48",
 		"Density":"9841",
 		"Liquid Density":"9300",
@@ -4061,23 +2870,10 @@
 		"Meteorite Abundance":"0.000000029",
 		"Ocean Abundance":"0.00000000000015",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000001",
-		"Atomic Radius":"217",
-		"Covalent Radius":"187",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 9, 2}",
-		"Ionization Energies":[
-			"523.5",
-			"1340",
-			"2022.3",
-			"4370",
-			"6445"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000001"
 	},
 	{
-		"Brinel Hardness":"1700",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"110",
 		"Density":"13310",
 		"Liquid Density":"12000",
@@ -4115,22 +2911,10 @@
 		"Meteorite Abundance":"0.00000017",
 		"Ocean Abundance":"0.000000000008",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000007",
-		"Atomic Radius":"208",
-		"Covalent Radius":"175",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 2}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 10, 2}",
-		"Ionization Energies":[
-			"658.5",
-			"1440",
-			"2250",
-			"3216"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000007"
 	},
 	{
-		"Brinel Hardness":"800",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"200",
 		"Density":"16650",
 		"Liquid Density":"15000",
@@ -4168,20 +2952,10 @@
 		"Meteorite Abundance":"0.00000002",
 		"Ocean Abundance":"0.000000000002",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"0.00000000008",
-		"Atomic Radius":"200",
-		"Covalent Radius":"170",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 3}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 11, 2}",
-		"Ionization Energies":[
-			"761",
-			"1500"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.00000000008"
 	},
 	{
-		"Brinel Hardness":"2570",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"310",
 		"Density":"19250",
 		"Liquid Density":"17600",
@@ -4219,20 +2993,10 @@
 		"Meteorite Abundance":"0.00000012",
 		"Ocean Abundance":"0.00000000012",
 		"Solar Abundance":"0.000000004",
-		"Universe Abundance":"0.0000000005",
-		"Atomic Radius":"193",
-		"Covalent Radius":"162",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 4}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 12, 2}",
-		"Ionization Energies":[
-			"770",
-			"1700"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"1320",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"370",
 		"Density":"21020",
 		"Liquid Density":"18900",
@@ -4270,22 +3034,10 @@
 		"Meteorite Abundance":"0.000000049",
 		"Ocean Abundance":"0.000000000001",
 		"Solar Abundance":"0.0000000001",
-		"Universe Abundance":"0.0000000002",
-		"Atomic Radius":"188",
-		"Covalent Radius":"151",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 5}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 13, 2}",
-		"Ionization Energies":[
-			"760",
-			"1260",
-			"2510",
-			"3640"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000002"
 	},
 	{
-		"Brinel Hardness":"3920",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"22590",
 		"Liquid Density":"20000",
@@ -4323,20 +3075,10 @@
 		"Meteorite Abundance":"0.00000065",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.000000003",
-		"Atomic Radius":"185",
-		"Covalent Radius":"144",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 6}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 14, 2}",
-		"Ionization Energies":[
-			"840",
-			"1600"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000003"
 	},
 	{
-		"Brinel Hardness":"1670",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"320",
 		"Density":"22560",
 		"Liquid Density":"19000",
@@ -4374,20 +3116,10 @@
 		"Meteorite Abundance":"0.00000054",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"0.000000002",
-		"Universe Abundance":"0.000000002",
-		"Atomic Radius":"180",
-		"Covalent Radius":"141",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 7}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>7<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 15, 2}",
-		"Ionization Energies":[
-			"880",
-			"1600"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"392",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"230",
 		"Density":"21450",
 		"Liquid Density":"19770",
@@ -4425,20 +3157,10 @@
 		"Meteorite Abundance":"0.00000098",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"0.000000009",
-		"Universe Abundance":"0.000000005",
-		"Atomic Radius":"177",
-		"Covalent Radius":"136",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 9}, {1}}",
-		"Electron Configuration String":"[Xe] 6s<sup>1<\/sup> 4f<sup>14<\/sup> 5d<sup>9<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 17, 1}",
-		"Ionization Energies":[
-			"870",
-			"1791"
-		],
-		"Van Der Waals Radius":"175"
+		"Universe Abundance":"0.000000005"
 	},
 	{
-		"Brinel Hardness":"2450",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"220",
 		"Density":"19300",
 		"Liquid Density":"17310",
@@ -4476,20 +3198,10 @@
 		"Meteorite Abundance":"0.00000017",
 		"Ocean Abundance":"0.00000000005",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000006",
-		"Atomic Radius":"174",
-		"Covalent Radius":"136",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {1}}",
-		"Electron Configuration String":"[Xe] 6s<sup>1<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 1}",
-		"Ionization Energies":[
-			"890.1",
-			"1980"
-		],
-		"Van Der Waals Radius":"166"
+		"Universe Abundance":"0.0000000006"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"25",
 		"Density":"13534",
 		"Liquid Density":"13534",
@@ -4527,21 +3239,10 @@
 		"Meteorite Abundance":"0.00000025",
 		"Ocean Abundance":"0.00000000005",
 		"Solar Abundance":"0.00000002",
-		"Universe Abundance":"0.000000001",
-		"Atomic Radius":"171",
-		"Covalent Radius":"132",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 2}",
-		"Ionization Energies":[
-			"1007.1",
-			"1810",
-			"3300"
-		],
-		"Van Der Waals Radius":"155"
+		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"26.4",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"43",
 		"Density":"11850",
 		"Liquid Density":"11220",
@@ -4579,21 +3280,10 @@
 		"Meteorite Abundance":"0.000000079",
 		"Ocean Abundance":"0.000000000001",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000005",
-		"Atomic Radius":"156",
-		"Covalent Radius":"145",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 1}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> 6p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 3}",
-		"Ionization Energies":[
-			"589.4",
-			"1971",
-			"2878"
-		],
-		"Van Der Waals Radius":"196"
+		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"38.3",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"46",
 		"Density":"11340",
 		"Liquid Density":"10660",
@@ -4631,23 +3321,10 @@
 		"Meteorite Abundance":"0.0000014",
 		"Ocean Abundance":"0.00000000003",
 		"Solar Abundance":"0.0000000099",
-		"Universe Abundance":"0.00000001",
-		"Atomic Radius":"154",
-		"Covalent Radius":"146",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 2}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> 6p<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 4}",
-		"Ionization Energies":[
-			"715.6",
-			"1450.5",
-			"3081.5",
-			"4083",
-			"6640"
-		],
-		"Van Der Waals Radius":"202"
+		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"94.2",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"31",
 		"Density":"9780",
 		"Liquid Density":"10050",
@@ -4685,24 +3362,10 @@
 		"Meteorite Abundance":"0.000000069",
 		"Ocean Abundance":"0.00000000002",
 		"Solar Abundance":"0.0000000099",
-		"Universe Abundance":"0.0000000007",
-		"Atomic Radius":"143",
-		"Covalent Radius":"148",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 3}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> 6p<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 5}",
-		"Ionization Energies":[
-			"703",
-			"1610",
-			"2466",
-			"4370",
-			"5400",
-			"8520"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000007"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"9196",
 		"Liquid Density":"Unknown",
@@ -4740,19 +3403,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.00000000000000000002",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"135",
-		"Covalent Radius":"140",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 4}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> 6p<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 6}",
-		"Ionization Energies":[
-			"812.1"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4790,19 +3444,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"127",
-		"Covalent Radius":"150",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 5}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> 6p<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 7}",
-		"Ionization Energies":[
-			"920"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"N \/ A",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"N \/ A",
 		"Density":"9.73",
 		"Liquid Density":"Unknown",
@@ -4840,19 +3485,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.0000000000000000000006",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"120",
-		"Covalent Radius":"150",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}}",
-		"Electron Configuration String":"[Xe] 6s<sup>2<\/sup> 4f<sup>14<\/sup> 5d<sup>10<\/sup> 6p<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 8}",
-		"Ionization Energies":[
-			"1037"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4890,19 +3526,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"260",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}, {1}}",
-		"Electron Configuration String":"[Rn] 7s<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 8, 1}",
-		"Ionization Energies":[
-			"380"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"5000",
 		"Liquid Density":"Unknown",
@@ -4940,20 +3567,13 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.00000000000000001",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"221",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 8, 2}",
-		"Ionization Energies":[
-			"509.3",
-			"979.0"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"decayMode":"unknown"
+	},
+	{
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"10070",
 		"Liquid Density":"Unknown",
@@ -4991,20 +3611,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"Unknown",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"215",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 6d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 9, 2}",
-		"Ionization Energies":[
-			"499",
-			"1170"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"400",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"54",
 		"Density":"11724",
 		"Liquid Density":"Unknown",
@@ -5042,22 +3652,10 @@
 		"Meteorite Abundance":"0.000000039",
 		"Ocean Abundance":"0.00000000000004",
 		"Solar Abundance":"0.0000000003",
-		"Universe Abundance":"0.0000000004",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"206",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6, 2}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 6d<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 18, 10, 2}",
-		"Ionization Energies":[
-			"587",
-			"1110",
-			"1930",
-			"2780"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"0.0000000004"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"15370",
 		"Liquid Density":"Unknown",
@@ -5095,19 +3693,10 @@
 		"Meteorite Abundance":"Unknown",
 		"Ocean Abundance":"0.0000000000000000000000002",
 		"Solar Abundance":"Unknown",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"200",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 2}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>2<\/sup> 6d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 20, 9, 2}",
-		"Ionization Energies":[
-			"568"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"2400",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"100",
 		"Density":"19050",
 		"Liquid Density":"17300",
@@ -5145,20 +3734,10 @@
 		"Meteorite Abundance":"0.0000000098",
 		"Ocean Abundance":"0.0000000033",
 		"Solar Abundance":"0.000000001",
-		"Universe Abundance":"0.0000000002",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"196",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 3}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>3<\/sup> 6d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 21, 9, 2}",
-		"Ionization Energies":[
-			"597.6",
-			"1420"
-		],
-		"Van Der Waals Radius":"186"
+		"Universe Abundance":"0.0000000002"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"20450",
 		"Liquid Density":"Unknown",
@@ -5196,19 +3775,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"190",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 4}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>4<\/sup> 6d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 22, 9, 2}",
-		"Ionization Energies":[
-			"604.5"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"19816",
 		"Liquid Density":"16630",
@@ -5246,19 +3816,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"187",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 6}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 24, 8, 2}",
-		"Ionization Energies":[
-			"584.7"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"13670",
 		"Liquid Density":"Unknown",
@@ -5296,19 +3857,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"180",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 7}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>7<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 25, 8, 2}",
-		"Ionization Energies":[
-			"578"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"13510",
 		"Liquid Density":"Unknown",
@@ -5346,19 +3898,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"169",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 7}, {2, 6, 1}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>7<\/sup> 6d<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 25, 9, 2}",
-		"Ionization Energies":[
-			"581"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"14780",
 		"Liquid Density":"Unknown",
@@ -5396,19 +3939,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 9}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>9<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 27, 8, 2}",
-		"Ionization Energies":[
-			"601"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"15100",
 		"Liquid Density":"Unknown",
@@ -5446,19 +3980,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 10}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 28, 8, 2}",
-		"Ionization Energies":[
-			"608"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5496,19 +4021,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 11}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>11<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 29, 8, 2}",
-		"Ionization Energies":[
-			"619"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5546,19 +4062,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 12}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>12<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 30, 8, 2}",
-		"Ionization Energies":[
-			"627"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5596,19 +4103,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 13}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>13<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 31, 8, 2}",
-		"Ionization Energies":[
-			"635"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5646,19 +4144,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 8, 2}",
-		"Ionization Energies":[
-			"642"
-		],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5696,17 +4185,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6}, {2, 1}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 7p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 8, 3}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5744,17 +4226,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 2}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 10, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5792,17 +4267,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 3}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 11, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5840,17 +4308,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 4}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 12, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5888,17 +4349,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 5}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 13, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5936,17 +4390,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 6}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 14, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -5984,17 +4431,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 7}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>7<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 15, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6032,17 +4472,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 9}, {1}}",
-		"Electron Configuration String":"[Rn] 7s<sup>1<\/sup> 5f<sup>14<\/sup> 6d<sup>9<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 17, 1}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6080,17 +4513,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {1}}",
-		"Electron Configuration String":"[Rn] 7s<sup>1<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 1}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6128,17 +4554,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 2}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6176,17 +4595,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 1}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> 7p<sup>1<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 3}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6224,17 +4636,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 2}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> 7p<sup>2<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 4}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6272,17 +4677,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 3}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> 7p<sup>3<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 5}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6320,17 +4718,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 4}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> 7p<sup>4<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 6}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6368,17 +4759,10 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 5}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> 7p<sup>5<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 7}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"Unknown",
+		"Brinel Hardness":"brinelHardness",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -6416,13 +4800,47 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown",
-		"Atomic Radius":"Unknown",
-		"Covalent Radius":"Unknown",
-		"Electron Configuration":"{{2}, {2, 6}, {2, 6, 10}, {2, 6, 10, 14}, {2, 6, 10, 14}, {2, 6, 10}, {2, 6}}",
-		"Electron Configuration String":"[Rn] 7s<sup>2<\/sup> 5f<sup>14<\/sup> 6d<sup>10<\/sup> 7p<sup>6<\/sup> ",
-		"Electron Shell Configuration":"{2, 8, 18, 32, 32, 18, 8}",
-		"Ionization Energies":[],
-		"Van Der Waals Radius":"Unknown"
+		"Universe Abundance":"Unknown"
+	},
+	{
+		"Brinel Hardness":"brinelHardness",
+		"Bulk Modulus":"Unknown",
+		"Density":"Unknown",
+		"Liquid Density":"Unknown",
+		"Mohs Hardness":"Unknown",
+		"Molar Volume":"Unknown",
+		"Poisson Ratio":"Unknown",
+		"Shear Modulus":"Unknown",
+		"Sound Speed":"Unknown",
+		"Thermal Conductivity":"Unknown",
+		"Thermal Expansion":"Unknown",
+		"Vickers Hardness":"Unknown",
+		"Young Modulus":"Unknown",
+		"Absolute Boiling Point":"ElementData[119., AbsoluteBoilingPoint]",
+		"Absolute Melting Point":"ElementData[119., AbsoluteMeltingPoint]",
+		"Critical Pressure":"Unknown",
+		"Critical Temperature":"Unknown",
+		"Fusion Heat":"Unknown",
+		"Phase":"Unknown",
+		"SpecificHeat":"Unknown",
+		"Vaporization Heat":"Unknown",
+		"Color":"Unknown",
+		"Electrical Conductivity":"Unknown",
+		"Electrical Type":"Unknown",
+		"Magnetic Type":"Unknown",
+		"Mass Magnetic Susceptibility":"Unknown",
+		"Molar Magnetic Susceptibility":"Unknown",
+		"Resistivity":"Unknown",
+		"Volume Magnetic Susceptibility":"Unknown",
+		"Electron Affinity":"Unknown",
+		"Electronegativity":"Unknown",
+		"Gas Atomic Multiplicities":"Unknown",
+		"Valence":"Unknown",
+		"Crust Abundance":"Unknown",
+		"Human Abundance":"Unknown",
+		"Meteorite Abundance":"Unknown",
+		"Ocean Abundance":"Unknown",
+		"Solar Abundance":"Unknown",
+		"Universe Abundance":"Unknown"
 	}
 ]

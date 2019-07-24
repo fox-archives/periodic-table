@@ -7,7 +7,7 @@ DeleteFile["atomTabProperties.json"];
 
 periodicTable = {};
 	
-Do[
+For[i = 1, i < 119, i++
 	(* START MATERIAL-JSON.WLS *)
 	brinelHardness = ElementData[i, "BrinellHardness"];
 	bulkModulus = ElementData[i, "BulkModulus"];
@@ -202,22 +202,27 @@ Do[
 		"Meteorite Abundance" -> meteoriteAbundance,
 		"Ocean Abundance" -> oceanAbundance,
 		"Solar Abundance" -> solarAbundance,
-		"Universe Abundance" -> universeAbundance,
+		"Universe Abundance" -> universeAbundance
 		(* END BASIC-CHEMICAL.WLS AKA ABUNDANCE AND BASIC-CHEMICAL DATA *)
-		
-		(* START ATOMIC-JSON.WLS *)
-		"Atomic Radius" -> atomicRadius,
-		"Covalent Radius" -> covalentRadius,
-		"Electron Configuration" -> electronConfiguration,
-		"Electron Configuration String" -> electronConfigurationString,
-		"Electron Shell Configuration" -> electronShellConfiguration,
-		"Ionization Energies" -> ionizationEnergies,
-		(* quantumNumbers *)
-		"Van Der Waals Radius" -> vanDerWaalsRadius
-		(* END ATOMIC-JSON.WLS *)
 	};
 	
 	periodicTable = Append[periodicTable, newElement];
-, {i, 1, 118}];
+
+	(* Case for Lanthanites *)
+	If[i == 56,
+		lanth = {
+			"decayMode" -> "unknown"
+		};
+		periodicTable = Append[periodicTable, lanth];
+	];
+	
+	(* Case for Actinides *)
+	If[i == 88,
+		act = {
+			"decayMode" -> "unknown"
+		};
+		periodicTable = Append[periodicTable, act];
+	];
+];
 
 Export["atomTabProperties.json", periodicTable, "JSON"];

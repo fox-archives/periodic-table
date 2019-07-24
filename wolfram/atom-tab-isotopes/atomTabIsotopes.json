@@ -672,6 +672,9 @@
 		"stableIsotopes":"{130., 132., 134., 135., 136., 137., 138.}"
 	},
 	{
+		"decayMode":"unknown"
+	},
+	{
 		"decayMode":"N \/ A",
 		"isotopeAbundances":"{{138., 0.0009}, {139., 0.9991}}",
 		"isotopeHalfLives":"ElementData[57., IsotopeHalfLives]",
@@ -1054,6 +1057,9 @@
 		"neutronMassAbsorption":"Unknown",
 		"specificRadioactivity":"ElementData[88., SpecificRadioactivity]",
 		"stableIsotopes":"{}"
+	},
+	{
+		"decayMode":"unknown"
 	},
 	{
 		"decayMode":"BetaDecay",

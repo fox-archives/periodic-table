@@ -24,13 +24,13 @@ reformatColumn[value_, i_]:=
 		(* Give element regular value, if get regular value from ElementData *)
 		MissingQ[value] == False,
 			Return["c-" <> ToString[value * 2]];,
-		(* Artifically give element column if it is in the f-block, or an Ant. / Lanth., when get weird values from ElementData *)
+		(* Artificially give element column if it is in the f-block, or an Ant. / Lanth., when get weird values from ElementData *)
 		MissingQ[value] == True && 57 <= i && i <= 71,
 			Return["c-" <> ToString[2*(i - 54)]];,
 		MissingQ[value] == True && 89 <= i && i <= 103,
 			Return["c-" <> ToString[2*(i - 86)]];,
 		True,
-			Return["Unexected Values"];
+			Return["Unexpected Values"];
 	];
 	
 reformatRow[value_, i_]:=

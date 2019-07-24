@@ -7,7 +7,7 @@ DeleteFile["atomTabIsotopes.json"];
 
 periodicTable = {};
 	 
-Do[
+For[i = 1, i < 119, i++,
 	decayMode = ElementData[i, "DecayMode"];
 	isotopeAbundances = ElementData[i, "IsotopeAbundances"];
 	isotopeHalfLives = ElementData[i, "IsotopeHalfLives"];
@@ -46,6 +46,22 @@ Do[
 	};
 	
 	periodicTable = Append[periodicTable, newElement];
-, {i, 1, 118}];
+
+	(* Case for Lanthanites *)
+	If[i == 56,
+		lanth = {
+			"decayMode" -> "unknown"
+		};
+		periodicTable = Append[periodicTable, lanth];
+	];
+	
+	(* Case for Actinides *)
+	If[i == 88,
+		act = {
+			"decayMode" -> "unknown"
+		};
+		periodicTable = Append[periodicTable, act];
+	];
+];
 
 Export["atomTabIsotopes.json", periodicTable, "JSON"];
