@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "jest",
+    "test:wolfram": "jest ./wolfram"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
+}
