@@ -1,6 +1,9 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
+      <div id="grid-container-loading-view" v-if="!ready">
+        <periodic-table-loading></periodic-table-loading>
+      </div>
       <div id="grid-outer" v-if="ready" :style="periodicTableWidth">
         <main id="grid" ref="idGrid" :style="atomTextSizes">
           <!-- ATOMS FROM PERIODIC TABLE -->
@@ -102,6 +105,8 @@ import { highlightLabelSection, unhighlightLabelSection } from '@/components/per
 import { setLabelColor } from "@/components/periodic-table/utils/hoverAtomHandlers";
 import { updateClickedAtom } from "@/components/periodic-table/utils/clickAtomHandlers";
 
+import PeriodicTableLoading from "@/components/periodic-table/PeriodicTableLoading";
+
 export default {
   name: 'PeriodicTable',
   data() {
@@ -120,6 +125,9 @@ export default {
       // only apply when the following variable is active
       periodicTableHeightConstrainedBeingDealtWith: true
     }
+  },
+  components: {
+    'periodic-table-loading': PeriodicTableLoading
   },
   watch: {
     ready() {

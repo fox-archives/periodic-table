@@ -16,6 +16,8 @@ function initAtomData({ state, dispatch, commit }) {
       state.atomLabelPeriods = labelPlacementsResult.data.labelPeriods;
       state.atomLabelGroups = labelPlacementsResult.data.labelGroups;
 
+      // after getting data, display it
+      // TODO: fix because it will get 'Properties' data on /electrons etc.
       dispatch('switchAtomTabData', {
         atomColorAppearance: 'Category',
         atomTab: 'Properties'
