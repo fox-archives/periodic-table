@@ -118,7 +118,7 @@ export default {
       // height of the periodic table is too small. we have to correct it. before implementing
       // this we had to do calc(100% - 2px). now we set this class, and make the height: 100
       // only apply when the following variable is active
-      periodicTableHeightConstrainedBeingDealtWith: false
+      periodicTableHeightConstrainedBeingDealtWith: true
     }
   },
   watch: {
@@ -232,7 +232,6 @@ export default {
         '--periodicTableWidth': `${gridContainer.clientHeight / periodicTableRatio}px`,
         '--periodicTableWidthRatio': periodicTableRatio
       };
-      console.log('periodicTableWidth', this.periodicTableWidth);
     },
 
     // This script makes the periodic-table and element info panel not have a height
@@ -250,7 +249,6 @@ export default {
           periodicTableHeightLayoutState: 'periodicTableHeightMax'
         });
         this.periodicTableHeightConstrainedBeingDealtWith = true;
-        console.log("bravo sierra");
       } else {
         this.setOptions({
           periodicTableHeightLayoutState: 'periodicTableHeightConstrained'
