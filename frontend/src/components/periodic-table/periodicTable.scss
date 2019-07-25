@@ -37,7 +37,8 @@ $total-rows: (7 * 2) + 5;
 
 .panel-top.periodicTableHeightConstrained #grid-outer {
   height: 100%;
-  width: var(--periodicTableWidth);
+  width: 100%;
+  min-width: var(--periodicTableWidth);
   padding-bottom: 0;
 }
 
