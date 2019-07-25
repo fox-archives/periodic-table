@@ -1,8 +1,8 @@
 <template>
   <div id="grid-container-outer">
     <div id="grid-container">
-      <div id="grid-outer" v-if="ready">
-        <main id="grid" :style="atomTextSizes">
+      <div id="grid-outer" v-if="ready" :style="periodicTableWidth">
+        <main id="grid" ref="idGrid" :style="atomTextSizes">
           <!-- ATOMS FROM PERIODIC TABLE -->
           <div
             v-for="(atomPlacement, index) in atomPlacements"
@@ -110,7 +110,15 @@ export default {
         '--primaryTextSize': '0px',
         '--secondaryTextSize': '0px',
         '--labelTextSize': '0px'
-      }
+      },
+      periodicTableWidth: {
+        '--periodicTableSupposedHeight': '0px'
+      },
+      // if we know periodicTableHeightConstrained is an active class, then we know that the
+      // height of the periodic table is too small. we have to correct it. before implementing
+      // this we had to do calc(100% - 2px). now we set this class, and make the height: 100
+      // only apply when the following variable is active
+      periodicTableHeightConstrainedBeingDealtWith: false
     }
   },
   watch: {
@@ -135,7 +143,9 @@ export default {
       'resize',
       debounce(psPeriodicTable.update, 250)
     );
-    window.addEventListener('resize', throttle(this.formatPage, 250))
+    window.addEventListener('resize', throttle(this.formatPage, 250));
+    // uncomment this when everything works without a debounce
+    window.addEventListener('resize', debounce(this.formatPage, 100));
   },
   computed: {
     ...mapState([
@@ -192,55 +202,60 @@ export default {
       }
     },
 
+    // format the page such that everything looks fine
+    // 1: update the periodic table height layout
+    // 2: update the periodic table width
+    // 3: update text size
     formatPage: function() {
       this.$nextTick(() => {
-        this.updatePeriodicTableHeightLayout();
-        this.$nextTick(() => {
-          this.updatePeriodicTableWidth();
-          this.$nextTick(() => {
-            this.updateAtomFontSizes();
-            this.$nextTick(() => {
+        window.requestAnimationFrame(() => {
+          this.updatePeriodicTableHeightLayout();
+          window.requestAnimationFrame(() => {
+            this.updatePeriodicTableWidth();
+            window.requestAnimationFrame(() => {
               this.updateAtomFontSizes();
             })
-          });
-        });
-      });
+          })
+        })
+      })
     },
 
     updatePeriodicTableWidth: function() {
-      if (
-        this.options.periodicTableHeightLayoutState === 'periodicTableHeightMax'
-      ) {
-        let gridContainer = document.getElementById('grid');
+      let gridContainer = this.$refs.idGrid;
 
-        // change the ratio in periodicTable.scss if changed here
-        let periodicTableRatio = 0.6;
+      // change the ratio in periodicTable.scss if changed here
+      let periodicTableRatio = 0.6;
 
-        // Subtract 2 because recall CSS says the height is calc(100% - 2px)
-        // All I know is that when 2 is removed, then scrollbar is shown for small widths for panel-side
-        gridContainer.style.width = `${(gridContainer.clientHeight - 2) / periodicTableRatio}px`;
-      }
-      this.updateAtomFontSizes();
+      // Subtract 2 because recall CSS says the height is calc(100% - 2px)
+      // All I know is that when 2 is removed, then scrollbar is shown for small widths for panel-side
+      this.periodicTableWidth = {
+        '--periodicTableWidth': `${gridContainer.clientHeight / periodicTableRatio}px`,
+        '--periodicTableWidthRatio': periodicTableRatio
+      };
+      console.log('periodicTableWidth', this.periodicTableWidth);
     },
 
     // This script makes the periodic-table and element info panel not have a height
     // bigger than the browser on panel-side
     updatePeriodicTableHeightLayout: function() {
-      let panelHeight = document.getElementById('grid-container').offsetHeight;
-      let periodicTableHeight = document.getElementById('grid-outer').offsetHeight;
+      let gridContainerHeight = document.getElementById('grid-container').offsetHeight;
+      let gridOuterHeight = document.getElementById('grid-outer').offsetHeight;
 
       // Only change the style if the periodic-table has a greater or equal height for AtomInfoPanel.vue
-      if (periodicTableHeight >= panelHeight) {
+      if (gridOuterHeight >= gridContainerHeight && !this.periodicTableHeightConstrainedBeingDealtWith) {
         // This means if panel and periodic-table fill whole window height, increasing
         // width will not increase size of periodic-table, instead it creates whitespace;
         // periodic-table will only increase if the height of browser window increases
         this.setOptions({
           periodicTableHeightLayoutState: 'periodicTableHeightMax'
         });
+        this.periodicTableHeightConstrainedBeingDealtWith = true;
+        console.log("bravo sierra");
       } else {
         this.setOptions({
           periodicTableHeightLayoutState: 'periodicTableHeightConstrained'
         });
+
       }
     },
 

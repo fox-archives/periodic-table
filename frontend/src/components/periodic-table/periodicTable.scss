@@ -2,10 +2,6 @@
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
-// The periodic-table has width of 1, height of 0.6 relative to that width
-// Be sure to change the ratio in TabGenericPeriodicTableInterface.vue if changed here
-$elementRatio: 0.6;
-
 // GRID-CONTAINER-OUTER \\
 // Just for position relative
 #grid-container-outer {
@@ -34,13 +30,15 @@ $elementRatio: 0.6;
 #grid-outer {
   position: relative;
   height: 0;
-  // width: 100%;
-  padding-bottom: 100% * $elementRatio;
+  width: 100%;
+  padding-bottom: calc(100% * var(--periodicTableWidthRatio));
   border-radius: $border-radius;
 }
 
 .panel-top.periodicTableHeightConstrained #grid-outer {
-  height: calc(100% - 2px);
+  height: 100%;
+  width: var(--periodicTableWidth);
+  padding-bottom: 0;
 }
 
 // GRID \\
