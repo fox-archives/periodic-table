@@ -24,7 +24,8 @@ function initAtomData({ state, dispatch, commit }) {
       })
         .then(() => {
           commit('updateActiveAtomForce', 0);
-        });
+        })
+        .catch(e => console.error(e));
     })
     .catch(e => console.error(e));
 }
@@ -57,7 +58,6 @@ function switchAtomTabData({ state }, payload) {
         reject();
       });
   });
-
 }
 
 export {
