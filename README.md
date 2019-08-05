@@ -13,7 +13,7 @@ Flexbox   | 12+     | 28+     | 29+, 21+* | 9+, 7+*  | 9.2+, 7.1+*
 Grid      | 16+     | 52+     | 57+       | 10.1+    | 10.3+
 Vue 2.X   | 12+     | 21+     | 23+       | 6+       | 6.1+
 
-\* Supports with extension -moz, -webkit, etc.</br>
+\* Supports with extension -moz, -webkit, etc.
 
 ## Project Status
 * This is an old version of my website. This does not take advantage of all the features of Vue. The version in production is not public.
