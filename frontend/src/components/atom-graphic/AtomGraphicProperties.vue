@@ -3,11 +3,11 @@
     <div id="visual-inner">
       <div id="icon">
         <div id="icon-inner" :class="atomActiveSimpleData.color">
-          <p>{{ atomActiveSimpleData.abbreviation }}</p>
+          <p>{{ atomActiveSimpleData.atomAbbreviation }}</p>
         </div>
       </div>
       <div id="text">
-        <p>{{ atomActiveSimpleData.name }}</p>
+        <p>{{ atomActiveSimpleData.atomName }}</p>
       </div>
     </div>
   </div>

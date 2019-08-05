@@ -36,16 +36,16 @@
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">
-                {{ atomSimpleData[index].display }}
+                {{ atomSimpleData[index].atomNumber }}
               </p>
               <p class="primary-text">
-                {{ atomSimpleData[index].abbreviation }}
+                {{ atomSimpleData[index].atomAbbreviation }}
               </p>
               <p class="secondary-text">
-                {{ atomSimpleData[index].name }}
+                {{ atomSimpleData[index].atomName }}
               </p>
               <p class="secondary-text">
-                {{ atomSimpleData[index].atomicMass }}
+                {{ atomSimpleData[index].atomMass }}
               </p>
             </div>
           </div>
