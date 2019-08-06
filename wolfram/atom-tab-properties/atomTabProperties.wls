@@ -7,7 +7,7 @@ DeleteFile["atomTabProperties.json"];
 
 periodicTable = {};
 	
-For[i = 1, i < 119, i++
+For[i = 1, i < 119, i++,
 	(* START MATERIAL-JSON.WLS *)
 	brinelHardness = ElementData[i, "BrinellHardness"];
 	bulkModulus = ElementData[i, "BulkModulus"];

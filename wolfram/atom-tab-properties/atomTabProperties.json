@@ -1,6 +1,47 @@
 [
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
+		"Bulk Modulus":"N \/ A",
+		"Density":"0.0899",
+		"Liquid Density":"Unknown",
+		"Mohs Hardness":"N \/ A",
+		"Molar Volume":"0.0112125",
+		"Poisson Ratio":"N \/ A",
+		"Shear Modulus":"N \/ A",
+		"Sound Speed":"1270",
+		"Thermal Conductivity":"0.1805",
+		"Thermal Expansion":"N \/ A",
+		"Vickers Hardness":"N \/ A",
+		"Young Modulus":"N \/ A",
+		"Absolute Boiling Point":"20.28",
+		"Absolute Melting Point":"14.01",
+		"Critical Pressure":"1.293",
+		"Critical Temperature":"32.97",
+		"Fusion Heat":"0.558",
+		"Phase":"EntityClass[Element, Gas]",
+		"SpecificHeat":"14300",
+		"Vaporization Heat":"0.452",
+		"Color":"Colorless",
+		"Electrical Conductivity":"Unknown",
+		"Electrical Type":"Unknown",
+		"Magnetic Type":"EntityClass[Element, Diamagnetic]",
+		"Mass Magnetic Susceptibility":"(0.0000000248)",
+		"Molar Magnetic Susceptibility":"(0.00000000004999)",
+		"Resistivity":"N \/ A",
+		"Volume Magnetic Susceptibility":"(0.00000000223)",
+		"Electron Affinity":"72.8",
+		"Electronegativity":"2.2",
+		"Gas Atomic Multiplicities":"2",
+		"Valence":"1",
+		"Crust Abundance":"0.0015",
+		"Human Abundance":"0.1",
+		"Meteorite Abundance":"0.024",
+		"Ocean Abundance":"0.11",
+		"Solar Abundance":"0.75",
+		"Universe Abundance":"0.75"
+	},
+	{
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"0.1785",
 		"Liquid Density":"Unknown",
@@ -41,7 +82,7 @@
 		"Universe Abundance":"0.23"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"11",
 		"Density":"535",
 		"Liquid Density":"512",
@@ -82,7 +123,7 @@
 		"Universe Abundance":"0.000000006"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"600",
 		"Bulk Modulus":"130",
 		"Density":"1848",
 		"Liquid Density":"1690",
@@ -123,7 +164,7 @@
 		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"320",
 		"Density":"2460",
 		"Liquid Density":"2080",
@@ -164,7 +205,7 @@
 		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"33",
 		"Density":"2260",
 		"Liquid Density":"Unknown",
@@ -205,7 +246,7 @@
 		"Universe Abundance":"0.005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.251",
 		"Liquid Density":"Unknown",
@@ -246,7 +287,7 @@
 		"Universe Abundance":"0.001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.429",
 		"Liquid Density":"Unknown",
@@ -287,7 +328,7 @@
 		"Universe Abundance":"0.01"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.696",
 		"Liquid Density":"Unknown",
@@ -328,7 +369,7 @@
 		"Universe Abundance":"0.0000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"0.9",
 		"Liquid Density":"Unknown",
@@ -369,7 +410,7 @@
 		"Universe Abundance":"0.0013"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"0.69",
 		"Bulk Modulus":"6.3",
 		"Density":"968",
 		"Liquid Density":"927",
@@ -410,7 +451,7 @@
 		"Universe Abundance":"0.00002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"260",
 		"Bulk Modulus":"45",
 		"Density":"1738",
 		"Liquid Density":"1584",
@@ -451,7 +492,7 @@
 		"Universe Abundance":"0.00059"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"245",
 		"Bulk Modulus":"76",
 		"Density":"2700",
 		"Liquid Density":"2375",
@@ -492,7 +533,7 @@
 		"Universe Abundance":"0.00005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"100",
 		"Density":"2330",
 		"Liquid Density":"2570",
@@ -533,7 +574,7 @@
 		"Universe Abundance":"0.0007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"11",
 		"Density":"1823",
 		"Liquid Density":"Unknown",
@@ -574,7 +615,7 @@
 		"Universe Abundance":"0.000007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"7.7",
 		"Density":"1960",
 		"Liquid Density":"1819",
@@ -615,7 +656,7 @@
 		"Universe Abundance":"0.0005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"1.1",
 		"Density":"3.214",
 		"Liquid Density":"Unknown",
@@ -656,7 +697,7 @@
 		"Universe Abundance":"0.000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"1.784",
 		"Liquid Density":"Unknown",
@@ -697,7 +738,7 @@
 		"Universe Abundance":"0.0002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"0.363",
 		"Bulk Modulus":"3.1",
 		"Density":"856",
 		"Liquid Density":"828",
@@ -738,7 +779,7 @@
 		"Universe Abundance":"0.000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"167",
 		"Bulk Modulus":"17",
 		"Density":"1550",
 		"Liquid Density":"1378",
@@ -779,7 +820,7 @@
 		"Universe Abundance":"0.00007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"750",
 		"Bulk Modulus":"57",
 		"Density":"2985",
 		"Liquid Density":"2800",
@@ -820,7 +861,7 @@
 		"Universe Abundance":"0.00000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"715",
 		"Bulk Modulus":"110",
 		"Density":"4507",
 		"Liquid Density":"4110",
@@ -861,7 +902,7 @@
 		"Universe Abundance":"0.000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"628",
 		"Bulk Modulus":"160",
 		"Density":"6110",
 		"Liquid Density":"5500",
@@ -902,7 +943,7 @@
 		"Universe Abundance":"0.000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1120",
 		"Bulk Modulus":"160",
 		"Density":"7190",
 		"Liquid Density":"6300",
@@ -943,7 +984,7 @@
 		"Universe Abundance":"0.000015"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"196",
 		"Bulk Modulus":"120",
 		"Density":"7470",
 		"Liquid Density":"5950",
@@ -984,7 +1025,7 @@
 		"Universe Abundance":"0.000008"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"490",
 		"Bulk Modulus":"170",
 		"Density":"7874",
 		"Liquid Density":"6980",
@@ -1025,7 +1066,7 @@
 		"Universe Abundance":"0.0011"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"700",
 		"Bulk Modulus":"180",
 		"Density":"8900",
 		"Liquid Density":"7750",
@@ -1066,7 +1107,7 @@
 		"Universe Abundance":"0.000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"700",
 		"Bulk Modulus":"180",
 		"Density":"8908",
 		"Liquid Density":"7810",
@@ -1107,7 +1148,7 @@
 		"Universe Abundance":"0.00006"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"874",
 		"Bulk Modulus":"140",
 		"Density":"8960",
 		"Liquid Density":"8020",
@@ -1148,7 +1189,7 @@
 		"Universe Abundance":"0.00000006"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"412",
 		"Bulk Modulus":"70",
 		"Density":"7140",
 		"Liquid Density":"6570",
@@ -1189,7 +1230,7 @@
 		"Universe Abundance":"0.0000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"60",
 		"Bulk Modulus":"Unknown",
 		"Density":"5904",
 		"Liquid Density":"6095",
@@ -1230,7 +1271,7 @@
 		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"7273.4",
 		"Bulk Modulus":"Unknown",
 		"Density":"5323",
 		"Liquid Density":"5600",
@@ -1271,7 +1312,7 @@
 		"Universe Abundance":"0.0000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1440",
 		"Bulk Modulus":"22",
 		"Density":"5727",
 		"Liquid Density":"5220",
@@ -1312,7 +1353,7 @@
 		"Universe Abundance":"0.000000008"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"736",
 		"Bulk Modulus":"8.3",
 		"Density":"4819",
 		"Liquid Density":"3990",
@@ -1353,7 +1394,7 @@
 		"Universe Abundance":"0.00000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"1.9",
 		"Density":"3120",
 		"Liquid Density":"3120",
@@ -1394,7 +1435,7 @@
 		"Universe Abundance":"0.000000007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"3.75",
 		"Liquid Density":"Unknown",
@@ -1435,7 +1476,7 @@
 		"Universe Abundance":"0.00000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"0.216",
 		"Bulk Modulus":"2.5",
 		"Density":"1532",
 		"Liquid Density":"1460",
@@ -1476,7 +1517,7 @@
 		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"2630",
 		"Liquid Density":"2375",
@@ -1517,7 +1558,7 @@
 		"Universe Abundance":"0.00000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"588",
 		"Bulk Modulus":"41",
 		"Density":"4472",
 		"Liquid Density":"4240",
@@ -1558,7 +1599,7 @@
 		"Universe Abundance":"0.000000007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"650",
 		"Bulk Modulus":"Unknown",
 		"Density":"6511",
 		"Liquid Density":"5800",
@@ -1599,7 +1640,7 @@
 		"Universe Abundance":"0.00000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"736",
 		"Bulk Modulus":"170",
 		"Density":"8570",
 		"Liquid Density":"Unknown",
@@ -1640,7 +1681,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1500",
 		"Bulk Modulus":"230",
 		"Density":"10280",
 		"Liquid Density":"9330",
@@ -1681,7 +1722,7 @@
 		"Universe Abundance":"0.000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"11500",
 		"Liquid Density":"Unknown",
@@ -1722,7 +1763,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"2160",
 		"Bulk Modulus":"220",
 		"Density":"12370",
 		"Liquid Density":"10650",
@@ -1763,7 +1804,7 @@
 		"Universe Abundance":"0.000000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1100",
 		"Bulk Modulus":"380",
 		"Density":"12450",
 		"Liquid Density":"10700",
@@ -1804,7 +1845,7 @@
 		"Universe Abundance":"0.0000000006"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"37.2",
 		"Bulk Modulus":"180",
 		"Density":"12023",
 		"Liquid Density":"10380",
@@ -1845,7 +1886,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"24.5",
 		"Bulk Modulus":"100",
 		"Density":"10490",
 		"Liquid Density":"9320",
@@ -1886,7 +1927,7 @@
 		"Universe Abundance":"0.0000000006"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"203",
 		"Bulk Modulus":"42",
 		"Density":"8650",
 		"Liquid Density":"7996",
@@ -1927,7 +1968,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"8.83",
 		"Bulk Modulus":"Unknown",
 		"Density":"7310",
 		"Liquid Density":"7020",
@@ -1968,7 +2009,7 @@
 		"Universe Abundance":"0.0000000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"51",
 		"Bulk Modulus":"58",
 		"Density":"7310",
 		"Liquid Density":"6990",
@@ -2009,7 +2050,7 @@
 		"Universe Abundance":"0.000000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"294",
 		"Bulk Modulus":"42",
 		"Density":"6697",
 		"Liquid Density":"6530",
@@ -2050,7 +2091,7 @@
 		"Universe Abundance":"0.0000000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"180",
 		"Bulk Modulus":"64",
 		"Density":"6240",
 		"Liquid Density":"5700",
@@ -2091,7 +2132,7 @@
 		"Universe Abundance":"0.000000009"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"7.7",
 		"Density":"4940",
 		"Liquid Density":"Unknown",
@@ -2132,7 +2173,7 @@
 		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"5.9",
 		"Liquid Density":"Unknown",
@@ -2173,7 +2214,7 @@
 		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"0.14",
 		"Bulk Modulus":"1.6",
 		"Density":"1879",
 		"Liquid Density":"1843",
@@ -2214,7 +2255,7 @@
 		"Universe Abundance":"0.0000000008"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"9.4",
 		"Density":"3510",
 		"Liquid Density":"3338",
@@ -2258,7 +2299,7 @@
 		"decayMode":"unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"363",
 		"Bulk Modulus":"28",
 		"Density":"6146",
 		"Liquid Density":"5940",
@@ -2299,7 +2340,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"412",
 		"Bulk Modulus":"22",
 		"Density":"6689",
 		"Liquid Density":"6550",
@@ -2340,7 +2381,7 @@
 		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"481",
 		"Bulk Modulus":"29",
 		"Density":"6640",
 		"Liquid Density":"6500",
@@ -2381,7 +2422,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"265",
 		"Bulk Modulus":"32",
 		"Density":"7010",
 		"Liquid Density":"6890",
@@ -2422,7 +2463,7 @@
 		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"33",
 		"Density":"7264",
 		"Liquid Density":"Unknown",
@@ -2463,7 +2504,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"441",
 		"Bulk Modulus":"38",
 		"Density":"7353",
 		"Liquid Density":"7160",
@@ -2504,7 +2545,7 @@
 		"Universe Abundance":"0.000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"8.3",
 		"Density":"5244",
 		"Liquid Density":"5130",
@@ -2545,7 +2586,7 @@
 		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"38",
 		"Density":"7901",
 		"Liquid Density":"7400",
@@ -2586,7 +2627,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"677",
 		"Bulk Modulus":"38.7",
 		"Density":"8219",
 		"Liquid Density":"7650",
@@ -2627,7 +2668,7 @@
 		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"500",
 		"Bulk Modulus":"41",
 		"Density":"8551",
 		"Liquid Density":"8370",
@@ -2668,7 +2709,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"746",
 		"Bulk Modulus":"40",
 		"Density":"8795",
 		"Liquid Density":"8340",
@@ -2709,7 +2750,7 @@
 		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"814",
 		"Bulk Modulus":"44",
 		"Density":"9066",
 		"Liquid Density":"8860",
@@ -2750,7 +2791,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"471",
 		"Bulk Modulus":"45",
 		"Density":"9320",
 		"Liquid Density":"8560",
@@ -2791,7 +2832,7 @@
 		"Universe Abundance":"0.0000000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"343",
 		"Bulk Modulus":"31",
 		"Density":"6570",
 		"Liquid Density":"6210",
@@ -2832,7 +2873,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"893",
 		"Bulk Modulus":"48",
 		"Density":"9841",
 		"Liquid Density":"9300",
@@ -2873,7 +2914,7 @@
 		"Universe Abundance":"0.0000000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1700",
 		"Bulk Modulus":"110",
 		"Density":"13310",
 		"Liquid Density":"12000",
@@ -2914,7 +2955,7 @@
 		"Universe Abundance":"0.0000000007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"800",
 		"Bulk Modulus":"200",
 		"Density":"16650",
 		"Liquid Density":"15000",
@@ -2955,7 +2996,7 @@
 		"Universe Abundance":"0.00000000008"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"2570",
 		"Bulk Modulus":"310",
 		"Density":"19250",
 		"Liquid Density":"17600",
@@ -2996,7 +3037,7 @@
 		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1320",
 		"Bulk Modulus":"370",
 		"Density":"21020",
 		"Liquid Density":"18900",
@@ -3037,7 +3078,7 @@
 		"Universe Abundance":"0.0000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"3920",
 		"Bulk Modulus":"Unknown",
 		"Density":"22590",
 		"Liquid Density":"20000",
@@ -3078,7 +3119,7 @@
 		"Universe Abundance":"0.000000003"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"1670",
 		"Bulk Modulus":"320",
 		"Density":"22560",
 		"Liquid Density":"19000",
@@ -3119,7 +3160,7 @@
 		"Universe Abundance":"0.000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"392",
 		"Bulk Modulus":"230",
 		"Density":"21450",
 		"Liquid Density":"19770",
@@ -3160,7 +3201,7 @@
 		"Universe Abundance":"0.000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"2450",
 		"Bulk Modulus":"220",
 		"Density":"19300",
 		"Liquid Density":"17310",
@@ -3201,7 +3242,7 @@
 		"Universe Abundance":"0.0000000006"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"25",
 		"Density":"13534",
 		"Liquid Density":"13534",
@@ -3242,7 +3283,7 @@
 		"Universe Abundance":"0.000000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"26.4",
 		"Bulk Modulus":"43",
 		"Density":"11850",
 		"Liquid Density":"11220",
@@ -3283,7 +3324,7 @@
 		"Universe Abundance":"0.0000000005"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"38.3",
 		"Bulk Modulus":"46",
 		"Density":"11340",
 		"Liquid Density":"10660",
@@ -3324,7 +3365,7 @@
 		"Universe Abundance":"0.00000001"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"94.2",
 		"Bulk Modulus":"31",
 		"Density":"9780",
 		"Liquid Density":"10050",
@@ -3365,7 +3406,7 @@
 		"Universe Abundance":"0.0000000007"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"9196",
 		"Liquid Density":"Unknown",
@@ -3406,7 +3447,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -3447,7 +3488,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"N \/ A",
 		"Bulk Modulus":"N \/ A",
 		"Density":"9.73",
 		"Liquid Density":"Unknown",
@@ -3488,7 +3529,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -3529,7 +3570,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"5000",
 		"Liquid Density":"Unknown",
@@ -3573,7 +3614,7 @@
 		"decayMode":"unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"10070",
 		"Liquid Density":"Unknown",
@@ -3614,7 +3655,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"400",
 		"Bulk Modulus":"54",
 		"Density":"11724",
 		"Liquid Density":"Unknown",
@@ -3655,7 +3696,7 @@
 		"Universe Abundance":"0.0000000004"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"15370",
 		"Liquid Density":"Unknown",
@@ -3696,7 +3737,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"2400",
 		"Bulk Modulus":"100",
 		"Density":"19050",
 		"Liquid Density":"17300",
@@ -3737,7 +3778,7 @@
 		"Universe Abundance":"0.0000000002"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"20450",
 		"Liquid Density":"Unknown",
@@ -3778,7 +3819,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"19816",
 		"Liquid Density":"16630",
@@ -3819,7 +3860,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"13670",
 		"Liquid Density":"Unknown",
@@ -3860,7 +3901,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"13510",
 		"Liquid Density":"Unknown",
@@ -3901,7 +3942,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"14780",
 		"Liquid Density":"Unknown",
@@ -3942,7 +3983,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"15100",
 		"Liquid Density":"Unknown",
@@ -3983,7 +4024,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4024,7 +4065,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4065,7 +4106,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4106,7 +4147,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4147,7 +4188,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4188,7 +4229,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4229,7 +4270,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4270,7 +4311,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4311,7 +4352,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4352,7 +4393,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4393,7 +4434,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4434,7 +4475,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4475,7 +4516,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4516,7 +4557,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4557,7 +4598,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4598,7 +4639,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4639,7 +4680,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4680,7 +4721,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4721,7 +4762,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4762,7 +4803,7 @@
 		"Universe Abundance":"Unknown"
 	},
 	{
-		"Brinel Hardness":"brinelHardness",
+		"Brinel Hardness":"Unknown",
 		"Bulk Modulus":"Unknown",
 		"Density":"Unknown",
 		"Liquid Density":"Unknown",
@@ -4800,47 +4841,6 @@
 		"Meteorite Abundance":"0",
 		"Ocean Abundance":"0",
 		"Solar Abundance":"0",
-		"Universe Abundance":"Unknown"
-	},
-	{
-		"Brinel Hardness":"brinelHardness",
-		"Bulk Modulus":"Unknown",
-		"Density":"Unknown",
-		"Liquid Density":"Unknown",
-		"Mohs Hardness":"Unknown",
-		"Molar Volume":"Unknown",
-		"Poisson Ratio":"Unknown",
-		"Shear Modulus":"Unknown",
-		"Sound Speed":"Unknown",
-		"Thermal Conductivity":"Unknown",
-		"Thermal Expansion":"Unknown",
-		"Vickers Hardness":"Unknown",
-		"Young Modulus":"Unknown",
-		"Absolute Boiling Point":"ElementData[119., AbsoluteBoilingPoint]",
-		"Absolute Melting Point":"ElementData[119., AbsoluteMeltingPoint]",
-		"Critical Pressure":"Unknown",
-		"Critical Temperature":"Unknown",
-		"Fusion Heat":"Unknown",
-		"Phase":"Unknown",
-		"SpecificHeat":"Unknown",
-		"Vaporization Heat":"Unknown",
-		"Color":"Unknown",
-		"Electrical Conductivity":"Unknown",
-		"Electrical Type":"Unknown",
-		"Magnetic Type":"Unknown",
-		"Mass Magnetic Susceptibility":"Unknown",
-		"Molar Magnetic Susceptibility":"Unknown",
-		"Resistivity":"Unknown",
-		"Volume Magnetic Susceptibility":"Unknown",
-		"Electron Affinity":"Unknown",
-		"Electronegativity":"Unknown",
-		"Gas Atomic Multiplicities":"Unknown",
-		"Valence":"Unknown",
-		"Crust Abundance":"Unknown",
-		"Human Abundance":"Unknown",
-		"Meteorite Abundance":"Unknown",
-		"Ocean Abundance":"Unknown",
-		"Solar Abundance":"Unknown",
 		"Universe Abundance":"Unknown"
 	}
 ]
