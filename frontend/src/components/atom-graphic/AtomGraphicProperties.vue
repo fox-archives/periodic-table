@@ -2,9 +2,7 @@
   <div>
     <div id="visual-inner">
       <div id="icon">
-        <div
-id="icon-inner" :class="atomActiveSimpleData.color"
->
+        <div id="icon-inner" :class="atomActiveSimpleData.color">
           <p>{{ atomActiveSimpleData.atomAbbreviation }}</p>
         </div>
       </div>
@@ -16,18 +14,18 @@ id="icon-inner" :class="atomActiveSimpleData.color"
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from "vuex";
 
 export default {
-  name: 'AtomGraphicProperties',
+  name: "AtomGraphicProperties",
   computed: {
-    ...mapState(['atomActiveSimpleData'])
+    ...mapState(["atomActiveSimpleData"])
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables';
-@import 'atomGraphicTheme';
-@import 'atomGraphic';
+@import "~@/styles/variables";
+@import "atomGraphicTheme";
+@import "atomGraphic";
 </style>

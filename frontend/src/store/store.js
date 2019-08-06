@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 import {
   setColorOfOneAtom,
   setColorOfOneGroup,
@@ -8,8 +8,8 @@ import {
   setColorOfAllButOnePeriod,
   setColorOfAllButOneGroup,
   setColorOfAllAtoms
-} from '@/store/atomHighlighting';
-import { initAtomData, switchAtomTabData } from '@/api/fetchData';
+} from "@/store/atomHighlighting";
+import { initAtomData, switchAtomTabData } from "@/api/fetchData";
 
 Vue.use(Vuex);
 
@@ -54,11 +54,11 @@ export default new Vuex.Store({
     // OPTIONS
     // Changeable options
     options: {
-      themeType: 'light-def',
-      panelLayout: '',
-      blurType: 'no-blur',
+      themeType: "light-def",
+      panelLayout: "",
+      blurType: "no-blur",
 
-      periodicTableHeightLayoutState: ''
+      periodicTableHeightLayoutState: ""
     }
   },
   mutations: {
@@ -100,12 +100,12 @@ export default new Vuex.Store({
     clearLabelExcept: function(state, payload) {
       for (let i = 0; i < state.atomLabelPeriods.length; i++) {
         if (i !== payload.periodExclude) {
-          state.atomLabelPeriods[i].color = 'light';
+          state.atomLabelPeriods[i].color = "light";
         }
       }
       for (let i = 0; i < state.atomLabelGroups.length; i++) {
         if (i !== payload.groupExclude) {
-          state.atomLabelGroups[i].color = 'light';
+          state.atomLabelGroups[i].color = "light";
         }
       }
     },
@@ -117,6 +117,7 @@ export default new Vuex.Store({
       // Payload contains an object containing properties
       // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
       for (let property in newProperties) {
+        // eslint-disable-next-line
         if (state.atomActiveSimpleData.hasOwnProperty(property)) {
           state.atomActiveSimpleData[property] = newProperties[property];
         }
@@ -133,6 +134,7 @@ export default new Vuex.Store({
       // Payload contains an object containing properties
       // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
       for (let property in newProperties) {
+        // eslint-disable-next-line
         if (state.clickedAtom.hasOwnProperty(property)) {
           state.clickedAtom[property] = newProperties[property];
         }
@@ -148,6 +150,7 @@ export default new Vuex.Store({
       // Payload contains an object containing properties
       // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
       for (let property in newProperties) {
+        // eslint-disable-next-line
         if (state.options.hasOwnProperty(property)) {
           state.options[property] = newProperties[property];
         }

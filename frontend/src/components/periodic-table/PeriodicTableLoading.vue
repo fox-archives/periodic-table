@@ -7,14 +7,8 @@
     xmlns="http://www.w3.org/2000/svg"
     stroke="#222"
   >
-    <g
-fill="none" fill-rule="evenodd"
-stroke-width="2"
->
-      <circle
-cx="22" cy="22"
-r="1"
->
+    <g fill="none" fill-rule="evenodd" stroke-width="2">
+      <circle cx="22" cy="22" r="1">
         <animate
           attributeName="r"
           begin="0s"
@@ -36,10 +30,7 @@ r="1"
           repeatCount="indefinite"
         />
       </circle>
-      <circle
-cx="22" cy="22"
-r="1"
->
+      <circle cx="22" cy="22" r="1">
         <animate
           attributeName="r"
           begin="-0.9s"
@@ -67,6 +58,6 @@ r="1"
 
 <script>
 export default {
-  name: 'PeriodicTableLoading'
+  name: "PeriodicTableLoading"
 };
 </script>

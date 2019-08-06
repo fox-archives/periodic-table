@@ -10,25 +10,25 @@ function highlightLabelSection(index, type) {
     groupExclude: -1
   });
 
-  if (type === 'period') {
+  if (type === "period") {
     let period = index + 1;
     this.setColorOfAllButOnePeriod({
-      prefix: 'light-', // want this to be light
+      prefix: "light-", // want this to be light
       exclude: period
     });
     this.setColorOfOnePeriod({
-      prefix: 'dark-', // want this to be dark
+      prefix: "dark-", // want this to be dark
       include: period
     });
   }
-  if (type === 'group') {
+  if (type === "group") {
     let group = index + 1;
     this.setColorOfAllButOneGroup({
-      prefix: 'light-', // want this to be  light
+      prefix: "light-", // want this to be  light
       exclude: group
     });
     this.setColorOfOneGroup({
-      prefix: 'dark-', // want this to be dark
+      prefix: "dark-", // want this to be dark
       include: group
     });
   }
@@ -38,25 +38,25 @@ function highlightLabelSection(index, type) {
 //   'period'  Want to darken a period
 //   'group'  Want to darken a group
 function unhighlightLabelSection(index, type) {
-  if (type === 'period') {
+  if (type === "period") {
     let period = index + 1;
     this.setColorOfAllButOnePeriod({
-      prefix: '', // want this to be light
+      prefix: "", // want this to be light
       exclude: period
     });
     this.setColorOfOnePeriod({
-      prefix: '', // want this to be dark
+      prefix: "", // want this to be dark
       include: period
     });
   }
-  if (type === 'group') {
+  if (type === "group") {
     let group = index + 1;
     this.setColorOfAllButOneGroup({
-      prefix: '', // want this to be light
+      prefix: "", // want this to be light
       exclude: group
     });
     this.setColorOfOneGroup({
-      prefix: '', // want this to be dark
+      prefix: "", // want this to be dark
       include: group
     });
   }
@@ -69,14 +69,14 @@ function unhighlightLabelSection(index, type) {
     // We don't want to change color when this.clickedAtom.period / group is 0 that value is for groupless elements (lanth. and act. elements)
     // Nor do we want to change color when this.clickedAtom.period / group is -1, because that occurs when this.clickedAtom.active is false (I think this is already covered, but just a precaution)
     if (this.clickedAtom.period > 0) {
-      this.atomLabelPeriods[this.clickedAtom.period - 1].color = 'dark';
+      this.atomLabelPeriods[this.clickedAtom.period - 1].color = "dark";
     }
     if (this.clickedAtom.group > 0) {
-      this.atomLabelGroups[this.clickedAtom.group - 1].color = 'dark';
+      this.atomLabelGroups[this.clickedAtom.group - 1].color = "dark";
     }
 
     this.setColorOfOneAtom({
-      prefix: 'supdark-',
+      prefix: "supdark-",
       i: this.clickedAtom.index
     });
   }

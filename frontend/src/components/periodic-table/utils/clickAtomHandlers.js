@@ -2,7 +2,7 @@
 function updateClickedAtom(index) {
   // Change element info and label color (in case the mouse does not movein or moveout the element)
   this.clickedAtom.active = false;
-  this.setLabelColor(index, 'true');
+  this.setLabelColor(index, "true");
   this.updateActiveAtomForce(index); // This does not require clickedAtom.active to be false setLabelColor apparently does
   this.clickedAtom.active = true;
 
@@ -17,11 +17,11 @@ function updateClickedAtom(index) {
 
     // Sets color of all elements in periodic table
     this.setColorOfAllButOneAtom({
-      prefix: '',
+      prefix: "",
       exclude: index
     });
     this.setColorOfOneAtom({
-      prefix: 'supdark-',
+      prefix: "supdark-",
       i: index
     });
   }
@@ -36,11 +36,11 @@ function updateClickedAtom(index) {
 
     // Sets color of all elements in periodic table
     this.setColorOfAllButOneAtom({
-      prefix: '',
+      prefix: "",
       exclude: index
     });
     this.setColorOfOneAtom({
-      prefix: 'dark-',
+      prefix: "dark-",
       i: index
     });
   }

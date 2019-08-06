@@ -16,13 +16,13 @@
 
 <script>
 export default {
-  name: 'Foot'
+  name: "Foot"
 };
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables.scss';
-@import 'foot';
+@import "~@/styles/variables.scss";
+@import "foot";
 
 .light-def {
   p,
