@@ -1,9 +1,15 @@
 <template>
   <div class="atom-info-wrapper">
-    <div class="atom-info" v-if="ready">
-      <simplebar class="simplebar" data-simplebar-auto-hide="false">
+    <div v-if="ready"
+class="atom-info">
+      <simplebar
+class="simplebar" data-simplebar-auto-hide="false"
+>
         <div class="atom-info-inner">
-          <div class="atom-stat" v-for="atomTabDataMember in atomActiveSidebarDataModified">
+          <div
+            v-for="atomTabDataMember in atomActiveSidebarDataModified"
+            class="atom-stat"
+          >
             <p class="atom-stat-text">
               {{ atomTabDataMember[0] }}: {{ atomTabDataMember[1] }}
             </p>
@@ -40,34 +46,34 @@ export default {
 
 .light-def {
   @include panelTextualThemeDefault(
-      $ld-background,
-      $ld-background-accent,
-      true,
-      $ld-shadow,
-      $ld-shadow-hover,
-      $ld-text
+    $ld-background,
+    $ld-background-accent,
+    true,
+    $ld-shadow,
+    $ld-shadow-hover,
+    $ld-text
   );
 }
 
 .light-con {
   @include panelTextualThemeDefault(
-      $lc-background,
-      $lc-background-accent,
-      true,
-      $lc-shadow,
-      $lc-shadow-hover,
-      $lc-text
+    $lc-background,
+    $lc-background-accent,
+    true,
+    $lc-shadow,
+    $lc-shadow-hover,
+    $lc-text
   );
 }
 
 .dark-def {
   @include panelTextualThemeDefault(
-      $dd-background,
-      $dd-background-accent,
-      false,
-      $dd-shadow,
-      $dd-shadow-hover,
-      $dd-text
+    $dd-background,
+    $dd-background-accent,
+    false,
+    $dd-shadow,
+    $dd-shadow-hover,
+    $dd-text
   );
 }
 </style>

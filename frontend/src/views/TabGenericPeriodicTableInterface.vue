@@ -1,7 +1,11 @@
 <template>
   <div
     id="display"
-    :class="[options.periodicTableHeightLayoutState, options.themeType, options.panelLayout]"
+    :class="[
+      options.periodicTableHeightLayoutState,
+      options.themeType,
+      options.panelLayout
+    ]"
   >
     <atom-info-panel />
     <periodic-table />
@@ -33,7 +37,7 @@ export default {
     // Purpose: To update the panelLayout depending on the size of the viewport (greater than or less than 1100 px)
     updateInfoLocation: function() {
       // if (window.innerWidth < 1300) {
-      if(window.innerWidth < 1150) {
+      if (window.innerWidth < 1150) {
         this.setOptions({ panelLayout: 'panel-top' });
       } else {
         this.setOptions({ panelLayout: 'panel-side' });

@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue from 'vue';
 
 // Purpose: To set a variant of the default color to any one element
 // @param #object 'payload' contains properties:
@@ -125,7 +125,6 @@ export {
   setColorOfOneGroup,
   setColorOfOnePeriod,
   setColorOfAllAtoms,
-
   setColorOfAllButOneAtom,
   setColorOfAllButOnePeriod,
   setColorOfAllButOneGroup

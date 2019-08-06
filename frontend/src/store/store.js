@@ -1,6 +1,14 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import { setColorOfOneAtom, setColorOfOneGroup, setColorOfOnePeriod, setColorOfAllButOneAtom, setColorOfAllButOnePeriod, setColorOfAllButOneGroup, setColorOfAllAtoms } from "@/store/atomHighlighting";
+import {
+  setColorOfOneAtom,
+  setColorOfOneGroup,
+  setColorOfOnePeriod,
+  setColorOfAllButOneAtom,
+  setColorOfAllButOnePeriod,
+  setColorOfAllButOneGroup,
+  setColorOfAllAtoms
+} from '@/store/atomHighlighting';
 import { initAtomData, switchAtomTabData } from '@/api/fetchData';
 
 Vue.use(Vuex);
@@ -51,7 +59,7 @@ export default new Vuex.Store({
       blurType: 'no-blur',
 
       periodicTableHeightLayoutState: ''
-    },
+    }
   },
   mutations: {
     setColorOfOneAtom,
@@ -84,7 +92,6 @@ export default new Vuex.Store({
       state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
       state.atomActiveSidebarData = state.atomSidebarData[index];
     },
-
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
     // @param #object 'payload' contains properties:

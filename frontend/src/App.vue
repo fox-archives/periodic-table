@@ -1,5 +1,7 @@
 <template>
-  <div id="content" :class="[options.themeType, options.panelLayout]">
+  <div
+id="content" :class="[options.themeType, options.panelLayout]"
+>
     <navigation />
     <router-view />
     <foot />
@@ -13,8 +15,8 @@ import Foot from '@/components/foot/Foot.vue';
 
 export default {
   components: {
-    'navigation': Navigation,
-    'foot': Foot
+    navigation: Navigation,
+    foot: Foot
   },
   computed: {
     ...mapState(['options'])

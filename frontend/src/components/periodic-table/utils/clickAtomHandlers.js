@@ -8,10 +8,7 @@ function updateClickedAtom(index) {
 
   // What to do if clicking for the first time, or clicking on a different element
   // Save the index (element index, period.json index, and group index) of the clicked on element
-  if (
-    this.clickedAtom.index === -1 ||
-    this.clickedAtom.index !== index
-  ) {
+  if (this.clickedAtom.index === -1 || this.clickedAtom.index !== index) {
     this.setClickedAtom({
       index: index,
       period: this.labelClassToNone(this.atomPlacements[index].period),
@@ -49,6 +46,4 @@ function updateClickedAtom(index) {
   }
 }
 
-export {
-  updateClickedAtom
-};
+export { updateClickedAtom };
