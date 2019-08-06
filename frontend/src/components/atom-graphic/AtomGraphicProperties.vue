@@ -2,7 +2,9 @@
   <div>
     <div id="visual-inner">
       <div id="icon">
-        <div id="icon-inner" :class="atomActiveSimpleData.color">
+        <div
+id="icon-inner" :class="atomActiveSimpleData.color"
+>
           <p>{{ atomActiveSimpleData.atomAbbreviation }}</p>
         </div>
       </div>

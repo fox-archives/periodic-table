@@ -34,7 +34,6 @@ function highlightLabelSection(index, type) {
   }
 }
 
-
 // @param #String 'type' can be:
 //   'period'  Want to darken a period
 //   'group'  Want to darken a group
@@ -83,7 +82,4 @@ function unhighlightLabelSection(index, type) {
   }
 }
 
-export {
-  highlightLabelSection,
-  unhighlightLabelSection
-};
+export { highlightLabelSection, unhighlightLabelSection };

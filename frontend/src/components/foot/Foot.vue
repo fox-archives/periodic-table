@@ -1,8 +1,14 @@
 <template>
   <footer id="footer">
-    <p id="name-lg">© 2019 Edwin Kofler</p>
-    <p id="name-md">© E. Kofler</p>
-    <p id="name-sm">©</p>
+    <p id="name-lg">
+      © 2019 Edwin Kofler
+    </p>
+    <p id="name-md">
+      © E. Kofler
+    </p>
+    <p id="name-sm">
+      ©
+    </p>
     <a href="#">About</a>
     <a href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
@@ -11,7 +17,7 @@
 <script>
 export default {
   name: 'Foot'
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -19,7 +25,8 @@ export default {
 @import 'foot';
 
 .light-def {
-  p, a {
+  p,
+  a {
     color: $oc-gray-9;
   }
 
@@ -33,7 +40,8 @@ export default {
 }
 
 .dark-def {
-  p, a {
+  p,
+  a {
     color: $oc-gray-1;
   }
 

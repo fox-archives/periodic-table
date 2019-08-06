@@ -53,6 +53,4 @@ function setLabelColor(index, isMouseOver) {
   }
 }
 
-export {
-  setLabelColor
-};
+export { setLabelColor };

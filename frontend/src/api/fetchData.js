@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 function initAtomData({ state, dispatch, commit }) {
   Promise.all([
@@ -60,7 +60,4 @@ function switchAtomTabData({ state }, payload) {
   });
 }
 
-export {
-  initAtomData,
-  switchAtomTabData
-};
+export { initAtomData, switchAtomTabData };
