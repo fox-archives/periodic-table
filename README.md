@@ -1,10 +1,33 @@
 # Periodic Table
-Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop. Build process set up manually.
 
-## Current Development
+## Introduction
+
+Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
+
 ![Periodic Table Image](./periodic-table.png)
 
+## Setup
+
+```sh
+git clone https://github.com/eankeen/periodic-table
+cd periodic-table
+./bootstrap.sh
+```
+
+### Backend
+
+Node, Express combo.
+
+### Frontend
+
+Vue, Babel, PostCss, Sass, Eslint, Prettier, Webpack combo.
+
+### Wolfram
+
+Generates needed data using Wolfram Mathematica in the Wolfram Language.
+
 ## Browser Compatibility
+
 Not intended to support Internet Explorer or Opera.
 
 Element   | Edge    | Firefox | Chrome    | Safari   | iOS Safari
@@ -14,6 +37,3 @@ Grid      | 16+     | 52+     | 57+       | 10.1+    | 10.3+
 Vue 2.X   | 12+     | 21+     | 23+       | 6+       | 6.1+
 
 \* Supports with extension -moz, -webkit, etc.
-
-## Project Status
-* This is an old version of my website. This does not take advantage of all the features of Vue. The version in production is not public.
