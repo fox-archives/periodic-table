@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from "vue";
 
 // Purpose: To set a variant of the default color to any one element
 // @param #object 'payload' contains properties:
@@ -6,7 +6,7 @@ import Vue from 'vue';
 //   (req) .prefix  Prefix to prefix to the color
 function setColorOfOneAtom(state, payload) {
   let defaultColor = state.atomColors[payload.i].defaultColor;
-  Vue.set(state.atomColors[payload.i], 'color', payload.prefix + defaultColor);
+  Vue.set(state.atomColors[payload.i], "color", payload.prefix + defaultColor);
 }
 
 // Purpose: To set a variant of the default color to any one group
@@ -24,7 +24,7 @@ function setColorOfOneGroup(state, payload) {
     // If the element group is excluded (from @param 'payload')
     // Allow type coercion (so '1' == 1)
     if (elementGroup == payload.include) {
-      Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
+      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
     }
   }
 }
@@ -44,7 +44,7 @@ function setColorOfOnePeriod(state, payload) {
     // If the element period is excluded (from @param 'payload')
     // Allow type coercion (so '1' == 1)
     if (elementPeriod == payload.include) {
-      Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
+      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
     }
   }
 }
@@ -57,7 +57,7 @@ function setColorOfAllAtoms(state, payload) {
     // defaultColor represents default color of a given periodic table element
     let defaultColor = state.atomColors[i].defaultColor;
 
-    Vue.set(state.atomColors[i], 'color', payload + defaultColor);
+    Vue.set(state.atomColors[i], "color", payload + defaultColor);
   }
 }
 
@@ -75,7 +75,7 @@ function setColorOfAllButOneAtom(state, payload) {
 
     // i represents the index of the element to be excluded
     if (i != payload.exclude) {
-      Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
+      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
     }
   }
 }
@@ -95,7 +95,7 @@ function setColorOfAllButOnePeriod(state, payload) {
     // If the element period is excluded (from @param 'payload')
     // Allow type coercion (so '1' == 1)
     if (elementPeriod != payload.exclude) {
-      Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
+      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
     }
   }
 }
@@ -115,7 +115,7 @@ function setColorOfAllButOneGroup(state, payload) {
     // If the element group is excluded (from @param 'payload')
     // Allow type coercion (so '1' == 1)
     if (elementGroup != payload.exclude) {
-      Vue.set(state.atomColors[i], 'color', payload.prefix + defaultColor);
+      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
     }
   }
 }

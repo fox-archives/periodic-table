@@ -1,13 +1,11 @@
 <template>
   <div class="atom-info-wrapper">
-    <div v-if="ready"
-class="atom-info">
-      <simplebar
-class="simplebar" data-simplebar-auto-hide="false"
->
+    <div v-if="ready" class="atom-info">
+      <simplebar class="simplebar" data-simplebar-auto-hide="false">
         <div class="atom-info-inner">
           <div
             v-for="atomTabDataMember in atomActiveSidebarDataModified"
+            :key="atomTabDataMember[0]"
             class="atom-stat"
           >
             <p class="atom-stat-text">
@@ -21,17 +19,17 @@ class="simplebar" data-simplebar-auto-hide="false"
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import simplebar from 'simplebar-vue';
-import 'simplebar/dist/simplebar.min.css';
+import { mapState } from "vuex";
+import simplebar from "simplebar-vue";
+import "simplebar/dist/simplebar.min.css";
 
 export default {
-  name: 'AtomSidebar',
+  name: "AtomSidebar",
   components: {
     simplebar
   },
   computed: {
-    ...mapState(['atomActiveSidebarData', 'ready']),
+    ...mapState(["atomActiveSidebarData", "ready"]),
     atomActiveSidebarDataModified() {
       return Object.entries(this.atomActiveSidebarData);
     }
@@ -40,9 +38,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables.scss';
-@import 'atomSidebarTheme';
-@import 'atomSidebar';
+@import "~@/styles/variables.scss";
+@import "atomSidebarTheme";
+@import "atomSidebar";
 
 .light-def {
   @include panelTextualThemeDefault(

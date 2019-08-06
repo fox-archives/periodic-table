@@ -6,18 +6,18 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from "vuex";
 
 export default {
-  name: 'AtomInfoPanel',
+  name: "AtomInfoPanel",
   computed: {
-    ...mapState(['options'])
+    ...mapState(["options"])
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables';
+@import "~@/styles/variables";
 
 // INFO SIDE
 .panel-side #panel {

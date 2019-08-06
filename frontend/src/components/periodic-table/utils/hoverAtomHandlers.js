@@ -22,15 +22,15 @@ function setLabelColor(index, isMouseOver) {
     // Recall Act. and Lan. have period.json of 0, and they don't have period.json / group labels
     if (period > 0) {
       // Darken the labels if the mouse is entering an element
-      if (isMouseOver === 'true') {
-        this.atomLabelPeriods[period - 1].color = 'dark';
+      if (isMouseOver === "true") {
+        this.atomLabelPeriods[period - 1].color = "dark";
       }
       // Lighten the labels if the mouse is leaving an element
-      else if (isMouseOver === 'false') {
-        this.atomLabelPeriods[period - 1].color = 'light';
+      else if (isMouseOver === "false") {
+        this.atomLabelPeriods[period - 1].color = "light";
       } else {
         console.warn(
-          'Unexpected parameter for isMouseOver passed through setLabelColor.'
+          "Unexpected parameter for isMouseOver passed through setLabelColor."
         );
       }
     }
@@ -38,15 +38,15 @@ function setLabelColor(index, isMouseOver) {
     // Recall Act. and Lan. have group of 0, and they don't have period.json / group labels
     if (group > 0) {
       // Darken the labels if the mouse is entering an element
-      if (isMouseOver === 'true') {
-        this.atomLabelGroups[group - 1].color = 'dark';
+      if (isMouseOver === "true") {
+        this.atomLabelGroups[group - 1].color = "dark";
       }
       // Lighten the labels if the moues is leaving an element
-      else if (isMouseOver === 'false') {
-        this.atomLabelGroups[group - 1].color = 'light';
+      else if (isMouseOver === "false") {
+        this.atomLabelGroups[group - 1].color = "light";
       } else {
         console.warn(
-          'Unexpected parameter for isMouseOver passed through setLabelColor.'
+          "Unexpected parameter for isMouseOver passed through setLabelColor."
         );
       }
     }

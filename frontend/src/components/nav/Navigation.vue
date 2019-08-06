@@ -1,24 +1,16 @@
 <template>
-  <nav
-id="nav" :class="options.themeType"
->
+  <nav id="nav" :class="options.themeType">
     <ul id="nav-content">
       <li id="logo-container">
         <div id="logo">
           <a href="/">
-            <img src="@/assets/placeholder.png"
-alt="logo" height="32px"
-/>
+            <img src="@/assets/placeholder.png" alt="logo" height="32px" />
           </a>
         </div>
       </li>
 
-      <li
-class="nav-item" @click="switchAtomTabDataWrapper('properties')"
->
-        <router-link
-class="nav-item-inner link" to="/properties"
->
+      <li class="nav-item" @click="switchAtomTabDataWrapper('properties')">
+        <router-link class="nav-item-inner link" to="/properties">
           <list-icon class="icon feather-icon" />
           <h2 class="heading">
             Properties
@@ -26,12 +18,8 @@ class="nav-item-inner link" to="/properties"
         </router-link>
       </li>
 
-      <li
-class="nav-item" @click="switchAtomTabDataWrapper('electrons')"
->
-        <router-link
-class="nav-item-inner link" to="/electrons"
->
+      <li class="nav-item" @click="switchAtomTabDataWrapper('electrons')">
+        <router-link class="nav-item-inner link" to="/electrons">
           <electrons class="icon custom-icon" />
           <h2 class="heading">
             Electrons
@@ -39,12 +27,8 @@ class="nav-item-inner link" to="/electrons"
         </router-link>
       </li>
 
-      <li
-class="nav-item" @click="switchAtomTabDataWrapper('orbitals')"
->
-        <router-link
-class="nav-item-inner link" to="/orbitals"
->
+      <li class="nav-item" @click="switchAtomTabDataWrapper('orbitals')">
+        <router-link class="nav-item-inner link" to="/orbitals">
           <orbitals class="icon custom-icon" />
           <h2 class="heading">
             Orbitals
@@ -52,12 +36,8 @@ class="nav-item-inner link" to="/orbitals"
         </router-link>
       </li>
 
-      <li
-class="nav-item" @click="switchAtomTabDataWrapper('isotopes')"
->
-        <router-link
-class="nav-item-inner link" to="/isotopes"
->
+      <li class="nav-item" @click="switchAtomTabDataWrapper('isotopes')">
+        <router-link class="nav-item-inner link" to="/isotopes">
           <isotopes class="icon custom-icon" />
           <h2 class="heading">
             Isotopes
@@ -65,12 +45,8 @@ class="nav-item-inner link" to="/isotopes"
         </router-link>
       </li>
 
-      <li
-class="nav-item" @click="switchAtomTabDataWrapper('explore')"
->
-        <router-link
-class="nav-item-inner link" to="/explore"
->
+      <li class="nav-item" @click="switchAtomTabDataWrapper('explore')">
+        <router-link class="nav-item-inner link" to="/explore">
           <map-icon class="icon feather-icon" />
           <h2 class="heading">
             Explore
@@ -78,12 +54,8 @@ class="nav-item-inner link" to="/explore"
         </router-link>
       </li>
 
-      <li
-class="nav-item" @click="switchAtomTabDataWrapper('trivia')"
->
-        <router-link
-class="nav-item-inner link" to="/trivia"
->
+      <li class="nav-item" @click="switchAtomTabDataWrapper('trivia')">
+        <router-link class="nav-item-inner link" to="/trivia">
           <check-icon class="icon feather-icon" />
           <h2 class="heading">
             Trivia
@@ -91,9 +63,7 @@ class="nav-item-inner link" to="/trivia"
         </router-link>
       </li>
 
-      <li id="info-nav-item"
-class="nav-item nav-item-inner no-text"
->
+      <li id="info-nav-item" class="nav-item nav-item-inner no-text">
         <info-icon class="icon feather-icon" />
       </li>
 
@@ -105,8 +75,7 @@ class="nav-item nav-item-inner no-text"
         <search-icon class="icon feather-icon" />
       </li>
 
-      <li id="menu-mobile"
-class="nav-item nav-item-inner no-text">
+      <li id="menu-mobile" class="nav-item nav-item-inner no-text">
         <menu-icon class="icon feather-icon" />
       </li>
     </ul>
@@ -114,29 +83,27 @@ class="nav-item nav-item-inner no-text">
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState, mapActions } from "vuex";
 
 // Importing to-be-used SVG icons
-import List from '@eankeen/vue-feather-icons/components/list.vue';
-import Electrons from '@/assets/svg/icons/electrons.svg';
-import Orbitals from '@/assets/svg/icons/orbitals.svg';
-import Orbitals2 from '@/assets/svg/icons/orbitals2.svg';
-import Isotopes from '@/assets/svg/icons/isotopes.svg';
-import Map from '@eankeen/vue-feather-icons/components/map.vue'; // Explore
-import Check from '@eankeen/vue-feather-icons/components/check.vue'; // Trivia
-import Info from '@eankeen/vue-feather-icons/components/info.vue';
-import Settings from '@eankeen/vue-feather-icons/components/settings.vue';
-import Search from '@eankeen/vue-feather-icons/components/search.vue';
-import Menu from '@eankeen/vue-feather-icons/components/menu.vue';
+import List from "@eankeen/vue-feather-icons/components/list.vue";
+import Electrons from "@/assets/svg/icons/electrons.svg";
+import Orbitals from "@/assets/svg/icons/orbitals.svg";
+import Isotopes from "@/assets/svg/icons/isotopes.svg";
+import Map from "@eankeen/vue-feather-icons/components/map.vue"; // Explore
+import Check from "@eankeen/vue-feather-icons/components/check.vue"; // Trivia
+import Info from "@eankeen/vue-feather-icons/components/info.vue";
+import Settings from "@eankeen/vue-feather-icons/components/settings.vue";
+import Search from "@eankeen/vue-feather-icons/components/search.vue";
+import Menu from "@eankeen/vue-feather-icons/components/menu.vue";
 
 export default {
-  name: 'Navigation',
+  name: "Navigation",
   components: {
     // Icon Components
     ListIcon: List,
     Electrons,
     Orbitals,
-    Orbitals2,
     Isotopes,
     MapIcon: Map, // Explore
     CheckIcon: Check, // Trivia
@@ -146,22 +113,23 @@ export default {
     MenuIcon: Menu
   },
   computed: {
-    ...mapState(['options'])
+    ...mapState(["options"])
   },
   methods: {
-    ...mapActions(['switchAtomTabData']),
+    ...mapActions(["switchAtomTabData"]),
     switchAtomTabDataWrapper: function(atomTabToSwitchTo) {
-      if (atomTabToSwitchTo === 'properties') {
+      if (atomTabToSwitchTo === "properties") {
         this.switchAtomTabData({
-          atomColorAppearance: 'Category',
-          atomTab: 'Properties'
+          atomColorAppearance: "Category",
+          atomTab: "Properties"
         });
-      } else if (atomTabToSwitchTo === 'electrons') {
+      } else if (atomTabToSwitchTo === "electrons") {
         this.switchAtomTabData({
-          atomColorAppearance: 'OrbitalBlock',
-          atomTab: 'Isotopes'
+          atomColorAppearance: "OrbitalBlock",
+          atomTab: "Isotopes"
         });
-      } else if (atomTabToSwitchTo === 'orbitals') {
+      } else if (atomTabToSwitchTo === "orbitals") {
+        // eslint-disable-next-line
       } else if (atomTabToSwitchTo === 'isotopes') {
       }
       // explore, trivia, excluded
@@ -172,12 +140,12 @@ export default {
 
 <style scoped lang="scss">
 // Variables, mixins, and common components
-@import '~@/styles/variables.scss';
-@import '~@/styles/tags.scss';
+@import "~@/styles/variables.scss";
+@import "~@/styles/tags.scss";
 // Structure
-@import 'navigation';
-@import 'navigationMobile';
-@import 'navigationThemes';
+@import "navigation";
+@import "navigationMobile";
+@import "navigationThemes";
 
 .light-def {
   @include navigationThemeDefault(

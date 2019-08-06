@@ -13,34 +13,34 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from 'vuex';
-import { throttle, debounce } from 'lodash';
-import PeriodicTable from '@/components/periodic-table/PeriodicTable.vue';
-import AtomInfoPanel from '@/components/AtomInfoPanel.vue';
+import { mapState, mapMutations } from "vuex";
+import { throttle, debounce } from "lodash";
+import PeriodicTable from "@/components/periodic-table/PeriodicTable.vue";
+import AtomInfoPanel from "@/components/AtomInfoPanel.vue";
 
 export default {
-  name: 'TabGenericPeriodicTableInterface',
-  computed: {
-    ...mapState(['options'])
-  },
+  name: "TabGenericPeriodicTableInterface",
   components: {
-    'atom-info-panel': AtomInfoPanel,
-    'periodic-table': PeriodicTable
+    "atom-info-panel": AtomInfoPanel,
+    "periodic-table": PeriodicTable
   },
   mounted() {
     this.updateInfoLocation();
-    window.addEventListener('resize', throttle(this.updateInfoLocation, 250));
-    window.addEventListener('resize', debounce(this.updateInfoLocation, 100));
+    window.addEventListener("resize", throttle(this.updateInfoLocation, 250));
+    window.addEventListener("resize", debounce(this.updateInfoLocation, 100));
+  },
+  computed: {
+    ...mapState(["options"])
   },
   methods: {
-    ...mapMutations(['setOptions']),
+    ...mapMutations(["setOptions"]),
     // Purpose: To update the panelLayout depending on the size of the viewport (greater than or less than 1100 px)
     updateInfoLocation: function() {
       // if (window.innerWidth < 1300) {
       if (window.innerWidth < 1150) {
-        this.setOptions({ panelLayout: 'panel-top' });
+        this.setOptions({ panelLayout: "panel-top" });
       } else {
-        this.setOptions({ panelLayout: 'panel-side' });
+        this.setOptions({ panelLayout: "panel-side" });
       }
     }
   }
@@ -48,7 +48,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables';
+@import "~@/styles/variables";
 
 #display {
   margin-left: $body-margin;

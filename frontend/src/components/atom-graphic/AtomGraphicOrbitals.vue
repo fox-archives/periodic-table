@@ -5,20 +5,20 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from "vuex";
 
 export default {
-  name: 'AtomGraphicOrbitals',
+  name: "AtomGraphicOrbitals",
   computed: {
-    ...mapState(['atomActiveSimpleData', 'options'])
+    ...mapState(["atomActiveSimpleData", "options"])
   }
 };
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables';
-@import 'atomGraphicTheme';
-@import 'atomGraphic';
+@import "~@/styles/variables";
+@import "atomGraphicTheme";
+@import "atomGraphic";
 
 .light-def {
   #visual-inner {

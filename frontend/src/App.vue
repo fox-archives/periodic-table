@@ -1,7 +1,5 @@
 <template>
-  <div
-id="content" :class="[options.themeType, options.panelLayout]"
->
+  <div id="content" :class="[options.themeType, options.panelLayout]">
     <navigation />
     <router-view />
     <foot />
@@ -9,9 +7,9 @@ id="content" :class="[options.themeType, options.panelLayout]"
 </template>
 
 <script>
-import { mapState } from 'vuex';
-import Navigation from '@/components/nav/Navigation.vue';
-import Foot from '@/components/foot/Foot.vue';
+import { mapState } from "vuex";
+import Navigation from "@/components/nav/Navigation.vue";
+import Foot from "@/components/foot/Foot.vue";
 
 export default {
   components: {
@@ -19,19 +17,19 @@ export default {
     foot: Foot
   },
   computed: {
-    ...mapState(['options'])
+    ...mapState(["options"])
   }
 };
 </script>
 
 <style lang="scss">
-@import 'styles/variables';
+@import "styles/variables";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: latolight, Arial, 'sans-serif';
+  font-family: latolight, Arial, "sans-serif";
 }
 
 // The top three templates have the following IDs respectively: #nav, #display, #foot

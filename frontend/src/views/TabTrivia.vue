@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: 'TabTrivia'
+  name: "TabTrivia"
 };
 </script>
 
 <style scoped lang="scss">
-@import '~@/styles/variables';
+@import "~@/styles/variables";
 
 #trivia {
   width: 100%;
