@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
+Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop. The backend is a Node and Express combo. The backend is a Vue, Babel, Webpack, PostCss, Sass, Eslint, Prettier combo.
 
 ![Periodic Table Image](./periodic-table.png)
 
@@ -13,18 +13,6 @@ git clone https://github.com/eankeen/periodic-table
 cd periodic-table
 ./bootstrap.sh
 ```
-
-### Backend
-
-Node, Express combo.
-
-### Frontend
-
-Vue, Babel, PostCss, Sass, Eslint, Prettier, Webpack combo.
-
-### Wolfram
-
-Generates needed data using Wolfram Mathematica in the Wolfram Language.
 
 ## Browser Compatibility
 
