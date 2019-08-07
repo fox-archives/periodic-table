@@ -1,18 +1,20 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
+SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
 Import["../commonMethods.wls"];
 
 atomTransform[atomProperty_]:= (
-  Print@atomProperty;
   Return[atomProperty];
 );
 
-IteratePeriodicTable[
+IterateAtomProperty[
   "AtomicNumber",
   "Atomic Number",
   Hold[atomTransform],
-  "",
+  "lanthanites case",
   "actinides case",
   "atomicNumber.json"
 ];
+
+Print["Atomic Number Done"];
