@@ -24,32 +24,28 @@
   $icon
 ) {
   // Make nav bar have a shadow
-  @include shadow('#nav', $hasShadow, $shadow, $shadowHover);
+  @include shadow('.inner', $hasShadow, $shadow, $shadowHover);
+  @include shadow('.no-text', $hasShadow, $shadow, $shadowHover);
 
   // Color of main nav bar
-  #nav {
+  .inner, .no-text {
     background-color: $background;
   }
 
-  // Color of each nav item
-  .nav-item-body {
-    // Background should automatically be $background
-  }
-
-  .nav-item-inner:hover {
+  .inner:hover, .no-text:hover {
     background-color: $navItemHover;
   }
 
-  .nav-item-inner:active {
+  .inner:active, .no-text:hover {
     background-color: $navItemClick;
   }
 
-  .nav-item-inner.router-link-active {
+  .router-link-active .inner {
     background-color: $navItemActive;
   }
 
   // Color of of headings
-  .heading {
+  h2 {
     color: $heading;
   }
 

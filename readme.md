@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop. The backend is a Node and Express combo. The backend is a Vue, Babel, Webpack, PostCss, Sass, Eslint, and Prettier combo.
+Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
 
 ![Periodic Table Image](./periodic-table.png)
 
