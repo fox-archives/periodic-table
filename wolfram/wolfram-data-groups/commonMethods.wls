@@ -58,16 +58,3 @@ IterateAtomProperty[
   
   Export[jsonFile, rootData, "JSON"];
 );
-
-(*
-  Ensuers there are no "Missing[NotAvailable]" or
-  "Missing[NotApplicable]" or "Missing[Unknown]" tags
-*)
-catchErrorsAndNumConvertAndUnitConvert[data_]:= (
-	If[FailureQ[data],
-		Return["Failed"];
-	];
-	If[MissingQ[data],
-		Return["Unknown"];
-	];
-);
