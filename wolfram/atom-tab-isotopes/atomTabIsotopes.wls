@@ -48,7 +48,7 @@ For[i = 1, i < 119, i++,
 	periodicTable = Append[periodicTable, newElement];
 
 	(* Case for Lanthanites *)
-	If[i == 56,
+	If[i == 56],
 		lanth = {
 			"decayMode" -> "unknown"
 		};

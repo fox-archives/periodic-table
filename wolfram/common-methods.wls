@@ -81,18 +81,14 @@ toHTMLSuperScript[i_, fn_]:= (
 	];
 )
 
-customFunction[i_, fn_]:=
-	If["true" === "true",
-		newProp = ElementData[i, fn];
-		Do[
-			(* "newProp[[j]]" represents each element in array of all ionizationEnergies for a given periodic table element *)
-			(*newProp[[j]] = scientificToRegular[newProp[[j]]];*)
-			newProp[[j]] = removeEndingPeriod@ToString@AccountingForm@newProp[[j]];
-			(*Print@newProp[[j]];*)
-		, {j, 1, Length[newProp]}];
-		Return[newProp];
+customFunction[i_, fn_]:= (
+	newProp = ElementData[i, fn];
+	Do[
+		(* "newProp[[j]]" represents each element in array of all ionizationEnergies for a given periodic table element *)
+		(*newProp[[j]] = scientificToRegular[newProp[[j]]];*)
+		newProp[[j]] = removeEndingPeriod@ToString@AccountingForm@newProp[[j]];
+		(*Print@newProp[[j]];*)
+		, {j, 1, Length[newProp]}
 	];
-
-doCrap[]:= (
-	Print["random crap"];
+	Return[newProp];
 )
