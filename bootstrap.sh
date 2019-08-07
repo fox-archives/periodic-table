@@ -1,20 +1,15 @@
 #!/bin/sh
 echo "[BOOTSTRAP] INSTALLING AT ROOT"
-npm i
+yarn install
 
 echo "[BOOSTRAP] INSTALLING AT FRONT"
 cd frontend || exit
-npm i
+yarn install
 cd ..
 
 echo "[BOOTSTRAP] INSTALLING AT BACKEND"
 cd backend || exit
-npm i
-cd ..
-
-echo "[BOOTSTRAP] INSTALLING AT WOLFRAM"
-cd wolfram || exit
-npm i
+yarn install
 cd ..
 
 echo "[BOOTSTRAP] DONE"
