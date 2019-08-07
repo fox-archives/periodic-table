@@ -9,73 +9,61 @@
         </div>
       </li>
 
-      <li class="nav-item" @click="switchAtomTabDataWrapper('properties')">
-        <router-link class="nav-item-inner link" to="/properties">
+      <router-link tag="li" to="/properties">
+        <div class="inner" @click="switchAtomTabDataWrapper('properties')">
           <list-icon class="icon feather-icon" />
-          <h2 class="heading">
-            Properties
-          </h2>
-        </router-link>
-      </li>
+          <h2>Properties</h2>
+        </div>
+      </router-link>
 
-      <li class="nav-item" @click="switchAtomTabDataWrapper('electrons')">
-        <router-link class="nav-item-inner link" to="/electrons">
+      <router-link tag="li" to="/electrons">
+        <div class="inner" @click="switchAtomTabDataWrapper('electrons')">
           <electrons class="icon custom-icon" />
-          <h2 class="heading">
-            Electrons
-          </h2>
-        </router-link>
-      </li>
+          <h2>Electrons</h2>
+        </div>
+      </router-link>
 
-      <li class="nav-item" @click="switchAtomTabDataWrapper('orbitals')">
-        <router-link class="nav-item-inner link" to="/orbitals">
+     <router-link tag="li" to="/orbitals">
+        <div class="inner" @click="switchAtomTabDataWrapper('orbitals')">
           <orbitals class="icon custom-icon" />
-          <h2 class="heading">
-            Orbitals
-          </h2>
-        </router-link>
-      </li>
+          <h2>Orbitals</h2>
+        </div>
+      </router-link>
 
-      <li class="nav-item" @click="switchAtomTabDataWrapper('isotopes')">
-        <router-link class="nav-item-inner link" to="/isotopes">
+      <router-link tag="li" to="/isotopes">
+        <div class="inner" @click="switchAtomTabDataWrapper('isotopes')">
           <isotopes class="icon custom-icon" />
-          <h2 class="heading">
-            Isotopes
-          </h2>
-        </router-link>
-      </li>
+          <h2>Isotopes</h2>
+        </div>
+      </router-link>
 
-      <li class="nav-item" @click="switchAtomTabDataWrapper('explore')">
-        <router-link class="nav-item-inner link" to="/explore">
+      <router-link tag="li" to="/explore">
+        <div class="inner" @click="switchAtomTabDataWrapper('explore')">
           <map-icon class="icon feather-icon" />
-          <h2 class="heading">
-            Explore
-          </h2>
-        </router-link>
-      </li>
+          <h2>Explore</h2>
+        </div>
+      </router-link>
 
-      <li class="nav-item" @click="switchAtomTabDataWrapper('trivia')">
-        <router-link class="nav-item-inner link" to="/trivia">
+      <router-link tag="li" to="/trivia">
+        <div class="inner" @click="switchAtomTabDataWrapper('trivia')">
           <check-icon class="icon feather-icon" />
-          <h2 class="heading">
-            Trivia
-          </h2>
-        </router-link>
-      </li>
+          <h2>Trivia</h2>
+        </div>
+      </router-link>
 
-      <li id="info-nav-item" class="nav-item nav-item-inner no-text">
+      <li id="info-nav-item" class="no-text">
         <info-icon class="icon feather-icon" />
       </li>
 
-      <li class="nav-item nav-item-inner no-text">
+      <li class="no-text">
         <settings-icon class="icon feather-icon" />
       </li>
 
-      <li class="nav-item nav-item-inner">
+      <li class="no-text">
         <search-icon class="icon feather-icon" />
       </li>
 
-      <li id="menu-mobile" class="nav-item nav-item-inner no-text">
+      <li id="menu-mobile" class="no-text">
         <menu-icon class="icon feather-icon" />
       </li>
     </ul>

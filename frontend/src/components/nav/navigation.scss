@@ -1,21 +1,9 @@
-// Navbar, including pop-ups
-#nav {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 10px;
-  user-select: none;
-  transition: createTransitions((box-shadow, background-color));
-}
-
-#nav:hover {
-  transition: createTransitions((box-shadow, background-color));
-}
-
 #nav-content {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
   list-style-type: none;
+  user-select: none;
+  margin-bottom: 3px;
 }
 
 // Logo
@@ -29,23 +17,25 @@
   padding-right: 10px;
 }
 
+li {
+  padding: 4px 6px;
+}
+
+
 #info-nav-item {
   margin-left: auto;
 }
 
-.nav-item-inner {
+.inner {
+  padding: 6px 8px;
   display: flex;
   align-items: center;
   height: 100%;
   border-radius: $border-radius-small;
-  padding: 10px 15px 10px 15px;
-}
-
-.nav-item-inner:hover {
   cursor: pointer;
 }
 
-.nav-item-inner:active {
+.inner:active {
   transition: createTransitions((background-color));
 }
 
@@ -53,7 +43,7 @@
   display: none;
 }
 
-.heading {
+h2 {
   font-family: robotolight, Arial, 'sans-serif';
   font-size: 1.125em;
   font-weight: normal;
@@ -61,6 +51,15 @@
 }
 
 // Normal icon size
+.no-text {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 7px;
+  border-radius: $border-radius-small;
+}
+
 .icon {
   width: 24px;
   height: 24px;
