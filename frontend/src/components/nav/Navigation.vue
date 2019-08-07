@@ -23,7 +23,7 @@
         </div>
       </router-link>
 
-     <router-link tag="li" to="/orbitals">
+      <router-link tag="li" to="/orbitals">
         <div class="inner" @click="switchAtomTabDataWrapper('orbitals')">
           <orbitals class="icon custom-icon" />
           <h2>Orbitals</h2>
