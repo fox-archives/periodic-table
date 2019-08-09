@@ -1,9 +1,5 @@
 @media (max-width: $small-laptop-width) {
-  .nav-item-inner {
-    padding: 10px 11px 10px 11px;
-  }
-
-  .heading {
+  h2 {
     font-size: 1em;
   }
 
@@ -14,11 +10,11 @@
 }
 
 @media (max-width: $tablet-width) {
-  .nav-item-inner {
-    padding: 10px 9px 10px 9px;
+  li {
+    padding: 3px 5px;
   }
 
-  .heading {
+  h2 {
     font-size: 0.95em;
   }
 
@@ -34,7 +30,7 @@
     justify-content: space-between;
   }
 
-  .text {
+  .inner {
     display: none;
   }
 
@@ -44,7 +40,7 @@
 }
 
 @media (max-width: $tiny-mobile-width) {
-  .nav-item-inner {
+  li {
     padding: 7px 10px 7px 10px;
   }
 }
