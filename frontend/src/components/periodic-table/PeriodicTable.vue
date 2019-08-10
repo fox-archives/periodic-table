@@ -1,10 +1,16 @@
 <template>
   <div id="grid-container-outer">
-    <div id="grid-container">
+    <div id="grid-container" ref="idGridContainer">
       <div v-if="!ready" id="grid-container-loading-view">
         <periodic-table-loading />
       </div>
-      <div v-if="ready" id="grid-outer" :style="periodicTableWidth">
+      <div
+        v-if="ready"
+        id="grid-outer"
+        ref="idGridOuter"
+        :style="periodicTableWidth"
+        :class="periodicTableClass"
+      >
         <main id="grid" ref="idGrid" :style="atomTextSizes">
           <!-- ATOMS FROM PERIODIC TABLE -->
           <div
@@ -123,19 +129,20 @@ export default {
         "--labelTextSize": "0px"
       },
       periodicTableWidth: {
-        "--periodicTableSupposedHeight": "0px"
+        "--periodicTableWidth": "0px"
       },
-      // if we know periodicTableHeightConstrained is an active class, then we know that the
-      // height of the periodic table is too small. we have to correct it. before implementing
-      // this we had to do calc(100% - 2px). now we set this class, and make the height: 100
-      // only apply when the following variable is active
-      periodicTableHeightConstrainedBeingDealtWith: true
+
+      periodicTableClass: {
+        stretchVertically: false
+      }
     };
   },
   watch: {
     ready() {
       this.$nextTick(() => {
         this.formatPage();
+        window.addEventListener("resize", throttle(this.formatPage, 250));
+        window.addEventListener("resize", debounce(this.formatPage, 100));
       });
     }
   },
@@ -143,14 +150,17 @@ export default {
     this.initAtomData();
   },
   mounted() {
-    // This controls perfect scrollbar only
     let psPeriodicTable = new PerfectScrollbar("#grid-container");
 
     window.addEventListener("resize", throttle(psPeriodicTable.update, 500));
-    window.addEventListener("resize", debounce(psPeriodicTable.update, 250));
-    window.addEventListener("resize", throttle(this.formatPage, 250));
-    // uncomment this when everything works without a debounce
-    window.addEventListener("resize", debounce(this.formatPage, 100));
+    window.addEventListener("resize", debounce(() => {
+      window.requestAnimationFrame(() => {
+        psPeriodicTable.update();
+      })
+    }, 100));
+  },
+  destroy() {
+    // TODO: destroy event listeners
   },
   computed: {
     ...mapState([
@@ -207,63 +217,38 @@ export default {
       }
     },
 
-    // format the page such that everything looks fine
-    // 1: update the periodic table height layout
-    // 2: update the periodic table width
-    // 3: update text size
     formatPage: function() {
-      this.$nextTick(() => {
-        window.requestAnimationFrame(() => {
-          this.updatePeriodicTableHeightLayout();
-          window.requestAnimationFrame(() => {
-            this.updatePeriodicTableWidth();
+      let idGridOuter = this.$refs.idGridOuter.getBoundingClientRect();
+      let idGridContainer = this.$refs.idGridContainer.getBoundingClientRect();
+      if (this.options.panelLayout === "panel-top") {
+        let periodicTableRatio = 0.6;
+
+        if(idGridOuter.height < idGridContainer.height) {
+          console.log("apply");
+
+          this.periodicTableClass = {
+            stretchVertically: true
+          };
+          this.periodicTableWidth = {
+            "--periodicTableWidth": `${idGridContainer.height /
+            periodicTableRatio}px`
+          };
+          this.$nextTick(() => {
             window.requestAnimationFrame(() => {
               this.updateAtomFontSizes();
             });
           });
+          return;
+        }
+      }
+      this.periodicTableClass = {
+          stretchVertically: false
+      };
+      this.$nextTick(() => {
+        window.requestAnimationFrame(() => {
+          this.updateAtomFontSizes();
         });
       });
-    },
-
-    updatePeriodicTableWidth: function() {
-      let gridContainer = this.$refs.idGrid;
-
-      // change the ratio in periodicTable.scss if changed here
-      let periodicTableRatio = 0.6;
-
-      // Subtract 2 because recall CSS says the height is calc(100% - 2px)
-      // All I know is that when 2 is removed, then scrollbar is shown for small widths for panel-side
-      this.periodicTableWidth = {
-        "--periodicTableWidth": `${gridContainer.clientHeight /
-          periodicTableRatio}px`,
-        "--periodicTableWidthRatio": periodicTableRatio
-      };
-    },
-
-    // This script makes the periodic-table and element info panel not have a height
-    // bigger than the browser on panel-side
-    updatePeriodicTableHeightLayout: function() {
-      let gridContainerHeight = document.getElementById("grid-container")
-        .offsetHeight;
-      let gridOuterHeight = document.getElementById("grid-outer").offsetHeight;
-
-      // Only change the style if the periodic-table has a greater or equal height for AtomInfoPanel.vue
-      if (
-        gridOuterHeight >= gridContainerHeight &&
-        !this.periodicTableHeightConstrainedBeingDealtWith
-      ) {
-        // This means if panel and periodic-table fill whole window height, increasing
-        // width will not increase size of periodic-table, instead it creates whitespace;
-        // periodic-table will only increase if the height of browser window increases
-        this.setOptions({
-          periodicTableHeightLayoutState: "periodicTableHeightMax"
-        });
-        this.periodicTableHeightConstrainedBeingDealtWith = true;
-      } else {
-        this.setOptions({
-          periodicTableHeightLayoutState: "periodicTableHeightConstrained"
-        });
-      }
     },
 
     // This changes the CSS variable to size the element text
