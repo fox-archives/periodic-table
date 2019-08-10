@@ -37,6 +37,10 @@ $total-rows: (7 * 2) + 5;
 // GRID-OUTER \\
 // Holds aspect ratio
 #grid-outer {
+  // start with 0.6 so don't have to depend on javascript to start to get right ratio
+  // if change here, change in PeriodicTable.vue
+  --periodicTableWidthRatio: 0.6;
+
   position: relative;
   height: 0;
   width: 100%;
@@ -44,11 +48,11 @@ $total-rows: (7 * 2) + 5;
   border-radius: $border-radius;
 }
 
-.panel-top.periodicTableHeightConstrained #grid-outer {
-  height: 100%;
-  width: 100%;
-  min-width: var(--periodicTableWidth);
-  padding-bottom: 0;
+#grid-outer.stretchVertically {
+  //height: 100%;
+  height: calc(100% - 2px);
+  //width: 100%;
+  width: var(--periodicTableWidth);
 }
 
 // GRID \\
