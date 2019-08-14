@@ -1,0 +1,11 @@
+{
+  "name": "wolfram",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "eslint-plugin-ava": "^7.1.0"
+  }
+}
