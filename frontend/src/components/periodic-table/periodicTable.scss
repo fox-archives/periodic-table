@@ -50,7 +50,7 @@ $total-rows: (7 * 2) + 5;
 
 #grid-outer.stretchVertically {
   //height: 100%;
-  height: calc(100% - 2px);
+  height: calc(100% - 2px);c
   //width: 100%;
   width: var(--periodicTableWidth);
 }
