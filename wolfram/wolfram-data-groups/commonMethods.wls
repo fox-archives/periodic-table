@@ -1,6 +1,19 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
+
+RemoveUnknowns[data_] := (
+  If[Failure![data],
+    Return["Failed"];
+  ];
+  
+  If[MissingQ[data],
+    Return["Unknown"];
+  ];
+
+  Return[data];
+);
+
 (*
   atomProperty
     name of the property, we tell wolfram we want
@@ -28,7 +41,7 @@ IterateAtomProperty[
     (* General Case *)
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" -> ReleaseHold@atomValueTransformation@ElementData[i, atomProperty]
+      "value" ->  ReleaseHold@atomValueTransformation@RemoveUnknowns@ElementData[i, atomProperty]
     }];
   
     (* Lanthanites Case *)
@@ -52,7 +65,7 @@ IterateAtomProperty[
     "meta"-> <|
       "atomName"-> atomPropertyDisplayValue
     |>,
-    "data"-> atomArrayData
+    "data" -> atomArrayData
   |>;
 
   

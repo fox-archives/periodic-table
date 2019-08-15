@@ -1,7 +1,6 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
 Import["../commonMethods.wls"];
 
 atomTransform[atomProperty_]:= (
@@ -9,12 +8,12 @@ atomTransform[atomProperty_]:= (
 );
 
 IterateAtomProperty[
+  "Bulk Modulus",
   "BrinellHardness",
-  "Brinell Hardness",
   Hold[atomTransform],
   "lanthanites case",
   "actinides case",
-  "brinellHardness.json"
+  "bulkModulus.json"
 ];
 
-Print["Atomic Number Done"];
+Print["Bulk Modulus Done"];
