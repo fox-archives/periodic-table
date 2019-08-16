@@ -13,5 +13,3 @@ iterateAtomProperty[
   "lanthanites case",
   "actinides case"
 ];
-
-Print["Atomic Number Done"];

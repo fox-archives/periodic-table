@@ -60,22 +60,27 @@ iterateAtomProperty[
 
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
-    (* General Case *)
     rawValue = ElementData[i, atomPropertyPascalCase];
     transformedValue = atomValueTransformation@rawValue;
-    (* Print@fixUnit @* QuantityUnit@transformedValue; *)
+
+    name = ElementData[i, "StandardName"];
+    value = fixValue @* QuantityMagnitude@transformedValue;
+    unit = fixUnit @* QuantityUnit@transformedValue;
+    rawAccuracy = fixAccuracyPrecision @* Accuracy@rawValue;
+    transformedAccuracy = fixAccuracyPrecision @* Accuracy@transformedValue;
+    rawPrecision = fixAccuracyPrecision @* Precision@rawValue;
+    transformedPrecision = fixAccuracyPrecision @* Precision@transformedValue;
+
     atomArrayData = Append[atomArrayData, {
-      "name" -> ElementData[i, "StandardName"],
-      (* "byRaw" -> fixValue @* QuantityMagnitude@rawValue, *)
-      "value" -> fixValue @* QuantityMagnitude@transformedValue,
-      "unit" -> fixUnit @* QuantityUnit@transformedValue,
-      "rawAccuracy" -> fixAccuracyPrecision @* Accuracy@rawValue,
-      "transformedAccuracy" -> fixAccuracyPrecision @* Accuracy@transformedValue,
-      "rawPrecision" -> fixAccuracyPrecision @* Precision@rawValue,
-      "transformedPrecision" -> fixAccuracyPrecision @* Precision@transformedValue
+      "name" -> name,
+      "value" -> value,
+      "unit" -> unit,
+      "rawAccuracy" -> rawAccuracy,
+      "transformedAccuracy" -> transformedAccuracy,
+      "rawPrecision" -> rawPrecision,
+      "transformedPrecision" ->  transformedPrecision
     }];
 
-    (* Lanthanites Case *)
     If[i == 56,
       atomArrayData = Append[atomArrayData, {
         "name" -> "Lanthanites",
@@ -83,7 +88,6 @@ iterateAtomProperty[
       }];
     ];
 
-    (* Actinides Case *)
     If[i == 88,
       atomArrayData = Append[atomArrayData, {
         "name" -> "Actinides",
@@ -91,6 +95,7 @@ iterateAtomProperty[
       }];
     ];
   )];
+
 
   rootData = {
     "meta" -> {
@@ -102,6 +107,7 @@ iterateAtomProperty[
 
   jsonFile = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]] ~~ ".json";
   Export[jsonFile, rootData, "JSON"];
+  Export["plainOutput.txt", rootData, "Text"];
 
   Print[jsonFile <> " done"];
 );
