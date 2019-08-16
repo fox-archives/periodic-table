@@ -6,507 +6,283 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Helium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Lithium",
 			"value":0.6,
-			"unit":"",
-			"rawAccuracy":1.2218487496163564,
-			"transformedAccuracy":1.6176438519807363e1,
-			"rawPrecision":1.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Beryllium",
 			"value":5.5,
-			"unit":"",
-			"rawAccuracy":1.2596373105057561,
-			"transformedAccuracy":1.521422708069676e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Boron",
 			"value":9.3,
-			"unit":"",
-			"rawAccuracy":1.0315170514460645,
-			"transformedAccuracy":1.4986106821637069e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Carbon",
 			"value":0.5,
-			"unit":"",
-			"rawAccuracy":1.301029995663981,
-			"transformedAccuracy":1.6255619765854984e1,
-			"rawPrecision":1.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Nitrogen",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Oxygen",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Fluorine",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Neon",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Sodium",
 			"value":0.5,
-			"unit":"",
-			"rawAccuracy":1.301029995663981,
-			"transformedAccuracy":1.6255619765854984e1,
-			"rawPrecision":1.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Magnesium",
 			"value":2.5,
-			"unit":"",
-			"rawAccuracy":1.6020599913279645,
-			"transformedAccuracy":1.5556649761518967e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Aluminum",
 			"value":2.75,
-			"unit":"",
-			"rawAccuracy":2.5606673061697394,
-			"transformedAccuracy":1.5515257076360742e1,
-			"rawPrecision":3.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Silicon",
 			"value":6.5,
-			"unit":"",
-			"rawAccuracy":1.1870866433571468,
-			"transformedAccuracy":1.5141676413548149e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Phosphorus",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Sulfur",
 			"value":2.0,
-			"unit":"",
-			"rawAccuracy":1.6989700043360185,
-			"transformedAccuracy":1.5653559774527023e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Chlorine",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Argon",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Potassium",
 			"value":0.4,
-			"unit":"",
-			"rawAccuracy":1.3979400086720375,
-			"transformedAccuracy":1.635252977886304e1,
-			"rawPrecision":1.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Calcium",
 			"value":1.75,
-			"unit":"",
-			"rawAccuracy":2.7569619513137047,
-			"transformedAccuracy":1.5711551721504708e1,
-			"rawPrecision":3.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Scandium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Titanium",
 			"value":6.0,
-			"unit":"",
-			"rawAccuracy":1.2218487496163588,
-			"transformedAccuracy":1.517643851980736e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Vanadium",
 			"value":7.0,
-			"unit":"",
-			"rawAccuracy":1.1549019599857446,
-			"transformedAccuracy":1.5109491730176748e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Chromium",
 			"value":8.5,
-			"unit":"",
-			"rawAccuracy":1.070581074285706,
-			"transformedAccuracy":1.502517084447671e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Manganese",
 			"value":6.0,
-			"unit":"",
-			"rawAccuracy":1.2218487496163588,
-			"transformedAccuracy":1.517643851980736e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Iron",
 			"value":4.0,
-			"unit":"",
-			"rawAccuracy":1.3979400086720373,
-			"transformedAccuracy":1.5352529778863042e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Cobalt",
 			"value":5.0,
-			"unit":"",
-			"rawAccuracy":1.3010299956639833,
-			"transformedAccuracy":1.5255619765854986e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Nickel",
 			"value":4.0,
-			"unit":"",
-			"rawAccuracy":1.3979400086720373,
-			"transformedAccuracy":1.5352529778863042e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Copper",
 			"value":3.0,
-			"unit":"",
-			"rawAccuracy":1.52287874528034,
-			"transformedAccuracy":1.5477468515471342e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Zinc",
 			"value":2.5,
-			"unit":"",
-			"rawAccuracy":1.6020599913279645,
-			"transformedAccuracy":1.5556649761518967e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Gallium",
 			"value":1.5,
-			"unit":"",
-			"rawAccuracy":1.823908740944321,
-			"transformedAccuracy":1.5778498511135323e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Germanium",
 			"value":6.0,
-			"unit":"",
-			"rawAccuracy":1.2218487496163588,
-			"transformedAccuracy":1.517643851980736e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Arsenic",
 			"value":3.5,
-			"unit":"",
-			"rawAccuracy":1.4559319556497259,
-			"transformedAccuracy":1.5410521725840727e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Selenium",
 			"value":2.0,
-			"unit":"",
-			"rawAccuracy":1.6989700043360185,
-			"transformedAccuracy":1.5653559774527023e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Bromine",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Krypton",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Rubidium",
 			"value":0.3,
-			"unit":"",
-			"rawAccuracy":1.5228787452803376,
-			"transformedAccuracy":1.6477468515471344e1,
-			"rawPrecision":1.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Strontium",
 			"value":1.5,
-			"unit":"",
-			"rawAccuracy":1.823908740944321,
-			"transformedAccuracy":1.5778498511135323e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Yttrium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Zirconium",
 			"value":5.0,
-			"unit":"",
-			"rawAccuracy":1.3010299956639833,
-			"transformedAccuracy":1.5255619765854986e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Niobium",
 			"value":6.0,
-			"unit":"",
-			"rawAccuracy":1.2218487496163588,
-			"transformedAccuracy":1.517643851980736e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Molybdenum",
 			"value":5.5,
-			"unit":"",
-			"rawAccuracy":1.2596373105057561,
-			"transformedAccuracy":1.521422708069676e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Technetium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Ruthenium",
 			"value":6.5,
-			"unit":"",
-			"rawAccuracy":1.1870866433571468,
-			"transformedAccuracy":1.5141676413548149e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Rhodium",
 			"value":6.0,
-			"unit":"",
-			"rawAccuracy":1.2218487496163588,
-			"transformedAccuracy":1.517643851980736e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Palladium",
 			"value":4.75,
-			"unit":"",
-			"rawAccuracy":2.3233063903751354,
-			"transformedAccuracy":1.5277896160566138e1,
-			"rawPrecision":3.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Silver",
 			"value":2.5,
-			"unit":"",
-			"rawAccuracy":1.6020599913279645,
-			"transformedAccuracy":1.5556649761518967e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Cadmium",
 			"value":2.0,
-			"unit":"",
-			"rawAccuracy":1.6989700043360185,
-			"transformedAccuracy":1.5653559774527023e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Indium",
 			"value":1.2,
-			"unit":"",
-			"rawAccuracy":1.9208187539523753,
-			"transformedAccuracy":1.587540852414338e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Tin",
 			"value":1.5,
-			"unit":"",
-			"rawAccuracy":1.823908740944321,
-			"transformedAccuracy":1.5778498511135323e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Antimony",
 			"value":3.0,
-			"unit":"",
-			"rawAccuracy":1.52287874528034,
-			"transformedAccuracy":1.5477468515471342e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Tellurium",
 			"value":2.25,
-			"unit":"",
-			"rawAccuracy":2.647817481888636,
-			"transformedAccuracy":1.560240725207964e1,
-			"rawPrecision":3.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Iodine",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Xenon",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Cesium",
 			"value":0.2,
-			"unit":"",
-			"rawAccuracy":1.6989700043360187,
-			"transformedAccuracy":1.665355977452702e1,
-			"rawPrecision":1.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Barium",
 			"value":1.25,
-			"unit":"",
-			"rawAccuracy":2.9030899869919433,
-			"transformedAccuracy":1.5857679757182948e1,
-			"rawPrecision":3.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Lanthanites",
@@ -515,290 +291,162 @@
 		{
 			"name":"Lanthanum",
 			"value":2.5,
-			"unit":"",
-			"rawAccuracy":1.6020599913279645,
-			"transformedAccuracy":1.5556649761518967e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Cerium",
 			"value":2.5,
-			"unit":"",
-			"rawAccuracy":1.6020599913279645,
-			"transformedAccuracy":1.5556649761518967e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Praseodymium",
 			"value":1.4055484858563863,
-			"unit":"",
-			"rawAccuracy":1.8521541683584422,
-			"transformedAccuracy":1.5806743938549445e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Neodymium",
 			"value":1.2345960619159688,
-			"unit":"",
-			"rawAccuracy":1.908475112668515,
-			"transformedAccuracy":1.5863064882859517e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Promethium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Samarium",
 			"value":1.4415384698438425,
-			"unit":"",
-			"rawAccuracy":1.8411737632529028,
-			"transformedAccuracy":1.5795763533443907e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Europium",
 			"value":3.0694444444444446,
-			"unit":"",
-			"rawAccuracy":1.512940222746158,
-			"transformedAccuracy":1.5467529992937163e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Gadolinium",
 			"value":5.130597014925373,
-			"unit":"",
-			"rawAccuracy":1.2898320958625062,
-			"transformedAccuracy":1.524442186605351e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Terbium",
 			"value":2.3292866973170145,
-			"unit":"",
-			"rawAccuracy":1.632777053586491,
-			"transformedAccuracy":1.5587366823777494e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Dysprosium",
 			"value":1.8,
-			"unit":"",
-			"rawAccuracy":1.7447274948966967,
-			"transformedAccuracy":1.5699317265087698e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Holmium",
 			"value":1.648480877771716,
-			"unit":"",
-			"rawAccuracy":1.7829160862681077,
-			"transformedAccuracy":1.5737505856459112e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Erbium",
 			"value":1.9723907336588227,
-			"unit":"",
-			"rawAccuracy":1.7050070464624856,
-			"transformedAccuracy":1.5659596816653488e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Thulium",
 			"value":1.765448325730949,
-			"unit":"",
-			"rawAccuracy":1.7531449896150935,
-			"transformedAccuracy":1.5707734759806097e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Ytterbium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Lutetium",
 			"value":2.6,
-			"unit":"",
-			"rawAccuracy":1.585026652029182,
-			"transformedAccuracy":1.5539616422220186e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Hafnium",
 			"value":5.5,
-			"unit":"",
-			"rawAccuracy":1.2596373105057561,
-			"transformedAccuracy":1.521422708069676e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Tantalum",
 			"value":6.5,
-			"unit":"",
-			"rawAccuracy":1.1870866433571468,
-			"transformedAccuracy":1.5141676413548149e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Tungsten",
 			"value":7.5,
-			"unit":"",
-			"rawAccuracy":1.1249387366083003,
-			"transformedAccuracy":1.5079528506799305e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Rhenium",
 			"value":7.0,
-			"unit":"",
-			"rawAccuracy":1.1549019599857446,
-			"transformedAccuracy":1.5109491730176748e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Osmium",
 			"value":7.0,
-			"unit":"",
-			"rawAccuracy":1.1549019599857446,
-			"transformedAccuracy":1.5109491730176748e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Iridium",
 			"value":6.5,
-			"unit":"",
-			"rawAccuracy":1.1870866433571468,
-			"transformedAccuracy":1.5141676413548149e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Platinum",
 			"value":3.5,
-			"unit":"",
-			"rawAccuracy":1.4559319556497259,
-			"transformedAccuracy":1.5410521725840727e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Gold",
 			"value":2.5,
-			"unit":"",
-			"rawAccuracy":1.6020599913279645,
-			"transformedAccuracy":1.5556649761518967e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Mercury",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Thallium",
 			"value":1.2,
-			"unit":"",
-			"rawAccuracy":1.9208187539523753,
-			"transformedAccuracy":1.587540852414338e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Lead",
 			"value":1.5,
-			"unit":"",
-			"rawAccuracy":1.823908740944321,
-			"transformedAccuracy":1.5778498511135323e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Bismuth",
 			"value":2.25,
-			"unit":"",
-			"rawAccuracy":2.647817481888636,
-			"transformedAccuracy":1.560240725207964e1,
-			"rawPrecision":3.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Polonium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Astatine",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Radon",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Francium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Radium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Actinides",
@@ -806,273 +454,153 @@
 		},
 		{
 			"name":"Actinium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Thorium",
 			"value":3.0,
-			"unit":"",
-			"rawAccuracy":1.52287874528034,
-			"transformedAccuracy":1.5477468515471342e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Protactinium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Uranium",
 			"value":6.0,
-			"unit":"",
-			"rawAccuracy":1.2218487496163588,
-			"transformedAccuracy":1.517643851980736e1,
-			"rawPrecision":2.0,
-			"transformedPrecision":"Infinity"
+			"unit":""
 		},
 		{
 			"name":"Neptunium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Plutonium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Americium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Curium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Berkelium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Californium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Fermium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Nobelium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Dubnium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Bohrium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Hassium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Copernicium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Nihonium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Flerovium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Moscovium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Livermorium",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Tennessine",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		},
 		{
 			"name":"Oganesson",
-			"value":"Error",
-			"unit":"Error",
-			"rawAccuracy":"Infinity",
-			"transformedAccuracy":"Infinity",
-			"rawPrecision":"Infinity",
-			"transformedPrecision":"Infinity"
+			"value":"Unknown",
+			"unit":"Unknown"
 		}
 	]
 }

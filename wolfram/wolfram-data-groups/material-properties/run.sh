@@ -9,7 +9,6 @@ wolframscript -script molarVolume.wls
 wolframscript -script poissonRatio.wls
 wolframscript -script shearModulus.wls
 wolframscript -script soundSpeed.wls
-wolframscript -script soundSpeed.wls
 wolframscript -script thermalConductivity.wls
 wolframscript -script thermalExpansion.wls
 wolframscript -script vickersHardness.wls

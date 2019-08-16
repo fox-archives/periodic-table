@@ -1,30 +1,6 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-fixValue[data_]:= (
-  If[NumberQ[data],
-    Return[data];
-  ];
-
-  Return["Error"];
-);
-
-fixUnit[data_]:= (
-  If[KnownUnitQ[data],
-    Return@ToString@QuantityForm[data, "LongForm"];
-  ];
-
-  Return["Error"];
-);
-
-fixAccuracyPrecision[data_]:= (
-  If[NumberQ[data],
-    Return[data];
-  ];
-  
-  Return["Infinity"];
-);
-
 removeUnknowns[data_]:= (
   If[FailureQ[data],
     Return["Failed"];
@@ -37,11 +13,60 @@ removeUnknowns[data_]:= (
   Return[data];
 );
 
+fixValue[data_]:= (
+  If[MemberQ[{"Failed", "Unknown"}, data],
+    Return[data];
+  ];
+
+  If[NumberQ[QuantityMagnitude@data],
+    Return[QuantityMagnitude@data];
+  ];
+
+  Return["Error"];
+);
+
+fixUnit[data_]:= (
+  If[MemberQ[{"Failed", "Unknown"}, data],
+    Return[data];
+  ];
+
+  (* If[KnownUnitQ@QuantityUnit[data],
+    Return[ToString@QuantityForm[data, "LongForm"]];
+  ]; *)
+  Return[ToString@QuantityForm[QuantityUnit@data, "LongForm"]];
+
+  Return["Error"];
+);
+
+fixAccuracy[data_]:= (
+  If[MemberQ[{"Failed", "Unknown"}, data],
+    Return[data];
+  ];
+
+  If[NumberQ[Accuracy@data],
+    Return[Accuracy@data];
+  ];
+
+  Return["Error"];
+);
+
+fixPrecision[data_]:= (
+  If[MemberQ[{"Failed", "Unknown"}, data],
+    Return[data];
+  ];
+
+  If[NumberQ[Precision@data],
+    Return[Precision@data];
+  ];
+  
+  Return["Error"];
+);
+
 (*
   atomProperty
     name of the property,
   atomValueTransformation
-    function to transform the actual value of the property (we are trying to extract)
+    function to transform the actual value of the property that we are trying to extract
   lanthanitesCase
     special case value for lanthanites block
   actinidesCase
@@ -61,24 +86,24 @@ iterateAtomProperty[
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
     rawValue = ElementData[i, atomPropertyPascalCase];
-    transformedValue = atomValueTransformation@rawValue;
+    transformedValue = removeUnknowns@atomValueTransformation@rawValue;
 
     name = ElementData[i, "StandardName"];
-    value = fixValue @* QuantityMagnitude@transformedValue;
-    unit = fixUnit @* QuantityUnit@transformedValue;
-    rawAccuracy = fixAccuracyPrecision @* Accuracy@rawValue;
-    transformedAccuracy = fixAccuracyPrecision @* Accuracy@transformedValue;
-    rawPrecision = fixAccuracyPrecision @* Precision@rawValue;
-    transformedPrecision = fixAccuracyPrecision @* Precision@transformedValue;
+    value = fixValue@transformedValue;
+    unit = fixUnit@transformedValue;
+    rawAccuracy = fixAccuracy@rawValue;
+    transformedAccuracy = fixAccuracy@transformedValue;
+    rawPrecision = fixPrecision@rawValue;
+    transformedPrecision = fixPrecision@transformedValue;
 
     atomArrayData = Append[atomArrayData, {
       "name" -> name,
       "value" -> value,
-      "unit" -> unit,
-      "rawAccuracy" -> rawAccuracy,
+      "unit" -> unit
+      (* "rawAccuracy" -> rawAccuracy,
       "transformedAccuracy" -> transformedAccuracy,
       "rawPrecision" -> rawPrecision,
-      "transformedPrecision" ->  transformedPrecision
+      "transformedPrecision" ->  transformedPrecision *)
     }];
 
     If[i == 56,
@@ -106,8 +131,9 @@ iterateAtomProperty[
   };
 
   jsonFile = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]] ~~ ".json";
+  textFile = "plainOutput.txt";
   Export[jsonFile, rootData, "JSON"];
-  Export["plainOutput.txt", rootData, "Text"];
+  Export[textFile, rootData, "Text"];
 
   Print[jsonFile <> " done"];
 );
