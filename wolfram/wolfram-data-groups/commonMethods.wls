@@ -58,22 +58,23 @@ iterateAtomProperty[
   (* Atom Property *)
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
 
+  genericValue = atomValueTransformation@RemoveUnknowns@ElementData[1, atomPropertyPascalCase];
+  genericUnit = QuantityUnit@genericValue;
+
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
     (* General Case *)
     val = ElementData[i, atomPropertyPascalCase];
-    value = atomValueTransformation @* removeUnknowns @* val;
-    Print @* fixValue @* QuantityMagnitude @* value;
-    Print @* fixAccuracyPrecision @* Accuracy @* val;
+    value = fixValue@atomValueTransformation@RemoveUnknowns@val;
 
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" -> fixValue @* QuantityMagnitude @* value,
-      "accuracy" -> fixAccuracyPrecision @* Accuracy @* val,
-      "transformedAccuracy" -> fixAccuracyPrecision @* Accuracy @* value,
-      "precision" -> fixAccuracyPrecision @* Precision @* val,
-      "transformedPrecision" -> fixAccuracyPrecision @* Precision @* value,
-      "unit" -> fixUnit @* QuantityUnit @* value
+      "value" -> fixValue@QuantityMagnitude@value,
+      "accuracy" -> fixAccuracyPrecision@Accuracy@val,
+      "transformedAccuracy" -> fixAccuracyPrecision@Accuracy@value,
+      "precision" -> fixAccuracyPrecision@Precision@val,
+      "transformedPrecision" -> fixAccuracyPrecision@Precision@value,
+      "unit" -> fixUnit@QuantityUnit@value
     }];
 
     (* Lanthanites Case *)
@@ -93,14 +94,10 @@ iterateAtomProperty[
     ];
   )];
 
-  genericValue = atomValueTransformation @* removeUnknowns @* ElementData[1, atomPropertyPascalCase];
-  genericUnit = fixUnit @* QuantityUnit @* genericValue;
-
   rootData = {
     "meta" -> {
       "atomPropertyName" -> atomPropertyPascalCase,
-      "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace,
-      "atomPropertyValueUnit" -> genericUnit
+      "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace
     },
     "data" -> atomArrayData
   };
