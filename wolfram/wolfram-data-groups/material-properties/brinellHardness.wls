@@ -1,20 +1,17 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
 Import["../commonMethods.wls"];
 
-atomTransform[atomProperty_]:= (
-  Return[N[atomProperty]];
+atomTransform[prop_]:= (
+  Return[prop];
 );
 
 IterateAtomProperty[
-  "BrinellHardness",
-  "Brinell Hardness",
-  Hold[atomTransform],
+  "brinel hardness",
+  Unevaluated[atomTransform],
   "lanthanites case",
-  "actinides case",
-  "brinellHardness.json"
+  "actinides case"
 ];
 
 Print["Atomic Number Done"];

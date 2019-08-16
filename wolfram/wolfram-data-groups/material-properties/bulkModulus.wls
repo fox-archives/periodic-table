@@ -10,7 +10,7 @@ atomTransform[atomProperty_]:= (
 IterateAtomProperty[
   "Bulk Modulus",
   "BrinellHardness",
-  Hold[atomTransform],
+  Unevaluated[atomTransform],
   "lanthanites case",
   "actinides case",
   "bulkModulus.json"

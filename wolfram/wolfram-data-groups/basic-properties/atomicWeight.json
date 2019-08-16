@@ -1,231 +1,513 @@
 {
 	"meta":{
-		"atomName":"Atomic Weight"
+		"atomPropertyName":"AtomicWeight",
+		"atomPropertyNameWithSpace":"Atomic Weight",
+		"atomPropertyValueUnit":"AtomicMassUnit"
 	},
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":1.008
+			"value":1.008,
+			"accuracy":3.9965394678904933,
+			"transformedAccuracy":3.9965394678904933,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Helium",
-			"value":4.002602
+			"value":4.002602,
+			"accuracy":6.397657591957641,
+			"transformedAccuracy":6.397657591957641,
+			"precision":7.0,
+			"transformedPrecision":7.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Lithium",
-			"value":6.94
+			"value":6.94,
+			"accuracy":2.158640529545146,
+			"transformedAccuracy":2.158640529545146,
+			"precision":3.0,
+			"transformedPrecision":3.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Beryllium",
-			"value":9.0121831
+			"value":9.0121831,
+			"accuracy":7.045169993322838,
+			"transformedAccuracy":7.045169993322838,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Boron",
-			"value":10.81
+			"value":10.81,
+			"accuracy":2.9661743060466903,
+			"transformedAccuracy":2.9661743060466903,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Carbon",
-			"value":12.011
+			"value":12.011,
+			"accuracy":3.920420833029869,
+			"transformedAccuracy":3.920420833029869,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Nitrogen",
-			"value":14.007
+			"value":14.007,
+			"accuracy":3.8536548713495304,
+			"transformedAccuracy":3.8536548713495304,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Oxygen",
-			"value":15.999
+			"value":15.999,
+			"accuracy":3.7959071615974627,
+			"transformedAccuracy":3.7959071615974627,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Fluorine",
-			"value":18.998403163
+			"value":18.998403163,
+			"accuracy":9.721282900449348,
+			"transformedAccuracy":9.721282900449348,
+			"precision":1.1e1,
+			"transformedPrecision":1.1e1,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Neon",
-			"value":20.1797
+			"value":20.1797,
+			"accuracy":4.695085294457532,
+			"transformedAccuracy":4.695085294457532,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Sodium",
-			"value":22.98976928
+			"value":22.98976928,
+			"accuracy":8.638465387187688,
+			"transformedAccuracy":8.638465387187688,
+			"precision":1.0e1,
+			"transformedPrecision":1.0e1,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Magnesium",
-			"value":24.305
+			"value":24.305,
+			"accuracy":3.6143043745894405,
+			"transformedAccuracy":3.6143043745894405,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Aluminum",
-			"value":26.9815385
+			"value":26.9815385,
+			"accuracy":7.568933290282698,
+			"transformedAccuracy":7.568933290282698,
+			"precision":9.0,
+			"transformedPrecision":9.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Silicon",
-			"value":28.085
+			"value":28.085,
+			"accuracy":3.5515255717878387,
+			"transformedAccuracy":3.5515255717878387,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Phosphorus",
-			"value":30.973761998
+			"value":30.973761998,
+			"accuracy":9.509006043085298,
+			"transformedAccuracy":9.509006043085298,
+			"precision":1.1e1,
+			"transformedPrecision":1.1e1,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Sulfur",
-			"value":32.06
+			"value":32.06,
+			"accuracy":2.4940364819818766,
+			"transformedAccuracy":2.4940364819818766,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Chlorine",
-			"value":35.45
+			"value":35.45,
+			"accuracy":2.4503837604809147,
+			"transformedAccuracy":2.4503837604809147,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Argon",
-			"value":39.948
+			"value":39.948,
+			"accuracy":3.398504958795707,
+			"transformedAccuracy":3.398504958795707,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Potassium",
-			"value":39.0983
+			"value":39.0983,
+			"accuracy":4.407842125383412,
+			"transformedAccuracy":4.407842125383412,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Calcium",
-			"value":40.078
+			"value":40.078,
+			"accuracy":3.397093959062866,
+			"transformedAccuracy":3.397093959062866,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Scandium",
-			"value":44.955908
+			"value":44.955908,
+			"accuracy":6.347213226217846,
+			"transformedAccuracy":6.347213226217846,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Titanium",
-			"value":47.867
+			"value":47.867,
+			"accuracy":3.319963790489078,
+			"transformedAccuracy":3.319963790489078,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Vanadium",
-			"value":50.9415
+			"value":50.9415,
+			"accuracy":4.29292827114838,
+			"transformedAccuracy":4.29292827114838,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Chromium",
-			"value":51.9961
+			"value":51.9961,
+			"accuracy":4.284029229672858,
+			"transformedAccuracy":4.284029229672858,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Manganese",
-			"value":54.938044
+			"value":54.938044,
+			"accuracy":6.2601268071493275,
+			"transformedAccuracy":6.2601268071493275,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Iron",
-			"value":55.845
+			"value":55.845,
+			"accuracy":3.253015704725927,
+			"transformedAccuracy":3.253015704725927,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Cobalt",
-			"value":58.933194
+			"value":58.933194,
+			"accuracy":6.229640020826023,
+			"transformedAccuracy":6.229640020826023,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Nickel",
-			"value":58.6934
+			"value":58.6934,
+			"accuracy":4.231410731882416,
+			"transformedAccuracy":4.231410731882416,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Copper",
-			"value":63.546
+			"value":63.546,
+			"accuracy":3.196911781578914,
+			"transformedAccuracy":3.196911781578914,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Zinc",
-			"value":65.38
+			"value":65.38,
+			"accuracy":2.184555083755651,
+			"transformedAccuracy":2.184555083755651,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Gallium",
-			"value":69.723
+			"value":69.723,
+			"accuracy":3.156623934593952,
+			"transformedAccuracy":3.156623934593952,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Germanium",
-			"value":72.630
+			"value":72.630,
+			"accuracy":3.1388839558386032,
+			"transformedAccuracy":3.1388839558386032,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Arsenic",
-			"value":74.921595
+			"value":74.921595,
+			"accuracy":6.125392985536986,
+			"transformedAccuracy":6.125392985536986,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Selenium",
-			"value":78.971
+			"value":78.971,
+			"accuracy":3.1025323625348387,
+			"transformedAccuracy":3.1025323625348387,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Bromine",
-			"value":79.904
+			"value":79.904,
+			"accuracy":3.0974314793287476,
+			"transformedAccuracy":3.0974314793287476,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Krypton",
-			"value":83.798
+			"value":83.798,
+			"accuracy":3.0767663465168478,
+			"transformedAccuracy":3.0767663465168478,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Rubidium",
-			"value":85.4678
+			"value":85.4678,
+			"accuracy":4.068197474935879,
+			"transformedAccuracy":4.068197474935879,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Strontium",
-			"value":87.62
+			"value":87.62,
+			"accuracy":2.0573967511578433,
+			"transformedAccuracy":2.0573967511578433,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Yttrium",
-			"value":88.90584
+			"value":88.90584,
+			"accuracy":5.051069710385562,
+			"transformedAccuracy":5.051069710385562,
+			"precision":7.0,
+			"transformedPrecision":7.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Zirconium",
-			"value":91.224
+			"value":91.224,
+			"accuracy":3.03989088868529,
+			"transformedAccuracy":3.03989088868529,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Niobium",
-			"value":92.90637
+			"value":92.90637,
+			"accuracy":5.031954508169884,
+			"transformedAccuracy":5.031954508169884,
+			"precision":7.0,
+			"transformedPrecision":7.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Molybdenum",
-			"value":95.95
+			"value":95.95,
+			"accuracy":2.0179550209285106,
+			"transformedAccuracy":2.0179550209285106,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Technetium",
-			"value":9.7e1
+			"value":9.7e1,
+			"accuracy":1.3967818035924758e1,
+			"transformedAccuracy":1.3967818035924758e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Ruthenium",
-			"value":101.07
+			"value":101.07,
+			"accuracy":2.9953777342992156,
+			"transformedAccuracy":2.9953777342992156,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Rhodium",
-			"value":102.90550
+			"value":102.90550,
+			"accuracy":5.987561412838958,
+			"transformedAccuracy":5.987561412838958,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Palladium",
-			"value":106.42
+			"value":106.42,
+			"accuracy":2.9729767454112985,
+			"transformedAccuracy":2.9729767454112985,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Silver",
-			"value":107.8682
+			"value":107.8682,
+			"accuracy":4.967106568292351,
+			"transformedAccuracy":4.967106568292351,
+			"precision":7.0,
+			"transformedPrecision":7.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Cadmium",
-			"value":112.414
+			"value":112.414,
+			"accuracy":3.9491795985167544,
+			"transformedAccuracy":3.9491795985167544,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Indium",
-			"value":114.818
+			"value":114.818,
+			"accuracy":3.9399900223223314,
+			"transformedAccuracy":3.9399900223223314,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Tin",
-			"value":118.710
+			"value":118.710,
+			"accuracy":3.925512695014312,
+			"transformedAccuracy":3.925512695014312,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Antimony",
-			"value":121.760
+			"value":121.760,
+			"accuracy":3.914495360573502,
+			"transformedAccuracy":3.914495360573502,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Tellurium",
-			"value":127.60
+			"value":127.60,
+			"accuracy":2.8941493256148587,
+			"transformedAccuracy":2.8941493256148587,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Iodine",
-			"value":126.90447
+			"value":126.90447,
+			"accuracy":5.896523080331267,
+			"transformedAccuracy":5.896523080331267,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Xenon",
-			"value":131.293
+			"value":131.293,
+			"accuracy":3.881758428079704,
+			"transformedAccuracy":3.881758428079704,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Cesium",
-			"value":132.90545196
+			"value":132.90545196,
+			"accuracy":8.876457203349375,
+			"transformedAccuracy":8.876457203349375,
+			"precision":1.1e1,
+			"transformedPrecision":1.1e1,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Barium",
-			"value":137.327
+			"value":137.327,
+			"accuracy":3.8622440672919414,
+			"transformedAccuracy":3.8622440672919414,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Lanthanites",
@@ -233,131 +515,291 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":138.90547
+			"value":138.90547,
+			"accuracy":5.857280651713492,
+			"transformedAccuracy":5.857280651713492,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Cerium",
-			"value":140.116
+			"value":140.116,
+			"accuracy":3.853512269318402,
+			"transformedAccuracy":3.853512269318402,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Praseodymium",
-			"value":140.90766
+			"value":140.90766,
+			"accuracy":5.851065397200742,
+			"transformedAccuracy":5.851065397200742,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Neodymium",
-			"value":144.242
+			"value":144.242,
+			"accuracy":3.840908264495985,
+			"transformedAccuracy":3.840908264495985,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Promethium",
-			"value":1.45e2
+			"value":1.45e2,
+			"accuracy":1.379322176795603e1,
+			"transformedAccuracy":1.379322176795603e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Samarium",
-			"value":150.36
+			"value":150.36,
+			"accuracy":2.822867682958227,
+			"transformedAccuracy":2.822867682958227,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Europium",
-			"value":151.964
+			"value":151.964,
+			"accuracy":3.8182592834572446,
+			"transformedAccuracy":3.8182592834572446,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Gadolinium",
-			"value":157.25
+			"value":157.25,
+			"accuracy":2.803409345882695,
+			"transformedAccuracy":2.803409345882695,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Terbium",
-			"value":158.92535
+			"value":158.92535,
+			"accuracy":5.79880682345326,
+			"transformedAccuracy":5.79880682345326,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Dysprosium",
-			"value":162.500
+			"value":162.500,
+			"accuracy":3.7891466346851086,
+			"transformedAccuracy":3.7891466346851086,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Holmium",
-			"value":164.93033
+			"value":164.93033,
+			"accuracy":5.782699472066762,
+			"transformedAccuracy":5.782699472066762,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Erbium",
-			"value":167.259
+			"value":167.259,
+			"accuracy":3.7766105040822593,
+			"transformedAccuracy":3.7766105040822593,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Thulium",
-			"value":168.93422
+			"value":168.93422,
+			"accuracy":5.772282369068066,
+			"transformedAccuracy":5.772282369068066,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Ytterbium",
-			"value":173.045
+			"value":173.045,
+			"accuracy":3.761840944788118,
+			"transformedAccuracy":3.761840944788118,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Lutetium",
-			"value":174.9668
+			"value":174.9668,
+			"accuracy":4.757044350997574,
+			"transformedAccuracy":4.757044350997574,
+			"precision":7.0,
+			"transformedPrecision":7.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Hafnium",
-			"value":178.49
+			"value":178.49,
+			"accuracy":2.7483861104564067,
+			"transformedAccuracy":2.7483861104564067,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Tantalum",
-			"value":180.94788
+			"value":180.94788,
+			"accuracy":5.742446500755258,
+			"transformedAccuracy":5.742446500755258,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Tungsten",
-			"value":183.84
+			"value":183.84,
+			"accuracy":2.735559988655788,
+			"transformedAccuracy":2.735559988655788,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Rhenium",
-			"value":186.207
+			"value":186.207,
+			"accuracy":3.7300039968013423,
+			"transformedAccuracy":3.7300039968013423,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Osmium",
-			"value":190.23
+			"value":190.23,
+			"accuracy":2.7207209920933746,
+			"transformedAccuracy":2.7207209920933746,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Iridium",
-			"value":192.217
+			"value":192.217,
+			"accuracy":3.7162082052226246,
+			"transformedAccuracy":3.7162082052226246,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Platinum",
-			"value":195.084
+			"value":195.084,
+			"accuracy":3.70977834822032,
+			"transformedAccuracy":3.70977834822032,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Gold",
-			"value":196.966569
+			"value":196.966569,
+			"accuracy":6.705607480086612,
+			"transformedAccuracy":6.705607480086612,
+			"precision":9.0,
+			"transformedPrecision":9.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Mercury",
-			"value":200.592
+			"value":200.592,
+			"accuracy":3.697686391480788,
+			"transformedAccuracy":3.697686391480788,
+			"precision":6.0,
+			"transformedPrecision":6.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Thallium",
-			"value":204.38
+			"value":204.38,
+			"accuracy":2.6895616051841533,
+			"transformedAccuracy":2.6895616051841533,
+			"precision":5.0,
+			"transformedPrecision":5.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Lead",
-			"value":207.2
+			"value":207.2,
+			"accuracy":1.6836102489268046,
+			"transformedAccuracy":1.6836102489268046,
+			"precision":4.0,
+			"transformedPrecision":4.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Bismuth",
-			"value":208.98040
+			"value":208.98040,
+			"accuracy":5.6798944438937555,
+			"transformedAccuracy":5.6798944438937555,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Polonium",
-			"value":2.09e2
+			"value":2.09e2,
+			"accuracy":1.363444348407995e1,
+			"transformedAccuracy":1.363444348407995e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Astatine",
-			"value":2.1e2
+			"value":2.1e2,
+			"accuracy":1.3632370475457085e1,
+			"transformedAccuracy":1.3632370475457085e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Radon",
-			"value":2.22e2
+			"value":2.22e2,
+			"accuracy":1.3608236795740366e1,
+			"transformedAccuracy":1.3608236795740366e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Francium",
-			"value":2.23e2
+			"value":2.23e2,
+			"accuracy":1.3606284907142843e1,
+			"transformedAccuracy":1.3606284907142843e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Radium",
-			"value":2.26e2
+			"value":2.26e2,
+			"accuracy":1.3600481331043602e1,
+			"transformedAccuracy":1.3600481331043602e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Actinides",
@@ -365,123 +807,273 @@
 		},
 		{
 			"name":"Actinium",
-			"value":2.27e2
+			"value":2.27e2,
+			"accuracy":1.3598563912997882e1,
+			"transformedAccuracy":1.3598563912997882e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Thorium",
-			"value":232.0377
+			"value":232.0377,
+			"accuracy":4.634441447989212,
+			"transformedAccuracy":4.634441447989212,
+			"precision":7.0,
+			"transformedPrecision":7.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Protactinium",
-			"value":231.03588
+			"value":231.03588,
+			"accuracy":5.636320568696757,
+			"transformedAccuracy":5.636320568696757,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Uranium",
-			"value":238.02891
+			"value":238.02891,
+			"accuracy":5.623370292141074,
+			"transformedAccuracy":5.623370292141074,
+			"precision":8.0,
+			"transformedPrecision":8.0,
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Neptunium",
-			"value":2.37e2
+			"value":2.37e2,
+			"accuracy":1.35798414241809e1,
+			"transformedAccuracy":1.35798414241809e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Plutonium",
-			"value":2.44e2
+			"value":2.44e2,
+			"accuracy":1.3567199943852273e1,
+			"transformedAccuracy":1.3567199943852273e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Americium",
-			"value":2.43e2
+			"value":2.43e2,
+			"accuracy":1.3568983496592692e1,
+			"transformedAccuracy":1.3568983496592692e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Curium",
-			"value":2.47e2
+			"value":2.47e2,
+			"accuracy":1.3561892816931339e1,
+			"transformedAccuracy":1.3561892816931339e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Berkelium",
-			"value":2.47e2
+			"value":2.47e2,
+			"accuracy":1.3561892816931339e1,
+			"transformedAccuracy":1.3561892816931339e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Californium",
-			"value":2.51e2
+			"value":2.51e2,
+			"accuracy":1.3554916048709964e1,
+			"transformedAccuracy":1.3554916048709964e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Einsteinium",
-			"value":2.52e2
+			"value":2.52e2,
+			"accuracy":1.355318922940946e1,
+			"transformedAccuracy":1.355318922940946e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Fermium",
-			"value":2.57e2
+			"value":2.57e2,
+			"accuracy":1.3544656646859709e1,
+			"transformedAccuracy":1.3544656646859709e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Mendelevium",
-			"value":2.58e2
+			"value":2.58e2,
+			"accuracy":1.3542970064227775e1,
+			"transformedAccuracy":1.3542970064227775e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Nobelium",
-			"value":2.59e2
+			"value":2.59e2,
+			"accuracy":1.3541290006109753e1,
+			"transformedAccuracy":1.3541290006109753e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Lawrencium",
-			"value":2.62e2
+			"value":2.62e2,
+			"accuracy":1.3536288478871258e1,
+			"transformedAccuracy":1.3536288478871258e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":2.67e2
+			"value":2.67e2,
+			"accuracy":1.3528078508826429e1,
+			"transformedAccuracy":1.3528078508826429e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Dubnium",
-			"value":2.7e2
+			"value":2.7e2,
+			"accuracy":1.3523226006032017e1,
+			"transformedAccuracy":1.3523226006032017e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Seaborgium",
-			"value":2.69e2
+			"value":2.69e2,
+			"accuracy":1.3524837490188597e1,
+			"transformedAccuracy":1.3524837490188597e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Bohrium",
-			"value":2.7e2
+			"value":2.7e2,
+			"accuracy":1.3523226006032017e1,
+			"transformedAccuracy":1.3523226006032017e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Hassium",
-			"value":2.7e2
+			"value":2.7e2,
+			"accuracy":1.3523226006032017e1,
+			"transformedAccuracy":1.3523226006032017e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Meitnerium",
-			"value":2.78e2
+			"value":2.78e2,
+			"accuracy":1.3510544974272927e1,
+			"transformedAccuracy":1.3510544974272927e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":2.81e2
+			"value":2.81e2,
+			"accuracy":1.3505883450285925e1,
+			"transformedAccuracy":1.3505883450285925e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Roentgenium",
-			"value":2.81e2
+			"value":2.81e2,
+			"accuracy":1.3505883450285925e1,
+			"transformedAccuracy":1.3505883450285925e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Copernicium",
-			"value":2.85e2
+			"value":2.85e2,
+			"accuracy":1.3499744910182494e1,
+			"transformedAccuracy":1.3499744910182494e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Nihonium",
-			"value":2.86e2
+			"value":2.86e2,
+			"accuracy":1.3498223737061961e1,
+			"transformedAccuracy":1.3498223737061961e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Flerovium",
-			"value":2.89e2
+			"value":2.89e2,
+			"accuracy":1.3493691927434456e1,
+			"transformedAccuracy":1.3493691927434456e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Moscovium",
-			"value":2.89e2
+			"value":2.89e2,
+			"accuracy":1.3493691927434456e1,
+			"transformedAccuracy":1.3493691927434456e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Livermorium",
-			"value":2.93e2
+			"value":2.93e2,
+			"accuracy":1.3487722149836893e1,
+			"transformedAccuracy":1.3487722149836893e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Tennessine",
-			"value":2.93e2
+			"value":2.93e2,
+			"accuracy":1.3487722149836893e1,
+			"transformedAccuracy":1.3487722149836893e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		},
 		{
 			"name":"Oganesson",
-			"value":2.94e2
+			"value":2.94e2,
+			"accuracy":1.3486242439778847e1,
+			"transformedAccuracy":1.3486242439778847e1,
+			"precision":"Infinity",
+			"transformedPrecision":"Infinity",
+			"unit":"AtomicMassUnit"
 		}
 	]
 }

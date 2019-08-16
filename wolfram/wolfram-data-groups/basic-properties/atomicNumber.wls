@@ -1,20 +1,15 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-SetSystemOptions["DataOptions" -> "ReturnQuantities" -> False];
 Import["../commonMethods.wls"];
 
-atomTransform[atomProperty_]:= (
-  Return[atomProperty];
+atomTransform[prop_]:= (
+  Return[prop];
 );
 
 IterateAtomProperty[
-  "AtomicNumber",
-  "Atomic Number",
-  Hold[atomTransform],
+  "atomic number",
+  Unevaluated[atomTransform],
   "lanthanites case",
-  "actinides case",
-  "atomicNumber.json"
+  "actinides case"
 ];
-
-Print["Atomic Number Done"];

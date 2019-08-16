@@ -1,9 +1,16 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
+FixAccuracyPrecision[data_]:= (
+  If[!NumberQ[data],
+    Return["Infinity"];
+  ];
+  
+  Return[data];
+);
 
-RemoveUnknowns[data_] := (
-  If[Failure![data],
+RemoveUnknowns[data_]:= (
+  If[FailureQ[data],
     Return["Failed"];
   ];
   
@@ -16,34 +23,45 @@ RemoveUnknowns[data_] := (
 
 (*
   atomProperty
-    name of the property, we tell wolfram we want
-  atomPropertyDisplayValue
-    name of the property, in a  human readable form
+    name of the property,
   atomValueTransformation
     function to transform the actual value of the property (we are trying to extract)
   lanthanitesCase
     special case value for lanthanites block
   actinidesCase
     spacial case value for actinites block
-  jsonFile
-    where to generate file
 *)
 IterateAtomProperty[
   atomProperty_,
-  atomPropertyDisplayValue_,
   atomValueTransformation_,
   lanthanitesCase_,
-  actinidesCase_,
-  jsonFile_
+  actinidesCase_
 ]:= (
+  (* AtomProperty *)
+  atomPropertyPascalCase = StringDelete[StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]], " "];
+  (* Atom Property *)
+  atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
+
+  genericValue = atomValueTransformation@RemoveUnknowns@ElementData[1, atomPropertyPascalCase];
+  genericUnit = QuantityUnit@genericValue;
+
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
     (* General Case *)
+    val = ElementData[i, atomPropertyPascalCase];
+    value = atomValueTransformation@RemoveUnknowns@val;
+    Print@QuantityMagnitude@value;
+
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" ->  ReleaseHold@atomValueTransformation@RemoveUnknowns@ElementData[i, atomProperty]
+      "value" -> QuantityMagnitude@value,
+      "accuracy" -> FixAccuracyPrecision@Accuracy@val,
+      "transformedAccuracy" -> FixAccuracyPrecision@Accuracy@value,
+      "precision" -> FixAccuracyPrecision@Precision@val,
+      "transformedPrecision" -> FixAccuracyPrecision@Precision@value,
+      "unit" -> QuantityUnit@value
     }];
-  
+
     (* Lanthanites Case *)
     If[i == 56,
       atomArrayData = Append[atomArrayData, {
@@ -51,7 +69,7 @@ IterateAtomProperty[
         "value" -> lanthanitesCase
       }];
     ];
-    
+
     (* Actinides Case *)
     If[i == 88,
       atomArrayData = Append[atomArrayData, {
@@ -61,13 +79,17 @@ IterateAtomProperty[
     ];
   )];
 
-  rootData = <|
-    "meta"-> <|
-      "atomName"-> atomPropertyDisplayValue
-    |>,
+  rootData = {
+    "meta" -> {
+      "atomPropertyName" -> atomPropertyPascalCase,
+      "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace,
+      "atomPropertyValueUnit" -> genericUnit
+    },
     "data" -> atomArrayData
-  |>;
+  };
 
-  
+  jsonFile = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]] ~~ ".json";
   Export[jsonFile, rootData, "JSON"];
+
+  Print[jsonFile <> " done"];
 );
