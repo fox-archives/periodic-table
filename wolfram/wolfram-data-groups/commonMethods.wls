@@ -90,7 +90,9 @@ iterateAtomProperty[
 
     name = ElementData[i, "StandardName"];
     value = fixValue@transformedValue;
-    unit = fixUnit@transformedValue;
+    oldUnit = fixUnit@transformedValue;
+    unit = ToString@ElementData[i, atomPropertyPascalCase, "Units"];
+    unitsName = ToString@ElementData[i, atomPropertyPascalCase, "UnitsStandardName"];
     rawAccuracy = fixAccuracy@rawValue;
     transformedAccuracy = fixAccuracy@transformedValue;
     rawPrecision = fixPrecision@rawValue;
@@ -99,7 +101,9 @@ iterateAtomProperty[
     atomArrayData = Append[atomArrayData, {
       "name" -> name,
       "value" -> value,
-      "unit" -> unit
+      "oldUnit" -> oldUnit,
+      "unit" -> unit,
+      "unitsName" -> unitsName
       (* "rawAccuracy" -> rawAccuracy,
       "transformedAccuracy" -> transformedAccuracy,
       "rawPrecision" -> rawPrecision,
@@ -125,7 +129,9 @@ iterateAtomProperty[
   rootData = {
     "meta" -> {
       "atomPropertyName" -> atomPropertyPascalCase,
-      "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace
+      "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace,
+      "description" -> ElementData[1, atomPropertyPascalCase, "Description"],
+      "longDescription" -> ElementData[1, atomPropertyPascalCase, "LongDescription"]
     },
     "data" -> atomArrayData
   };

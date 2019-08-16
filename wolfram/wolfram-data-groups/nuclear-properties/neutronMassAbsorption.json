@@ -1,0 +1,844 @@
+{
+	"meta":{
+		"atomPropertyName":"NeutronMassAbsorption",
+		"atomPropertyNameWithSpace":"Neutron Mass Absorption",
+		"description":"neutron mass absorption",
+		"longDescription":"thermal neutron mass absorption coefficient"
+	},
+	"data":[
+		{
+			"name":"Hydrogen",
+			"value":1.1e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Helium",
+			"value":1.0000000000000026e-5,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Lithium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Beryllium",
+			"value":3.0000000000000024e-5,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Boron",
+			"value":2.4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Carbon",
+			"value":1.4999999999999985e-5,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Nitrogen",
+			"value":4.8000000000000004e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Oxygen",
+			"value":1.0000000000000243e-6,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Fluorine",
+			"value":1.9999999999999998e-5,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Neon",
+			"value":5.9e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Sodium",
+			"value":7.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Magnesium",
+			"value":9.999999999999999e-5,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Aluminum",
+			"value":3.0e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Silicon",
+			"value":1.9999999999999998e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Phosphorus",
+			"value":1.9999999999999998e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Sulfur",
+			"value":5.499999999999999e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Chlorine",
+			"value":3.3e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Argon",
+			"value":5.9e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Potassium",
+			"value":1.8e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Calcium",
+			"value":3.7e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Scandium",
+			"value":2.5e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Titanium",
+			"value":4.4e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Vanadium",
+			"value":3.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Chromium",
+			"value":2.1e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Manganese",
+			"value":8.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Iron",
+			"value":1.5e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Cobalt",
+			"value":2.1e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Nickel",
+			"value":2.6e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Copper",
+			"value":2.1e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Zinc",
+			"value":5.499999999999999e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Gallium",
+			"value":1.5e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Germanium",
+			"value":1.1e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Arsenic",
+			"value":2.0e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Selenium",
+			"value":5.6e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Bromine",
+			"value":2.0e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Krypton",
+			"value":1.3e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Rubidium",
+			"value":3.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Strontium",
+			"value":5.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Yttrium",
+			"value":5.9e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Zirconium",
+			"value":6.6e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Niobium",
+			"value":4.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Molybdenum",
+			"value":9.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Technetium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Ruthenium",
+			"value":9.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Rhodium",
+			"value":6.3e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Palladium",
+			"value":2.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Silver",
+			"value":2.0e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Cadmium",
+			"value":1.4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Indium",
+			"value":6.0e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Tin",
+			"value":1.9999999999999998e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Antimony",
+			"value":1.6e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Tellurium",
+			"value":1.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Iodine",
+			"value":1.8e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Xenon",
+			"value":8.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Cesium",
+			"value":7.7e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Barium",
+			"value":2.7e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Lanthanites",
+			"value":"lanthanites case"
+		},
+		{
+			"name":"Lanthanum",
+			"value":2.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Cerium",
+			"value":2.1e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Praseodymium",
+			"value":2.9e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Neodymium",
+			"value":1.1e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Promethium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Samarium",
+			"value":4.7,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Europium",
+			"value":0.6,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Gadolinium",
+			"value":7.3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Terbium",
+			"value":9.0e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Dysprosium",
+			"value":0.2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Holmium",
+			"value":1.5e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Erbium",
+			"value":3.6e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Thulium",
+			"value":2.5e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Ytterbium",
+			"value":7.6e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Lutetium",
+			"value":2.2e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Hafnium",
+			"value":2.0e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Tantalum",
+			"value":4.1e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Tungsten",
+			"value":3.6e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Rhenium",
+			"value":1.6e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Osmium",
+			"value":2.3e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Iridium",
+			"value":8.1e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Platinum",
+			"value":2.0e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Gold",
+			"value":1.7e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Mercury",
+			"value":6.3e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Thallium",
+			"value":5.9e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Lead",
+			"value":3.0000000000000024e-5,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Bismuth",
+			"value":5.999999999999983e-6,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Polonium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Astatine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Radon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Francium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Radium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Actinides",
+			"value":"actinides case"
+		},
+		{
+			"name":"Actinium",
+			"value":7.8e-2,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Thorium",
+			"value":1.0e-3,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Protactinium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Uranium",
+			"value":5.0e-4,
+			"oldUnit":"meters squared per kilogram",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Neptunium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Plutonium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Americium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Curium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Berkelium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Californium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Einsteinium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Fermium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Mendelevium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Nobelium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Lawrencium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Rutherfordium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Dubnium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Seaborgium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Bohrium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Hassium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Meitnerium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Darmstadtium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Roentgenium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Copernicium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Nihonium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Flerovium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Moscovium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Livermorium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Tennessine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		},
+		{
+			"name":"Oganesson",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"SquareMetersPerKilogram",
+			"unitsName":"SquareMetersPerKilogram"
+		}
+	]
+}

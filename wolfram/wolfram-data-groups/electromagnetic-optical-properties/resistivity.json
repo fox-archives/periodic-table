@@ -1,0 +1,844 @@
+{
+	"meta":{
+		"atomPropertyName":"Resistivity",
+		"atomPropertyNameWithSpace":"Resistivity",
+		"description":"resistivity",
+		"longDescription":"electrical resistivity ρ of solid"
+	},
+	"data":[
+		{
+			"name":"Hydrogen",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Helium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Lithium",
+			"value":9.400000000001638e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Beryllium",
+			"value":3.999999999997929e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Boron",
+			"value":1.0e4,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Carbon",
+			"value":1.0000000000000026e-5,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Nitrogen",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Oxygen",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Fluorine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Neon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Sodium",
+			"value":4.6999999999981085e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Magnesium",
+			"value":4.399999999998806e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Aluminum",
+			"value":2.6e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Silicon",
+			"value":1.0e-3,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Phosphorus",
+			"value":1.0000000000000243e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Sulfur",
+			"value":1.0e15,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Chlorine",
+			"value":1.0e2,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Argon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Potassium",
+			"value":7.000000000001796e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Calcium",
+			"value":3.399999999999324e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Scandium",
+			"value":5.499999999999863e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Titanium",
+			"value":4.000000000000097e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Vanadium",
+			"value":2.0000000000000486e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Chromium",
+			"value":1.299999999999869e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Manganese",
+			"value":1.5999999999999847e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Iron",
+			"value":9.70000000000094e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Cobalt",
+			"value":6.000000000002314e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Nickel",
+			"value":7.000000000001796e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Copper",
+			"value":1.7e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Zinc",
+			"value":5.90000000000074e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Gallium",
+			"value":1.3999999999998172e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Germanium",
+			"value":5.0e-4,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Arsenic",
+			"value":3.000000000000073e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Selenium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Bromine",
+			"value":1.0e10,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Krypton",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Rubidium",
+			"value":1.1999999999999207e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Strontium",
+			"value":1.299999999999869e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Yttrium",
+			"value":5.699999999999759e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Zirconium",
+			"value":4.1999999999999937e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Niobium",
+			"value":1.4999999999997654e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Molybdenum",
+			"value":4.999999999997411e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Technetium",
+			"value":2.0000000000000486e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Ruthenium",
+			"value":7.000000000001796e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Rhodium",
+			"value":4.3000000000026524e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Palladium",
+			"value":1.0000000000000243e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Silver",
+			"value":1.6e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Cadmium",
+			"value":7.000000000001796e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Indium",
+			"value":8.000000000001279e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Tin",
+			"value":1.0999999999999725e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Antimony",
+			"value":4.000000000000097e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Tellurium",
+			"value":9.999999999999999e-5,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Iodine",
+			"value":1.0e7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Xenon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Cesium",
+			"value":2.0000000000000486e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Barium",
+			"value":3.499999999999814e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Lanthanites",
+			"value":"lanthanites case"
+		},
+		{
+			"name":"Lanthanum",
+			"value":6.100000000000094e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Cerium",
+			"value":7.499999999999911e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Praseodymium",
+			"value":7.00000000000017e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Neodymium",
+			"value":6.399999999999939e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Promethium",
+			"value":7.499999999999911e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Samarium",
+			"value":9.400000000000012e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Europium",
+			"value":9.000000000000219e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Gadolinium",
+			"value":1.2999999999999774e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Terbium",
+			"value":1.199999999999975e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Dysprosium",
+			"value":9.100000000000167e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Holmium",
+			"value":9.400000000000012e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Erbium",
+			"value":8.599999999999884e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Thulium",
+			"value":7.00000000000017e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Ytterbium",
+			"value":2.8000000000001765e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Lutetium",
+			"value":5.699999999999759e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Hafnium",
+			"value":3.000000000000073e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Tantalum",
+			"value":1.299999999999869e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Tungsten",
+			"value":4.999999999997411e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Rhenium",
+			"value":1.8000000000001522e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Osmium",
+			"value":8.000000000001279e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Iridium",
+			"value":4.6999999999981085e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Platinum",
+			"value":1.0999999999999725e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Gold",
+			"value":2.2e-8,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Mercury",
+			"value":9.599999999999908e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Thallium",
+			"value":1.4999999999997654e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Lead",
+			"value":2.0999999999999968e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Bismuth",
+			"value":1.2999999999999774e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Polonium",
+			"value":4.299999999999942e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Astatine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Radon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Francium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Radium",
+			"value":1.0000000000000243e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Actinides",
+			"value":"actinides case"
+		},
+		{
+			"name":"Actinium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Thorium",
+			"value":1.4999999999997654e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Protactinium",
+			"value":1.8000000000001522e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Uranium",
+			"value":2.8000000000001765e-7,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Neptunium",
+			"value":1.199999999999975e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Plutonium",
+			"value":1.4999999999999823e-6,
+			"oldUnit":"meter ohms",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Americium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Curium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Berkelium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Californium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Einsteinium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Fermium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Mendelevium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Nobelium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Lawrencium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Rutherfordium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Dubnium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Seaborgium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Bohrium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Hassium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Meitnerium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Darmstadtium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Roentgenium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Copernicium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Nihonium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Flerovium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Moscovium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Livermorium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Tennessine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		},
+		{
+			"name":"Oganesson",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"OhmMeters",
+			"unitsName":"OhmMeters"
+		}
+	]
+}

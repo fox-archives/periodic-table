@@ -1,0 +1,844 @@
+{
+	"meta":{
+		"atomPropertyName":"VaporizationHeat",
+		"atomPropertyNameWithSpace":"Vaporization Heat",
+		"description":"heat of vaporization",
+		"longDescription":"latent heat for liquid-gas transition"
+	},
+	"data":[
+		{
+			"name":"Hydrogen",
+			"value":0.452,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Helium",
+			"value":8.3e-2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Lithium",
+			"value":1.47e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Beryllium",
+			"value":2.97e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Boron",
+			"value":5.07e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Carbon",
+			"value":7.15e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Nitrogen",
+			"value":2.79,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Oxygen",
+			"value":3.41,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Fluorine",
+			"value":3.27,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Neon",
+			"value":1.75,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Sodium",
+			"value":9.77e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Magnesium",
+			"value":1.28e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Aluminum",
+			"value":2.93e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Silicon",
+			"value":3.59e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Phosphorus",
+			"value":1.24e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Sulfur",
+			"value":9.8,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Chlorine",
+			"value":1.02e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Argon",
+			"value":6.5,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Potassium",
+			"value":7.69e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Calcium",
+			"value":1.55e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Scandium",
+			"value":3.18e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Titanium",
+			"value":4.25e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Vanadium",
+			"value":4.53e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Chromium",
+			"value":3.39e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Manganese",
+			"value":2.2e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Iron",
+			"value":3.47e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Cobalt",
+			"value":3.75e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Nickel",
+			"value":3.78e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Copper",
+			"value":3.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Zinc",
+			"value":1.19e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Gallium",
+			"value":2.56e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Germanium",
+			"value":3.34e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Arsenic",
+			"value":3.24e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Selenium",
+			"value":2.6e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Bromine",
+			"value":1.48e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Krypton",
+			"value":9.02,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Rubidium",
+			"value":7.1e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Strontium",
+			"value":1.37e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Yttrium",
+			"value":3.8e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Zirconium",
+			"value":5.8e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Niobium",
+			"value":6.9e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Molybdenum",
+			"value":6.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Technetium",
+			"value":5.5e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Ruthenium",
+			"value":5.8e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Rhodium",
+			"value":4.95e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Palladium",
+			"value":3.8e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Silver",
+			"value":2.55e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Cadmium",
+			"value":1.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Indium",
+			"value":2.3e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Tin",
+			"value":2.9e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Antimony",
+			"value":6.7e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Tellurium",
+			"value":4.8e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Iodine",
+			"value":2.09e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Xenon",
+			"value":1.264e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Cesium",
+			"value":6.4e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Barium",
+			"value":1.4e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Lanthanites",
+			"value":"lanthanites case"
+		},
+		{
+			"name":"Lanthanum",
+			"value":4.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Cerium",
+			"value":3.5e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Praseodymium",
+			"value":3.3e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Neodymium",
+			"value":2.85e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Promethium",
+			"value":2.9e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Samarium",
+			"value":1.75e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Europium",
+			"value":1.75e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Gadolinium",
+			"value":3.05e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Terbium",
+			"value":2.95e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Dysprosium",
+			"value":2.8e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Holmium",
+			"value":2.65e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Erbium",
+			"value":2.85e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Thulium",
+			"value":2.5e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Ytterbium",
+			"value":1.6e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Lutetium",
+			"value":4.15e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Hafnium",
+			"value":6.3e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Tantalum",
+			"value":7.36e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Tungsten",
+			"value":8.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Rhenium",
+			"value":7.05e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Osmium",
+			"value":6.3e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Iridium",
+			"value":5.6e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Platinum",
+			"value":4.9e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Gold",
+			"value":3.3e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Mercury",
+			"value":5.92e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Thallium",
+			"value":1.65e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Lead",
+			"value":1.78e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Bismuth",
+			"value":1.6e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Polonium",
+			"value":1.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Astatine",
+			"value":4.0e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Radon",
+			"value":1.7e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Francium",
+			"value":6.4e1,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Radium",
+			"value":1.25e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Actinides",
+			"value":"actinides case"
+		},
+		{
+			"name":"Actinium",
+			"value":4.0e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Thorium",
+			"value":5.3e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Protactinium",
+			"value":4.7e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Uranium",
+			"value":4.2e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Neptunium",
+			"value":3.35e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Plutonium",
+			"value":3.25e2,
+			"oldUnit":"kilojoules per mole",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Americium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Curium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Berkelium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Californium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Einsteinium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Fermium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Mendelevium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Nobelium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Lawrencium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Rutherfordium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Dubnium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Seaborgium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Bohrium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Hassium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Meitnerium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Darmstadtium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Roentgenium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Copernicium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Nihonium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Flerovium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Moscovium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Livermorium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Tennessine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		},
+		{
+			"name":"Oganesson",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"KilojoulesPerMole",
+			"unitsName":"KilojoulesPerMole"
+		}
+	]
+}

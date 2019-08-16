@@ -1,0 +1,844 @@
+{
+	"meta":{
+		"atomPropertyName":"SolarAbundance",
+		"atomPropertyNameWithSpace":"Solar Abundance",
+		"description":"solar abundance",
+		"longDescription":"abundance in the sun"
+	},
+	"data":[
+		{
+			"name":"Hydrogen",
+			"value":0.75,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Helium",
+			"value":0.23,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Lithium",
+			"value":6.0e-11,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Beryllium",
+			"value":1.0e-10,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Boron",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Carbon",
+			"value":0.0030,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Nitrogen",
+			"value":0.0010,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Oxygen",
+			"value":0.0090,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Fluorine",
+			"value":5.0e-7,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Neon",
+			"value":0.0010,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Sodium",
+			"value":0.000040,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Magnesium",
+			"value":0.00070,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Aluminum",
+			"value":0.000060,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Silicon",
+			"value":0.00090,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Phosphorus",
+			"value":7.0e-6,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Sulfur",
+			"value":0.00040,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Chlorine",
+			"value":8.0e-6,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Argon",
+			"value":0.000070,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Potassium",
+			"value":4.0e-6,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Calcium",
+			"value":0.000070,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Scandium",
+			"value":4.0e-8,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Titanium",
+			"value":4.0e-6,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Vanadium",
+			"value":4.0e-7,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Chromium",
+			"value":0.000020,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Manganese",
+			"value":0.000010,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Iron",
+			"value":0.0010,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Cobalt",
+			"value":4.0e-6,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Nickel",
+			"value":0.000080,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Copper",
+			"value":7.0e-7,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Zinc",
+			"value":2.0e-6,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Gallium",
+			"value":4.0e-8,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Germanium",
+			"value":2.0e-7,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Arsenic",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Selenium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Bromine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Krypton",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Rubidium",
+			"value":3.0e-8,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Strontium",
+			"value":5.0e-8,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Yttrium",
+			"value":9.9e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Zirconium",
+			"value":4.0e-8,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Niobium",
+			"value":4.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Molybdenum",
+			"value":9.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Technetium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Ruthenium",
+			"value":5.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Rhodium",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Palladium",
+			"value":3.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Silver",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Cadmium",
+			"value":6.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Indium",
+			"value":4.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Tin",
+			"value":9.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Antimony",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Tellurium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Iodine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Xenon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Cesium",
+			"value":8.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Barium",
+			"value":9.9e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Lanthanites",
+			"value":"lanthanites case"
+		},
+		{
+			"name":"Lanthanum",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Cerium",
+			"value":4.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Praseodymium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Neodymium",
+			"value":3.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Promethium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Samarium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Europium",
+			"value":5.0e-10,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Gadolinium",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Terbium",
+			"value":1.0e-10,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Dysprosium",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Holmium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Erbium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Thulium",
+			"value":2.0e-10,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Ytterbium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Lutetium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Hafnium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Tantalum",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Tungsten",
+			"value":4.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Rhenium",
+			"value":1.0e-10,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Osmium",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Iridium",
+			"value":2.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Platinum",
+			"value":9.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Gold",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Mercury",
+			"value":2.0e-8,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Thallium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Lead",
+			"value":9.9e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Bismuth",
+			"value":9.9e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Polonium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Astatine",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Radon",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Francium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Radium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Actinides",
+			"value":"actinides case"
+		},
+		{
+			"name":"Actinium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Thorium",
+			"value":3.0e-10,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Protactinium",
+			"value":"Unknown",
+			"oldUnit":"Unknown",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Uranium",
+			"value":1.0e-9,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Neptunium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Plutonium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Americium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Curium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Berkelium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Californium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Einsteinium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Fermium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Mendelevium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Nobelium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Lawrencium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Rutherfordium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Dubnium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Seaborgium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Bohrium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Hassium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Meitnerium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Darmstadtium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Roentgenium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Copernicium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Nihonium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Flerovium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Moscovium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Livermorium",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Tennessine",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		},
+		{
+			"name":"Oganesson",
+			"value":0.0,
+			"oldUnit":"grams per gram",
+			"unit":"GramsPerGram",
+			"unitsName":"GramsPerGram"
+		}
+	]
+}

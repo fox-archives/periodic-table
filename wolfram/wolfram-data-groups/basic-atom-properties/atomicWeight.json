@@ -1,0 +1,844 @@
+{
+	"meta":{
+		"atomPropertyName":"AtomicWeight",
+		"atomPropertyNameWithSpace":"Atomic Weight",
+		"description":"atomic mass",
+		"longDescription":"average atomic mass in atomic mass units"
+	},
+	"data":[
+		{
+			"name":"Hydrogen",
+			"value":1.008,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Helium",
+			"value":4.002602,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Lithium",
+			"value":6.94,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Beryllium",
+			"value":9.0121831,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Boron",
+			"value":10.81,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Carbon",
+			"value":12.011,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Nitrogen",
+			"value":14.007,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Oxygen",
+			"value":15.999,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Fluorine",
+			"value":18.998403163,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Neon",
+			"value":20.1797,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Sodium",
+			"value":22.98976928,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Magnesium",
+			"value":24.305,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Aluminum",
+			"value":26.9815385,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Silicon",
+			"value":28.085,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Phosphorus",
+			"value":30.973761998,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Sulfur",
+			"value":32.06,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Chlorine",
+			"value":35.45,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Argon",
+			"value":39.948,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Potassium",
+			"value":39.0983,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Calcium",
+			"value":40.078,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Scandium",
+			"value":44.955908,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Titanium",
+			"value":47.867,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Vanadium",
+			"value":50.9415,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Chromium",
+			"value":51.9961,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Manganese",
+			"value":54.938044,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Iron",
+			"value":55.845,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Cobalt",
+			"value":58.933194,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Nickel",
+			"value":58.6934,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Copper",
+			"value":63.546,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Zinc",
+			"value":65.38,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Gallium",
+			"value":69.723,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Germanium",
+			"value":72.630,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Arsenic",
+			"value":74.921595,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Selenium",
+			"value":78.971,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Bromine",
+			"value":79.904,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Krypton",
+			"value":83.798,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Rubidium",
+			"value":85.4678,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Strontium",
+			"value":87.62,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Yttrium",
+			"value":88.90584,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Zirconium",
+			"value":91.224,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Niobium",
+			"value":92.90637,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Molybdenum",
+			"value":95.95,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Technetium",
+			"value":9.7e1,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Ruthenium",
+			"value":101.07,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Rhodium",
+			"value":102.90550,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Palladium",
+			"value":106.42,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Silver",
+			"value":107.8682,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Cadmium",
+			"value":112.414,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Indium",
+			"value":114.818,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Tin",
+			"value":118.710,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Antimony",
+			"value":121.760,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Tellurium",
+			"value":127.60,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Iodine",
+			"value":126.90447,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Xenon",
+			"value":131.293,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Cesium",
+			"value":132.90545196,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Barium",
+			"value":137.327,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Lanthanites",
+			"value":"lanthanites case"
+		},
+		{
+			"name":"Lanthanum",
+			"value":138.90547,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Cerium",
+			"value":140.116,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Praseodymium",
+			"value":140.90766,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Neodymium",
+			"value":144.242,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Promethium",
+			"value":1.45e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Samarium",
+			"value":150.36,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Europium",
+			"value":151.964,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Gadolinium",
+			"value":157.25,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Terbium",
+			"value":158.92535,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Dysprosium",
+			"value":162.500,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Holmium",
+			"value":164.93033,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Erbium",
+			"value":167.259,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Thulium",
+			"value":168.93422,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Ytterbium",
+			"value":173.045,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Lutetium",
+			"value":174.9668,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Hafnium",
+			"value":178.49,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Tantalum",
+			"value":180.94788,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Tungsten",
+			"value":183.84,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Rhenium",
+			"value":186.207,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Osmium",
+			"value":190.23,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Iridium",
+			"value":192.217,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Platinum",
+			"value":195.084,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Gold",
+			"value":196.966569,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Mercury",
+			"value":200.592,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Thallium",
+			"value":204.38,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Lead",
+			"value":207.2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Bismuth",
+			"value":208.98040,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Polonium",
+			"value":2.09e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Astatine",
+			"value":2.1e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Radon",
+			"value":2.22e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Francium",
+			"value":2.23e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Radium",
+			"value":2.26e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Actinides",
+			"value":"actinides case"
+		},
+		{
+			"name":"Actinium",
+			"value":2.27e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Thorium",
+			"value":232.0377,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Protactinium",
+			"value":231.03588,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Uranium",
+			"value":238.02891,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Neptunium",
+			"value":2.37e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Plutonium",
+			"value":2.44e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Americium",
+			"value":2.43e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Curium",
+			"value":2.47e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Berkelium",
+			"value":2.47e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Californium",
+			"value":2.51e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Einsteinium",
+			"value":2.52e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Fermium",
+			"value":2.57e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Mendelevium",
+			"value":2.58e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Nobelium",
+			"value":2.59e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Lawrencium",
+			"value":2.62e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Rutherfordium",
+			"value":2.67e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Dubnium",
+			"value":2.7e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Seaborgium",
+			"value":2.69e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Bohrium",
+			"value":2.7e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Hassium",
+			"value":2.7e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Meitnerium",
+			"value":2.78e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Darmstadtium",
+			"value":2.81e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Roentgenium",
+			"value":2.81e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Copernicium",
+			"value":2.85e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Nihonium",
+			"value":2.86e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Flerovium",
+			"value":2.89e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Moscovium",
+			"value":2.89e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Livermorium",
+			"value":2.93e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Tennessine",
+			"value":2.93e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		},
+		{
+			"name":"Oganesson",
+			"value":2.94e2,
+			"oldUnit":"unified atomic mass units",
+			"unit":"AtomicMassUnit",
+			"unitsName":"AtomicMassUnit"
+		}
+	]
+}

@@ -4,16 +4,16 @@ generates data about all atoms. this data will eventually be transferred to the 
 
 ## structure
 
-this folder is divided in three structures.
+three categories of folders exist
 
 ### display and layout
 
 data related to layout and display of the atom. contains the following.
 
 ```md
-atom-colors
-atom-placement
-label-placement
+layout-atom-colors
+layout-atom-placement
+layout-label-placement
 ```
 
 ### direct data output
@@ -22,8 +22,18 @@ files that directly generate atom data based on a *single* property. categorizat
 
 ```md
 wolfram-data-groups
-  basic-properties
-  material-properties
+  [x] basic-atom-properties
+  [x] material-properties
+  [x] thermodynamic-properties
+  [x] electromagnetic-optical-properties
+  [x] abundance-properties
+  [ ] basic-chemical-properties
+  [ ] periodic-table-properties
+  [ ] crystallographic properties
+  [x] atomic-properties
+  [x] nuclear-properties
+  [ ] names-properties
+  [ ] historical-commercial-properties
 ```
 
 ### categorized data
