@@ -8,10 +8,8 @@ atomTransform[prop_]:= (
 );
 
 IterateAtomProperty[
-  "brinel hardness",
+  "brinell hardness",
   Unevaluated[atomTransform],
   "lanthanites case",
   "actinides case"
 ];
-
-Print["Atomic Number Done"];

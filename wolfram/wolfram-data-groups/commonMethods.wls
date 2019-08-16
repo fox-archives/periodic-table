@@ -1,12 +1,28 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
+FixValue[data_]:= (
+  If[NumberQ[data],
+    Return[data];
+  ];
+
+  Return["Error"];
+);
+
+FixUnit[data_]:= (
+  If[KnownUnitQ[data],
+    Return[data];
+  ];
+
+  Return["Error"];
+);
+
 FixAccuracyPrecision[data_]:= (
-  If[!NumberQ[data],
-    Return["Infinity"];
+  If[NumberQ[data],
+    Return[data];
   ];
   
-  Return[data];
+  Return["Infinity"];
 );
 
 RemoveUnknowns[data_]:= (
@@ -42,24 +58,22 @@ IterateAtomProperty[
   (* Atom Property *)
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
 
-  genericValue = atomValueTransformation@RemoveUnknowns@ElementData[1, atomPropertyPascalCase];
-  genericUnit = QuantityUnit@genericValue;
-
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
     (* General Case *)
     val = ElementData[i, atomPropertyPascalCase];
-    value = atomValueTransformation@RemoveUnknowns@val;
-    Print@QuantityMagnitude@value;
+    value = atomValueTransformation @* RemoveUnknowns @* val;
+    Print @* FixValue @* QuantityMagnitude @* value;
+    Print @* FixAccuracyPrecision @* Accuracy @* val;
 
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" -> QuantityMagnitude@value,
-      "accuracy" -> FixAccuracyPrecision@Accuracy@val,
-      "transformedAccuracy" -> FixAccuracyPrecision@Accuracy@value,
-      "precision" -> FixAccuracyPrecision@Precision@val,
-      "transformedPrecision" -> FixAccuracyPrecision@Precision@value,
-      "unit" -> QuantityUnit@value
+      "value" -> FixValue @* QuantityMagnitude @* value,
+      "accuracy" -> FixAccuracyPrecision @* Accuracy @* val,
+      "transformedAccuracy" -> FixAccuracyPrecision @* Accuracy @* value,
+      "precision" -> FixAccuracyPrecision @* Precision @* val,
+      "transformedPrecision" -> FixAccuracyPrecision @* Precision @* value,
+      "unit" -> FixUnit @* QuantityUnit @* value
     }];
 
     (* Lanthanites Case *)
@@ -78,6 +92,9 @@ IterateAtomProperty[
       }];
     ];
   )];
+
+  genericValue = atomValueTransformation @* RemoveUnknowns @* ElementData[1, atomPropertyPascalCase];
+  genericUnit = FixUnit @* QuantityUnit @* genericValue;
 
   rootData = {
     "meta" -> {
