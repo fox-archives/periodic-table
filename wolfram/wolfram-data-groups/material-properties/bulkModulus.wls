@@ -3,17 +3,13 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[atomProperty_]:= (
-  Return[N[atomProperty]];
+atomTransform[prop_]:= (
+  Return[N@prop];
 );
 
 iterateAtomProperty[
-  "Bulk Modulus",
-  "BrinellHardness",
+  "bulk modulus",
   Unevaluated[atomTransform],
   "lanthanites case",
-  "actinides case",
-  "bulkModulus.json"
+  "actinides case"
 ];
-
-Print["Bulk Modulus Done"];

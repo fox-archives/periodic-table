@@ -11,7 +11,7 @@ fixValue[data_]:= (
 
 fixUnit[data_]:= (
   If[KnownUnitQ[data],
-    Return[data];
+    Return@ToString@QuantityForm[data, "LongForm"];
   ];
 
   Return["Error"];
@@ -58,23 +58,21 @@ iterateAtomProperty[
   (* Atom Property *)
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
 
-  genericValue = atomValueTransformation@RemoveUnknowns@ElementData[1, atomPropertyPascalCase];
-  genericUnit = QuantityUnit@genericValue;
-
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
     (* General Case *)
-    val = ElementData[i, atomPropertyPascalCase];
-    value = fixValue@atomValueTransformation@RemoveUnknowns@val;
-
+    rawValue = ElementData[i, atomPropertyPascalCase];
+    transformedValue = atomValueTransformation@rawValue;
+    (* Print@fixUnit @* QuantityUnit@transformedValue; *)
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" -> fixValue@QuantityMagnitude@value,
-      "accuracy" -> fixAccuracyPrecision@Accuracy@val,
-      "transformedAccuracy" -> fixAccuracyPrecision@Accuracy@value,
-      "precision" -> fixAccuracyPrecision@Precision@val,
-      "transformedPrecision" -> fixAccuracyPrecision@Precision@value,
-      "unit" -> fixUnit@QuantityUnit@value
+      (* "byRaw" -> fixValue @* QuantityMagnitude@rawValue, *)
+      "value" -> fixValue @* QuantityMagnitude@transformedValue,
+      "unit" -> fixUnit @* QuantityUnit@transformedValue,
+      "rawAccuracy" -> fixAccuracyPrecision @* Accuracy@rawValue,
+      "transformedAccuracy" -> fixAccuracyPrecision @* Accuracy@transformedValue,
+      "rawPrecision" -> fixAccuracyPrecision @* Precision@rawValue,
+      "transformedPrecision" -> fixAccuracyPrecision @* Precision@transformedValue
     }];
 
     (* Lanthanites Case *)
