@@ -1,7 +1,7 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-FixValue[data_]:= (
+fixValue[data_]:= (
   If[NumberQ[data],
     Return[data];
   ];
@@ -9,7 +9,7 @@ FixValue[data_]:= (
   Return["Error"];
 );
 
-FixUnit[data_]:= (
+fixUnit[data_]:= (
   If[KnownUnitQ[data],
     Return[data];
   ];
@@ -17,7 +17,7 @@ FixUnit[data_]:= (
   Return["Error"];
 );
 
-FixAccuracyPrecision[data_]:= (
+fixAccuracyPrecision[data_]:= (
   If[NumberQ[data],
     Return[data];
   ];
@@ -25,7 +25,7 @@ FixAccuracyPrecision[data_]:= (
   Return["Infinity"];
 );
 
-RemoveUnknowns[data_]:= (
+removeUnknowns[data_]:= (
   If[FailureQ[data],
     Return["Failed"];
   ];
@@ -47,7 +47,7 @@ RemoveUnknowns[data_]:= (
   actinidesCase
     spacial case value for actinites block
 *)
-IterateAtomProperty[
+iterateAtomProperty[
   atomProperty_,
   atomValueTransformation_,
   lanthanitesCase_,
@@ -62,18 +62,18 @@ IterateAtomProperty[
   For[i = 1, i < 119, i++, (
     (* General Case *)
     val = ElementData[i, atomPropertyPascalCase];
-    value = atomValueTransformation @* RemoveUnknowns @* val;
-    Print @* FixValue @* QuantityMagnitude @* value;
-    Print @* FixAccuracyPrecision @* Accuracy @* val;
+    value = atomValueTransformation @* removeUnknowns @* val;
+    Print @* fixValue @* QuantityMagnitude @* value;
+    Print @* fixAccuracyPrecision @* Accuracy @* val;
 
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" -> FixValue @* QuantityMagnitude @* value,
-      "accuracy" -> FixAccuracyPrecision @* Accuracy @* val,
-      "transformedAccuracy" -> FixAccuracyPrecision @* Accuracy @* value,
-      "precision" -> FixAccuracyPrecision @* Precision @* val,
-      "transformedPrecision" -> FixAccuracyPrecision @* Precision @* value,
-      "unit" -> FixUnit @* QuantityUnit @* value
+      "value" -> fixValue @* QuantityMagnitude @* value,
+      "accuracy" -> fixAccuracyPrecision @* Accuracy @* val,
+      "transformedAccuracy" -> fixAccuracyPrecision @* Accuracy @* value,
+      "precision" -> fixAccuracyPrecision @* Precision @* val,
+      "transformedPrecision" -> fixAccuracyPrecision @* Precision @* value,
+      "unit" -> fixUnit @* QuantityUnit @* value
     }];
 
     (* Lanthanites Case *)
@@ -93,8 +93,8 @@ IterateAtomProperty[
     ];
   )];
 
-  genericValue = atomValueTransformation @* RemoveUnknowns @* ElementData[1, atomPropertyPascalCase];
-  genericUnit = FixUnit @* QuantityUnit @* genericValue;
+  genericValue = atomValueTransformation @* removeUnknowns @* ElementData[1, atomPropertyPascalCase];
+  genericUnit = fixUnit @* QuantityUnit @* genericValue;
 
   rootData = {
     "meta" -> {

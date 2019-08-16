@@ -7,7 +7,7 @@ atomTransform[prop_]:= (
   Return[prop];
 );
 
-IterateAtomProperty[
+iterateAtomProperty[
   "atomic weight",
   Unevaluated[atomTransform],
   "lanthanites case",

@@ -7,7 +7,7 @@ atomTransform[atomProperty_]:= (
   Return[N[atomProperty]];
 );
 
-IterateAtomProperty[
+iterateAtomProperty[
   "Bulk Modulus",
   "BrinellHardness",
   Unevaluated[atomTransform],

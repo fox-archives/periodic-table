@@ -7,7 +7,7 @@ atomTransform[prop_]:= (
   Return[prop];
 );
 
-IterateAtomProperty[
+iterateAtomProperty[
   "brinell hardness",
   Unevaluated[atomTransform],
   "lanthanites case",
