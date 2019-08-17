@@ -1,11 +1,15 @@
 {
   "main": "index.js",
+  "license": "unlicensed",
+  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
     "dev:dash": "webpack-dashboard -- webpack-dev-server --progress --config webpack.dev.js",
     "prod": "webpack --progress --config webpack.prod.js",
-    "lint": "eslint -c .eslintrc.js *.{js,vue}",
-    "lint:fix": "eslint -c .eslintrc.js *.{js,vue} --fix"
+    "lint:js": "eslint -c .eslintrc.js *.{js,vue}",
+    "lint:js:fix": "eslint -c .eslintrc.js *.{js,vue} --fix",
+    "lint:css": "stylelint --config .stylelintrc.js **/*.scss",
+    "lint:css:fix": "stylelint --config .stylelintrc.js **/*.scss"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -49,6 +53,12 @@
     "sass-loader": "^7.1.0",
     "simplebar": "^4.1.0",
     "simplebar-vue": "^1.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.2",
+    "stylelint-order": "^3.0.1",
+    "stylelint-prettier": "^1.1.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^2.1.0",
     "vue-loader": "^15.7.1",

@@ -1,5 +1,7 @@
 {
   "main": "server.js",
+  "license": "unlicensed",
+  "private": true,
   "scripts": {
     "start": "nodemon server.js",
     "lint": "eslint -c .eslintrc.js *js",
