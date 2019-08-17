@@ -48,7 +48,7 @@ function switchAtomTabData({ state }, payload) {
         let atomSidebarDataResult = responses[1];
 
         state.atomColors = atomColorAppearanceResult.data;
-        state.atomSidebarData = atomSidebarDataResult.data;
+        state.atomSidebarData = atomSidebarDataResult.data.data;
 
         state.ready = true;
         resolve();
