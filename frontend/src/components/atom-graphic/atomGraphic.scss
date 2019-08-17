@@ -1,5 +1,5 @@
 // TODO: Make elementsThematomColors global rather than importing the elementsTheme.scss file, which is mixins and variables
-@import '../periodic-table/elementsTheme';
+@import "../periodic-table/elementsTheme";
 .light-def {
   @include panelVisualThemeDefault(
     $ld-background,
@@ -8,7 +8,7 @@
     $ld-shadow-hover,
     $ld-text
   );
-  @include elementsThemeAtomColors('', true, 2, 9);
+  @include elementsThemeAtomColors("", true, 2, 9);
 }
 
 .light-con {
@@ -19,7 +19,7 @@
     $lc-shadow-hover,
     $lc-text
   );
-  @include elementsThemeAtomColors('', true, 4, 9);
+  @include elementsThemeAtomColors("", true, 4, 9);
 }
 
 .dark-def {
@@ -30,7 +30,7 @@
     $dd-shadow-hover,
     $dd-text
   );
-  @include elementsThemeAtomColors('', true, 7, 1);
+  @include elementsThemeAtomColors("", true, 7, 1);
 }
 
 #visual-inner {
@@ -40,13 +40,13 @@
   width: 100%;
   height: 100%;
   border-radius: $border-radius;
-  transition: createTransitions((box-shadow, background-color));
+  transition: createtransitions((box-shadow, background-color));
 
-  --elementNameTextSize: 0px;
+  --elementNameTextSize: 0;
 }
 
 #visual-inner:hover {
-  transition: createTransitions((box-shadow, background-color));
+  transition: createtransitions((box-shadow, background-color));
 }
 
 #icon {
@@ -67,7 +67,7 @@
   bottom: 0;
   left: 0;
   border-radius: $border-radius;
-  font-family: robotoregular, Arial, 'sans-serif';
+  font-family: robotoregular, Arial, "sans-serif";
   font-weight: normal;
 }
 
@@ -80,7 +80,7 @@
 }
 
 #text {
-  font-family: robotoregular, Arial, 'sans-serif';
+  font-family: robotoregular, Arial, "sans-serif";
   font-weight: normal;
-  font-size: calc(20vw * 0.75 * 0.48 * 0.35)
+  font-size: calc(20vw * 0.75 * 0.48 * 0.35);
 }

@@ -1,18 +1,18 @@
 // List of the main colors being used (this will be updated when more colors from Open-Color)
 // If using all color lists, Open-Color has a variable that maps all lists
 $list-of-oc-colors: (
-  $oc-red-list: 'red',
-  $oc-pink-list: 'pink',
-  $oc-grape-list: 'grape',
-  $oc-violet-list: 'violet',
-  $oc-indigo-list: 'indigo',
-  $oc-blue-list: 'blue',
-  $oc-cyan-list: 'cyan',
-  $oc-teal-list: 'teal',
-  $oc-green-list: 'green',
-  $oc-lime-list: 'lime',
-  $oc-yellow-list: 'yellow',
-  $oc-orange-list: 'orange'
+  $oc-red-list: "red",
+  $oc-pink-list: "pink",
+  $oc-grape-list: "grape",
+  $oc-violet-list: "violet",
+  $oc-indigo-list: "indigo",
+  $oc-blue-list: "blue",
+  $oc-cyan-list: "cyan",
+  $oc-teal-list: "teal",
+  $oc-green-list: "green",
+  $oc-lime-list: "lime",
+  $oc-yellow-list: "yellow",
+  $oc-orange-list: "orange"
 );
 
 // @param 1  $colorShade  The type of color shade (ex. supdark-, dark-)

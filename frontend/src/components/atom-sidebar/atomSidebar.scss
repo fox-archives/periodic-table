@@ -4,11 +4,11 @@
   width: 100%;
   height: 100%;
   border-radius: $border-radius;
-  transition: createTransitions((box-shadow, background-color));
+  transition: createtransitions((box-shadow, background-color));
 }
 
 .atom-info-wrapper:hover {
-  transition: createTransitions((box-shadow, background-color));
+  transition: createtransitions((box-shadow, background-color));
 }
 
 .atom-info {
@@ -28,7 +28,7 @@
 }
 
 .atom-stat-text {
-  font-family: latoregular, Arial, 'sans-serif';
+  font-family: latoregular, Arial, "sans-serif";
 }
 
 // panel-side

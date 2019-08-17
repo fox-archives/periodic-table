@@ -9,7 +9,7 @@
     "lint:js": "eslint -c .eslintrc.js *.{js,vue}",
     "lint:js:fix": "eslint -c .eslintrc.js *.{js,vue} --fix",
     "lint:css": "stylelint --config .stylelintrc.js **/*.scss",
-    "lint:css:fix": "stylelint --config .stylelintrc.js **/*.scss"
+    "lint:css:fix": "stylelint --config .stylelintrc.js **/*.scss --fix"
   },
   "dependencies": {
     "axios": "^0.19.0",

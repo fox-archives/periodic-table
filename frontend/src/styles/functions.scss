@@ -10,14 +10,14 @@
   $transitionDuration: $transition-duration,
   $transitionTimingFunction: $transition-timing-fn
 ) {
-  $returnThis: '';
+  $returnThis: "";
   @each $transitionProperty in $transitionProperties {
     $returnThis: $returnThis +
       (
         $transitionProperty +
-          ' ' +
+          " " +
           $transitionDuration +
-          ' ' +
+          " " +
           $transitionTimingFunction
       );
 
@@ -29,7 +29,7 @@
         ) or
         $isExtraTransitions
     ) {
-      $returnThis: ($returnThis + ', ');
+      $returnThis: ($returnThis + ", ");
     }
   }
 

@@ -10,7 +10,7 @@
   $text
 ) {
   // Add shadow to textual part of element info panel
-  @include shadow('.atom-info-wrapper', $hasShadow, $shadow, $shadowHover);
+  @include shadow(".atom-info-wrapper", $hasShadow, $shadow, $shadowHover);
 
   .atom-info-wrapper {
     background-color: $background;

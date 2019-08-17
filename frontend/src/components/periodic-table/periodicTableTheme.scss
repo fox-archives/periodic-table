@@ -17,6 +17,6 @@
   }
 
   #grid-outer {
-    @include shadow('#grid', $hasShadow, $shadow, $shadowHover);
+    @include shadow("#grid", $hasShadow, $shadow, $shadowHover);
   }
 }

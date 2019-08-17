@@ -24,20 +24,23 @@
   $icon
 ) {
   // Make nav bar have a shadow
-  @include shadow('.inner', $hasShadow, $shadow, $shadowHover);
-  @include shadow('.no-text', $hasShadow, $shadow, $shadowHover);
+  @include shadow(".inner", $hasShadow, $shadow, $shadowHover);
+  @include shadow(".no-text", $hasShadow, $shadow, $shadowHover);
 
   // Color of main nav bar
-  .inner, .no-text {
+  .inner,
+  .no-text {
     background-color: $background;
     transition: all $transition-time ease-in-out;
   }
 
-  .inner:hover, .no-text:hover {
+  .inner:hover,
+  .no-text:hover {
     background-color: $navItemHover;
   }
 
-  .inner:active, .no-text:hover {
+  .inner:active,
+  .no-text:hover {
     background-color: $navItemClick;
   }
 

@@ -35,7 +35,7 @@ li {
 }
 
 .inner:active {
-  transition: createTransitions((background-color));
+  transition: createtransitions((background-color));
 }
 
 #menu-mobile {
@@ -43,7 +43,7 @@ li {
 }
 
 h2 {
-  font-family: robotolight, Arial, 'sans-serif';
+  font-family: robotolight, Arial, "sans-serif";
   font-size: 1.125em;
   font-weight: normal;
   margin-left: 9px;

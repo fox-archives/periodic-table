@@ -17,7 +17,6 @@ $total-rows: (7 * 2) + 5;
 #grid-container-loading-view {
   height: 100%;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,12 +57,17 @@ $total-rows: (7 * 2) + 5;
 // GRID \\
 // Main grid
 #grid {
+
+  // Contains CSS vars for text sizing
+  --primaryTextSize: 0;
+  --secondaryTextSize: 0;
+  --labelTextSize: 0;
+
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
   display: grid;
   // IF You change the 2.8% and 5.8%, then all the font size scaling will have to readjust
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
@@ -71,11 +75,6 @@ $total-rows: (7 * 2) + 5;
   padding: 10px 10px 10px 10px;
   border-radius: $border-radius;
   transition: all $transition-time ease-in-out;
-
-  // Contains CSS vars for text sizing
-  --primaryTextSize: 0px;
-  --secondaryTextSize: 0px;
-  --labelTextSize: 0px;
 }
 
 // I think this works

@@ -3,11 +3,11 @@
 }
 
 // Open Color Variables
-@import 'open-color/open-color.scss';
+@import "open-color/open-color.scss";
 
 // Import mixins and functions, which are only included if the mixin or function is called via @include
-@import 'mixins.scss';
-@import 'functions.scss';
+@import "mixins.scss";
+@import "functions.scss";
 
 // Other common variables
 $minimum-width: 1000px;
