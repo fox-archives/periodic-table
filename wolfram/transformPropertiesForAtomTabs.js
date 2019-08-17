@@ -1,18 +1,18 @@
-import fs from "fs"
 import path from "path";
 import { fileURLToPath } from "url";
-import { promisify } from "util";
-import { atomArrayExtract } from "./helper.js";
+import { atomArrayExtract, outputFile } from "./helper.js";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
+const outputFolder = "atom-tab-data";
 
 // PROPERTIES TAB
 {
   let propertiesRootFileNames = [
     "basic-atom-properties/atomicNumber",
     "basic-atom-properties/atomicWeight",
-    "atomic-properties/atomicRadius",
-    "material-properties/density"
+    "material-properties/density",
+    "thermodynamic-properties/boilingPoint",
+    "thermodynamic-properties/meltingPoint"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
   let abundanceFileNames = [
@@ -28,9 +28,34 @@ const dirname = path.dirname(fileURLToPath(import.meta.url));
     "Abundance": abundanceFileNames
   })
     .then(finalJson => {
-      promisify(fs.writeFile)(`${dirname}/abundance.json`, JSON.stringify(finalJson, null, 2))
-        .then(() => {
-          console.log("file saved");
-        })
+      return outputFile(`${dirname}/${outputFolder}/atomTabProperties.json`, finalJson);
+    })
+    .catch(e => {
+      console.log(e);
+    });
+}
+
+// ELECTRONS TAB
+{
+  let electronTabRootFilenames = [
+    "basic-atom-properties/atomicNumber",
+    "basic-atom-properties/atomicWeight"
+  ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
+
+  let radiusFileNames = [
+    "atomic-properties/atomicRadius",
+    "atomic-properties/covalentRadius",
+    "material-properties/soundSpeed",
+    "material-properties/thermalConductivity"
+  ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
+
+  atomArrayExtract(electronTabRootFilenames, {
+    "Radius": radiusFileNames
+  })
+    .then(finalJson => {
+      return outputFile(`${dirname}/${outputFolder}/atomTabElectrons.json`, finalJson);
+    })
+    .catch(e => {
+      console.log(e);
     })
 }

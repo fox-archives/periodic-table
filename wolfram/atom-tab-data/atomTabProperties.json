@@ -2,3363 +2,3603 @@
   "data": [
     {
       "debug": {
-        "Atomic Number": "Hydrogen",
         "Atomic Weight": "Hydrogen",
-        "Atomic Radius": "Hydrogen",
-        "Density": "Hydrogen"
+        "Atomic Number": "Hydrogen",
+        "Boiling Point": "Hydrogen",
+        "Density": "Hydrogen",
+        "Melting Point": "Hydrogen"
       },
-      "Atomic Number": 1,
-      "Atomic Weight": 1.008,
-      "Atomic Radius": 53,
-      "Density": 0.0899,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Hydrogen",
           "Human Abundance": "Hydrogen",
-          "Ocean Abundance": "Hydrogen",
           "Meteorite Abundance": "Hydrogen",
           "Solar Abundance": "Hydrogen",
+          "Ocean Abundance": "Hydrogen",
           "Universe Abundance": "Hydrogen"
         },
         "Crust Abundance": 0.0015,
         "Human Abundance": 0.1,
-        "Ocean Abundance": 0.11,
         "Meteorite Abundance": 0.024,
         "Solar Abundance": 0.75,
+        "Ocean Abundance": 0.11,
         "Universe Abundance": 0.75
-      }
+      },
+      "Atomic Weight": 1.008,
+      "Atomic Number": 1,
+      "Boiling Point": -252.87,
+      "Density": 0.0899,
+      "Melting Point": -259.14
     },
     {
       "debug": {
-        "Atomic Number": "Helium",
         "Atomic Weight": "Helium",
-        "Atomic Radius": "Helium",
-        "Density": "Helium"
+        "Atomic Number": "Helium",
+        "Boiling Point": "Helium",
+        "Density": "Helium",
+        "Melting Point": "Helium"
       },
-      "Atomic Number": 2,
-      "Atomic Weight": 4.002602,
-      "Atomic Radius": 31,
-      "Density": 0.1785,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Helium",
           "Human Abundance": "Helium",
-          "Ocean Abundance": "Helium",
           "Meteorite Abundance": "Helium",
           "Solar Abundance": "Helium",
+          "Ocean Abundance": "Helium",
           "Universe Abundance": "Helium"
         },
         "Crust Abundance": 5.5e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 7.2e-12,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": 0.23,
+        "Ocean Abundance": 7.2e-12,
         "Universe Abundance": 0.23
-      }
+      },
+      "Atomic Weight": 4.002602,
+      "Atomic Number": 2,
+      "Boiling Point": -268.93,
+      "Density": 0.1785,
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Lithium",
         "Atomic Weight": "Lithium",
-        "Atomic Radius": "Lithium",
-        "Density": "Lithium"
+        "Atomic Number": "Lithium",
+        "Boiling Point": "Lithium",
+        "Density": "Lithium",
+        "Melting Point": "Lithium"
       },
-      "Atomic Number": 3,
-      "Atomic Weight": 6.94,
-      "Atomic Radius": 167,
-      "Density": 535,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Lithium",
           "Human Abundance": "Lithium",
-          "Ocean Abundance": "Lithium",
           "Meteorite Abundance": "Lithium",
           "Solar Abundance": "Lithium",
+          "Ocean Abundance": "Lithium",
           "Universe Abundance": "Lithium"
         },
         "Crust Abundance": 0.000017,
         "Human Abundance": 3e-8,
-        "Ocean Abundance": 1.8e-7,
         "Meteorite Abundance": 0.0000017,
         "Solar Abundance": 6e-11,
+        "Ocean Abundance": 1.8e-7,
         "Universe Abundance": 6e-9
-      }
+      },
+      "Atomic Weight": 6.94,
+      "Atomic Number": 3,
+      "Boiling Point": 1342,
+      "Density": 535,
+      "Melting Point": 180.54
     },
     {
       "debug": {
-        "Atomic Number": "Beryllium",
         "Atomic Weight": "Beryllium",
-        "Atomic Radius": "Beryllium",
-        "Density": "Beryllium"
+        "Atomic Number": "Beryllium",
+        "Boiling Point": "Beryllium",
+        "Density": "Beryllium",
+        "Melting Point": "Beryllium"
       },
-      "Atomic Number": 4,
-      "Atomic Weight": 9.0121831,
-      "Atomic Radius": 112,
-      "Density": 1848,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Beryllium",
           "Human Abundance": "Beryllium",
-          "Ocean Abundance": "Beryllium",
           "Meteorite Abundance": "Beryllium",
           "Solar Abundance": "Beryllium",
+          "Ocean Abundance": "Beryllium",
           "Universe Abundance": "Beryllium"
         },
         "Crust Abundance": 0.0000019,
         "Human Abundance": 4e-10,
-        "Ocean Abundance": 6e-13,
         "Meteorite Abundance": 2.9e-8,
         "Solar Abundance": 1e-10,
+        "Ocean Abundance": 6e-13,
         "Universe Abundance": 1e-9
-      }
+      },
+      "Atomic Weight": 9.0121831,
+      "Atomic Number": 4,
+      "Boiling Point": 2470,
+      "Density": 1848,
+      "Melting Point": 1287
     },
     {
       "debug": {
-        "Atomic Number": "Boron",
         "Atomic Weight": "Boron",
-        "Atomic Radius": "Boron",
-        "Density": "Boron"
+        "Atomic Number": "Boron",
+        "Boiling Point": "Boron",
+        "Density": "Boron",
+        "Melting Point": "Boron"
       },
-      "Atomic Number": 5,
-      "Atomic Weight": 10.81,
-      "Atomic Radius": 87,
-      "Density": 2460,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Boron",
           "Human Abundance": "Boron",
-          "Ocean Abundance": "Boron",
           "Meteorite Abundance": "Boron",
           "Solar Abundance": "Boron",
+          "Ocean Abundance": "Boron",
           "Universe Abundance": "Boron"
         },
         "Crust Abundance": 0.0000086,
         "Human Abundance": 7e-7,
-        "Ocean Abundance": 0.0000044,
         "Meteorite Abundance": 0.0000016,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": 0.0000044,
         "Universe Abundance": 1e-9
-      }
+      },
+      "Atomic Weight": 10.81,
+      "Atomic Number": 5,
+      "Boiling Point": 4000,
+      "Density": 2460,
+      "Melting Point": 2075
     },
     {
       "debug": {
-        "Atomic Number": "Carbon",
         "Atomic Weight": "Carbon",
-        "Atomic Radius": "Carbon",
-        "Density": "Carbon"
+        "Atomic Number": "Carbon",
+        "Boiling Point": "Carbon",
+        "Density": "Carbon",
+        "Melting Point": "Carbon"
       },
-      "Atomic Number": 6,
-      "Atomic Weight": 12.011,
-      "Atomic Radius": 67,
-      "Density": 2260,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Carbon",
           "Human Abundance": "Carbon",
-          "Ocean Abundance": "Carbon",
           "Meteorite Abundance": "Carbon",
           "Solar Abundance": "Carbon",
+          "Ocean Abundance": "Carbon",
           "Universe Abundance": "Carbon"
         },
         "Crust Abundance": 0.0018,
         "Human Abundance": 0.23,
-        "Ocean Abundance": 0.000028,
         "Meteorite Abundance": 0.015,
         "Solar Abundance": 0.003,
+        "Ocean Abundance": 0.000028,
         "Universe Abundance": 0.005
-      }
+      },
+      "Atomic Weight": 12.011,
+      "Atomic Number": 6,
+      "Boiling Point": 4027,
+      "Density": 2260,
+      "Melting Point": 3550
     },
     {
       "debug": {
-        "Atomic Number": "Nitrogen",
         "Atomic Weight": "Nitrogen",
-        "Atomic Radius": "Nitrogen",
-        "Density": "Nitrogen"
+        "Atomic Number": "Nitrogen",
+        "Boiling Point": "Nitrogen",
+        "Density": "Nitrogen",
+        "Melting Point": "Nitrogen"
       },
-      "Atomic Number": 7,
-      "Atomic Weight": 14.007,
-      "Atomic Radius": 56,
-      "Density": 1.251,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Nitrogen",
           "Human Abundance": "Nitrogen",
-          "Ocean Abundance": "Nitrogen",
           "Meteorite Abundance": "Nitrogen",
           "Solar Abundance": "Nitrogen",
+          "Ocean Abundance": "Nitrogen",
           "Universe Abundance": "Nitrogen"
         },
         "Crust Abundance": 0.00002,
         "Human Abundance": 0.026,
-        "Ocean Abundance": 5e-7,
         "Meteorite Abundance": 0.0014,
         "Solar Abundance": 0.001,
+        "Ocean Abundance": 5e-7,
         "Universe Abundance": 0.001
-      }
+      },
+      "Atomic Weight": 14.007,
+      "Atomic Number": 7,
+      "Boiling Point": -195.79,
+      "Density": 1.251,
+      "Melting Point": -210.1
     },
     {
       "debug": {
-        "Atomic Number": "Oxygen",
         "Atomic Weight": "Oxygen",
-        "Atomic Radius": "Oxygen",
-        "Density": "Oxygen"
+        "Atomic Number": "Oxygen",
+        "Boiling Point": "Oxygen",
+        "Density": "Oxygen",
+        "Melting Point": "Oxygen"
       },
-      "Atomic Number": 8,
-      "Atomic Weight": 15.999,
-      "Atomic Radius": 48,
-      "Density": 1.429,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Oxygen",
           "Human Abundance": "Oxygen",
-          "Ocean Abundance": "Oxygen",
           "Meteorite Abundance": "Oxygen",
           "Solar Abundance": "Oxygen",
+          "Ocean Abundance": "Oxygen",
           "Universe Abundance": "Oxygen"
         },
         "Crust Abundance": 0.46,
         "Human Abundance": 0.61,
-        "Ocean Abundance": 0.86,
         "Meteorite Abundance": 0.4,
         "Solar Abundance": 0.009,
+        "Ocean Abundance": 0.86,
         "Universe Abundance": 0.01
-      }
+      },
+      "Atomic Weight": 15.999,
+      "Atomic Number": 8,
+      "Boiling Point": -182.9,
+      "Density": 1.429,
+      "Melting Point": -218.3
     },
     {
       "debug": {
-        "Atomic Number": "Fluorine",
         "Atomic Weight": "Fluorine",
-        "Atomic Radius": "Fluorine",
-        "Density": "Fluorine"
+        "Atomic Number": "Fluorine",
+        "Boiling Point": "Fluorine",
+        "Density": "Fluorine",
+        "Melting Point": "Fluorine"
       },
-      "Atomic Number": 9,
-      "Atomic Weight": 18.998403163,
-      "Atomic Radius": 42,
-      "Density": 1.696,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Fluorine",
           "Human Abundance": "Fluorine",
-          "Ocean Abundance": "Fluorine",
           "Meteorite Abundance": "Fluorine",
           "Solar Abundance": "Fluorine",
+          "Ocean Abundance": "Fluorine",
           "Universe Abundance": "Fluorine"
         },
         "Crust Abundance": 0.00054,
         "Human Abundance": 0.000037,
-        "Ocean Abundance": 0.0000013,
         "Meteorite Abundance": 0.000087,
         "Solar Abundance": 5e-7,
+        "Ocean Abundance": 0.0000013,
         "Universe Abundance": 4e-7
-      }
+      },
+      "Atomic Weight": 18.998403163,
+      "Atomic Number": 9,
+      "Boiling Point": -188.12,
+      "Density": 1.696,
+      "Melting Point": -219.6
     },
     {
       "debug": {
-        "Atomic Number": "Neon",
         "Atomic Weight": "Neon",
-        "Atomic Radius": "Neon",
-        "Density": "Neon"
+        "Atomic Number": "Neon",
+        "Boiling Point": "Neon",
+        "Density": "Neon",
+        "Melting Point": "Neon"
       },
-      "Atomic Number": 10,
-      "Atomic Weight": 20.1797,
-      "Atomic Radius": 38,
-      "Density": 0.9,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Neon",
           "Human Abundance": "Neon",
-          "Ocean Abundance": "Neon",
           "Meteorite Abundance": "Neon",
           "Solar Abundance": "Neon",
+          "Ocean Abundance": "Neon",
           "Universe Abundance": "Neon"
         },
         "Crust Abundance": 3e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.2e-10,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": 0.001,
+        "Ocean Abundance": 1.2e-10,
         "Universe Abundance": 0.0013
-      }
+      },
+      "Atomic Weight": 20.1797,
+      "Atomic Number": 10,
+      "Boiling Point": -246.08,
+      "Density": 0.9,
+      "Melting Point": -248.59
     },
     {
       "debug": {
-        "Atomic Number": "Sodium",
         "Atomic Weight": "Sodium",
-        "Atomic Radius": "Sodium",
-        "Density": "Sodium"
+        "Atomic Number": "Sodium",
+        "Boiling Point": "Sodium",
+        "Density": "Sodium",
+        "Melting Point": "Sodium"
       },
-      "Atomic Number": 11,
-      "Atomic Weight": 22.98976928,
-      "Atomic Radius": 190,
-      "Density": 968,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Sodium",
           "Human Abundance": "Sodium",
-          "Ocean Abundance": "Sodium",
           "Meteorite Abundance": "Sodium",
           "Solar Abundance": "Sodium",
+          "Ocean Abundance": "Sodium",
           "Universe Abundance": "Sodium"
         },
         "Crust Abundance": 0.023,
         "Human Abundance": 0.0014,
-        "Ocean Abundance": 0.011,
         "Meteorite Abundance": 0.0055,
         "Solar Abundance": 0.00004,
+        "Ocean Abundance": 0.011,
         "Universe Abundance": 0.00002
-      }
+      },
+      "Atomic Weight": 22.98976928,
+      "Atomic Number": 11,
+      "Boiling Point": 883,
+      "Density": 968,
+      "Melting Point": 97.72
     },
     {
       "debug": {
-        "Atomic Number": "Magnesium",
         "Atomic Weight": "Magnesium",
-        "Atomic Radius": "Magnesium",
-        "Density": "Magnesium"
+        "Atomic Number": "Magnesium",
+        "Boiling Point": "Magnesium",
+        "Density": "Magnesium",
+        "Melting Point": "Magnesium"
       },
-      "Atomic Number": 12,
-      "Atomic Weight": 24.305,
-      "Atomic Radius": 145,
-      "Density": 1738,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Magnesium",
           "Human Abundance": "Magnesium",
-          "Ocean Abundance": "Magnesium",
           "Meteorite Abundance": "Magnesium",
           "Solar Abundance": "Magnesium",
+          "Ocean Abundance": "Magnesium",
           "Universe Abundance": "Magnesium"
         },
         "Crust Abundance": 0.029,
         "Human Abundance": 0.00027,
-        "Ocean Abundance": 0.0013,
         "Meteorite Abundance": 0.12,
         "Solar Abundance": 0.0007,
+        "Ocean Abundance": 0.0013,
         "Universe Abundance": 0.00059
-      }
+      },
+      "Atomic Weight": 24.305,
+      "Atomic Number": 12,
+      "Boiling Point": 1090,
+      "Density": 1738,
+      "Melting Point": 650
     },
     {
       "debug": {
-        "Atomic Number": "Aluminum",
         "Atomic Weight": "Aluminum",
-        "Atomic Radius": "Aluminum",
-        "Density": "Aluminum"
+        "Atomic Number": "Aluminum",
+        "Boiling Point": "Aluminum",
+        "Density": "Aluminum",
+        "Melting Point": "Aluminum"
       },
-      "Atomic Number": 13,
-      "Atomic Weight": 26.9815385,
-      "Atomic Radius": 118,
-      "Density": 2700,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Aluminum",
           "Human Abundance": "Aluminum",
-          "Ocean Abundance": "Aluminum",
           "Meteorite Abundance": "Aluminum",
           "Solar Abundance": "Aluminum",
+          "Ocean Abundance": "Aluminum",
           "Universe Abundance": "Aluminum"
         },
         "Crust Abundance": 0.081,
         "Human Abundance": 9e-7,
-        "Ocean Abundance": 5e-9,
         "Meteorite Abundance": 0.009,
         "Solar Abundance": 0.00006,
+        "Ocean Abundance": 5e-9,
         "Universe Abundance": 0.00005
-      }
+      },
+      "Atomic Weight": 26.9815385,
+      "Atomic Number": 13,
+      "Boiling Point": 2519,
+      "Density": 2700,
+      "Melting Point": 660.32
     },
     {
       "debug": {
-        "Atomic Number": "Silicon",
         "Atomic Weight": "Silicon",
-        "Atomic Radius": "Silicon",
-        "Density": "Silicon"
+        "Atomic Number": "Silicon",
+        "Boiling Point": "Silicon",
+        "Density": "Silicon",
+        "Melting Point": "Silicon"
       },
-      "Atomic Number": 14,
-      "Atomic Weight": 28.085,
-      "Atomic Radius": 111,
-      "Density": 2330,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Silicon",
           "Human Abundance": "Silicon",
-          "Ocean Abundance": "Silicon",
           "Meteorite Abundance": "Silicon",
           "Solar Abundance": "Silicon",
+          "Ocean Abundance": "Silicon",
           "Universe Abundance": "Silicon"
         },
         "Crust Abundance": 0.27,
         "Human Abundance": 0.00026,
-        "Ocean Abundance": 0.000001,
         "Meteorite Abundance": 0.14,
         "Solar Abundance": 0.0009,
+        "Ocean Abundance": 0.000001,
         "Universe Abundance": 0.0007
-      }
+      },
+      "Atomic Weight": 28.085,
+      "Atomic Number": 14,
+      "Boiling Point": 2900,
+      "Density": 2330,
+      "Melting Point": 1414
     },
     {
       "debug": {
-        "Atomic Number": "Phosphorus",
         "Atomic Weight": "Phosphorus",
-        "Atomic Radius": "Phosphorus",
-        "Density": "Phosphorus"
+        "Atomic Number": "Phosphorus",
+        "Boiling Point": "Phosphorus",
+        "Density": "Phosphorus",
+        "Melting Point": "Phosphorus"
       },
-      "Atomic Number": 15,
-      "Atomic Weight": 30.973761998,
-      "Atomic Radius": 98,
-      "Density": 1823,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Phosphorus",
           "Human Abundance": "Phosphorus",
-          "Ocean Abundance": "Phosphorus",
           "Meteorite Abundance": "Phosphorus",
           "Solar Abundance": "Phosphorus",
+          "Ocean Abundance": "Phosphorus",
           "Universe Abundance": "Phosphorus"
         },
         "Crust Abundance": 0.00099,
         "Human Abundance": 0.011,
-        "Ocean Abundance": 7e-8,
         "Meteorite Abundance": 0.0011,
         "Solar Abundance": 0.000007,
+        "Ocean Abundance": 7e-8,
         "Universe Abundance": 0.000007
-      }
+      },
+      "Atomic Weight": 30.973761998,
+      "Atomic Number": 15,
+      "Boiling Point": 280.5,
+      "Density": 1823,
+      "Melting Point": 44.2
     },
     {
       "debug": {
-        "Atomic Number": "Sulfur",
         "Atomic Weight": "Sulfur",
-        "Atomic Radius": "Sulfur",
-        "Density": "Sulfur"
+        "Atomic Number": "Sulfur",
+        "Boiling Point": "Sulfur",
+        "Density": "Sulfur",
+        "Melting Point": "Sulfur"
       },
-      "Atomic Number": 16,
-      "Atomic Weight": 32.06,
-      "Atomic Radius": 87,
-      "Density": 1960,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Sulfur",
           "Human Abundance": "Sulfur",
-          "Ocean Abundance": "Sulfur",
           "Meteorite Abundance": "Sulfur",
           "Solar Abundance": "Sulfur",
+          "Ocean Abundance": "Sulfur",
           "Universe Abundance": "Sulfur"
         },
         "Crust Abundance": 0.00042,
         "Human Abundance": 0.002,
-        "Ocean Abundance": 0.00093,
         "Meteorite Abundance": 0.04,
         "Solar Abundance": 0.0004,
+        "Ocean Abundance": 0.00093,
         "Universe Abundance": 0.0005
-      }
+      },
+      "Atomic Weight": 32.06,
+      "Atomic Number": 16,
+      "Boiling Point": 444.72,
+      "Density": 1960,
+      "Melting Point": 115.21
     },
     {
       "debug": {
-        "Atomic Number": "Chlorine",
         "Atomic Weight": "Chlorine",
-        "Atomic Radius": "Chlorine",
-        "Density": "Chlorine"
+        "Atomic Number": "Chlorine",
+        "Boiling Point": "Chlorine",
+        "Density": "Chlorine",
+        "Melting Point": "Chlorine"
       },
-      "Atomic Number": 17,
-      "Atomic Weight": 35.45,
-      "Atomic Radius": 79,
-      "Density": 3.214,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Chlorine",
           "Human Abundance": "Chlorine",
-          "Ocean Abundance": "Chlorine",
           "Meteorite Abundance": "Chlorine",
           "Solar Abundance": "Chlorine",
+          "Ocean Abundance": "Chlorine",
           "Universe Abundance": "Chlorine"
         },
         "Crust Abundance": 0.00017,
         "Human Abundance": 0.0012,
-        "Ocean Abundance": 0.02,
         "Meteorite Abundance": 0.00037,
         "Solar Abundance": 0.000008,
+        "Ocean Abundance": 0.02,
         "Universe Abundance": 0.000001
-      }
+      },
+      "Atomic Weight": 35.45,
+      "Atomic Number": 17,
+      "Boiling Point": -34.04,
+      "Density": 3.214,
+      "Melting Point": -101.5
     },
     {
       "debug": {
-        "Atomic Number": "Argon",
         "Atomic Weight": "Argon",
-        "Atomic Radius": "Argon",
-        "Density": "Argon"
+        "Atomic Number": "Argon",
+        "Boiling Point": "Argon",
+        "Density": "Argon",
+        "Melting Point": "Argon"
       },
-      "Atomic Number": 18,
-      "Atomic Weight": 39.948,
-      "Atomic Radius": 71,
-      "Density": 1.784,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Argon",
           "Human Abundance": "Argon",
-          "Ocean Abundance": "Argon",
           "Meteorite Abundance": "Argon",
           "Solar Abundance": "Argon",
+          "Ocean Abundance": "Argon",
           "Universe Abundance": "Argon"
         },
         "Crust Abundance": 0.0000015,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 4.5e-7,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": 0.00007,
+        "Ocean Abundance": 4.5e-7,
         "Universe Abundance": 0.0002
-      }
+      },
+      "Atomic Weight": 39.948,
+      "Atomic Number": 18,
+      "Boiling Point": -185.8,
+      "Density": 1.784,
+      "Melting Point": -189.3
     },
     {
       "debug": {
-        "Atomic Number": "Potassium",
         "Atomic Weight": "Potassium",
-        "Atomic Radius": "Potassium",
-        "Density": "Potassium"
+        "Atomic Number": "Potassium",
+        "Boiling Point": "Potassium",
+        "Density": "Potassium",
+        "Melting Point": "Potassium"
       },
-      "Atomic Number": 19,
-      "Atomic Weight": 39.0983,
-      "Atomic Radius": 243,
-      "Density": 856,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Potassium",
           "Human Abundance": "Potassium",
-          "Ocean Abundance": "Potassium",
           "Meteorite Abundance": "Potassium",
           "Solar Abundance": "Potassium",
+          "Ocean Abundance": "Potassium",
           "Universe Abundance": "Potassium"
         },
         "Crust Abundance": 0.015,
         "Human Abundance": 0.002,
-        "Ocean Abundance": 0.00042,
         "Meteorite Abundance": 0.0007,
         "Solar Abundance": 0.000004,
+        "Ocean Abundance": 0.00042,
         "Universe Abundance": 0.000003
-      }
+      },
+      "Atomic Weight": 39.0983,
+      "Atomic Number": 19,
+      "Boiling Point": 759,
+      "Density": 856,
+      "Melting Point": 63.38
     },
     {
       "debug": {
-        "Atomic Number": "Calcium",
         "Atomic Weight": "Calcium",
-        "Atomic Radius": "Calcium",
-        "Density": "Calcium"
+        "Atomic Number": "Calcium",
+        "Boiling Point": "Calcium",
+        "Density": "Calcium",
+        "Melting Point": "Calcium"
       },
-      "Atomic Number": 20,
-      "Atomic Weight": 40.078,
-      "Atomic Radius": 194,
-      "Density": 1550,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Calcium",
           "Human Abundance": "Calcium",
-          "Ocean Abundance": "Calcium",
           "Meteorite Abundance": "Calcium",
           "Solar Abundance": "Calcium",
+          "Ocean Abundance": "Calcium",
           "Universe Abundance": "Calcium"
         },
         "Crust Abundance": 0.05,
         "Human Abundance": 0.014,
-        "Ocean Abundance": 0.0000042,
         "Meteorite Abundance": 0.011,
         "Solar Abundance": 0.00007,
+        "Ocean Abundance": 0.0000042,
         "Universe Abundance": 0.00007
-      }
+      },
+      "Atomic Weight": 40.078,
+      "Atomic Number": 20,
+      "Boiling Point": 1484,
+      "Density": 1550,
+      "Melting Point": 842
     },
     {
       "debug": {
-        "Atomic Number": "Scandium",
         "Atomic Weight": "Scandium",
-        "Atomic Radius": "Scandium",
-        "Density": "Scandium"
+        "Atomic Number": "Scandium",
+        "Boiling Point": "Scandium",
+        "Density": "Scandium",
+        "Melting Point": "Scandium"
       },
-      "Atomic Number": 21,
-      "Atomic Weight": 44.955908,
-      "Atomic Radius": 184,
-      "Density": 2985,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Scandium",
           "Human Abundance": "Scandium",
-          "Ocean Abundance": "Scandium",
           "Meteorite Abundance": "Scandium",
           "Solar Abundance": "Scandium",
+          "Ocean Abundance": "Scandium",
           "Universe Abundance": "Scandium"
         },
         "Crust Abundance": 0.000026,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.5e-12,
         "Meteorite Abundance": 0.0000064,
         "Solar Abundance": 4e-8,
+        "Ocean Abundance": 1.5e-12,
         "Universe Abundance": 3e-8
-      }
+      },
+      "Atomic Weight": 44.955908,
+      "Atomic Number": 21,
+      "Boiling Point": 2830,
+      "Density": 2985,
+      "Melting Point": 1541
     },
     {
       "debug": {
-        "Atomic Number": "Titanium",
         "Atomic Weight": "Titanium",
-        "Atomic Radius": "Titanium",
-        "Density": "Titanium"
+        "Atomic Number": "Titanium",
+        "Boiling Point": "Titanium",
+        "Density": "Titanium",
+        "Melting Point": "Titanium"
       },
-      "Atomic Number": 22,
-      "Atomic Weight": 47.867,
-      "Atomic Radius": 176,
-      "Density": 4507,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Titanium",
           "Human Abundance": "Titanium",
-          "Ocean Abundance": "Titanium",
           "Meteorite Abundance": "Titanium",
           "Solar Abundance": "Titanium",
+          "Ocean Abundance": "Titanium",
           "Universe Abundance": "Titanium"
         },
         "Crust Abundance": 0.0066,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1e-9,
         "Meteorite Abundance": 0.00054,
         "Solar Abundance": 0.000004,
+        "Ocean Abundance": 1e-9,
         "Universe Abundance": 0.000003
-      }
+      },
+      "Atomic Weight": 47.867,
+      "Atomic Number": 22,
+      "Boiling Point": 3287,
+      "Density": 4507,
+      "Melting Point": 1668
     },
     {
       "debug": {
-        "Atomic Number": "Vanadium",
         "Atomic Weight": "Vanadium",
-        "Atomic Radius": "Vanadium",
-        "Density": "Vanadium"
+        "Atomic Number": "Vanadium",
+        "Boiling Point": "Vanadium",
+        "Density": "Vanadium",
+        "Melting Point": "Vanadium"
       },
-      "Atomic Number": 23,
-      "Atomic Weight": 50.9415,
-      "Atomic Radius": 171,
-      "Density": 6110,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Vanadium",
           "Human Abundance": "Vanadium",
-          "Ocean Abundance": "Vanadium",
           "Meteorite Abundance": "Vanadium",
           "Solar Abundance": "Vanadium",
+          "Ocean Abundance": "Vanadium",
           "Universe Abundance": "Vanadium"
         },
         "Crust Abundance": 0.00019,
         "Human Abundance": 3e-8,
-        "Ocean Abundance": 1.5e-9,
         "Meteorite Abundance": 0.000061,
         "Solar Abundance": 4e-7,
+        "Ocean Abundance": 1.5e-9,
         "Universe Abundance": 0.000001
-      }
+      },
+      "Atomic Weight": 50.9415,
+      "Atomic Number": 23,
+      "Boiling Point": 3407,
+      "Density": 6110,
+      "Melting Point": 1910
     },
     {
       "debug": {
-        "Atomic Number": "Chromium",
         "Atomic Weight": "Chromium",
-        "Atomic Radius": "Chromium",
-        "Density": "Chromium"
+        "Atomic Number": "Chromium",
+        "Boiling Point": "Chromium",
+        "Density": "Chromium",
+        "Melting Point": "Chromium"
       },
-      "Atomic Number": 24,
-      "Atomic Weight": 51.9961,
-      "Atomic Radius": 166,
-      "Density": 7190,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Chromium",
           "Human Abundance": "Chromium",
-          "Ocean Abundance": "Chromium",
           "Meteorite Abundance": "Chromium",
           "Solar Abundance": "Chromium",
+          "Ocean Abundance": "Chromium",
           "Universe Abundance": "Chromium"
         },
         "Crust Abundance": 0.00014,
         "Human Abundance": 3e-8,
-        "Ocean Abundance": 6e-10,
         "Meteorite Abundance": 0.003,
         "Solar Abundance": 0.00002,
+        "Ocean Abundance": 6e-10,
         "Universe Abundance": 0.000015
-      }
+      },
+      "Atomic Weight": 51.9961,
+      "Atomic Number": 24,
+      "Boiling Point": 2671,
+      "Density": 7190,
+      "Melting Point": 1907
     },
     {
       "debug": {
-        "Atomic Number": "Manganese",
         "Atomic Weight": "Manganese",
-        "Atomic Radius": "Manganese",
-        "Density": "Manganese"
+        "Atomic Number": "Manganese",
+        "Boiling Point": "Manganese",
+        "Density": "Manganese",
+        "Melting Point": "Manganese"
       },
-      "Atomic Number": 25,
-      "Atomic Weight": 54.938044,
-      "Atomic Radius": 161,
-      "Density": 7470,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Manganese",
           "Human Abundance": "Manganese",
-          "Ocean Abundance": "Manganese",
           "Meteorite Abundance": "Manganese",
           "Solar Abundance": "Manganese",
+          "Ocean Abundance": "Manganese",
           "Universe Abundance": "Manganese"
         },
         "Crust Abundance": 0.0011,
         "Human Abundance": 2e-7,
-        "Ocean Abundance": 2e-9,
         "Meteorite Abundance": 0.0027,
         "Solar Abundance": 0.00001,
+        "Ocean Abundance": 2e-9,
         "Universe Abundance": 0.000008
-      }
+      },
+      "Atomic Weight": 54.938044,
+      "Atomic Number": 25,
+      "Boiling Point": 2061,
+      "Density": 7470,
+      "Melting Point": 1246
     },
     {
       "debug": {
-        "Atomic Number": "Iron",
         "Atomic Weight": "Iron",
-        "Atomic Radius": "Iron",
-        "Density": "Iron"
+        "Atomic Number": "Iron",
+        "Boiling Point": "Iron",
+        "Density": "Iron",
+        "Melting Point": "Iron"
       },
-      "Atomic Number": 26,
-      "Atomic Weight": 55.845,
-      "Atomic Radius": 156,
-      "Density": 7874,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Iron",
           "Human Abundance": "Iron",
-          "Ocean Abundance": "Iron",
           "Meteorite Abundance": "Iron",
           "Solar Abundance": "Iron",
+          "Ocean Abundance": "Iron",
           "Universe Abundance": "Iron"
         },
         "Crust Abundance": 0.063,
         "Human Abundance": 0.00006,
-        "Ocean Abundance": 3e-9,
         "Meteorite Abundance": 0.22,
         "Solar Abundance": 0.001,
+        "Ocean Abundance": 3e-9,
         "Universe Abundance": 0.0011
-      }
+      },
+      "Atomic Weight": 55.845,
+      "Atomic Number": 26,
+      "Boiling Point": 2861,
+      "Density": 7874,
+      "Melting Point": 1538
     },
     {
       "debug": {
-        "Atomic Number": "Cobalt",
         "Atomic Weight": "Cobalt",
-        "Atomic Radius": "Cobalt",
-        "Density": "Cobalt"
+        "Atomic Number": "Cobalt",
+        "Boiling Point": "Cobalt",
+        "Density": "Cobalt",
+        "Melting Point": "Cobalt"
       },
-      "Atomic Number": 27,
-      "Atomic Weight": 58.933194,
-      "Atomic Radius": 152,
-      "Density": 8900,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Cobalt",
           "Human Abundance": "Cobalt",
-          "Ocean Abundance": "Cobalt",
           "Meteorite Abundance": "Cobalt",
           "Solar Abundance": "Cobalt",
+          "Ocean Abundance": "Cobalt",
           "Universe Abundance": "Cobalt"
         },
         "Crust Abundance": 0.00003,
         "Human Abundance": 2e-8,
-        "Ocean Abundance": 8e-11,
         "Meteorite Abundance": 0.00059,
         "Solar Abundance": 0.000004,
+        "Ocean Abundance": 8e-11,
         "Universe Abundance": 0.000003
-      }
+      },
+      "Atomic Weight": 58.933194,
+      "Atomic Number": 27,
+      "Boiling Point": 2927,
+      "Density": 8900,
+      "Melting Point": 1495
     },
     {
       "debug": {
-        "Atomic Number": "Nickel",
         "Atomic Weight": "Nickel",
-        "Atomic Radius": "Nickel",
-        "Density": "Nickel"
+        "Atomic Number": "Nickel",
+        "Boiling Point": "Nickel",
+        "Density": "Nickel",
+        "Melting Point": "Nickel"
       },
-      "Atomic Number": 28,
-      "Atomic Weight": 58.6934,
-      "Atomic Radius": 149,
-      "Density": 8908,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Nickel",
           "Human Abundance": "Nickel",
-          "Ocean Abundance": "Nickel",
           "Meteorite Abundance": "Nickel",
           "Solar Abundance": "Nickel",
+          "Ocean Abundance": "Nickel",
           "Universe Abundance": "Nickel"
         },
         "Crust Abundance": 0.00009,
         "Human Abundance": 1e-7,
-        "Ocean Abundance": 2e-9,
         "Meteorite Abundance": 0.013,
         "Solar Abundance": 0.00008,
+        "Ocean Abundance": 2e-9,
         "Universe Abundance": 0.00006
-      }
+      },
+      "Atomic Weight": 58.6934,
+      "Atomic Number": 28,
+      "Boiling Point": 2913,
+      "Density": 8908,
+      "Melting Point": 1455
     },
     {
       "debug": {
-        "Atomic Number": "Copper",
         "Atomic Weight": "Copper",
-        "Atomic Radius": "Copper",
-        "Density": "Copper"
+        "Atomic Number": "Copper",
+        "Boiling Point": "Copper",
+        "Density": "Copper",
+        "Melting Point": "Copper"
       },
-      "Atomic Number": 29,
-      "Atomic Weight": 63.546,
-      "Atomic Radius": 145,
-      "Density": 8960,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Copper",
           "Human Abundance": "Copper",
-          "Ocean Abundance": "Copper",
           "Meteorite Abundance": "Copper",
           "Solar Abundance": "Copper",
+          "Ocean Abundance": "Copper",
           "Universe Abundance": "Copper"
         },
         "Crust Abundance": 0.000068,
         "Human Abundance": 0.000001,
-        "Ocean Abundance": 3e-9,
         "Meteorite Abundance": 0.00011,
         "Solar Abundance": 7e-7,
+        "Ocean Abundance": 3e-9,
         "Universe Abundance": 6e-8
-      }
+      },
+      "Atomic Weight": 63.546,
+      "Atomic Number": 29,
+      "Boiling Point": 2562,
+      "Density": 8960,
+      "Melting Point": 1084.62
     },
     {
       "debug": {
-        "Atomic Number": "Zinc",
         "Atomic Weight": "Zinc",
-        "Atomic Radius": "Zinc",
-        "Density": "Zinc"
+        "Atomic Number": "Zinc",
+        "Boiling Point": "Zinc",
+        "Density": "Zinc",
+        "Melting Point": "Zinc"
       },
-      "Atomic Number": 30,
-      "Atomic Weight": 65.38,
-      "Atomic Radius": 142,
-      "Density": 7140,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Zinc",
           "Human Abundance": "Zinc",
-          "Ocean Abundance": "Zinc",
           "Meteorite Abundance": "Zinc",
           "Solar Abundance": "Zinc",
+          "Ocean Abundance": "Zinc",
           "Universe Abundance": "Zinc"
         },
         "Crust Abundance": 0.000078,
         "Human Abundance": 0.000033,
-        "Ocean Abundance": 5e-9,
         "Meteorite Abundance": 0.00018,
         "Solar Abundance": 0.000002,
+        "Ocean Abundance": 5e-9,
         "Universe Abundance": 3e-7
-      }
+      },
+      "Atomic Weight": 65.38,
+      "Atomic Number": 30,
+      "Boiling Point": 907,
+      "Density": 7140,
+      "Melting Point": 419.53
     },
     {
       "debug": {
-        "Atomic Number": "Gallium",
         "Atomic Weight": "Gallium",
-        "Atomic Radius": "Gallium",
-        "Density": "Gallium"
+        "Atomic Number": "Gallium",
+        "Boiling Point": "Gallium",
+        "Density": "Gallium",
+        "Melting Point": "Gallium"
       },
-      "Atomic Number": 31,
-      "Atomic Weight": 69.723,
-      "Atomic Radius": 136,
-      "Density": 5904,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Gallium",
           "Human Abundance": "Gallium",
-          "Ocean Abundance": "Gallium",
           "Meteorite Abundance": "Gallium",
           "Solar Abundance": "Gallium",
+          "Ocean Abundance": "Gallium",
           "Universe Abundance": "Gallium"
         },
         "Crust Abundance": 0.000019,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 3e-11,
         "Meteorite Abundance": 0.0000076,
         "Solar Abundance": 4e-8,
+        "Ocean Abundance": 3e-11,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 69.723,
+      "Atomic Number": 31,
+      "Boiling Point": 2204,
+      "Density": 5904,
+      "Melting Point": 29.76
     },
     {
       "debug": {
-        "Atomic Number": "Germanium",
         "Atomic Weight": "Germanium",
-        "Atomic Radius": "Germanium",
-        "Density": "Germanium"
+        "Atomic Number": "Germanium",
+        "Boiling Point": "Germanium",
+        "Density": "Germanium",
+        "Melting Point": "Germanium"
       },
-      "Atomic Number": 32,
-      "Atomic Weight": 72.63,
-      "Atomic Radius": 125,
-      "Density": 5323,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Germanium",
           "Human Abundance": "Germanium",
-          "Ocean Abundance": "Germanium",
           "Meteorite Abundance": "Germanium",
           "Solar Abundance": "Germanium",
+          "Ocean Abundance": "Germanium",
           "Universe Abundance": "Germanium"
         },
         "Crust Abundance": 0.0000014,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 6e-11,
         "Meteorite Abundance": 0.000021,
         "Solar Abundance": 2e-7,
+        "Ocean Abundance": 6e-11,
         "Universe Abundance": 2e-7
-      }
+      },
+      "Atomic Weight": 72.63,
+      "Atomic Number": 32,
+      "Boiling Point": 2820,
+      "Density": 5323,
+      "Melting Point": 938.3
     },
     {
       "debug": {
-        "Atomic Number": "Arsenic",
         "Atomic Weight": "Arsenic",
-        "Atomic Radius": "Arsenic",
-        "Density": "Arsenic"
+        "Atomic Number": "Arsenic",
+        "Boiling Point": "Arsenic",
+        "Density": "Arsenic",
+        "Melting Point": "Arsenic"
       },
-      "Atomic Number": 33,
-      "Atomic Weight": 74.921595,
-      "Atomic Radius": 114,
-      "Density": 5727,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Arsenic",
           "Human Abundance": "Arsenic",
-          "Ocean Abundance": "Arsenic",
           "Meteorite Abundance": "Arsenic",
           "Solar Abundance": "Arsenic",
+          "Ocean Abundance": "Arsenic",
           "Universe Abundance": "Arsenic"
         },
         "Crust Abundance": 0.0000021,
         "Human Abundance": 5e-8,
-        "Ocean Abundance": 2.3e-9,
         "Meteorite Abundance": 0.0000018,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 2.3e-9,
         "Universe Abundance": 8e-9
-      }
+      },
+      "Atomic Weight": 74.921595,
+      "Atomic Number": 33,
+      "Boiling Point": 614,
+      "Density": 5727,
+      "Melting Point": 817
     },
     {
       "debug": {
-        "Atomic Number": "Selenium",
         "Atomic Weight": "Selenium",
-        "Atomic Radius": "Selenium",
-        "Density": "Selenium"
+        "Atomic Number": "Selenium",
+        "Boiling Point": "Selenium",
+        "Density": "Selenium",
+        "Melting Point": "Selenium"
       },
-      "Atomic Number": 34,
-      "Atomic Weight": 78.971,
-      "Atomic Radius": 103,
-      "Density": 4819,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Selenium",
           "Human Abundance": "Selenium",
-          "Ocean Abundance": "Selenium",
           "Meteorite Abundance": "Selenium",
           "Solar Abundance": "Selenium",
+          "Ocean Abundance": "Selenium",
           "Universe Abundance": "Selenium"
         },
         "Crust Abundance": 5e-8,
         "Human Abundance": 5e-8,
-        "Ocean Abundance": 4.5e-10,
         "Meteorite Abundance": 0.000013,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 4.5e-10,
         "Universe Abundance": 3e-8
-      }
+      },
+      "Atomic Weight": 78.971,
+      "Atomic Number": 34,
+      "Boiling Point": 685,
+      "Density": 4819,
+      "Melting Point": 221
     },
     {
       "debug": {
-        "Atomic Number": "Bromine",
         "Atomic Weight": "Bromine",
-        "Atomic Radius": "Bromine",
-        "Density": "Bromine"
+        "Atomic Number": "Bromine",
+        "Boiling Point": "Bromine",
+        "Density": "Bromine",
+        "Melting Point": "Bromine"
       },
-      "Atomic Number": 35,
-      "Atomic Weight": 79.904,
-      "Atomic Radius": 94,
-      "Density": 3120,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Bromine",
           "Human Abundance": "Bromine",
-          "Ocean Abundance": "Bromine",
           "Meteorite Abundance": "Bromine",
           "Solar Abundance": "Bromine",
+          "Ocean Abundance": "Bromine",
           "Universe Abundance": "Bromine"
         },
         "Crust Abundance": 0.000003,
         "Human Abundance": 0.0000029,
-        "Ocean Abundance": 0.000066,
         "Meteorite Abundance": 0.0000012,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 0.000066,
         "Universe Abundance": 7e-9
-      }
+      },
+      "Atomic Weight": 79.904,
+      "Atomic Number": 35,
+      "Boiling Point": 59,
+      "Density": 3120,
+      "Melting Point": -7.3
     },
     {
       "debug": {
-        "Atomic Number": "Krypton",
         "Atomic Weight": "Krypton",
-        "Atomic Radius": "Krypton",
-        "Density": "Krypton"
+        "Atomic Number": "Krypton",
+        "Boiling Point": "Krypton",
+        "Density": "Krypton",
+        "Melting Point": "Krypton"
       },
-      "Atomic Number": 36,
-      "Atomic Weight": 83.798,
-      "Atomic Radius": 87,
-      "Density": 3.75,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Krypton",
           "Human Abundance": "Krypton",
-          "Ocean Abundance": "Krypton",
           "Meteorite Abundance": "Krypton",
           "Solar Abundance": "Krypton",
+          "Ocean Abundance": "Krypton",
           "Universe Abundance": "Krypton"
         },
         "Crust Abundance": 1.5e-10,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2.1e-10,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 2.1e-10,
         "Universe Abundance": 4e-8
-      }
+      },
+      "Atomic Weight": 83.798,
+      "Atomic Number": 36,
+      "Boiling Point": -153.22,
+      "Density": 3.75,
+      "Melting Point": -157.36
     },
     {
       "debug": {
-        "Atomic Number": "Rubidium",
         "Atomic Weight": "Rubidium",
-        "Atomic Radius": "Rubidium",
-        "Density": "Rubidium"
+        "Atomic Number": "Rubidium",
+        "Boiling Point": "Rubidium",
+        "Density": "Rubidium",
+        "Melting Point": "Rubidium"
       },
-      "Atomic Number": 37,
-      "Atomic Weight": 85.4678,
-      "Atomic Radius": 265,
-      "Density": 1532,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Rubidium",
           "Human Abundance": "Rubidium",
-          "Ocean Abundance": "Rubidium",
           "Meteorite Abundance": "Rubidium",
           "Solar Abundance": "Rubidium",
+          "Ocean Abundance": "Rubidium",
           "Universe Abundance": "Rubidium"
         },
         "Crust Abundance": 0.00006,
         "Human Abundance": 0.0000046,
-        "Ocean Abundance": 1.2e-7,
         "Meteorite Abundance": 0.0000032,
         "Solar Abundance": 3e-8,
+        "Ocean Abundance": 1.2e-7,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 85.4678,
+      "Atomic Number": 37,
+      "Boiling Point": 688,
+      "Density": 1532,
+      "Melting Point": 39.31
     },
     {
       "debug": {
-        "Atomic Number": "Strontium",
         "Atomic Weight": "Strontium",
-        "Atomic Radius": "Strontium",
-        "Density": "Strontium"
+        "Atomic Number": "Strontium",
+        "Boiling Point": "Strontium",
+        "Density": "Strontium",
+        "Melting Point": "Strontium"
       },
-      "Atomic Number": 38,
-      "Atomic Weight": 87.62,
-      "Atomic Radius": 219,
-      "Density": 2630,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Strontium",
           "Human Abundance": "Strontium",
-          "Ocean Abundance": "Strontium",
           "Meteorite Abundance": "Strontium",
           "Solar Abundance": "Strontium",
+          "Ocean Abundance": "Strontium",
           "Universe Abundance": "Strontium"
         },
         "Crust Abundance": 0.00036,
         "Human Abundance": 0.0000046,
-        "Ocean Abundance": 0.000008,
         "Meteorite Abundance": 0.0000086,
         "Solar Abundance": 5e-8,
+        "Ocean Abundance": 0.000008,
         "Universe Abundance": 4e-8
-      }
+      },
+      "Atomic Weight": 87.62,
+      "Atomic Number": 38,
+      "Boiling Point": 1382,
+      "Density": 2630,
+      "Melting Point": 777
     },
     {
       "debug": {
-        "Atomic Number": "Yttrium",
         "Atomic Weight": "Yttrium",
-        "Atomic Radius": "Yttrium",
-        "Density": "Yttrium"
+        "Atomic Number": "Yttrium",
+        "Boiling Point": "Yttrium",
+        "Density": "Yttrium",
+        "Melting Point": "Yttrium"
       },
-      "Atomic Number": 39,
-      "Atomic Weight": 88.90584,
-      "Atomic Radius": 212,
-      "Density": 4472,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Yttrium",
           "Human Abundance": "Yttrium",
-          "Ocean Abundance": "Yttrium",
           "Meteorite Abundance": "Yttrium",
           "Solar Abundance": "Yttrium",
+          "Ocean Abundance": "Yttrium",
           "Universe Abundance": "Yttrium"
         },
         "Crust Abundance": 0.000029,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.3e-11,
         "Meteorite Abundance": 0.0000019,
         "Solar Abundance": 9.9e-9,
+        "Ocean Abundance": 1.3e-11,
         "Universe Abundance": 7e-9
-      }
+      },
+      "Atomic Weight": 88.90584,
+      "Atomic Number": 39,
+      "Boiling Point": 3345,
+      "Density": 4472,
+      "Melting Point": 1526
     },
     {
       "debug": {
-        "Atomic Number": "Zirconium",
         "Atomic Weight": "Zirconium",
-        "Atomic Radius": "Zirconium",
-        "Density": "Zirconium"
+        "Atomic Number": "Zirconium",
+        "Boiling Point": "Zirconium",
+        "Density": "Zirconium",
+        "Melting Point": "Zirconium"
       },
-      "Atomic Number": 40,
-      "Atomic Weight": 91.224,
-      "Atomic Radius": 206,
-      "Density": 6511,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Zirconium",
           "Human Abundance": "Zirconium",
-          "Ocean Abundance": "Zirconium",
           "Meteorite Abundance": "Zirconium",
           "Solar Abundance": "Zirconium",
+          "Ocean Abundance": "Zirconium",
           "Universe Abundance": "Zirconium"
         },
         "Crust Abundance": 0.00013,
         "Human Abundance": 5e-8,
-        "Ocean Abundance": 2.6e-11,
         "Meteorite Abundance": 0.0000066,
         "Solar Abundance": 4e-8,
+        "Ocean Abundance": 2.6e-11,
         "Universe Abundance": 5e-8
-      }
+      },
+      "Atomic Weight": 91.224,
+      "Atomic Number": 40,
+      "Boiling Point": 4409,
+      "Density": 6511,
+      "Melting Point": 1855
     },
     {
       "debug": {
-        "Atomic Number": "Niobium",
         "Atomic Weight": "Niobium",
-        "Atomic Radius": "Niobium",
-        "Density": "Niobium"
+        "Atomic Number": "Niobium",
+        "Boiling Point": "Niobium",
+        "Density": "Niobium",
+        "Melting Point": "Niobium"
       },
-      "Atomic Number": 41,
-      "Atomic Weight": 92.90637,
-      "Atomic Radius": 198,
-      "Density": 8570,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Niobium",
           "Human Abundance": "Niobium",
-          "Ocean Abundance": "Niobium",
           "Meteorite Abundance": "Niobium",
           "Solar Abundance": "Niobium",
+          "Ocean Abundance": "Niobium",
           "Universe Abundance": "Niobium"
         },
         "Crust Abundance": 0.000017,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1e-12,
         "Meteorite Abundance": 1.9e-7,
         "Solar Abundance": 4e-9,
+        "Ocean Abundance": 1e-12,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 92.90637,
+      "Atomic Number": 41,
+      "Boiling Point": 4744,
+      "Density": 8570,
+      "Melting Point": 2477
     },
     {
       "debug": {
-        "Atomic Number": "Molybdenum",
         "Atomic Weight": "Molybdenum",
-        "Atomic Radius": "Molybdenum",
-        "Density": "Molybdenum"
+        "Atomic Number": "Molybdenum",
+        "Boiling Point": "Molybdenum",
+        "Density": "Molybdenum",
+        "Melting Point": "Molybdenum"
       },
-      "Atomic Number": 42,
-      "Atomic Weight": 95.95,
-      "Atomic Radius": 190,
-      "Density": 10280,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Molybdenum",
           "Human Abundance": "Molybdenum",
-          "Ocean Abundance": "Molybdenum",
           "Meteorite Abundance": "Molybdenum",
           "Solar Abundance": "Molybdenum",
+          "Ocean Abundance": "Molybdenum",
           "Universe Abundance": "Molybdenum"
         },
         "Crust Abundance": 0.0000011,
         "Human Abundance": 1e-7,
-        "Ocean Abundance": 9.9e-9,
         "Meteorite Abundance": 0.0000012,
         "Solar Abundance": 9e-9,
+        "Ocean Abundance": 9.9e-9,
         "Universe Abundance": 5e-9
-      }
+      },
+      "Atomic Weight": 95.95,
+      "Atomic Number": 42,
+      "Boiling Point": 4639,
+      "Density": 10280,
+      "Melting Point": 2623
     },
     {
       "debug": {
-        "Atomic Number": "Technetium",
         "Atomic Weight": "Technetium",
-        "Atomic Radius": "Technetium",
-        "Density": "Technetium"
+        "Atomic Number": "Technetium",
+        "Boiling Point": "Technetium",
+        "Density": "Technetium",
+        "Melting Point": "Technetium"
       },
-      "Atomic Number": 43,
-      "Atomic Weight": 97,
-      "Atomic Radius": 183,
-      "Density": 11500,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Technetium",
           "Human Abundance": "Technetium",
-          "Ocean Abundance": "Technetium",
           "Meteorite Abundance": "Technetium",
           "Solar Abundance": "Technetium",
+          "Ocean Abundance": "Technetium",
           "Universe Abundance": "Technetium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 97,
+      "Atomic Number": 43,
+      "Boiling Point": 4265,
+      "Density": 11500,
+      "Melting Point": 2157
     },
     {
       "debug": {
-        "Atomic Number": "Ruthenium",
         "Atomic Weight": "Ruthenium",
-        "Atomic Radius": "Ruthenium",
-        "Density": "Ruthenium"
+        "Atomic Number": "Ruthenium",
+        "Boiling Point": "Ruthenium",
+        "Density": "Ruthenium",
+        "Melting Point": "Ruthenium"
       },
-      "Atomic Number": 44,
-      "Atomic Weight": 101.07,
-      "Atomic Radius": 178,
-      "Density": 12370,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Ruthenium",
           "Human Abundance": "Ruthenium",
-          "Ocean Abundance": "Ruthenium",
           "Meteorite Abundance": "Ruthenium",
           "Solar Abundance": "Ruthenium",
+          "Ocean Abundance": "Ruthenium",
           "Universe Abundance": "Ruthenium"
         },
         "Crust Abundance": 1e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 7e-13,
         "Meteorite Abundance": 8.1e-7,
         "Solar Abundance": 5e-9,
+        "Ocean Abundance": 7e-13,
         "Universe Abundance": 4e-9
-      }
+      },
+      "Atomic Weight": 101.07,
+      "Atomic Number": 44,
+      "Boiling Point": 4150,
+      "Density": 12370,
+      "Melting Point": 2334
     },
     {
       "debug": {
-        "Atomic Number": "Rhodium",
         "Atomic Weight": "Rhodium",
-        "Atomic Radius": "Rhodium",
-        "Density": "Rhodium"
+        "Atomic Number": "Rhodium",
+        "Boiling Point": "Rhodium",
+        "Density": "Rhodium",
+        "Melting Point": "Rhodium"
       },
-      "Atomic Number": 45,
-      "Atomic Weight": 102.9055,
-      "Atomic Radius": 173,
-      "Density": 12450,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Rhodium",
           "Human Abundance": "Rhodium",
-          "Ocean Abundance": "Rhodium",
           "Meteorite Abundance": "Rhodium",
           "Solar Abundance": "Rhodium",
+          "Ocean Abundance": "Rhodium",
           "Universe Abundance": "Rhodium"
         },
         "Crust Abundance": 7e-10,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": 1.8e-7,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": 6e-10
-      }
+      },
+      "Atomic Weight": 102.9055,
+      "Atomic Number": 45,
+      "Boiling Point": 3695,
+      "Density": 12450,
+      "Melting Point": 1964
     },
     {
       "debug": {
-        "Atomic Number": "Palladium",
         "Atomic Weight": "Palladium",
-        "Atomic Radius": "Palladium",
-        "Density": "Palladium"
+        "Atomic Number": "Palladium",
+        "Boiling Point": "Palladium",
+        "Density": "Palladium",
+        "Melting Point": "Palladium"
       },
-      "Atomic Number": 46,
-      "Atomic Weight": 106.42,
-      "Atomic Radius": 169,
-      "Density": 12023,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Palladium",
           "Human Abundance": "Palladium",
-          "Ocean Abundance": "Palladium",
           "Meteorite Abundance": "Palladium",
           "Solar Abundance": "Palladium",
+          "Ocean Abundance": "Palladium",
           "Universe Abundance": "Palladium"
         },
         "Crust Abundance": 6.3e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": 6.5e-7,
         "Solar Abundance": 3e-9,
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 106.42,
+      "Atomic Number": 46,
+      "Boiling Point": 2963,
+      "Density": 12023,
+      "Melting Point": 1554.9
     },
     {
       "debug": {
-        "Atomic Number": "Silver",
         "Atomic Weight": "Silver",
-        "Atomic Radius": "Silver",
-        "Density": "Silver"
+        "Atomic Number": "Silver",
+        "Boiling Point": "Silver",
+        "Density": "Silver",
+        "Melting Point": "Silver"
       },
-      "Atomic Number": 47,
-      "Atomic Weight": 107.8682,
-      "Atomic Radius": 165,
-      "Density": 10490,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Silver",
           "Human Abundance": "Silver",
-          "Ocean Abundance": "Silver",
           "Meteorite Abundance": "Silver",
           "Solar Abundance": "Silver",
+          "Ocean Abundance": "Silver",
           "Universe Abundance": "Silver"
         },
         "Crust Abundance": 7.9e-8,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1e-10,
         "Meteorite Abundance": 1.4e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 1e-10,
         "Universe Abundance": 6e-10
-      }
+      },
+      "Atomic Weight": 107.8682,
+      "Atomic Number": 47,
+      "Boiling Point": 2162,
+      "Density": 10490,
+      "Melting Point": 961.78
     },
     {
       "debug": {
-        "Atomic Number": "Cadmium",
         "Atomic Weight": "Cadmium",
-        "Atomic Radius": "Cadmium",
-        "Density": "Cadmium"
+        "Atomic Number": "Cadmium",
+        "Boiling Point": "Cadmium",
+        "Density": "Cadmium",
+        "Melting Point": "Cadmium"
       },
-      "Atomic Number": 48,
-      "Atomic Weight": 112.414,
-      "Atomic Radius": 161,
-      "Density": 8650,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Cadmium",
           "Human Abundance": "Cadmium",
-          "Ocean Abundance": "Cadmium",
           "Meteorite Abundance": "Cadmium",
           "Solar Abundance": "Cadmium",
+          "Ocean Abundance": "Cadmium",
           "Universe Abundance": "Cadmium"
         },
         "Crust Abundance": 1.5e-7,
         "Human Abundance": 7e-7,
-        "Ocean Abundance": 5e-11,
         "Meteorite Abundance": 4.4e-7,
         "Solar Abundance": 6e-9,
+        "Ocean Abundance": 5e-11,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 112.414,
+      "Atomic Number": 48,
+      "Boiling Point": 767,
+      "Density": 8650,
+      "Melting Point": 321.07
     },
     {
       "debug": {
-        "Atomic Number": "Indium",
         "Atomic Weight": "Indium",
-        "Atomic Radius": "Indium",
-        "Density": "Indium"
+        "Atomic Number": "Indium",
+        "Boiling Point": "Indium",
+        "Density": "Indium",
+        "Melting Point": "Indium"
       },
-      "Atomic Number": 49,
-      "Atomic Weight": 114.818,
-      "Atomic Radius": 156,
-      "Density": 7310,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Indium",
           "Human Abundance": "Indium",
-          "Ocean Abundance": "Indium",
           "Meteorite Abundance": "Indium",
           "Solar Abundance": "Indium",
+          "Ocean Abundance": "Indium",
           "Universe Abundance": "Indium"
         },
         "Crust Abundance": 1.6e-7,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1e-13,
         "Meteorite Abundance": 4.4e-8,
         "Solar Abundance": 4e-9,
+        "Ocean Abundance": 1e-13,
         "Universe Abundance": 3e-10
-      }
+      },
+      "Atomic Weight": 114.818,
+      "Atomic Number": 49,
+      "Boiling Point": 2072,
+      "Density": 7310,
+      "Melting Point": 156.6
     },
     {
       "debug": {
-        "Atomic Number": "Tin",
         "Atomic Weight": "Tin",
-        "Atomic Radius": "Tin",
-        "Density": "Tin"
+        "Atomic Number": "Tin",
+        "Boiling Point": "Tin",
+        "Density": "Tin",
+        "Melting Point": "Tin"
       },
-      "Atomic Number": 50,
-      "Atomic Weight": 118.71,
-      "Atomic Radius": 145,
-      "Density": 7310,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Tin",
           "Human Abundance": "Tin",
-          "Ocean Abundance": "Tin",
           "Meteorite Abundance": "Tin",
           "Solar Abundance": "Tin",
+          "Ocean Abundance": "Tin",
           "Universe Abundance": "Tin"
         },
         "Crust Abundance": 0.0000022,
         "Human Abundance": 2e-7,
-        "Ocean Abundance": 9.9e-12,
         "Meteorite Abundance": 0.0000012,
         "Solar Abundance": 9e-9,
+        "Ocean Abundance": 9.9e-12,
         "Universe Abundance": 4e-9
-      }
+      },
+      "Atomic Weight": 118.71,
+      "Atomic Number": 50,
+      "Boiling Point": 2602,
+      "Density": 7310,
+      "Melting Point": 231.93
     },
     {
       "debug": {
-        "Atomic Number": "Antimony",
         "Atomic Weight": "Antimony",
-        "Atomic Radius": "Antimony",
-        "Density": "Antimony"
+        "Atomic Number": "Antimony",
+        "Boiling Point": "Antimony",
+        "Density": "Antimony",
+        "Melting Point": "Antimony"
       },
-      "Atomic Number": 51,
-      "Atomic Weight": 121.76,
-      "Atomic Radius": 133,
-      "Density": 6697,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Antimony",
           "Human Abundance": "Antimony",
-          "Ocean Abundance": "Antimony",
           "Meteorite Abundance": "Antimony",
           "Solar Abundance": "Antimony",
+          "Ocean Abundance": "Antimony",
           "Universe Abundance": "Antimony"
         },
         "Crust Abundance": 2e-7,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2e-10,
         "Meteorite Abundance": 1.2e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 2e-10,
         "Universe Abundance": 4e-10
-      }
+      },
+      "Atomic Weight": 121.76,
+      "Atomic Number": 51,
+      "Boiling Point": 1587,
+      "Density": 6697,
+      "Melting Point": 630.63
     },
     {
       "debug": {
-        "Atomic Number": "Tellurium",
         "Atomic Weight": "Tellurium",
-        "Atomic Radius": "Tellurium",
-        "Density": "Tellurium"
+        "Atomic Number": "Tellurium",
+        "Boiling Point": "Tellurium",
+        "Density": "Tellurium",
+        "Melting Point": "Tellurium"
       },
-      "Atomic Number": 52,
-      "Atomic Weight": 127.6,
-      "Atomic Radius": 123,
-      "Density": 6240,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Tellurium",
           "Human Abundance": "Tellurium",
-          "Ocean Abundance": "Tellurium",
           "Meteorite Abundance": "Tellurium",
           "Solar Abundance": "Tellurium",
+          "Ocean Abundance": "Tellurium",
           "Universe Abundance": "Tellurium"
         },
         "Crust Abundance": 1e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": 0.0000021,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": 9e-9
-      }
+      },
+      "Atomic Weight": 127.6,
+      "Atomic Number": 52,
+      "Boiling Point": 988,
+      "Density": 6240,
+      "Melting Point": 449.51
     },
     {
       "debug": {
-        "Atomic Number": "Iodine",
         "Atomic Weight": "Iodine",
-        "Atomic Radius": "Iodine",
-        "Density": "Iodine"
+        "Atomic Number": "Iodine",
+        "Boiling Point": "Iodine",
+        "Density": "Iodine",
+        "Melting Point": "Iodine"
       },
-      "Atomic Number": 53,
-      "Atomic Weight": 126.90447,
-      "Atomic Radius": 115,
-      "Density": 4940,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Iodine",
           "Human Abundance": "Iodine",
-          "Ocean Abundance": "Iodine",
           "Meteorite Abundance": "Iodine",
           "Solar Abundance": "Iodine",
+          "Ocean Abundance": "Iodine",
           "Universe Abundance": "Iodine"
         },
         "Crust Abundance": 4.9e-7,
         "Human Abundance": 2e-7,
-        "Ocean Abundance": 6e-8,
         "Meteorite Abundance": 2.5e-7,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 6e-8,
         "Universe Abundance": 1e-9
-      }
+      },
+      "Atomic Weight": 126.90447,
+      "Atomic Number": 53,
+      "Boiling Point": 184.3,
+      "Density": 4940,
+      "Melting Point": 113.7
     },
     {
       "debug": {
-        "Atomic Number": "Xenon",
         "Atomic Weight": "Xenon",
-        "Atomic Radius": "Xenon",
-        "Density": "Xenon"
+        "Atomic Number": "Xenon",
+        "Boiling Point": "Xenon",
+        "Density": "Xenon",
+        "Melting Point": "Xenon"
       },
-      "Atomic Number": 54,
-      "Atomic Weight": 131.293,
-      "Atomic Radius": 108,
-      "Density": 5.9,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Xenon",
           "Human Abundance": "Xenon",
-          "Ocean Abundance": "Xenon",
           "Meteorite Abundance": "Xenon",
           "Solar Abundance": "Xenon",
+          "Ocean Abundance": "Xenon",
           "Universe Abundance": "Xenon"
         },
         "Crust Abundance": 2e-11,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 5e-12,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 5e-12,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 131.293,
+      "Atomic Number": 54,
+      "Boiling Point": -108,
+      "Density": 5.9,
+      "Melting Point": -111.8
     },
     {
       "debug": {
-        "Atomic Number": "Cesium",
         "Atomic Weight": "Cesium",
-        "Atomic Radius": "Cesium",
-        "Density": "Cesium"
+        "Atomic Number": "Cesium",
+        "Boiling Point": "Cesium",
+        "Density": "Cesium",
+        "Melting Point": "Cesium"
       },
-      "Atomic Number": 55,
-      "Atomic Weight": 132.90545196,
-      "Atomic Radius": 298,
-      "Density": 1879,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Cesium",
           "Human Abundance": "Cesium",
-          "Ocean Abundance": "Cesium",
           "Meteorite Abundance": "Cesium",
           "Solar Abundance": "Cesium",
+          "Ocean Abundance": "Cesium",
           "Universe Abundance": "Cesium"
         },
         "Crust Abundance": 0.0000019,
         "Human Abundance": 2e-8,
-        "Ocean Abundance": 5e-10,
         "Meteorite Abundance": 1.4e-7,
         "Solar Abundance": 8e-9,
+        "Ocean Abundance": 5e-10,
         "Universe Abundance": 8e-10
-      }
+      },
+      "Atomic Weight": 132.90545196,
+      "Atomic Number": 55,
+      "Boiling Point": 671,
+      "Density": 1879,
+      "Melting Point": 28.44
     },
     {
       "debug": {
-        "Atomic Number": "Barium",
         "Atomic Weight": "Barium",
-        "Atomic Radius": "Barium",
-        "Density": "Barium"
+        "Atomic Number": "Barium",
+        "Boiling Point": "Barium",
+        "Density": "Barium",
+        "Melting Point": "Barium"
       },
-      "Atomic Number": 56,
-      "Atomic Weight": 137.327,
-      "Atomic Radius": 253,
-      "Density": 3510,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Barium",
           "Human Abundance": "Barium",
-          "Ocean Abundance": "Barium",
           "Meteorite Abundance": "Barium",
           "Solar Abundance": "Barium",
+          "Ocean Abundance": "Barium",
           "Universe Abundance": "Barium"
         },
         "Crust Abundance": 0.00034,
         "Human Abundance": 3e-7,
-        "Ocean Abundance": 3e-8,
         "Meteorite Abundance": 0.0000027,
         "Solar Abundance": 9.9e-9,
+        "Ocean Abundance": 3e-8,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 137.327,
+      "Atomic Number": 56,
+      "Boiling Point": 1870,
+      "Density": 3510,
+      "Melting Point": 727
     },
     {
       "debug": {
-        "Atomic Number": "Lanthanites",
         "Atomic Weight": "Lanthanites",
-        "Atomic Radius": "Lanthanites",
-        "Density": "Lanthanites"
+        "Atomic Number": "Lanthanites",
+        "Boiling Point": "Lanthanites",
+        "Density": "Lanthanites",
+        "Melting Point": "Lanthanites"
       },
-      "Atomic Number": "lanthanites case",
-      "Atomic Weight": "lanthanites case",
-      "Atomic Radius": "lanthanites case",
-      "Density": "lanthanites case",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Lanthanites",
           "Human Abundance": "Lanthanites",
-          "Ocean Abundance": "Lanthanites",
           "Meteorite Abundance": "Lanthanites",
           "Solar Abundance": "Lanthanites",
+          "Ocean Abundance": "Lanthanites",
           "Universe Abundance": "Lanthanites"
         },
         "Crust Abundance": "lanthanites case",
         "Human Abundance": "lanthanites case",
-        "Ocean Abundance": "lanthanites case",
         "Meteorite Abundance": "lanthanites case",
         "Solar Abundance": "lanthanites case",
+        "Ocean Abundance": "lanthanites case",
         "Universe Abundance": "lanthanites case"
-      }
+      },
+      "Atomic Weight": "lanthanites case",
+      "Atomic Number": "lanthanites case",
+      "Boiling Point": "lanthanites case",
+      "Density": "lanthanites case",
+      "Melting Point": "lanthanites case"
     },
     {
       "debug": {
-        "Atomic Number": "Lanthanum",
         "Atomic Weight": "Lanthanum",
-        "Atomic Radius": "Lanthanum",
-        "Density": "Lanthanum"
+        "Atomic Number": "Lanthanum",
+        "Boiling Point": "Lanthanum",
+        "Density": "Lanthanum",
+        "Melting Point": "Lanthanum"
       },
-      "Atomic Number": 57,
-      "Atomic Weight": 138.90547,
-      "Atomic Radius": "Unknown",
-      "Density": 6146,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Lanthanum",
           "Human Abundance": "Lanthanum",
-          "Ocean Abundance": "Lanthanum",
           "Meteorite Abundance": "Lanthanum",
           "Solar Abundance": "Lanthanum",
+          "Ocean Abundance": "Lanthanum",
           "Universe Abundance": "Lanthanum"
         },
         "Crust Abundance": 0.000034,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 3.4e-12,
         "Meteorite Abundance": 2.8e-7,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": 3.4e-12,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 138.90547,
+      "Atomic Number": 57,
+      "Boiling Point": 3464,
+      "Density": 6146,
+      "Melting Point": 919
     },
     {
       "debug": {
-        "Atomic Number": "Cerium",
         "Atomic Weight": "Cerium",
-        "Atomic Radius": "Cerium",
-        "Density": "Cerium"
+        "Atomic Number": "Cerium",
+        "Boiling Point": "Cerium",
+        "Density": "Cerium",
+        "Melting Point": "Cerium"
       },
-      "Atomic Number": 58,
-      "Atomic Weight": 140.116,
-      "Atomic Radius": "Unknown",
-      "Density": 6689,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Cerium",
           "Human Abundance": "Cerium",
-          "Ocean Abundance": "Cerium",
           "Meteorite Abundance": "Cerium",
           "Solar Abundance": "Cerium",
+          "Ocean Abundance": "Cerium",
           "Universe Abundance": "Cerium"
         },
         "Crust Abundance": 0.00006,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.2e-12,
         "Meteorite Abundance": 7.5e-7,
         "Solar Abundance": 4e-9,
+        "Ocean Abundance": 1.2e-12,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 140.116,
+      "Atomic Number": 58,
+      "Boiling Point": 3360,
+      "Density": 6689,
+      "Melting Point": 798
     },
     {
       "debug": {
-        "Atomic Number": "Praseodymium",
         "Atomic Weight": "Praseodymium",
-        "Atomic Radius": "Praseodymium",
-        "Density": "Praseodymium"
+        "Atomic Number": "Praseodymium",
+        "Boiling Point": "Praseodymium",
+        "Density": "Praseodymium",
+        "Melting Point": "Praseodymium"
       },
-      "Atomic Number": 59,
-      "Atomic Weight": 140.90766,
-      "Atomic Radius": 247,
-      "Density": 6640,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Praseodymium",
           "Human Abundance": "Praseodymium",
-          "Ocean Abundance": "Praseodymium",
           "Meteorite Abundance": "Praseodymium",
           "Solar Abundance": "Praseodymium",
+          "Ocean Abundance": "Praseodymium",
           "Universe Abundance": "Praseodymium"
         },
         "Crust Abundance": 0.0000086,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 6e-13,
         "Meteorite Abundance": 9.9e-8,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 6e-13,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 140.90766,
+      "Atomic Number": 59,
+      "Boiling Point": 3290,
+      "Density": 6640,
+      "Melting Point": 931
     },
     {
       "debug": {
-        "Atomic Number": "Neodymium",
         "Atomic Weight": "Neodymium",
-        "Atomic Radius": "Neodymium",
-        "Density": "Neodymium"
+        "Atomic Number": "Neodymium",
+        "Boiling Point": "Neodymium",
+        "Density": "Neodymium",
+        "Melting Point": "Neodymium"
       },
-      "Atomic Number": 60,
-      "Atomic Weight": 144.242,
-      "Atomic Radius": 206,
-      "Density": 7010,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Neodymium",
           "Human Abundance": "Neodymium",
-          "Ocean Abundance": "Neodymium",
           "Meteorite Abundance": "Neodymium",
           "Solar Abundance": "Neodymium",
+          "Ocean Abundance": "Neodymium",
           "Universe Abundance": "Neodymium"
         },
         "Crust Abundance": 0.000033,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2.8e-12,
         "Meteorite Abundance": 5e-7,
         "Solar Abundance": 3e-9,
+        "Ocean Abundance": 2.8e-12,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 144.242,
+      "Atomic Number": 60,
+      "Boiling Point": 3100,
+      "Density": 7010,
+      "Melting Point": 1021
     },
     {
       "debug": {
-        "Atomic Number": "Promethium",
         "Atomic Weight": "Promethium",
-        "Atomic Radius": "Promethium",
-        "Density": "Promethium"
+        "Atomic Number": "Promethium",
+        "Boiling Point": "Promethium",
+        "Density": "Promethium",
+        "Melting Point": "Promethium"
       },
-      "Atomic Number": 61,
-      "Atomic Weight": 145,
-      "Atomic Radius": 205,
-      "Density": 7264,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Promethium",
           "Human Abundance": "Promethium",
-          "Ocean Abundance": "Promethium",
           "Meteorite Abundance": "Promethium",
           "Solar Abundance": "Promethium",
+          "Ocean Abundance": "Promethium",
           "Universe Abundance": "Promethium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 145,
+      "Atomic Number": 61,
+      "Boiling Point": 3000,
+      "Density": 7264,
+      "Melting Point": 1100
     },
     {
       "debug": {
-        "Atomic Number": "Samarium",
         "Atomic Weight": "Samarium",
-        "Atomic Radius": "Samarium",
-        "Density": "Samarium"
+        "Atomic Number": "Samarium",
+        "Boiling Point": "Samarium",
+        "Density": "Samarium",
+        "Melting Point": "Samarium"
       },
-      "Atomic Number": 62,
-      "Atomic Weight": 150.36,
-      "Atomic Radius": 238,
-      "Density": 7353,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Samarium",
           "Human Abundance": "Samarium",
-          "Ocean Abundance": "Samarium",
           "Meteorite Abundance": "Samarium",
           "Solar Abundance": "Samarium",
+          "Ocean Abundance": "Samarium",
           "Universe Abundance": "Samarium"
         },
         "Crust Abundance": 0.000006,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 4.5e-13,
         "Meteorite Abundance": 1.7e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 4.5e-13,
         "Universe Abundance": 5e-9
-      }
+      },
+      "Atomic Weight": 150.36,
+      "Atomic Number": 62,
+      "Boiling Point": 1803,
+      "Density": 7353,
+      "Melting Point": 1072
     },
     {
       "debug": {
-        "Atomic Number": "Europium",
         "Atomic Weight": "Europium",
-        "Atomic Radius": "Europium",
-        "Density": "Europium"
+        "Atomic Number": "Europium",
+        "Boiling Point": "Europium",
+        "Density": "Europium",
+        "Melting Point": "Europium"
       },
-      "Atomic Number": 63,
-      "Atomic Weight": 151.964,
-      "Atomic Radius": 231,
-      "Density": 5244,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Europium",
           "Human Abundance": "Europium",
-          "Ocean Abundance": "Europium",
           "Meteorite Abundance": "Europium",
           "Solar Abundance": "Europium",
+          "Ocean Abundance": "Europium",
           "Universe Abundance": "Europium"
         },
         "Crust Abundance": 0.0000018,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.3e-13,
         "Meteorite Abundance": 5.9e-8,
         "Solar Abundance": 5e-10,
+        "Ocean Abundance": 1.3e-13,
         "Universe Abundance": 5e-10
-      }
+      },
+      "Atomic Weight": 151.964,
+      "Atomic Number": 63,
+      "Boiling Point": 1527,
+      "Density": 5244,
+      "Melting Point": 822
     },
     {
       "debug": {
-        "Atomic Number": "Gadolinium",
         "Atomic Weight": "Gadolinium",
-        "Atomic Radius": "Gadolinium",
-        "Density": "Gadolinium"
+        "Atomic Number": "Gadolinium",
+        "Boiling Point": "Gadolinium",
+        "Density": "Gadolinium",
+        "Melting Point": "Gadolinium"
       },
-      "Atomic Number": 64,
-      "Atomic Weight": 157.25,
-      "Atomic Radius": 233,
-      "Density": 7901,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Gadolinium",
           "Human Abundance": "Gadolinium",
-          "Ocean Abundance": "Gadolinium",
           "Meteorite Abundance": "Gadolinium",
           "Solar Abundance": "Gadolinium",
+          "Ocean Abundance": "Gadolinium",
           "Universe Abundance": "Gadolinium"
         },
         "Crust Abundance": 0.0000052,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 7e-13,
         "Meteorite Abundance": 2.3e-7,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": 7e-13,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 157.25,
+      "Atomic Number": 64,
+      "Boiling Point": 3250,
+      "Density": 7901,
+      "Melting Point": 1313
     },
     {
       "debug": {
-        "Atomic Number": "Terbium",
         "Atomic Weight": "Terbium",
-        "Atomic Radius": "Terbium",
-        "Density": "Terbium"
+        "Atomic Number": "Terbium",
+        "Boiling Point": "Terbium",
+        "Density": "Terbium",
+        "Melting Point": "Terbium"
       },
-      "Atomic Number": 65,
-      "Atomic Weight": 158.92535,
-      "Atomic Radius": 225,
-      "Density": 8219,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Terbium",
           "Human Abundance": "Terbium",
-          "Ocean Abundance": "Terbium",
           "Meteorite Abundance": "Terbium",
           "Solar Abundance": "Terbium",
+          "Ocean Abundance": "Terbium",
           "Universe Abundance": "Terbium"
         },
         "Crust Abundance": 9.3e-7,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.4e-13,
         "Meteorite Abundance": 3.9e-8,
         "Solar Abundance": 1e-10,
+        "Ocean Abundance": 1.4e-13,
         "Universe Abundance": 5e-10
-      }
+      },
+      "Atomic Weight": 158.92535,
+      "Atomic Number": 65,
+      "Boiling Point": 3230,
+      "Density": 8219,
+      "Melting Point": 1356
     },
     {
       "debug": {
-        "Atomic Number": "Dysprosium",
         "Atomic Weight": "Dysprosium",
-        "Atomic Radius": "Dysprosium",
-        "Density": "Dysprosium"
+        "Atomic Number": "Dysprosium",
+        "Boiling Point": "Dysprosium",
+        "Density": "Dysprosium",
+        "Melting Point": "Dysprosium"
       },
-      "Atomic Number": 66,
-      "Atomic Weight": 162.5,
-      "Atomic Radius": 228,
-      "Density": 8551,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Dysprosium",
           "Human Abundance": "Dysprosium",
-          "Ocean Abundance": "Dysprosium",
           "Meteorite Abundance": "Dysprosium",
           "Solar Abundance": "Dysprosium",
+          "Ocean Abundance": "Dysprosium",
           "Universe Abundance": "Dysprosium"
         },
         "Crust Abundance": 0.0000062,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 9.1e-13,
         "Meteorite Abundance": 2.7e-7,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": 9.1e-13,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 162.5,
+      "Atomic Number": 66,
+      "Boiling Point": 2567,
+      "Density": 8551,
+      "Melting Point": 1412
     },
     {
       "debug": {
-        "Atomic Number": "Holmium",
         "Atomic Weight": "Holmium",
-        "Atomic Radius": "Holmium",
-        "Density": "Holmium"
+        "Atomic Number": "Holmium",
+        "Boiling Point": "Holmium",
+        "Density": "Holmium",
+        "Melting Point": "Holmium"
       },
-      "Atomic Number": 67,
-      "Atomic Weight": 164.93033,
-      "Atomic Radius": 226,
-      "Density": 8795,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Holmium",
           "Human Abundance": "Holmium",
-          "Ocean Abundance": "Holmium",
           "Meteorite Abundance": "Holmium",
           "Solar Abundance": "Holmium",
+          "Ocean Abundance": "Holmium",
           "Universe Abundance": "Holmium"
         },
         "Crust Abundance": 0.0000012,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2.2e-13,
         "Meteorite Abundance": 5.9e-8,
         "Solar Abundance": 0,
+        "Ocean Abundance": 2.2e-13,
         "Universe Abundance": 5e-10
-      }
+      },
+      "Atomic Weight": 164.93033,
+      "Atomic Number": 67,
+      "Boiling Point": 2700,
+      "Density": 8795,
+      "Melting Point": 1474
     },
     {
       "debug": {
-        "Atomic Number": "Erbium",
         "Atomic Weight": "Erbium",
-        "Atomic Radius": "Erbium",
-        "Density": "Erbium"
+        "Atomic Number": "Erbium",
+        "Boiling Point": "Erbium",
+        "Density": "Erbium",
+        "Melting Point": "Erbium"
       },
-      "Atomic Number": 68,
-      "Atomic Weight": 167.259,
-      "Atomic Radius": 226,
-      "Density": 9066,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Erbium",
           "Human Abundance": "Erbium",
-          "Ocean Abundance": "Erbium",
           "Meteorite Abundance": "Erbium",
           "Solar Abundance": "Erbium",
+          "Ocean Abundance": "Erbium",
           "Universe Abundance": "Erbium"
         },
         "Crust Abundance": 0.000003,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 9e-13,
         "Meteorite Abundance": 1.8e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 9e-13,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 167.259,
+      "Atomic Number": 68,
+      "Boiling Point": 2868,
+      "Density": 9066,
+      "Melting Point": 1497
     },
     {
       "debug": {
-        "Atomic Number": "Thulium",
         "Atomic Weight": "Thulium",
-        "Atomic Radius": "Thulium",
-        "Density": "Thulium"
+        "Atomic Number": "Thulium",
+        "Boiling Point": "Thulium",
+        "Density": "Thulium",
+        "Melting Point": "Thulium"
       },
-      "Atomic Number": 69,
-      "Atomic Weight": 168.93422,
-      "Atomic Radius": 222,
-      "Density": 9320,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Thulium",
           "Human Abundance": "Thulium",
-          "Ocean Abundance": "Thulium",
           "Meteorite Abundance": "Thulium",
           "Solar Abundance": "Thulium",
+          "Ocean Abundance": "Thulium",
           "Universe Abundance": "Thulium"
         },
         "Crust Abundance": 4.5e-7,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2e-13,
         "Meteorite Abundance": 2.9e-8,
         "Solar Abundance": 2e-10,
+        "Ocean Abundance": 2e-13,
         "Universe Abundance": 1e-10
-      }
+      },
+      "Atomic Weight": 168.93422,
+      "Atomic Number": 69,
+      "Boiling Point": 1950,
+      "Density": 9320,
+      "Melting Point": 1545
     },
     {
       "debug": {
-        "Atomic Number": "Ytterbium",
         "Atomic Weight": "Ytterbium",
-        "Atomic Radius": "Ytterbium",
-        "Density": "Ytterbium"
+        "Atomic Number": "Ytterbium",
+        "Boiling Point": "Ytterbium",
+        "Density": "Ytterbium",
+        "Melting Point": "Ytterbium"
       },
-      "Atomic Number": 70,
-      "Atomic Weight": 173.045,
-      "Atomic Radius": 222,
-      "Density": 6570,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Ytterbium",
           "Human Abundance": "Ytterbium",
-          "Ocean Abundance": "Ytterbium",
           "Meteorite Abundance": "Ytterbium",
           "Solar Abundance": "Ytterbium",
+          "Ocean Abundance": "Ytterbium",
           "Universe Abundance": "Ytterbium"
         },
         "Crust Abundance": 0.0000028,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 8e-13,
         "Meteorite Abundance": 1.8e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 8e-13,
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 173.045,
+      "Atomic Number": 70,
+      "Boiling Point": 1196,
+      "Density": 6570,
+      "Melting Point": 819
     },
     {
       "debug": {
-        "Atomic Number": "Lutetium",
         "Atomic Weight": "Lutetium",
-        "Atomic Radius": "Lutetium",
-        "Density": "Lutetium"
+        "Atomic Number": "Lutetium",
+        "Boiling Point": "Lutetium",
+        "Density": "Lutetium",
+        "Melting Point": "Lutetium"
       },
-      "Atomic Number": 71,
-      "Atomic Weight": 174.9668,
-      "Atomic Radius": 217,
-      "Density": 9841,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Lutetium",
           "Human Abundance": "Lutetium",
-          "Ocean Abundance": "Lutetium",
           "Meteorite Abundance": "Lutetium",
           "Solar Abundance": "Lutetium",
+          "Ocean Abundance": "Lutetium",
           "Universe Abundance": "Lutetium"
         },
         "Crust Abundance": 5.7e-7,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.5e-13,
         "Meteorite Abundance": 2.9e-8,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 1.5e-13,
         "Universe Abundance": 1e-10
-      }
+      },
+      "Atomic Weight": 174.9668,
+      "Atomic Number": 71,
+      "Boiling Point": 3402,
+      "Density": 9841,
+      "Melting Point": 1663
     },
     {
       "debug": {
-        "Atomic Number": "Hafnium",
         "Atomic Weight": "Hafnium",
-        "Atomic Radius": "Hafnium",
-        "Density": "Hafnium"
+        "Atomic Number": "Hafnium",
+        "Boiling Point": "Hafnium",
+        "Density": "Hafnium",
+        "Melting Point": "Hafnium"
       },
-      "Atomic Number": 72,
-      "Atomic Weight": 178.49,
-      "Atomic Radius": 208,
-      "Density": 13310,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Hafnium",
           "Human Abundance": "Hafnium",
-          "Ocean Abundance": "Hafnium",
           "Meteorite Abundance": "Hafnium",
           "Solar Abundance": "Hafnium",
+          "Ocean Abundance": "Hafnium",
           "Universe Abundance": "Hafnium"
         },
         "Crust Abundance": 0.0000033,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 8e-12,
         "Meteorite Abundance": 1.7e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 8e-12,
         "Universe Abundance": 7e-10
-      }
+      },
+      "Atomic Weight": 178.49,
+      "Atomic Number": 72,
+      "Boiling Point": 4603,
+      "Density": 13310,
+      "Melting Point": 2233
     },
     {
       "debug": {
-        "Atomic Number": "Tantalum",
         "Atomic Weight": "Tantalum",
-        "Atomic Radius": "Tantalum",
-        "Density": "Tantalum"
+        "Atomic Number": "Tantalum",
+        "Boiling Point": "Tantalum",
+        "Density": "Tantalum",
+        "Melting Point": "Tantalum"
       },
-      "Atomic Number": 73,
-      "Atomic Weight": 180.94788,
-      "Atomic Radius": 200,
-      "Density": 16650,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Tantalum",
           "Human Abundance": "Tantalum",
-          "Ocean Abundance": "Tantalum",
           "Meteorite Abundance": "Tantalum",
           "Solar Abundance": "Tantalum",
+          "Ocean Abundance": "Tantalum",
           "Universe Abundance": "Tantalum"
         },
         "Crust Abundance": 0.0000017,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2e-12,
         "Meteorite Abundance": 2e-8,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 2e-12,
         "Universe Abundance": 8e-11
-      }
+      },
+      "Atomic Weight": 180.94788,
+      "Atomic Number": 73,
+      "Boiling Point": 5458,
+      "Density": 16650,
+      "Melting Point": 3017
     },
     {
       "debug": {
-        "Atomic Number": "Tungsten",
         "Atomic Weight": "Tungsten",
-        "Atomic Radius": "Tungsten",
-        "Density": "Tungsten"
+        "Atomic Number": "Tungsten",
+        "Boiling Point": "Tungsten",
+        "Density": "Tungsten",
+        "Melting Point": "Tungsten"
       },
-      "Atomic Number": 74,
-      "Atomic Weight": 183.84,
-      "Atomic Radius": 193,
-      "Density": 19250,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Tungsten",
           "Human Abundance": "Tungsten",
-          "Ocean Abundance": "Tungsten",
           "Meteorite Abundance": "Tungsten",
           "Solar Abundance": "Tungsten",
+          "Ocean Abundance": "Tungsten",
           "Universe Abundance": "Tungsten"
         },
         "Crust Abundance": 0.0000011,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1.2e-10,
         "Meteorite Abundance": 1.2e-7,
         "Solar Abundance": 4e-9,
+        "Ocean Abundance": 1.2e-10,
         "Universe Abundance": 5e-10
-      }
+      },
+      "Atomic Weight": 183.84,
+      "Atomic Number": 74,
+      "Boiling Point": 5555,
+      "Density": 19250,
+      "Melting Point": 3422
     },
     {
       "debug": {
-        "Atomic Number": "Rhenium",
         "Atomic Weight": "Rhenium",
-        "Atomic Radius": "Rhenium",
-        "Density": "Rhenium"
+        "Atomic Number": "Rhenium",
+        "Boiling Point": "Rhenium",
+        "Density": "Rhenium",
+        "Melting Point": "Rhenium"
       },
-      "Atomic Number": 75,
-      "Atomic Weight": 186.207,
-      "Atomic Radius": 188,
-      "Density": 21020,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Rhenium",
           "Human Abundance": "Rhenium",
-          "Ocean Abundance": "Rhenium",
           "Meteorite Abundance": "Rhenium",
           "Solar Abundance": "Rhenium",
+          "Ocean Abundance": "Rhenium",
           "Universe Abundance": "Rhenium"
         },
         "Crust Abundance": 2.6e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1e-12,
         "Meteorite Abundance": 4.9e-8,
         "Solar Abundance": 1e-10,
+        "Ocean Abundance": 1e-12,
         "Universe Abundance": 2e-10
-      }
+      },
+      "Atomic Weight": 186.207,
+      "Atomic Number": 75,
+      "Boiling Point": 5596,
+      "Density": 21020,
+      "Melting Point": 3186
     },
     {
       "debug": {
-        "Atomic Number": "Osmium",
         "Atomic Weight": "Osmium",
-        "Atomic Radius": "Osmium",
-        "Density": "Osmium"
+        "Atomic Number": "Osmium",
+        "Boiling Point": "Osmium",
+        "Density": "Osmium",
+        "Melting Point": "Osmium"
       },
-      "Atomic Number": 76,
-      "Atomic Weight": 190.23,
-      "Atomic Radius": 185,
-      "Density": 22590,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Osmium",
           "Human Abundance": "Osmium",
-          "Ocean Abundance": "Osmium",
           "Meteorite Abundance": "Osmium",
           "Solar Abundance": "Osmium",
+          "Ocean Abundance": "Osmium",
           "Universe Abundance": "Osmium"
         },
         "Crust Abundance": 1.8e-9,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": 6.5e-7,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": 3e-9
-      }
+      },
+      "Atomic Weight": 190.23,
+      "Atomic Number": 76,
+      "Boiling Point": 5012,
+      "Density": 22590,
+      "Melting Point": 3033
     },
     {
       "debug": {
-        "Atomic Number": "Iridium",
         "Atomic Weight": "Iridium",
-        "Atomic Radius": "Iridium",
-        "Density": "Iridium"
+        "Atomic Number": "Iridium",
+        "Boiling Point": "Iridium",
+        "Density": "Iridium",
+        "Melting Point": "Iridium"
       },
-      "Atomic Number": 77,
-      "Atomic Weight": 192.217,
-      "Atomic Radius": 180,
-      "Density": 22560,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Iridium",
           "Human Abundance": "Iridium",
-          "Ocean Abundance": "Iridium",
           "Meteorite Abundance": "Iridium",
           "Solar Abundance": "Iridium",
+          "Ocean Abundance": "Iridium",
           "Universe Abundance": "Iridium"
         },
         "Crust Abundance": 4e-10,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": 5.4e-7,
         "Solar Abundance": 2e-9,
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": 2e-9
-      }
+      },
+      "Atomic Weight": 192.217,
+      "Atomic Number": 77,
+      "Boiling Point": 4428,
+      "Density": 22560,
+      "Melting Point": 2466
     },
     {
       "debug": {
-        "Atomic Number": "Platinum",
         "Atomic Weight": "Platinum",
-        "Atomic Radius": "Platinum",
-        "Density": "Platinum"
+        "Atomic Number": "Platinum",
+        "Boiling Point": "Platinum",
+        "Density": "Platinum",
+        "Melting Point": "Platinum"
       },
-      "Atomic Number": 78,
-      "Atomic Weight": 195.084,
-      "Atomic Radius": 177,
-      "Density": 21450,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Platinum",
           "Human Abundance": "Platinum",
-          "Ocean Abundance": "Platinum",
           "Meteorite Abundance": "Platinum",
           "Solar Abundance": "Platinum",
+          "Ocean Abundance": "Platinum",
           "Universe Abundance": "Platinum"
         },
         "Crust Abundance": 3.7e-8,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": 9.8e-7,
         "Solar Abundance": 9e-9,
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": 5e-9
-      }
+      },
+      "Atomic Weight": 195.084,
+      "Atomic Number": 78,
+      "Boiling Point": 3825,
+      "Density": 21450,
+      "Melting Point": 1768.3
     },
     {
       "debug": {
-        "Atomic Number": "Gold",
         "Atomic Weight": "Gold",
-        "Atomic Radius": "Gold",
-        "Density": "Gold"
+        "Atomic Number": "Gold",
+        "Boiling Point": "Gold",
+        "Density": "Gold",
+        "Melting Point": "Gold"
       },
-      "Atomic Number": 79,
-      "Atomic Weight": 196.966569,
-      "Atomic Radius": 174,
-      "Density": 19300,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Gold",
           "Human Abundance": "Gold",
-          "Ocean Abundance": "Gold",
           "Meteorite Abundance": "Gold",
           "Solar Abundance": "Gold",
+          "Ocean Abundance": "Gold",
           "Universe Abundance": "Gold"
         },
         "Crust Abundance": 3.1e-9,
         "Human Abundance": 1e-7,
-        "Ocean Abundance": 5e-11,
         "Meteorite Abundance": 1.7e-7,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 5e-11,
         "Universe Abundance": 6e-10
-      }
+      },
+      "Atomic Weight": 196.966569,
+      "Atomic Number": 79,
+      "Boiling Point": 2856,
+      "Density": 19300,
+      "Melting Point": 1064.18
     },
     {
       "debug": {
-        "Atomic Number": "Mercury",
         "Atomic Weight": "Mercury",
-        "Atomic Radius": "Mercury",
-        "Density": "Mercury"
+        "Atomic Number": "Mercury",
+        "Boiling Point": "Mercury",
+        "Density": "Mercury",
+        "Melting Point": "Mercury"
       },
-      "Atomic Number": 80,
-      "Atomic Weight": 200.592,
-      "Atomic Radius": 171,
-      "Density": 13534,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Mercury",
           "Human Abundance": "Mercury",
-          "Ocean Abundance": "Mercury",
           "Meteorite Abundance": "Mercury",
           "Solar Abundance": "Mercury",
+          "Ocean Abundance": "Mercury",
           "Universe Abundance": "Mercury"
         },
         "Crust Abundance": 6.7e-8,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 5e-11,
         "Meteorite Abundance": 2.5e-7,
         "Solar Abundance": 2e-8,
+        "Ocean Abundance": 5e-11,
         "Universe Abundance": 1e-9
-      }
+      },
+      "Atomic Weight": 200.592,
+      "Atomic Number": 80,
+      "Boiling Point": 356.73,
+      "Density": 13534,
+      "Melting Point": -38.83
     },
     {
       "debug": {
-        "Atomic Number": "Thallium",
         "Atomic Weight": "Thallium",
-        "Atomic Radius": "Thallium",
-        "Density": "Thallium"
+        "Atomic Number": "Thallium",
+        "Boiling Point": "Thallium",
+        "Density": "Thallium",
+        "Melting Point": "Thallium"
       },
-      "Atomic Number": 81,
-      "Atomic Weight": 204.38,
-      "Atomic Radius": 156,
-      "Density": 11850,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Thallium",
           "Human Abundance": "Thallium",
-          "Ocean Abundance": "Thallium",
           "Meteorite Abundance": "Thallium",
           "Solar Abundance": "Thallium",
+          "Ocean Abundance": "Thallium",
           "Universe Abundance": "Thallium"
         },
         "Crust Abundance": 5.4e-7,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 1e-12,
         "Meteorite Abundance": 7.9e-8,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 1e-12,
         "Universe Abundance": 5e-10
-      }
+      },
+      "Atomic Weight": 204.38,
+      "Atomic Number": 81,
+      "Boiling Point": 1473,
+      "Density": 11850,
+      "Melting Point": 304
     },
     {
       "debug": {
-        "Atomic Number": "Lead",
         "Atomic Weight": "Lead",
-        "Atomic Radius": "Lead",
-        "Density": "Lead"
+        "Atomic Number": "Lead",
+        "Boiling Point": "Lead",
+        "Density": "Lead",
+        "Melting Point": "Lead"
       },
-      "Atomic Number": 82,
-      "Atomic Weight": 207.2,
-      "Atomic Radius": 154,
-      "Density": 11340,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Lead",
           "Human Abundance": "Lead",
-          "Ocean Abundance": "Lead",
           "Meteorite Abundance": "Lead",
           "Solar Abundance": "Lead",
+          "Ocean Abundance": "Lead",
           "Universe Abundance": "Lead"
         },
         "Crust Abundance": 0.00001,
         "Human Abundance": 0.0000017,
-        "Ocean Abundance": 3e-11,
         "Meteorite Abundance": 0.0000014,
         "Solar Abundance": 9.9e-9,
+        "Ocean Abundance": 3e-11,
         "Universe Abundance": 1e-8
-      }
+      },
+      "Atomic Weight": 207.2,
+      "Atomic Number": 82,
+      "Boiling Point": 1749,
+      "Density": 11340,
+      "Melting Point": 327.46
     },
     {
       "debug": {
-        "Atomic Number": "Bismuth",
         "Atomic Weight": "Bismuth",
-        "Atomic Radius": "Bismuth",
-        "Density": "Bismuth"
+        "Atomic Number": "Bismuth",
+        "Boiling Point": "Bismuth",
+        "Density": "Bismuth",
+        "Melting Point": "Bismuth"
       },
-      "Atomic Number": 83,
-      "Atomic Weight": 208.9804,
-      "Atomic Radius": 143,
-      "Density": 9780,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Bismuth",
           "Human Abundance": "Bismuth",
-          "Ocean Abundance": "Bismuth",
           "Meteorite Abundance": "Bismuth",
           "Solar Abundance": "Bismuth",
+          "Ocean Abundance": "Bismuth",
           "Universe Abundance": "Bismuth"
         },
         "Crust Abundance": 2.5e-8,
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 2e-11,
         "Meteorite Abundance": 6.9e-8,
         "Solar Abundance": 9.9e-9,
+        "Ocean Abundance": 2e-11,
         "Universe Abundance": 7e-10
-      }
+      },
+      "Atomic Weight": 208.9804,
+      "Atomic Number": 83,
+      "Boiling Point": 1564,
+      "Density": 9780,
+      "Melting Point": 271.3
     },
     {
       "debug": {
-        "Atomic Number": "Polonium",
         "Atomic Weight": "Polonium",
-        "Atomic Radius": "Polonium",
-        "Density": "Polonium"
+        "Atomic Number": "Polonium",
+        "Boiling Point": "Polonium",
+        "Density": "Polonium",
+        "Melting Point": "Polonium"
       },
-      "Atomic Number": 84,
-      "Atomic Weight": 209,
-      "Atomic Radius": 135,
-      "Density": 9196,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Polonium",
           "Human Abundance": "Polonium",
-          "Ocean Abundance": "Polonium",
           "Meteorite Abundance": "Polonium",
           "Solar Abundance": "Polonium",
+          "Ocean Abundance": "Polonium",
           "Universe Abundance": "Polonium"
         },
         "Crust Abundance": "Unknown",
         "Human Abundance": 0,
-        "Ocean Abundance": 2e-20,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 2e-20,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 209,
+      "Atomic Number": 84,
+      "Boiling Point": 962,
+      "Density": 9196,
+      "Melting Point": 254
     },
     {
       "debug": {
-        "Atomic Number": "Astatine",
         "Atomic Weight": "Astatine",
-        "Atomic Radius": "Astatine",
-        "Density": "Astatine"
+        "Atomic Number": "Astatine",
+        "Boiling Point": "Astatine",
+        "Density": "Astatine",
+        "Melting Point": "Astatine"
       },
-      "Atomic Number": 85,
-      "Atomic Weight": 210,
-      "Atomic Radius": 127,
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Astatine",
           "Human Abundance": "Astatine",
-          "Ocean Abundance": "Astatine",
           "Meteorite Abundance": "Astatine",
           "Solar Abundance": "Astatine",
+          "Ocean Abundance": "Astatine",
           "Universe Abundance": "Astatine"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 210,
+      "Atomic Number": 85,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": 302
     },
     {
       "debug": {
-        "Atomic Number": "Radon",
         "Atomic Weight": "Radon",
-        "Atomic Radius": "Radon",
-        "Density": "Radon"
+        "Atomic Number": "Radon",
+        "Boiling Point": "Radon",
+        "Density": "Radon",
+        "Melting Point": "Radon"
       },
-      "Atomic Number": 86,
-      "Atomic Weight": 222,
-      "Atomic Radius": 120,
-      "Density": 9.73,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Radon",
           "Human Abundance": "Radon",
-          "Ocean Abundance": "Radon",
           "Meteorite Abundance": "Radon",
           "Solar Abundance": "Radon",
+          "Ocean Abundance": "Radon",
           "Universe Abundance": "Radon"
         },
         "Crust Abundance": "Unknown",
         "Human Abundance": "Unknown",
-        "Ocean Abundance": 6e-22,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 6e-22,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 222,
+      "Atomic Number": 86,
+      "Boiling Point": -61.7,
+      "Density": 9.73,
+      "Melting Point": -71
     },
     {
       "debug": {
-        "Atomic Number": "Francium",
         "Atomic Weight": "Francium",
-        "Atomic Radius": "Francium",
-        "Density": "Francium"
+        "Atomic Number": "Francium",
+        "Boiling Point": "Francium",
+        "Density": "Francium",
+        "Melting Point": "Francium"
       },
-      "Atomic Number": 87,
-      "Atomic Weight": 223,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Francium",
           "Human Abundance": "Francium",
-          "Ocean Abundance": "Francium",
           "Meteorite Abundance": "Francium",
           "Solar Abundance": "Francium",
+          "Ocean Abundance": "Francium",
           "Universe Abundance": "Francium"
         },
         "Crust Abundance": "Unknown",
         "Human Abundance": 0,
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 223,
+      "Atomic Number": 87,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Radium",
         "Atomic Weight": "Radium",
-        "Atomic Radius": "Radium",
-        "Density": "Radium"
+        "Atomic Number": "Radium",
+        "Boiling Point": "Radium",
+        "Density": "Radium",
+        "Melting Point": "Radium"
       },
-      "Atomic Number": 88,
-      "Atomic Weight": 226,
-      "Atomic Radius": "Unknown",
-      "Density": 5000,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Radium",
           "Human Abundance": "Radium",
-          "Ocean Abundance": "Radium",
           "Meteorite Abundance": "Radium",
           "Solar Abundance": "Radium",
+          "Ocean Abundance": "Radium",
           "Universe Abundance": "Radium"
         },
         "Crust Abundance": 1e-13,
         "Human Abundance": 1e-15,
-        "Ocean Abundance": 1e-17,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 1e-17,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 226,
+      "Atomic Number": 88,
+      "Boiling Point": 1737,
+      "Density": 5000,
+      "Melting Point": 700
     },
     {
       "debug": {
-        "Atomic Number": "Actinides",
         "Atomic Weight": "Actinides",
-        "Atomic Radius": "Actinides",
-        "Density": "Actinides"
+        "Atomic Number": "Actinides",
+        "Boiling Point": "Actinides",
+        "Density": "Actinides",
+        "Melting Point": "Actinides"
       },
-      "Atomic Number": "actinides case",
-      "Atomic Weight": "actinides case",
-      "Atomic Radius": "actinides case",
-      "Density": "actinides case",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Actinides",
           "Human Abundance": "Actinides",
-          "Ocean Abundance": "Actinides",
           "Meteorite Abundance": "Actinides",
           "Solar Abundance": "Actinides",
+          "Ocean Abundance": "Actinides",
           "Universe Abundance": "Actinides"
         },
         "Crust Abundance": "actinides case",
         "Human Abundance": "actinides case",
-        "Ocean Abundance": "actinides case",
         "Meteorite Abundance": "actinides case",
         "Solar Abundance": "actinides case",
+        "Ocean Abundance": "actinides case",
         "Universe Abundance": "actinides case"
-      }
+      },
+      "Atomic Weight": "actinides case",
+      "Atomic Number": "actinides case",
+      "Boiling Point": "actinides case",
+      "Density": "actinides case",
+      "Melting Point": "actinides case"
     },
     {
       "debug": {
-        "Atomic Number": "Actinium",
         "Atomic Weight": "Actinium",
-        "Atomic Radius": "Actinium",
-        "Density": "Actinium"
+        "Atomic Number": "Actinium",
+        "Boiling Point": "Actinium",
+        "Density": "Actinium",
+        "Melting Point": "Actinium"
       },
-      "Atomic Number": 89,
-      "Atomic Weight": 227,
-      "Atomic Radius": "Unknown",
-      "Density": 10070,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Actinium",
           "Human Abundance": "Actinium",
-          "Ocean Abundance": "Actinium",
           "Meteorite Abundance": "Actinium",
           "Solar Abundance": "Actinium",
+          "Ocean Abundance": "Actinium",
           "Universe Abundance": "Actinium"
         },
         "Crust Abundance": "Unknown",
         "Human Abundance": 0,
-        "Ocean Abundance": "Unknown",
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": 0,
+        "Ocean Abundance": "Unknown",
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 227,
+      "Atomic Number": 89,
+      "Boiling Point": 3200,
+      "Density": 10070,
+      "Melting Point": 1050
     },
     {
       "debug": {
-        "Atomic Number": "Thorium",
         "Atomic Weight": "Thorium",
-        "Atomic Radius": "Thorium",
-        "Density": "Thorium"
+        "Atomic Number": "Thorium",
+        "Boiling Point": "Thorium",
+        "Density": "Thorium",
+        "Melting Point": "Thorium"
       },
-      "Atomic Number": 90,
-      "Atomic Weight": 232.0377,
-      "Atomic Radius": "Unknown",
-      "Density": 11724,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Thorium",
           "Human Abundance": "Thorium",
-          "Ocean Abundance": "Thorium",
           "Meteorite Abundance": "Thorium",
           "Solar Abundance": "Thorium",
+          "Ocean Abundance": "Thorium",
           "Universe Abundance": "Thorium"
         },
         "Crust Abundance": 0.000006,
         "Human Abundance": 0,
-        "Ocean Abundance": 4e-14,
         "Meteorite Abundance": 3.9e-8,
         "Solar Abundance": 3e-10,
+        "Ocean Abundance": 4e-14,
         "Universe Abundance": 4e-10
-      }
+      },
+      "Atomic Weight": 232.0377,
+      "Atomic Number": 90,
+      "Boiling Point": 4820,
+      "Density": 11724,
+      "Melting Point": 1750
     },
     {
       "debug": {
-        "Atomic Number": "Protactinium",
         "Atomic Weight": "Protactinium",
-        "Atomic Radius": "Protactinium",
-        "Density": "Protactinium"
+        "Atomic Number": "Protactinium",
+        "Boiling Point": "Protactinium",
+        "Density": "Protactinium",
+        "Melting Point": "Protactinium"
       },
-      "Atomic Number": 91,
-      "Atomic Weight": 231.03588,
-      "Atomic Radius": "Unknown",
-      "Density": 15370,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Protactinium",
           "Human Abundance": "Protactinium",
-          "Ocean Abundance": "Protactinium",
           "Meteorite Abundance": "Protactinium",
           "Solar Abundance": "Protactinium",
+          "Ocean Abundance": "Protactinium",
           "Universe Abundance": "Protactinium"
         },
         "Crust Abundance": 9.9e-15,
         "Human Abundance": 0,
-        "Ocean Abundance": 2e-25,
         "Meteorite Abundance": "Unknown",
         "Solar Abundance": "Unknown",
+        "Ocean Abundance": 2e-25,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 231.03588,
+      "Atomic Number": 91,
+      "Boiling Point": 4000,
+      "Density": 15370,
+      "Melting Point": 1572
     },
     {
       "debug": {
-        "Atomic Number": "Uranium",
         "Atomic Weight": "Uranium",
-        "Atomic Radius": "Uranium",
-        "Density": "Uranium"
+        "Atomic Number": "Uranium",
+        "Boiling Point": "Uranium",
+        "Density": "Uranium",
+        "Melting Point": "Uranium"
       },
-      "Atomic Number": 92,
-      "Atomic Weight": 238.02891,
-      "Atomic Radius": "Unknown",
-      "Density": 19050,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Uranium",
           "Human Abundance": "Uranium",
-          "Ocean Abundance": "Uranium",
           "Meteorite Abundance": "Uranium",
           "Solar Abundance": "Uranium",
+          "Ocean Abundance": "Uranium",
           "Universe Abundance": "Uranium"
         },
         "Crust Abundance": 0.0000018,
         "Human Abundance": 1e-9,
-        "Ocean Abundance": 3.3e-9,
         "Meteorite Abundance": 9.8e-9,
         "Solar Abundance": 1e-9,
+        "Ocean Abundance": 3.3e-9,
         "Universe Abundance": 2e-10
-      }
+      },
+      "Atomic Weight": 238.02891,
+      "Atomic Number": 92,
+      "Boiling Point": 3927,
+      "Density": 19050,
+      "Melting Point": 1135
     },
     {
       "debug": {
-        "Atomic Number": "Neptunium",
         "Atomic Weight": "Neptunium",
-        "Atomic Radius": "Neptunium",
-        "Density": "Neptunium"
+        "Atomic Number": "Neptunium",
+        "Boiling Point": "Neptunium",
+        "Density": "Neptunium",
+        "Melting Point": "Neptunium"
       },
-      "Atomic Number": 93,
-      "Atomic Weight": 237,
-      "Atomic Radius": "Unknown",
-      "Density": 20450,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Neptunium",
           "Human Abundance": "Neptunium",
-          "Ocean Abundance": "Neptunium",
           "Meteorite Abundance": "Neptunium",
           "Solar Abundance": "Neptunium",
+          "Ocean Abundance": "Neptunium",
           "Universe Abundance": "Neptunium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 237,
+      "Atomic Number": 93,
+      "Boiling Point": 4000,
+      "Density": 20450,
+      "Melting Point": 644
     },
     {
       "debug": {
-        "Atomic Number": "Plutonium",
         "Atomic Weight": "Plutonium",
-        "Atomic Radius": "Plutonium",
-        "Density": "Plutonium"
+        "Atomic Number": "Plutonium",
+        "Boiling Point": "Plutonium",
+        "Density": "Plutonium",
+        "Melting Point": "Plutonium"
       },
-      "Atomic Number": 94,
-      "Atomic Weight": 244,
-      "Atomic Radius": "Unknown",
-      "Density": 19816,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Plutonium",
           "Human Abundance": "Plutonium",
-          "Ocean Abundance": "Plutonium",
           "Meteorite Abundance": "Plutonium",
           "Solar Abundance": "Plutonium",
+          "Ocean Abundance": "Plutonium",
           "Universe Abundance": "Plutonium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 244,
+      "Atomic Number": 94,
+      "Boiling Point": 3230,
+      "Density": 19816,
+      "Melting Point": 640
     },
     {
       "debug": {
-        "Atomic Number": "Americium",
         "Atomic Weight": "Americium",
-        "Atomic Radius": "Americium",
-        "Density": "Americium"
+        "Atomic Number": "Americium",
+        "Boiling Point": "Americium",
+        "Density": "Americium",
+        "Melting Point": "Americium"
       },
-      "Atomic Number": 95,
-      "Atomic Weight": 243,
-      "Atomic Radius": "Unknown",
-      "Density": 13670,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Americium",
           "Human Abundance": "Americium",
-          "Ocean Abundance": "Americium",
           "Meteorite Abundance": "Americium",
           "Solar Abundance": "Americium",
+          "Ocean Abundance": "Americium",
           "Universe Abundance": "Americium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 243,
+      "Atomic Number": 95,
+      "Boiling Point": 2011,
+      "Density": 13670,
+      "Melting Point": 1176
     },
     {
       "debug": {
-        "Atomic Number": "Curium",
         "Atomic Weight": "Curium",
-        "Atomic Radius": "Curium",
-        "Density": "Curium"
+        "Atomic Number": "Curium",
+        "Boiling Point": "Curium",
+        "Density": "Curium",
+        "Melting Point": "Curium"
       },
-      "Atomic Number": 96,
-      "Atomic Weight": 247,
-      "Atomic Radius": "Unknown",
-      "Density": 13510,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Curium",
           "Human Abundance": "Curium",
-          "Ocean Abundance": "Curium",
           "Meteorite Abundance": "Curium",
           "Solar Abundance": "Curium",
+          "Ocean Abundance": "Curium",
           "Universe Abundance": "Curium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 247,
+      "Atomic Number": 96,
+      "Boiling Point": 3110,
+      "Density": 13510,
+      "Melting Point": 1345
     },
     {
       "debug": {
-        "Atomic Number": "Berkelium",
         "Atomic Weight": "Berkelium",
-        "Atomic Radius": "Berkelium",
-        "Density": "Berkelium"
+        "Atomic Number": "Berkelium",
+        "Boiling Point": "Berkelium",
+        "Density": "Berkelium",
+        "Melting Point": "Berkelium"
       },
-      "Atomic Number": 97,
-      "Atomic Weight": 247,
-      "Atomic Radius": "Unknown",
-      "Density": 14780,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Berkelium",
           "Human Abundance": "Berkelium",
-          "Ocean Abundance": "Berkelium",
           "Meteorite Abundance": "Berkelium",
           "Solar Abundance": "Berkelium",
+          "Ocean Abundance": "Berkelium",
           "Universe Abundance": "Berkelium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 247,
+      "Atomic Number": 97,
+      "Boiling Point": "Unknown",
+      "Density": 14780,
+      "Melting Point": 1050
     },
     {
       "debug": {
-        "Atomic Number": "Californium",
         "Atomic Weight": "Californium",
-        "Atomic Radius": "Californium",
-        "Density": "Californium"
+        "Atomic Number": "Californium",
+        "Boiling Point": "Californium",
+        "Density": "Californium",
+        "Melting Point": "Californium"
       },
-      "Atomic Number": 98,
-      "Atomic Weight": 251,
-      "Atomic Radius": "Unknown",
-      "Density": 15100,
       "Abundance": {
         "debug": {
           "Crust Abundance": "Californium",
           "Human Abundance": "Californium",
-          "Ocean Abundance": "Californium",
           "Meteorite Abundance": "Californium",
           "Solar Abundance": "Californium",
+          "Ocean Abundance": "Californium",
           "Universe Abundance": "Californium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 251,
+      "Atomic Number": 98,
+      "Boiling Point": "Unknown",
+      "Density": 15100,
+      "Melting Point": 900
     },
     {
       "debug": {
-        "Atomic Number": "Einsteinium",
         "Atomic Weight": "Einsteinium",
-        "Atomic Radius": "Einsteinium",
-        "Density": "Einsteinium"
+        "Atomic Number": "Einsteinium",
+        "Boiling Point": "Einsteinium",
+        "Density": "Einsteinium",
+        "Melting Point": "Einsteinium"
       },
-      "Atomic Number": 99,
-      "Atomic Weight": 252,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Einsteinium",
           "Human Abundance": "Einsteinium",
-          "Ocean Abundance": "Einsteinium",
           "Meteorite Abundance": "Einsteinium",
           "Solar Abundance": "Einsteinium",
+          "Ocean Abundance": "Einsteinium",
           "Universe Abundance": "Einsteinium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 252,
+      "Atomic Number": 99,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": 860
     },
     {
       "debug": {
-        "Atomic Number": "Fermium",
         "Atomic Weight": "Fermium",
-        "Atomic Radius": "Fermium",
-        "Density": "Fermium"
+        "Atomic Number": "Fermium",
+        "Boiling Point": "Fermium",
+        "Density": "Fermium",
+        "Melting Point": "Fermium"
       },
-      "Atomic Number": 100,
-      "Atomic Weight": 257,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Fermium",
           "Human Abundance": "Fermium",
-          "Ocean Abundance": "Fermium",
           "Meteorite Abundance": "Fermium",
           "Solar Abundance": "Fermium",
+          "Ocean Abundance": "Fermium",
           "Universe Abundance": "Fermium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 257,
+      "Atomic Number": 100,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": 1527
     },
     {
       "debug": {
-        "Atomic Number": "Mendelevium",
         "Atomic Weight": "Mendelevium",
-        "Atomic Radius": "Mendelevium",
-        "Density": "Mendelevium"
+        "Atomic Number": "Mendelevium",
+        "Boiling Point": "Mendelevium",
+        "Density": "Mendelevium",
+        "Melting Point": "Mendelevium"
       },
-      "Atomic Number": 101,
-      "Atomic Weight": 258,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Mendelevium",
           "Human Abundance": "Mendelevium",
-          "Ocean Abundance": "Mendelevium",
           "Meteorite Abundance": "Mendelevium",
           "Solar Abundance": "Mendelevium",
+          "Ocean Abundance": "Mendelevium",
           "Universe Abundance": "Mendelevium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 258,
+      "Atomic Number": 101,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": 828
     },
     {
       "debug": {
-        "Atomic Number": "Nobelium",
         "Atomic Weight": "Nobelium",
-        "Atomic Radius": "Nobelium",
-        "Density": "Nobelium"
+        "Atomic Number": "Nobelium",
+        "Boiling Point": "Nobelium",
+        "Density": "Nobelium",
+        "Melting Point": "Nobelium"
       },
-      "Atomic Number": 102,
-      "Atomic Weight": 259,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Nobelium",
           "Human Abundance": "Nobelium",
-          "Ocean Abundance": "Nobelium",
           "Meteorite Abundance": "Nobelium",
           "Solar Abundance": "Nobelium",
+          "Ocean Abundance": "Nobelium",
           "Universe Abundance": "Nobelium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 259,
+      "Atomic Number": 102,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": 828
     },
     {
       "debug": {
-        "Atomic Number": "Lawrencium",
         "Atomic Weight": "Lawrencium",
-        "Atomic Radius": "Lawrencium",
-        "Density": "Lawrencium"
+        "Atomic Number": "Lawrencium",
+        "Boiling Point": "Lawrencium",
+        "Density": "Lawrencium",
+        "Melting Point": "Lawrencium"
       },
-      "Atomic Number": 103,
-      "Atomic Weight": 262,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Lawrencium",
           "Human Abundance": "Lawrencium",
-          "Ocean Abundance": "Lawrencium",
           "Meteorite Abundance": "Lawrencium",
           "Solar Abundance": "Lawrencium",
+          "Ocean Abundance": "Lawrencium",
           "Universe Abundance": "Lawrencium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 262,
+      "Atomic Number": 103,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": 1627
     },
     {
       "debug": {
-        "Atomic Number": "Rutherfordium",
         "Atomic Weight": "Rutherfordium",
-        "Atomic Radius": "Rutherfordium",
-        "Density": "Rutherfordium"
+        "Atomic Number": "Rutherfordium",
+        "Boiling Point": "Rutherfordium",
+        "Density": "Rutherfordium",
+        "Melting Point": "Rutherfordium"
       },
-      "Atomic Number": 104,
-      "Atomic Weight": 267,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Rutherfordium",
           "Human Abundance": "Rutherfordium",
-          "Ocean Abundance": "Rutherfordium",
           "Meteorite Abundance": "Rutherfordium",
           "Solar Abundance": "Rutherfordium",
+          "Ocean Abundance": "Rutherfordium",
           "Universe Abundance": "Rutherfordium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 267,
+      "Atomic Number": 104,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Dubnium",
         "Atomic Weight": "Dubnium",
-        "Atomic Radius": "Dubnium",
-        "Density": "Dubnium"
+        "Atomic Number": "Dubnium",
+        "Boiling Point": "Dubnium",
+        "Density": "Dubnium",
+        "Melting Point": "Dubnium"
       },
-      "Atomic Number": 105,
-      "Atomic Weight": 270,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Dubnium",
           "Human Abundance": "Dubnium",
-          "Ocean Abundance": "Dubnium",
           "Meteorite Abundance": "Dubnium",
           "Solar Abundance": "Dubnium",
+          "Ocean Abundance": "Dubnium",
           "Universe Abundance": "Dubnium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 270,
+      "Atomic Number": 105,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Seaborgium",
         "Atomic Weight": "Seaborgium",
-        "Atomic Radius": "Seaborgium",
-        "Density": "Seaborgium"
+        "Atomic Number": "Seaborgium",
+        "Boiling Point": "Seaborgium",
+        "Density": "Seaborgium",
+        "Melting Point": "Seaborgium"
       },
-      "Atomic Number": 106,
-      "Atomic Weight": 269,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Seaborgium",
           "Human Abundance": "Seaborgium",
-          "Ocean Abundance": "Seaborgium",
           "Meteorite Abundance": "Seaborgium",
           "Solar Abundance": "Seaborgium",
+          "Ocean Abundance": "Seaborgium",
           "Universe Abundance": "Seaborgium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 269,
+      "Atomic Number": 106,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Bohrium",
         "Atomic Weight": "Bohrium",
-        "Atomic Radius": "Bohrium",
-        "Density": "Bohrium"
+        "Atomic Number": "Bohrium",
+        "Boiling Point": "Bohrium",
+        "Density": "Bohrium",
+        "Melting Point": "Bohrium"
       },
-      "Atomic Number": 107,
-      "Atomic Weight": 270,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Bohrium",
           "Human Abundance": "Bohrium",
-          "Ocean Abundance": "Bohrium",
           "Meteorite Abundance": "Bohrium",
           "Solar Abundance": "Bohrium",
+          "Ocean Abundance": "Bohrium",
           "Universe Abundance": "Bohrium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 270,
+      "Atomic Number": 107,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Hassium",
         "Atomic Weight": "Hassium",
-        "Atomic Radius": "Hassium",
-        "Density": "Hassium"
+        "Atomic Number": "Hassium",
+        "Boiling Point": "Hassium",
+        "Density": "Hassium",
+        "Melting Point": "Hassium"
       },
-      "Atomic Number": 108,
-      "Atomic Weight": 270,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Hassium",
           "Human Abundance": "Hassium",
-          "Ocean Abundance": "Hassium",
           "Meteorite Abundance": "Hassium",
           "Solar Abundance": "Hassium",
+          "Ocean Abundance": "Hassium",
           "Universe Abundance": "Hassium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 270,
+      "Atomic Number": 108,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Meitnerium",
         "Atomic Weight": "Meitnerium",
-        "Atomic Radius": "Meitnerium",
-        "Density": "Meitnerium"
+        "Atomic Number": "Meitnerium",
+        "Boiling Point": "Meitnerium",
+        "Density": "Meitnerium",
+        "Melting Point": "Meitnerium"
       },
-      "Atomic Number": 109,
-      "Atomic Weight": 278,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Meitnerium",
           "Human Abundance": "Meitnerium",
-          "Ocean Abundance": "Meitnerium",
           "Meteorite Abundance": "Meitnerium",
           "Solar Abundance": "Meitnerium",
+          "Ocean Abundance": "Meitnerium",
           "Universe Abundance": "Meitnerium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 278,
+      "Atomic Number": 109,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Darmstadtium",
         "Atomic Weight": "Darmstadtium",
-        "Atomic Radius": "Darmstadtium",
-        "Density": "Darmstadtium"
+        "Atomic Number": "Darmstadtium",
+        "Boiling Point": "Darmstadtium",
+        "Density": "Darmstadtium",
+        "Melting Point": "Darmstadtium"
       },
-      "Atomic Number": 110,
-      "Atomic Weight": 281,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Darmstadtium",
           "Human Abundance": "Darmstadtium",
-          "Ocean Abundance": "Darmstadtium",
           "Meteorite Abundance": "Darmstadtium",
           "Solar Abundance": "Darmstadtium",
+          "Ocean Abundance": "Darmstadtium",
           "Universe Abundance": "Darmstadtium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 281,
+      "Atomic Number": 110,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Roentgenium",
         "Atomic Weight": "Roentgenium",
-        "Atomic Radius": "Roentgenium",
-        "Density": "Roentgenium"
+        "Atomic Number": "Roentgenium",
+        "Boiling Point": "Roentgenium",
+        "Density": "Roentgenium",
+        "Melting Point": "Roentgenium"
       },
-      "Atomic Number": 111,
-      "Atomic Weight": 281,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Roentgenium",
           "Human Abundance": "Roentgenium",
-          "Ocean Abundance": "Roentgenium",
           "Meteorite Abundance": "Roentgenium",
           "Solar Abundance": "Roentgenium",
+          "Ocean Abundance": "Roentgenium",
           "Universe Abundance": "Roentgenium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 281,
+      "Atomic Number": 111,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Copernicium",
         "Atomic Weight": "Copernicium",
-        "Atomic Radius": "Copernicium",
-        "Density": "Copernicium"
+        "Atomic Number": "Copernicium",
+        "Boiling Point": "Copernicium",
+        "Density": "Copernicium",
+        "Melting Point": "Copernicium"
       },
-      "Atomic Number": 112,
-      "Atomic Weight": 285,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Copernicium",
           "Human Abundance": "Copernicium",
-          "Ocean Abundance": "Copernicium",
           "Meteorite Abundance": "Copernicium",
           "Solar Abundance": "Copernicium",
+          "Ocean Abundance": "Copernicium",
           "Universe Abundance": "Copernicium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 285,
+      "Atomic Number": 112,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Nihonium",
         "Atomic Weight": "Nihonium",
-        "Atomic Radius": "Nihonium",
-        "Density": "Nihonium"
+        "Atomic Number": "Nihonium",
+        "Boiling Point": "Nihonium",
+        "Density": "Nihonium",
+        "Melting Point": "Nihonium"
       },
-      "Atomic Number": 113,
-      "Atomic Weight": 286,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Nihonium",
           "Human Abundance": "Nihonium",
-          "Ocean Abundance": "Nihonium",
           "Meteorite Abundance": "Nihonium",
           "Solar Abundance": "Nihonium",
+          "Ocean Abundance": "Nihonium",
           "Universe Abundance": "Nihonium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 286,
+      "Atomic Number": 113,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Flerovium",
         "Atomic Weight": "Flerovium",
-        "Atomic Radius": "Flerovium",
-        "Density": "Flerovium"
+        "Atomic Number": "Flerovium",
+        "Boiling Point": "Flerovium",
+        "Density": "Flerovium",
+        "Melting Point": "Flerovium"
       },
-      "Atomic Number": 114,
-      "Atomic Weight": 289,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Flerovium",
           "Human Abundance": "Flerovium",
-          "Ocean Abundance": "Flerovium",
           "Meteorite Abundance": "Flerovium",
           "Solar Abundance": "Flerovium",
+          "Ocean Abundance": "Flerovium",
           "Universe Abundance": "Flerovium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 289,
+      "Atomic Number": 114,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Moscovium",
         "Atomic Weight": "Moscovium",
-        "Atomic Radius": "Moscovium",
-        "Density": "Moscovium"
+        "Atomic Number": "Moscovium",
+        "Boiling Point": "Moscovium",
+        "Density": "Moscovium",
+        "Melting Point": "Moscovium"
       },
-      "Atomic Number": 115,
-      "Atomic Weight": 289,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Moscovium",
           "Human Abundance": "Moscovium",
-          "Ocean Abundance": "Moscovium",
           "Meteorite Abundance": "Moscovium",
           "Solar Abundance": "Moscovium",
+          "Ocean Abundance": "Moscovium",
           "Universe Abundance": "Moscovium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 289,
+      "Atomic Number": 115,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Livermorium",
         "Atomic Weight": "Livermorium",
-        "Atomic Radius": "Livermorium",
-        "Density": "Livermorium"
+        "Atomic Number": "Livermorium",
+        "Boiling Point": "Livermorium",
+        "Density": "Livermorium",
+        "Melting Point": "Livermorium"
       },
-      "Atomic Number": 116,
-      "Atomic Weight": 293,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Livermorium",
           "Human Abundance": "Livermorium",
-          "Ocean Abundance": "Livermorium",
           "Meteorite Abundance": "Livermorium",
           "Solar Abundance": "Livermorium",
+          "Ocean Abundance": "Livermorium",
           "Universe Abundance": "Livermorium"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 293,
+      "Atomic Number": 116,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Tennessine",
         "Atomic Weight": "Tennessine",
-        "Atomic Radius": "Tennessine",
-        "Density": "Tennessine"
+        "Atomic Number": "Tennessine",
+        "Boiling Point": "Tennessine",
+        "Density": "Tennessine",
+        "Melting Point": "Tennessine"
       },
-      "Atomic Number": 117,
-      "Atomic Weight": 293,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Tennessine",
           "Human Abundance": "Tennessine",
-          "Ocean Abundance": "Tennessine",
           "Meteorite Abundance": "Tennessine",
           "Solar Abundance": "Tennessine",
+          "Ocean Abundance": "Tennessine",
           "Universe Abundance": "Tennessine"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 293,
+      "Atomic Number": 117,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
-        "Atomic Number": "Oganesson",
         "Atomic Weight": "Oganesson",
-        "Atomic Radius": "Oganesson",
-        "Density": "Oganesson"
+        "Atomic Number": "Oganesson",
+        "Boiling Point": "Oganesson",
+        "Density": "Oganesson",
+        "Melting Point": "Oganesson"
       },
-      "Atomic Number": 118,
-      "Atomic Weight": 294,
-      "Atomic Radius": "Unknown",
-      "Density": "Unknown",
       "Abundance": {
         "debug": {
           "Crust Abundance": "Oganesson",
           "Human Abundance": "Oganesson",
-          "Ocean Abundance": "Oganesson",
           "Meteorite Abundance": "Oganesson",
           "Solar Abundance": "Oganesson",
+          "Ocean Abundance": "Oganesson",
           "Universe Abundance": "Oganesson"
         },
         "Crust Abundance": 0,
         "Human Abundance": 0,
-        "Ocean Abundance": 0,
         "Meteorite Abundance": 0,
         "Solar Abundance": 0,
+        "Ocean Abundance": 0,
         "Universe Abundance": "Unknown"
-      }
+      },
+      "Atomic Weight": 294,
+      "Atomic Number": 118,
+      "Boiling Point": "Unknown",
+      "Density": "Unknown",
+      "Melting Point": "Unknown"
     }
   ]
 }

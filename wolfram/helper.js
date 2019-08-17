@@ -34,49 +34,58 @@ function atomArrayExtract(fileNames, subFileNames) {
     promises.push(promise);
   });
 
-  return Promise.all(promises)
-    .then(() => {
-      // add properties to each atom in final.data (each from subFileNames)
-      final.data.forEach((atomData, i, arr) => {
-        Object.keys(subFileNames).forEach(key => {
-          arr[i][key] = {};
-          arr[i][key].debug = {};
-        });
-      });
-      let subPromises = [];
+  // now we are iterating over all the subFileNames
+  final.data.forEach((atomData, i, arr) => {
+    Object.keys(subFileNames).forEach(key => {
+      arr[i][key] = {};
+      arr[i][key].debug = {};
+    });
+  });
+  let subPromises = [];
 
-      Object.keys(subFileNames).forEach(key => {
-        subFileNames[key].forEach(subFileName => {
-          let promise = promisify(fs.readFile)(subFileName, "utf8")
-            .then((subFileData) => {
-              let json = JSON.parse(subFileData);
+  Object.keys(subFileNames).forEach(key => {
+    subFileNames[key].forEach(subFileName => {
+      let promise = promisify(fs.readFile)(subFileName, "utf8")
+        .then((subFileData) => {
+          let json = JSON.parse(subFileData);
 
-              json.data.forEach((fromAtomObject, i) => {
-                const atomProperty = json.meta.atomPropertyNameWithSpace;
+          json.data.forEach((fromAtomObject, i) => {
+            const atomProperty = json.meta.atomPropertyNameWithSpace;
 
-                let toAtomObject = final.data[i];
+            let toAtomObject = final.data[i];
 
-                toAtomObject[key].debug[atomProperty] = fromAtomObject.name;
-                toAtomObject[key][atomProperty] = fromAtomObject.value;
-              });
-            })
-            .catch(e => {
-              console.log(e);
-            });
-
-          subPromises.push(promise);
-        });
-      });
-
-      return Promise.all(subPromises)
-        .then(() => final)
+            toAtomObject[key].debug[atomProperty] = fromAtomObject.name;
+            toAtomObject[key][atomProperty] = fromAtomObject.value;
+          });
+        })
         .catch(e => {
           console.log(e);
         });
+
+      subPromises.push(promise);
+    });
+  });
+
+  return Promise.all([...promises, ...subPromises])
+    .then(() => final)
+    .catch(e => {
+      console.log(e);
+    });
+}
+
+/*
+  outputFile
+    file to output json
+*/
+function outputFile(fileName, finalJson) {
+  return promisify(fs.writeFile)(fileName, JSON.stringify(finalJson, null, 2))
+    .then(() => {
+      let fileNameTruncated = fileName.slice(fileName.indexOf("/"));
+      console.log(`${fileNameTruncated} file saved`);
     })
     .catch(e => {
       console.log(e);
     });
 }
 
-export { atomArrayExtract };
+export { atomArrayExtract, outputFile };

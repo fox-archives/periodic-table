@@ -1,0 +1,2404 @@
+{
+  "data": [
+    {
+      "debug": {
+        "Atomic Number": "Hydrogen",
+        "Atomic Weight": "Hydrogen"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Hydrogen",
+          "Covalent Radius": "Hydrogen",
+          "Sound Speed": "Hydrogen",
+          "Thermal Conductivity": "Hydrogen"
+        },
+        "Atomic Radius": 53,
+        "Covalent Radius": 31,
+        "Sound Speed": 1270,
+        "Thermal Conductivity": 0.1805
+      },
+      "Atomic Number": 1,
+      "Atomic Weight": 1.008
+    },
+    {
+      "debug": {
+        "Atomic Number": "Helium",
+        "Atomic Weight": "Helium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Helium",
+          "Covalent Radius": "Helium",
+          "Sound Speed": "Helium",
+          "Thermal Conductivity": "Helium"
+        },
+        "Atomic Radius": 31,
+        "Covalent Radius": 28,
+        "Sound Speed": 970,
+        "Thermal Conductivity": 0.1513
+      },
+      "Atomic Number": 2,
+      "Atomic Weight": 4.002602
+    },
+    {
+      "debug": {
+        "Atomic Number": "Lithium",
+        "Atomic Weight": "Lithium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Lithium",
+          "Covalent Radius": "Lithium",
+          "Sound Speed": "Lithium",
+          "Thermal Conductivity": "Lithium"
+        },
+        "Atomic Radius": 167,
+        "Covalent Radius": 128,
+        "Sound Speed": 6000,
+        "Thermal Conductivity": 85
+      },
+      "Atomic Number": 3,
+      "Atomic Weight": 6.94
+    },
+    {
+      "debug": {
+        "Atomic Number": "Beryllium",
+        "Atomic Weight": "Beryllium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Beryllium",
+          "Covalent Radius": "Beryllium",
+          "Sound Speed": "Beryllium",
+          "Thermal Conductivity": "Beryllium"
+        },
+        "Atomic Radius": 112,
+        "Covalent Radius": 96,
+        "Sound Speed": 13000,
+        "Thermal Conductivity": 190
+      },
+      "Atomic Number": 4,
+      "Atomic Weight": 9.0121831
+    },
+    {
+      "debug": {
+        "Atomic Number": "Boron",
+        "Atomic Weight": "Boron"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Boron",
+          "Covalent Radius": "Boron",
+          "Sound Speed": "Boron",
+          "Thermal Conductivity": "Boron"
+        },
+        "Atomic Radius": 87,
+        "Covalent Radius": 85,
+        "Sound Speed": 16200,
+        "Thermal Conductivity": 27
+      },
+      "Atomic Number": 5,
+      "Atomic Weight": 10.81
+    },
+    {
+      "debug": {
+        "Atomic Number": "Carbon",
+        "Atomic Weight": "Carbon"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Carbon",
+          "Covalent Radius": "Carbon",
+          "Sound Speed": "Carbon",
+          "Thermal Conductivity": "Carbon"
+        },
+        "Atomic Radius": 67,
+        "Covalent Radius": 76,
+        "Sound Speed": 18350,
+        "Thermal Conductivity": 140
+      },
+      "Atomic Number": 6,
+      "Atomic Weight": 12.011
+    },
+    {
+      "debug": {
+        "Atomic Number": "Nitrogen",
+        "Atomic Weight": "Nitrogen"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Nitrogen",
+          "Covalent Radius": "Nitrogen",
+          "Sound Speed": "Nitrogen",
+          "Thermal Conductivity": "Nitrogen"
+        },
+        "Atomic Radius": 56,
+        "Covalent Radius": 71,
+        "Sound Speed": 333.6,
+        "Thermal Conductivity": 0.02583
+      },
+      "Atomic Number": 7,
+      "Atomic Weight": 14.007
+    },
+    {
+      "debug": {
+        "Atomic Number": "Oxygen",
+        "Atomic Weight": "Oxygen"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Oxygen",
+          "Covalent Radius": "Oxygen",
+          "Sound Speed": "Oxygen",
+          "Thermal Conductivity": "Oxygen"
+        },
+        "Atomic Radius": 48,
+        "Covalent Radius": 66,
+        "Sound Speed": 317.5,
+        "Thermal Conductivity": 0.02658
+      },
+      "Atomic Number": 8,
+      "Atomic Weight": 15.999
+    },
+    {
+      "debug": {
+        "Atomic Number": "Fluorine",
+        "Atomic Weight": "Fluorine"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Fluorine",
+          "Covalent Radius": "Fluorine",
+          "Sound Speed": "Fluorine",
+          "Thermal Conductivity": "Fluorine"
+        },
+        "Atomic Radius": 42,
+        "Covalent Radius": 57,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 0.0277
+      },
+      "Atomic Number": 9,
+      "Atomic Weight": 18.998403163
+    },
+    {
+      "debug": {
+        "Atomic Number": "Neon",
+        "Atomic Weight": "Neon"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Neon",
+          "Covalent Radius": "Neon",
+          "Sound Speed": "Neon",
+          "Thermal Conductivity": "Neon"
+        },
+        "Atomic Radius": 38,
+        "Covalent Radius": 58,
+        "Sound Speed": 936,
+        "Thermal Conductivity": 0.0491
+      },
+      "Atomic Number": 10,
+      "Atomic Weight": 20.1797
+    },
+    {
+      "debug": {
+        "Atomic Number": "Sodium",
+        "Atomic Weight": "Sodium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Sodium",
+          "Covalent Radius": "Sodium",
+          "Sound Speed": "Sodium",
+          "Thermal Conductivity": "Sodium"
+        },
+        "Atomic Radius": 190,
+        "Covalent Radius": 166,
+        "Sound Speed": 3200,
+        "Thermal Conductivity": 140
+      },
+      "Atomic Number": 11,
+      "Atomic Weight": 22.98976928
+    },
+    {
+      "debug": {
+        "Atomic Number": "Magnesium",
+        "Atomic Weight": "Magnesium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Magnesium",
+          "Covalent Radius": "Magnesium",
+          "Sound Speed": "Magnesium",
+          "Thermal Conductivity": "Magnesium"
+        },
+        "Atomic Radius": 145,
+        "Covalent Radius": 141,
+        "Sound Speed": 4602,
+        "Thermal Conductivity": 160
+      },
+      "Atomic Number": 12,
+      "Atomic Weight": 24.305
+    },
+    {
+      "debug": {
+        "Atomic Number": "Aluminum",
+        "Atomic Weight": "Aluminum"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Aluminum",
+          "Covalent Radius": "Aluminum",
+          "Sound Speed": "Aluminum",
+          "Thermal Conductivity": "Aluminum"
+        },
+        "Atomic Radius": 118,
+        "Covalent Radius": 121,
+        "Sound Speed": 5100,
+        "Thermal Conductivity": 235
+      },
+      "Atomic Number": 13,
+      "Atomic Weight": 26.9815385
+    },
+    {
+      "debug": {
+        "Atomic Number": "Silicon",
+        "Atomic Weight": "Silicon"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Silicon",
+          "Covalent Radius": "Silicon",
+          "Sound Speed": "Silicon",
+          "Thermal Conductivity": "Silicon"
+        },
+        "Atomic Radius": 111,
+        "Covalent Radius": 111,
+        "Sound Speed": 2200,
+        "Thermal Conductivity": 150
+      },
+      "Atomic Number": 14,
+      "Atomic Weight": 28.085
+    },
+    {
+      "debug": {
+        "Atomic Number": "Phosphorus",
+        "Atomic Weight": "Phosphorus"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Phosphorus",
+          "Covalent Radius": "Phosphorus",
+          "Sound Speed": "Phosphorus",
+          "Thermal Conductivity": "Phosphorus"
+        },
+        "Atomic Radius": 98,
+        "Covalent Radius": 107,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 0.236
+      },
+      "Atomic Number": 15,
+      "Atomic Weight": 30.973761998
+    },
+    {
+      "debug": {
+        "Atomic Number": "Sulfur",
+        "Atomic Weight": "Sulfur"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Sulfur",
+          "Covalent Radius": "Sulfur",
+          "Sound Speed": "Sulfur",
+          "Thermal Conductivity": "Sulfur"
+        },
+        "Atomic Radius": 87,
+        "Covalent Radius": 105,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 0.205
+      },
+      "Atomic Number": 16,
+      "Atomic Weight": 32.06
+    },
+    {
+      "debug": {
+        "Atomic Number": "Chlorine",
+        "Atomic Weight": "Chlorine"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Chlorine",
+          "Covalent Radius": "Chlorine",
+          "Sound Speed": "Chlorine",
+          "Thermal Conductivity": "Chlorine"
+        },
+        "Atomic Radius": 79,
+        "Covalent Radius": 102,
+        "Sound Speed": 206,
+        "Thermal Conductivity": 0.0089
+      },
+      "Atomic Number": 17,
+      "Atomic Weight": 35.45
+    },
+    {
+      "debug": {
+        "Atomic Number": "Argon",
+        "Atomic Weight": "Argon"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Argon",
+          "Covalent Radius": "Argon",
+          "Sound Speed": "Argon",
+          "Thermal Conductivity": "Argon"
+        },
+        "Atomic Radius": 71,
+        "Covalent Radius": 106,
+        "Sound Speed": 319,
+        "Thermal Conductivity": 0.01772
+      },
+      "Atomic Number": 18,
+      "Atomic Weight": 39.948
+    },
+    {
+      "debug": {
+        "Atomic Number": "Potassium",
+        "Atomic Weight": "Potassium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Potassium",
+          "Covalent Radius": "Potassium",
+          "Sound Speed": "Potassium",
+          "Thermal Conductivity": "Potassium"
+        },
+        "Atomic Radius": 243,
+        "Covalent Radius": 203,
+        "Sound Speed": 2000,
+        "Thermal Conductivity": 100
+      },
+      "Atomic Number": 19,
+      "Atomic Weight": 39.0983
+    },
+    {
+      "debug": {
+        "Atomic Number": "Calcium",
+        "Atomic Weight": "Calcium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Calcium",
+          "Covalent Radius": "Calcium",
+          "Sound Speed": "Calcium",
+          "Thermal Conductivity": "Calcium"
+        },
+        "Atomic Radius": 194,
+        "Covalent Radius": 176,
+        "Sound Speed": 3810,
+        "Thermal Conductivity": 200
+      },
+      "Atomic Number": 20,
+      "Atomic Weight": 40.078
+    },
+    {
+      "debug": {
+        "Atomic Number": "Scandium",
+        "Atomic Weight": "Scandium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Scandium",
+          "Covalent Radius": "Scandium",
+          "Sound Speed": "Scandium",
+          "Thermal Conductivity": "Scandium"
+        },
+        "Atomic Radius": 184,
+        "Covalent Radius": 170,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 16
+      },
+      "Atomic Number": 21,
+      "Atomic Weight": 44.955908
+    },
+    {
+      "debug": {
+        "Atomic Number": "Titanium",
+        "Atomic Weight": "Titanium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Titanium",
+          "Covalent Radius": "Titanium",
+          "Sound Speed": "Titanium",
+          "Thermal Conductivity": "Titanium"
+        },
+        "Atomic Radius": 176,
+        "Covalent Radius": 160,
+        "Sound Speed": 4140,
+        "Thermal Conductivity": 22
+      },
+      "Atomic Number": 22,
+      "Atomic Weight": 47.867
+    },
+    {
+      "debug": {
+        "Atomic Number": "Vanadium",
+        "Atomic Weight": "Vanadium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Vanadium",
+          "Covalent Radius": "Vanadium",
+          "Sound Speed": "Vanadium",
+          "Thermal Conductivity": "Vanadium"
+        },
+        "Atomic Radius": 171,
+        "Covalent Radius": 153,
+        "Sound Speed": 4560,
+        "Thermal Conductivity": 31
+      },
+      "Atomic Number": 23,
+      "Atomic Weight": 50.9415
+    },
+    {
+      "debug": {
+        "Atomic Number": "Chromium",
+        "Atomic Weight": "Chromium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Chromium",
+          "Covalent Radius": "Chromium",
+          "Sound Speed": "Chromium",
+          "Thermal Conductivity": "Chromium"
+        },
+        "Atomic Radius": 166,
+        "Covalent Radius": 139,
+        "Sound Speed": 5940,
+        "Thermal Conductivity": 94
+      },
+      "Atomic Number": 24,
+      "Atomic Weight": 51.9961
+    },
+    {
+      "debug": {
+        "Atomic Number": "Manganese",
+        "Atomic Weight": "Manganese"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Manganese",
+          "Covalent Radius": "Manganese",
+          "Sound Speed": "Manganese",
+          "Thermal Conductivity": "Manganese"
+        },
+        "Atomic Radius": 161,
+        "Covalent Radius": 139,
+        "Sound Speed": 5150,
+        "Thermal Conductivity": 7.7
+      },
+      "Atomic Number": 25,
+      "Atomic Weight": 54.938044
+    },
+    {
+      "debug": {
+        "Atomic Number": "Iron",
+        "Atomic Weight": "Iron"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Iron",
+          "Covalent Radius": "Iron",
+          "Sound Speed": "Iron",
+          "Thermal Conductivity": "Iron"
+        },
+        "Atomic Radius": 156,
+        "Covalent Radius": 132,
+        "Sound Speed": 4910,
+        "Thermal Conductivity": 79
+      },
+      "Atomic Number": 26,
+      "Atomic Weight": 55.845
+    },
+    {
+      "debug": {
+        "Atomic Number": "Cobalt",
+        "Atomic Weight": "Cobalt"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Cobalt",
+          "Covalent Radius": "Cobalt",
+          "Sound Speed": "Cobalt",
+          "Thermal Conductivity": "Cobalt"
+        },
+        "Atomic Radius": 152,
+        "Covalent Radius": 126,
+        "Sound Speed": 4720,
+        "Thermal Conductivity": 100
+      },
+      "Atomic Number": 27,
+      "Atomic Weight": 58.933194
+    },
+    {
+      "debug": {
+        "Atomic Number": "Nickel",
+        "Atomic Weight": "Nickel"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Nickel",
+          "Covalent Radius": "Nickel",
+          "Sound Speed": "Nickel",
+          "Thermal Conductivity": "Nickel"
+        },
+        "Atomic Radius": 149,
+        "Covalent Radius": 124,
+        "Sound Speed": 4970,
+        "Thermal Conductivity": 91
+      },
+      "Atomic Number": 28,
+      "Atomic Weight": 58.6934
+    },
+    {
+      "debug": {
+        "Atomic Number": "Copper",
+        "Atomic Weight": "Copper"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Copper",
+          "Covalent Radius": "Copper",
+          "Sound Speed": "Copper",
+          "Thermal Conductivity": "Copper"
+        },
+        "Atomic Radius": 145,
+        "Covalent Radius": 132,
+        "Sound Speed": 3570,
+        "Thermal Conductivity": 400
+      },
+      "Atomic Number": 29,
+      "Atomic Weight": 63.546
+    },
+    {
+      "debug": {
+        "Atomic Number": "Zinc",
+        "Atomic Weight": "Zinc"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Zinc",
+          "Covalent Radius": "Zinc",
+          "Sound Speed": "Zinc",
+          "Thermal Conductivity": "Zinc"
+        },
+        "Atomic Radius": 142,
+        "Covalent Radius": 122,
+        "Sound Speed": 3700,
+        "Thermal Conductivity": 120
+      },
+      "Atomic Number": 30,
+      "Atomic Weight": 65.38
+    },
+    {
+      "debug": {
+        "Atomic Number": "Gallium",
+        "Atomic Weight": "Gallium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Gallium",
+          "Covalent Radius": "Gallium",
+          "Sound Speed": "Gallium",
+          "Thermal Conductivity": "Gallium"
+        },
+        "Atomic Radius": 136,
+        "Covalent Radius": 122,
+        "Sound Speed": 2740,
+        "Thermal Conductivity": 29
+      },
+      "Atomic Number": 31,
+      "Atomic Weight": 69.723
+    },
+    {
+      "debug": {
+        "Atomic Number": "Germanium",
+        "Atomic Weight": "Germanium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Germanium",
+          "Covalent Radius": "Germanium",
+          "Sound Speed": "Germanium",
+          "Thermal Conductivity": "Germanium"
+        },
+        "Atomic Radius": 125,
+        "Covalent Radius": 120,
+        "Sound Speed": 5400,
+        "Thermal Conductivity": 60
+      },
+      "Atomic Number": 32,
+      "Atomic Weight": 72.63
+    },
+    {
+      "debug": {
+        "Atomic Number": "Arsenic",
+        "Atomic Weight": "Arsenic"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Arsenic",
+          "Covalent Radius": "Arsenic",
+          "Sound Speed": "Arsenic",
+          "Thermal Conductivity": "Arsenic"
+        },
+        "Atomic Radius": 114,
+        "Covalent Radius": 119,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 50
+      },
+      "Atomic Number": 33,
+      "Atomic Weight": 74.921595
+    },
+    {
+      "debug": {
+        "Atomic Number": "Selenium",
+        "Atomic Weight": "Selenium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Selenium",
+          "Covalent Radius": "Selenium",
+          "Sound Speed": "Selenium",
+          "Thermal Conductivity": "Selenium"
+        },
+        "Atomic Radius": 103,
+        "Covalent Radius": 120,
+        "Sound Speed": 3350,
+        "Thermal Conductivity": 0.52
+      },
+      "Atomic Number": 34,
+      "Atomic Weight": 78.971
+    },
+    {
+      "debug": {
+        "Atomic Number": "Bromine",
+        "Atomic Weight": "Bromine"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Bromine",
+          "Covalent Radius": "Bromine",
+          "Sound Speed": "Bromine",
+          "Thermal Conductivity": "Bromine"
+        },
+        "Atomic Radius": 94,
+        "Covalent Radius": 120,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 0.12
+      },
+      "Atomic Number": 35,
+      "Atomic Weight": 79.904
+    },
+    {
+      "debug": {
+        "Atomic Number": "Krypton",
+        "Atomic Weight": "Krypton"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Krypton",
+          "Covalent Radius": "Krypton",
+          "Sound Speed": "Krypton",
+          "Thermal Conductivity": "Krypton"
+        },
+        "Atomic Radius": 87,
+        "Covalent Radius": 116,
+        "Sound Speed": 1120,
+        "Thermal Conductivity": 0.009430000000000001
+      },
+      "Atomic Number": 36,
+      "Atomic Weight": 83.798
+    },
+    {
+      "debug": {
+        "Atomic Number": "Rubidium",
+        "Atomic Weight": "Rubidium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Rubidium",
+          "Covalent Radius": "Rubidium",
+          "Sound Speed": "Rubidium",
+          "Thermal Conductivity": "Rubidium"
+        },
+        "Atomic Radius": 265,
+        "Covalent Radius": 220,
+        "Sound Speed": 1300,
+        "Thermal Conductivity": 58
+      },
+      "Atomic Number": 37,
+      "Atomic Weight": 85.4678
+    },
+    {
+      "debug": {
+        "Atomic Number": "Strontium",
+        "Atomic Weight": "Strontium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Strontium",
+          "Covalent Radius": "Strontium",
+          "Sound Speed": "Strontium",
+          "Thermal Conductivity": "Strontium"
+        },
+        "Atomic Radius": 219,
+        "Covalent Radius": 195,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 35
+      },
+      "Atomic Number": 38,
+      "Atomic Weight": 87.62
+    },
+    {
+      "debug": {
+        "Atomic Number": "Yttrium",
+        "Atomic Weight": "Yttrium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Yttrium",
+          "Covalent Radius": "Yttrium",
+          "Sound Speed": "Yttrium",
+          "Thermal Conductivity": "Yttrium"
+        },
+        "Atomic Radius": 212,
+        "Covalent Radius": 190,
+        "Sound Speed": 3300,
+        "Thermal Conductivity": 17
+      },
+      "Atomic Number": 39,
+      "Atomic Weight": 88.90584
+    },
+    {
+      "debug": {
+        "Atomic Number": "Zirconium",
+        "Atomic Weight": "Zirconium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Zirconium",
+          "Covalent Radius": "Zirconium",
+          "Sound Speed": "Zirconium",
+          "Thermal Conductivity": "Zirconium"
+        },
+        "Atomic Radius": 206,
+        "Covalent Radius": 175,
+        "Sound Speed": 3800,
+        "Thermal Conductivity": 23
+      },
+      "Atomic Number": 40,
+      "Atomic Weight": 91.224
+    },
+    {
+      "debug": {
+        "Atomic Number": "Niobium",
+        "Atomic Weight": "Niobium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Niobium",
+          "Covalent Radius": "Niobium",
+          "Sound Speed": "Niobium",
+          "Thermal Conductivity": "Niobium"
+        },
+        "Atomic Radius": 198,
+        "Covalent Radius": 164,
+        "Sound Speed": 3480,
+        "Thermal Conductivity": 54
+      },
+      "Atomic Number": 41,
+      "Atomic Weight": 92.90637
+    },
+    {
+      "debug": {
+        "Atomic Number": "Molybdenum",
+        "Atomic Weight": "Molybdenum"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Molybdenum",
+          "Covalent Radius": "Molybdenum",
+          "Sound Speed": "Molybdenum",
+          "Thermal Conductivity": "Molybdenum"
+        },
+        "Atomic Radius": 190,
+        "Covalent Radius": 154,
+        "Sound Speed": 6190,
+        "Thermal Conductivity": 139
+      },
+      "Atomic Number": 42,
+      "Atomic Weight": 95.95
+    },
+    {
+      "debug": {
+        "Atomic Number": "Technetium",
+        "Atomic Weight": "Technetium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Technetium",
+          "Covalent Radius": "Technetium",
+          "Sound Speed": "Technetium",
+          "Thermal Conductivity": "Technetium"
+        },
+        "Atomic Radius": 183,
+        "Covalent Radius": 147,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 51
+      },
+      "Atomic Number": 43,
+      "Atomic Weight": 97
+    },
+    {
+      "debug": {
+        "Atomic Number": "Ruthenium",
+        "Atomic Weight": "Ruthenium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Ruthenium",
+          "Covalent Radius": "Ruthenium",
+          "Sound Speed": "Ruthenium",
+          "Thermal Conductivity": "Ruthenium"
+        },
+        "Atomic Radius": 178,
+        "Covalent Radius": 146,
+        "Sound Speed": 5970,
+        "Thermal Conductivity": 120
+      },
+      "Atomic Number": 44,
+      "Atomic Weight": 101.07
+    },
+    {
+      "debug": {
+        "Atomic Number": "Rhodium",
+        "Atomic Weight": "Rhodium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Rhodium",
+          "Covalent Radius": "Rhodium",
+          "Sound Speed": "Rhodium",
+          "Thermal Conductivity": "Rhodium"
+        },
+        "Atomic Radius": 173,
+        "Covalent Radius": 142,
+        "Sound Speed": 4700,
+        "Thermal Conductivity": 150
+      },
+      "Atomic Number": 45,
+      "Atomic Weight": 102.9055
+    },
+    {
+      "debug": {
+        "Atomic Number": "Palladium",
+        "Atomic Weight": "Palladium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Palladium",
+          "Covalent Radius": "Palladium",
+          "Sound Speed": "Palladium",
+          "Thermal Conductivity": "Palladium"
+        },
+        "Atomic Radius": 169,
+        "Covalent Radius": 139,
+        "Sound Speed": 3070,
+        "Thermal Conductivity": 71
+      },
+      "Atomic Number": 46,
+      "Atomic Weight": 106.42
+    },
+    {
+      "debug": {
+        "Atomic Number": "Silver",
+        "Atomic Weight": "Silver"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Silver",
+          "Covalent Radius": "Silver",
+          "Sound Speed": "Silver",
+          "Thermal Conductivity": "Silver"
+        },
+        "Atomic Radius": 165,
+        "Covalent Radius": 145,
+        "Sound Speed": 2600,
+        "Thermal Conductivity": 430
+      },
+      "Atomic Number": 47,
+      "Atomic Weight": 107.8682
+    },
+    {
+      "debug": {
+        "Atomic Number": "Cadmium",
+        "Atomic Weight": "Cadmium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Cadmium",
+          "Covalent Radius": "Cadmium",
+          "Sound Speed": "Cadmium",
+          "Thermal Conductivity": "Cadmium"
+        },
+        "Atomic Radius": 161,
+        "Covalent Radius": 144,
+        "Sound Speed": 2310,
+        "Thermal Conductivity": 96
+      },
+      "Atomic Number": 48,
+      "Atomic Weight": 112.414
+    },
+    {
+      "debug": {
+        "Atomic Number": "Indium",
+        "Atomic Weight": "Indium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Indium",
+          "Covalent Radius": "Indium",
+          "Sound Speed": "Indium",
+          "Thermal Conductivity": "Indium"
+        },
+        "Atomic Radius": 156,
+        "Covalent Radius": 142,
+        "Sound Speed": 1215,
+        "Thermal Conductivity": 82
+      },
+      "Atomic Number": 49,
+      "Atomic Weight": 114.818
+    },
+    {
+      "debug": {
+        "Atomic Number": "Tin",
+        "Atomic Weight": "Tin"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Tin",
+          "Covalent Radius": "Tin",
+          "Sound Speed": "Tin",
+          "Thermal Conductivity": "Tin"
+        },
+        "Atomic Radius": 145,
+        "Covalent Radius": 139,
+        "Sound Speed": 2500,
+        "Thermal Conductivity": 67
+      },
+      "Atomic Number": 50,
+      "Atomic Weight": 118.71
+    },
+    {
+      "debug": {
+        "Atomic Number": "Antimony",
+        "Atomic Weight": "Antimony"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Antimony",
+          "Covalent Radius": "Antimony",
+          "Sound Speed": "Antimony",
+          "Thermal Conductivity": "Antimony"
+        },
+        "Atomic Radius": 133,
+        "Covalent Radius": 139,
+        "Sound Speed": 3420,
+        "Thermal Conductivity": 24
+      },
+      "Atomic Number": 51,
+      "Atomic Weight": 121.76
+    },
+    {
+      "debug": {
+        "Atomic Number": "Tellurium",
+        "Atomic Weight": "Tellurium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Tellurium",
+          "Covalent Radius": "Tellurium",
+          "Sound Speed": "Tellurium",
+          "Thermal Conductivity": "Tellurium"
+        },
+        "Atomic Radius": 123,
+        "Covalent Radius": 138,
+        "Sound Speed": 2610,
+        "Thermal Conductivity": 3
+      },
+      "Atomic Number": 52,
+      "Atomic Weight": 127.6
+    },
+    {
+      "debug": {
+        "Atomic Number": "Iodine",
+        "Atomic Weight": "Iodine"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Iodine",
+          "Covalent Radius": "Iodine",
+          "Sound Speed": "Iodine",
+          "Thermal Conductivity": "Iodine"
+        },
+        "Atomic Radius": 115,
+        "Covalent Radius": 139,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 0.449
+      },
+      "Atomic Number": 53,
+      "Atomic Weight": 126.90447
+    },
+    {
+      "debug": {
+        "Atomic Number": "Xenon",
+        "Atomic Weight": "Xenon"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Xenon",
+          "Covalent Radius": "Xenon",
+          "Sound Speed": "Xenon",
+          "Thermal Conductivity": "Xenon"
+        },
+        "Atomic Radius": 108,
+        "Covalent Radius": 140,
+        "Sound Speed": 1090,
+        "Thermal Conductivity": 0.00565
+      },
+      "Atomic Number": 54,
+      "Atomic Weight": 131.293
+    },
+    {
+      "debug": {
+        "Atomic Number": "Cesium",
+        "Atomic Weight": "Cesium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Cesium",
+          "Covalent Radius": "Cesium",
+          "Sound Speed": "Cesium",
+          "Thermal Conductivity": "Cesium"
+        },
+        "Atomic Radius": 298,
+        "Covalent Radius": 244,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 36
+      },
+      "Atomic Number": 55,
+      "Atomic Weight": 132.90545196
+    },
+    {
+      "debug": {
+        "Atomic Number": "Barium",
+        "Atomic Weight": "Barium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Barium",
+          "Covalent Radius": "Barium",
+          "Sound Speed": "Barium",
+          "Thermal Conductivity": "Barium"
+        },
+        "Atomic Radius": 253,
+        "Covalent Radius": 215,
+        "Sound Speed": 1620,
+        "Thermal Conductivity": 18
+      },
+      "Atomic Number": 56,
+      "Atomic Weight": 137.327
+    },
+    {
+      "debug": {
+        "Atomic Number": "Lanthanites",
+        "Atomic Weight": "Lanthanites"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Lanthanites",
+          "Covalent Radius": "Lanthanites",
+          "Sound Speed": "Lanthanites",
+          "Thermal Conductivity": "Lanthanites"
+        },
+        "Atomic Radius": "lanthanites case",
+        "Covalent Radius": "lanthanites case",
+        "Sound Speed": "lanthanites case",
+        "Thermal Conductivity": "lanthanites case"
+      },
+      "Atomic Number": "lanthanites case",
+      "Atomic Weight": "lanthanites case"
+    },
+    {
+      "debug": {
+        "Atomic Number": "Lanthanum",
+        "Atomic Weight": "Lanthanum"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Lanthanum",
+          "Covalent Radius": "Lanthanum",
+          "Sound Speed": "Lanthanum",
+          "Thermal Conductivity": "Lanthanum"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 207,
+        "Sound Speed": 2475,
+        "Thermal Conductivity": 13
+      },
+      "Atomic Number": 57,
+      "Atomic Weight": 138.90547
+    },
+    {
+      "debug": {
+        "Atomic Number": "Cerium",
+        "Atomic Weight": "Cerium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Cerium",
+          "Covalent Radius": "Cerium",
+          "Sound Speed": "Cerium",
+          "Thermal Conductivity": "Cerium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 204,
+        "Sound Speed": 2100,
+        "Thermal Conductivity": 11
+      },
+      "Atomic Number": 58,
+      "Atomic Weight": 140.116
+    },
+    {
+      "debug": {
+        "Atomic Number": "Praseodymium",
+        "Atomic Weight": "Praseodymium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Praseodymium",
+          "Covalent Radius": "Praseodymium",
+          "Sound Speed": "Praseodymium",
+          "Thermal Conductivity": "Praseodymium"
+        },
+        "Atomic Radius": 247,
+        "Covalent Radius": 203,
+        "Sound Speed": 2280,
+        "Thermal Conductivity": 13
+      },
+      "Atomic Number": 59,
+      "Atomic Weight": 140.90766
+    },
+    {
+      "debug": {
+        "Atomic Number": "Neodymium",
+        "Atomic Weight": "Neodymium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Neodymium",
+          "Covalent Radius": "Neodymium",
+          "Sound Speed": "Neodymium",
+          "Thermal Conductivity": "Neodymium"
+        },
+        "Atomic Radius": 206,
+        "Covalent Radius": 201,
+        "Sound Speed": 2330,
+        "Thermal Conductivity": 17
+      },
+      "Atomic Number": 60,
+      "Atomic Weight": 144.242
+    },
+    {
+      "debug": {
+        "Atomic Number": "Promethium",
+        "Atomic Weight": "Promethium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Promethium",
+          "Covalent Radius": "Promethium",
+          "Sound Speed": "Promethium",
+          "Thermal Conductivity": "Promethium"
+        },
+        "Atomic Radius": 205,
+        "Covalent Radius": 199,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 15
+      },
+      "Atomic Number": 61,
+      "Atomic Weight": 145
+    },
+    {
+      "debug": {
+        "Atomic Number": "Samarium",
+        "Atomic Weight": "Samarium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Samarium",
+          "Covalent Radius": "Samarium",
+          "Sound Speed": "Samarium",
+          "Thermal Conductivity": "Samarium"
+        },
+        "Atomic Radius": 238,
+        "Covalent Radius": 198,
+        "Sound Speed": 2130,
+        "Thermal Conductivity": 13
+      },
+      "Atomic Number": 62,
+      "Atomic Weight": 150.36
+    },
+    {
+      "debug": {
+        "Atomic Number": "Europium",
+        "Atomic Weight": "Europium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Europium",
+          "Covalent Radius": "Europium",
+          "Sound Speed": "Europium",
+          "Thermal Conductivity": "Europium"
+        },
+        "Atomic Radius": 231,
+        "Covalent Radius": 198,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 14
+      },
+      "Atomic Number": 63,
+      "Atomic Weight": 151.964
+    },
+    {
+      "debug": {
+        "Atomic Number": "Gadolinium",
+        "Atomic Weight": "Gadolinium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Gadolinium",
+          "Covalent Radius": "Gadolinium",
+          "Sound Speed": "Gadolinium",
+          "Thermal Conductivity": "Gadolinium"
+        },
+        "Atomic Radius": 233,
+        "Covalent Radius": 196,
+        "Sound Speed": 2680,
+        "Thermal Conductivity": 11
+      },
+      "Atomic Number": 64,
+      "Atomic Weight": 157.25
+    },
+    {
+      "debug": {
+        "Atomic Number": "Terbium",
+        "Atomic Weight": "Terbium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Terbium",
+          "Covalent Radius": "Terbium",
+          "Sound Speed": "Terbium",
+          "Thermal Conductivity": "Terbium"
+        },
+        "Atomic Radius": 225,
+        "Covalent Radius": 194,
+        "Sound Speed": 2620,
+        "Thermal Conductivity": 11
+      },
+      "Atomic Number": 65,
+      "Atomic Weight": 158.92535
+    },
+    {
+      "debug": {
+        "Atomic Number": "Dysprosium",
+        "Atomic Weight": "Dysprosium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Dysprosium",
+          "Covalent Radius": "Dysprosium",
+          "Sound Speed": "Dysprosium",
+          "Thermal Conductivity": "Dysprosium"
+        },
+        "Atomic Radius": 228,
+        "Covalent Radius": 192,
+        "Sound Speed": 2710,
+        "Thermal Conductivity": 11
+      },
+      "Atomic Number": 66,
+      "Atomic Weight": 162.5
+    },
+    {
+      "debug": {
+        "Atomic Number": "Holmium",
+        "Atomic Weight": "Holmium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Holmium",
+          "Covalent Radius": "Holmium",
+          "Sound Speed": "Holmium",
+          "Thermal Conductivity": "Holmium"
+        },
+        "Atomic Radius": 226,
+        "Covalent Radius": 192,
+        "Sound Speed": 2760,
+        "Thermal Conductivity": 16
+      },
+      "Atomic Number": 67,
+      "Atomic Weight": 164.93033
+    },
+    {
+      "debug": {
+        "Atomic Number": "Erbium",
+        "Atomic Weight": "Erbium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Erbium",
+          "Covalent Radius": "Erbium",
+          "Sound Speed": "Erbium",
+          "Thermal Conductivity": "Erbium"
+        },
+        "Atomic Radius": 226,
+        "Covalent Radius": 189,
+        "Sound Speed": 2830,
+        "Thermal Conductivity": 15
+      },
+      "Atomic Number": 68,
+      "Atomic Weight": 167.259
+    },
+    {
+      "debug": {
+        "Atomic Number": "Thulium",
+        "Atomic Weight": "Thulium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Thulium",
+          "Covalent Radius": "Thulium",
+          "Sound Speed": "Thulium",
+          "Thermal Conductivity": "Thulium"
+        },
+        "Atomic Radius": 222,
+        "Covalent Radius": 190,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 17
+      },
+      "Atomic Number": 69,
+      "Atomic Weight": 168.93422
+    },
+    {
+      "debug": {
+        "Atomic Number": "Ytterbium",
+        "Atomic Weight": "Ytterbium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Ytterbium",
+          "Covalent Radius": "Ytterbium",
+          "Sound Speed": "Ytterbium",
+          "Thermal Conductivity": "Ytterbium"
+        },
+        "Atomic Radius": 222,
+        "Covalent Radius": 187,
+        "Sound Speed": 1590,
+        "Thermal Conductivity": 39
+      },
+      "Atomic Number": 70,
+      "Atomic Weight": 173.045
+    },
+    {
+      "debug": {
+        "Atomic Number": "Lutetium",
+        "Atomic Weight": "Lutetium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Lutetium",
+          "Covalent Radius": "Lutetium",
+          "Sound Speed": "Lutetium",
+          "Thermal Conductivity": "Lutetium"
+        },
+        "Atomic Radius": 217,
+        "Covalent Radius": 187,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 16
+      },
+      "Atomic Number": 71,
+      "Atomic Weight": 174.9668
+    },
+    {
+      "debug": {
+        "Atomic Number": "Hafnium",
+        "Atomic Weight": "Hafnium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Hafnium",
+          "Covalent Radius": "Hafnium",
+          "Sound Speed": "Hafnium",
+          "Thermal Conductivity": "Hafnium"
+        },
+        "Atomic Radius": 208,
+        "Covalent Radius": 175,
+        "Sound Speed": 3010,
+        "Thermal Conductivity": 23
+      },
+      "Atomic Number": 72,
+      "Atomic Weight": 178.49
+    },
+    {
+      "debug": {
+        "Atomic Number": "Tantalum",
+        "Atomic Weight": "Tantalum"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Tantalum",
+          "Covalent Radius": "Tantalum",
+          "Sound Speed": "Tantalum",
+          "Thermal Conductivity": "Tantalum"
+        },
+        "Atomic Radius": 200,
+        "Covalent Radius": 170,
+        "Sound Speed": 3400,
+        "Thermal Conductivity": 57
+      },
+      "Atomic Number": 73,
+      "Atomic Weight": 180.94788
+    },
+    {
+      "debug": {
+        "Atomic Number": "Tungsten",
+        "Atomic Weight": "Tungsten"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Tungsten",
+          "Covalent Radius": "Tungsten",
+          "Sound Speed": "Tungsten",
+          "Thermal Conductivity": "Tungsten"
+        },
+        "Atomic Radius": 193,
+        "Covalent Radius": 162,
+        "Sound Speed": 5174,
+        "Thermal Conductivity": 170
+      },
+      "Atomic Number": 74,
+      "Atomic Weight": 183.84
+    },
+    {
+      "debug": {
+        "Atomic Number": "Rhenium",
+        "Atomic Weight": "Rhenium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Rhenium",
+          "Covalent Radius": "Rhenium",
+          "Sound Speed": "Rhenium",
+          "Thermal Conductivity": "Rhenium"
+        },
+        "Atomic Radius": 188,
+        "Covalent Radius": 151,
+        "Sound Speed": 4700,
+        "Thermal Conductivity": 48
+      },
+      "Atomic Number": 75,
+      "Atomic Weight": 186.207
+    },
+    {
+      "debug": {
+        "Atomic Number": "Osmium",
+        "Atomic Weight": "Osmium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Osmium",
+          "Covalent Radius": "Osmium",
+          "Sound Speed": "Osmium",
+          "Thermal Conductivity": "Osmium"
+        },
+        "Atomic Radius": 185,
+        "Covalent Radius": 144,
+        "Sound Speed": 4940,
+        "Thermal Conductivity": 87
+      },
+      "Atomic Number": 76,
+      "Atomic Weight": 190.23
+    },
+    {
+      "debug": {
+        "Atomic Number": "Iridium",
+        "Atomic Weight": "Iridium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Iridium",
+          "Covalent Radius": "Iridium",
+          "Sound Speed": "Iridium",
+          "Thermal Conductivity": "Iridium"
+        },
+        "Atomic Radius": 180,
+        "Covalent Radius": 141,
+        "Sound Speed": 4825,
+        "Thermal Conductivity": 150
+      },
+      "Atomic Number": 77,
+      "Atomic Weight": 192.217
+    },
+    {
+      "debug": {
+        "Atomic Number": "Platinum",
+        "Atomic Weight": "Platinum"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Platinum",
+          "Covalent Radius": "Platinum",
+          "Sound Speed": "Platinum",
+          "Thermal Conductivity": "Platinum"
+        },
+        "Atomic Radius": 177,
+        "Covalent Radius": 136,
+        "Sound Speed": 2680,
+        "Thermal Conductivity": 71
+      },
+      "Atomic Number": 78,
+      "Atomic Weight": 195.084
+    },
+    {
+      "debug": {
+        "Atomic Number": "Gold",
+        "Atomic Weight": "Gold"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Gold",
+          "Covalent Radius": "Gold",
+          "Sound Speed": "Gold",
+          "Thermal Conductivity": "Gold"
+        },
+        "Atomic Radius": 174,
+        "Covalent Radius": 136,
+        "Sound Speed": 1740,
+        "Thermal Conductivity": 320
+      },
+      "Atomic Number": 79,
+      "Atomic Weight": 196.966569
+    },
+    {
+      "debug": {
+        "Atomic Number": "Mercury",
+        "Atomic Weight": "Mercury"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Mercury",
+          "Covalent Radius": "Mercury",
+          "Sound Speed": "Mercury",
+          "Thermal Conductivity": "Mercury"
+        },
+        "Atomic Radius": 171,
+        "Covalent Radius": 132,
+        "Sound Speed": 1407,
+        "Thermal Conductivity": 8.3
+      },
+      "Atomic Number": 80,
+      "Atomic Weight": 200.592
+    },
+    {
+      "debug": {
+        "Atomic Number": "Thallium",
+        "Atomic Weight": "Thallium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Thallium",
+          "Covalent Radius": "Thallium",
+          "Sound Speed": "Thallium",
+          "Thermal Conductivity": "Thallium"
+        },
+        "Atomic Radius": 156,
+        "Covalent Radius": 145,
+        "Sound Speed": 818,
+        "Thermal Conductivity": 46
+      },
+      "Atomic Number": 81,
+      "Atomic Weight": 204.38
+    },
+    {
+      "debug": {
+        "Atomic Number": "Lead",
+        "Atomic Weight": "Lead"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Lead",
+          "Covalent Radius": "Lead",
+          "Sound Speed": "Lead",
+          "Thermal Conductivity": "Lead"
+        },
+        "Atomic Radius": 154,
+        "Covalent Radius": 146,
+        "Sound Speed": 1260,
+        "Thermal Conductivity": 35
+      },
+      "Atomic Number": 82,
+      "Atomic Weight": 207.2
+    },
+    {
+      "debug": {
+        "Atomic Number": "Bismuth",
+        "Atomic Weight": "Bismuth"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Bismuth",
+          "Covalent Radius": "Bismuth",
+          "Sound Speed": "Bismuth",
+          "Thermal Conductivity": "Bismuth"
+        },
+        "Atomic Radius": 143,
+        "Covalent Radius": 148,
+        "Sound Speed": 1790,
+        "Thermal Conductivity": 8
+      },
+      "Atomic Number": 83,
+      "Atomic Weight": 208.9804
+    },
+    {
+      "debug": {
+        "Atomic Number": "Polonium",
+        "Atomic Weight": "Polonium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Polonium",
+          "Covalent Radius": "Polonium",
+          "Sound Speed": "Polonium",
+          "Thermal Conductivity": "Polonium"
+        },
+        "Atomic Radius": 135,
+        "Covalent Radius": 140,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 84,
+      "Atomic Weight": 209
+    },
+    {
+      "debug": {
+        "Atomic Number": "Astatine",
+        "Atomic Weight": "Astatine"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Astatine",
+          "Covalent Radius": "Astatine",
+          "Sound Speed": "Astatine",
+          "Thermal Conductivity": "Astatine"
+        },
+        "Atomic Radius": 127,
+        "Covalent Radius": 150,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 2
+      },
+      "Atomic Number": 85,
+      "Atomic Weight": 210
+    },
+    {
+      "debug": {
+        "Atomic Number": "Radon",
+        "Atomic Weight": "Radon"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Radon",
+          "Covalent Radius": "Radon",
+          "Sound Speed": "Radon",
+          "Thermal Conductivity": "Radon"
+        },
+        "Atomic Radius": 120,
+        "Covalent Radius": 150,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 0.00361
+      },
+      "Atomic Number": 86,
+      "Atomic Weight": 222
+    },
+    {
+      "debug": {
+        "Atomic Number": "Francium",
+        "Atomic Weight": "Francium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Francium",
+          "Covalent Radius": "Francium",
+          "Sound Speed": "Francium",
+          "Thermal Conductivity": "Francium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 260,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 87,
+      "Atomic Weight": 223
+    },
+    {
+      "debug": {
+        "Atomic Number": "Radium",
+        "Atomic Weight": "Radium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Radium",
+          "Covalent Radius": "Radium",
+          "Sound Speed": "Radium",
+          "Thermal Conductivity": "Radium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 221,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 19
+      },
+      "Atomic Number": 88,
+      "Atomic Weight": 226
+    },
+    {
+      "debug": {
+        "Atomic Number": "Actinides",
+        "Atomic Weight": "Actinides"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Actinides",
+          "Covalent Radius": "Actinides",
+          "Sound Speed": "Actinides",
+          "Thermal Conductivity": "Actinides"
+        },
+        "Atomic Radius": "actinides case",
+        "Covalent Radius": "actinides case",
+        "Sound Speed": "actinides case",
+        "Thermal Conductivity": "actinides case"
+      },
+      "Atomic Number": "actinides case",
+      "Atomic Weight": "actinides case"
+    },
+    {
+      "debug": {
+        "Atomic Number": "Actinium",
+        "Atomic Weight": "Actinium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Actinium",
+          "Covalent Radius": "Actinium",
+          "Sound Speed": "Actinium",
+          "Thermal Conductivity": "Actinium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 215,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 12
+      },
+      "Atomic Number": 89,
+      "Atomic Weight": 227
+    },
+    {
+      "debug": {
+        "Atomic Number": "Thorium",
+        "Atomic Weight": "Thorium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Thorium",
+          "Covalent Radius": "Thorium",
+          "Sound Speed": "Thorium",
+          "Thermal Conductivity": "Thorium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 206,
+        "Sound Speed": 2490,
+        "Thermal Conductivity": 54
+      },
+      "Atomic Number": 90,
+      "Atomic Weight": 232.0377
+    },
+    {
+      "debug": {
+        "Atomic Number": "Protactinium",
+        "Atomic Weight": "Protactinium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Protactinium",
+          "Covalent Radius": "Protactinium",
+          "Sound Speed": "Protactinium",
+          "Thermal Conductivity": "Protactinium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 200,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 47
+      },
+      "Atomic Number": 91,
+      "Atomic Weight": 231.03588
+    },
+    {
+      "debug": {
+        "Atomic Number": "Uranium",
+        "Atomic Weight": "Uranium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Uranium",
+          "Covalent Radius": "Uranium",
+          "Sound Speed": "Uranium",
+          "Thermal Conductivity": "Uranium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 196,
+        "Sound Speed": 3155,
+        "Thermal Conductivity": 27
+      },
+      "Atomic Number": 92,
+      "Atomic Weight": 238.02891
+    },
+    {
+      "debug": {
+        "Atomic Number": "Neptunium",
+        "Atomic Weight": "Neptunium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Neptunium",
+          "Covalent Radius": "Neptunium",
+          "Sound Speed": "Neptunium",
+          "Thermal Conductivity": "Neptunium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 190,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 6
+      },
+      "Atomic Number": 93,
+      "Atomic Weight": 237
+    },
+    {
+      "debug": {
+        "Atomic Number": "Plutonium",
+        "Atomic Weight": "Plutonium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Plutonium",
+          "Covalent Radius": "Plutonium",
+          "Sound Speed": "Plutonium",
+          "Thermal Conductivity": "Plutonium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 187,
+        "Sound Speed": 2260,
+        "Thermal Conductivity": 6
+      },
+      "Atomic Number": 94,
+      "Atomic Weight": 244
+    },
+    {
+      "debug": {
+        "Atomic Number": "Americium",
+        "Atomic Weight": "Americium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Americium",
+          "Covalent Radius": "Americium",
+          "Sound Speed": "Americium",
+          "Thermal Conductivity": "Americium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 180,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 10
+      },
+      "Atomic Number": 95,
+      "Atomic Weight": 243
+    },
+    {
+      "debug": {
+        "Atomic Number": "Curium",
+        "Atomic Weight": "Curium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Curium",
+          "Covalent Radius": "Curium",
+          "Sound Speed": "Curium",
+          "Thermal Conductivity": "Curium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": 169,
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 96,
+      "Atomic Weight": 247
+    },
+    {
+      "debug": {
+        "Atomic Number": "Berkelium",
+        "Atomic Weight": "Berkelium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Berkelium",
+          "Covalent Radius": "Berkelium",
+          "Sound Speed": "Berkelium",
+          "Thermal Conductivity": "Berkelium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": 10
+      },
+      "Atomic Number": 97,
+      "Atomic Weight": 247
+    },
+    {
+      "debug": {
+        "Atomic Number": "Californium",
+        "Atomic Weight": "Californium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Californium",
+          "Covalent Radius": "Californium",
+          "Sound Speed": "Californium",
+          "Thermal Conductivity": "Californium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 98,
+      "Atomic Weight": 251
+    },
+    {
+      "debug": {
+        "Atomic Number": "Einsteinium",
+        "Atomic Weight": "Einsteinium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Einsteinium",
+          "Covalent Radius": "Einsteinium",
+          "Sound Speed": "Einsteinium",
+          "Thermal Conductivity": "Einsteinium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 99,
+      "Atomic Weight": 252
+    },
+    {
+      "debug": {
+        "Atomic Number": "Fermium",
+        "Atomic Weight": "Fermium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Fermium",
+          "Covalent Radius": "Fermium",
+          "Sound Speed": "Fermium",
+          "Thermal Conductivity": "Fermium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 100,
+      "Atomic Weight": 257
+    },
+    {
+      "debug": {
+        "Atomic Number": "Mendelevium",
+        "Atomic Weight": "Mendelevium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Mendelevium",
+          "Covalent Radius": "Mendelevium",
+          "Sound Speed": "Mendelevium",
+          "Thermal Conductivity": "Mendelevium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 101,
+      "Atomic Weight": 258
+    },
+    {
+      "debug": {
+        "Atomic Number": "Nobelium",
+        "Atomic Weight": "Nobelium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Nobelium",
+          "Covalent Radius": "Nobelium",
+          "Sound Speed": "Nobelium",
+          "Thermal Conductivity": "Nobelium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 102,
+      "Atomic Weight": 259
+    },
+    {
+      "debug": {
+        "Atomic Number": "Lawrencium",
+        "Atomic Weight": "Lawrencium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Lawrencium",
+          "Covalent Radius": "Lawrencium",
+          "Sound Speed": "Lawrencium",
+          "Thermal Conductivity": "Lawrencium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 103,
+      "Atomic Weight": 262
+    },
+    {
+      "debug": {
+        "Atomic Number": "Rutherfordium",
+        "Atomic Weight": "Rutherfordium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Rutherfordium",
+          "Covalent Radius": "Rutherfordium",
+          "Sound Speed": "Rutherfordium",
+          "Thermal Conductivity": "Rutherfordium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 104,
+      "Atomic Weight": 267
+    },
+    {
+      "debug": {
+        "Atomic Number": "Dubnium",
+        "Atomic Weight": "Dubnium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Dubnium",
+          "Covalent Radius": "Dubnium",
+          "Sound Speed": "Dubnium",
+          "Thermal Conductivity": "Dubnium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 105,
+      "Atomic Weight": 270
+    },
+    {
+      "debug": {
+        "Atomic Number": "Seaborgium",
+        "Atomic Weight": "Seaborgium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Seaborgium",
+          "Covalent Radius": "Seaborgium",
+          "Sound Speed": "Seaborgium",
+          "Thermal Conductivity": "Seaborgium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 106,
+      "Atomic Weight": 269
+    },
+    {
+      "debug": {
+        "Atomic Number": "Bohrium",
+        "Atomic Weight": "Bohrium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Bohrium",
+          "Covalent Radius": "Bohrium",
+          "Sound Speed": "Bohrium",
+          "Thermal Conductivity": "Bohrium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 107,
+      "Atomic Weight": 270
+    },
+    {
+      "debug": {
+        "Atomic Number": "Hassium",
+        "Atomic Weight": "Hassium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Hassium",
+          "Covalent Radius": "Hassium",
+          "Sound Speed": "Hassium",
+          "Thermal Conductivity": "Hassium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 108,
+      "Atomic Weight": 270
+    },
+    {
+      "debug": {
+        "Atomic Number": "Meitnerium",
+        "Atomic Weight": "Meitnerium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Meitnerium",
+          "Covalent Radius": "Meitnerium",
+          "Sound Speed": "Meitnerium",
+          "Thermal Conductivity": "Meitnerium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 109,
+      "Atomic Weight": 278
+    },
+    {
+      "debug": {
+        "Atomic Number": "Darmstadtium",
+        "Atomic Weight": "Darmstadtium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Darmstadtium",
+          "Covalent Radius": "Darmstadtium",
+          "Sound Speed": "Darmstadtium",
+          "Thermal Conductivity": "Darmstadtium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 110,
+      "Atomic Weight": 281
+    },
+    {
+      "debug": {
+        "Atomic Number": "Roentgenium",
+        "Atomic Weight": "Roentgenium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Roentgenium",
+          "Covalent Radius": "Roentgenium",
+          "Sound Speed": "Roentgenium",
+          "Thermal Conductivity": "Roentgenium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 111,
+      "Atomic Weight": 281
+    },
+    {
+      "debug": {
+        "Atomic Number": "Copernicium",
+        "Atomic Weight": "Copernicium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Copernicium",
+          "Covalent Radius": "Copernicium",
+          "Sound Speed": "Copernicium",
+          "Thermal Conductivity": "Copernicium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 112,
+      "Atomic Weight": 285
+    },
+    {
+      "debug": {
+        "Atomic Number": "Nihonium",
+        "Atomic Weight": "Nihonium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Nihonium",
+          "Covalent Radius": "Nihonium",
+          "Sound Speed": "Nihonium",
+          "Thermal Conductivity": "Nihonium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 113,
+      "Atomic Weight": 286
+    },
+    {
+      "debug": {
+        "Atomic Number": "Flerovium",
+        "Atomic Weight": "Flerovium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Flerovium",
+          "Covalent Radius": "Flerovium",
+          "Sound Speed": "Flerovium",
+          "Thermal Conductivity": "Flerovium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 114,
+      "Atomic Weight": 289
+    },
+    {
+      "debug": {
+        "Atomic Number": "Moscovium",
+        "Atomic Weight": "Moscovium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Moscovium",
+          "Covalent Radius": "Moscovium",
+          "Sound Speed": "Moscovium",
+          "Thermal Conductivity": "Moscovium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 115,
+      "Atomic Weight": 289
+    },
+    {
+      "debug": {
+        "Atomic Number": "Livermorium",
+        "Atomic Weight": "Livermorium"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Livermorium",
+          "Covalent Radius": "Livermorium",
+          "Sound Speed": "Livermorium",
+          "Thermal Conductivity": "Livermorium"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 116,
+      "Atomic Weight": 293
+    },
+    {
+      "debug": {
+        "Atomic Number": "Tennessine",
+        "Atomic Weight": "Tennessine"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Tennessine",
+          "Covalent Radius": "Tennessine",
+          "Sound Speed": "Tennessine",
+          "Thermal Conductivity": "Tennessine"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 117,
+      "Atomic Weight": 293
+    },
+    {
+      "debug": {
+        "Atomic Number": "Oganesson",
+        "Atomic Weight": "Oganesson"
+      },
+      "Radius": {
+        "debug": {
+          "Atomic Radius": "Oganesson",
+          "Covalent Radius": "Oganesson",
+          "Sound Speed": "Oganesson",
+          "Thermal Conductivity": "Oganesson"
+        },
+        "Atomic Radius": "Unknown",
+        "Covalent Radius": "Unknown",
+        "Sound Speed": "Unknown",
+        "Thermal Conductivity": "Unknown"
+      },
+      "Atomic Number": 118,
+      "Atomic Weight": 294
+    }
+  ]
+}
