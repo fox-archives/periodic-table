@@ -1,6 +1,10 @@
 module.exports = {
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+  },
+  env: {
+    "browser": true,
+    "node": true
   },
   plugins: [
     'babel',

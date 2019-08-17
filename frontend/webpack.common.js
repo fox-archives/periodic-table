@@ -1,13 +1,13 @@
-let path = require('path');
-let VueLoaderPlugin = require('vue-loader/lib/plugin');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
+let path = require("path");
+let VueLoaderPlugin = require("vue-loader/lib/plugin");
+let HtmlWebpackPlugin = require("html-webpack-plugin");
+let BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "./dist"),
+    filename: "bundle.js"
     // filename: '[name].[hash].bundle.js',
   },
   optimization: {
@@ -21,53 +21,51 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: "vue-loader"
       },
       {
         test: /\.js$/,
         // JS in Vue script tags run when in node_modules https://vue-loader.vuejs.org/guide/pre-processors.html#excluding-node-modules
         exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
-        use: [
-          'babel-loader',
-        ]
+        use: ["babel-loader"]
       },
       // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
       {
-        type: 'javascript/auto',
+        type: "javascript/auto",
         test: /\.json$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[name].[ext]',
-          outputPath: './assets'
+          name: "[name].[ext]",
+          outputPath: "./assets"
         }
       },
       {
         test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[name].[ext]',
-          outputPath: './assets'
+          name: "[name].[ext]",
+          outputPath: "./assets"
         }
       },
       {
         test: /\.svg$/,
-        use: ['vue-svg-icon-loader']
+        use: ["vue-svg-icon-loader"]
       }
     ]
   },
   resolve: {
-    extensions: ['.vue', '.js'],
+    extensions: [".vue", ".js"],
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      "@": path.resolve(__dirname, "src")
     }
   },
   plugins: [
     new VueLoaderPlugin(),
     // new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
     new HtmlWebpackPlugin({
-      title: 'A Periodic Table',
-      filename: 'index.html',
-      template: './index.html'
+      title: "A Periodic Table",
+      filename: "index.html",
+      template: "./index.html"
     })
   ]
 };

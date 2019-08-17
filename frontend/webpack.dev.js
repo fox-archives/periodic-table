@@ -1,38 +1,39 @@
-let webpack = require('webpack');
-let FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-let DashboardPlugin = require('webpack-dashboard/plugin');
+let webpack = require("webpack");
+let FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
+let DashboardPlugin = require("webpack-dashboard/plugin");
 
-let merge = require('webpack-merge');
-let common = require('./webpack.common.js');
+let merge = require("webpack-merge");
+let common = require("./webpack.common.js");
 
 module.exports = merge.smart(common, {
-  mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
+  mode: "development",
+  devtool: "cheap-module-eval-source-map",
   output: {
-    publicPath: '/'
+    publicPath: "/"
   },
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: [
-          'vue-style-loader',
-          'css-loader',
-          'postcss-loader',
+          "vue-style-loader",
+          "css-loader",
+          "postcss-loader",
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
-              implementation: require('sass')
+              implementation: require("sass")
+            }
           }
-        }]
+        ]
       },
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
-          'css-loader',
+          "vue-style-loader",
+          "css-loader",
           {
-            loader: 'postcss-loader'
+            loader: "postcss-loader"
           }
         ]
       }
@@ -47,18 +48,18 @@ module.exports = merge.smart(common, {
   devServer: {
     open: false,
     hot: true,
-    host: 'localhost',
+    host: "localhost",
     port: 8080,
     compress: true,
     historyApiFallback: true,
     quiet: true,
 
     proxy: {
-      '/assets': {
-        target: 'http://localhost:3000'
+      "/assets": {
+        target: "http://localhost:3000"
       },
-      '/data': {
-        target: 'http://localhost:3000'
+      "/data": {
+        target: "http://localhost:3000"
       }
     }
   }

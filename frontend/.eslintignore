@@ -1,3 +1,4 @@
 dist/
 node_modules/
-assets/
+frontend/assets/
+backend/public/

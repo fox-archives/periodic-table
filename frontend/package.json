@@ -4,8 +4,8 @@
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
     "dev:dash": "webpack-dashboard -- webpack-dev-server --progress --config webpack.dev.js",
     "prod": "webpack --progress --config webpack.prod.js",
-    "lint": "eslint -c .eslintrc.js './src/**/*.{js,vue}'",
-    "lint:fix": "eslint -c .eslintrc.js './src/**/*.{js,vue}' --fix"
+    "lint": "eslint -c .eslintrc.js *.{js,vue}",
+    "lint:fix": "eslint -c .eslintrc.js *.{js,vue} --fix"
   },
   "dependencies": {
     "axios": "^0.19.0",

@@ -18,10 +18,11 @@ cd periodic-table
 
 Not intended to support Internet Explorer or Opera.
 
-Element   | Edge    | Firefox | Chrome    | Safari   | iOS Safari
-----      | ----    | ------- | -------   | ------   | -----------
-Flexbox   | 12+     | 28+     | 29+, 21+* | 9+, 7+*  | 9.2+, 7.1+*
-Grid      | 16+     | 52+     | 57+       | 10.1+    | 10.3+
-Vue 2.X   | 12+     | 21+     | 23+       | 6+       | 6.1+
+Element   | Edge    | Firefox | Chrome    | Safari    | iOS Safari
+----      | ----    | ------- | -------   | ------    | -----------
+Flexbox   | 12+     | 28+     | 21+*, 29+ | 6.1+*, 9+ | 7*, 9+
+Grid      | 16+     | 52+     | 57+       | 10.1+     | 10.3+
+ES5       | 12+     | 21+     | 23+       | 6+        | 6+
+ES6       | 15+     | 54+     | 51+       | 10+       | 10+
 
 \* Supports with extension -moz, -webkit, etc.
