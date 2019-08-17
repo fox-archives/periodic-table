@@ -7,11 +7,11 @@ $total-rows: (7 * 2) + 5;
 #grid-container-outer {
   position: relative;
   border-radius: $border-radius;
-  transition: createTransitions((box-shadow, background-color));
+  transition: all $transition-time ease-in-out;
 }
 
 #grid-container-outer:hover {
-  transition: createTransitions((box-shadow, background-color));
+  transition: all $transition-time ease-in-out;
 }
 
 #grid-container-loading-view {
@@ -70,7 +70,7 @@ $total-rows: (7 * 2) + 5;
   grid-template-rows: 5% repeat($total-rows, 1fr);
   padding: 10px 10px 10px 10px;
   border-radius: $border-radius;
-  transition: createTransitions((box-shadow, background-color));
+  transition: all $transition-time ease-in-out;
 
   // Contains CSS vars for text sizing
   --primaryTextSize: 0px;
@@ -81,5 +81,5 @@ $total-rows: (7 * 2) + 5;
 // I think this works
 // TODO: Check if this works
 #grid #grid-outer:hover {
-  transition: createTransitions((box-shadow, background-color));
+  transition: all $transition-time ease-in-out;
 }

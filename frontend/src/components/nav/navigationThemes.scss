@@ -30,6 +30,7 @@
   // Color of main nav bar
   .inner, .no-text {
     background-color: $background;
+    transition: all $transition-time ease-in-out;
   }
 
   .inner:hover, .no-text:hover {

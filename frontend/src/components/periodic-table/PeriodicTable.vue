@@ -153,11 +153,14 @@ export default {
     let psPeriodicTable = new PerfectScrollbar("#grid-container");
 
     window.addEventListener("resize", throttle(psPeriodicTable.update, 500));
-    window.addEventListener("resize", debounce(() => {
-      window.requestAnimationFrame(() => {
-        psPeriodicTable.update();
-      })
-    }, 100));
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        window.requestAnimationFrame(() => {
+          psPeriodicTable.update();
+        });
+      }, 100)
+    );
   },
   destroy() {
     // TODO: destroy event listeners
@@ -223,7 +226,7 @@ export default {
       if (this.options.panelLayout === "panel-top") {
         let periodicTableRatio = 0.6;
 
-        if(idGridOuter.height < idGridContainer.height) {
+        if (idGridOuter.height < idGridContainer.height) {
           console.log("apply");
 
           this.periodicTableClass = {
@@ -231,7 +234,7 @@ export default {
           };
           this.periodicTableWidth = {
             "--periodicTableWidth": `${idGridContainer.height /
-            periodicTableRatio}px`
+              periodicTableRatio}px`
           };
           this.$nextTick(() => {
             window.requestAnimationFrame(() => {
@@ -242,7 +245,7 @@ export default {
         }
       }
       this.periodicTableClass = {
-          stretchVertically: false
+        stretchVertically: false
       };
       this.$nextTick(() => {
         window.requestAnimationFrame(() => {
