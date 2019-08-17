@@ -2,7 +2,7 @@
 (* ::Package:: *)
 
 Import["../common-methods.wls"];
-DeleteFile["atomColorsCategory.json"];
+DeleteFile["atomColorsTabProperties.json"];
 
 periodicTable = {};
 
@@ -77,4 +77,4 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["atomColorsCategory.json", periodicTable, "JSON"];
+Export["atomColorsTabProperties.json", periodicTable, "JSON"];

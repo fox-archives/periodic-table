@@ -2,8 +2,8 @@
   "name": "wolfram",
   "type": "module",
   "scripts": {
-    "start": "node --experimental-modules ./transformPropertiesForAtomTabs.js",
-    "test": "ava"
+    "transform": "node --experimental-modules ./transformPropertiesForAtomTabs.js",
+    "test": "ava -v"
   },
   "devDependencies": {
     "ava": "^2.2.0",

@@ -108,13 +108,13 @@ export default {
     switchAtomTabDataWrapper: function(atomTabToSwitchTo) {
       if (atomTabToSwitchTo === "properties") {
         this.switchAtomTabData({
-          atomColorAppearance: "Category",
+          atomColorAppearance: "Properties",
           atomTab: "Properties"
         });
       } else if (atomTabToSwitchTo === "electrons") {
         this.switchAtomTabData({
-          atomColorAppearance: "OrbitalBlock",
-          atomTab: "Isotopes"
+          atomColorAppearance: "Electrons",
+          atomTab: "Electrons"
         });
       } else if (atomTabToSwitchTo === "orbitals") {
         // eslint-disable-next-line

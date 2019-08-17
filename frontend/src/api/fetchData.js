@@ -2,9 +2,9 @@ import axios from "axios";
 
 function initAtomData({ state, dispatch, commit }) {
   Promise.all([
-    axios.get("/data/atomPlacement.json"),
+    axios.get("/data/atomLayoutPlacement.json"),
     axios.get("/data/atomTabAll.json"),
-    axios.get("/data/labelPlacement.json")
+    axios.get("/data/labelLayoutPlacement.json")
   ])
     .then(responses => {
       let atomPlacementsResult = responses[0];
@@ -19,7 +19,7 @@ function initAtomData({ state, dispatch, commit }) {
       // after getting data, display it
       // TODO: fix because it will get 'Properties' data on /electrons etc.
       dispatch("switchAtomTabData", {
-        atomColorAppearance: "Category",
+        atomColorAppearance: "Properties",
         atomTab: "Properties"
       })
         .then(() => {
@@ -38,7 +38,7 @@ function switchAtomTabData({ state }, payload) {
   return new Promise((resolve, reject) => {
     Promise.all([
       // ex. atomColorsCategory, atomColorsOrbitalBlock
-      axios.get(`/data/atomColors${atomColorAppearance}.json`),
+      axios.get(`/data/atomColorsTab${atomColorAppearance}.json`),
 
       // ex. atomTabIsotopes, atomTabProperties
       axios.get(`/data/atomTab${atomTab}.json`)

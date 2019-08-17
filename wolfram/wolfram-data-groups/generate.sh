@@ -29,9 +29,3 @@ echo "START atomic-properties"
 cd atomic-properties
 ./generate.sh
 cd ..
-
-# echo "START nuclear-proeprties"
-# cd nuclear-properties || exit
-# ./generate.sh
-# cd ..
-
