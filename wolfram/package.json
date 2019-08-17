@@ -1,11 +1,13 @@
 {
   "name": "wolfram",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node --experimental-modules ./transformPropertiesForAtomTabs.js",
     "test": "ava"
   },
   "devDependencies": {
     "ava": "^2.2.0",
-    "eslint-plugin-ava": "^7.1.0"
+    "eslint-plugin-ava": "^7.1.0",
+    "nodemon": "^1.19.1"
   }
 }

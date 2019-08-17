@@ -8,7 +8,7 @@ let htmlmin = require('gulp-htmlmin');
 let del = require("del");
 
 async function transferWolfram() {
-  let from = "wolfram/**/*.json";
+  let from = "wolfram/atom-tab-data/*.json";
   let to = "backend/public/data";
   
   del([to + "/**", "!" + to])
