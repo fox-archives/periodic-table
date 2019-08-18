@@ -23,13 +23,13 @@ function initAtomData({ state, dispatch, commit }, payload) {
       });
     })
     .then(() => {
-      commit("updateActiveAtomForce", 0);
+      commit("updateActiveAtom", 0);
     })
     .catch(e => console.error(e));
 }
 
 // executes when we switch a tab (and want all data to update)
-function switchAtomTabData({ state }, payload) {
+function switchAtomTabData({ state, commit }, payload) {
   return new Promise((resolve, reject) => {
     Promise.all([
       // ex. atomColorsCategory, atomColorsOrbitalBlock
@@ -44,6 +44,8 @@ function switchAtomTabData({ state }, payload) {
 
         state.atomColors = atomColorAppearanceResult.data;
         state.atomSidebarData = atomSidebarDataResult.data.data;
+
+        // commit("updateActiveAtom", 1);
 
         state.ready = true;
         resolve();

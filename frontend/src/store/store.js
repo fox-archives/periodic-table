@@ -34,16 +34,16 @@ export default new Vuex.Store({
     // atom colors (color and deafultColor)
     atomColors: [],
 
-    // Data about a clicked element
+    hoveredAtom: {
+      index: 1
+    },
+
     clickedAtom: {
-      // COMMENTED OUT OLD VALUES
       active: false,
 
       // When user clicks, want to make clicked element darker than if it was highlighted
       // This also keeps track of the clicked element (if a user decides to hover over a group or period label, changing all element color
-      index: -1,
-      period: -1,
-      group: -1
+      index: -1
     },
 
     // LABEL
@@ -75,19 +75,6 @@ export default new Vuex.Store({
       // Purpose: To change all properties of active element only when element is on 'clicked' mode
       // @param #int 'index':
       //   (req)  Index of element, where atomActiveSimpleData properties will get info from
-      if (state.clickedAtom.active === false) {
-        // TODO: Make less messy
-        state.atomActiveSimpleData = state.atomSimpleData[index];
-        state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
-        state.atomActiveSidebarData = state.atomSidebarData[index];
-      }
-    },
-    // Only call this when user clicks on element (element update is locked) and user clicks on another element
-    // Purpose: To change all properties of active element, in any case
-    // @param #int 'index':
-    //   (req)  Index of element, where atomActiveSimpleData properties will get info from
-    updateActiveAtomForce: function(state, index) {
-      // TODO: Make less messy
       state.atomActiveSimpleData = state.atomSimpleData[index];
       state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
       state.atomActiveSidebarData = state.atomSidebarData[index];
@@ -124,20 +111,25 @@ export default new Vuex.Store({
       }
     },
 
+    setHoveredAtom: function(state, newIndex) {
+      state.hoveredAtom.index = newIndex;
+    },
+
     // Purpose: Change the properties of the clicked element, or the element that was clicked on
     // @param #object 'payload' contains properties:
     //   (opt) .active #boolean If an element has been clicked, or a click was activated
     //   (opt) .index #int Integer of the clicked element (placement in the atomPlacements array)
-    //   (opt) .period #int Period number of the clicked element (actual period, does not start at 0)
-    //   (opt) .group #int Group number of the clicked element (actual group, does not start at 0)
+    //   (opt) .period #int
+    //   (opt) .group #int
     setClickedAtom: function(state, newProperties) {
-      // Payload contains an object containing properties
-      // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
-      for (let property in newProperties) {
-        // eslint-disable-next-line
-        if (state.clickedAtom.hasOwnProperty(property)) {
-          state.clickedAtom[property] = newProperties[property];
-        }
+      let { active, index } = newProperties;
+      let { period, group } = newProperties;
+
+      if(period && group) {
+        state.clickedAtom = { active, index, group, period }
+      }
+      else {
+        state.clickedAtom = { active, index };
       }
     },
 

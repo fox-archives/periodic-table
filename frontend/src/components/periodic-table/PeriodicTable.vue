@@ -24,20 +24,8 @@
               atomPlacement.group,
               atomColors[index].color
             ]"
-            @mouseover="
-              [
-                setElementPrefix(index, 'dark-'),
-                setLabelColor(index, 'true'),
-                updateActiveAtom(index)
-              ]
-            "
-            @mouseleave="
-              [
-                setElementPrefix(index, ''),
-                setLabelColor(index, 'false'),
-                updateActiveAtom(index)
-              ]
-            "
+            @mouseover="updateAtom({ index, hoverStatus: 'hoverOver' })"
+            @mouseleave="updateAtom({ index, hoverStatus: 'hoverLeave' })"
             @click="[updateClickedAtom(index)]"
           >
             <div v-cloak class="element-inner">
@@ -110,9 +98,9 @@ import { throttle, debounce } from "lodash";
 import {
   highlightLabelSection,
   unhighlightLabelSection
-} from "@/components/periodic-table/utils/hoverLabelsHandlers";
-import { setLabelColor } from "@/components/periodic-table/utils/hoverAtomHandlers";
-import { updateClickedAtom } from "@/components/periodic-table/utils/clickAtomHandlers";
+} from "@/components/periodic-table/utils/labelHoverHandlers";
+import { setLabelColor } from "@/components/periodic-table/utils/atomHoverHandlers";
+import { updateClickedAtom } from "@/components/periodic-table/utils/atomClickHandlers";
 
 import PeriodicTableLoading from "@/components/periodic-table/PeriodicTableLoading";
 
@@ -177,6 +165,7 @@ export default {
 
       "ready",
 
+      "hoveredAtom",
       "clickedAtom",
       "options"
     ])
@@ -184,8 +173,8 @@ export default {
   methods: {
     ...mapMutations([
       "updateActiveAtom",
-      "updateActiveAtomForce",
       "clearLabelExcept",
+      "setHoveredAtom",
       "setClickedAtom",
 
       "setColorOfAllButOnePeriod",
@@ -205,21 +194,43 @@ export default {
     setLabelColor,
     updateClickedAtom,
 
+    updateAtom: function(payload) {
+      let { index, hoverStatus } = payload;
+      this.setHoveredAtom(index);
+
+      if(hoverStatus === "hoverOver") {
+        if (this.clickedAtom.index !== index) {
+          this.setColorOfOneAtom({
+            prefix: "dark-",
+            i: index
+          });
+        }
+
+        if(this.clickedAtom.active === false) {
+          this.setLabelColor(index, "true");
+        }
+
+        this.updateActiveAtom(index);
+      }
+      else if(hoverStatus === "hoverLeave")  {
+        if (this.clickedAtom.index !== index) {
+          this.setColorOfOneAtom({
+            prefix: "",
+            i: index
+          });
+        }
+
+        if(this.clickedAtom.active === false) {
+          this.setLabelColor(index, "false");
+        }
+
+        this.updateActiveAtom(index);
+      }
+    },
+
     // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
     labelClassToNone: function(labelNumber) {
       return labelNumber.substring(2);
-    },
-
-    setElementPrefix: function(index, prefix) {
-      // This if statement is important
-      // When user clicks on an element and hovers over a different element, the original element that was clicked
-      // on still has prefix 'superdark'
-      if (this.clickedAtom.index !== index) {
-        this.setColorOfOneAtom({
-          prefix: prefix,
-          i: index
-        });
-      }
     },
 
     formatPage: function() {
@@ -236,41 +247,37 @@ export default {
             "--periodicTableWidth": `${idGridContainer.height /
               periodicTableRatio}px`
           };
-          this.$nextTick(() => {
-            window.requestAnimationFrame(() => {
-              this.updateAtomFontSizes();
-            });
-          });
+          this.updateAtomFontSizes();
           return;
         }
       }
       this.periodicTableClass = {
         stretchVertically: false
       };
-      this.$nextTick(() => {
-        window.requestAnimationFrame(() => {
-          this.updateAtomFontSizes();
-        });
-      });
+      this.updateAtomFontSizes();
     },
 
     // This changes the CSS variable to size the element text
     // Recall the CSS variables are declared in periodicTable.scss
     updateAtomFontSizes: function() {
-      let grid = document.getElementById("grid");
+      this.$nextTick(() => {
+        window.requestAnimationFrame(() => {
+          let grid = document.getElementById("grid");
 
-      let elementWidth = grid.childNodes[0].clientWidth;
-      let primaryFontSize = `${elementWidth * 0.32}px`;
-      let secondaryFontSize = `${elementWidth * 0.2}px`;
-      let labelFontSize = `${elementWidth * 0.3}px`;
+          let elementWidth = grid.childNodes[0].clientWidth;
+          let primaryFontSize = `${elementWidth * 0.32}px`;
+          let secondaryFontSize = `${elementWidth * 0.2}px`;
+          let labelFontSize = `${elementWidth * 0.3}px`;
 
-      // Setting CSS Variables for All Elements
-      // Variables stores in grid
-      this.atomTextSizes = {
-        "--primaryTextSize": primaryFontSize,
-        "--secondaryTextSize": secondaryFontSize,
-        "--labelTextSize": labelFontSize
-      };
+          // Setting CSS Variables for All Elements
+          // Variables stores in grid
+          this.atomTextSizes = {
+            "--primaryTextSize": primaryFontSize,
+            "--secondaryTextSize": secondaryFontSize,
+            "--labelTextSize": labelFontSize
+          };
+        });
+      });
     }
   }
 };
