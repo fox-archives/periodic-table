@@ -156,7 +156,7 @@ export default {
     // TODO: destroy event listeners
   },
   computed: {
-    ...mapState([
+    ...mapState("mainAtomTable", [
       "atomSnippets",
       "atomPlacements",
       "atomColors",
@@ -171,7 +171,7 @@ export default {
     ])
   },
   methods: {
-    ...mapMutations([
+    ...mapMutations("mainAtomTable", [
       "updateActiveAtom",
       "clearLabelExcept",
 
@@ -187,7 +187,7 @@ export default {
       "setClickedAtom",
       "setOptions"
     ]),
-    ...mapActions(["initAtomData"]),
+    ...mapActions("mainAtomTable", ["initAtomData"]),
 
     // imported from periodic-table-specific utils
     highlightLabelSection,

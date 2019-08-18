@@ -101,10 +101,10 @@ export default {
     MenuIcon: Menu
   },
   computed: {
-    ...mapState(["options"])
+    ...mapState("mainAtomTable", ["options"])
   },
   methods: {
-    ...mapActions(["switchAtomTabData"]),
+    ...mapActions("mainAtomTable", ["switchAtomTabData"]),
     switchAtomTabDataWrapper: function(atomTabToSwitchTo) {
       if (atomTabToSwitchTo === "properties") {
         this.switchAtomTabData({

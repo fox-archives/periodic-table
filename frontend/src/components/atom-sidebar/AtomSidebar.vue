@@ -29,7 +29,7 @@ export default {
     simplebar
   },
   computed: {
-    ...mapState(["atomTraitsActive", "ready"]),
+    ...mapState("mainAtomTable", ["atomTraitsActive", "ready"]),
     atomTraitsActiveModified() {
       return Object.entries(this.atomTraitsActive);
     }

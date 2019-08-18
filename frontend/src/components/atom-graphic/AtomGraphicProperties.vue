@@ -19,7 +19,7 @@ import { mapState } from "vuex";
 export default {
   name: "AtomGraphicProperties",
   computed: {
-    ...mapState(["atomSnippetActive"])
+    ...mapState("mainAtomTable", ["atomSnippetActive"])
   }
 };
 </script>

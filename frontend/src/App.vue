@@ -17,7 +17,7 @@ export default {
     foot: Foot
   },
   computed: {
-    ...mapState(["options"])
+    ...mapState("mainAtomTable", ["options"])
   }
 };
 </script>

@@ -11,7 +11,7 @@ import { mapState } from "vuex";
 export default {
   name: "AtomInfoPanel",
   computed: {
-    ...mapState(["options"])
+    ...mapState("mainAtomTable", ["options"])
   }
 };
 </script>
