@@ -1,7 +1,6 @@
 let through = require("through2");
 let PluginError = require("plugin-error");
 
-
 module.exports = function removeDebug() {
   return through.obj((file, enc, cb) => {
     let content = String(file.contents);
@@ -11,7 +10,7 @@ module.exports = function removeDebug() {
       json = JSON.parse(content);
     }
     catch(e) {
-      return cb(new PluginError("remove-debug-function", "could not parse JSON file", {
+      return cb(new PluginError("helper.gulpfile.js", "could not parse JSON file", {
         fileName: file.path,
         showStack: true
       }));
@@ -34,7 +33,6 @@ module.exports = function removeDebug() {
     });
 
     file.contents = new Buffer.from(JSON.stringify(json, null, 2));
-
     return cb(null, file);
   });
 };

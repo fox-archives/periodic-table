@@ -6,6 +6,7 @@
     "dev": "webpack-dev-server --progress --config webpack.dev.js",
     "dev:dash": "webpack-dashboard -- webpack-dev-server --progress --config webpack.dev.js",
     "prod": "webpack --progress --config webpack.prod.js",
+    "lint:fix": "yarn lint:js:fix && yarn lint:css:fix",
     "lint:js": "eslint -c .eslintrc.js *.{js,vue}",
     "lint:js:fix": "eslint -c .eslintrc.js *.{js,vue} --fix",
     "lint:css": "stylelint --config .stylelintrc.js **/*.scss",
