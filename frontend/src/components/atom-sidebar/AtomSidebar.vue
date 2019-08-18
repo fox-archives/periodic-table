@@ -4,7 +4,7 @@
       <simplebar class="simplebar" data-simplebar-auto-hide="false">
         <div class="atom-info-inner">
           <div
-            v-for="atomTabDataMember in atomActiveSidebarDataModified"
+            v-for="atomTabDataMember in atomTraitsActiveModified"
             :key="atomTabDataMember[0]"
             class="atom-stat"
           >
@@ -29,9 +29,9 @@ export default {
     simplebar
   },
   computed: {
-    ...mapState(["atomActiveSidebarData", "ready"]),
-    atomActiveSidebarDataModified() {
-      return Object.entries(this.atomActiveSidebarData);
+    ...mapState(["atomTraitsActive", "ready"]),
+    atomTraitsActiveModified() {
+      return Object.entries(this.atomTraitsActive);
     }
   }
 };

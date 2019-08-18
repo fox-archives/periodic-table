@@ -12,7 +12,7 @@ function initAtomData({ state, dispatch, commit }, payload) {
       let labelPlacementsResult = responses[2];
 
       state.atomPlacements = atomPlacementsResult.data;
-      state.atomSimpleData = atomTabAllResult.data;
+      state.atomSnippets = atomTabAllResult.data;
       state.atomLabelPeriods = labelPlacementsResult.data.labelPeriods;
       state.atomLabelGroups = labelPlacementsResult.data.labelGroups;
 
@@ -40,10 +40,10 @@ function switchAtomTabData({ state, commit }, payload) {
     ])
       .then(responses => {
         let atomColorAppearanceResult = responses[0];
-        let atomSidebarDataResult = responses[1];
+        let atomTraitsResult = responses[1];
 
         state.atomColors = atomColorAppearanceResult.data;
-        state.atomSidebarData = atomSidebarDataResult.data.data;
+        state.atomTraits = atomTraitsResult.data.data;
 
         // commit("updateActiveAtom", 1);
 

@@ -30,16 +30,16 @@
           >
             <div v-cloak class="element-inner">
               <p class="secondary-text test">
-                {{ atomSimpleData[index].atomNumber }}
+                {{ atomSnippets[index].atomNumber }}
               </p>
               <p class="primary-text">
-                {{ atomSimpleData[index].atomAbbreviation }}
+                {{ atomSnippets[index].atomAbbreviation }}
               </p>
               <p class="secondary-text">
-                {{ atomSimpleData[index].atomName }}
+                {{ atomSnippets[index].atomName }}
               </p>
               <p class="secondary-text">
-                {{ atomSimpleData[index].atomMass }}
+                {{ atomSnippets[index].atomMass }}
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default {
   },
   computed: {
     ...mapState([
-      "atomSimpleData",
+      "atomSnippets",
       "atomPlacements",
       "atomColors",
       "atomLabelPeriods",
@@ -174,8 +174,7 @@ export default {
     ...mapMutations([
       "updateActiveAtom",
       "clearLabelExcept",
-      "setHoveredAtom",
-      "setClickedAtom",
+
 
       "setColorOfAllButOnePeriod",
       "setColorOfAllButOneGroup",
@@ -184,6 +183,8 @@ export default {
       "setColorOfOneGroup",
       "setColorOfOneAtom",
 
+      "setHoveredAtom",
+      "setClickedAtom",
       "setOptions"
     ]),
     ...mapActions(["initAtomData"]),
@@ -193,6 +194,11 @@ export default {
     unhighlightLabelSection,
     setLabelColor,
     updateClickedAtom,
+
+    // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
+    labelClassToNone: function(labelNumber) {
+      return labelNumber.substring(2);
+    },
 
     updateAtom: function(payload) {
       let { index, hoverStatus } = payload;
@@ -228,12 +234,30 @@ export default {
       }
     },
 
-    // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
-    labelClassToNone: function(labelNumber) {
-      return labelNumber.substring(2);
-    },
-
     formatPage: function() {
+      // This changes the CSS variable to size the element text
+      // Recall the CSS variables are declared in periodicTable.scss
+      let updateAtomFontSizes = () => {
+        this.$nextTick(() => {
+          window.requestAnimationFrame(() => {
+            let grid = document.getElementById("grid");
+
+            let elementWidth = grid.childNodes[0].clientWidth;
+            let primaryFontSize = `${elementWidth * 0.32}px`;
+            let secondaryFontSize = `${elementWidth * 0.2}px`;
+            let labelFontSize = `${elementWidth * 0.3}px`;
+
+            // Setting CSS Variables for All Elements
+            // Variables stores in grid
+            this.atomTextSizes = {
+              "--primaryTextSize": primaryFontSize,
+              "--secondaryTextSize": secondaryFontSize,
+              "--labelTextSize": labelFontSize
+            };
+          });
+        });
+      };
+
       let idGridOuter = this.$refs.idGridOuter.getBoundingClientRect();
       let idGridContainer = this.$refs.idGridContainer.getBoundingClientRect();
       if (this.options.panelLayout === "panel-top") {
@@ -247,37 +271,14 @@ export default {
             "--periodicTableWidth": `${idGridContainer.height /
               periodicTableRatio}px`
           };
-          this.updateAtomFontSizes();
+          updateAtomFontSizes();
           return;
         }
       }
       this.periodicTableClass = {
         stretchVertically: false
       };
-      this.updateAtomFontSizes();
-    },
-
-    // This changes the CSS variable to size the element text
-    // Recall the CSS variables are declared in periodicTable.scss
-    updateAtomFontSizes: function() {
-      this.$nextTick(() => {
-        window.requestAnimationFrame(() => {
-          let grid = document.getElementById("grid");
-
-          let elementWidth = grid.childNodes[0].clientWidth;
-          let primaryFontSize = `${elementWidth * 0.32}px`;
-          let secondaryFontSize = `${elementWidth * 0.2}px`;
-          let labelFontSize = `${elementWidth * 0.3}px`;
-
-          // Setting CSS Variables for All Elements
-          // Variables stores in grid
-          this.atomTextSizes = {
-            "--primaryTextSize": primaryFontSize,
-            "--secondaryTextSize": secondaryFontSize,
-            "--labelTextSize": labelFontSize
-          };
-        });
-      });
+      updateAtomFontSizes();
     }
   }
 };

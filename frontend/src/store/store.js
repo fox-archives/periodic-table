@@ -22,12 +22,12 @@ export default new Vuex.Store({
 
     // ATOM
     // shared atom data across all tabs (from atomTabAll.json)
-    atomSimpleData: [],
-    atomActiveSimpleData: {},
+    atomSnippets: [],
+    atomSnippetActive: {},
 
     // atom sidebar data (dependent on the selected tab) for *all* elements
-    atomSidebarData: [],
-    atomActiveSidebarData: {},
+    atomTraits: [],
+    atomTraitsActive: {},
 
     // atom placement data (in the css grid, and in the periodic table itself)
     atomPlacements: [],
@@ -74,10 +74,10 @@ export default new Vuex.Store({
       // Update Store variables with Element information according to index
       // Purpose: To change all properties of active element only when element is on 'clicked' mode
       // @param #int 'index':
-      //   (req)  Index of element, where atomActiveSimpleData properties will get info from
-      state.atomActiveSimpleData = state.atomSimpleData[index];
-      state.atomActiveSimpleData.color = state.atomColors[index].defaultColor;
-      state.atomActiveSidebarData = state.atomSidebarData[index];
+      //   (req)  Index of element, where atomSnippetActive properties will get info from
+      state.atomSnippetActive = state.atomSnippets[index];
+      state.atomSnippetActive.color = state.atomColors[index].defaultColor;
+      state.atomTraitsActive = state.atomTraits[index];
     },
 
     // Purpose: Recolor all period and group labels with the exception of one period or group
@@ -93,20 +93,6 @@ export default new Vuex.Store({
       for (let i = 0; i < state.atomLabelGroups.length; i++) {
         if (i !== payload.groupExclude) {
           state.atomLabelGroups[i].color = "light";
-        }
-      }
-    },
-
-    // Purpose: Change the properties of the active element, or the element that was clicked on
-    // @param #object 'payload' contains properties:
-    //   Each possible property are the same properties as this.atomActiveSimpleData
-    setActiveAtom: function(state, newProperties) {
-      // Payload contains an object containing properties
-      // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
-      for (let property in newProperties) {
-        // eslint-disable-next-line
-        if (state.atomActiveSimpleData.hasOwnProperty(property)) {
-          state.atomActiveSimpleData[property] = newProperties[property];
         }
       }
     },
@@ -140,7 +126,7 @@ export default new Vuex.Store({
     //   (opt) Any other properties of options
     setOptions: function(state, newProperties) {
       // Payload contains an object containing properties
-      // These properties should replace the properties the atomActiveSimpleData object (from the vuex state) has
+      // These properties should replace the properties the atomSnippetActive object (from the vuex state) has
       for (let property in newProperties) {
         // eslint-disable-next-line
         if (state.options.hasOwnProperty(property)) {
