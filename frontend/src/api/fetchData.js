@@ -1,5 +1,6 @@
 import axios from "axios";
 import deepFreeze from "deep-freeze-strict";
+import { setColorOfOneAtom } from "@/store/modules/mainAtomTable/atomHighlighting";
 
 function initAtomData({ state, dispatch, commit }, payload) {
   Promise.all([
@@ -50,6 +51,11 @@ function switchAtomTabData({ state, commit }, payload) {
         }
         else {
           commit("updateActiveAtom", state.clickedAtom.index);
+
+          commit("setColorOfOneAtom", {
+            prefix: "supdark-",
+            i: state.clickedAtom.index
+          });
         }
 
         state.ready = true;
