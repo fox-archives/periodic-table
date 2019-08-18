@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import mainAtomTable from "./modules/table";
+import mainAtomTable from "./modules/mainAtomTable";
 
 Vue.use(Vuex);
 

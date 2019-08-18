@@ -6,7 +6,7 @@ import {
   setColorOfAllButOnePeriod,
   setColorOfAllButOneGroup,
   setColorOfAllAtoms
-} from "@/store/modules/table/atomHighlighting";
+} from "@/store/modules/mainAtomTable/atomHighlighting";
 import { initAtomData, switchAtomTabData } from "@/api/fetchData";
 
 export default {
@@ -18,7 +18,7 @@ export default {
     ready: false,
 
     // ATOM
-    // shared atom data across all tabs (from atomTabAll.json)
+    // shared atom data across all tabs (from atomSnippets.json)
     atomSnippets: [],
     atomSnippetActive: {},
 

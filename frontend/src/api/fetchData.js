@@ -1,18 +1,18 @@
 import axios from "axios";
+import deepFreeze from "deep-freeze-strict";
 
 function initAtomData({ state, dispatch, commit }, payload) {
   Promise.all([
     axios.get("/data/atomLayoutPlacement.json"),
-    axios.get("/data/atomTabAll.json"),
+    axios.get("/data/atomSnippets.json"),
     axios.get("/data/labelLayoutPlacement.json")
   ])
     .then(responses => {
       let atomPlacementsResult = responses[0];
-      let atomTabAllResult = responses[1];
+      let atomSnippetResult = responses[1];
       let labelPlacementsResult = responses[2];
-
       state.atomPlacements = atomPlacementsResult.data;
-      state.atomSnippets = atomTabAllResult.data;
+      state.atomSnippets = atomSnippetResult.data;
       state.atomLabelPeriods = labelPlacementsResult.data.labelPeriods;
       state.atomLabelGroups = labelPlacementsResult.data.labelGroups;
 
@@ -45,7 +45,12 @@ function switchAtomTabData({ state, commit }, payload) {
         state.atomColors = atomColorAppearanceResult.data;
         state.atomTraits = atomTraitsResult.data.data;
 
-        // commit("updateActiveAtom", 1);
+        if(state.clickedAtom.index === -1) {
+          commit("updateActiveAtom", state.hoveredAtom.index);
+        }
+        else {
+          commit("updateActiveAtom", state.clickedAtom.index);
+        }
 
         state.ready = true;
         resolve();

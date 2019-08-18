@@ -39,7 +39,7 @@
                 {{ atomSnippets[index].atomName }}
               </p>
               <p class="secondary-text">
-                {{ atomSnippets[index].atomMass }}
+                {{ atomSnippets[index].atomDynamicProperty }}
               </p>
             </div>
           </div>

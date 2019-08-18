@@ -10,7 +10,7 @@ let del = require("del");
 let removeDebug = require("./helper.gulpfile");
 
 async function transferWolfram() {
-  let from = ["wolfram/atom-tab-data/*.json", "wolfram/atom-layout-data/*.json"];
+  let from = ["wolfram/atom-property-data/*.json", "wolfram/atom-layout-data/*.json"];
   let to = "backend/public/data";
   
   del([to + "/**", "!" + to])
