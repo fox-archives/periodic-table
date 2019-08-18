@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function initAtomData({ state, dispatch, commit }) {
+function initAtomData({ state, dispatch, commit }, payload) {
   Promise.all([
     axios.get("/data/atomLayoutPlacement.json"),
     axios.get("/data/atomTabAll.json"),
@@ -16,32 +16,27 @@ function initAtomData({ state, dispatch, commit }) {
       state.atomLabelPeriods = labelPlacementsResult.data.labelPeriods;
       state.atomLabelGroups = labelPlacementsResult.data.labelGroups;
 
-      // after getting data, display it
-      // TODO: fix because it will get 'Properties' data on /electrons etc.
-      dispatch("switchAtomTabData", {
-        atomColorAppearance: "Properties",
-        atomTab: "Properties"
-      })
-        .then(() => {
-          commit("updateActiveAtomForce", 0);
-        })
-        .catch(e => console.error(e));
+      let { currentRoute } = payload;
+      return dispatch("switchAtomTabData", {
+        atomColorAppearance: currentRoute.name,
+        atomTab: currentRoute.name
+      });
+    })
+    .then(() => {
+      commit("updateActiveAtomForce", 0);
     })
     .catch(e => console.error(e));
 }
 
 // executes when we switch a tab (and want all data to update)
 function switchAtomTabData({ state }, payload) {
-  let atomColorAppearance = payload.atomColorAppearance;
-  let atomTab = payload.atomTab;
-
   return new Promise((resolve, reject) => {
     Promise.all([
       // ex. atomColorsCategory, atomColorsOrbitalBlock
-      axios.get(`/data/atomColorsTab${atomColorAppearance}.json`),
+      axios.get(`/data/atomColorsTab${payload.atomColorAppearance}.json`),
 
       // ex. atomTabIsotopes, atomTabProperties
-      axios.get(`/data/atomTab${atomTab}.json`)
+      axios.get(`/data/atomTab${payload.atomTab}.json`)
     ])
       .then(responses => {
         let atomColorAppearanceResult = responses[0];

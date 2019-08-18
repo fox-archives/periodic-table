@@ -147,7 +147,9 @@ export default {
     }
   },
   created() {
-    this.initAtomData();
+    this.initAtomData({
+      currentRoute: this.$route
+    });
   },
   mounted() {
     let psPeriodicTable = new PerfectScrollbar("#grid-container");
@@ -227,8 +229,6 @@ export default {
         let periodicTableRatio = 0.6;
 
         if (idGridOuter.height < idGridContainer.height) {
-          console.log("apply");
-
           this.periodicTableClass = {
             stretchVertically: true
           };

@@ -20,6 +20,7 @@ const myRoutes = [
     children: [
       {
         path: "",
+        name: "Properties",
         components: {
           "atom-info": atomInfoProperties,
           "atom-graphic": atomGraphicProperties
@@ -33,6 +34,7 @@ const myRoutes = [
     children: [
       {
         path: "",
+        name: "Electrons",
         components: {
           "atom-info": atomInfoProperties,
           "atom-graphic": atomGraphicProperties
@@ -73,10 +75,6 @@ const myRoutes = [
   {
     path: "/trivia",
     component: Trivia
-  },
-  {
-    path: "/search",
-    component: Body
   }
 ];
 
