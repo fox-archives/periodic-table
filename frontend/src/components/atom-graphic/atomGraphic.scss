@@ -34,15 +34,20 @@
 }
 
 #visual-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: $border-radius;
   transition: createtransitions((box-shadow, background-color));
 
   --elementNameTextSize: 0;
+}
+
+#visual-inner-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 #visual-inner:hover {

@@ -1,13 +1,15 @@
 <template>
   <div>
     <div id="visual-inner">
-      <div id="icon">
-        <div id="icon-inner" :class="atomSnippetActive.color">
-          <p>{{ atomSnippetActive.atomAbbreviation }}</p>
+      <div id="visual-inner-inner" v-if="ready">
+        <div id="icon">
+          <div id="icon-inner" :class="atomSnippetActive.color">
+            <p>{{ atomSnippetActive.atomAbbreviation }}</p>
+          </div>
         </div>
-      </div>
-      <div id="text">
-        <p>{{ atomSnippetActive.atomName }}</p>
+        <div id="text">
+          <p>{{ atomSnippetActive.atomName }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -19,7 +21,7 @@ import { mapState } from "vuex";
 export default {
   name: "AtomGraphicProperties",
   computed: {
-    ...mapState("mainAtomTable", ["atomSnippetActive"])
+    ...mapState("mainAtomTable", ["atomSnippetActive", "ready"])
   }
 };
 </script>
