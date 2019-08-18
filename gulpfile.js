@@ -7,6 +7,8 @@ let htmlmin = require('gulp-htmlmin');
 
 let del = require("del");
 
+let removeDebug = require("./helper.gulpfile");
+
 async function transferWolfram() {
   let from = ["wolfram/atom-tab-data/*.json", "wolfram/atom-layout-data/*.json"];
   let to = "backend/public/data";
@@ -15,6 +17,7 @@ async function transferWolfram() {
     .then(() => {
       src(from)
         .pipe(flatten())
+        .pipe(removeDebug())
         .pipe(jsonminify())
         .pipe(dest(to));
     })
