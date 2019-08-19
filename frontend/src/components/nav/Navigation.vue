@@ -10,42 +10,42 @@
       </li>
 
       <router-link tag="li" to="/properties">
-        <div class="inner" @click="switchAtomTabDataWrapper('properties')">
+        <div class="inner" @click="switchAtomTabWrapper('properties')">
           <list-icon class="icon feather-icon" />
           <h2>Properties</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/electrons">
-        <div class="inner" @click="switchAtomTabDataWrapper('electrons')">
+        <div class="inner" @click="switchAtomTabWrapper('electrons')">
           <electrons class="icon custom-icon" />
           <h2>Electrons</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/orbitals">
-        <div class="inner" @click="switchAtomTabDataWrapper('orbitals')">
+        <div class="inner" @click="switchAtomTabWrapper('orbitals')">
           <orbitals class="icon custom-icon" />
           <h2>Orbitals</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/isotopes">
-        <div class="inner" @click="switchAtomTabDataWrapper('isotopes')">
+        <div class="inner" @click="switchAtomTabWrapper('isotopes')">
           <isotopes class="icon custom-icon" />
           <h2>Isotopes</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/explore">
-        <div class="inner" @click="switchAtomTabDataWrapper('explore')">
+        <div class="inner" @click="switchAtomTabWrapper('explore')">
           <map-icon class="icon feather-icon" />
           <h2>Explore</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/trivia">
-        <div class="inner" @click="switchAtomTabDataWrapper('trivia')">
+        <div class="inner" @click="switchAtomTabWrapper('trivia')">
           <check-icon class="icon feather-icon" />
           <h2>Trivia</h2>
         </div>
@@ -104,18 +104,12 @@ export default {
     ...mapState("mainAtomTable", ["options"])
   },
   methods: {
-    ...mapActions("mainAtomTable", ["switchAtomTabData"]),
-    switchAtomTabDataWrapper: function(atomTabToSwitchTo) {
+    ...mapActions("mainAtomTable", ["switchAtomTab"]),
+    switchAtomTabWrapper: function(atomTabToSwitchTo) {
       if (atomTabToSwitchTo === "properties") {
-        this.switchAtomTabData({
-          atomColorAppearance: "Properties",
-          atomTab: "Properties"
-        });
+        this.switchAtomTab({ to: "Properties" });
       } else if (atomTabToSwitchTo === "electrons") {
-        this.switchAtomTabData({
-          atomColorAppearance: "Electrons",
-          atomTab: "Electrons"
-        });
+        this.switchAtomTab({ to: "Electrons" });
       } else if (atomTabToSwitchTo === "orbitals") {
         // eslint-disable-next-line
       } else if (atomTabToSwitchTo === 'isotopes') {

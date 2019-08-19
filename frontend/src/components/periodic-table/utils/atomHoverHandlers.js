@@ -22,11 +22,11 @@ function setLabelColor(index, isMouseOver) {
   if (period > 0) {
     // Darken the labels if the mouse is entering an element
     if (isMouseOver === "true") {
-      this.atomLabelPeriods[period - 1].color = "dark";
+      this.labelPeriodPlacement[period - 1].color = "dark";
     }
     // Lighten the labels if the mouse is leaving an element
     else if (isMouseOver === "false") {
-      this.atomLabelPeriods[period - 1].color = "light";
+      this.labelPeriodPlacement[period - 1].color = "light";
     } else {
       console.warn(
         "Unexpected parameter for isMouseOver passed through setLabelColor."
@@ -38,11 +38,11 @@ function setLabelColor(index, isMouseOver) {
   if (group > 0) {
     // Darken the labels if the mouse is entering an element
     if (isMouseOver === "true") {
-      this.atomLabelGroups[group - 1].color = "dark";
+      this.labelGroupPlacement[group - 1].color = "dark";
     }
     // Lighten the labels if the moues is leaving an element
     else if (isMouseOver === "false") {
-      this.atomLabelGroups[group - 1].color = "light";
+      this.labelGroupPlacement[group - 1].color = "light";
     } else {
       console.warn(
         "Unexpected parameter for isMouseOver passed through setLabelColor."

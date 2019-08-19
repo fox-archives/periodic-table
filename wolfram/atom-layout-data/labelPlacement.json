@@ -1,5 +1,5 @@
 {
-  "labelPeriods": [
+  "period": [
     { "display": 1,   "column": "cc-1",   "row": "rr-2",  "color": "light", "name": "Period 1" },
     { "display": 2,   "column": "cc-1",   "row": "rr-4",  "color": "light", "name": "Period 2" },
     { "display": 3,   "column": "cc-1",   "row": "rr-6",  "color": "light", "name": "Period 3" },
@@ -8,7 +8,7 @@
     { "display": 6,   "column": "cc-1",   "row": "rr-12", "color": "light", "name": "Period 6" },
     { "display": 7,   "column": "cc-1",   "row": "rr-14", "color": "light", "name": "Period 7" }
   ],
-  "labelGroups": [
+  "group": [
     { "display": 1,    "column": "cc-2",   "row": "rr-1", "color": "light", "name": "Alkali Metals" },
     { "display": 2,    "column": "cc-4",   "row": "rr-1", "color": "light", "name": "Alkaline Earth Metals" },
     { "display": 3,    "column": "cc-6",   "row": "rr-1", "color": "light", "name": "Scandium Family" },

@@ -46,7 +46,7 @@
 
           <!-- PERIOD LABELS -->
           <div
-            v-for="(period, index) in atomLabelPeriods"
+            v-for="(period, index) in labelPeriodPlacement"
             :key="period.row + period.column"
             class="label-period label"
             :class="[period.row, period.column]"
@@ -54,7 +54,7 @@
             <div
               v-cloak
               class="label-period-inner label-inner"
-              :class="atomLabelPeriods[index].color"
+              :class="labelPeriodPlacement[index].color"
               @mouseover="[highlightLabelSection(index, 'period')]"
               @mouseleave="[unhighlightLabelSection(index, 'period')]"
             >
@@ -66,7 +66,7 @@
 
           <!-- GROUP LABELS -->
           <div
-            v-for="(group, index) in atomLabelGroups"
+            v-for="(group, index) in labelGroupPlacement"
             :key="group.row + group.column"
             class="label-group label"
             :class="[group.row, group.column]"
@@ -74,7 +74,7 @@
             <div
               v-cloak
               class="label-group-inner label-inner"
-              :class="atomLabelGroups[index].color"
+              :class="labelGroupPlacement[index].color"
               @mouseover="[highlightLabelSection(index, 'group')]"
               @mouseleave="[unhighlightLabelSection(index, 'group')]"
             >
@@ -135,9 +135,12 @@ export default {
     }
   },
   created() {
-    this.initAtomData({
-      currentRoute: this.$route
-    });
+    this.initAtomTab({
+      currentTab: this.$route
+    })
+      .then(() => {
+        console.log("init done");
+      });
   },
   mounted() {
     let psPeriodicTable = new PerfectScrollbar("#grid-container");
@@ -160,8 +163,8 @@ export default {
       "atomSnippets",
       "atomPlacements",
       "atomColors",
-      "atomLabelPeriods",
-      "atomLabelGroups",
+      "labelPeriodPlacement",
+      "labelGroupPlacement",
 
       "ready",
 
@@ -187,7 +190,7 @@ export default {
       "setClickedAtom",
       "setOptions"
     ]),
-    ...mapActions("mainAtomTable", ["initAtomData"]),
+    ...mapActions("mainAtomTable", ["initAtomTab"]),
 
     // imported from periodic-table-specific utils
     highlightLabelSection,

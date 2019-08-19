@@ -69,10 +69,10 @@ function unhighlightLabelSection(index, type) {
     // We don't want to change color when this.clickedAtom.period / group is 0 that value is for groupless elements (lanth. and act. elements)
     // Nor do we want to change color when this.clickedAtom.period / group is -1, because that occurs when this.clickedAtom.active is false (I think this is already covered, but just a precaution)
     if (this.clickedAtom.period > 0) {
-      this.atomLabelPeriods[this.clickedAtom.period - 1].color = "dark";
+      this.labelPeriodPlacement[this.clickedAtom.period - 1].color = "dark";
     }
     if (this.clickedAtom.group > 0) {
-      this.atomLabelGroups[this.clickedAtom.group - 1].color = "dark";
+      this.labelGroupPlacement[this.clickedAtom.group - 1].color = "dark";
     }
 
     this.setColorOfOneAtom({

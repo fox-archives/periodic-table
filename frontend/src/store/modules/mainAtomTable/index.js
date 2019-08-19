@@ -7,7 +7,7 @@ import {
   setColorOfAllButOneGroup,
   setColorOfAllAtoms
 } from "@/store/modules/mainAtomTable/atomHighlighting";
-import { initAtomData, switchAtomTabData } from "@/api/fetchData";
+import { initAtomTab, switchAtomTab } from "@/api/fetchData";
 
 export default {
   namespaced: true,
@@ -26,10 +26,17 @@ export default {
     atomTraits: [],
     atomTraitsActive: {},
 
-    // atom placement data (in the css grid, and in the periodic table itself)
-    atomPlacements: [],
-    // atom colors (color and deafultColor)
-    atomColors: [],
+    // which parts of the data are ready to be used?
+    atomReady: {
+      atomSnippet: "",
+      atomTraits: "",
+
+      atomPlacements: "",
+      atomColors: "",
+
+      labelGroupPlacement: "",
+      labelPeriodPlacement: ""
+    },
 
     hoveredAtom: {
       index: 1
@@ -43,12 +50,18 @@ export default {
       index: -1
     },
 
-    // LABEL
-    // placement, color status, and name of period and group labels
-    atomLabelPeriods: [],
-    atomLabelGroups: [],
 
-    // OPTIONS
+    // atom placement data (in the css grid, and in the periodic table itself)
+    atomPlacements: [],
+    // atom colors (color and deafultColor)
+    atomColors: [],
+
+    // LABEL \\
+    // placement, color status, and name of period and group labels
+    labelPeriodPlacement: [],
+    labelGroupPlacement: [],
+
+    // OPTIONS \\
     // Changeable options
     options: {
       themeType: "light-def",
@@ -82,14 +95,14 @@ export default {
     //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
     //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
     clearLabelExcept: function(state, payload) {
-      for (let i = 0; i < state.atomLabelPeriods.length; i++) {
+      for (let i = 0; i < state.labelPeriodPlacement.length; i++) {
         if (i !== payload.periodExclude) {
-          state.atomLabelPeriods[i].color = "light";
+          state.labelPeriodPlacement[i].color = "light";
         }
       }
-      for (let i = 0; i < state.atomLabelGroups.length; i++) {
+      for (let i = 0; i < state.labelGroupPlacement.length; i++) {
         if (i !== payload.groupExclude) {
-          state.atomLabelGroups[i].color = "light";
+          state.labelGroupPlacement[i].color = "light";
         }
       }
     },
@@ -133,7 +146,7 @@ export default {
     }
   },
   actions: {
-    initAtomData,
-    switchAtomTabData
+    initAtomTab,
+    switchAtomTab
   }
 };

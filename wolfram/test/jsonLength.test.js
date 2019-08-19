@@ -5,7 +5,7 @@ import { promisify } from "util";
 let filenames = [
   'atomLayoutColorsCategory.json',
   'atomLayoutColorsOrbitalBlock.json',
-  'atomLayoutPlacement.json'
+  'atomPlacement.json'
 ];
 
 filenames.forEach(file => {

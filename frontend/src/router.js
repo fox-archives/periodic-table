@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Body from "@/views/TabGenericPeriodicTableInterface";
+import TabGenericPeriodicTableInterface from "@/views/TabGenericPeriodicTableInterface";
 import Explore from "@/views/TabExplore";
 import Trivia from "@/views/TabTrivia";
 import atomInfoProperties from "@/components/atom-sidebar/AtomSidebar";
@@ -16,7 +16,7 @@ const myRoutes = [
   },
   {
     path: "/properties",
-    component: Body,
+    component: TabGenericPeriodicTableInterface,
     children: [
       {
         path: "",
@@ -30,7 +30,7 @@ const myRoutes = [
   },
   {
     path: "/electrons",
-    component: Body,
+    component: TabGenericPeriodicTableInterface,
     children: [
       {
         path: "",
@@ -44,7 +44,7 @@ const myRoutes = [
   },
   {
     path: "/orbitals",
-    component: Body,
+    component: TabGenericPeriodicTableInterface,
     children: [
       {
         path: "",
@@ -57,7 +57,7 @@ const myRoutes = [
   },
   {
     path: "/isotopes",
-    component: Body,
+    component: TabGenericPeriodicTableInterface,
     children: [
       {
         path: "",

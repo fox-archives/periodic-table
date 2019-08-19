@@ -1,27 +1,28 @@
 import axios from "axios";
 import deepFreeze from "deep-freeze-strict";
-import { setColorOfOneAtom } from "@/store/modules/mainAtomTable/atomHighlighting";
 
-function initAtomData({ state, dispatch, commit }, payload) {
-  Promise.all([
-    axios.get("/data/atomLayoutPlacement.json"),
+import switchAtomTabCleanup from "./helper";
+
+function initAtomTab({ state, dispatch, commit }, payload) {
+  return Promise.all([
+    axios.get("/data/atomPlacement.json"),
     axios.get("/data/atomSnippets.json"),
-    axios.get("/data/labelLayoutPlacement.json")
+    axios.get("/data/labelPlacement.json")
   ])
     .then(responses => {
-      let atomPlacementsResult = responses[0];
-      let atomSnippetResult = responses[1];
-      let labelPlacementsResult = responses[2];
-      state.atomPlacements = atomPlacementsResult.data;
-      state.atomSnippets = atomSnippetResult.data;
-      state.atomLabelPeriods = labelPlacementsResult.data.labelPeriods;
-      state.atomLabelGroups = labelPlacementsResult.data.labelGroups;
+      {
+        let atomPlacementR = responses[0];
+        let atomSnippetR = responses[1];
+        let labelPlacementR = responses[2];
 
-      let { currentRoute } = payload;
-      return dispatch("switchAtomTabData", {
-        atomColorAppearance: currentRoute.name,
-        atomTab: currentRoute.name
-      });
+        state.atomPlacements = deepFreeze(atomPlacementR.data);
+        state.atomSnippets = atomSnippetR.data;
+        state.labelPeriodPlacement = labelPlacementR.data.period;
+        state.labelGroupPlacement = labelPlacementR.data.group;
+      }
+
+      let { currentTab } = payload;
+      return dispatch("switchAtomTab", { to: currentTab.name });
     })
     .then(() => {
       commit("updateActiveAtom", 0);
@@ -30,33 +31,26 @@ function initAtomData({ state, dispatch, commit }, payload) {
 }
 
 // executes when we switch a tab (and want all data to update)
-function switchAtomTabData({ state, commit }, payload) {
+function switchAtomTab({ state, commit }, payload) {
   return new Promise((resolve, reject) => {
+    let tabToSwitchTo = payload.to;
     Promise.all([
       // ex. atomColorsCategory, atomColorsOrbitalBlock
-      axios.get(`/data/atomColorsTab${payload.atomColorAppearance}.json`),
+      axios.get(`/data/atomColorsTab${tabToSwitchTo}.json`),
 
       // ex. atomTabIsotopes, atomTabProperties
-      axios.get(`/data/atomTab${payload.atomTab}.json`)
+      axios.get(`/data/atomTab${tabToSwitchTo}.json`)
     ])
       .then(responses => {
-        let atomColorAppearanceResult = responses[0];
-        let atomTraitsResult = responses[1];
+        {
+          let atomColorAppearanceR = responses[0];
+          let atomTraitsR = responses[1];
 
-        state.atomColors = atomColorAppearanceResult.data;
-        state.atomTraits = atomTraitsResult.data.data;
-
-        if(state.clickedAtom.index === -1) {
-          commit("updateActiveAtom", state.hoveredAtom.index);
+          state.atomColors = atomColorAppearanceR.data;
+          state.atomTraits = atomTraitsR.data.data;
         }
-        else {
-          commit("updateActiveAtom", state.clickedAtom.index);
 
-          commit("setColorOfOneAtom", {
-            prefix: "supdark-",
-            i: state.clickedAtom.index
-          });
-        }
+        switchAtomTabCleanup({ state, commit });
 
         state.ready = true;
         resolve();
@@ -68,4 +62,4 @@ function switchAtomTabData({ state, commit }, payload) {
   });
 }
 
-export { initAtomData, switchAtomTabData };
+export { initAtomTab, switchAtomTab };
