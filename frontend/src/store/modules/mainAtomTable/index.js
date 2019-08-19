@@ -122,10 +122,9 @@ export default {
       let { active, index } = newProperties;
       let { period, group } = newProperties;
 
-      if(period && group) {
-        state.clickedAtom = { active, index, group, period }
-      }
-      else {
+      if (period && group) {
+        state.clickedAtom = { active, index, group, period };
+      } else {
         state.clickedAtom = { active, index };
       }
     },

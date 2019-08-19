@@ -137,10 +137,9 @@ export default {
   created() {
     this.initAtomTab({
       currentTab: this.$route
-    })
-      .then(() => {
-        console.log("init done");
-      });
+    }).then(() => {
+      console.log("init done");
+    });
   },
   mounted() {
     let psPeriodicTable = new PerfectScrollbar("#grid-container");
@@ -179,7 +178,6 @@ export default {
       "updateActiveAtom",
       "clearLabelExcept",
 
-
       "setColorOfAllButOnePeriod",
       "setColorOfAllButOneGroup",
       "setColorOfAllButOneAtom",
@@ -208,7 +206,7 @@ export default {
       let { index, hoverStatus } = payload;
       this.setHoveredAtom(index);
 
-      if(hoverStatus === "hoverOver") {
+      if (hoverStatus === "hoverOver") {
         if (this.clickedAtom.index !== index) {
           this.setColorOfOneAtom({
             prefix: "dark-",
@@ -216,13 +214,12 @@ export default {
           });
         }
 
-        if(this.clickedAtom.active === false) {
+        if (this.clickedAtom.active === false) {
           this.setLabelColor(index, "true");
         }
 
         this.updateActiveAtom(index);
-      }
-      else if(hoverStatus === "hoverLeave")  {
+      } else if (hoverStatus === "hoverLeave") {
         if (this.clickedAtom.index !== index) {
           this.setColorOfOneAtom({
             prefix: "",
@@ -230,7 +227,7 @@ export default {
           });
         }
 
-        if(this.clickedAtom.active === false) {
+        if (this.clickedAtom.active === false) {
           this.setLabelColor(index, "false");
         }
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="visual-inner">
-      <div id="visual-inner-inner" v-if="ready">
+      <div v-if="ready" id="visual-inner-inner">
         <div id="icon">
           <div id="icon-inner" :class="atomSnippetActive.color">
             <p>{{ atomSnippetActive.atomAbbreviation }}</p>

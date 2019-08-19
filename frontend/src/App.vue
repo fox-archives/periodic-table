@@ -19,13 +19,13 @@ export default {
   watch: {
     $route() {
       console.log(this.$route.name);
-      if(this.$route.name === "Explore" || this.$route.name === "Trivia") {
+      if (this.$route.name === "Explore" || this.$route.name === "Trivia") {
         this.setReady(false);
       }
     }
   },
   computed: {
-    ...mapState("mainAtomTable", ["options"]),
+    ...mapState("mainAtomTable", ["options"])
   },
   methods: {
     ...mapMutations("mainAtomTable", ["setReady"])

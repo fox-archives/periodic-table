@@ -3,10 +3,9 @@ import { setColorOfOneAtom } from "@/store/modules/mainAtomTable/atomHighlightin
 // after switching some of the data, we need to do cleanup, since previous data was overwritten
 function switchAtomTabCleanup({ state, commit }) {
   // after switching, we have to replace the data we just fetched
-  if(state.clickedAtom.index === -1) {
+  if (state.clickedAtom.index === -1) {
     commit("updateActiveAtom", state.hoveredAtom.index);
-  }
-  else {
+  } else {
     commit("updateActiveAtom", state.clickedAtom.index);
 
     // the user clicked an element, but when fetching resources, the color data
