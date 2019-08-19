@@ -5,20 +5,20 @@ import switchAtomTabCleanup from "./helper";
 
 function initAtomTab({ state, dispatch, commit }, payload) {
   return Promise.all([
-    axios.get("/data/atomPlacement.json"),
+    axios.get("/data/atomPlacements.json"),
     axios.get("/data/atomSnippets.json"),
-    axios.get("/data/labelPlacement.json")
+    axios.get("/data/labelPlacements.json")
   ])
     .then(responses => {
       {
-        let atomPlacementR = responses[0];
-        let atomSnippetR = responses[1];
-        let labelPlacementR = responses[2];
+        let atomPlacementsR = responses[0];
+        let atomSnippetsR = responses[1];
+        let labelPlacementsR = responses[2];
 
-        state.atomPlacements = deepFreeze(atomPlacementR.data);
-        state.atomSnippets = atomSnippetR.data;
-        state.labelPeriodPlacement = labelPlacementR.data.period;
-        state.labelGroupPlacement = labelPlacementR.data.group;
+        state.atomPlacements = deepFreeze(atomPlacementsR.data);
+        state.atomSnippets = atomSnippetsR.data;
+        state.labelPeriodPlacement = labelPlacementsR.data.period;
+        state.labelGroupPlacement = labelPlacementsR.data.group;
       }
 
       let { currentTab } = payload;

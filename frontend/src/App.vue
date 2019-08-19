@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapMutations } from "vuex";
 import Navigation from "@/components/nav/Navigation.vue";
 import Foot from "@/components/foot/Foot.vue";
 
@@ -16,8 +16,19 @@ export default {
     navigation: Navigation,
     foot: Foot
   },
+  watch: {
+    $route() {
+      console.log(this.$route.name);
+      if(this.$route.name === "Explore" || this.$route.name === "Trivia") {
+        this.setReady(false);
+      }
+    }
+  },
   computed: {
-    ...mapState("mainAtomTable", ["options"])
+    ...mapState("mainAtomTable", ["options"]),
+  },
+  methods: {
+    ...mapMutations("mainAtomTable", ["setReady"])
   }
 };
 </script>

@@ -9,26 +9,6 @@ function setColorOfOneAtom(state, payload) {
   Vue.set(state.atomColors[payload.i], "color", payload.prefix + defaultColor);
 }
 
-// Purpose: To set a variant of the default color to any one group
-// @param #object 'payload' contains properties:
-//   (req) .prefix  Prefix to be added before the original color of element
-//   (req) .include  Group to be included setting the color of
-function setColorOfOneGroup(state, payload) {
-  for (let i = 0; i < state.atomPlacements.length; i++) {
-    // elementGroup represents the group number of a given periodic table element
-    let elementGroup = state.atomPlacements[i].group.substring(2);
-
-    // defaultColor represents default color of a given periodic table element
-    let defaultColor = state.atomColors[i].defaultColor;
-
-    // If the element group is excluded (from @param 'payload')
-    // Allow type coercion (so '1' == 1)
-    if (elementGroup == payload.include) {
-      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
-    }
-  }
-}
-
 // Purpose: To set a variant of the default color to any one period
 // @param #object 'payload' contains properties:
 //   (req) .prefix  Prefix to be added before the original color of element
@@ -49,15 +29,23 @@ function setColorOfOnePeriod(state, payload) {
   }
 }
 
-// Purpose: To set a variant of the default color to all elements
+// Purpose: To set a variant of the default color to any one group
 // @param #object 'payload' contains properties:
 //   (req) .prefix  Prefix to be added before the original color of element
-function setColorOfAllAtoms(state, payload) {
+//   (req) .include  Group to be included setting the color of
+function setColorOfOneGroup(state, payload) {
   for (let i = 0; i < state.atomPlacements.length; i++) {
+    // elementGroup represents the group number of a given periodic table element
+    let elementGroup = state.atomPlacements[i].group.substring(2);
+
     // defaultColor represents default color of a given periodic table element
     let defaultColor = state.atomColors[i].defaultColor;
 
-    Vue.set(state.atomColors[i], "color", payload + defaultColor);
+    // If the element group is excluded (from @param 'payload')
+    // Allow type coercion (so '1' == 1)
+    if (elementGroup == payload.include) {
+      Vue.set(state.atomColors[i], "color", payload.prefix + defaultColor);
+    }
   }
 }
 
@@ -120,12 +108,24 @@ function setColorOfAllButOneGroup(state, payload) {
   }
 }
 
+// Purpose: To set a variant of the default color to all elements
+// @param #object 'payload' contains properties:
+//   (req) .prefix  Prefix to be added before the original color of element
+function setColorOfAllAtoms(state, payload) {
+  for (let i = 0; i < state.atomPlacements.length; i++) {
+    // defaultColor represents default color of a given periodic table element
+    let defaultColor = state.atomColors[i].defaultColor;
+
+    Vue.set(state.atomColors[i], "color", payload + defaultColor);
+  }
+}
+
 export {
   setColorOfOneAtom,
-  setColorOfOneGroup,
   setColorOfOnePeriod,
-  setColorOfAllAtoms,
+  setColorOfOneGroup,
   setColorOfAllButOneAtom,
   setColorOfAllButOnePeriod,
-  setColorOfAllButOneGroup
+  setColorOfAllButOneGroup,
+  setColorOfAllAtoms
 };

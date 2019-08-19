@@ -13,21 +13,9 @@ export default {
   namespaced: true,
   state: {
     // GENERAL
-    // Value determining if the data is ready to be rendered (after all Axios requests)
-    // 'ready' value changes to 'true' after *some* Axios requests, but good enough (until it breaks)
-    ready: false,
-
-    // ATOM
-    // shared atom data across all tabs (from atomSnippets.json)
-    atomSnippets: [],
-    atomSnippetActive: {},
-
-    // atom sidebar data (dependent on the selected tab) for *all* elements
-    atomTraits: [],
-    atomTraitsActive: {},
-
-    // which parts of the data are ready to be used?
-    atomReady: {
+    // Value determining if the data is ready to be rendered
+    ready: false, // deprecate this crap
+    readyStatus: {
       atomSnippet: "",
       atomTraits: "",
 
@@ -38,28 +26,36 @@ export default {
       labelPeriodPlacement: ""
     },
 
+    // ATOM
+    // shared atom data across all tabs (from atomSnippets.json)
+    atomSnippets: [],
+    atomSnippetActive: {},
+
+    // atom sidebar data (dependent on the selected tab) for *all* elements
+    atomTraits: [],
+    atomTraitsActive: {},
+
     hoveredAtom: {
       index: 1
     },
-
+    // When user clicks, want to make clicked element darker than if it was highlighted
+    // This also keeps track of the clicked element (if a user decides to hover over a group or period label, changing all element color
     clickedAtom: {
       active: false,
-
-      // When user clicks, want to make clicked element darker than if it was highlighted
-      // This also keeps track of the clicked element (if a user decides to hover over a group or period label, changing all element color
       index: -1
     },
 
-
     // atom placement data (in the css grid, and in the periodic table itself)
-    atomPlacements: [],
     // atom colors (color and deafultColor)
     atomColors: [],
+    // later: labelPeriodColors
+    // later: labelGroupColors
 
-    // LABEL \\
-    // placement, color status, and name of period and group labels
-    labelPeriodPlacement: [],
-    labelGroupPlacement: [],
+    // period / group labels: placement, color status, and name
+    // atom:
+    atomPlacements: [],
+    labelPeriodPlacement: [], // static except for .color property
+    labelGroupPlacement: [], // static except for .color property
 
     // OPTIONS \\
     // Changeable options
@@ -79,6 +75,11 @@ export default {
     setColorOfAllButOnePeriod,
     setColorOfAllButOneGroup,
     setColorOfAllAtoms,
+
+    setReady: function(state, bool) {
+      state.ready = bool;
+    },
+
     // ## PERIODIC TABLE ELEMENT STUFF ## \\
     updateActiveAtom: function(state, index) {
       // Update Store variables with Element information according to index

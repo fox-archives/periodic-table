@@ -48,6 +48,7 @@ const myRoutes = [
     children: [
       {
         path: "",
+        name: "Orbitals",
         components: {
           "atom-info": atomInfoProperties,
           "atom-graphic": atomGraphicOrbitals
@@ -61,6 +62,7 @@ const myRoutes = [
     children: [
       {
         path: "",
+        name: "Isotopes",
         components: {
           "atom-info": atomInfoProperties,
           "atom-graphic": atomGraphicOrbitals
@@ -70,10 +72,12 @@ const myRoutes = [
   },
   {
     path: "/explore",
+    name: "Explore",
     component: Explore
   },
   {
     path: "/trivia",
+    name: "Trivia",
     component: Trivia
   }
 ];

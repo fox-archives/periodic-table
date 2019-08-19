@@ -167,6 +167,7 @@ export default {
       "labelGroupPlacement",
 
       "ready",
+      "readyStatus",
 
       "hoveredAtom",
       "clickedAtom",
