@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import TabGenericPeriodicTableInterface from "@/views/TabGenericPeriodicTableInterface";
 import Explore from "@/views/TabExplore";
 import Trivia from "@/views/TabTrivia";
-import atomInfoProperties from "@/components/atom-sidebar/AtomSidebar";
+import atomSidebar from "@/components/atom-sidebar/AtomSidebar";
 import atomGraphicProperties from "@/components/atom-graphic/AtomGraphicProperties";
 import atomGraphicOrbitals from "@/components/atom-graphic/AtomGraphicOrbitals";
 
@@ -22,7 +22,7 @@ const myRoutes = [
         path: "",
         name: "Properties",
         components: {
-          "atom-info": atomInfoProperties,
+          "atom-sidebar": atomSidebar,
           "atom-graphic": atomGraphicProperties
         }
       }
@@ -36,7 +36,7 @@ const myRoutes = [
         path: "",
         name: "Electrons",
         components: {
-          "atom-info": atomInfoProperties,
+          "atom-sidebar": atomSidebar,
           "atom-graphic": atomGraphicProperties
         }
       }
@@ -50,7 +50,7 @@ const myRoutes = [
         path: "",
         name: "Orbitals",
         components: {
-          "atom-info": atomInfoProperties,
+          "atom-sidebar": atomSidebar,
           "atom-graphic": atomGraphicOrbitals
         }
       }
@@ -64,7 +64,7 @@ const myRoutes = [
         path: "",
         name: "Isotopes",
         components: {
-          "atom-info": atomInfoProperties,
+          "atom-sidebar": atomSidebar,
           "atom-graphic": atomGraphicOrbitals
         }
       }

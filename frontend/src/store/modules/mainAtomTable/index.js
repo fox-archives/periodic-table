@@ -1,3 +1,4 @@
+import Vue from "vue";
 import {
   setColorOfOneAtom,
   setColorOfOneGroup,
@@ -36,7 +37,7 @@ export default {
     atomTraitsActive: {},
 
     hoveredAtom: {
-      index: 1
+      index: 0
     },
     // When user clicks, want to make clicked element darker than if it was highlighted
     // This also keeps track of the clicked element (if a user decides to hover over a group or period label, changing all element color
@@ -87,7 +88,7 @@ export default {
       // @param #int 'index':
       //   (req)  Index of element, where atomSnippetActive properties will get info from
       state.atomSnippetActive = state.atomSnippets[index];
-      state.atomSnippetActive.color = state.atomColors[index].defaultColor;
+      Vue.set(state.atomSnippetActive, "color", state.atomColors[index].defaultColor);
       state.atomTraitsActive = state.atomTraits[index];
     },
 

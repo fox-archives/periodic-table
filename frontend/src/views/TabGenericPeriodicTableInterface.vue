@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
+import { mapState, mapMutations, mapActions } from "vuex";
 import { throttle, debounce } from "lodash";
 import PeriodicTable from "@/components/periodic-table/PeriodicTable.vue";
 import AtomInfoPanel from "@/components/AtomInfoPanel.vue";
@@ -24,6 +24,11 @@ export default {
     "atom-info-panel": AtomInfoPanel,
     "periodic-table": PeriodicTable
   },
+  created() {
+    this.initAtomTab({
+      currentTab: this.$route
+    }).then(() => {});
+  },
   mounted() {
     this.updateInfoLocation();
     window.addEventListener("resize", throttle(this.updateInfoLocation, 250));
@@ -33,6 +38,7 @@ export default {
     ...mapState("mainAtomTable", ["options"])
   },
   methods: {
+    ...mapActions("mainAtomTable", ["initAtomTab"]),
     ...mapMutations("mainAtomTable", ["setOptions"]),
     // Purpose: To update the panelLayout depending on the size of the viewport (greater than or less than 1100 px)
     updateInfoLocation: function() {

@@ -1,7 +1,7 @@
 <template>
   <section id="panel">
     <router-view name="atom-graphic" />
-    <router-view name="atom-info" />
+    <router-view name="atom-sidebar" />
   </section>
 </template>
 

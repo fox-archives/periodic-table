@@ -90,7 +90,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapActions } from "vuex";
+import { mapState, mapMutations } from "vuex";
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 import { throttle, debounce } from "lodash";
@@ -133,13 +133,6 @@ export default {
         window.addEventListener("resize", debounce(this.formatPage, 100));
       });
     }
-  },
-  created() {
-    this.initAtomTab({
-      currentTab: this.$route
-    }).then(() => {
-      console.log("init done");
-    });
   },
   mounted() {
     let psPeriodicTable = new PerfectScrollbar("#grid-container");
@@ -189,8 +182,6 @@ export default {
       "setClickedAtom",
       "setOptions"
     ]),
-    ...mapActions("mainAtomTable", ["initAtomTab"]),
-
     // imported from periodic-table-specific utils
     highlightLabelSection,
     unhighlightLabelSection,

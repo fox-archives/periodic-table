@@ -25,7 +25,11 @@ function initAtomTab({ state, dispatch, commit }, payload) {
       return dispatch("switchAtomTab", { to: currentTab.name });
     })
     .then(() => {
-      commit("updateActiveAtom", 0);
+      if (state.clickedAtom.index === -1) {
+        commit("updateActiveAtom", state.hoveredAtom.index);
+      } else {
+        commit("updateActiveAtom", state.clickedAtom.index);
+      }
     })
     .catch(e => console.error(e));
 }

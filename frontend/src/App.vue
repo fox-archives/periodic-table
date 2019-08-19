@@ -18,7 +18,6 @@ export default {
   },
   watch: {
     $route() {
-      console.log(this.$route.name);
       if (this.$route.name === "Explore" || this.$route.name === "Trivia") {
         this.setReady(false);
       }
