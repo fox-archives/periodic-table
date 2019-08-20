@@ -88,7 +88,11 @@ export default {
       // @param #int 'index':
       //   (req)  Index of element, where atomSnippetActive properties will get info from
       state.atomSnippetActive = state.atomSnippets[index];
-      Vue.set(state.atomSnippetActive, "color", state.atomColors[index].defaultColor);
+      Vue.set(
+        state.atomSnippetActive,
+        "color",
+        state.atomColors[index].defaultColor
+      );
       state.atomTraitsActive = state.atomTraits[index];
     },
 

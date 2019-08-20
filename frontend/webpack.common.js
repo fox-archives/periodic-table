@@ -1,7 +1,7 @@
 let path = require("path");
 let VueLoaderPlugin = require("vue-loader/lib/plugin");
 let HtmlWebpackPlugin = require("html-webpack-plugin");
-let BundleAnalyzerPlugin = require("webpack-bundle-analyzer");
+let BundleAnalyzerPlugin = require("webpack-bundle-analyzer"); // eslint-disable-line
 
 module.exports = {
   entry: "./src/index.js",

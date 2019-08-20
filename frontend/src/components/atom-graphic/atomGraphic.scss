@@ -34,12 +34,12 @@
 }
 
 #visual-inner {
+  --elementNameTextSize: 0;
+
   width: 100%;
   height: 100%;
   border-radius: $border-radius;
   transition: createtransitions((box-shadow, background-color));
-
-  --elementNameTextSize: 0;
 }
 
 #visual-inner-inner {

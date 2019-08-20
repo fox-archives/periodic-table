@@ -1,5 +1,3 @@
-import { setColorOfOneAtom } from "@/store/modules/mainAtomTable/atomHighlighting";
-
 // after switching some of the data, we need to do cleanup, since previous data was overwritten
 function switchAtomTabCleanup({ state, commit }) {
   // after switching, we have to replace the data we just fetched
