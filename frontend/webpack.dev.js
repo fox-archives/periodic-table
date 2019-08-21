@@ -48,7 +48,7 @@ module.exports = merge.smart(common, {
   devServer: {
     open: false,
     hot: true,
-    host: "localhost",
+    host: "0.0.0.0",
     port: 8080,
     compress: true,
     historyApiFallback: true,
