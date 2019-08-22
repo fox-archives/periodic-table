@@ -55,11 +55,13 @@ module.exports = merge.smart(common, {
     quiet: true,
 
     proxy: {
+      changeOrigin: true,
+      ignorePath: true,
       "/assets": {
-        target: "http://localhost:3000"
+        target: "http://server:3000"
       },
       "/data": {
-        target: "http://localhost:3000"
+        target: "http://server:3000"
       }
     }
   }
