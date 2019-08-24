@@ -1,6 +1,7 @@
 let webpack = require("webpack");
 let FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
 let DashboardPlugin = require("webpack-dashboard/plugin");
+require("dotenv").config({ path: "../" });
 
 let merge = require("webpack-merge");
 let common = require("./webpack.common.js");

@@ -3,7 +3,7 @@ services:
   server:
     build: ./backend
     ports:
-      - "3000:3000"
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
     environment:
       - NODE_ENV=development
     volumes:
@@ -13,7 +13,7 @@ services:
   client:
     build: ./frontend
     ports:
-      - "8080:8080"
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
     environment:
       - NODE_ENV=development
     volumes:
