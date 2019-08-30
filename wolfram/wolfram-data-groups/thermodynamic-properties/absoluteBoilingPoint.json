@@ -8,395 +8,283 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":2.028e1,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":20.28,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Helium",
 			"value":4.22,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Lithium",
-			"value":1.615e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1615.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Beryllium",
-			"value":2.743e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2743.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Boron",
-			"value":4.273e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4273.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Carbon",
-			"value":4.3e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4300.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Nitrogen",
-			"value":7.736e1,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":77.36,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Oxygen",
-			"value":9.02e1,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":90.2,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Fluorine",
-			"value":8.503e1,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":85.03,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Neon",
-			"value":2.707e1,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":27.07,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Sodium",
-			"value":1.156e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1156.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Magnesium",
-			"value":1.363e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1363.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Aluminum",
-			"value":2.792e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2792.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Silicon",
-			"value":3.173e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3173.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Phosphorus",
-			"value":5.536e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":553.6,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Sulfur",
-			"value":7.1787e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":717.87,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Chlorine",
-			"value":2.3911e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":239.11,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Argon",
-			"value":8.73e1,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":87.3,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Potassium",
-			"value":1.032e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1032.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Calcium",
-			"value":1.757e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1757.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Scandium",
-			"value":3.103e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3103.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Titanium",
-			"value":3.56e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3560.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Vanadium",
-			"value":3.68e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3680.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Chromium",
-			"value":2.944e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2944.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Manganese",
-			"value":2.334e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2334.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Iron",
-			"value":3.134e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3134.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Cobalt",
 			"value":3.2e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Nickel",
-			"value":3.186e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3186.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Copper",
-			"value":2.835e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2835.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Zinc",
-			"value":1.18e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1180.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Gallium",
-			"value":2.477e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2477.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Germanium",
-			"value":3.093e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3093.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Arsenic",
-			"value":8.87e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":887.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Selenium",
-			"value":9.58e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":958.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Bromine",
-			"value":3.32e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":332.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Krypton",
-			"value":1.1993e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":119.93,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Rubidium",
-			"value":9.61e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":961.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Strontium",
-			"value":1.655e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1655.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Yttrium",
-			"value":3.618e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3618.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Zirconium",
-			"value":4.682e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4682.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Niobium",
-			"value":5.017e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":5017.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Molybdenum",
-			"value":4.912e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4912.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Technetium",
-			"value":4.538e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4538.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Ruthenium",
-			"value":4.423e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4423.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Rhodium",
-			"value":3.968e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3968.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Palladium",
-			"value":3.236e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3236.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Silver",
-			"value":2.435e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2435.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Cadmium",
-			"value":1.04e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1040.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Indium",
-			"value":2.345e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2345.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Tin",
-			"value":2.875e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2875.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Antimony",
-			"value":1.86e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1860.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Tellurium",
-			"value":1.261e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1261.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Iodine",
-			"value":4.574e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":457.4,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Xenon",
-			"value":1.651e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":165.1,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Cesium",
-			"value":9.44e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":944.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Barium",
-			"value":2.143e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2143.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Lanthanites",
@@ -404,227 +292,163 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":3.737e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3737.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Cerium",
-			"value":3.633e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3633.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Praseodymium",
-			"value":3.563e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3563.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Neodymium",
-			"value":3.373e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3373.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Promethium",
-			"value":3.273e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3273.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Samarium",
-			"value":2.076e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2076.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Europium",
 			"value":1.8e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Gadolinium",
-			"value":3.523e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3523.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Terbium",
-			"value":3.503e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3503.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Dysprosium",
-			"value":2.84e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2840.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Holmium",
-			"value":2.973e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2973.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Erbium",
-			"value":3.141e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3141.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Thulium",
-			"value":2.223e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2223.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Ytterbium",
-			"value":1.469e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1469.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Lutetium",
-			"value":3.675e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3675.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Hafnium",
-			"value":4.876e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4876.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Tantalum",
-			"value":5.731e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":5731.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Tungsten",
-			"value":5.828e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":5828.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Rhenium",
-			"value":5.869e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":5869.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Osmium",
-			"value":5.285e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":5285.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Iridium",
-			"value":4.701e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4701.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Platinum",
-			"value":4.098e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4098.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Gold",
-			"value":3.129e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3129.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Mercury",
-			"value":6.2988e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":629.88,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Thallium",
-			"value":1.746e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1746.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Lead",
-			"value":2.022e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2022.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Bismuth",
-			"value":1.837e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1837.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Polonium",
-			"value":1.235e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":1235.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Radon",
-			"value":2.113e2,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":211.3,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Radium",
-			"value":2.01e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2010.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Actinides",
@@ -632,213 +456,153 @@
 		},
 		{
 			"name":"Actinium",
-			"value":3.473e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3473.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Thorium",
-			"value":5.093e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":5093.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Protactinium",
-			"value":4.273e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4273.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Uranium",
 			"value":4.2e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Neptunium",
-			"value":4.273e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":4273.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Plutonium",
-			"value":3.503e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3503.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Americium",
-			"value":2.284e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":2284.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Curium",
-			"value":3.383e3,
-			"oldUnit":"kelvins",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"value":3383.,
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Kelvins",
-			"unitsName":"Kelvins"
+			"unit":"Kelvins"
 		}
 	]
 }

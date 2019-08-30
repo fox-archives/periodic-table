@@ -9,394 +9,282 @@
 		{
 			"name":"Hydrogen",
 			"value":1.293,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Helium",
 			"value":0.227,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Lithium",
-			"value":6.7e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":67.,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Beryllium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Boron",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Carbon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Nitrogen",
 			"value":3.39,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Oxygen",
 			"value":5.043,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Fluorine",
 			"value":5.172,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Neon",
 			"value":2.76,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Sodium",
-			"value":3.5e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":35.,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Magnesium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Aluminum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Silicon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Phosphorus",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Sulfur",
-			"value":2.07e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":20.7,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Chlorine",
 			"value":7.991,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Argon",
 			"value":4.898,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Potassium",
-			"value":1.6e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":16.,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Calcium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Scandium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Titanium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Vanadium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Chromium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Manganese",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Iron",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Cobalt",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Nickel",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Copper",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Zinc",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Gallium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Germanium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Arsenic",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Selenium",
-			"value":2.72e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":27.2,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Bromine",
-			"value":1.034e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":10.34,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Krypton",
-			"value":5.5,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":5.50,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Rubidium",
-			"value":1.6e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":16.,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Strontium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Yttrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Zirconium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Niobium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Molybdenum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Technetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Ruthenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Rhodium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Palladium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Silver",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Cadmium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Indium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Tin",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Antimony",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Tellurium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Iodine",
-			"value":1.17e1,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":11.7,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Xenon",
 			"value":5.841,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Cesium",
 			"value":9.4,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Barium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Lanthanites",
@@ -405,226 +293,162 @@
 		{
 			"name":"Lanthanum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Cerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Praseodymium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Neodymium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Promethium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Samarium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Europium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Gadolinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Terbium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Dysprosium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Holmium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Erbium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Thulium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Ytterbium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Lutetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Hafnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Tantalum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Tungsten",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Rhenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Osmium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Iridium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Platinum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Gold",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Mercury",
-			"value":1.72e2,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"value":172.,
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Thallium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Lead",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Bismuth",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Radon",
 			"value":6.28,
-			"oldUnit":"megapascals",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Radium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Actinides",
@@ -633,212 +457,152 @@
 		{
 			"name":"Actinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Thorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Protactinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Uranium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Plutonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Americium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Megapascals",
-			"unitsName":"Megapascals"
+			"unit":"Megapascals"
 		}
 	]
 }

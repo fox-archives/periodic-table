@@ -9,394 +9,282 @@
 		{
 			"name":"Hydrogen",
 			"value":120.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Helium",
 			"value":140.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Lithium",
 			"value":182.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Beryllium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Boron",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Carbon",
 			"value":170.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Nitrogen",
 			"value":155.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Oxygen",
 			"value":152.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Fluorine",
 			"value":147.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Neon",
 			"value":154.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Sodium",
 			"value":227.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Magnesium",
 			"value":173.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Aluminum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Silicon",
 			"value":210.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Phosphorus",
 			"value":180.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Sulfur",
 			"value":180.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Chlorine",
 			"value":175.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Argon",
 			"value":188.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Potassium",
 			"value":275.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Calcium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Scandium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Titanium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Vanadium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Chromium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Manganese",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Iron",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Cobalt",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Nickel",
 			"value":163.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Copper",
 			"value":140.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Zinc",
 			"value":139.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Gallium",
 			"value":187.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Germanium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Arsenic",
 			"value":185.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Selenium",
 			"value":190.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Bromine",
 			"value":185.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Krypton",
 			"value":202.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Rubidium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Strontium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Yttrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Zirconium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Niobium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Molybdenum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Technetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Ruthenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Rhodium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Palladium",
 			"value":163.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Silver",
 			"value":172.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Cadmium",
 			"value":158.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Indium",
 			"value":193.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Tin",
 			"value":217.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Antimony",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Tellurium",
 			"value":206.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Iodine",
 			"value":198.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Xenon",
 			"value":216.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Cesium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Barium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Lanthanites",
@@ -405,226 +293,162 @@
 		{
 			"name":"Lanthanum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Cerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Praseodymium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Neodymium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Promethium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Samarium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Europium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Gadolinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Terbium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Dysprosium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Holmium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Erbium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Thulium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Ytterbium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Lutetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Hafnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Tantalum",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Tungsten",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Rhenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Osmium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Iridium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Platinum",
 			"value":175.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Gold",
 			"value":166.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Mercury",
 			"value":155.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Thallium",
 			"value":196.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Lead",
 			"value":202.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Bismuth",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Radon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Radium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Actinides",
@@ -633,212 +457,152 @@
 		{
 			"name":"Actinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Thorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Protactinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Uranium",
 			"value":186.,
-			"oldUnit":"picometers",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Plutonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Americium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"Picometers",
-			"unitsName":"Picometers"
+			"unit":"Picometers"
 		}
 	]
 }

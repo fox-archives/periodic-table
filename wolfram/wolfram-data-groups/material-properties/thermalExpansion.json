@@ -9,394 +9,282 @@
 		{
 			"name":"Hydrogen",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Helium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lithium",
-			"value":4.599999999999998e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000046,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Beryllium",
-			"value":1.1300000000000004e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000113,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Boron",
-			"value":5.999999999999983e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Carbon",
-			"value":7.10000000000001e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":7.1e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Nitrogen",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Oxygen",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Fluorine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Neon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Sodium",
-			"value":7.000000000000002e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000070,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Magnesium",
-			"value":2.4800000000000007e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000025,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Aluminum",
-			"value":2.310000000000002e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000231,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Silicon",
-			"value":2.600000000000009e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":2.6e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Phosphorus",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Sulfur",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Chlorine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Argon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Potassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Calcium",
-			"value":2.23e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000223,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Scandium",
-			"value":1.0199999999999977e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000102,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Titanium",
-			"value":8.599999999999992e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":8.6e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Vanadium",
-			"value":8.399999999999987e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":8.4e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Chromium",
-			"value":4.900000000000011e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":4.9e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Manganese",
-			"value":2.1699999999999985e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000217,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Iron",
-			"value":1.1800000000000016e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000118,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cobalt",
-			"value":1.299999999999999e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000130,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Nickel",
-			"value":1.34e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000134,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Copper",
-			"value":1.650000000000002e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000165,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Zinc",
-			"value":3.0199999999999975e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000302,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Gallium",
-			"value":1.1999999999999999e-4,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000120,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Germanium",
-			"value":5.999999999999983e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Arsenic",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Selenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Bromine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Krypton",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Rubidium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Strontium",
-			"value":2.2500000000000005e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000225,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Yttrium",
-			"value":1.0599999999999987e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000106,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Zirconium",
-			"value":5.699999999999976e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":5.7e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Niobium",
-			"value":7.300000000000015e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":7.3e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Molybdenum",
-			"value":4.800000000000008e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":4.8e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Technetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Ruthenium",
-			"value":6.399999999999993e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.4e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Rhodium",
-			"value":7.999999999999978e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":8.0e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Palladium",
-			"value":1.1800000000000016e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000118,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Silver",
-			"value":1.8900000000000026e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000189,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cadmium",
-			"value":3.079999999999999e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000308,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Indium",
-			"value":3.210000000000002e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000321,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tin",
-			"value":2.1999999999999993e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000022,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Antimony",
-			"value":1.0999999999999996e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000011,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tellurium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Iodine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Xenon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cesium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Barium",
-			"value":2.0600000000000013e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000206,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lanthanites",
@@ -404,227 +292,163 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":1.2100000000000023e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000121,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cerium",
-			"value":6.2999999999999905e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.3e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Praseodymium",
 			"value":6.7e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Neodymium",
-			"value":9.600000000000017e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":9.6e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Promethium",
-			"value":1.0999999999999996e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000011,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Samarium",
-			"value":1.2699999999999983e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000127,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Europium",
-			"value":3.499999999999998e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000035,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Gadolinium",
-			"value":9.400000000000012e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":9.4e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Terbium",
-			"value":1.029999999999998e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000103,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Dysprosium",
-			"value":1.0000000000000026e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000010,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Holmium",
-			"value":1.1200000000000001e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000112,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Erbium",
-			"value":1.2200000000000025e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000122,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Thulium",
-			"value":1.3299999999999998e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000133,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Ytterbium",
-			"value":2.629999999999999e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000263,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lutetium",
-			"value":1.0000000000000026e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000010,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Hafnium",
-			"value":5.899999999999981e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":5.9e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tantalum",
-			"value":6.2999999999999905e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.3e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tungsten",
-			"value":4.500000000000001e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":4.5e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Rhenium",
-			"value":6.199999999999988e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.2e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Osmium",
-			"value":5.1000000000000155e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":5.1e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Iridium",
-			"value":6.399999999999993e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":6.4e-6,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Platinum",
 			"value":8.9e-6,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Gold",
-			"value":1.420000000000002e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000142,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Mercury",
-			"value":1.81e-4,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.000181,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Thallium",
-			"value":2.9900000000000022e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000299,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lead",
-			"value":2.8899999999999998e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000289,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Bismuth",
-			"value":1.34e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000134,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Radon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Radium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Actinides",
@@ -633,212 +457,152 @@
 		{
 			"name":"Actinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Thorium",
-			"value":1.0999999999999996e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000110,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Protactinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Uranium",
-			"value":1.3900000000000013e-5,
-			"oldUnit":"reciprocal kelvins",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"value":0.0000139,
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Plutonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Americium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"ReciprocalKelvins",
-			"unitsName":"ReciprocalKelvins"
+			"unit":"ReciprocalKelvins"
 		}
 	]
 }

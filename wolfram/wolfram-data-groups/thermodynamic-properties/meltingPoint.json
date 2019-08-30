@@ -8,395 +8,283 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":-2.5914e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-259.14,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Helium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Lithium",
-			"value":1.8054e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":180.54,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Beryllium",
-			"value":1.287e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1287.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Boron",
-			"value":2.075e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2075.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Carbon",
-			"value":3.55e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":3550.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Nitrogen",
-			"value":-2.101e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-210.1,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Oxygen",
-			"value":-2.183e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-218.3,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Fluorine",
-			"value":-2.196e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-219.6,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Neon",
-			"value":-2.4859e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-248.59,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Sodium",
-			"value":9.772e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":97.72,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Magnesium",
-			"value":6.5e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":650.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Aluminum",
-			"value":6.6032e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":660.32,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Silicon",
-			"value":1.414e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1414.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Phosphorus",
-			"value":4.42e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":44.2,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Sulfur",
-			"value":1.1521e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":115.21,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Chlorine",
-			"value":-1.015e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-101.5,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Argon",
-			"value":-1.893e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-189.3,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Potassium",
-			"value":6.338e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":63.38,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Calcium",
-			"value":8.42e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":842.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Scandium",
-			"value":1.541e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1541.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Titanium",
-			"value":1.668e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1668.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Vanadium",
-			"value":1.91e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1910.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Chromium",
-			"value":1.907e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1907.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Manganese",
-			"value":1.246e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1246.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Iron",
-			"value":1.538e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1538.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Cobalt",
-			"value":1.495e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1495.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Nickel",
-			"value":1.455e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1455.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Copper",
-			"value":1.08462e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1084.62,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Zinc",
-			"value":4.1953e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":419.53,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Gallium",
-			"value":2.976e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":29.76,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Germanium",
-			"value":9.383e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":938.3,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Arsenic",
-			"value":8.17e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":817.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Selenium",
-			"value":2.21e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":221.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Bromine",
 			"value":-7.3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Krypton",
-			"value":-1.5736e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-157.36,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Rubidium",
-			"value":3.931e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":39.31,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Strontium",
-			"value":7.77e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":777.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Yttrium",
-			"value":1.526e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1526.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Zirconium",
-			"value":1.855e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1855.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Niobium",
-			"value":2.477e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2477.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Molybdenum",
-			"value":2.623e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2623.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Technetium",
-			"value":2.157e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2157.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Ruthenium",
-			"value":2.334e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2334.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Rhodium",
-			"value":1.964e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1964.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Palladium",
-			"value":1.5549e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1554.9,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Silver",
-			"value":9.6178e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":961.78,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Cadmium",
-			"value":3.2107e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":321.07,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Indium",
-			"value":1.566e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":156.6,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Tin",
-			"value":2.3193e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":231.93,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Antimony",
-			"value":6.3063e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":630.63,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Tellurium",
-			"value":4.4951e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":449.51,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Iodine",
-			"value":1.137e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":113.7,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Xenon",
-			"value":-1.118e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-111.8,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Cesium",
-			"value":2.844e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":28.44,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Barium",
-			"value":7.27e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":727.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Lanthanites",
@@ -404,227 +292,163 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":9.19e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":919.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Cerium",
-			"value":7.98e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":798.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Praseodymium",
-			"value":9.31e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":931.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Neodymium",
-			"value":1.021e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1021.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Promethium",
 			"value":1.1e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Samarium",
-			"value":1.072e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1072.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Europium",
-			"value":8.22e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":822.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Gadolinium",
-			"value":1.313e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1313.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Terbium",
-			"value":1.356e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1356.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Dysprosium",
-			"value":1.412e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1412.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Holmium",
-			"value":1.474e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1474.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Erbium",
-			"value":1.497e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1497.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Thulium",
-			"value":1.545e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1545.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Ytterbium",
-			"value":8.19e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":819.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Lutetium",
-			"value":1.663e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1663.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Hafnium",
-			"value":2.233e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2233.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Tantalum",
-			"value":3.017e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":3017.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Tungsten",
-			"value":3.422e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":3422.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Rhenium",
-			"value":3.186e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":3186.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Osmium",
-			"value":3.033e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":3033.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Iridium",
-			"value":2.466e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":2466.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Platinum",
-			"value":1.7683e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1768.3,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Gold",
-			"value":1.06418e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1064.18,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Mercury",
-			"value":-3.883e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-38.83,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Thallium",
-			"value":3.04e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":304.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Lead",
-			"value":3.2746e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":327.46,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Bismuth",
-			"value":2.713e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":271.3,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Polonium",
-			"value":2.54e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":254.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Astatine",
-			"value":3.02e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":302.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Radon",
-			"value":-7.1e1,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":-71.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Radium",
 			"value":7.0e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Actinides",
@@ -632,213 +456,153 @@
 		},
 		{
 			"name":"Actinium",
-			"value":1.05e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1050.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Thorium",
-			"value":1.75e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1750.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Protactinium",
-			"value":1.572e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1572.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Uranium",
-			"value":1.135e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1135.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Neptunium",
-			"value":6.44e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":644.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Plutonium",
-			"value":6.4e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":640.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Americium",
-			"value":1.176e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1176.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Curium",
-			"value":1.345e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1345.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Berkelium",
-			"value":1.05e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1050.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Californium",
-			"value":9.0e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":900.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Einsteinium",
-			"value":8.6e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":860.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Fermium",
-			"value":1.527e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1527.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Mendelevium",
-			"value":8.28e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":828.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Nobelium",
-			"value":8.28e2,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":828.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Lawrencium",
-			"value":1.627e3,
-			"oldUnit":"degrees Celsius",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"value":1627.,
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"DegreesCelsius",
-			"unitsName":"DegreesCelsius"
+			"unit":"DegreesCelsius"
 		}
 	]
 }

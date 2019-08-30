@@ -9,394 +9,282 @@
 		{
 			"name":"Hydrogen",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Helium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Lithium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Beryllium",
-			"value":3.2e-2,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"value":0.032,
+			"unit":"None"
 		},
 		{
 			"name":"Boron",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Carbon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Nitrogen",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Oxygen",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Fluorine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Neon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Sodium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Magnesium",
 			"value":0.29,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Aluminum",
 			"value":0.35,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Silicon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Phosphorus",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Sulfur",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Chlorine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Argon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Potassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Calcium",
 			"value":0.31,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Scandium",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Titanium",
 			"value":0.32,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Vanadium",
 			"value":0.37,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Chromium",
 			"value":0.21,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Manganese",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Iron",
 			"value":0.29,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Cobalt",
 			"value":0.31,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Nickel",
 			"value":0.31,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Copper",
 			"value":0.34,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Zinc",
 			"value":0.25,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Gallium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Germanium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Arsenic",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Selenium",
 			"value":0.33,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Bromine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Krypton",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Rubidium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Strontium",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Yttrium",
 			"value":0.24,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Zirconium",
 			"value":0.34,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Niobium",
-			"value":0.4,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"value":0.40,
+			"unit":"None"
 		},
 		{
 			"name":"Molybdenum",
 			"value":0.31,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Technetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Ruthenium",
-			"value":0.3,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"value":0.30,
+			"unit":"None"
 		},
 		{
 			"name":"Rhodium",
 			"value":0.26,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Palladium",
 			"value":0.39,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Silver",
 			"value":0.37,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Cadmium",
-			"value":0.3,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"value":0.30,
+			"unit":"None"
 		},
 		{
 			"name":"Indium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Tin",
 			"value":0.36,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Antimony",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Tellurium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Iodine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Xenon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Cesium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Barium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Lanthanites",
@@ -405,226 +293,162 @@
 		{
 			"name":"Lanthanum",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Cerium",
 			"value":0.24,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Praseodymium",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Neodymium",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Promethium",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Samarium",
 			"value":0.27,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Europium",
 			"value":0.15,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Gadolinium",
 			"value":0.26,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Terbium",
 			"value":0.26,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Dysprosium",
 			"value":0.25,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Holmium",
 			"value":0.23,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Erbium",
 			"value":0.24,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Thulium",
 			"value":0.21,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Ytterbium",
 			"value":0.21,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Lutetium",
 			"value":0.26,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Hafnium",
 			"value":0.37,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Tantalum",
 			"value":0.34,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Tungsten",
 			"value":0.28,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Rhenium",
-			"value":0.3,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"value":0.30,
+			"unit":"None"
 		},
 		{
 			"name":"Osmium",
 			"value":0.25,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Iridium",
 			"value":0.26,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Platinum",
 			"value":0.38,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Gold",
 			"value":0.44,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Mercury",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Thallium",
 			"value":0.45,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Lead",
 			"value":0.44,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Bismuth",
 			"value":0.33,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Radon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Radium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Actinides",
@@ -633,212 +457,152 @@
 		{
 			"name":"Actinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Thorium",
 			"value":0.27,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Protactinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Uranium",
 			"value":0.23,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Plutonium",
 			"value":0.21,
-			"oldUnit":"",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Americium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"None",
-			"unitsName":"Missing[NotApplicable]"
+			"unit":"None"
 		}
 	]
 }

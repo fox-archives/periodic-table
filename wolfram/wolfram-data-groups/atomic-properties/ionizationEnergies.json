@@ -9,394 +9,282 @@
 		{
 			"name":"Hydrogen",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Helium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Lithium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Beryllium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Boron",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Carbon",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Nitrogen",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Oxygen",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Fluorine",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Neon",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Sodium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Magnesium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Aluminum",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Silicon",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Phosphorus",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Sulfur",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Chlorine",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Argon",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Potassium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Calcium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Scandium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Titanium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Vanadium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Chromium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Manganese",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Iron",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Cobalt",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Nickel",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Copper",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Zinc",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Gallium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Germanium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Arsenic",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Selenium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Bromine",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Krypton",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Rubidium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Strontium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Yttrium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Zirconium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Niobium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Molybdenum",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Technetium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Ruthenium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Rhodium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Palladium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Silver",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Cadmium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Indium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tin",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Antimony",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tellurium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Iodine",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Xenon",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Cesium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Barium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Lanthanites",
@@ -405,226 +293,162 @@
 		{
 			"name":"Lanthanum",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Cerium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Praseodymium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Neodymium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Promethium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Samarium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Europium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Gadolinium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Terbium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Dysprosium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Holmium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Erbium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Thulium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Ytterbium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Lutetium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Hafnium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tantalum",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tungsten",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Rhenium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Osmium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Iridium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Platinum",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Gold",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Mercury",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Thallium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------}\n   Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Lead",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Bismuth",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Polonium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Astatine",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Radon",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Francium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Radium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Actinides",
@@ -633,212 +457,152 @@
 		{
 			"name":"Actinium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Thorium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules  Kilojoules  Kilojoules\n{----------, ----------, ----------, ----------}\n   Moles       Moles       Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Protactinium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Uranium",
 			"value":"Error",
-			"oldUnit":" Kilojoules  Kilojoules\n{----------, ----------}\n   Moles       Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Plutonium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Americium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Curium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Californium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Fermium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Error",
-			"oldUnit":" Kilojoules\n{----------}\n   Moles",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Hassium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Error",
-			"oldUnit":"{}",
-			"unit":"KilojoulesPerMole",
-			"unitsName":"KilojoulesPerMole"
+			"unit":"KilojoulesPerMole"
 		}
 	]
 }

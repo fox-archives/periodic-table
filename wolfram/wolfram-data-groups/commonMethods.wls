@@ -25,19 +25,6 @@ fixValue[data_]:= (
   Return["Error"];
 );
 
-fixUnit[data_]:= (
-  If[MemberQ[{"Failed", "Unknown"}, data],
-    Return[data];
-  ];
-
-  (* If[KnownUnitQ@QuantityUnit[data],
-    Return[ToString@QuantityForm[data, "LongForm"]];
-  ]; *)
-  Return[ToString@QuantityForm[QuantityUnit@data, "LongForm"]];
-
-  Return["Error"];
-);
-
 fixAccuracy[data_]:= (
   If[MemberQ[{"Failed", "Unknown"}, data],
     Return[data];
@@ -85,29 +72,14 @@ iterateAtomProperty[
 
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
-    rawValue = ElementData[i, atomPropertyPascalCase];
-    transformedValue = removeUnknowns@atomValueTransformation@rawValue;
-
     name = ElementData[i, "StandardName"];
-    value = fixValue@transformedValue;
-    oldUnit = fixUnit@transformedValue;
+    value = atomValueTransformation@ElementData[i, atomPropertyPascalCase];
     unit = ToString@ElementData[i, atomPropertyPascalCase, "Units"];
-    unitsName = ToString@ElementData[i, atomPropertyPascalCase, "UnitsStandardName"];
-    rawAccuracy = fixAccuracy@rawValue;
-    transformedAccuracy = fixAccuracy@transformedValue;
-    rawPrecision = fixPrecision@rawValue;
-    transformedPrecision = fixPrecision@transformedValue;
 
     atomArrayData = Append[atomArrayData, {
       "name" -> name,
       "value" -> value,
-      "oldUnit" -> oldUnit,
-      "unit" -> unit,
-      "unitsName" -> unitsName
-      (* "rawAccuracy" -> rawAccuracy,
-      "transformedAccuracy" -> transformedAccuracy,
-      "rawPrecision" -> rawPrecision,
-      "transformedPrecision" ->  transformedPrecision *)
+      "unit" -> unit
     }];
 
     If[i == 56,

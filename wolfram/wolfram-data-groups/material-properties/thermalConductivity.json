@@ -9,394 +9,282 @@
 		{
 			"name":"Hydrogen",
 			"value":0.1805,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Helium",
 			"value":0.1513,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lithium",
-			"value":8.5e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":85.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Beryllium",
-			"value":1.9e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":190.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Boron",
-			"value":2.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":27.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Carbon",
-			"value":1.4e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":140.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Nitrogen",
-			"value":2.583e-2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.02583,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Oxygen",
-			"value":2.658e-2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.02658,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Fluorine",
-			"value":2.77e-2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.0277,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Neon",
-			"value":4.91e-2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.0491,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Sodium",
-			"value":1.4e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":140.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Magnesium",
-			"value":1.6e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":160.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Aluminum",
-			"value":2.35e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":235.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Silicon",
-			"value":1.5e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":150.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Phosphorus",
 			"value":0.236,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Sulfur",
 			"value":0.205,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Chlorine",
-			"value":8.9e-3,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.0089,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Argon",
-			"value":1.772e-2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.01772,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Potassium",
 			"value":1.0e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Calcium",
 			"value":2.0e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Scandium",
-			"value":1.6e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":16.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Titanium",
-			"value":2.2e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":22.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Vanadium",
-			"value":3.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":31.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Chromium",
-			"value":9.4e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":94.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Manganese",
 			"value":7.7,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Iron",
-			"value":7.9e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":79.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cobalt",
 			"value":1.0e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Nickel",
-			"value":9.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":91.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Copper",
 			"value":4.0e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Zinc",
-			"value":1.2e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":120.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Gallium",
-			"value":2.9e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":29.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Germanium",
-			"value":6.0e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":60.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Arsenic",
-			"value":5.0e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":50.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Selenium",
 			"value":0.52,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Bromine",
 			"value":0.12,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Krypton",
-			"value":9.430000000000001e-3,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.00943,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rubidium",
-			"value":5.8e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":58.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Strontium",
-			"value":3.5e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":35.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Yttrium",
-			"value":1.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":17.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Zirconium",
-			"value":2.3e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":23.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Niobium",
-			"value":5.4e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":54.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Molybdenum",
-			"value":1.39e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":139.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Technetium",
-			"value":5.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":51.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Ruthenium",
-			"value":1.2e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":120.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rhodium",
-			"value":1.5e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":150.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Palladium",
-			"value":7.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":71.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Silver",
-			"value":4.3e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":430.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cadmium",
-			"value":9.6e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":96.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Indium",
-			"value":8.2e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":82.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tin",
-			"value":6.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":67.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Antimony",
-			"value":2.4e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":24.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tellurium",
-			"value":3.0,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":3.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Iodine",
 			"value":0.449,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Xenon",
-			"value":5.65e-3,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.00565,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cesium",
-			"value":3.6e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":36.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Barium",
-			"value":1.8e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":18.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lanthanites",
@@ -404,227 +292,163 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":1.3e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":13.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cerium",
-			"value":1.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":11.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Praseodymium",
-			"value":1.3e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":13.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Neodymium",
-			"value":1.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":17.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Promethium",
-			"value":1.5e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":15.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Samarium",
-			"value":1.3e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":13.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Europium",
-			"value":1.4e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":14.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Gadolinium",
-			"value":1.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":11.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Terbium",
-			"value":1.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":11.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Dysprosium",
-			"value":1.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":11.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Holmium",
-			"value":1.6e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":16.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Erbium",
-			"value":1.5e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":15.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Thulium",
-			"value":1.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":17.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Ytterbium",
-			"value":3.9e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":39.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lutetium",
-			"value":1.6e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":16.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Hafnium",
-			"value":2.3e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":23.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tantalum",
-			"value":5.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":57.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tungsten",
-			"value":1.7e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":170.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rhenium",
-			"value":4.8e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":48.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Osmium",
-			"value":8.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":87.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Iridium",
-			"value":1.5e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":150.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Platinum",
-			"value":7.1e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":71.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Gold",
-			"value":3.2e2,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":320.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Mercury",
 			"value":8.3,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Thallium",
-			"value":4.6e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":46.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lead",
-			"value":3.5e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":35.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Bismuth",
-			"value":8.0,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":8.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Astatine",
-			"value":2.0,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":2.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Radon",
-			"value":3.61e-3,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":0.00361,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Radium",
-			"value":1.9e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":19.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Actinides",
@@ -632,213 +456,153 @@
 		},
 		{
 			"name":"Actinium",
-			"value":1.2e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":12.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Thorium",
-			"value":5.4e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":54.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Protactinium",
-			"value":4.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":47.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Uranium",
-			"value":2.7e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":27.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Neptunium",
-			"value":6.0,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":6.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Plutonium",
-			"value":6.0,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":6.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Americium",
-			"value":1.0e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":10.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Berkelium",
-			"value":1.0e1,
-			"oldUnit":"watts per meter kelvin difference",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"value":10.,
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"WattsPerMeterKelvin",
-			"unitsName":"WattsPerMeterKelvin"
+			"unit":"WattsPerMeterKelvin"
 		}
 	]
 }

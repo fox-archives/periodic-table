@@ -8,395 +8,283 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":1.27e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1270.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Helium",
-			"value":9.7e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":970.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Lithium",
 			"value":6.0e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Beryllium",
 			"value":1.3e4,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Boron",
 			"value":1.62e4,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Carbon",
-			"value":1.835e4,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":18350.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Nitrogen",
-			"value":3.336e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":333.6,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Oxygen",
-			"value":3.175e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":317.5,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Fluorine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Neon",
-			"value":9.36e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":936.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Sodium",
 			"value":3.2e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Magnesium",
-			"value":4.602e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4602.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Aluminum",
 			"value":5.1e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Silicon",
 			"value":2.2e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Phosphorus",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Sulfur",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Chlorine",
-			"value":2.06e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":206.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Argon",
-			"value":3.19e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":319.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Potassium",
 			"value":2.0e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Calcium",
-			"value":3.81e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3810.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Scandium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Titanium",
-			"value":4.14e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4140.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Vanadium",
-			"value":4.56e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4560.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Chromium",
-			"value":5.94e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":5940.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Manganese",
-			"value":5.15e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":5150.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Iron",
-			"value":4.91e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4910.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Cobalt",
-			"value":4.72e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4720.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Nickel",
-			"value":4.97e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4970.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Copper",
-			"value":3.57e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3570.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Zinc",
 			"value":3.7e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Gallium",
-			"value":2.74e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2740.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Germanium",
 			"value":5.4e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Arsenic",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Selenium",
-			"value":3.35e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3350.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Bromine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Krypton",
-			"value":1.12e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1120.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Rubidium",
 			"value":1.3e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Strontium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Yttrium",
 			"value":3.3e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Zirconium",
 			"value":3.8e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Niobium",
-			"value":3.48e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3480.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Molybdenum",
-			"value":6.19e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":6190.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Technetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Ruthenium",
-			"value":5.97e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":5970.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Rhodium",
 			"value":4.7e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Palladium",
-			"value":3.07e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3070.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Silver",
 			"value":2.6e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Cadmium",
-			"value":2.31e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2310.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Indium",
-			"value":1.215e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1215.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Tin",
 			"value":2.5e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Antimony",
-			"value":3.42e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3420.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Tellurium",
-			"value":2.61e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2610.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Iodine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Xenon",
-			"value":1.09e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1090.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Cesium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Barium",
-			"value":1.62e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1620.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Lanthanites",
@@ -404,227 +292,163 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":2.475e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2475.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Cerium",
 			"value":2.1e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Praseodymium",
-			"value":2.28e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2280.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Neodymium",
-			"value":2.33e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2330.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Promethium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Samarium",
-			"value":2.13e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2130.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Europium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Gadolinium",
-			"value":2.68e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2680.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Terbium",
-			"value":2.62e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2620.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Dysprosium",
-			"value":2.71e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2710.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Holmium",
-			"value":2.76e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2760.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Erbium",
-			"value":2.83e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2830.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Thulium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Ytterbium",
-			"value":1.59e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1590.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Lutetium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Hafnium",
-			"value":3.01e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3010.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Tantalum",
 			"value":3.4e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Tungsten",
-			"value":5.174e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":5174.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Rhenium",
 			"value":4.7e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Osmium",
-			"value":4.94e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4940.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Iridium",
-			"value":4.825e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":4825.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Platinum",
-			"value":2.68e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2680.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Gold",
-			"value":1.74e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1740.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Mercury",
-			"value":1.407e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1407.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Thallium",
-			"value":8.18e2,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":818.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Lead",
-			"value":1.26e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1260.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Bismuth",
-			"value":1.79e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":1790.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Radon",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Radium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Actinides",
@@ -633,212 +457,152 @@
 		{
 			"name":"Actinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Thorium",
-			"value":2.49e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2490.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Protactinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Uranium",
-			"value":3.155e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":3155.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Plutonium",
-			"value":2.26e3,
-			"oldUnit":"meters per second",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"value":2260.,
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Americium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"MetersPerSecond",
-			"unitsName":"MetersPerSecond"
+			"unit":"MetersPerSecond"
 		}
 	]
 }

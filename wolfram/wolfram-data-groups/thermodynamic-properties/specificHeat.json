@@ -8,395 +8,283 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":1.43e4,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":14300.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Helium",
-			"value":5.1931e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":5193.1,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lithium",
-			"value":3.57e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":3570.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Beryllium",
-			"value":1.82e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":1820.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Boron",
-			"value":1.03e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":1030.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Carbon",
-			"value":7.1e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":710.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Nitrogen",
-			"value":1.04e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":1040.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Oxygen",
-			"value":9.19e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":919.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Fluorine",
-			"value":8.24e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":824.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Neon",
-			"value":1.03e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":1030.0,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Sodium",
-			"value":1.23e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":1230.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Magnesium",
-			"value":1.02e3,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":1020.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Aluminum",
-			"value":9.04e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":904.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Silicon",
-			"value":7.1e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":710.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Phosphorus",
-			"value":7.697e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":769.7,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Sulfur",
-			"value":7.05e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":705.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Chlorine",
-			"value":4.782e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":478.2,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Argon",
-			"value":5.2033e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":520.33,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Potassium",
-			"value":7.57e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":757.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Calcium",
-			"value":6.31e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":631.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Scandium",
-			"value":5.67e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":567.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Titanium",
-			"value":5.2e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":520.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Vanadium",
-			"value":4.89e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":489.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Chromium",
-			"value":4.48e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":448.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Manganese",
-			"value":4.79e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":479.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Iron",
-			"value":4.49e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":449.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cobalt",
-			"value":4.21e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":421.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Nickel",
-			"value":4.45e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":445.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Copper",
-			"value":3.844e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":384.4,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Zinc",
-			"value":3.88e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":388.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Gallium",
-			"value":3.71e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":371.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Germanium",
-			"value":3.214e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":321.4,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Arsenic",
-			"value":3.28e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":328.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Selenium",
-			"value":3.212e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":321.2,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Bromine",
-			"value":9.473e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":947.3,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Krypton",
-			"value":2.4805e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":248.05,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rubidium",
-			"value":3.64e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":364.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Strontium",
-			"value":3.0e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":300.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Yttrium",
-			"value":2.98e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":298.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Zirconium",
-			"value":2.78e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":278.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Niobium",
-			"value":2.65e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":265.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Molybdenum",
-			"value":2.51e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":251.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Technetium",
-			"value":6.3e1,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":63.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Ruthenium",
-			"value":2.38e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":238.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rhodium",
-			"value":2.4e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":240.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Palladium",
-			"value":2.4e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":240.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Silver",
-			"value":2.35e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":235.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cadmium",
-			"value":2.3e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":230.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Indium",
-			"value":2.33e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":233.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tin",
-			"value":2.17e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":217.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Antimony",
-			"value":2.07e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":207.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tellurium",
-			"value":2.01e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":201.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Iodine",
-			"value":4.29e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":429.0,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Xenon",
-			"value":1.5832e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":158.32,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cesium",
-			"value":2.42e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":242.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Barium",
-			"value":2.05e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":205.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lanthanites",
@@ -404,227 +292,163 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":1.95e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":195.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cerium",
-			"value":1.92e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":192.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Praseodymium",
-			"value":1.93e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":193.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Neodymium",
-			"value":1.9e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":190.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Promethium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Samarium",
-			"value":1.96e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":196.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Europium",
-			"value":1.82e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":182.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Gadolinium",
-			"value":2.4e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":240.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Terbium",
-			"value":1.82e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":182.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Dysprosium",
-			"value":1.67e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":167.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Holmium",
-			"value":1.65e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":165.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Erbium",
-			"value":1.68e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":168.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Thulium",
-			"value":1.6e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":160.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Ytterbium",
-			"value":1.54e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":154.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lutetium",
-			"value":1.54e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":154.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Hafnium",
-			"value":1.44e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":144.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tantalum",
-			"value":1.4e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":140.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tungsten",
-			"value":1.32e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":132.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rhenium",
-			"value":1.37e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":137.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Osmium",
-			"value":1.3e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":130.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Iridium",
-			"value":1.31e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":131.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Platinum",
-			"value":1.33e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":133.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Gold",
-			"value":1.291e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":129.1,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Mercury",
-			"value":1.395e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":139.5,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Thallium",
-			"value":1.29e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":129.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lead",
-			"value":1.27e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":127.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Bismuth",
-			"value":1.22e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":122.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Polonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Astatine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Radon",
-			"value":9.365e1,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":93.65,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Francium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Radium",
-			"value":9.2e1,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":92.0,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Actinides",
@@ -632,213 +456,153 @@
 		},
 		{
 			"name":"Actinium",
-			"value":1.2e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":120.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Thorium",
-			"value":1.18e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":118.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Protactinium",
-			"value":9.91e1,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":99.1,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Uranium",
-			"value":1.16e2,
-			"oldUnit":"joules per kilogram kelvin",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"value":116.,
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Neptunium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Plutonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Americium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Curium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Berkelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Californium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Einsteinium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Fermium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Mendelevium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Nobelium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lawrencium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rutherfordium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Dubnium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Seaborgium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Bohrium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Hassium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Meitnerium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Darmstadtium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Roentgenium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Copernicium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Nihonium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Flerovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Moscovium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Livermorium",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tennessine",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Oganesson",
 			"value":"Unknown",
-			"oldUnit":"Unknown",
-			"unit":"JoulesPerKilogramKelvin",
-			"unitsName":"JoulesPerKilogramKelvin"
+			"unit":"JoulesPerKilogramKelvin"
 		}
 	]
 }
