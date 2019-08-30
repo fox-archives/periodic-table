@@ -1,7 +1,7 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-removeUnknowns[data_]:= (
+fixUnknowns[data_]:= (
   If[FailureQ[data],
     Return["Failed"];
   ];
@@ -10,42 +10,10 @@ removeUnknowns[data_]:= (
     Return["Unknown"];
   ];
 
-  Return[data];
-);
-
-fixValue[data_]:= (
-  If[MemberQ[{"Failed", "Unknown"}, data],
-    Return[data];
-  ];
-
   If[NumberQ[QuantityMagnitude@data],
     Return[QuantityMagnitude@data];
   ];
 
-  Return["Error"];
-);
-
-fixAccuracy[data_]:= (
-  If[MemberQ[{"Failed", "Unknown"}, data],
-    Return[data];
-  ];
-
-  If[NumberQ[Accuracy@data],
-    Return[Accuracy@data];
-  ];
-
-  Return["Error"];
-);
-
-fixPrecision[data_]:= (
-  If[MemberQ[{"Failed", "Unknown"}, data],
-    Return[data];
-  ];
-
-  If[NumberQ[Precision@data],
-    Return[Precision@data];
-  ];
-  
   Return["Error"];
 );
 

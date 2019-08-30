@@ -4,7 +4,7 @@
 Import["../commonMethods.wls"];
 
 atomTransform[prop_]:= (
-  Return@fixValue@removeUnknowns@N[prop];
+  Return@fixUnknowns@N[prop];
 );
 
 iterateAtomProperty[
