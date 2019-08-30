@@ -42,7 +42,10 @@ iterateAtomProperty[
   For[i = 1, i < 119, i++, (
     name = ElementData[i, "StandardName"];
     value = atomValueTransformation@ElementData[i, atomPropertyPascalCase];
-    unit = ToString@ElementData[i, atomPropertyPascalCase, "Units"];
+    If[MissingQ@ElementData[i, atomPropertyPascalCase, "Units"],
+      unit = "";,
+      unit = ToString@ElementData[i, atomPropertyPascalCase, "Units"];
+    ];
 
     atomArrayData = Append[atomArrayData, {
       "name" -> name,
