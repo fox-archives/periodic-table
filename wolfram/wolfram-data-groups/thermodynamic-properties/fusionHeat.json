@@ -13,7 +13,7 @@
 		},
 		{
 			"name":"Helium",
-			"value":0.02,
+			"value":2.0e-2,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -28,12 +28,12 @@
 		},
 		{
 			"name":"Boron",
-			"value":50.,
+			"value":5.0e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Carbon",
-			"value":105.,
+			"value":1.05e2,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -58,7 +58,7 @@
 		},
 		{
 			"name":"Sodium",
-			"value":2.60,
+			"value":2.6,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -68,12 +68,12 @@
 		},
 		{
 			"name":"Aluminum",
-			"value":10.7,
+			"value":1.07e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Silicon",
-			"value":50.2,
+			"value":5.02e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -108,47 +108,47 @@
 		},
 		{
 			"name":"Scandium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Titanium",
-			"value":18.7,
+			"value":1.87e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Vanadium",
-			"value":22.8,
+			"value":2.28e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Chromium",
-			"value":20.5,
+			"value":2.05e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Manganese",
-			"value":13.2,
+			"value":1.32e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Iron",
-			"value":13.8,
+			"value":1.38e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Cobalt",
-			"value":16.2,
+			"value":1.62e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Nickel",
-			"value":17.2,
+			"value":1.72e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Copper",
-			"value":13.1,
+			"value":1.31e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -163,12 +163,12 @@
 		},
 		{
 			"name":"Germanium",
-			"value":31.8,
+			"value":3.18e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Arsenic",
-			"value":27.7,
+			"value":2.77e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -193,52 +193,52 @@
 		},
 		{
 			"name":"Strontium",
-			"value":8.,
+			"value":8.0,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Yttrium",
-			"value":11.4,
+			"value":1.14e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Zirconium",
-			"value":21.,
+			"value":2.1e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Niobium",
-			"value":26.8,
+			"value":2.68e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Molybdenum",
-			"value":36.,
+			"value":3.6e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Technetium",
-			"value":23.,
+			"value":2.3e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Ruthenium",
-			"value":25.7,
+			"value":2.57e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Rhodium",
-			"value":21.7,
+			"value":2.17e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Palladium",
-			"value":16.7,
+			"value":1.67e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Silver",
-			"value":11.3,
+			"value":1.13e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -258,12 +258,12 @@
 		},
 		{
 			"name":"Antimony",
-			"value":19.7,
+			"value":1.97e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tellurium",
-			"value":17.5,
+			"value":1.75e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -273,7 +273,7 @@
 		},
 		{
 			"name":"Xenon",
-			"value":2.30,
+			"value":2.3,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -327,32 +327,32 @@
 		},
 		{
 			"name":"Gadolinium",
-			"value":10.,
+			"value":1.0e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Terbium",
-			"value":10.8,
+			"value":1.08e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Dysprosium",
-			"value":11.1,
+			"value":1.11e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Holmium",
-			"value":17.0,
+			"value":1.7e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Erbium",
-			"value":19.9,
+			"value":1.99e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Thulium",
-			"value":16.8,
+			"value":1.68e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -362,47 +362,47 @@
 		},
 		{
 			"name":"Lutetium",
-			"value":22.,
+			"value":2.2e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Hafnium",
-			"value":25.5,
+			"value":2.55e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tantalum",
-			"value":36.,
+			"value":3.6e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Tungsten",
-			"value":35.,
+			"value":3.5e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Rhenium",
-			"value":33.,
+			"value":3.3e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Osmium",
-			"value":31.,
+			"value":3.1e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Iridium",
-			"value":26.,
+			"value":2.6e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Platinum",
-			"value":20.,
+			"value":2.0e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Gold",
-			"value":12.5,
+			"value":1.25e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -422,32 +422,32 @@
 		},
 		{
 			"name":"Bismuth",
-			"value":10.9,
+			"value":1.09e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Polonium",
-			"value":13.,
+			"value":1.3e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Astatine",
-			"value":6.,
+			"value":6.0,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Radon",
-			"value":3.,
+			"value":3.0,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Francium",
-			"value":2.,
+			"value":2.0,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Radium",
-			"value":8.,
+			"value":8.0,
 			"unit":"KilojoulesPerMole"
 		},
 		{
@@ -456,27 +456,27 @@
 		},
 		{
 			"name":"Actinium",
-			"value":14.,
+			"value":1.4e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Thorium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Protactinium",
-			"value":15.,
+			"value":1.5e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Uranium",
-			"value":14.,
+			"value":1.4e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{
 			"name":"Neptunium",
-			"value":10.,
+			"value":1.0e1,
 			"unit":"KilojoulesPerMole"
 		},
 		{

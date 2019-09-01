@@ -8,282 +8,282 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Helium",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Lithium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Beryllium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Boron",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Carbon",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Nitrogen",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Oxygen",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Fluorine",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Neon",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Sodium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Magnesium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Aluminum",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Silicon",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Phosphorus",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Sulfur",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Chlorine",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Argon",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Potassium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Calcium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Scandium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Titanium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Vanadium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Chromium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Manganese",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Iron",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Cobalt",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Nickel",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Copper",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Zinc",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Gallium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Germanium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Arsenic",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Selenium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Bromine",
-			"value":"Error",
+			"value":"EntityClass[Element, Liquid]",
 			"unit":""
 		},
 		{
 			"name":"Krypton",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Rubidium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Strontium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Yttrium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Zirconium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Niobium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Molybdenum",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Technetium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Ruthenium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Rhodium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Palladium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Silver",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Cadmium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Indium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Tin",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Antimony",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Tellurium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Iodine",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Xenon",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Cesium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Barium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
@@ -292,162 +292,162 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Cerium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Praseodymium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Neodymium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Promethium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Samarium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Europium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Gadolinium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Terbium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Dysprosium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Holmium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Erbium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Thulium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Ytterbium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Lutetium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Hafnium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Tantalum",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Tungsten",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Rhenium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Osmium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Iridium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Platinum",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Gold",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Mercury",
-			"value":"Error",
+			"value":"EntityClass[Element, Liquid]",
 			"unit":""
 		},
 		{
 			"name":"Thallium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Lead",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Bismuth",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Polonium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Astatine",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Radon",
-			"value":"Error",
+			"value":"EntityClass[Element, Gas]",
 			"unit":""
 		},
 		{
 			"name":"Francium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Radium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
@@ -456,152 +456,152 @@
 		},
 		{
 			"name":"Actinium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Thorium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Protactinium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Uranium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Neptunium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Plutonium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Americium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Curium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Berkelium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Californium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Error",
+			"value":"EntityClass[Element, Solid]",
 			"unit":""
 		},
 		{
 			"name":"Fermium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Nobelium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Dubnium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Bohrium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Hassium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Copernicium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Nihonium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Flerovium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Moscovium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Livermorium",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Tennessine",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		},
 		{
 			"name":"Oganesson",
-			"value":"Unknown",
+			"value":"Missing[Unknown]",
 			"unit":""
 		}
 	]

@@ -18,7 +18,7 @@
 		},
 		{
 			"name":"Lithium",
-			"value":67.,
+			"value":6.7e1,
 			"unit":"Megapascals"
 		},
 		{
@@ -58,7 +58,7 @@
 		},
 		{
 			"name":"Sodium",
-			"value":35.,
+			"value":3.5e1,
 			"unit":"Megapascals"
 		},
 		{
@@ -83,7 +83,7 @@
 		},
 		{
 			"name":"Sulfur",
-			"value":20.7,
+			"value":2.07e1,
 			"unit":"Megapascals"
 		},
 		{
@@ -98,7 +98,7 @@
 		},
 		{
 			"name":"Potassium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"Megapascals"
 		},
 		{
@@ -173,22 +173,22 @@
 		},
 		{
 			"name":"Selenium",
-			"value":27.2,
+			"value":2.72e1,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Bromine",
-			"value":10.34,
+			"value":1.034e1,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Krypton",
-			"value":5.50,
+			"value":5.5,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Rubidium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"Megapascals"
 		},
 		{
@@ -268,7 +268,7 @@
 		},
 		{
 			"name":"Iodine",
-			"value":11.7,
+			"value":1.17e1,
 			"unit":"Megapascals"
 		},
 		{
@@ -407,7 +407,7 @@
 		},
 		{
 			"name":"Mercury",
-			"value":172.,
+			"value":1.72e2,
 			"unit":"Megapascals"
 		},
 		{

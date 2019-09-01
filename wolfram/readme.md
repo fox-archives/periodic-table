@@ -4,7 +4,7 @@ generates data about all atoms. atom data transformed by transformPropertiesForA
 
 ## display and layout
 
-data related to layout and display of the atom. contains the following.
+data related to layout and display of the atom. contains the following. this *should* be static data (although it may not be treated like it in the frontend)
 
 ```md
 layout-atom-colors
@@ -12,14 +12,29 @@ layout-atom-placement
 layout-label-placement
 ```
 
-## direct data output
+## wolfram data dump
 
 files that directly generate atom data based on a *single* property. categorization names comes from the wolfram website.
 
 ```md
 wolfram-data-groups
   [x] basic-atom-properties
+    [x] atomic number
+    [x] atomic weight
   [x] material-properties
+    [x] brinell hardness
+    [x] bulk modulus
+    [x] density
+    [x] liquid density
+    [x] mohs hardness
+    [x] molar volume  
+    [x] poisson ratio
+    [x] shear modulus
+    [x] sound speed
+    [x] thermal conductivity
+    [x] thermal expansion
+    [x] vickers hardness
+    [x] young modulus
   [x] thermodynamic-properties
   [x] electromagnetic-optical-properties
   [x] abundance-properties
@@ -31,6 +46,10 @@ wolfram-data-groups
   [ ] names-properties
   [ ] historical-commercial-properties
 ```
+
+each atom `value` in the `.json` files should have one of 4 values
+
+- 
 
 ## categorized data
 

@@ -8,7 +8,7 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":14.01,
+			"value":1.401e1,
 			"unit":"Kelvins"
 		},
 		{
@@ -18,267 +18,267 @@
 		},
 		{
 			"name":"Lithium",
-			"value":453.69,
+			"value":4.5369e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Beryllium",
-			"value":1560.,
+			"value":1.56e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Boron",
-			"value":2348.,
+			"value":2.348e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Carbon",
-			"value":3823.,
+			"value":3.823e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Nitrogen",
-			"value":63.05,
+			"value":6.305e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Oxygen",
-			"value":54.8,
+			"value":5.48e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Fluorine",
-			"value":53.5,
+			"value":5.35e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Neon",
-			"value":24.56,
+			"value":2.456e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Sodium",
-			"value":370.87,
+			"value":3.7087e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Magnesium",
-			"value":923.,
+			"value":9.23e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Aluminum",
-			"value":933.47,
+			"value":9.3347e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Silicon",
-			"value":1687.,
+			"value":1.687e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Phosphorus",
-			"value":317.3,
+			"value":3.173e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Sulfur",
-			"value":388.36,
+			"value":3.8836e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Chlorine",
-			"value":171.6,
+			"value":1.716e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Argon",
-			"value":83.8,
+			"value":8.38e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Potassium",
-			"value":336.53,
+			"value":3.3653e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Calcium",
-			"value":1115.,
+			"value":1.115e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Scandium",
-			"value":1814.,
+			"value":1.814e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Titanium",
-			"value":1941.,
+			"value":1.941e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Vanadium",
-			"value":2183.,
+			"value":2.183e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Chromium",
-			"value":2180.,
+			"value":2.18e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Manganese",
-			"value":1519.,
+			"value":1.519e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Iron",
-			"value":1811.,
+			"value":1.811e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Cobalt",
-			"value":1768.,
+			"value":1.768e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Nickel",
-			"value":1728.,
+			"value":1.728e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Copper",
-			"value":1357.77,
+			"value":1.35777e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Zinc",
-			"value":692.68,
+			"value":6.9268e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Gallium",
-			"value":302.91,
+			"value":3.0291e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Germanium",
-			"value":1211.4,
+			"value":1.2114e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Arsenic",
-			"value":1090.,
+			"value":1.09e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Selenium",
-			"value":494.,
+			"value":4.94e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Bromine",
-			"value":265.8,
+			"value":2.658e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Krypton",
-			"value":115.79,
+			"value":1.1579e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Rubidium",
-			"value":312.46,
+			"value":3.1246e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Strontium",
-			"value":1050.,
+			"value":1.05e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Yttrium",
-			"value":1799.,
+			"value":1.799e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Zirconium",
-			"value":2128.,
+			"value":2.128e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Niobium",
-			"value":2750.,
+			"value":2.75e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Molybdenum",
-			"value":2896.,
+			"value":2.896e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Technetium",
-			"value":2430.,
+			"value":2.43e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Ruthenium",
-			"value":2607.,
+			"value":2.607e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Rhodium",
-			"value":2237.,
+			"value":2.237e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Palladium",
-			"value":1828.05,
+			"value":1.82805e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Silver",
-			"value":1234.93,
+			"value":1.23493e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Cadmium",
-			"value":594.22,
+			"value":5.9422e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Indium",
-			"value":429.75,
+			"value":4.2975e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Tin",
-			"value":505.08,
+			"value":5.0508e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Antimony",
-			"value":903.78,
+			"value":9.0378e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Tellurium",
-			"value":722.66,
+			"value":7.2266e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Iodine",
-			"value":386.85,
+			"value":3.8685e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Xenon",
-			"value":161.3,
+			"value":1.613e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Cesium",
-			"value":301.59,
+			"value":3.0159e2,
 			"unit":"Kelvins"
 		},
 		{
@@ -292,152 +292,152 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":1193.,
+			"value":1.193e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Cerium",
-			"value":1071.,
+			"value":1.071e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Praseodymium",
-			"value":1204.,
+			"value":1.204e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Neodymium",
-			"value":1294.,
+			"value":1.294e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Promethium",
-			"value":1373.,
+			"value":1.373e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Samarium",
-			"value":1345.,
+			"value":1.345e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Europium",
-			"value":1095.,
+			"value":1.095e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Gadolinium",
-			"value":1586.,
+			"value":1.586e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Terbium",
-			"value":1629.,
+			"value":1.629e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Dysprosium",
-			"value":1685.,
+			"value":1.685e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Holmium",
-			"value":1747.,
+			"value":1.747e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Erbium",
-			"value":1770.,
+			"value":1.77e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Thulium",
-			"value":1818.,
+			"value":1.818e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Ytterbium",
-			"value":1092.,
+			"value":1.092e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Lutetium",
-			"value":1936.,
+			"value":1.936e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Hafnium",
-			"value":2506.,
+			"value":2.506e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Tantalum",
-			"value":3290.,
+			"value":3.29e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Tungsten",
-			"value":3695.,
+			"value":3.695e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Rhenium",
-			"value":3459.,
+			"value":3.459e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Osmium",
-			"value":3306.,
+			"value":3.306e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Iridium",
-			"value":2739.,
+			"value":2.739e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Platinum",
-			"value":2041.4,
+			"value":2.0414e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Gold",
-			"value":1337.33,
+			"value":1.33733e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Mercury",
-			"value":234.32,
+			"value":2.3432e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Thallium",
-			"value":577.,
+			"value":5.77e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Lead",
-			"value":600.61,
+			"value":6.0061e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Bismuth",
-			"value":544.4,
+			"value":5.444e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Polonium",
-			"value":528.,
+			"value":5.28e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Astatine",
-			"value":577.,
+			"value":5.77e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Radon",
-			"value":202.,
+			"value":2.02e2,
 			"unit":"Kelvins"
 		},
 		{
@@ -447,7 +447,7 @@
 		},
 		{
 			"name":"Radium",
-			"value":973.,
+			"value":9.73e2,
 			"unit":"Kelvins"
 		},
 		{
@@ -456,57 +456,57 @@
 		},
 		{
 			"name":"Actinium",
-			"value":1323.,
+			"value":1.323e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Thorium",
-			"value":2023.,
+			"value":2.023e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Protactinium",
-			"value":1845.,
+			"value":1.845e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Uranium",
-			"value":1408.,
+			"value":1.408e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Neptunium",
-			"value":917.,
+			"value":9.17e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Plutonium",
-			"value":913.,
+			"value":9.13e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Americium",
-			"value":1449.,
+			"value":1.449e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Curium",
-			"value":1618.,
+			"value":1.618e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Berkelium",
-			"value":1323.,
+			"value":1.323e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Californium",
-			"value":1173.,
+			"value":1.173e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Einsteinium",
-			"value":1133.,
+			"value":1.133e3,
 			"unit":"Kelvins"
 		},
 		{

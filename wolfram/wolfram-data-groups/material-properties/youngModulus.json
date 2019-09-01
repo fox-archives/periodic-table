@@ -23,7 +23,7 @@
 		},
 		{
 			"name":"Beryllium",
-			"value":287.,
+			"value":2.87e2,
 			"unit":"Gigapascals"
 		},
 		{
@@ -58,22 +58,22 @@
 		},
 		{
 			"name":"Sodium",
-			"value":10.,
+			"value":1.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Magnesium",
-			"value":45.,
+			"value":4.5e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Aluminum",
-			"value":70.,
+			"value":7.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Silicon",
-			"value":47.,
+			"value":4.7e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -103,42 +103,42 @@
 		},
 		{
 			"name":"Calcium",
-			"value":20.,
+			"value":2.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Scandium",
-			"value":74.,
+			"value":7.4e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Titanium",
-			"value":116.,
+			"value":1.16e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Vanadium",
-			"value":128.,
+			"value":1.28e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Chromium",
-			"value":279.,
+			"value":2.79e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Manganese",
-			"value":198.,
+			"value":1.98e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Iron",
-			"value":211.,
+			"value":2.11e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Cobalt",
-			"value":209.,
+			"value":2.09e2,
 			"unit":"Gigapascals"
 		},
 		{
@@ -148,12 +148,12 @@
 		},
 		{
 			"name":"Copper",
-			"value":130.,
+			"value":1.3e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Zinc",
-			"value":108.,
+			"value":1.08e2,
 			"unit":"Gigapascals"
 		},
 		{
@@ -168,12 +168,12 @@
 		},
 		{
 			"name":"Arsenic",
-			"value":8.,
+			"value":8.0,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Selenium",
-			"value":10.,
+			"value":1.0e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -198,22 +198,22 @@
 		},
 		{
 			"name":"Yttrium",
-			"value":64.,
+			"value":6.4e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Zirconium",
-			"value":67.,
+			"value":6.7e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Niobium",
-			"value":105.,
+			"value":1.05e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Molybdenum",
-			"value":329.,
+			"value":3.29e2,
 			"unit":"Gigapascals"
 		},
 		{
@@ -223,47 +223,47 @@
 		},
 		{
 			"name":"Ruthenium",
-			"value":447.,
+			"value":4.47e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Rhodium",
-			"value":275.,
+			"value":2.75e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Palladium",
-			"value":121.,
+			"value":1.21e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Silver",
-			"value":85.,
+			"value":8.5e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Cadmium",
-			"value":50.,
+			"value":5.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Indium",
-			"value":11.,
+			"value":1.1e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Tin",
-			"value":50.,
+			"value":5.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Antimony",
-			"value":55.,
+			"value":5.5e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Tellurium",
-			"value":43.,
+			"value":4.3e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -283,7 +283,7 @@
 		},
 		{
 			"name":"Barium",
-			"value":13.,
+			"value":1.3e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -292,97 +292,97 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":37.,
+			"value":3.7e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Cerium",
-			"value":34.,
+			"value":3.4e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Praseodymium",
-			"value":37.,
+			"value":3.7e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Neodymium",
-			"value":41.,
+			"value":4.1e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Promethium",
-			"value":46.,
+			"value":4.6e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Samarium",
-			"value":50.,
+			"value":5.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Europium",
-			"value":18.,
+			"value":1.8e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Gadolinium",
-			"value":55.,
+			"value":5.5e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Terbium",
-			"value":56.,
+			"value":5.6e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Dysprosium",
-			"value":61.,
+			"value":6.1e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Holmium",
-			"value":64.,
+			"value":6.4e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Erbium",
-			"value":70.,
+			"value":7.0e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Thulium",
-			"value":74.,
+			"value":7.4e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Ytterbium",
-			"value":24.,
+			"value":2.4e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Lutetium",
-			"value":67.,
+			"value":6.7e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Hafnium",
-			"value":78.,
+			"value":7.8e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Tantalum",
-			"value":186.,
+			"value":1.86e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Tungsten",
-			"value":411.,
+			"value":4.11e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Rhenium",
-			"value":463.,
+			"value":4.63e2,
 			"unit":"Gigapascals"
 		},
 		{
@@ -392,17 +392,17 @@
 		},
 		{
 			"name":"Iridium",
-			"value":528.,
+			"value":5.28e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Platinum",
-			"value":168.,
+			"value":1.68e2,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Gold",
-			"value":78.,
+			"value":7.8e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -412,17 +412,17 @@
 		},
 		{
 			"name":"Thallium",
-			"value":8.,
+			"value":8.0,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Lead",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"Gigapascals"
 		},
 		{
 			"name":"Bismuth",
-			"value":32.,
+			"value":3.2e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -461,7 +461,7 @@
 		},
 		{
 			"name":"Thorium",
-			"value":79.,
+			"value":7.9e1,
 			"unit":"Gigapascals"
 		},
 		{
@@ -471,7 +471,7 @@
 		},
 		{
 			"name":"Uranium",
-			"value":208.,
+			"value":2.08e2,
 			"unit":"Gigapascals"
 		},
 		{
@@ -481,7 +481,7 @@
 		},
 		{
 			"name":"Plutonium",
-			"value":96.,
+			"value":9.6e1,
 			"unit":"Gigapascals"
 		},
 		{

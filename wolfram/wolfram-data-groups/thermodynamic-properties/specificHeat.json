@@ -8,282 +8,282 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":14300.,
+			"value":1.43e4,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Helium",
-			"value":5193.1,
+			"value":5.1931e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lithium",
-			"value":3570.,
+			"value":3.57e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Beryllium",
-			"value":1820.,
+			"value":1.82e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Boron",
-			"value":1030.,
+			"value":1.03e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Carbon",
-			"value":710.,
+			"value":7.1e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Nitrogen",
-			"value":1040.,
+			"value":1.04e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Oxygen",
-			"value":919.,
+			"value":9.19e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Fluorine",
-			"value":824.,
+			"value":8.24e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Neon",
-			"value":1030.0,
+			"value":1.03e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Sodium",
-			"value":1230.,
+			"value":1.23e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Magnesium",
-			"value":1020.,
+			"value":1.02e3,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Aluminum",
-			"value":904.,
+			"value":9.04e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Silicon",
-			"value":710.,
+			"value":7.1e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Phosphorus",
-			"value":769.7,
+			"value":7.697e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Sulfur",
-			"value":705.,
+			"value":7.05e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Chlorine",
-			"value":478.2,
+			"value":4.782e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Argon",
-			"value":520.33,
+			"value":5.2033e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Potassium",
-			"value":757.,
+			"value":7.57e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Calcium",
-			"value":631.,
+			"value":6.31e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Scandium",
-			"value":567.,
+			"value":5.67e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Titanium",
-			"value":520.,
+			"value":5.2e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Vanadium",
-			"value":489.,
+			"value":4.89e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Chromium",
-			"value":448.,
+			"value":4.48e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Manganese",
-			"value":479.,
+			"value":4.79e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Iron",
-			"value":449.,
+			"value":4.49e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cobalt",
-			"value":421.,
+			"value":4.21e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Nickel",
-			"value":445.,
+			"value":4.45e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Copper",
-			"value":384.4,
+			"value":3.844e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Zinc",
-			"value":388.,
+			"value":3.88e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Gallium",
-			"value":371.,
+			"value":3.71e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Germanium",
-			"value":321.4,
+			"value":3.214e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Arsenic",
-			"value":328.,
+			"value":3.28e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Selenium",
-			"value":321.2,
+			"value":3.212e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Bromine",
-			"value":947.3,
+			"value":9.473e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Krypton",
-			"value":248.05,
+			"value":2.4805e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rubidium",
-			"value":364.,
+			"value":3.64e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Strontium",
-			"value":300.,
+			"value":3.0e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Yttrium",
-			"value":298.,
+			"value":2.98e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Zirconium",
-			"value":278.,
+			"value":2.78e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Niobium",
-			"value":265.,
+			"value":2.65e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Molybdenum",
-			"value":251.,
+			"value":2.51e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Technetium",
-			"value":63.,
+			"value":6.3e1,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Ruthenium",
-			"value":238.,
+			"value":2.38e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rhodium",
-			"value":240.,
+			"value":2.4e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Palladium",
-			"value":240.,
+			"value":2.4e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Silver",
-			"value":235.,
+			"value":2.35e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cadmium",
-			"value":230.,
+			"value":2.3e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Indium",
-			"value":233.,
+			"value":2.33e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tin",
-			"value":217.,
+			"value":2.17e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Antimony",
-			"value":207.,
+			"value":2.07e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tellurium",
-			"value":201.,
+			"value":2.01e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Iodine",
-			"value":429.0,
+			"value":4.29e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Xenon",
-			"value":158.32,
+			"value":1.5832e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cesium",
-			"value":242.,
+			"value":2.42e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Barium",
-			"value":205.,
+			"value":2.05e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
@@ -292,22 +292,22 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":195.,
+			"value":1.95e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Cerium",
-			"value":192.,
+			"value":1.92e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Praseodymium",
-			"value":193.,
+			"value":1.93e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Neodymium",
-			"value":190.,
+			"value":1.9e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
@@ -317,112 +317,112 @@
 		},
 		{
 			"name":"Samarium",
-			"value":196.,
+			"value":1.96e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Europium",
-			"value":182.,
+			"value":1.82e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Gadolinium",
-			"value":240.,
+			"value":2.4e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Terbium",
-			"value":182.,
+			"value":1.82e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Dysprosium",
-			"value":167.,
+			"value":1.67e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Holmium",
-			"value":165.,
+			"value":1.65e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Erbium",
-			"value":168.,
+			"value":1.68e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Thulium",
-			"value":160.,
+			"value":1.6e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Ytterbium",
-			"value":154.,
+			"value":1.54e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lutetium",
-			"value":154.,
+			"value":1.54e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Hafnium",
-			"value":144.,
+			"value":1.44e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tantalum",
-			"value":140.,
+			"value":1.4e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Tungsten",
-			"value":132.,
+			"value":1.32e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Rhenium",
-			"value":137.,
+			"value":1.37e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Osmium",
-			"value":130.,
+			"value":1.3e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Iridium",
-			"value":131.,
+			"value":1.31e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Platinum",
-			"value":133.,
+			"value":1.33e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Gold",
-			"value":129.1,
+			"value":1.291e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Mercury",
-			"value":139.5,
+			"value":1.395e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Thallium",
-			"value":129.,
+			"value":1.29e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Lead",
-			"value":127.,
+			"value":1.27e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Bismuth",
-			"value":122.,
+			"value":1.22e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
@@ -437,7 +437,7 @@
 		},
 		{
 			"name":"Radon",
-			"value":93.65,
+			"value":9.365e1,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
@@ -447,7 +447,7 @@
 		},
 		{
 			"name":"Radium",
-			"value":92.0,
+			"value":9.2e1,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
@@ -456,22 +456,22 @@
 		},
 		{
 			"name":"Actinium",
-			"value":120.,
+			"value":1.2e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Thorium",
-			"value":118.,
+			"value":1.18e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Protactinium",
-			"value":99.1,
+			"value":9.91e1,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{
 			"name":"Uranium",
-			"value":116.,
+			"value":1.16e2,
 			"unit":"JoulesPerKilogramKelvin"
 		},
 		{

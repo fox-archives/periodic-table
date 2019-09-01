@@ -133,17 +133,17 @@
 		},
 		{
 			"name":"Iron",
-			"value":1043.,
+			"value":1.043e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Cobalt",
-			"value":1394.,
+			"value":1.394e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Nickel",
-			"value":631.,
+			"value":6.31e2,
 			"unit":"Kelvins"
 		},
 		{
@@ -327,32 +327,32 @@
 		},
 		{
 			"name":"Gadolinium",
-			"value":292.,
+			"value":2.92e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Terbium",
-			"value":222.,
+			"value":2.22e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Dysprosium",
-			"value":87.,
+			"value":8.7e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Holmium",
-			"value":20.,
+			"value":2.0e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Erbium",
-			"value":32.,
+			"value":3.2e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Thulium",
-			"value":25.,
+			"value":2.5e1,
 			"unit":"Kelvins"
 		},
 		{

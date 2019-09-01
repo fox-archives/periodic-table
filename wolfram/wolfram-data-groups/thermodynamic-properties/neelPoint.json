@@ -123,12 +123,12 @@
 		},
 		{
 			"name":"Chromium",
-			"value":393.,
+			"value":3.93e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Manganese",
-			"value":100.,
+			"value":1.0e2,
 			"unit":"Kelvins"
 		},
 		{
@@ -297,7 +297,7 @@
 		},
 		{
 			"name":"Cerium",
-			"value":12.5,
+			"value":1.25e1,
 			"unit":"Kelvins"
 		},
 		{
@@ -307,7 +307,7 @@
 		},
 		{
 			"name":"Neodymium",
-			"value":19.2,
+			"value":1.92e1,
 			"unit":"Kelvins"
 		},
 		{
@@ -317,12 +317,12 @@
 		},
 		{
 			"name":"Samarium",
-			"value":106.,
+			"value":1.06e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Europium",
-			"value":90.5,
+			"value":9.05e1,
 			"unit":"Kelvins"
 		},
 		{
@@ -332,27 +332,27 @@
 		},
 		{
 			"name":"Terbium",
-			"value":230.,
+			"value":2.3e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Dysprosium",
-			"value":178.,
+			"value":1.78e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Holmium",
-			"value":132.,
+			"value":1.32e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Erbium",
-			"value":82.,
+			"value":8.2e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Thulium",
-			"value":56.,
+			"value":5.6e1,
 			"unit":"Kelvins"
 		},
 		{

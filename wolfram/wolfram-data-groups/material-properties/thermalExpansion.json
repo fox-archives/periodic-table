@@ -18,22 +18,22 @@
 		},
 		{
 			"name":"Lithium",
-			"value":0.000046,
+			"value":4.599999999999998e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Beryllium",
-			"value":0.0000113,
+			"value":1.1300000000000004e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Boron",
-			"value":6.e-6,
+			"value":5.999999999999983e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Carbon",
-			"value":7.1e-6,
+			"value":7.10000000000001e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -58,22 +58,22 @@
 		},
 		{
 			"name":"Sodium",
-			"value":0.000070,
+			"value":7.000000000000002e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Magnesium",
-			"value":0.000025,
+			"value":2.4800000000000007e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Aluminum",
-			"value":0.0000231,
+			"value":2.310000000000002e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Silicon",
-			"value":2.6e-6,
+			"value":2.600000000000009e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -103,67 +103,67 @@
 		},
 		{
 			"name":"Calcium",
-			"value":0.0000223,
+			"value":2.23e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Scandium",
-			"value":0.0000102,
+			"value":1.0199999999999977e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Titanium",
-			"value":8.6e-6,
+			"value":8.599999999999992e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Vanadium",
-			"value":8.4e-6,
+			"value":8.399999999999987e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Chromium",
-			"value":4.9e-6,
+			"value":4.900000000000011e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Manganese",
-			"value":0.0000217,
+			"value":2.1699999999999985e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Iron",
-			"value":0.0000118,
+			"value":1.1800000000000016e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cobalt",
-			"value":0.0000130,
+			"value":1.299999999999999e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Nickel",
-			"value":0.0000134,
+			"value":1.34e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Copper",
-			"value":0.0000165,
+			"value":1.650000000000002e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Zinc",
-			"value":0.0000302,
+			"value":3.0199999999999975e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Gallium",
-			"value":0.000120,
+			"value":1.1999999999999999e-4,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Germanium",
-			"value":6.e-6,
+			"value":5.999999999999983e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -193,27 +193,27 @@
 		},
 		{
 			"name":"Strontium",
-			"value":0.0000225,
+			"value":2.2500000000000005e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Yttrium",
-			"value":0.0000106,
+			"value":1.0599999999999987e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Zirconium",
-			"value":5.7e-6,
+			"value":5.699999999999976e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Niobium",
-			"value":7.3e-6,
+			"value":7.300000000000015e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Molybdenum",
-			"value":4.8e-6,
+			"value":4.800000000000008e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -223,42 +223,42 @@
 		},
 		{
 			"name":"Ruthenium",
-			"value":6.4e-6,
+			"value":6.399999999999993e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Rhodium",
-			"value":8.0e-6,
+			"value":7.999999999999978e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Palladium",
-			"value":0.0000118,
+			"value":1.1800000000000016e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Silver",
-			"value":0.0000189,
+			"value":1.8900000000000026e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cadmium",
-			"value":0.0000308,
+			"value":3.079999999999999e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Indium",
-			"value":0.0000321,
+			"value":3.210000000000002e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tin",
-			"value":0.000022,
+			"value":2.1999999999999993e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Antimony",
-			"value":0.000011,
+			"value":1.0999999999999996e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -283,7 +283,7 @@
 		},
 		{
 			"name":"Barium",
-			"value":0.0000206,
+			"value":2.0600000000000013e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -292,12 +292,12 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":0.0000121,
+			"value":1.2100000000000023e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Cerium",
-			"value":6.3e-6,
+			"value":6.2999999999999905e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -307,92 +307,92 @@
 		},
 		{
 			"name":"Neodymium",
-			"value":9.6e-6,
+			"value":9.600000000000017e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Promethium",
-			"value":0.000011,
+			"value":1.0999999999999996e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Samarium",
-			"value":0.0000127,
+			"value":1.2699999999999983e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Europium",
-			"value":0.000035,
+			"value":3.499999999999998e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Gadolinium",
-			"value":9.4e-6,
+			"value":9.400000000000012e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Terbium",
-			"value":0.0000103,
+			"value":1.029999999999998e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Dysprosium",
-			"value":0.000010,
+			"value":1.0000000000000026e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Holmium",
-			"value":0.0000112,
+			"value":1.1200000000000001e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Erbium",
-			"value":0.0000122,
+			"value":1.2200000000000025e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Thulium",
-			"value":0.0000133,
+			"value":1.3299999999999998e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Ytterbium",
-			"value":0.0000263,
+			"value":2.629999999999999e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lutetium",
-			"value":0.000010,
+			"value":1.0000000000000026e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Hafnium",
-			"value":5.9e-6,
+			"value":5.899999999999981e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tantalum",
-			"value":6.3e-6,
+			"value":6.2999999999999905e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Tungsten",
-			"value":4.5e-6,
+			"value":4.500000000000001e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Rhenium",
-			"value":6.2e-6,
+			"value":6.199999999999988e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Osmium",
-			"value":5.1e-6,
+			"value":5.1000000000000155e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Iridium",
-			"value":6.4e-6,
+			"value":6.399999999999993e-6,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -402,27 +402,27 @@
 		},
 		{
 			"name":"Gold",
-			"value":0.0000142,
+			"value":1.420000000000002e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Mercury",
-			"value":0.000181,
+			"value":1.81e-4,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Thallium",
-			"value":0.0000299,
+			"value":2.9900000000000022e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Lead",
-			"value":0.0000289,
+			"value":2.8899999999999998e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
 			"name":"Bismuth",
-			"value":0.0000134,
+			"value":1.34e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -461,7 +461,7 @@
 		},
 		{
 			"name":"Thorium",
-			"value":0.0000110,
+			"value":1.0999999999999996e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{
@@ -471,7 +471,7 @@
 		},
 		{
 			"name":"Uranium",
-			"value":0.0000139,
+			"value":1.3900000000000013e-5,
 			"unit":"ReciprocalKelvins"
 		},
 		{

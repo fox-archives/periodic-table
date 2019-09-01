@@ -18,62 +18,62 @@
 		},
 		{
 			"name":"Lithium",
-			"value":85.,
+			"value":8.5e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Beryllium",
-			"value":190.,
+			"value":1.9e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Boron",
-			"value":27.,
+			"value":2.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Carbon",
-			"value":140.,
+			"value":1.4e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Nitrogen",
-			"value":0.02583,
+			"value":2.583e-2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Oxygen",
-			"value":0.02658,
+			"value":2.658e-2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Fluorine",
-			"value":0.0277,
+			"value":2.77e-2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Neon",
-			"value":0.0491,
+			"value":4.91e-2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Sodium",
-			"value":140.,
+			"value":1.4e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Magnesium",
-			"value":160.,
+			"value":1.6e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Aluminum",
-			"value":235.,
+			"value":2.35e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Silicon",
-			"value":150.,
+			"value":1.5e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -88,12 +88,12 @@
 		},
 		{
 			"name":"Chlorine",
-			"value":0.0089,
+			"value":8.9e-3,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Argon",
-			"value":0.01772,
+			"value":1.772e-2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -108,22 +108,22 @@
 		},
 		{
 			"name":"Scandium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Titanium",
-			"value":22.,
+			"value":2.2e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Vanadium",
-			"value":31.,
+			"value":3.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Chromium",
-			"value":94.,
+			"value":9.4e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -133,7 +133,7 @@
 		},
 		{
 			"name":"Iron",
-			"value":79.,
+			"value":7.9e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -143,7 +143,7 @@
 		},
 		{
 			"name":"Nickel",
-			"value":91.,
+			"value":9.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -153,22 +153,22 @@
 		},
 		{
 			"name":"Zinc",
-			"value":120.,
+			"value":1.2e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Gallium",
-			"value":29.,
+			"value":2.9e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Germanium",
-			"value":60.,
+			"value":6.0e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Arsenic",
-			"value":50.,
+			"value":5.0e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -183,87 +183,87 @@
 		},
 		{
 			"name":"Krypton",
-			"value":0.00943,
+			"value":9.430000000000001e-3,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rubidium",
-			"value":58.,
+			"value":5.8e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Strontium",
-			"value":35.,
+			"value":3.5e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Yttrium",
-			"value":17.,
+			"value":1.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Zirconium",
-			"value":23.,
+			"value":2.3e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Niobium",
-			"value":54.,
+			"value":5.4e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Molybdenum",
-			"value":139.,
+			"value":1.39e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Technetium",
-			"value":51.,
+			"value":5.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Ruthenium",
-			"value":120.,
+			"value":1.2e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rhodium",
-			"value":150.,
+			"value":1.5e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Palladium",
-			"value":71.,
+			"value":7.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Silver",
-			"value":430.,
+			"value":4.3e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cadmium",
-			"value":96.,
+			"value":9.6e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Indium",
-			"value":82.,
+			"value":8.2e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tin",
-			"value":67.,
+			"value":6.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Antimony",
-			"value":24.,
+			"value":2.4e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tellurium",
-			"value":3.,
+			"value":3.0,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -273,17 +273,17 @@
 		},
 		{
 			"name":"Xenon",
-			"value":0.00565,
+			"value":5.65e-3,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cesium",
-			"value":36.,
+			"value":3.6e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Barium",
-			"value":18.,
+			"value":1.8e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -292,117 +292,117 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":13.,
+			"value":1.3e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Cerium",
-			"value":11.,
+			"value":1.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Praseodymium",
-			"value":13.,
+			"value":1.3e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Neodymium",
-			"value":17.,
+			"value":1.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Promethium",
-			"value":15.,
+			"value":1.5e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Samarium",
-			"value":13.,
+			"value":1.3e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Europium",
-			"value":14.,
+			"value":1.4e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Gadolinium",
-			"value":11.,
+			"value":1.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Terbium",
-			"value":11.,
+			"value":1.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Dysprosium",
-			"value":11.,
+			"value":1.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Holmium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Erbium",
-			"value":15.,
+			"value":1.5e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Thulium",
-			"value":17.,
+			"value":1.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Ytterbium",
-			"value":39.,
+			"value":3.9e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lutetium",
-			"value":16.,
+			"value":1.6e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Hafnium",
-			"value":23.,
+			"value":2.3e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tantalum",
-			"value":57.,
+			"value":5.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Tungsten",
-			"value":170.,
+			"value":1.7e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Rhenium",
-			"value":48.,
+			"value":4.8e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Osmium",
-			"value":87.,
+			"value":8.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Iridium",
-			"value":150.,
+			"value":1.5e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Platinum",
-			"value":71.,
+			"value":7.1e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Gold",
-			"value":320.,
+			"value":3.2e2,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -412,17 +412,17 @@
 		},
 		{
 			"name":"Thallium",
-			"value":46.,
+			"value":4.6e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Lead",
-			"value":35.,
+			"value":3.5e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Bismuth",
-			"value":8.,
+			"value":8.0,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -432,12 +432,12 @@
 		},
 		{
 			"name":"Astatine",
-			"value":2.,
+			"value":2.0,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Radon",
-			"value":0.00361,
+			"value":3.61e-3,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -447,7 +447,7 @@
 		},
 		{
 			"name":"Radium",
-			"value":19.,
+			"value":1.9e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -456,37 +456,37 @@
 		},
 		{
 			"name":"Actinium",
-			"value":12.,
+			"value":1.2e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Thorium",
-			"value":54.,
+			"value":5.4e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Protactinium",
-			"value":47.,
+			"value":4.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Uranium",
-			"value":27.,
+			"value":2.7e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Neptunium",
-			"value":6.,
+			"value":6.0,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Plutonium",
-			"value":6.,
+			"value":6.0,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
 			"name":"Americium",
-			"value":10.,
+			"value":1.0e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{
@@ -496,7 +496,7 @@
 		},
 		{
 			"name":"Berkelium",
-			"value":10.,
+			"value":1.0e1,
 			"unit":"WattsPerMeterKelvin"
 		},
 		{

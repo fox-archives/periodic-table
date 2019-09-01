@@ -8,12 +8,12 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":1270.,
+			"value":1.27e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Helium",
-			"value":970.,
+			"value":9.7e2,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -33,17 +33,17 @@
 		},
 		{
 			"name":"Carbon",
-			"value":18350.,
+			"value":1.835e4,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Nitrogen",
-			"value":333.6,
+			"value":3.336e2,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Oxygen",
-			"value":317.5,
+			"value":3.175e2,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -53,7 +53,7 @@
 		},
 		{
 			"name":"Neon",
-			"value":936.,
+			"value":9.36e2,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -63,7 +63,7 @@
 		},
 		{
 			"name":"Magnesium",
-			"value":4602.,
+			"value":4.602e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -88,12 +88,12 @@
 		},
 		{
 			"name":"Chlorine",
-			"value":206.,
+			"value":2.06e2,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Argon",
-			"value":319.,
+			"value":3.19e2,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -103,7 +103,7 @@
 		},
 		{
 			"name":"Calcium",
-			"value":3810.,
+			"value":3.81e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -113,42 +113,42 @@
 		},
 		{
 			"name":"Titanium",
-			"value":4140.,
+			"value":4.14e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Vanadium",
-			"value":4560.,
+			"value":4.56e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Chromium",
-			"value":5940.,
+			"value":5.94e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Manganese",
-			"value":5150.,
+			"value":5.15e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Iron",
-			"value":4910.,
+			"value":4.91e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Cobalt",
-			"value":4720.,
+			"value":4.72e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Nickel",
-			"value":4970.,
+			"value":4.97e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Copper",
-			"value":3570.,
+			"value":3.57e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -158,7 +158,7 @@
 		},
 		{
 			"name":"Gallium",
-			"value":2740.,
+			"value":2.74e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -173,7 +173,7 @@
 		},
 		{
 			"name":"Selenium",
-			"value":3350.,
+			"value":3.35e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -183,7 +183,7 @@
 		},
 		{
 			"name":"Krypton",
-			"value":1120.,
+			"value":1.12e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -208,12 +208,12 @@
 		},
 		{
 			"name":"Niobium",
-			"value":3480.,
+			"value":3.48e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Molybdenum",
-			"value":6190.,
+			"value":6.19e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -223,7 +223,7 @@
 		},
 		{
 			"name":"Ruthenium",
-			"value":5970.,
+			"value":5.97e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -233,7 +233,7 @@
 		},
 		{
 			"name":"Palladium",
-			"value":3070.,
+			"value":3.07e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -243,12 +243,12 @@
 		},
 		{
 			"name":"Cadmium",
-			"value":2310.,
+			"value":2.31e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Indium",
-			"value":1215.,
+			"value":1.215e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -258,12 +258,12 @@
 		},
 		{
 			"name":"Antimony",
-			"value":3420.,
+			"value":3.42e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Tellurium",
-			"value":2610.,
+			"value":2.61e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -273,7 +273,7 @@
 		},
 		{
 			"name":"Xenon",
-			"value":1090.,
+			"value":1.09e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -283,7 +283,7 @@
 		},
 		{
 			"name":"Barium",
-			"value":1620.,
+			"value":1.62e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -292,7 +292,7 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":2475.,
+			"value":2.475e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -302,12 +302,12 @@
 		},
 		{
 			"name":"Praseodymium",
-			"value":2280.,
+			"value":2.28e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Neodymium",
-			"value":2330.,
+			"value":2.33e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -317,7 +317,7 @@
 		},
 		{
 			"name":"Samarium",
-			"value":2130.,
+			"value":2.13e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -327,27 +327,27 @@
 		},
 		{
 			"name":"Gadolinium",
-			"value":2680.,
+			"value":2.68e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Terbium",
-			"value":2620.,
+			"value":2.62e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Dysprosium",
-			"value":2710.,
+			"value":2.71e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Holmium",
-			"value":2760.,
+			"value":2.76e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Erbium",
-			"value":2830.,
+			"value":2.83e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -357,7 +357,7 @@
 		},
 		{
 			"name":"Ytterbium",
-			"value":1590.,
+			"value":1.59e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -367,7 +367,7 @@
 		},
 		{
 			"name":"Hafnium",
-			"value":3010.,
+			"value":3.01e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -377,7 +377,7 @@
 		},
 		{
 			"name":"Tungsten",
-			"value":5174.,
+			"value":5.174e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -387,42 +387,42 @@
 		},
 		{
 			"name":"Osmium",
-			"value":4940.,
+			"value":4.94e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Iridium",
-			"value":4825.,
+			"value":4.825e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Platinum",
-			"value":2680.,
+			"value":2.68e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Gold",
-			"value":1740.,
+			"value":1.74e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Mercury",
-			"value":1407.,
+			"value":1.407e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Thallium",
-			"value":818.,
+			"value":8.18e2,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Lead",
-			"value":1260.,
+			"value":1.26e3,
 			"unit":"MetersPerSecond"
 		},
 		{
 			"name":"Bismuth",
-			"value":1790.,
+			"value":1.79e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -461,7 +461,7 @@
 		},
 		{
 			"name":"Thorium",
-			"value":2490.,
+			"value":2.49e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -471,7 +471,7 @@
 		},
 		{
 			"name":"Uranium",
-			"value":3155.,
+			"value":3.155e3,
 			"unit":"MetersPerSecond"
 		},
 		{
@@ -481,7 +481,7 @@
 		},
 		{
 			"name":"Plutonium",
-			"value":2260.,
+			"value":2.26e3,
 			"unit":"MetersPerSecond"
 		},
 		{

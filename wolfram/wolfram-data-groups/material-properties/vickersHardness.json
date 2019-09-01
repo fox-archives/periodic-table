@@ -23,7 +23,7 @@
 		},
 		{
 			"name":"Beryllium",
-			"value":1670.,
+			"value":1.67e3,
 			"unit":"Megapascals"
 		},
 		{
@@ -68,12 +68,12 @@
 		},
 		{
 			"name":"Aluminum",
-			"value":167.,
+			"value":1.67e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Silicon",
-			"value":9.63e3,
+			"value":9.6301303e3,
 			"unit":"Megapascals"
 		},
 		{
@@ -113,17 +113,17 @@
 		},
 		{
 			"name":"Titanium",
-			"value":970.,
+			"value":9.7e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Vanadium",
-			"value":628.,
+			"value":6.28e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Chromium",
-			"value":1060.,
+			"value":1.06e3,
 			"unit":"Megapascals"
 		},
 		{
@@ -133,22 +133,22 @@
 		},
 		{
 			"name":"Iron",
-			"value":608.,
+			"value":6.08e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Cobalt",
-			"value":1043.,
+			"value":1.043e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Nickel",
-			"value":638.,
+			"value":6.38e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Copper",
-			"value":369.,
+			"value":3.69e2,
 			"unit":"Megapascals"
 		},
 		{
@@ -163,7 +163,7 @@
 		},
 		{
 			"name":"Germanium",
-			"value":8.01e3,
+			"value":8.01203305e3,
 			"unit":"Megapascals"
 		},
 		{
@@ -203,17 +203,17 @@
 		},
 		{
 			"name":"Zirconium",
-			"value":904.,
+			"value":9.04e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Niobium",
-			"value":1320.,
+			"value":1.32e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Molybdenum",
-			"value":1530.,
+			"value":1.53e3,
 			"unit":"Megapascals"
 		},
 		{
@@ -223,22 +223,22 @@
 		},
 		{
 			"name":"Ruthenium",
-			"value":2.30e3,
+			"value":2.298138766666667e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Rhodium",
-			"value":1246.,
+			"value":1.246e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Palladium",
-			"value":461.,
+			"value":4.61e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Silver",
-			"value":251.,
+			"value":2.51e2,
 			"unit":"Megapascals"
 		},
 		{
@@ -292,12 +292,12 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":491.,
+			"value":4.91e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Cerium",
-			"value":270.,
+			"value":2.7e2,
 			"unit":"Megapascals"
 		},
 		{
@@ -307,7 +307,7 @@
 		},
 		{
 			"name":"Neodymium",
-			"value":343.,
+			"value":3.43e2,
 			"unit":"Megapascals"
 		},
 		{
@@ -317,92 +317,92 @@
 		},
 		{
 			"name":"Samarium",
-			"value":412.,
+			"value":4.12e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Europium",
-			"value":167.,
+			"value":1.67e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Gadolinium",
-			"value":570.,
+			"value":5.7e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Terbium",
-			"value":863.,
+			"value":8.63e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Dysprosium",
-			"value":540.,
+			"value":5.4e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Holmium",
-			"value":481.,
+			"value":4.81e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Erbium",
-			"value":588.,
+			"value":5.88e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Thulium",
-			"value":520.,
+			"value":5.2e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Ytterbium",
-			"value":206.,
+			"value":2.06e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Lutetium",
-			"value":1160.,
+			"value":1.16e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Hafnium",
-			"value":1760.,
+			"value":1.76e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Tantalum",
-			"value":873.,
+			"value":8.73e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Tungsten",
-			"value":3430.,
+			"value":3.43e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Rhenium",
-			"value":2450.,
+			"value":2.45e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Osmium",
-			"value":4.14e3,
+			"value":4.137063913414634e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Iridium",
-			"value":1760.,
+			"value":1.76e3,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Platinum",
-			"value":549.,
+			"value":5.49e2,
 			"unit":"Megapascals"
 		},
 		{
 			"name":"Gold",
-			"value":216.,
+			"value":2.16e2,
 			"unit":"Megapascals"
 		},
 		{
@@ -461,7 +461,7 @@
 		},
 		{
 			"name":"Thorium",
-			"value":350.,
+			"value":3.5e2,
 			"unit":"Megapascals"
 		},
 		{
@@ -471,7 +471,7 @@
 		},
 		{
 			"name":"Uranium",
-			"value":1960.,
+			"value":1.96e3,
 			"unit":"Megapascals"
 		},
 		{

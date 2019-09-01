@@ -8,7 +8,7 @@
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":32.97,
+			"value":3.297e1,
 			"unit":"Kelvins"
 		},
 		{
@@ -18,7 +18,7 @@
 		},
 		{
 			"name":"Lithium",
-			"value":3223.,
+			"value":3.223e3,
 			"unit":"Kelvins"
 		},
 		{
@@ -38,27 +38,27 @@
 		},
 		{
 			"name":"Nitrogen",
-			"value":126.21,
+			"value":1.2621e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Oxygen",
-			"value":154.59,
+			"value":1.5459e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Fluorine",
-			"value":144.13,
+			"value":1.4413e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Neon",
-			"value":44.4,
+			"value":4.44e1,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Sodium",
-			"value":2573.,
+			"value":2.573e3,
 			"unit":"Kelvins"
 		},
 		{
@@ -83,22 +83,22 @@
 		},
 		{
 			"name":"Sulfur",
-			"value":1314.,
+			"value":1.314e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Chlorine",
-			"value":416.9,
+			"value":4.169e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Argon",
-			"value":150.87,
+			"value":1.5087e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Potassium",
-			"value":2223.,
+			"value":2.223e3,
 			"unit":"Kelvins"
 		},
 		{
@@ -173,22 +173,22 @@
 		},
 		{
 			"name":"Selenium",
-			"value":1766.,
+			"value":1.766e3,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Bromine",
-			"value":588.,
+			"value":5.88e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Krypton",
-			"value":209.41,
+			"value":2.0941e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Rubidium",
-			"value":2093.,
+			"value":2.093e3,
 			"unit":"Kelvins"
 		},
 		{
@@ -268,17 +268,17 @@
 		},
 		{
 			"name":"Iodine",
-			"value":819.,
+			"value":8.19e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Xenon",
-			"value":289.77,
+			"value":2.8977e2,
 			"unit":"Kelvins"
 		},
 		{
 			"name":"Cesium",
-			"value":1938.,
+			"value":1.938e3,
 			"unit":"Kelvins"
 		},
 		{
@@ -407,7 +407,7 @@
 		},
 		{
 			"name":"Mercury",
-			"value":1750.,
+			"value":1.75e3,
 			"unit":"Kelvins"
 		},
 		{
@@ -437,7 +437,7 @@
 		},
 		{
 			"name":"Radon",
-			"value":377.,
+			"value":3.77e2,
 			"unit":"Kelvins"
 		},
 		{
