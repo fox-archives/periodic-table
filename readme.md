@@ -26,3 +26,9 @@ ES5       | 12+     | 21+     | 23+       | 6+        | 6+
 ES6       | 15+     | 54+     | 51+       | 10+       | 10+
 
 \* Supports with extension -moz, -webkit, etc.
+
+## DevOps Workflow
+
+For devleopment, use `sudo docker-compose up`, which will spin up all containers specified in respective `dockerfile.development` files.
+
+For prod we only have `./backend`, no database crap, called `dockerfile.production`, which is the only one we should be depploying.

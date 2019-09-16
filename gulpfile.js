@@ -25,13 +25,12 @@ async function transferWolfram() {
 }
 
 async function transferFrontend() {
-  let from = "frontend/index.html";
-  let to = "backend";
+  let from = "frontend/dist/{*.js,*.css,*.html,assets/*}";
+  let to = "backend/public";
 
-  del(to + '/index.html')
+  del(["backend/public/**", "!backend/public/"])
     .then(() => {
       src(from)
-        .pipe(htmlmin())
         .pipe(dest(to));
     })
     .catch(e => console.error(e));

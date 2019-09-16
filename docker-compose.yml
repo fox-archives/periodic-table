@@ -1,7 +1,9 @@
 version: "3.7"
 services:
   server:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: dockerfile.development
     ports:
       - "${BACKEND_PORT}:${BACKEND_PORT}"
     environment:
@@ -11,7 +13,9 @@ services:
     stdin_open: true
     tty: true
   client:
-    build: ./frontend
+    build:
+      context: ./frontend
+      dockerfile: dockerfile.development
     ports:
       - "${FRONTEND_PORT}:${FRONTEND_PORT}"
     environment:

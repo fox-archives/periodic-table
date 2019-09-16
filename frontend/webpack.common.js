@@ -3,6 +3,8 @@ let VueLoaderPlugin = require("vue-loader/lib/plugin");
 let HtmlWebpackPlugin = require("html-webpack-plugin");
 let BundleAnalyzerPlugin = require("webpack-bundle-analyzer"); // eslint-disable-line
 
+console.log(process.env.NODE_ENV);
+
 module.exports = {
   entry: "./src/index.js",
   output: {

@@ -1,0 +1,12 @@
+FROM node:12.8.1-alpine
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+
+COPY . .
+
+RUN yarn install --pure-lockfile --no-cache --production=true
+
+EXPOSE 3000
+CMD ["yarn", "prod"]

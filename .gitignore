@@ -1,5 +1,6 @@
 # main
 dist/
+backend/public/
 
 # npm
 node_modules/

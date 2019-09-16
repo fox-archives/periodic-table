@@ -1,20 +1,11 @@
 let express = require("express");
 let bodyParser = require("body-parser");
-let logger = require("morgan");
 let fs = require("fs");
 let path = require("path");
 require("dotenv").config({ path: "../" });
 
 let app = express();
 app.use(bodyParser.json()); // Allow express to parse .json requests sent in
-app.use(logger("common")); // Use Morgan log generator
-app.use(
-  logger("common", {
-    stream: fs.createWriteStream("./morgan.log", {
-      flags: "a"
-    })
-  })
-);
 
 app.use(express.static("public"));
 
