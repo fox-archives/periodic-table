@@ -28,7 +28,7 @@ async function transferFrontend() {
   let from = "frontend/dist/{*.js,*.css,*.html,assets/*}";
   let to = "backend/public";
 
-  del(["backend/public/**", "!backend/public/"])
+  del(["backend/public/**", "!backend/public/", "!backend/public/data"])
     .then(() => {
       src(from)
         .pipe(dest(to));
