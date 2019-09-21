@@ -14,7 +14,7 @@ spec:
         environment: dev
     spec:
       containers:
-      - name: pt
+      - name: my-app-name
         image: gcr.io/turnkey-science-250806/pt:v1.0.0
         ports:
         - containerPort: 3000
@@ -24,4 +24,4 @@ spec:
             fieldRef:
               fieldPath: metadata.name
       imagePullSecrets:
-      - name: gcr-json-key
+      - name: gcr-json-key-4
