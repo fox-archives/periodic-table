@@ -25,11 +25,6 @@ export default {
   }
 }
 
-.light-con {
-  #visual-inner {
-    background-color: $lc-background !important;
-  }
-}
 
 .dark-def {
   #visual-inner {

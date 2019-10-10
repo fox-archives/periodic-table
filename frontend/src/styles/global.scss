@@ -1,14 +1,7 @@
 // // V A R I A B L E S \\ \\
-* {
+*, *::before, **::after {
   box-sizing: border-box;
 }
-
-// Open Color Variables
-// @import "open-color/open-color.scss";
-
-// Import mixins and functions, which are only included if the mixin or function is called via @include
-// @import "mixins.scss";
-// @import "functions.scss";
 
 // Other common variables
 $minimum-width: 1000px;
@@ -36,7 +29,6 @@ $spacing: 8px;
 // MASTER COLOR VARIABLE LIST
 //  [Theme Name]          [JS Theme Name]   [CSS Theme Abbreviation]
 //  Light Theme           light-def         ld
-//  High Contrast Theme   light-con         lc
 //  Dark Theme            dark-def          dd
 
 // GENERAL DESCRIPTIONS (create aa-variables just for better readability of master variables, don't actually use them)
@@ -56,14 +48,6 @@ $ld-shadow: $oc-gray-2;
 $ld-shadow-hover: $oc-gray-3;
 
 $ld-text: $oc-gray-9;
-
-// HIGH CONTRAST THEME (LC)
-$lc-background: $oc-gray-1;
-$lc-background-accent: $oc-gray-2;
-$lc-shadow: $oc-gray-3;
-$lc-shadow-hover: $oc-gray-4;
-
-$lc-text: $oc-gray-9;
 
 // DARK THEME (DD)
 $dd-background: $oc-gray-8;

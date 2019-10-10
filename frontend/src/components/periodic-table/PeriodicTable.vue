@@ -290,15 +290,6 @@ export default {
   );
 }
 
-.light-con {
-  @include periodicTableThemeDefault(
-    $lc-background,
-    true,
-    $lc-shadow,
-    $lc-shadow-hover
-  );
-}
-
 .dark-def {
   @include periodicTableThemeDefault(
     $dd-background,
@@ -320,14 +311,6 @@ export default {
   @include elementsThemeShadow(true, $oc-gray-3, $oc-gray-4);
 }
 
-.light-con {
-  @include elementsThemeAtomColors("supdark-", true, 6, 9);
-  @include elementsThemeAtomColors("dark-", true, 5, 9);
-  @include elementsThemeAtomColors("", true, 4, 9);
-  @include elementsThemeAtomColors("light-", true, 2, 6);
-  @include elementsThemeShadow(true, $oc-gray-4, $oc-gray-5);
-}
-
 .dark-def {
   @include elementsThemeAtomColors("supdark-", true, 9, 1);
   @include elementsThemeAtomColors("dark-", true, 8, 1);
@@ -342,10 +325,6 @@ export default {
 
 .light-def {
   @include labelsThemeDefault($oc-gray-0, $oc-gray-2, $oc-gray-9);
-}
-
-.light-con {
-  @include labelsThemeDefault($oc-gray-1, $oc-gray-4, $oc-gray-9);
 }
 
 .dark-def {

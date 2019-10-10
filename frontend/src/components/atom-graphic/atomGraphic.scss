@@ -11,17 +11,6 @@
   @include elementsThemeAtomColors("", true, 2, 9);
 }
 
-.light-con {
-  @include panelVisualThemeDefault(
-    $lc-background,
-    true,
-    $lc-shadow,
-    $lc-shadow-hover,
-    $lc-text
-  );
-  @include elementsThemeAtomColors("", true, 4, 9);
-}
-
 .dark-def {
   @include panelVisualThemeDefault(
     $dd-background,

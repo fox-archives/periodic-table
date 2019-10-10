@@ -142,20 +142,6 @@ export default {
   );
 }
 
-.light-con {
-  @include navigationThemeDefault(
-    $lc-background,
-    true,
-    $lc-shadow,
-    $lc-shadow-hover,
-    $oc-gray-3,
-    $oc-gray-4,
-    $oc-gray-3,
-    $oc-gray-8,
-    $oc-gray-8
-  );
-}
-
 .dark-def {
   @include navigationThemeDefault(
     $dd-background,

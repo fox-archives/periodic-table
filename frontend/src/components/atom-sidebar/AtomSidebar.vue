@@ -52,17 +52,6 @@ export default {
   );
 }
 
-.light-con {
-  @include panelTextualThemeDefault(
-    $lc-background,
-    $lc-background-accent,
-    true,
-    $lc-shadow,
-    $lc-shadow-hover,
-    $lc-text
-  );
-}
-
 .dark-def {
   @include panelTextualThemeDefault(
     $dd-background,
