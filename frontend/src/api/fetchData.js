@@ -6,7 +6,7 @@ import switchAtomTabCleanup from "./helper";
 function initAtomTab({ state, dispatch, commit }, payload) {
   return Promise.all([
     axios.get("/data/atomPlacements.json"),
-    axios.get("/data/atomSnippets.json"),
+    axios.get("/data/atomEssential.json"),
     axios.get("/data/labelPlacements.json")
   ])
     .then(responses => {

@@ -3,7 +3,7 @@ import { fileURLToPath } from "url";
 import { atomArrayExtract, outputFile } from "./helper.js";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
-const outputFolder = "atom-property-data";
+const outputFolder = "output";
 
 // PROPERTIES TAB
 {

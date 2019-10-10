@@ -1,31 +1,33 @@
 #!/bin/sh
 
-echo "START basic-atom-properties"
+set -e
+
+echo "GENERATE basic-atom-properties"
 cd basic-atom-properties || exit
 ./generate.sh
 cd ..
 
-echo "START material-properties"
+echo "GENERATE material-properties"
 cd material-properties || exit
 ./generate.sh
 cd ..
 
-echo "START thermodynamic-properties"
+echo "GENERATE thermodynamic-properties"
 cd thermodynamic-properties || exit
 ./generate.sh
 cd ..
 
-echo "START electromagnetic-optical-proeprties"
+echo "GENERATE electromagnetic-optical-proeprties"
 cd electromagnetic-optical-properties || exit
 ./generate.sh
 cd ..
 
-echo "START abundance-properties"
+echo "GENERATE abundance-properties"
 cd abundance-properties || exit
 ./generate.sh
 cd ..
 
-echo "START atomic-properties"
-cd atomic-properties
+echo "GENERATE atomic-properties"
+cd atomic-properties || exit
 ./generate.sh
 cd ..

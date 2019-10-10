@@ -28,7 +28,7 @@ export default {
     },
 
     // ATOM
-    // shared atom data across all tabs (from atomSnippets.json)
+    // shared atom data across all tabs (from atomEssential.json)
     atomSnippets: [],
     atomSnippetActive: {},
 

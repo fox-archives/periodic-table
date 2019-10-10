@@ -1,17 +1,13 @@
-let path = require("path");
+import { dest, src } from "gulp";
+import flatten from "gulp-flatten";
+import jsonminify from "gulp-jsonminify";
+import del from "del";
 
-let { dest, src } = require("gulp");
-let flatten = require("gulp-flatten");
-let jsonminify = require("gulp-jsonminify");
-let htmlmin = require('gulp-htmlmin');
-
-let del = require("del");
-
-let removeDebug = require("./helper.gulpfile");
+import { removeDebug } from "./helper.gulpfile";
 
 async function transferWolfram() {
-  let from = ["wolfram/atom-property-data/*.json", "wolfram/atom-layout-data/*.json"];
-  let to = "backend/public/data";
+  const from = ["wolfram/output/*.json", "wolfram/atom-layout-data/*.json"];
+  const to = "backend/public/data";
   
   del([to + "/**", "!" + to])
     .then(() => {
@@ -21,20 +17,23 @@ async function transferWolfram() {
         .pipe(jsonminify())
         .pipe(dest(to));
     })
-    .catch(e => console.error(e));
+    .catch(e => {
+      console.error(e)
+    });
 }
 
 async function transferFrontend() {
-  let from = "frontend/dist/{*.js,*.css,*.html,assets/*}";
-  let to = "backend/public";
+  const from = "frontend/dist/{*.js,*.css,*.html,assets/*}";
+  const to = "backend/public";
 
   del(["backend/public/**", "!backend/public/", "!backend/public/data"])
     .then(() => {
       src(from)
         .pipe(dest(to));
     })
-    .catch(e => console.error(e));
+    .catch(e => {
+      console.error(e)
+    });
 }
 
-exports.transferWolfram = transferWolfram;
-exports.transferFrontend = transferFrontend;
+export { transferWolfram, transferFrontend }

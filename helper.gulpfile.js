@@ -1,7 +1,7 @@
-let through = require("through2");
-let PluginError = require("plugin-error");
+import through from "through2";
+import PluginError from "plugin-error";
 
-module.exports = function removeDebug() {
+export function removeDebug() {
   return through.obj((file, enc, cb) => {
     let content = String(file.contents);
 
@@ -17,7 +17,7 @@ module.exports = function removeDebug() {
     }
 
     if(!json.data) return cb(null, file);
-    console.log(file.path);
+    console.log("removeDebug: processed", file.path);
     json.data.forEach(atomData => {
       if(atomData.debug) {
         delete atomData.debug;
@@ -35,4 +35,4 @@ module.exports = function removeDebug() {
     file.contents = new Buffer.from(JSON.stringify(json, null, 2));
     return cb(null, file);
   });
-};
+}

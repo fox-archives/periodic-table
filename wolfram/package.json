@@ -6,8 +6,6 @@
     "test": "ava -v"
   },
   "devDependencies": {
-    "ava": "^2.2.0",
-    "eslint-plugin-ava": "^7.1.0",
-    "nodemon": "^1.19.1"
+    "ava": "^2.2.0"
   }
 }

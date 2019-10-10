@@ -1,15 +1,16 @@
 import fs from "fs";
+import path from "path";
 import test from "ava";
 import { promisify } from "util";
 
 let filenames = [
-  'atomLayoutColorsCategory.json',
-  'atomLayoutColorsOrbitalBlock.json',
+  'atomColorsTabProperties.json',
+  'atomColorsTabElectrons.json',
   'atomPlacements.json'
 ];
 
 filenames.forEach(file => {
-  let filePath = `../wolfram/atom-layout-data/${file}`;
+  const filePath = path.resolve(__dirname, "../atom-layout-data", file);
   test(`test length of ${filePath} to equal 120`, t => {
     return promisify(fs.readFile)(filePath)
       .then(text => {
