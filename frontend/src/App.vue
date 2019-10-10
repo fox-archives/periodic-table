@@ -18,7 +18,7 @@ export default {
   },
   watch: {
     $route() {
-      if (this.$route.name === "Explore" || this.$route.name === "Trivia") {
+      if (this.$route.name === "Orbitals" || this.$route.name === "Isotopes" || this.$route.name === "Explore" || this.$route.name === "Trivia") {
         this.setReady(false);
       }
     }

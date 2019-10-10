@@ -45,6 +45,7 @@ const myRoutes = [
   },
   {
     path: "/orbitals",
+    name: "Orbitals",
     // component: TabGenericPeriodicTableInterface,
     // children: [
     //   {
@@ -57,7 +58,6 @@ const myRoutes = [
     //   }
     // ]
     component: {
-      name: "Orbitals",
       render: h => {
         return h(
           "div",
@@ -79,6 +79,7 @@ const myRoutes = [
   },
   {
     path: "/isotopes",
+    name: "Isotopes",
     // component: TabGenericPeriodicTableInterface,
     // children: [
     //   {
@@ -91,7 +92,6 @@ const myRoutes = [
     //   }
     // ]
     component: {
-      name: "Isotopes",
       render: h => {
         return h(
           "div",
