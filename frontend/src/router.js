@@ -5,10 +5,9 @@ import Explore from "@/views/TabExplore";
 import Trivia from "@/views/TabTrivia";
 import atomSidebar from "@/components/atom-sidebar/AtomSidebar";
 import atomGraphicProperties from "@/components/atom-graphic/AtomGraphicProperties";
-import atomGraphicOrbitals from "@/components/atom-graphic/AtomGraphicOrbitals";
+// import atomGraphicOrbitals from "@/components/atom-graphic/AtomGraphicOrbitals";
 
 Vue.use(VueRouter);
-console.log(Explore);
 
 const myRoutes = [
   {
@@ -72,8 +71,8 @@ const myRoutes = [
               paddingBottom: "30vh"
             }
           },
-          [ h("h1", "'Orbitals' coming soon") ]
-        )
+          [h("h1", "'Orbitals' coming soon")]
+        );
       }
     }
   },
@@ -106,8 +105,8 @@ const myRoutes = [
               paddingBottom: "30vh"
             }
           },
-          [ h("h1", "'Isotopes' coming soon") ]
-        )
+          [h("h1", "'Isotopes' coming soon")]
+        );
       }
     }
   },

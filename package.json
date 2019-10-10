@@ -4,6 +4,7 @@
   "license": "unlicensed",
   "private": true,
   "scripts": {
+    "transferAll": "gulp --require esm transferAll",
     "transferWolfram": "gulp --require esm transferWolfram",
     "transferFrontend": "gulp --require esm transferFrontend"
   },

@@ -1,4 +1,4 @@
-import { dest, src } from "gulp";
+import { dest, series, src } from "gulp";
 import flatten from "gulp-flatten";
 import jsonminify from "gulp-jsonminify";
 import del from "del";
@@ -36,4 +36,8 @@ async function transferFrontend() {
     });
 }
 
-export { transferWolfram, transferFrontend }
+async function transferAll() {
+  series(transferWolfram, transferFrontend);
+}
+
+export { transferWolfram, transferFrontend, transferAll }
