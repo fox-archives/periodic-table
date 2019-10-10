@@ -277,9 +277,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Variables, mixins, and common components
-@import "~@/styles/variables";
-
 // PERIODIC TABLE \\
 @import "periodicTable";
 @import "periodicTableTheme";

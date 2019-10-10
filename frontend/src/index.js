@@ -6,7 +6,7 @@ import router from "@/router.js";
 import App from "@/App.vue";
 
 // Import global styles and material design
-import "@/styles/variables.scss";
+import "@/styles/global.scss";
 import "@/styles/fonts.scss";
 import "@/styles/tags.scss";
 

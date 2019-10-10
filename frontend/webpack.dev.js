@@ -25,6 +25,15 @@ module.exports = merge.smart(common, {
             options: {
               implementation: require("sass")
             }
+          },
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: [
+                "./node_modules/open-color/open-color.scss",
+                "./src/styles/global.scss"
+              ]
+            }
           }
         ]
       },

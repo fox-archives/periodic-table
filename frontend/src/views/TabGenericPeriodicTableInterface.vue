@@ -53,8 +53,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~@/styles/variables";
-
 #display {
   margin-left: $body-margin;
   margin-right: $body-margin;

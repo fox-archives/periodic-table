@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~@/styles/variables.scss";
 @import "foot";
 
 .light-def {

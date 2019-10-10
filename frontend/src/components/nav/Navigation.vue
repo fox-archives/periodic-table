@@ -122,7 +122,6 @@ export default {
 
 <style scoped lang="scss">
 // Variables, mixins, and common components
-@import "~@/styles/variables.scss";
 @import "~@/styles/tags.scss";
 // Structure
 @import "navigation";

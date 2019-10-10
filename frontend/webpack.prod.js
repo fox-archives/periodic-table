@@ -23,6 +23,12 @@ module.exports = merge.smart(common, {
             options: {
               implementation: require("sass")
             }
+          },
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: "@/styles/variables.scss"
+            }
           }
         ]
       },
