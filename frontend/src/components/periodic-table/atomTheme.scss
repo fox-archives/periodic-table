@@ -23,7 +23,7 @@ $list-of-oc-colors: (
 
 // Purpose: For each of the 118 elements, change their background color and text color,
 // depending on if they are not hovered, hovered, or clicked.
-@mixin elementsThemeAtomColors(
+@mixin createAtomColorClasses(
   $colorShade,
   $hasBackgroundColor,
   $backgroundColor,
@@ -68,21 +68,3 @@ $list-of-oc-colors: (
 //    color: #868e96;
 //  }
 //  ...
-
-// @param 1  $hasShadow  Boolean for if the element has a shadow
-// @param 2  $shadow  Normal shadow for the element
-// @param 3  $shadowHover Shadow on hover of the element
-
-// Purpose: For each of the 118 elements, change their shadow, if they have one, depending if
-// they are being hovered or not
-@mixin elementsThemeShadow($hasShadow, $shadow, $shadowHover) {
-  @if ($hasShadow) {
-    .element {
-      box-shadow: 2px 2px 3px $shadow;
-    }
-
-    .element:hover {
-      box-shadow: 2px 2px 4px $shadowHover;
-    }
-  }
-}

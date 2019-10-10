@@ -8,6 +8,7 @@ import atomGraphicProperties from "@/components/atom-graphic/AtomGraphicProperti
 import atomGraphicOrbitals from "@/components/atom-graphic/AtomGraphicOrbitals";
 
 Vue.use(VueRouter);
+console.log(Explore);
 
 const myRoutes = [
   {
@@ -44,31 +45,71 @@ const myRoutes = [
   },
   {
     path: "/orbitals",
-    component: TabGenericPeriodicTableInterface,
-    children: [
-      {
-        path: "",
-        name: "Orbitals",
-        components: {
-          "atom-sidebar": atomSidebar,
-          "atom-graphic": atomGraphicOrbitals
-        }
+    // component: TabGenericPeriodicTableInterface,
+    // children: [
+    //   {
+    //     path: "",
+    //     name: "Orbitals",
+    //     components: {
+    //       "atom-sidebar": atomSidebar,
+    //       "atom-graphic": atomGraphicOrbitals
+    //     }
+    //   }
+    // ]
+    component: {
+      name: "Orbitals",
+      render: h => {
+        return h(
+          "div",
+          {
+            style: {
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "2rem",
+              paddingBottom: "30vh"
+            }
+          },
+          [ h("h1", "'Orbitals' coming soon") ]
+        )
       }
-    ]
+    }
   },
   {
     path: "/isotopes",
-    component: TabGenericPeriodicTableInterface,
-    children: [
-      {
-        path: "",
-        name: "Isotopes",
-        components: {
-          "atom-sidebar": atomSidebar,
-          "atom-graphic": atomGraphicOrbitals
-        }
+    // component: TabGenericPeriodicTableInterface,
+    // children: [
+    //   {
+    //     path: "",
+    //     name: "Isotopes",
+    //     components: {
+    //       "atom-sidebar": atomSidebar,
+    //       "atom-graphic": atomGraphicOrbitals
+    //     }
+    //   }
+    // ]
+    component: {
+      name: "Isotopes",
+      render: h => {
+        return h(
+          "div",
+          {
+            style: {
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "2rem",
+              paddingBottom: "30vh"
+            }
+          },
+          [ h("h1", "'Isotopes' coming soon") ]
+        )
       }
-    ]
+    }
   },
   {
     path: "/explore",

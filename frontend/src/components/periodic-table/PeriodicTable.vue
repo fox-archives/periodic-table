@@ -300,34 +300,33 @@ export default {
 }
 
 // ELEMENTS \\
-@import "elements";
-@import "elementsTheme";
+@import "atom";
+@import "atomTheme";
 
 .light-def {
-  @include elementsThemeAtomColors("supdark-", true, 4, 9);
-  @include elementsThemeAtomColors("dark-", true, 3, 9);
-  @include elementsThemeAtomColors("", true, 2, 9);
-  @include elementsThemeAtomColors("light-", true, 1, 6);
-  @include elementsThemeShadow(true, $oc-gray-3, $oc-gray-4);
+  @include createAtomColorClasses("supdark-", true, 4, 9);
+  @include createAtomColorClasses("dark-", true, 3, 9);
+  @include createAtomColorClasses("", true, 2, 9);
+  @include createAtomColorClasses("light-", true, 1, 6);
+
+  .element {
+    box-shadow: 2px 2px 3px $oc-gray-3;
+  }
+
+  .element:hover {
+    box-shadow: 2px 2px 4px $oc-gray-4;
+  }
 }
 
 .dark-def {
-  @include elementsThemeAtomColors("supdark-", true, 9, 1);
-  @include elementsThemeAtomColors("dark-", true, 8, 1);
-  @include elementsThemeAtomColors("", true, 7, 1);
-  @include elementsThemeAtomColors("light-", true, 4, 5);
-  @include elementsThemeShadow(false, $oc-gray-8, $oc-gray-7);
+  @include createAtomColorClasses("supdark-", true, 9, 1);
+  @include createAtomColorClasses("dark-", true, 8, 1);
+  @include createAtomColorClasses("", true, 7, 1);
+  @include createAtomColorClasses("light-", true, 4, 5);
+
+  // dark theme does not have shadow
 }
 
 // LABELS \\
 @import "labels";
-@import "labelsTheme";
-
-.light-def {
-  @include labelsThemeDefault($oc-gray-0, $oc-gray-2, $oc-gray-9);
-}
-
-.dark-def {
-  @include labelsThemeDefault($oc-gray-8, $oc-gray-9, $oc-gray-0);
-}
 </style>

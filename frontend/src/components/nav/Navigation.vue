@@ -121,8 +121,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Variables, mixins, and common components
-@import "~@/styles/tags.scss";
 // Structure
 @import "navigation";
 @import "navigationMobile";

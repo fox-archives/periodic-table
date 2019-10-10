@@ -56,3 +56,44 @@
     grid-column-end: #{$i + 2};
   }
 }
+
+
+.light-def {
+  .light {
+    background-color: $oc-gray-0;
+  }
+
+  // Label is directly hovered
+  .light:hover {
+    background-color: $oc-gray-2;
+  }
+
+  // Label class modified when user hovers over different periodic table element, and the labels update
+  .dark {
+    background-color: $oc-gray-2;
+  }
+
+  .label-text {
+    color: $oc-gray-9;
+  }
+}
+
+.dark-def {
+  .light {
+    background-color: $oc-gray-8;
+  }
+
+  // Label is directly hovered
+  .light:hover {
+    background-color: $oc-gray-9;
+  }
+
+  // Label class modified when user hovers over different periodic table element, and the labels update
+  .dark {
+    background-color: $oc-gray-9;
+  }
+
+  .label-text {
+    color: $oc-gray-0;
+  }
+}

@@ -1,25 +1,32 @@
-// TODO: Make elementsThematomColors global rather than importing the elementsTheme.scss file, which is mixins and variables
-@import "../periodic-table/elementsTheme";
+// TODO: make themAtomColors global rather than importing the atomTheme.scss file, which is mixins and variables
+@import "../periodic-table/atomTheme";
+
 .light-def {
-  @include panelVisualThemeDefault(
-    $ld-background,
-    true,
-    $ld-shadow,
-    $ld-shadow-hover,
-    $ld-text
-  );
-  @include elementsThemeAtomColors("", true, 2, 9);
+  #visual-inner {
+    background-color: $ld-background;
+  }
+
+  #visual-inner p {
+    color: $ld-text;
+  }
+
+  @include createAtomColorClasses("", true, 2, 9);
+  // add shadow to visual part of element info panel
+  @include shadow("#visual-inner", true, $ld-shadow, $ld-shadow-hover);
 }
 
 .dark-def {
-  @include panelVisualThemeDefault(
-    $dd-background,
-    false,
-    $dd-shadow,
-    $dd-shadow-hover,
-    $dd-text
-  );
-  @include elementsThemeAtomColors("", true, 7, 1);
+  #visual-inner {
+    background-color: $dd-background;
+  }
+
+  #visual-inner p {
+    color: $dd-text;
+  }
+
+  @include createAtomColorClasses("", true, 7, 1);
+  // add shadow to visual part of element info panel
+  @include shadow("#visual-inner", true, $dd-shadow, $dd-shadow-hover);
 }
 
 #visual-inner {
@@ -28,7 +35,7 @@
   width: 100%;
   height: 100%;
   border-radius: $border-radius;
-  transition: createtransitions((box-shadow, background-color));
+  transition: createTransitions((box-shadow, background-color));
 }
 
 #visual-inner-inner {
@@ -40,12 +47,12 @@
 }
 
 #visual-inner:hover {
-  transition: createtransitions((box-shadow, background-color));
+  transition: createTransitions((box-shadow, background-color));
 }
 
 #icon {
   position: relative;
-  margin-top: 8px; // Don't think this should be $spacing
+  margin-top: 8px; // dont think this should be $spacing
   height: 0;
   width: 75%;
   padding-bottom: 75%;

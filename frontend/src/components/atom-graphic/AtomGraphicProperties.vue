@@ -27,6 +27,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "atomGraphicTheme";
 @import "atomGraphic";
 </style>

@@ -16,19 +16,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "atomGraphicTheme";
 @import "atomGraphic";
-
-.light-def {
-  #visual-inner {
-    background-color: $ld-background !important;
-  }
-}
-
-
-.dark-def {
-  #visual-inner {
-    background-color: $dd-background !important;
-  }
-}
 </style>
