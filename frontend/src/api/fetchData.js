@@ -10,16 +10,10 @@ function initAtomTab({ state, dispatch, commit }, payload) {
     axios.get("/data/labelPlacements.json")
   ])
     .then(responses => {
-      {
-        let atomPlacementsR = responses[0];
-        let atomSnippetsR = responses[1];
-        let labelPlacementsR = responses[2];
-
-        state.atomPlacements = deepFreeze(atomPlacementsR.data);
-        state.atomSnippets = atomSnippetsR.data;
-        state.labelPeriodPlacement = labelPlacementsR.data.period;
-        state.labelGroupPlacement = labelPlacementsR.data.group;
-      }
+      state.atomPlacements = deepFreeze(responses[0].data);
+      state.atomSnippets = responses[1].data;
+      state.labelPeriodPlacement = responses[2].data.period;
+      state.labelGroupPlacement = responses[2].data.group;
 
       let { currentTab } = payload;
       return dispatch("switchAtomTab", { to: currentTab.name });

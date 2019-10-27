@@ -2,10 +2,15 @@
   "name": "wolfram",
   "type": "module",
   "scripts": {
-    "transform": "node --experimental-modules ./transformPropertiesForAtomTabs.js",
+    "transform": "node -r esm ./transformPropertiesForAtomTabs.js",
     "test": "ava -v"
   },
+  "ava": {
+    "babel": false,
+    "compileEnhancements": false
+  },
   "devDependencies": {
-    "ava": "^2.2.0"
+    "ava": "^2.2.0",
+    "esm": "^3.2.25"
   }
 }

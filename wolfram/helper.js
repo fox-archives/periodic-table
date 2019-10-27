@@ -75,7 +75,7 @@ function atomArrayExtract(fileNames, subFileNames) {
 
 /*
   outputFile
-    file to output json
+    file to output-atom-tab-data json
 */
 function outputFile(fileName, finalJson) {
   return promisify(fs.writeFile)(fileName, JSON.stringify(finalJson, null, 2))

@@ -31,7 +31,7 @@ module.exports = {
         exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
         use: ["babel-loader"]
       },
-      // File loader emits files in the output directory and (replaces url() and require() with a path that actually works in production also)
+      // File loader emits files in the output-atom-tab-data directory and (replaces url() and require() with a path that actually works in production also)
       {
         type: "javascript/auto",
         test: /\.json$/,
