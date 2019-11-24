@@ -3,8 +3,8 @@
   "license": "unlicensed",
   "private": true,
   "scripts": {
-    "start": "nodemon server.js",
-    "prod": "node server.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
     "lint": "eslint -c .eslintrc.js *js",
     "lint:fix": "eslint -c .eslintrc.js *.js --fix"
   },

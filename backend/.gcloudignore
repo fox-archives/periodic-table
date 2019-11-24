@@ -1,0 +1,15 @@
+# app
+unused/
+dockerfile*
+.dockerignore
+.eslintrc.js
+
+# node
+node_modules/
+yarn-error.lock
+*.log
+
+# misc 
+.git/
+.gitignore
+.gcloudignore
