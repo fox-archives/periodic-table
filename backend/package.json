@@ -1,4 +1,7 @@
 {
+  "name": "periodic-table-backend",
+  "version": "0.11.0",
+  "type": "module",
   "main": "server.js",
   "license": "unlicensed",
   "private": true,

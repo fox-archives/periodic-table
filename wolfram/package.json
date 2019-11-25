@@ -1,13 +1,13 @@
 {
-  "name": "wolfram",
+  "name": "periodic-table-wolfram",
+  "version": "0.11.0",
   "type": "module",
+  "main": "transformAtomTabProperties.js",
+  "license": "licensed",
+  "private": true,
   "scripts": {
     "transform": "node -r esm ./transformPropertiesForAtomTabs.js",
     "test": "ava -v"
-  },
-  "ava": {
-    "babel": false,
-    "compileEnhancements": false
   },
   "devDependencies": {
     "ava": "^2.2.0",

@@ -3,6 +3,7 @@
 generates data about all atoms. atom data transformed by transformPropertiesForAtomTabs.js. gulp scripts transfer this output to the backend. the following are the roles of all the subfolers
 
 key
+
 - `generated` means that a wolfram script generates the json file
 - `static` means that the json object should be Object.frozen since it *will not* change
 
@@ -27,7 +28,6 @@ atomSnippets.json
 atomTabElectrons.json (generated)
 atomTabProperties.json (generated)
 ```
-
 
 ## wolfram-data-groups
 
@@ -65,7 +65,3 @@ wolfram-data-groups
 ```
 
 each atom `value` in the `.json` files should have one of 4 values
-
-- 
-
-

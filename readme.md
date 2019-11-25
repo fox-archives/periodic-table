@@ -1,12 +1,12 @@
-# Periodic Table
+# periodic table
 
-## Introduction
+## introduction
 
-Modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
+modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
 
-![Periodic Table Image](./periodic-table.png)
+![periodic table image](./periodic-table.png)
 
-## Setup
+## setup
 
 ```sh
 git clone https://github.com/eankeen/periodic-table
@@ -14,21 +14,21 @@ cd periodic-table
 ./bootstrap.sh
 ```
 
-## Browser Compatibility
+## browser compatibility
 
-Not intended to support Internet Explorer or Opera.
+not intended to support internet explorer or opera.
 
-Element   | Edge    | Firefox | Chrome    | Safari    | iOS Safari
+element   | edge    | firefox | chrome    | safari    | ios safari
 ----      | ----    | ------- | -------   | ------    | -----------
-Flexbox   | 12+     | 28+     | 21+*, 29+ | 6.1+*, 9+ | 7*, 9+
-Grid      | 16+     | 52+     | 57+       | 10.1+     | 10.3+
-ES5       | 12+     | 21+     | 23+       | 6+        | 6+
-ES6       | 15+     | 54+     | 51+       | 10+       | 10+
+flexbox   | 12+     | 28+     | 21+*, 29+ | 6.1+*, 9+ | 7*, 9+
+grid      | 16+     | 52+     | 57+       | 10.1+     | 10.3+
+es5       | 12+     | 21+     | 23+       | 6+        | 6+
+es6       | 15+     | 54+     | 51+       | 10+       | 10+
 
-\* Supports with extension -moz, -webkit, etc.
+\* supports with extension -moz, -webkit, etc.
 
-## Notes
+## notes
 
-For devleopment, use `sudo docker-compose up`, which will spin up all containers specified in respective `dockerfile.development` files.
+for devleopment, use `sudo docker-compose up`, which will spin up all containers specified in respective `dockerfile.development` files.
 
-For prod we only have `./backend`, no database crap, called `dockerfile.production`, which is the only one we should be deploying.
+for prod we only have `./backend`, no database crap, called `dockerfile.production`, which is the only one we should be deploying.

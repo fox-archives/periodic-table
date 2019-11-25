@@ -9,7 +9,7 @@
     <p id="name-sm">
       ©
     </p>
-    <a href="#">About</a>
+    <!-- <a href="#">About</a> -->
     <a href="https://discord.gg/eZMuVnu">Discord</a>
   </footer>
 </template>

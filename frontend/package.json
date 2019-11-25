@@ -1,5 +1,8 @@
 {
-  "main": "index.js",
+  "name": "periodic-table-frontend",
+  "version": "0.11.0",
+  "type": "module",
+  "main": "src/index.js",
   "license": "unlicensed",
   "private": true,
   "scripts": {

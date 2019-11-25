@@ -29,8 +29,4 @@ async function transferFrontend() {
     .pipe(dest(to));
 }
 
-async function transferAll() {
-  series(transferWolfram, transferFrontend);
-}
-
-export { transferWolfram, transferFrontend, transferAll }
+export { transferWolfram, transferFrontend }
