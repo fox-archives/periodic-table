@@ -17,6 +17,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "~@/styles/variables";
+
 // INFO SIDE
 .panel-side #panel {
   display: grid;

@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "~@/styles/variables";
+
 #trivia {
   width: 100%;
   height: 100%;

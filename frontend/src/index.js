@@ -5,8 +5,8 @@ import store from "@/store/store.js";
 import router from "@/router.js";
 import App from "@/App.vue";
 
-// import styles
-import "@/styles/global.scss";
+// Import global styles and material design
+import "@/styles/variables.scss";
 import "@/styles/fonts.scss";
 import "material-icons/iconfont/material-icons.css";
 
