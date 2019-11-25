@@ -18,10 +18,13 @@ build/full:
 	cd frontend && yarn prod
 	yarn transferFrontend
 
-# release can be of major, minor, patch, premajor, preminor, prepatch, prerelease
-release ?= minor
-release:	
+# release can be of major, minor, patch, premajor, preminor,
+# prepatch, and prerelease
+release ?= patch
+release:
 	yarn lerna version $(release) --yes
 
 deploy:
-	cd backend && gcloud app deploy backend.yaml --project turnkey-science-250806 
+	cd backend && gcloud app deploy backend.yaml \
+		--project turnkey-science-250806 --verbosity=info \
+		--quiet

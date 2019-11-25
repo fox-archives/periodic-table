@@ -19,11 +19,11 @@ sudo docker-compose up
 ensure you have no staged changes
 
 ```sh
-make all release=minor
+make all
 
 # or do it manually
 make build/light
-make release
+make release release=patch
 make deploy
 ```
 
