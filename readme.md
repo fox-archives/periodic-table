@@ -14,6 +14,19 @@ cd periodic-table && make bootstrap
 sudo docker-compose up
 ```
 
+## release
+
+ensure you have no staged changes
+
+```sh
+make all release=minor
+
+# or do it manually
+make build/light
+make release
+make deploy
+```
+
 ## todo for pipeline
 
 - add stats to see how much browser support app has
