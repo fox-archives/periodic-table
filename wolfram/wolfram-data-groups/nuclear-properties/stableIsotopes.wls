@@ -9,7 +9,5 @@ atomTransform[prop_]:= (
 
 iterateAtomProperty[
   "stable isotopes",
-  Unevaluated[atomTransform],
-  "lanthanites case",
-  "actinides case"
+  Unevaluated[atomTransform]
 ];

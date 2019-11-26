@@ -9,7 +9,5 @@ atomTransform[prop_]:= (
 
 iterateAtomProperty[
   "absolute melting point",
-  Unevaluated[atomTransform],
-  "lanthanites case",
-  "actinides case"
+  Unevaluated[atomTransform]
 ];

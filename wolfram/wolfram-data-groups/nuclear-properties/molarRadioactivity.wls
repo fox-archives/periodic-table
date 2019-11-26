@@ -9,7 +9,5 @@ atomTransform[prop_]:= (
 
 iterateAtomProperty[
   "molar radioactivity",
-  Unevaluated[atomTransform],
-  "lanthanites case",
-  "actinides case"
+  Unevaluated[atomTransform]
 ];

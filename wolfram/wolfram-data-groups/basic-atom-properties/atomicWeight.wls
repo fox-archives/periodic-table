@@ -9,7 +9,5 @@ atomTransform[prop_]:= (
 
 iterateAtomProperty[
   "atomic weight",
-  Unevaluated[atomTransform],
-  "lanthanites case",
-  "actinides case"
+  Unevaluated[atomTransform]
 ];

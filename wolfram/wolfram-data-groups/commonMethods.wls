@@ -114,8 +114,8 @@ fixUnknowns[data_] := (
 iterateAtomProperty[
   atomProperty_,
   atomValueTransformation_,
-  lanthanitesCase_,
-  actinidesCase_
+  lanthanitesCase_:"lanthanites case",
+  actinidesCase_:"actinides case"
 ] := (
   (* AtomProperty *)
   atomPropertyPascalCase = StringDelete[StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]], " "];
