@@ -6,12 +6,8 @@ import del from 'del'
 
 import { removeDebug } from './helper.gulpfile'
 
-async function buildDist() {
-  const from = [
-    'build/atom-layout-data/*.json',
-    'build/atom-tab-data/*.json'
-  ]
-
+async function makeDist() {
+  const from = 'build/atom-*-data/*.json'
   const to = 'dist'
 
   del.sync([to + '/**', '!' + to])
@@ -23,4 +19,4 @@ async function buildDist() {
     .pipe(dest(to))
 }
 
-export { buildDist }
+export { makeDist }

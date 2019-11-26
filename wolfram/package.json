@@ -6,7 +6,8 @@
   "license": "licensed",
   "private": true,
   "scripts": {
-    "transform": "node -r esm ./transform.js",
+    "build": "node -r esm ./transform.js",
+    "dist": "gulp --require esm makeDist",
     "test": "ava -v"
   },
   "devDependencies": {

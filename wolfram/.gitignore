@@ -1,3 +1,4 @@
 plainOutput.txt
 
+build/atom-tab-data/*.json
 dist/*.json
