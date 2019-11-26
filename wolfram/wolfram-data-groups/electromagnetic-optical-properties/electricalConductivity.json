@@ -3,288 +3,234 @@
 		"atomPropertyName":"ElectricalConductivity",
 		"atomPropertyNameWithSpace":"Electrical Conductivity",
 		"description":"electrical conductivity",
-		"longDescription":"electrical conductivity σ"
+		"longDescription":"electrical conductivity σ",
+		"unit":"SiemensPerMeter",
+		"unitLong":"SiemensPerMeter"
 	},
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Helium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lithium",
-			"value":1.1e7,
-			"unit":"SiemensPerMeter"
+			"value":1.1e7
 		},
 		{
 			"name":"Beryllium",
-			"value":2.5e7,
-			"unit":"SiemensPerMeter"
+			"value":2.5e7
 		},
 		{
 			"name":"Boron",
-			"value":0.0001,
-			"unit":"SiemensPerMeter"
+			"value":0.0001
 		},
 		{
 			"name":"Carbon",
-			"value":1.0e5,
-			"unit":"SiemensPerMeter"
+			"value":1.0e5
 		},
 		{
 			"name":"Nitrogen",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oxygen",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fluorine",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Neon",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Sodium",
-			"value":2.1e7,
-			"unit":"SiemensPerMeter"
+			"value":2.1e7
 		},
 		{
 			"name":"Magnesium",
-			"value":2.3e7,
-			"unit":"SiemensPerMeter"
+			"value":2.3e7
 		},
 		{
 			"name":"Aluminum",
-			"value":3.8e7,
-			"unit":"SiemensPerMeter"
+			"value":3.8e7
 		},
 		{
 			"name":"Silicon",
-			"value":1.0e3,
-			"unit":"SiemensPerMeter"
+			"value":1.0e3
 		},
 		{
 			"name":"Phosphorus",
-			"value":1.0e7,
-			"unit":"SiemensPerMeter"
+			"value":1.0e7
 		},
 		{
 			"name":"Sulfur",
-			"value":1.0e-15,
-			"unit":"SiemensPerMeter"
+			"value":1.0e-15
 		},
 		{
 			"name":"Chlorine",
-			"value":0.01,
-			"unit":"SiemensPerMeter"
+			"value":0.01
 		},
 		{
 			"name":"Argon",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Potassium",
-			"value":1.4e7,
-			"unit":"SiemensPerMeter"
+			"value":1.4e7
 		},
 		{
 			"name":"Calcium",
-			"value":2.9e7,
-			"unit":"SiemensPerMeter"
+			"value":2.9e7
 		},
 		{
 			"name":"Scandium",
-			"value":1.8e6,
-			"unit":"SiemensPerMeter"
+			"value":1.8e6
 		},
 		{
 			"name":"Titanium",
-			"value":2.5e6,
-			"unit":"SiemensPerMeter"
+			"value":2.5e6
 		},
 		{
 			"name":"Vanadium",
-			"value":5.0e6,
-			"unit":"SiemensPerMeter"
+			"value":5.0e6
 		},
 		{
 			"name":"Chromium",
-			"value":7.9e6,
-			"unit":"SiemensPerMeter"
+			"value":7.9e6
 		},
 		{
 			"name":"Manganese",
-			"value":6.2e5,
-			"unit":"SiemensPerMeter"
+			"value":6.2e5
 		},
 		{
 			"name":"Iron",
-			"value":1.0e7,
-			"unit":"SiemensPerMeter"
+			"value":1.0e7
 		},
 		{
 			"name":"Cobalt",
-			"value":1.7e7,
-			"unit":"SiemensPerMeter"
+			"value":1.7e7
 		},
 		{
 			"name":"Nickel",
-			"value":1.4e7,
-			"unit":"SiemensPerMeter"
+			"value":1.4e7
 		},
 		{
 			"name":"Copper",
-			"value":5.9e7,
-			"unit":"SiemensPerMeter"
+			"value":5.9e7
 		},
 		{
 			"name":"Zinc",
-			"value":1.7e7,
-			"unit":"SiemensPerMeter"
+			"value":1.7e7
 		},
 		{
 			"name":"Gallium",
-			"value":7.1e6,
-			"unit":"SiemensPerMeter"
+			"value":7.1e6
 		},
 		{
 			"name":"Germanium",
-			"value":2.0e3,
-			"unit":"SiemensPerMeter"
+			"value":2.0e3
 		},
 		{
 			"name":"Arsenic",
-			"value":3.3e6,
-			"unit":"SiemensPerMeter"
+			"value":3.3e6
 		},
 		{
 			"name":"Selenium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bromine",
-			"value":1.0e-10,
-			"unit":"SiemensPerMeter"
+			"value":1.0e-10
 		},
 		{
 			"name":"Krypton",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rubidium",
-			"value":8.3e6,
-			"unit":"SiemensPerMeter"
+			"value":8.3e6
 		},
 		{
 			"name":"Strontium",
-			"value":7.7e6,
-			"unit":"SiemensPerMeter"
+			"value":7.7e6
 		},
 		{
 			"name":"Yttrium",
-			"value":1.8e6,
-			"unit":"SiemensPerMeter"
+			"value":1.8e6
 		},
 		{
 			"name":"Zirconium",
-			"value":2.4e6,
-			"unit":"SiemensPerMeter"
+			"value":2.4e6
 		},
 		{
 			"name":"Niobium",
-			"value":6.7e6,
-			"unit":"SiemensPerMeter"
+			"value":6.7e6
 		},
 		{
 			"name":"Molybdenum",
-			"value":2.0e7,
-			"unit":"SiemensPerMeter"
+			"value":2.0e7
 		},
 		{
 			"name":"Technetium",
-			"value":5.0e6,
-			"unit":"SiemensPerMeter"
+			"value":5.0e6
 		},
 		{
 			"name":"Ruthenium",
-			"value":1.4e7,
-			"unit":"SiemensPerMeter"
+			"value":1.4e7
 		},
 		{
 			"name":"Rhodium",
-			"value":2.3e7,
-			"unit":"SiemensPerMeter"
+			"value":2.3e7
 		},
 		{
 			"name":"Palladium",
-			"value":1.0e7,
-			"unit":"SiemensPerMeter"
+			"value":1.0e7
 		},
 		{
 			"name":"Silver",
-			"value":6.2e7,
-			"unit":"SiemensPerMeter"
+			"value":6.2e7
 		},
 		{
 			"name":"Cadmium",
-			"value":1.4e7,
-			"unit":"SiemensPerMeter"
+			"value":1.4e7
 		},
 		{
 			"name":"Indium",
-			"value":1.2e7,
-			"unit":"SiemensPerMeter"
+			"value":1.2e7
 		},
 		{
 			"name":"Tin",
-			"value":9.1e6,
-			"unit":"SiemensPerMeter"
+			"value":9.1e6
 		},
 		{
 			"name":"Antimony",
-			"value":2.5e6,
-			"unit":"SiemensPerMeter"
+			"value":2.5e6
 		},
 		{
 			"name":"Tellurium",
-			"value":1.0e4,
-			"unit":"SiemensPerMeter"
+			"value":1.0e4
 		},
 		{
 			"name":"Iodine",
-			"value":1.0e-7,
-			"unit":"SiemensPerMeter"
+			"value":1.0e-7
 		},
 		{
 			"name":"Xenon",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Cesium",
-			"value":5.0e6,
-			"unit":"SiemensPerMeter"
+			"value":5.0e6
 		},
 		{
 			"name":"Barium",
-			"value":2.9e6,
-			"unit":"SiemensPerMeter"
+			"value":2.9e6
 		},
 		{
 			"name":"Lanthanites",
@@ -292,163 +238,131 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":1.6e6,
-			"unit":"SiemensPerMeter"
+			"value":1.6e6
 		},
 		{
 			"name":"Cerium",
-			"value":1.4e6,
-			"unit":"SiemensPerMeter"
+			"value":1.4e6
 		},
 		{
 			"name":"Praseodymium",
-			"value":1.4e6,
-			"unit":"SiemensPerMeter"
+			"value":1.4e6
 		},
 		{
 			"name":"Neodymium",
-			"value":1.6e6,
-			"unit":"SiemensPerMeter"
+			"value":1.6e6
 		},
 		{
 			"name":"Promethium",
-			"value":1.3e6,
-			"unit":"SiemensPerMeter"
+			"value":1.3e6
 		},
 		{
 			"name":"Samarium",
-			"value":1.1e6,
-			"unit":"SiemensPerMeter"
+			"value":1.1e6
 		},
 		{
 			"name":"Europium",
-			"value":1.1e6,
-			"unit":"SiemensPerMeter"
+			"value":1.1e6
 		},
 		{
 			"name":"Gadolinium",
-			"value":7.7e5,
-			"unit":"SiemensPerMeter"
+			"value":7.7e5
 		},
 		{
 			"name":"Terbium",
-			"value":8.3e5,
-			"unit":"SiemensPerMeter"
+			"value":8.3e5
 		},
 		{
 			"name":"Dysprosium",
-			"value":1.1e6,
-			"unit":"SiemensPerMeter"
+			"value":1.1e6
 		},
 		{
 			"name":"Holmium",
-			"value":1.1e6,
-			"unit":"SiemensPerMeter"
+			"value":1.1e6
 		},
 		{
 			"name":"Erbium",
-			"value":1.2e6,
-			"unit":"SiemensPerMeter"
+			"value":1.2e6
 		},
 		{
 			"name":"Thulium",
-			"value":1.4e6,
-			"unit":"SiemensPerMeter"
+			"value":1.4e6
 		},
 		{
 			"name":"Ytterbium",
-			"value":3.6e6,
-			"unit":"SiemensPerMeter"
+			"value":3.6e6
 		},
 		{
 			"name":"Lutetium",
-			"value":1.8e6,
-			"unit":"SiemensPerMeter"
+			"value":1.8e6
 		},
 		{
 			"name":"Hafnium",
-			"value":3.3e6,
-			"unit":"SiemensPerMeter"
+			"value":3.3e6
 		},
 		{
 			"name":"Tantalum",
-			"value":7.7e6,
-			"unit":"SiemensPerMeter"
+			"value":7.7e6
 		},
 		{
 			"name":"Tungsten",
-			"value":2.0e7,
-			"unit":"SiemensPerMeter"
+			"value":2.0e7
 		},
 		{
 			"name":"Rhenium",
-			"value":5.6e6,
-			"unit":"SiemensPerMeter"
+			"value":5.6e6
 		},
 		{
 			"name":"Osmium",
-			"value":1.2e7,
-			"unit":"SiemensPerMeter"
+			"value":1.2e7
 		},
 		{
 			"name":"Iridium",
-			"value":2.1e7,
-			"unit":"SiemensPerMeter"
+			"value":2.1e7
 		},
 		{
 			"name":"Platinum",
-			"value":9.4e6,
-			"unit":"SiemensPerMeter"
+			"value":9.4e6
 		},
 		{
 			"name":"Gold",
-			"value":4.5e7,
-			"unit":"SiemensPerMeter"
+			"value":4.5e7
 		},
 		{
 			"name":"Mercury",
-			"value":1.0e6,
-			"unit":"SiemensPerMeter"
+			"value":1.0e6
 		},
 		{
 			"name":"Thallium",
-			"value":6.7e6,
-			"unit":"SiemensPerMeter"
+			"value":6.7e6
 		},
 		{
 			"name":"Lead",
-			"value":4.8e6,
-			"unit":"SiemensPerMeter"
+			"value":4.8e6
 		},
 		{
 			"name":"Bismuth",
-			"value":7.7e5,
-			"unit":"SiemensPerMeter"
+			"value":7.7e5
 		},
 		{
 			"name":"Polonium",
-			"value":2.3e6,
-			"unit":"SiemensPerMeter"
+			"value":2.3e6
 		},
 		{
 			"name":"Astatine",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radon",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Francium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radium",
-			"value":1.0e6,
-			"unit":"SiemensPerMeter"
+			"value":1.0e6
 		},
 		{
 			"name":"Actinides",
@@ -456,153 +370,123 @@
 		},
 		{
 			"name":"Actinium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Thorium",
-			"value":6.7e6,
-			"unit":"SiemensPerMeter"
+			"value":6.7e6
 		},
 		{
 			"name":"Protactinium",
-			"value":5.6e6,
-			"unit":"SiemensPerMeter"
+			"value":5.6e6
 		},
 		{
 			"name":"Uranium",
-			"value":3.6e6,
-			"unit":"SiemensPerMeter"
+			"value":3.6e6
 		},
 		{
 			"name":"Neptunium",
-			"value":8.3e5,
-			"unit":"SiemensPerMeter"
+			"value":8.3e5
 		},
 		{
 			"name":"Plutonium",
-			"value":6.7e5,
-			"unit":"SiemensPerMeter"
+			"value":6.7e5
 		},
 		{
 			"name":"Americium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Curium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Berkelium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Californium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fermium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nobelium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Dubnium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bohrium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Hassium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Copernicium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nihonium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Flerovium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Moscovium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Livermorium",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Tennessine",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oganesson",
-			"value":"Unknown",
-			"unit":"SiemensPerMeter"
+			"value":"Unknown"
 		}
 	]
 }

@@ -3,288 +3,234 @@
 		"atomPropertyName":"Resistivity",
 		"atomPropertyNameWithSpace":"Resistivity",
 		"description":"resistivity",
-		"longDescription":"electrical resistivity ρ of solid"
+		"longDescription":"electrical resistivity ρ of solid",
+		"unit":"OhmMeters",
+		"unitLong":"OhmMeters"
 	},
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Helium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lithium",
-			"value":9.4e-8,
-			"unit":"OhmMeters"
+			"value":9.4e-8
 		},
 		{
 			"name":"Beryllium",
-			"value":4.0e-8,
-			"unit":"OhmMeters"
+			"value":4.0e-8
 		},
 		{
 			"name":"Boron",
-			"value":10000.,
-			"unit":"OhmMeters"
+			"value":10000.
 		},
 		{
 			"name":"Carbon",
-			"value":0.000010,
-			"unit":"OhmMeters"
+			"value":0.000010
 		},
 		{
 			"name":"Nitrogen",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oxygen",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fluorine",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Neon",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Sodium",
-			"value":4.7e-8,
-			"unit":"OhmMeters"
+			"value":4.7e-8
 		},
 		{
 			"name":"Magnesium",
-			"value":4.4e-8,
-			"unit":"OhmMeters"
+			"value":4.4e-8
 		},
 		{
 			"name":"Aluminum",
-			"value":2.6e-8,
-			"unit":"OhmMeters"
+			"value":2.6e-8
 		},
 		{
 			"name":"Silicon",
-			"value":0.0010,
-			"unit":"OhmMeters"
+			"value":0.0010
 		},
 		{
 			"name":"Phosphorus",
-			"value":1.0e-7,
-			"unit":"OhmMeters"
+			"value":1.0e-7
 		},
 		{
 			"name":"Sulfur",
-			"value":1.0e15,
-			"unit":"OhmMeters"
+			"value":1.0e15
 		},
 		{
 			"name":"Chlorine",
-			"value":100.,
-			"unit":"OhmMeters"
+			"value":100.
 		},
 		{
 			"name":"Argon",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Potassium",
-			"value":7.0e-8,
-			"unit":"OhmMeters"
+			"value":7.0e-8
 		},
 		{
 			"name":"Calcium",
-			"value":3.4e-8,
-			"unit":"OhmMeters"
+			"value":3.4e-8
 		},
 		{
 			"name":"Scandium",
-			"value":5.5e-7,
-			"unit":"OhmMeters"
+			"value":5.5e-7
 		},
 		{
 			"name":"Titanium",
-			"value":4.0e-7,
-			"unit":"OhmMeters"
+			"value":4.0e-7
 		},
 		{
 			"name":"Vanadium",
-			"value":2.0e-7,
-			"unit":"OhmMeters"
+			"value":2.0e-7
 		},
 		{
 			"name":"Chromium",
-			"value":1.3e-7,
-			"unit":"OhmMeters"
+			"value":1.3e-7
 		},
 		{
 			"name":"Manganese",
-			"value":1.6e-6,
-			"unit":"OhmMeters"
+			"value":1.6e-6
 		},
 		{
 			"name":"Iron",
-			"value":9.7e-8,
-			"unit":"OhmMeters"
+			"value":9.7e-8
 		},
 		{
 			"name":"Cobalt",
-			"value":6.0e-8,
-			"unit":"OhmMeters"
+			"value":6.0e-8
 		},
 		{
 			"name":"Nickel",
-			"value":7.0e-8,
-			"unit":"OhmMeters"
+			"value":7.0e-8
 		},
 		{
 			"name":"Copper",
-			"value":1.7e-8,
-			"unit":"OhmMeters"
+			"value":1.7e-8
 		},
 		{
 			"name":"Zinc",
-			"value":5.9e-8,
-			"unit":"OhmMeters"
+			"value":5.9e-8
 		},
 		{
 			"name":"Gallium",
-			"value":1.4e-7,
-			"unit":"OhmMeters"
+			"value":1.4e-7
 		},
 		{
 			"name":"Germanium",
-			"value":0.00050,
-			"unit":"OhmMeters"
+			"value":0.00050
 		},
 		{
 			"name":"Arsenic",
-			"value":3.0e-7,
-			"unit":"OhmMeters"
+			"value":3.0e-7
 		},
 		{
 			"name":"Selenium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bromine",
-			"value":1.0e10,
-			"unit":"OhmMeters"
+			"value":1.0e10
 		},
 		{
 			"name":"Krypton",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rubidium",
-			"value":1.2e-7,
-			"unit":"OhmMeters"
+			"value":1.2e-7
 		},
 		{
 			"name":"Strontium",
-			"value":1.3e-7,
-			"unit":"OhmMeters"
+			"value":1.3e-7
 		},
 		{
 			"name":"Yttrium",
-			"value":5.7e-7,
-			"unit":"OhmMeters"
+			"value":5.7e-7
 		},
 		{
 			"name":"Zirconium",
-			"value":4.2e-7,
-			"unit":"OhmMeters"
+			"value":4.2e-7
 		},
 		{
 			"name":"Niobium",
-			"value":1.5e-7,
-			"unit":"OhmMeters"
+			"value":1.5e-7
 		},
 		{
 			"name":"Molybdenum",
-			"value":5.0e-8,
-			"unit":"OhmMeters"
+			"value":5.0e-8
 		},
 		{
 			"name":"Technetium",
-			"value":2.0e-7,
-			"unit":"OhmMeters"
+			"value":2.0e-7
 		},
 		{
 			"name":"Ruthenium",
-			"value":7.0e-8,
-			"unit":"OhmMeters"
+			"value":7.0e-8
 		},
 		{
 			"name":"Rhodium",
-			"value":4.3e-8,
-			"unit":"OhmMeters"
+			"value":4.3e-8
 		},
 		{
 			"name":"Palladium",
-			"value":1.0e-7,
-			"unit":"OhmMeters"
+			"value":1.0e-7
 		},
 		{
 			"name":"Silver",
-			"value":1.6e-8,
-			"unit":"OhmMeters"
+			"value":1.6e-8
 		},
 		{
 			"name":"Cadmium",
-			"value":7.0e-8,
-			"unit":"OhmMeters"
+			"value":7.0e-8
 		},
 		{
 			"name":"Indium",
-			"value":8.0e-8,
-			"unit":"OhmMeters"
+			"value":8.0e-8
 		},
 		{
 			"name":"Tin",
-			"value":1.1e-7,
-			"unit":"OhmMeters"
+			"value":1.1e-7
 		},
 		{
 			"name":"Antimony",
-			"value":4.0e-7,
-			"unit":"OhmMeters"
+			"value":4.0e-7
 		},
 		{
 			"name":"Tellurium",
-			"value":0.0001,
-			"unit":"OhmMeters"
+			"value":0.0001
 		},
 		{
 			"name":"Iodine",
-			"value":1.0e7,
-			"unit":"OhmMeters"
+			"value":1.0e7
 		},
 		{
 			"name":"Xenon",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Cesium",
-			"value":2.0e-7,
-			"unit":"OhmMeters"
+			"value":2.0e-7
 		},
 		{
 			"name":"Barium",
-			"value":3.5e-7,
-			"unit":"OhmMeters"
+			"value":3.5e-7
 		},
 		{
 			"name":"Lanthanites",
@@ -292,163 +238,131 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":6.1e-7,
-			"unit":"OhmMeters"
+			"value":6.1e-7
 		},
 		{
 			"name":"Cerium",
-			"value":7.5e-7,
-			"unit":"OhmMeters"
+			"value":7.5e-7
 		},
 		{
 			"name":"Praseodymium",
-			"value":7.0e-7,
-			"unit":"OhmMeters"
+			"value":7.0e-7
 		},
 		{
 			"name":"Neodymium",
-			"value":6.4e-7,
-			"unit":"OhmMeters"
+			"value":6.4e-7
 		},
 		{
 			"name":"Promethium",
-			"value":7.5e-7,
-			"unit":"OhmMeters"
+			"value":7.5e-7
 		},
 		{
 			"name":"Samarium",
-			"value":9.4e-7,
-			"unit":"OhmMeters"
+			"value":9.4e-7
 		},
 		{
 			"name":"Europium",
-			"value":9.0e-7,
-			"unit":"OhmMeters"
+			"value":9.0e-7
 		},
 		{
 			"name":"Gadolinium",
-			"value":1.3e-6,
-			"unit":"OhmMeters"
+			"value":1.3e-6
 		},
 		{
 			"name":"Terbium",
-			"value":1.2e-6,
-			"unit":"OhmMeters"
+			"value":1.2e-6
 		},
 		{
 			"name":"Dysprosium",
-			"value":9.1e-7,
-			"unit":"OhmMeters"
+			"value":9.1e-7
 		},
 		{
 			"name":"Holmium",
-			"value":9.4e-7,
-			"unit":"OhmMeters"
+			"value":9.4e-7
 		},
 		{
 			"name":"Erbium",
-			"value":8.6e-7,
-			"unit":"OhmMeters"
+			"value":8.6e-7
 		},
 		{
 			"name":"Thulium",
-			"value":7.0e-7,
-			"unit":"OhmMeters"
+			"value":7.0e-7
 		},
 		{
 			"name":"Ytterbium",
-			"value":2.8e-7,
-			"unit":"OhmMeters"
+			"value":2.8e-7
 		},
 		{
 			"name":"Lutetium",
-			"value":5.7e-7,
-			"unit":"OhmMeters"
+			"value":5.7e-7
 		},
 		{
 			"name":"Hafnium",
-			"value":3.0e-7,
-			"unit":"OhmMeters"
+			"value":3.0e-7
 		},
 		{
 			"name":"Tantalum",
-			"value":1.3e-7,
-			"unit":"OhmMeters"
+			"value":1.3e-7
 		},
 		{
 			"name":"Tungsten",
-			"value":5.0e-8,
-			"unit":"OhmMeters"
+			"value":5.0e-8
 		},
 		{
 			"name":"Rhenium",
-			"value":1.8e-7,
-			"unit":"OhmMeters"
+			"value":1.8e-7
 		},
 		{
 			"name":"Osmium",
-			"value":8.0e-8,
-			"unit":"OhmMeters"
+			"value":8.0e-8
 		},
 		{
 			"name":"Iridium",
-			"value":4.7e-8,
-			"unit":"OhmMeters"
+			"value":4.7e-8
 		},
 		{
 			"name":"Platinum",
-			"value":1.1e-7,
-			"unit":"OhmMeters"
+			"value":1.1e-7
 		},
 		{
 			"name":"Gold",
-			"value":2.2e-8,
-			"unit":"OhmMeters"
+			"value":2.2e-8
 		},
 		{
 			"name":"Mercury",
-			"value":9.6e-7,
-			"unit":"OhmMeters"
+			"value":9.6e-7
 		},
 		{
 			"name":"Thallium",
-			"value":1.5e-7,
-			"unit":"OhmMeters"
+			"value":1.5e-7
 		},
 		{
 			"name":"Lead",
-			"value":2.1e-7,
-			"unit":"OhmMeters"
+			"value":2.1e-7
 		},
 		{
 			"name":"Bismuth",
-			"value":1.3e-6,
-			"unit":"OhmMeters"
+			"value":1.3e-6
 		},
 		{
 			"name":"Polonium",
-			"value":4.3e-7,
-			"unit":"OhmMeters"
+			"value":4.3e-7
 		},
 		{
 			"name":"Astatine",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radon",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Francium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radium",
-			"value":1.0e-6,
-			"unit":"OhmMeters"
+			"value":1.0e-6
 		},
 		{
 			"name":"Actinides",
@@ -456,153 +370,123 @@
 		},
 		{
 			"name":"Actinium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Thorium",
-			"value":1.5e-7,
-			"unit":"OhmMeters"
+			"value":1.5e-7
 		},
 		{
 			"name":"Protactinium",
-			"value":1.8e-7,
-			"unit":"OhmMeters"
+			"value":1.8e-7
 		},
 		{
 			"name":"Uranium",
-			"value":2.8e-7,
-			"unit":"OhmMeters"
+			"value":2.8e-7
 		},
 		{
 			"name":"Neptunium",
-			"value":1.2e-6,
-			"unit":"OhmMeters"
+			"value":1.2e-6
 		},
 		{
 			"name":"Plutonium",
-			"value":1.5e-6,
-			"unit":"OhmMeters"
+			"value":1.5e-6
 		},
 		{
 			"name":"Americium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Curium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Berkelium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Californium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fermium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nobelium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Dubnium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bohrium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Hassium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Copernicium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nihonium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Flerovium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Moscovium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Livermorium",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Tennessine",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oganesson",
-			"value":"Unknown",
-			"unit":"OhmMeters"
+			"value":"Unknown"
 		}
 	]
 }

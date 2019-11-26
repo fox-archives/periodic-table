@@ -3,288 +3,234 @@
 		"atomPropertyName":"AtomicRadius",
 		"atomPropertyNameWithSpace":"Atomic Radius",
 		"description":"atomic radius",
-		"longDescription":"calculated distance from nucleus of outermost electron"
+		"longDescription":"calculated distance from nucleus of outermost electron",
+		"unit":"Picometers",
+		"unitLong":"Picometers"
 	},
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":5.3e1,
-			"unit":"Picometers"
+			"value":5.3e1
 		},
 		{
 			"name":"Helium",
-			"value":3.1e1,
-			"unit":"Picometers"
+			"value":3.1e1
 		},
 		{
 			"name":"Lithium",
-			"value":1.67e2,
-			"unit":"Picometers"
+			"value":1.67e2
 		},
 		{
 			"name":"Beryllium",
-			"value":1.12e2,
-			"unit":"Picometers"
+			"value":1.12e2
 		},
 		{
 			"name":"Boron",
-			"value":8.7e1,
-			"unit":"Picometers"
+			"value":8.7e1
 		},
 		{
 			"name":"Carbon",
-			"value":6.7e1,
-			"unit":"Picometers"
+			"value":6.7e1
 		},
 		{
 			"name":"Nitrogen",
-			"value":5.6e1,
-			"unit":"Picometers"
+			"value":5.6e1
 		},
 		{
 			"name":"Oxygen",
-			"value":4.8e1,
-			"unit":"Picometers"
+			"value":4.8e1
 		},
 		{
 			"name":"Fluorine",
-			"value":4.2e1,
-			"unit":"Picometers"
+			"value":4.2e1
 		},
 		{
 			"name":"Neon",
-			"value":3.8e1,
-			"unit":"Picometers"
+			"value":3.8e1
 		},
 		{
 			"name":"Sodium",
-			"value":1.9e2,
-			"unit":"Picometers"
+			"value":1.9e2
 		},
 		{
 			"name":"Magnesium",
-			"value":1.45e2,
-			"unit":"Picometers"
+			"value":1.45e2
 		},
 		{
 			"name":"Aluminum",
-			"value":1.18e2,
-			"unit":"Picometers"
+			"value":1.18e2
 		},
 		{
 			"name":"Silicon",
-			"value":1.11e2,
-			"unit":"Picometers"
+			"value":1.11e2
 		},
 		{
 			"name":"Phosphorus",
-			"value":9.8e1,
-			"unit":"Picometers"
+			"value":9.8e1
 		},
 		{
 			"name":"Sulfur",
-			"value":8.7e1,
-			"unit":"Picometers"
+			"value":8.7e1
 		},
 		{
 			"name":"Chlorine",
-			"value":7.9e1,
-			"unit":"Picometers"
+			"value":7.9e1
 		},
 		{
 			"name":"Argon",
-			"value":7.1e1,
-			"unit":"Picometers"
+			"value":7.1e1
 		},
 		{
 			"name":"Potassium",
-			"value":2.43e2,
-			"unit":"Picometers"
+			"value":2.43e2
 		},
 		{
 			"name":"Calcium",
-			"value":1.94e2,
-			"unit":"Picometers"
+			"value":1.94e2
 		},
 		{
 			"name":"Scandium",
-			"value":1.84e2,
-			"unit":"Picometers"
+			"value":1.84e2
 		},
 		{
 			"name":"Titanium",
-			"value":1.76e2,
-			"unit":"Picometers"
+			"value":1.76e2
 		},
 		{
 			"name":"Vanadium",
-			"value":1.71e2,
-			"unit":"Picometers"
+			"value":1.71e2
 		},
 		{
 			"name":"Chromium",
-			"value":1.66e2,
-			"unit":"Picometers"
+			"value":1.66e2
 		},
 		{
 			"name":"Manganese",
-			"value":1.61e2,
-			"unit":"Picometers"
+			"value":1.61e2
 		},
 		{
 			"name":"Iron",
-			"value":1.56e2,
-			"unit":"Picometers"
+			"value":1.56e2
 		},
 		{
 			"name":"Cobalt",
-			"value":1.52e2,
-			"unit":"Picometers"
+			"value":1.52e2
 		},
 		{
 			"name":"Nickel",
-			"value":1.49e2,
-			"unit":"Picometers"
+			"value":1.49e2
 		},
 		{
 			"name":"Copper",
-			"value":1.45e2,
-			"unit":"Picometers"
+			"value":1.45e2
 		},
 		{
 			"name":"Zinc",
-			"value":1.42e2,
-			"unit":"Picometers"
+			"value":1.42e2
 		},
 		{
 			"name":"Gallium",
-			"value":1.36e2,
-			"unit":"Picometers"
+			"value":1.36e2
 		},
 		{
 			"name":"Germanium",
-			"value":1.25e2,
-			"unit":"Picometers"
+			"value":1.25e2
 		},
 		{
 			"name":"Arsenic",
-			"value":1.14e2,
-			"unit":"Picometers"
+			"value":1.14e2
 		},
 		{
 			"name":"Selenium",
-			"value":1.03e2,
-			"unit":"Picometers"
+			"value":1.03e2
 		},
 		{
 			"name":"Bromine",
-			"value":9.4e1,
-			"unit":"Picometers"
+			"value":9.4e1
 		},
 		{
 			"name":"Krypton",
-			"value":8.7e1,
-			"unit":"Picometers"
+			"value":8.7e1
 		},
 		{
 			"name":"Rubidium",
-			"value":2.65e2,
-			"unit":"Picometers"
+			"value":2.65e2
 		},
 		{
 			"name":"Strontium",
-			"value":2.19e2,
-			"unit":"Picometers"
+			"value":2.19e2
 		},
 		{
 			"name":"Yttrium",
-			"value":2.12e2,
-			"unit":"Picometers"
+			"value":2.12e2
 		},
 		{
 			"name":"Zirconium",
-			"value":2.06e2,
-			"unit":"Picometers"
+			"value":2.06e2
 		},
 		{
 			"name":"Niobium",
-			"value":1.98e2,
-			"unit":"Picometers"
+			"value":1.98e2
 		},
 		{
 			"name":"Molybdenum",
-			"value":1.9e2,
-			"unit":"Picometers"
+			"value":1.9e2
 		},
 		{
 			"name":"Technetium",
-			"value":1.83e2,
-			"unit":"Picometers"
+			"value":1.83e2
 		},
 		{
 			"name":"Ruthenium",
-			"value":1.78e2,
-			"unit":"Picometers"
+			"value":1.78e2
 		},
 		{
 			"name":"Rhodium",
-			"value":1.73e2,
-			"unit":"Picometers"
+			"value":1.73e2
 		},
 		{
 			"name":"Palladium",
-			"value":1.69e2,
-			"unit":"Picometers"
+			"value":1.69e2
 		},
 		{
 			"name":"Silver",
-			"value":1.65e2,
-			"unit":"Picometers"
+			"value":1.65e2
 		},
 		{
 			"name":"Cadmium",
-			"value":1.61e2,
-			"unit":"Picometers"
+			"value":1.61e2
 		},
 		{
 			"name":"Indium",
-			"value":1.56e2,
-			"unit":"Picometers"
+			"value":1.56e2
 		},
 		{
 			"name":"Tin",
-			"value":1.45e2,
-			"unit":"Picometers"
+			"value":1.45e2
 		},
 		{
 			"name":"Antimony",
-			"value":1.33e2,
-			"unit":"Picometers"
+			"value":1.33e2
 		},
 		{
 			"name":"Tellurium",
-			"value":1.23e2,
-			"unit":"Picometers"
+			"value":1.23e2
 		},
 		{
 			"name":"Iodine",
-			"value":1.15e2,
-			"unit":"Picometers"
+			"value":1.15e2
 		},
 		{
 			"name":"Xenon",
-			"value":1.08e2,
-			"unit":"Picometers"
+			"value":1.08e2
 		},
 		{
 			"name":"Cesium",
-			"value":2.98e2,
-			"unit":"Picometers"
+			"value":2.98e2
 		},
 		{
 			"name":"Barium",
-			"value":2.53e2,
-			"unit":"Picometers"
+			"value":2.53e2
 		},
 		{
 			"name":"Lanthanites",
@@ -292,163 +238,131 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Cerium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Praseodymium",
-			"value":2.47e2,
-			"unit":"Picometers"
+			"value":2.47e2
 		},
 		{
 			"name":"Neodymium",
-			"value":2.06e2,
-			"unit":"Picometers"
+			"value":2.06e2
 		},
 		{
 			"name":"Promethium",
-			"value":2.05e2,
-			"unit":"Picometers"
+			"value":2.05e2
 		},
 		{
 			"name":"Samarium",
-			"value":2.38e2,
-			"unit":"Picometers"
+			"value":2.38e2
 		},
 		{
 			"name":"Europium",
-			"value":2.31e2,
-			"unit":"Picometers"
+			"value":2.31e2
 		},
 		{
 			"name":"Gadolinium",
-			"value":2.33e2,
-			"unit":"Picometers"
+			"value":2.33e2
 		},
 		{
 			"name":"Terbium",
-			"value":2.25e2,
-			"unit":"Picometers"
+			"value":2.25e2
 		},
 		{
 			"name":"Dysprosium",
-			"value":2.28e2,
-			"unit":"Picometers"
+			"value":2.28e2
 		},
 		{
 			"name":"Holmium",
-			"value":2.26e2,
-			"unit":"Picometers"
+			"value":2.26e2
 		},
 		{
 			"name":"Erbium",
-			"value":2.26e2,
-			"unit":"Picometers"
+			"value":2.26e2
 		},
 		{
 			"name":"Thulium",
-			"value":2.22e2,
-			"unit":"Picometers"
+			"value":2.22e2
 		},
 		{
 			"name":"Ytterbium",
-			"value":2.22e2,
-			"unit":"Picometers"
+			"value":2.22e2
 		},
 		{
 			"name":"Lutetium",
-			"value":2.17e2,
-			"unit":"Picometers"
+			"value":2.17e2
 		},
 		{
 			"name":"Hafnium",
-			"value":2.08e2,
-			"unit":"Picometers"
+			"value":2.08e2
 		},
 		{
 			"name":"Tantalum",
-			"value":2.0e2,
-			"unit":"Picometers"
+			"value":2.0e2
 		},
 		{
 			"name":"Tungsten",
-			"value":1.93e2,
-			"unit":"Picometers"
+			"value":1.93e2
 		},
 		{
 			"name":"Rhenium",
-			"value":1.88e2,
-			"unit":"Picometers"
+			"value":1.88e2
 		},
 		{
 			"name":"Osmium",
-			"value":1.85e2,
-			"unit":"Picometers"
+			"value":1.85e2
 		},
 		{
 			"name":"Iridium",
-			"value":1.8e2,
-			"unit":"Picometers"
+			"value":1.8e2
 		},
 		{
 			"name":"Platinum",
-			"value":1.77e2,
-			"unit":"Picometers"
+			"value":1.77e2
 		},
 		{
 			"name":"Gold",
-			"value":1.74e2,
-			"unit":"Picometers"
+			"value":1.74e2
 		},
 		{
 			"name":"Mercury",
-			"value":1.71e2,
-			"unit":"Picometers"
+			"value":1.71e2
 		},
 		{
 			"name":"Thallium",
-			"value":1.56e2,
-			"unit":"Picometers"
+			"value":1.56e2
 		},
 		{
 			"name":"Lead",
-			"value":1.54e2,
-			"unit":"Picometers"
+			"value":1.54e2
 		},
 		{
 			"name":"Bismuth",
-			"value":1.43e2,
-			"unit":"Picometers"
+			"value":1.43e2
 		},
 		{
 			"name":"Polonium",
-			"value":1.35e2,
-			"unit":"Picometers"
+			"value":1.35e2
 		},
 		{
 			"name":"Astatine",
-			"value":1.27e2,
-			"unit":"Picometers"
+			"value":1.27e2
 		},
 		{
 			"name":"Radon",
-			"value":1.2e2,
-			"unit":"Picometers"
+			"value":1.2e2
 		},
 		{
 			"name":"Francium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Actinides",
@@ -456,153 +370,123 @@
 		},
 		{
 			"name":"Actinium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Thorium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Protactinium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Uranium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Neptunium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Plutonium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Americium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Curium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Berkelium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Californium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fermium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nobelium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Dubnium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bohrium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Hassium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Copernicium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nihonium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Flerovium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Moscovium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Livermorium",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Tennessine",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oganesson",
-			"value":"Unknown",
-			"unit":"Picometers"
+			"value":"Unknown"
 		}
 	]
 }

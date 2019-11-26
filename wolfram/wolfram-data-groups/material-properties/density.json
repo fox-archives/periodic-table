@@ -3,288 +3,234 @@
 		"atomPropertyName":"Density",
 		"atomPropertyNameWithSpace":"Density",
 		"description":"density",
-		"longDescription":"density at standard temperature and pressure"
+		"longDescription":"density at standard temperature and pressure",
+		"unit":"KilogramsPerCubicMeter",
+		"unitLong":"KilogramsPerCubicMeter"
 	},
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":8.99e-2,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.99e-2
 		},
 		{
 			"name":"Helium",
-			"value":0.1785,
-			"unit":"KilogramsPerCubicMeter"
+			"value":0.1785
 		},
 		{
 			"name":"Lithium",
-			"value":5.35e2,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.35e2
 		},
 		{
 			"name":"Beryllium",
-			"value":1.848e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.848e3
 		},
 		{
 			"name":"Boron",
-			"value":2.46e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.46e3
 		},
 		{
 			"name":"Carbon",
-			"value":2.26e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.26e3
 		},
 		{
 			"name":"Nitrogen",
-			"value":1.251,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.251
 		},
 		{
 			"name":"Oxygen",
-			"value":1.429,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.429
 		},
 		{
 			"name":"Fluorine",
-			"value":1.696,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.696
 		},
 		{
 			"name":"Neon",
-			"value":0.9,
-			"unit":"KilogramsPerCubicMeter"
+			"value":0.9
 		},
 		{
 			"name":"Sodium",
-			"value":9.68e2,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.68e2
 		},
 		{
 			"name":"Magnesium",
-			"value":1.738e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.738e3
 		},
 		{
 			"name":"Aluminum",
-			"value":2.7e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.7e3
 		},
 		{
 			"name":"Silicon",
-			"value":2.33e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.33e3
 		},
 		{
 			"name":"Phosphorus",
-			"value":1.823e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.823e3
 		},
 		{
 			"name":"Sulfur",
-			"value":1.96e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.96e3
 		},
 		{
 			"name":"Chlorine",
-			"value":3.214,
-			"unit":"KilogramsPerCubicMeter"
+			"value":3.214
 		},
 		{
 			"name":"Argon",
-			"value":1.784,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.784
 		},
 		{
 			"name":"Potassium",
-			"value":8.56e2,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.56e2
 		},
 		{
 			"name":"Calcium",
-			"value":1.55e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.55e3
 		},
 		{
 			"name":"Scandium",
-			"value":2.985e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.985e3
 		},
 		{
 			"name":"Titanium",
-			"value":4.507e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":4.507e3
 		},
 		{
 			"name":"Vanadium",
-			"value":6.11e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.11e3
 		},
 		{
 			"name":"Chromium",
-			"value":7.19e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.19e3
 		},
 		{
 			"name":"Manganese",
-			"value":7.47e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.47e3
 		},
 		{
 			"name":"Iron",
-			"value":7.874e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.874e3
 		},
 		{
 			"name":"Cobalt",
-			"value":8.9e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.9e3
 		},
 		{
 			"name":"Nickel",
-			"value":8.908e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.908e3
 		},
 		{
 			"name":"Copper",
-			"value":8.96e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.96e3
 		},
 		{
 			"name":"Zinc",
-			"value":7.14e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.14e3
 		},
 		{
 			"name":"Gallium",
-			"value":5.904e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.904e3
 		},
 		{
 			"name":"Germanium",
-			"value":5.323e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.323e3
 		},
 		{
 			"name":"Arsenic",
-			"value":5.727e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.727e3
 		},
 		{
 			"name":"Selenium",
-			"value":4.819e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":4.819e3
 		},
 		{
 			"name":"Bromine",
-			"value":3.12e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":3.12e3
 		},
 		{
 			"name":"Krypton",
-			"value":3.75,
-			"unit":"KilogramsPerCubicMeter"
+			"value":3.75
 		},
 		{
 			"name":"Rubidium",
-			"value":1.532e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.532e3
 		},
 		{
 			"name":"Strontium",
-			"value":2.63e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.63e3
 		},
 		{
 			"name":"Yttrium",
-			"value":4.472e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":4.472e3
 		},
 		{
 			"name":"Zirconium",
-			"value":6.511e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.511e3
 		},
 		{
 			"name":"Niobium",
-			"value":8.57e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.57e3
 		},
 		{
 			"name":"Molybdenum",
-			"value":1.028e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.028e4
 		},
 		{
 			"name":"Technetium",
-			"value":1.15e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.15e4
 		},
 		{
 			"name":"Ruthenium",
-			"value":1.237e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.237e4
 		},
 		{
 			"name":"Rhodium",
-			"value":1.245e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.245e4
 		},
 		{
 			"name":"Palladium",
-			"value":1.2023e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.2023e4
 		},
 		{
 			"name":"Silver",
-			"value":1.049e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.049e4
 		},
 		{
 			"name":"Cadmium",
-			"value":8.65e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.65e3
 		},
 		{
 			"name":"Indium",
-			"value":7.31e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.31e3
 		},
 		{
 			"name":"Tin",
-			"value":7.31e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.31e3
 		},
 		{
 			"name":"Antimony",
-			"value":6.697e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.697e3
 		},
 		{
 			"name":"Tellurium",
-			"value":6.24e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.24e3
 		},
 		{
 			"name":"Iodine",
-			"value":4.94e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":4.94e3
 		},
 		{
 			"name":"Xenon",
-			"value":5.9,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.9
 		},
 		{
 			"name":"Cesium",
-			"value":1.879e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.879e3
 		},
 		{
 			"name":"Barium",
-			"value":3.51e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":3.51e3
 		},
 		{
 			"name":"Lanthanites",
@@ -292,163 +238,131 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":6.146e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.146e3
 		},
 		{
 			"name":"Cerium",
-			"value":6.689e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.689e3
 		},
 		{
 			"name":"Praseodymium",
-			"value":6.64e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.64e3
 		},
 		{
 			"name":"Neodymium",
-			"value":7.01e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.01e3
 		},
 		{
 			"name":"Promethium",
-			"value":7.264e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.264e3
 		},
 		{
 			"name":"Samarium",
-			"value":7.353e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.353e3
 		},
 		{
 			"name":"Europium",
-			"value":5.244e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.244e3
 		},
 		{
 			"name":"Gadolinium",
-			"value":7.901e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":7.901e3
 		},
 		{
 			"name":"Terbium",
-			"value":8.219e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.219e3
 		},
 		{
 			"name":"Dysprosium",
-			"value":8.551e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.551e3
 		},
 		{
 			"name":"Holmium",
-			"value":8.795e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":8.795e3
 		},
 		{
 			"name":"Erbium",
-			"value":9.066e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.066e3
 		},
 		{
 			"name":"Thulium",
-			"value":9.32e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.32e3
 		},
 		{
 			"name":"Ytterbium",
-			"value":6.57e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":6.57e3
 		},
 		{
 			"name":"Lutetium",
-			"value":9.841e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.841e3
 		},
 		{
 			"name":"Hafnium",
-			"value":1.331e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.331e4
 		},
 		{
 			"name":"Tantalum",
-			"value":1.665e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.665e4
 		},
 		{
 			"name":"Tungsten",
-			"value":1.925e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.925e4
 		},
 		{
 			"name":"Rhenium",
-			"value":2.102e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.102e4
 		},
 		{
 			"name":"Osmium",
-			"value":2.259e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.259e4
 		},
 		{
 			"name":"Iridium",
-			"value":2.256e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.256e4
 		},
 		{
 			"name":"Platinum",
-			"value":2.145e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.145e4
 		},
 		{
 			"name":"Gold",
-			"value":1.93e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.93e4
 		},
 		{
 			"name":"Mercury",
-			"value":1.3534e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.3534e4
 		},
 		{
 			"name":"Thallium",
-			"value":1.185e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.185e4
 		},
 		{
 			"name":"Lead",
-			"value":1.134e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.134e4
 		},
 		{
 			"name":"Bismuth",
-			"value":9.78e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.78e3
 		},
 		{
 			"name":"Polonium",
-			"value":9.196e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.196e3
 		},
 		{
 			"name":"Astatine",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radon",
-			"value":9.73,
-			"unit":"KilogramsPerCubicMeter"
+			"value":9.73
 		},
 		{
 			"name":"Francium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radium",
-			"value":5.0e3,
-			"unit":"KilogramsPerCubicMeter"
+			"value":5.0e3
 		},
 		{
 			"name":"Actinides",
@@ -456,153 +370,123 @@
 		},
 		{
 			"name":"Actinium",
-			"value":1.007e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.007e4
 		},
 		{
 			"name":"Thorium",
-			"value":1.1724e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.1724e4
 		},
 		{
 			"name":"Protactinium",
-			"value":1.537e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.537e4
 		},
 		{
 			"name":"Uranium",
-			"value":1.905e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.905e4
 		},
 		{
 			"name":"Neptunium",
-			"value":2.045e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":2.045e4
 		},
 		{
 			"name":"Plutonium",
-			"value":1.9816e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.9816e4
 		},
 		{
 			"name":"Americium",
-			"value":1.367e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.367e4
 		},
 		{
 			"name":"Curium",
-			"value":1.351e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.351e4
 		},
 		{
 			"name":"Berkelium",
-			"value":1.478e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.478e4
 		},
 		{
 			"name":"Californium",
-			"value":1.51e4,
-			"unit":"KilogramsPerCubicMeter"
+			"value":1.51e4
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fermium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nobelium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Dubnium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bohrium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Hassium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Copernicium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nihonium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Flerovium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Moscovium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Livermorium",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Tennessine",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oganesson",
-			"value":"Unknown",
-			"unit":"KilogramsPerCubicMeter"
+			"value":"Unknown"
 		}
 	]
 }

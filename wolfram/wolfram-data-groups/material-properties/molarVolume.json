@@ -3,288 +3,234 @@
 		"atomPropertyName":"MolarVolume",
 		"atomPropertyNameWithSpace":"Molar Volume",
 		"description":"molar volume",
-		"longDescription":"molar volume"
+		"longDescription":"molar volume",
+		"unit":"CubicMetersPerMole",
+		"unitLong":"CubicMetersPerMole"
 	},
 	"data":[
 		{
 			"name":"Hydrogen",
-			"value":0.0112,
-			"unit":"CubicMetersPerMole"
+			"value":0.0112
 		},
 		{
 			"name":"Helium",
-			"value":0.02242,
-			"unit":"CubicMetersPerMole"
+			"value":0.02242
 		},
 		{
 			"name":"Lithium",
-			"value":0.0000130,
-			"unit":"CubicMetersPerMole"
+			"value":0.0000130
 		},
 		{
 			"name":"Beryllium",
-			"value":4.877e-6,
-			"unit":"CubicMetersPerMole"
+			"value":4.877e-6
 		},
 		{
 			"name":"Boron",
-			"value":4.394e-6,
-			"unit":"CubicMetersPerMole"
+			"value":4.394e-6
 		},
 		{
 			"name":"Carbon",
-			"value":5.315e-6,
-			"unit":"CubicMetersPerMole"
+			"value":5.315e-6
 		},
 		{
 			"name":"Nitrogen",
-			"value":0.01120,
-			"unit":"CubicMetersPerMole"
+			"value":0.01120
 		},
 		{
 			"name":"Oxygen",
-			"value":0.01120,
-			"unit":"CubicMetersPerMole"
+			"value":0.01120
 		},
 		{
 			"name":"Fluorine",
-			"value":0.01120,
-			"unit":"CubicMetersPerMole"
+			"value":0.01120
 		},
 		{
 			"name":"Neon",
-			"value":0.0224,
-			"unit":"CubicMetersPerMole"
+			"value":0.0224
 		},
 		{
 			"name":"Sodium",
-			"value":0.0000237,
-			"unit":"CubicMetersPerMole"
+			"value":0.0000237
 		},
 		{
 			"name":"Magnesium",
-			"value":0.00001398,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001398
 		},
 		{
 			"name":"Aluminum",
-			"value":1.0e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.0e-5
 		},
 		{
 			"name":"Silicon",
-			"value":0.00001205,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001205
 		},
 		{
 			"name":"Phosphorus",
-			"value":0.00001699,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001699
 		},
 		{
 			"name":"Sulfur",
-			"value":0.00001636,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001636
 		},
 		{
 			"name":"Chlorine",
-			"value":0.01103,
-			"unit":"CubicMetersPerMole"
+			"value":0.01103
 		},
 		{
 			"name":"Argon",
-			"value":0.02239,
-			"unit":"CubicMetersPerMole"
+			"value":0.02239
 		},
 		{
 			"name":"Potassium",
-			"value":0.0000457,
-			"unit":"CubicMetersPerMole"
+			"value":0.0000457
 		},
 		{
 			"name":"Calcium",
-			"value":0.00002586,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002586
 		},
 		{
 			"name":"Scandium",
-			"value":0.00001506,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001506
 		},
 		{
 			"name":"Titanium",
-			"value":0.00001062,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001062
 		},
 		{
 			"name":"Vanadium",
-			"value":8.337e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.337e-6
 		},
 		{
 			"name":"Chromium",
-			"value":7.232e-6,
-			"unit":"CubicMetersPerMole"
+			"value":7.232e-6
 		},
 		{
 			"name":"Manganese",
-			"value":7.354e-6,
-			"unit":"CubicMetersPerMole"
+			"value":7.354e-6
 		},
 		{
 			"name":"Iron",
-			"value":7.092e-6,
-			"unit":"CubicMetersPerMole"
+			"value":7.092e-6
 		},
 		{
 			"name":"Cobalt",
-			"value":6.6e-6,
-			"unit":"CubicMetersPerMole"
+			"value":6.6e-6
 		},
 		{
 			"name":"Nickel",
-			"value":6.589e-6,
-			"unit":"CubicMetersPerMole"
+			"value":6.589e-6
 		},
 		{
 			"name":"Copper",
-			"value":7.092e-6,
-			"unit":"CubicMetersPerMole"
+			"value":7.092e-6
 		},
 		{
 			"name":"Zinc",
-			"value":9.16e-6,
-			"unit":"CubicMetersPerMole"
+			"value":9.16e-6
 		},
 		{
 			"name":"Gallium",
-			"value":0.00001181,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001181
 		},
 		{
 			"name":"Germanium",
-			"value":0.00001364,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001364
 		},
 		{
 			"name":"Arsenic",
-			"value":0.00001308,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001308
 		},
 		{
 			"name":"Selenium",
-			"value":0.00001639,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001639
 		},
 		{
 			"name":"Bromine",
-			"value":0.00002561,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002561
 		},
 		{
 			"name":"Krypton",
-			"value":0.0223,
-			"unit":"CubicMetersPerMole"
+			"value":0.0223
 		},
 		{
 			"name":"Rubidium",
-			"value":0.00005579,
-			"unit":"CubicMetersPerMole"
+			"value":0.00005579
 		},
 		{
 			"name":"Strontium",
-			"value":0.00003332,
-			"unit":"CubicMetersPerMole"
+			"value":0.00003332
 		},
 		{
 			"name":"Yttrium",
-			"value":0.00001988,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001988
 		},
 		{
 			"name":"Zirconium",
-			"value":0.00001401,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001401
 		},
 		{
 			"name":"Niobium",
-			"value":0.00001084,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001084
 		},
 		{
 			"name":"Molybdenum",
-			"value":9.33e-6,
-			"unit":"CubicMetersPerMole"
+			"value":9.33e-6
 		},
 		{
 			"name":"Technetium",
-			"value":8.434782608695652e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.434782608695652e-6
 		},
 		{
 			"name":"Ruthenium",
-			"value":8.171e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.171e-6
 		},
 		{
 			"name":"Rhodium",
-			"value":8.2655e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.2655e-6
 		},
 		{
 			"name":"Palladium",
-			"value":8.851e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.851e-6
 		},
 		{
 			"name":"Silver",
-			"value":0.000010283,
-			"unit":"CubicMetersPerMole"
+			"value":0.000010283
 		},
 		{
 			"name":"Cadmium",
-			"value":0.00001300,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001300
 		},
 		{
 			"name":"Indium",
-			"value":0.00001571,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001571
 		},
 		{
 			"name":"Tin",
-			"value":0.00001624,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001624
 		},
 		{
 			"name":"Antimony",
-			"value":0.00001818,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001818
 		},
 		{
 			"name":"Tellurium",
-			"value":0.00002045,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002045
 		},
 		{
 			"name":"Iodine",
-			"value":0.00002569,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002569
 		},
 		{
 			"name":"Xenon",
-			"value":0.022,
-			"unit":"CubicMetersPerMole"
+			"value":0.022
 		},
 		{
 			"name":"Cesium",
-			"value":0.00007073,
-			"unit":"CubicMetersPerMole"
+			"value":0.00007073
 		},
 		{
 			"name":"Barium",
-			"value":0.00003912,
-			"unit":"CubicMetersPerMole"
+			"value":0.00003912
 		},
 		{
 			"name":"Lanthanites",
@@ -292,163 +238,131 @@
 		},
 		{
 			"name":"Lanthanum",
-			"value":0.00002260,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002260
 		},
 		{
 			"name":"Cerium",
-			"value":0.00002095,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002095
 		},
 		{
 			"name":"Praseodymium",
-			"value":0.00002122,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002122
 		},
 		{
 			"name":"Neodymium",
-			"value":0.00002058,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002058
 		},
 		{
 			"name":"Promethium",
-			"value":1.9961453744493392e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.9961453744493392e-5
 		},
 		{
 			"name":"Samarium",
-			"value":0.00002045,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002045
 		},
 		{
 			"name":"Europium",
-			"value":0.00002898,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002898
 		},
 		{
 			"name":"Gadolinium",
-			"value":0.00001990,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001990
 		},
 		{
 			"name":"Terbium",
-			"value":0.00001934,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001934
 		},
 		{
 			"name":"Dysprosium",
-			"value":0.00001900,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001900
 		},
 		{
 			"name":"Holmium",
-			"value":0.00001875,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001875
 		},
 		{
 			"name":"Erbium",
-			"value":0.00001845,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001845
 		},
 		{
 			"name":"Thulium",
-			"value":0.00001813,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001813
 		},
 		{
 			"name":"Ytterbium",
-			"value":0.00002634,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002634
 		},
 		{
 			"name":"Lutetium",
-			"value":0.00001778,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001778
 		},
 		{
 			"name":"Hafnium",
-			"value":0.000013410,
-			"unit":"CubicMetersPerMole"
+			"value":0.000013410
 		},
 		{
 			"name":"Tantalum",
-			"value":0.000010868,
-			"unit":"CubicMetersPerMole"
+			"value":0.000010868
 		},
 		{
 			"name":"Tungsten",
-			"value":9.550e-6,
-			"unit":"CubicMetersPerMole"
+			"value":9.550e-6
 		},
 		{
 			"name":"Rhenium",
-			"value":8.8586e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.8586e-6
 		},
 		{
 			"name":"Osmium",
-			"value":8.421e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.421e-6
 		},
 		{
 			"name":"Iridium",
-			"value":8.520e-6,
-			"unit":"CubicMetersPerMole"
+			"value":8.520e-6
 		},
 		{
 			"name":"Platinum",
-			"value":9.095e-6,
-			"unit":"CubicMetersPerMole"
+			"value":9.095e-6
 		},
 		{
 			"name":"Gold",
-			"value":0.0000102,
-			"unit":"CubicMetersPerMole"
+			"value":0.0000102
 		},
 		{
 			"name":"Mercury",
-			"value":0.000014821,
-			"unit":"CubicMetersPerMole"
+			"value":0.000014821
 		},
 		{
 			"name":"Thallium",
-			"value":0.000017247,
-			"unit":"CubicMetersPerMole"
+			"value":0.000017247
 		},
 		{
 			"name":"Lead",
-			"value":0.00001827,
-			"unit":"CubicMetersPerMole"
+			"value":0.00001827
 		},
 		{
 			"name":"Bismuth",
-			"value":0.00002137,
-			"unit":"CubicMetersPerMole"
+			"value":0.00002137
 		},
 		{
 			"name":"Polonium",
-			"value":2.2727272727272726e-5,
-			"unit":"CubicMetersPerMole"
+			"value":2.2727272727272726e-5
 		},
 		{
 			"name":"Astatine",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radon",
-			"value":2.2816032887975336e-2,
-			"unit":"CubicMetersPerMole"
+			"value":2.2816032887975336e-2
 		},
 		{
 			"name":"Francium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Radium",
-			"value":4.52e-5,
-			"unit":"CubicMetersPerMole"
+			"value":4.52e-5
 		},
 		{
 			"name":"Actinides",
@@ -456,153 +370,123 @@
 		},
 		{
 			"name":"Actinium",
-			"value":2.2542204568023828e-5,
-			"unit":"CubicMetersPerMole"
+			"value":2.2542204568023828e-5
 		},
 		{
 			"name":"Thorium",
-			"value":0.000019792,
-			"unit":"CubicMetersPerMole"
+			"value":0.000019792
 		},
 		{
 			"name":"Protactinium",
-			"value":0.000015032,
-			"unit":"CubicMetersPerMole"
+			"value":0.000015032
 		},
 		{
 			"name":"Uranium",
-			"value":0.000012495,
-			"unit":"CubicMetersPerMole"
+			"value":0.000012495
 		},
 		{
 			"name":"Neptunium",
-			"value":1.158924205378973e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.158924205378973e-5
 		},
 		{
 			"name":"Plutonium",
-			"value":1.2313282196205086e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.2313282196205086e-5
 		},
 		{
 			"name":"Americium",
-			"value":1.7776152158010242e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.7776152158010242e-5
 		},
 		{
 			"name":"Curium",
-			"value":1.8282753515914136e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.8282753515914136e-5
 		},
 		{
 			"name":"Berkelium",
-			"value":1.6711772665764547e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.6711772665764547e-5
 		},
 		{
 			"name":"Californium",
-			"value":1.662251655629139e-5,
-			"unit":"CubicMetersPerMole"
+			"value":1.662251655629139e-5
 		},
 		{
 			"name":"Einsteinium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Fermium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Mendelevium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nobelium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Lawrencium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Rutherfordium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Dubnium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Seaborgium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Bohrium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Hassium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Meitnerium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Darmstadtium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Roentgenium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Copernicium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Nihonium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Flerovium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Moscovium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Livermorium",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Tennessine",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		},
 		{
 			"name":"Oganesson",
-			"value":"Unknown",
-			"unit":"CubicMetersPerMole"
+			"value":"Unknown"
 		}
 	]
 }
