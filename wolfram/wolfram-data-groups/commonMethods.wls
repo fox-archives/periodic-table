@@ -1,7 +1,89 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-fixUnknowns[data_]:= (
+MakeUnitReadable[rawUnit_] := (
+  unit = ToString@rawUnit;
+  Return@Which[
+    unit == "GramsPerGram",
+    "g per g",
+
+    unit == "Picometers",
+    "p",
+
+    unit == "KilojoulesPerMole",
+    "kj per m",
+
+    unit == "SiemensPerMeter",
+    "s per m",
+
+    unit == "CubicMetersPerKilogram",
+    "cb^3 per kilo",
+
+    unit == "CubicMetersPerMole",
+    "cb per mole",
+
+    unit == "None",
+    "",
+
+    unit == "OhmMeters",
+    "ohm meters",
+
+    unit == "Megapascals",
+    "mgps",
+
+    unit == "Gigapascals",
+    "gpsl",
+
+    unit == "KilogramsPerCubicMeter",
+    "kpcm",
+
+    unit == "MeteresPerSecond",
+    "m / s",
+
+    unit == "WattsPerMeterKelvin",
+    "wpmk",
+
+    unit == "ReciprocalKelvins",
+    "rekl",
+
+    unit == "Barns",
+    "barn",
+
+    unit == "SquareMetersPerKilogram",
+    "smpk",
+
+    unit == "Kelvins",
+    "k",
+
+    unit == "DegreesCelsius",
+    "C",
+
+    unit == "JoulesPerKilogramKelvin",
+    "jpkk",
+
+    unit == "AtomicMassUnit",
+    "amu",
+
+    unit == "Missing[NotApplicable]",
+    "",
+
+    True,
+    unit
+  ];
+);
+
+MakeUnitLongReadable[rawUnit_] := (
+  unit = ToString@rawUnit;
+  Return@Which[
+    unit == "AtomicMassUnit",
+    "unified atomic mass unit (dalton)",
+
+    True,
+    unit
+  ];
+);
+
+fixUnknowns[data_] := (
   If[FailureQ[data],
     Return["Failed"];
   ];
@@ -27,30 +109,30 @@ fixUnknowns[data_]:= (
   actinidesCase
     spacial case value for actinites block
 *)
+
+(* TODO: defualt aguments *)
 iterateAtomProperty[
   atomProperty_,
   atomValueTransformation_,
   lanthanitesCase_,
   actinidesCase_
-]:= (
+] := (
   (* AtomProperty *)
   atomPropertyPascalCase = StringDelete[StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]], " "];
   (* Atom Property *)
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
 
   atomArrayData = {};
+  unit = MakeUnitReadable@ElementData[1, atomPropertyPascalCase, "Units"];
+  unitLong = MakeUnitLongReadable@ElementData[1, atomPropertyPascalCase, "Units"];
+
   For[i = 1, i < 119, i++, (
     name = ElementData[i, "StandardName"];
     value = atomValueTransformation@ElementData[i, atomPropertyPascalCase];
-    If[MissingQ@ElementData[i, atomPropertyPascalCase, "Units"],
-      unit = "";,
-      unit = ToString@ElementData[i, atomPropertyPascalCase, "Units"];
-    ];
 
     atomArrayData = Append[atomArrayData, {
       "name" -> name,
-      "value" -> value,
-      "unit" -> unit
+      "value" -> value
     }];
 
     If[i == 56,
@@ -68,13 +150,16 @@ iterateAtomProperty[
     ];
   )];
 
-
   rootData = {
     "meta" -> {
       "atomPropertyName" -> atomPropertyPascalCase,
       "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace,
       "description" -> ElementData[1, atomPropertyPascalCase, "Description"],
-      "longDescription" -> ElementData[1, atomPropertyPascalCase, "LongDescription"]
+      "longDescription" -> ElementData[1, atomPropertyPascalCase, "LongDescription"],
+      (* "missingCount" -> Count[atomsUnitData, _Missing], *)
+      (* get number of missing values for a particular unit *) 
+      "unit" -> unit,
+      "unitLong" -> unitLong
     },
     "data" -> atomArrayData
   };
