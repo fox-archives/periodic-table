@@ -3,10 +3,10 @@
     {
       "debug": {
         "Atomic Number": "Hydrogen",
+        "Atomic Weight": "Hydrogen",
         "Density": "Hydrogen",
         "Boiling Point": "Hydrogen",
-        "Melting Point": "Hydrogen",
-        "Atomic Weight": "Hydrogen"
+        "Melting Point": "Hydrogen"
       },
       "Abundance": {
         "debug": {
@@ -25,18 +25,18 @@
         "Universe Abundance": 0.75
       },
       "Atomic Number": 1,
+      "Atomic Weight": 1.008,
       "Density": 0.0899,
       "Boiling Point": -252.87,
-      "Melting Point": -259.14,
-      "Atomic Weight": 1.008
+      "Melting Point": -259.14
     },
     {
       "debug": {
         "Atomic Number": "Helium",
+        "Atomic Weight": "Helium",
         "Density": "Helium",
         "Boiling Point": "Helium",
-        "Melting Point": "Helium",
-        "Atomic Weight": "Helium"
+        "Melting Point": "Helium"
       },
       "Abundance": {
         "debug": {
@@ -55,18 +55,18 @@
         "Universe Abundance": 0.23
       },
       "Atomic Number": 2,
+      "Atomic Weight": 4.002602,
       "Density": 0.1785,
       "Boiling Point": -268.93,
-      "Melting Point": "Unknown",
-      "Atomic Weight": 4.002602
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Lithium",
+        "Atomic Weight": "Lithium",
         "Density": "Lithium",
         "Boiling Point": "Lithium",
-        "Melting Point": "Lithium",
-        "Atomic Weight": "Lithium"
+        "Melting Point": "Lithium"
       },
       "Abundance": {
         "debug": {
@@ -85,18 +85,18 @@
         "Universe Abundance": 6e-9
       },
       "Atomic Number": 3,
+      "Atomic Weight": 6.94,
       "Density": 535,
       "Boiling Point": 1342,
-      "Melting Point": 180.54,
-      "Atomic Weight": 6.94
+      "Melting Point": 180.54
     },
     {
       "debug": {
         "Atomic Number": "Beryllium",
+        "Atomic Weight": "Beryllium",
         "Density": "Beryllium",
         "Boiling Point": "Beryllium",
-        "Melting Point": "Beryllium",
-        "Atomic Weight": "Beryllium"
+        "Melting Point": "Beryllium"
       },
       "Abundance": {
         "debug": {
@@ -115,18 +115,18 @@
         "Universe Abundance": 1e-9
       },
       "Atomic Number": 4,
+      "Atomic Weight": 9.0121831,
       "Density": 1848,
       "Boiling Point": 2470,
-      "Melting Point": 1287,
-      "Atomic Weight": 9.0121831
+      "Melting Point": 1287
     },
     {
       "debug": {
         "Atomic Number": "Boron",
+        "Atomic Weight": "Boron",
         "Density": "Boron",
         "Boiling Point": "Boron",
-        "Melting Point": "Boron",
-        "Atomic Weight": "Boron"
+        "Melting Point": "Boron"
       },
       "Abundance": {
         "debug": {
@@ -145,18 +145,18 @@
         "Universe Abundance": 1e-9
       },
       "Atomic Number": 5,
+      "Atomic Weight": 10.81,
       "Density": 2460,
       "Boiling Point": 4000,
-      "Melting Point": 2075,
-      "Atomic Weight": 10.81
+      "Melting Point": 2075
     },
     {
       "debug": {
         "Atomic Number": "Carbon",
+        "Atomic Weight": "Carbon",
         "Density": "Carbon",
         "Boiling Point": "Carbon",
-        "Melting Point": "Carbon",
-        "Atomic Weight": "Carbon"
+        "Melting Point": "Carbon"
       },
       "Abundance": {
         "debug": {
@@ -175,18 +175,18 @@
         "Universe Abundance": 0.005
       },
       "Atomic Number": 6,
+      "Atomic Weight": 12.011,
       "Density": 2260,
       "Boiling Point": 4027,
-      "Melting Point": 3550,
-      "Atomic Weight": 12.011
+      "Melting Point": 3550
     },
     {
       "debug": {
         "Atomic Number": "Nitrogen",
+        "Atomic Weight": "Nitrogen",
         "Density": "Nitrogen",
         "Boiling Point": "Nitrogen",
-        "Melting Point": "Nitrogen",
-        "Atomic Weight": "Nitrogen"
+        "Melting Point": "Nitrogen"
       },
       "Abundance": {
         "debug": {
@@ -205,18 +205,18 @@
         "Universe Abundance": 0.001
       },
       "Atomic Number": 7,
+      "Atomic Weight": 14.007,
       "Density": 1.251,
       "Boiling Point": -195.79,
-      "Melting Point": -210.1,
-      "Atomic Weight": 14.007
+      "Melting Point": -210.1
     },
     {
       "debug": {
         "Atomic Number": "Oxygen",
+        "Atomic Weight": "Oxygen",
         "Density": "Oxygen",
         "Boiling Point": "Oxygen",
-        "Melting Point": "Oxygen",
-        "Atomic Weight": "Oxygen"
+        "Melting Point": "Oxygen"
       },
       "Abundance": {
         "debug": {
@@ -235,18 +235,18 @@
         "Universe Abundance": 0.01
       },
       "Atomic Number": 8,
+      "Atomic Weight": 15.999,
       "Density": 1.429,
       "Boiling Point": -182.9,
-      "Melting Point": -218.3,
-      "Atomic Weight": 15.999
+      "Melting Point": -218.3
     },
     {
       "debug": {
         "Atomic Number": "Fluorine",
+        "Atomic Weight": "Fluorine",
         "Density": "Fluorine",
         "Boiling Point": "Fluorine",
-        "Melting Point": "Fluorine",
-        "Atomic Weight": "Fluorine"
+        "Melting Point": "Fluorine"
       },
       "Abundance": {
         "debug": {
@@ -265,18 +265,18 @@
         "Universe Abundance": 4e-7
       },
       "Atomic Number": 9,
+      "Atomic Weight": 18.998403163,
       "Density": 1.696,
       "Boiling Point": -188.12,
-      "Melting Point": -219.6,
-      "Atomic Weight": 18.998403163
+      "Melting Point": -219.6
     },
     {
       "debug": {
         "Atomic Number": "Neon",
+        "Atomic Weight": "Neon",
         "Density": "Neon",
         "Boiling Point": "Neon",
-        "Melting Point": "Neon",
-        "Atomic Weight": "Neon"
+        "Melting Point": "Neon"
       },
       "Abundance": {
         "debug": {
@@ -295,18 +295,18 @@
         "Universe Abundance": 0.0013
       },
       "Atomic Number": 10,
+      "Atomic Weight": 20.1797,
       "Density": 0.9,
       "Boiling Point": -246.08,
-      "Melting Point": -248.59,
-      "Atomic Weight": 20.1797
+      "Melting Point": -248.59
     },
     {
       "debug": {
         "Atomic Number": "Sodium",
+        "Atomic Weight": "Sodium",
         "Density": "Sodium",
         "Boiling Point": "Sodium",
-        "Melting Point": "Sodium",
-        "Atomic Weight": "Sodium"
+        "Melting Point": "Sodium"
       },
       "Abundance": {
         "debug": {
@@ -325,18 +325,18 @@
         "Universe Abundance": 0.00002
       },
       "Atomic Number": 11,
+      "Atomic Weight": 22.98976928,
       "Density": 968,
       "Boiling Point": 883,
-      "Melting Point": 97.72,
-      "Atomic Weight": 22.98976928
+      "Melting Point": 97.72
     },
     {
       "debug": {
         "Atomic Number": "Magnesium",
+        "Atomic Weight": "Magnesium",
         "Density": "Magnesium",
         "Boiling Point": "Magnesium",
-        "Melting Point": "Magnesium",
-        "Atomic Weight": "Magnesium"
+        "Melting Point": "Magnesium"
       },
       "Abundance": {
         "debug": {
@@ -355,18 +355,18 @@
         "Universe Abundance": 0.00059
       },
       "Atomic Number": 12,
+      "Atomic Weight": 24.305,
       "Density": 1738,
       "Boiling Point": 1090,
-      "Melting Point": 650,
-      "Atomic Weight": 24.305
+      "Melting Point": 650
     },
     {
       "debug": {
         "Atomic Number": "Aluminum",
+        "Atomic Weight": "Aluminum",
         "Density": "Aluminum",
         "Boiling Point": "Aluminum",
-        "Melting Point": "Aluminum",
-        "Atomic Weight": "Aluminum"
+        "Melting Point": "Aluminum"
       },
       "Abundance": {
         "debug": {
@@ -385,18 +385,18 @@
         "Universe Abundance": 0.00005
       },
       "Atomic Number": 13,
+      "Atomic Weight": 26.9815385,
       "Density": 2700,
       "Boiling Point": 2519,
-      "Melting Point": 660.32,
-      "Atomic Weight": 26.9815385
+      "Melting Point": 660.32
     },
     {
       "debug": {
         "Atomic Number": "Silicon",
+        "Atomic Weight": "Silicon",
         "Density": "Silicon",
         "Boiling Point": "Silicon",
-        "Melting Point": "Silicon",
-        "Atomic Weight": "Silicon"
+        "Melting Point": "Silicon"
       },
       "Abundance": {
         "debug": {
@@ -415,18 +415,18 @@
         "Universe Abundance": 0.0007
       },
       "Atomic Number": 14,
+      "Atomic Weight": 28.085,
       "Density": 2330,
       "Boiling Point": 2900,
-      "Melting Point": 1414,
-      "Atomic Weight": 28.085
+      "Melting Point": 1414
     },
     {
       "debug": {
         "Atomic Number": "Phosphorus",
+        "Atomic Weight": "Phosphorus",
         "Density": "Phosphorus",
         "Boiling Point": "Phosphorus",
-        "Melting Point": "Phosphorus",
-        "Atomic Weight": "Phosphorus"
+        "Melting Point": "Phosphorus"
       },
       "Abundance": {
         "debug": {
@@ -445,18 +445,18 @@
         "Universe Abundance": 0.000007
       },
       "Atomic Number": 15,
+      "Atomic Weight": 30.973761998,
       "Density": 1823,
       "Boiling Point": 280.5,
-      "Melting Point": 44.2,
-      "Atomic Weight": 30.973761998
+      "Melting Point": 44.2
     },
     {
       "debug": {
         "Atomic Number": "Sulfur",
+        "Atomic Weight": "Sulfur",
         "Density": "Sulfur",
         "Boiling Point": "Sulfur",
-        "Melting Point": "Sulfur",
-        "Atomic Weight": "Sulfur"
+        "Melting Point": "Sulfur"
       },
       "Abundance": {
         "debug": {
@@ -475,18 +475,18 @@
         "Universe Abundance": 0.0005
       },
       "Atomic Number": 16,
+      "Atomic Weight": 32.06,
       "Density": 1960,
       "Boiling Point": 444.72,
-      "Melting Point": 115.21,
-      "Atomic Weight": 32.06
+      "Melting Point": 115.21
     },
     {
       "debug": {
         "Atomic Number": "Chlorine",
+        "Atomic Weight": "Chlorine",
         "Density": "Chlorine",
         "Boiling Point": "Chlorine",
-        "Melting Point": "Chlorine",
-        "Atomic Weight": "Chlorine"
+        "Melting Point": "Chlorine"
       },
       "Abundance": {
         "debug": {
@@ -505,18 +505,18 @@
         "Universe Abundance": 0.000001
       },
       "Atomic Number": 17,
+      "Atomic Weight": 35.45,
       "Density": 3.214,
       "Boiling Point": -34.04,
-      "Melting Point": -101.5,
-      "Atomic Weight": 35.45
+      "Melting Point": -101.5
     },
     {
       "debug": {
         "Atomic Number": "Argon",
+        "Atomic Weight": "Argon",
         "Density": "Argon",
         "Boiling Point": "Argon",
-        "Melting Point": "Argon",
-        "Atomic Weight": "Argon"
+        "Melting Point": "Argon"
       },
       "Abundance": {
         "debug": {
@@ -535,18 +535,18 @@
         "Universe Abundance": 0.0002
       },
       "Atomic Number": 18,
+      "Atomic Weight": 39.948,
       "Density": 1.784,
       "Boiling Point": -185.8,
-      "Melting Point": -189.3,
-      "Atomic Weight": 39.948
+      "Melting Point": -189.3
     },
     {
       "debug": {
         "Atomic Number": "Potassium",
+        "Atomic Weight": "Potassium",
         "Density": "Potassium",
         "Boiling Point": "Potassium",
-        "Melting Point": "Potassium",
-        "Atomic Weight": "Potassium"
+        "Melting Point": "Potassium"
       },
       "Abundance": {
         "debug": {
@@ -565,18 +565,18 @@
         "Universe Abundance": 0.000003
       },
       "Atomic Number": 19,
+      "Atomic Weight": 39.0983,
       "Density": 856,
       "Boiling Point": 759,
-      "Melting Point": 63.38,
-      "Atomic Weight": 39.0983
+      "Melting Point": 63.38
     },
     {
       "debug": {
         "Atomic Number": "Calcium",
+        "Atomic Weight": "Calcium",
         "Density": "Calcium",
         "Boiling Point": "Calcium",
-        "Melting Point": "Calcium",
-        "Atomic Weight": "Calcium"
+        "Melting Point": "Calcium"
       },
       "Abundance": {
         "debug": {
@@ -595,18 +595,18 @@
         "Universe Abundance": 0.00007
       },
       "Atomic Number": 20,
+      "Atomic Weight": 40.078,
       "Density": 1550,
       "Boiling Point": 1484,
-      "Melting Point": 842,
-      "Atomic Weight": 40.078
+      "Melting Point": 842
     },
     {
       "debug": {
         "Atomic Number": "Scandium",
+        "Atomic Weight": "Scandium",
         "Density": "Scandium",
         "Boiling Point": "Scandium",
-        "Melting Point": "Scandium",
-        "Atomic Weight": "Scandium"
+        "Melting Point": "Scandium"
       },
       "Abundance": {
         "debug": {
@@ -625,18 +625,18 @@
         "Universe Abundance": 3e-8
       },
       "Atomic Number": 21,
+      "Atomic Weight": 44.955908,
       "Density": 2985,
       "Boiling Point": 2830,
-      "Melting Point": 1541,
-      "Atomic Weight": 44.955908
+      "Melting Point": 1541
     },
     {
       "debug": {
         "Atomic Number": "Titanium",
+        "Atomic Weight": "Titanium",
         "Density": "Titanium",
         "Boiling Point": "Titanium",
-        "Melting Point": "Titanium",
-        "Atomic Weight": "Titanium"
+        "Melting Point": "Titanium"
       },
       "Abundance": {
         "debug": {
@@ -655,18 +655,18 @@
         "Universe Abundance": 0.000003
       },
       "Atomic Number": 22,
+      "Atomic Weight": 47.867,
       "Density": 4507,
       "Boiling Point": 3287,
-      "Melting Point": 1668,
-      "Atomic Weight": 47.867
+      "Melting Point": 1668
     },
     {
       "debug": {
         "Atomic Number": "Vanadium",
+        "Atomic Weight": "Vanadium",
         "Density": "Vanadium",
         "Boiling Point": "Vanadium",
-        "Melting Point": "Vanadium",
-        "Atomic Weight": "Vanadium"
+        "Melting Point": "Vanadium"
       },
       "Abundance": {
         "debug": {
@@ -685,18 +685,18 @@
         "Universe Abundance": 0.000001
       },
       "Atomic Number": 23,
+      "Atomic Weight": 50.9415,
       "Density": 6110,
       "Boiling Point": 3407,
-      "Melting Point": 1910,
-      "Atomic Weight": 50.9415
+      "Melting Point": 1910
     },
     {
       "debug": {
         "Atomic Number": "Chromium",
+        "Atomic Weight": "Chromium",
         "Density": "Chromium",
         "Boiling Point": "Chromium",
-        "Melting Point": "Chromium",
-        "Atomic Weight": "Chromium"
+        "Melting Point": "Chromium"
       },
       "Abundance": {
         "debug": {
@@ -715,18 +715,18 @@
         "Universe Abundance": 0.000015
       },
       "Atomic Number": 24,
+      "Atomic Weight": 51.9961,
       "Density": 7190,
       "Boiling Point": 2671,
-      "Melting Point": 1907,
-      "Atomic Weight": 51.9961
+      "Melting Point": 1907
     },
     {
       "debug": {
         "Atomic Number": "Manganese",
+        "Atomic Weight": "Manganese",
         "Density": "Manganese",
         "Boiling Point": "Manganese",
-        "Melting Point": "Manganese",
-        "Atomic Weight": "Manganese"
+        "Melting Point": "Manganese"
       },
       "Abundance": {
         "debug": {
@@ -745,18 +745,18 @@
         "Universe Abundance": 0.000008
       },
       "Atomic Number": 25,
+      "Atomic Weight": 54.938044,
       "Density": 7470,
       "Boiling Point": 2061,
-      "Melting Point": 1246,
-      "Atomic Weight": 54.938044
+      "Melting Point": 1246
     },
     {
       "debug": {
         "Atomic Number": "Iron",
+        "Atomic Weight": "Iron",
         "Density": "Iron",
         "Boiling Point": "Iron",
-        "Melting Point": "Iron",
-        "Atomic Weight": "Iron"
+        "Melting Point": "Iron"
       },
       "Abundance": {
         "debug": {
@@ -775,18 +775,18 @@
         "Universe Abundance": 0.0011
       },
       "Atomic Number": 26,
+      "Atomic Weight": 55.845,
       "Density": 7874,
       "Boiling Point": 2861,
-      "Melting Point": 1538,
-      "Atomic Weight": 55.845
+      "Melting Point": 1538
     },
     {
       "debug": {
         "Atomic Number": "Cobalt",
+        "Atomic Weight": "Cobalt",
         "Density": "Cobalt",
         "Boiling Point": "Cobalt",
-        "Melting Point": "Cobalt",
-        "Atomic Weight": "Cobalt"
+        "Melting Point": "Cobalt"
       },
       "Abundance": {
         "debug": {
@@ -805,18 +805,18 @@
         "Universe Abundance": 0.000003
       },
       "Atomic Number": 27,
+      "Atomic Weight": 58.933194,
       "Density": 8900,
       "Boiling Point": 2927,
-      "Melting Point": 1495,
-      "Atomic Weight": 58.933194
+      "Melting Point": 1495
     },
     {
       "debug": {
         "Atomic Number": "Nickel",
+        "Atomic Weight": "Nickel",
         "Density": "Nickel",
         "Boiling Point": "Nickel",
-        "Melting Point": "Nickel",
-        "Atomic Weight": "Nickel"
+        "Melting Point": "Nickel"
       },
       "Abundance": {
         "debug": {
@@ -835,18 +835,18 @@
         "Universe Abundance": 0.00006
       },
       "Atomic Number": 28,
+      "Atomic Weight": 58.6934,
       "Density": 8908,
       "Boiling Point": 2913,
-      "Melting Point": 1455,
-      "Atomic Weight": 58.6934
+      "Melting Point": 1455
     },
     {
       "debug": {
         "Atomic Number": "Copper",
+        "Atomic Weight": "Copper",
         "Density": "Copper",
         "Boiling Point": "Copper",
-        "Melting Point": "Copper",
-        "Atomic Weight": "Copper"
+        "Melting Point": "Copper"
       },
       "Abundance": {
         "debug": {
@@ -865,18 +865,18 @@
         "Universe Abundance": 6e-8
       },
       "Atomic Number": 29,
+      "Atomic Weight": 63.546,
       "Density": 8960,
       "Boiling Point": 2562,
-      "Melting Point": 1084.62,
-      "Atomic Weight": 63.546
+      "Melting Point": 1084.62
     },
     {
       "debug": {
         "Atomic Number": "Zinc",
+        "Atomic Weight": "Zinc",
         "Density": "Zinc",
         "Boiling Point": "Zinc",
-        "Melting Point": "Zinc",
-        "Atomic Weight": "Zinc"
+        "Melting Point": "Zinc"
       },
       "Abundance": {
         "debug": {
@@ -895,18 +895,18 @@
         "Universe Abundance": 3e-7
       },
       "Atomic Number": 30,
+      "Atomic Weight": 65.38,
       "Density": 7140,
       "Boiling Point": 907,
-      "Melting Point": 419.53,
-      "Atomic Weight": 65.38
+      "Melting Point": 419.53
     },
     {
       "debug": {
         "Atomic Number": "Gallium",
+        "Atomic Weight": "Gallium",
         "Density": "Gallium",
         "Boiling Point": "Gallium",
-        "Melting Point": "Gallium",
-        "Atomic Weight": "Gallium"
+        "Melting Point": "Gallium"
       },
       "Abundance": {
         "debug": {
@@ -925,18 +925,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 31,
+      "Atomic Weight": 69.723,
       "Density": 5904,
       "Boiling Point": 2204,
-      "Melting Point": 29.76,
-      "Atomic Weight": 69.723
+      "Melting Point": 29.76
     },
     {
       "debug": {
         "Atomic Number": "Germanium",
+        "Atomic Weight": "Germanium",
         "Density": "Germanium",
         "Boiling Point": "Germanium",
-        "Melting Point": "Germanium",
-        "Atomic Weight": "Germanium"
+        "Melting Point": "Germanium"
       },
       "Abundance": {
         "debug": {
@@ -955,18 +955,18 @@
         "Universe Abundance": 2e-7
       },
       "Atomic Number": 32,
+      "Atomic Weight": 72.63,
       "Density": 5323,
       "Boiling Point": 2820,
-      "Melting Point": 938.3,
-      "Atomic Weight": 72.63
+      "Melting Point": 938.3
     },
     {
       "debug": {
         "Atomic Number": "Arsenic",
+        "Atomic Weight": "Arsenic",
         "Density": "Arsenic",
         "Boiling Point": "Arsenic",
-        "Melting Point": "Arsenic",
-        "Atomic Weight": "Arsenic"
+        "Melting Point": "Arsenic"
       },
       "Abundance": {
         "debug": {
@@ -985,18 +985,18 @@
         "Universe Abundance": 8e-9
       },
       "Atomic Number": 33,
+      "Atomic Weight": 74.921595,
       "Density": 5727,
       "Boiling Point": 614,
-      "Melting Point": 817,
-      "Atomic Weight": 74.921595
+      "Melting Point": 817
     },
     {
       "debug": {
         "Atomic Number": "Selenium",
+        "Atomic Weight": "Selenium",
         "Density": "Selenium",
         "Boiling Point": "Selenium",
-        "Melting Point": "Selenium",
-        "Atomic Weight": "Selenium"
+        "Melting Point": "Selenium"
       },
       "Abundance": {
         "debug": {
@@ -1015,18 +1015,18 @@
         "Universe Abundance": 3e-8
       },
       "Atomic Number": 34,
+      "Atomic Weight": 78.971,
       "Density": 4819,
       "Boiling Point": 685,
-      "Melting Point": 221,
-      "Atomic Weight": 78.971
+      "Melting Point": 221
     },
     {
       "debug": {
         "Atomic Number": "Bromine",
+        "Atomic Weight": "Bromine",
         "Density": "Bromine",
         "Boiling Point": "Bromine",
-        "Melting Point": "Bromine",
-        "Atomic Weight": "Bromine"
+        "Melting Point": "Bromine"
       },
       "Abundance": {
         "debug": {
@@ -1045,18 +1045,18 @@
         "Universe Abundance": 7e-9
       },
       "Atomic Number": 35,
+      "Atomic Weight": 79.904,
       "Density": 3120,
       "Boiling Point": 59,
-      "Melting Point": -7.3,
-      "Atomic Weight": 79.904
+      "Melting Point": -7.3
     },
     {
       "debug": {
         "Atomic Number": "Krypton",
+        "Atomic Weight": "Krypton",
         "Density": "Krypton",
         "Boiling Point": "Krypton",
-        "Melting Point": "Krypton",
-        "Atomic Weight": "Krypton"
+        "Melting Point": "Krypton"
       },
       "Abundance": {
         "debug": {
@@ -1075,18 +1075,18 @@
         "Universe Abundance": 4e-8
       },
       "Atomic Number": 36,
+      "Atomic Weight": 83.798,
       "Density": 3.75,
       "Boiling Point": -153.22,
-      "Melting Point": -157.36,
-      "Atomic Weight": 83.798
+      "Melting Point": -157.36
     },
     {
       "debug": {
         "Atomic Number": "Rubidium",
+        "Atomic Weight": "Rubidium",
         "Density": "Rubidium",
         "Boiling Point": "Rubidium",
-        "Melting Point": "Rubidium",
-        "Atomic Weight": "Rubidium"
+        "Melting Point": "Rubidium"
       },
       "Abundance": {
         "debug": {
@@ -1105,18 +1105,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 37,
+      "Atomic Weight": 85.4678,
       "Density": 1532,
       "Boiling Point": 688,
-      "Melting Point": 39.31,
-      "Atomic Weight": 85.4678
+      "Melting Point": 39.31
     },
     {
       "debug": {
         "Atomic Number": "Strontium",
+        "Atomic Weight": "Strontium",
         "Density": "Strontium",
         "Boiling Point": "Strontium",
-        "Melting Point": "Strontium",
-        "Atomic Weight": "Strontium"
+        "Melting Point": "Strontium"
       },
       "Abundance": {
         "debug": {
@@ -1135,18 +1135,18 @@
         "Universe Abundance": 4e-8
       },
       "Atomic Number": 38,
+      "Atomic Weight": 87.62,
       "Density": 2630,
       "Boiling Point": 1382,
-      "Melting Point": 777,
-      "Atomic Weight": 87.62
+      "Melting Point": 777
     },
     {
       "debug": {
         "Atomic Number": "Yttrium",
+        "Atomic Weight": "Yttrium",
         "Density": "Yttrium",
         "Boiling Point": "Yttrium",
-        "Melting Point": "Yttrium",
-        "Atomic Weight": "Yttrium"
+        "Melting Point": "Yttrium"
       },
       "Abundance": {
         "debug": {
@@ -1165,18 +1165,18 @@
         "Universe Abundance": 7e-9
       },
       "Atomic Number": 39,
+      "Atomic Weight": 88.90584,
       "Density": 4472,
       "Boiling Point": 3345,
-      "Melting Point": 1526,
-      "Atomic Weight": 88.90584
+      "Melting Point": 1526
     },
     {
       "debug": {
         "Atomic Number": "Zirconium",
+        "Atomic Weight": "Zirconium",
         "Density": "Zirconium",
         "Boiling Point": "Zirconium",
-        "Melting Point": "Zirconium",
-        "Atomic Weight": "Zirconium"
+        "Melting Point": "Zirconium"
       },
       "Abundance": {
         "debug": {
@@ -1195,18 +1195,18 @@
         "Universe Abundance": 5e-8
       },
       "Atomic Number": 40,
+      "Atomic Weight": 91.224,
       "Density": 6511,
       "Boiling Point": 4409,
-      "Melting Point": 1855,
-      "Atomic Weight": 91.224
+      "Melting Point": 1855
     },
     {
       "debug": {
         "Atomic Number": "Niobium",
+        "Atomic Weight": "Niobium",
         "Density": "Niobium",
         "Boiling Point": "Niobium",
-        "Melting Point": "Niobium",
-        "Atomic Weight": "Niobium"
+        "Melting Point": "Niobium"
       },
       "Abundance": {
         "debug": {
@@ -1225,18 +1225,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 41,
+      "Atomic Weight": 92.90637,
       "Density": 8570,
       "Boiling Point": 4744,
-      "Melting Point": 2477,
-      "Atomic Weight": 92.90637
+      "Melting Point": 2477
     },
     {
       "debug": {
         "Atomic Number": "Molybdenum",
+        "Atomic Weight": "Molybdenum",
         "Density": "Molybdenum",
         "Boiling Point": "Molybdenum",
-        "Melting Point": "Molybdenum",
-        "Atomic Weight": "Molybdenum"
+        "Melting Point": "Molybdenum"
       },
       "Abundance": {
         "debug": {
@@ -1255,18 +1255,18 @@
         "Universe Abundance": 5e-9
       },
       "Atomic Number": 42,
+      "Atomic Weight": 95.95,
       "Density": 10280,
       "Boiling Point": 4639,
-      "Melting Point": 2623,
-      "Atomic Weight": 95.95
+      "Melting Point": 2623
     },
     {
       "debug": {
         "Atomic Number": "Technetium",
+        "Atomic Weight": "Technetium",
         "Density": "Technetium",
         "Boiling Point": "Technetium",
-        "Melting Point": "Technetium",
-        "Atomic Weight": "Technetium"
+        "Melting Point": "Technetium"
       },
       "Abundance": {
         "debug": {
@@ -1285,18 +1285,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 43,
+      "Atomic Weight": 97,
       "Density": 11500,
       "Boiling Point": 4265,
-      "Melting Point": 2157,
-      "Atomic Weight": 97
+      "Melting Point": 2157
     },
     {
       "debug": {
         "Atomic Number": "Ruthenium",
+        "Atomic Weight": "Ruthenium",
         "Density": "Ruthenium",
         "Boiling Point": "Ruthenium",
-        "Melting Point": "Ruthenium",
-        "Atomic Weight": "Ruthenium"
+        "Melting Point": "Ruthenium"
       },
       "Abundance": {
         "debug": {
@@ -1315,18 +1315,18 @@
         "Universe Abundance": 4e-9
       },
       "Atomic Number": 44,
+      "Atomic Weight": 101.07,
       "Density": 12370,
       "Boiling Point": 4150,
-      "Melting Point": 2334,
-      "Atomic Weight": 101.07
+      "Melting Point": 2334
     },
     {
       "debug": {
         "Atomic Number": "Rhodium",
+        "Atomic Weight": "Rhodium",
         "Density": "Rhodium",
         "Boiling Point": "Rhodium",
-        "Melting Point": "Rhodium",
-        "Atomic Weight": "Rhodium"
+        "Melting Point": "Rhodium"
       },
       "Abundance": {
         "debug": {
@@ -1345,18 +1345,18 @@
         "Universe Abundance": 6e-10
       },
       "Atomic Number": 45,
+      "Atomic Weight": 102.9055,
       "Density": 12450,
       "Boiling Point": 3695,
-      "Melting Point": 1964,
-      "Atomic Weight": 102.9055
+      "Melting Point": 1964
     },
     {
       "debug": {
         "Atomic Number": "Palladium",
+        "Atomic Weight": "Palladium",
         "Density": "Palladium",
         "Boiling Point": "Palladium",
-        "Melting Point": "Palladium",
-        "Atomic Weight": "Palladium"
+        "Melting Point": "Palladium"
       },
       "Abundance": {
         "debug": {
@@ -1375,18 +1375,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 46,
+      "Atomic Weight": 106.42,
       "Density": 12023,
       "Boiling Point": 2963,
-      "Melting Point": 1554.9,
-      "Atomic Weight": 106.42
+      "Melting Point": 1554.9
     },
     {
       "debug": {
         "Atomic Number": "Silver",
+        "Atomic Weight": "Silver",
         "Density": "Silver",
         "Boiling Point": "Silver",
-        "Melting Point": "Silver",
-        "Atomic Weight": "Silver"
+        "Melting Point": "Silver"
       },
       "Abundance": {
         "debug": {
@@ -1405,18 +1405,18 @@
         "Universe Abundance": 6e-10
       },
       "Atomic Number": 47,
+      "Atomic Weight": 107.8682,
       "Density": 10490,
       "Boiling Point": 2162,
-      "Melting Point": 961.78,
-      "Atomic Weight": 107.8682
+      "Melting Point": 961.78
     },
     {
       "debug": {
         "Atomic Number": "Cadmium",
+        "Atomic Weight": "Cadmium",
         "Density": "Cadmium",
         "Boiling Point": "Cadmium",
-        "Melting Point": "Cadmium",
-        "Atomic Weight": "Cadmium"
+        "Melting Point": "Cadmium"
       },
       "Abundance": {
         "debug": {
@@ -1435,18 +1435,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 48,
+      "Atomic Weight": 112.414,
       "Density": 8650,
       "Boiling Point": 767,
-      "Melting Point": 321.07,
-      "Atomic Weight": 112.414
+      "Melting Point": 321.07
     },
     {
       "debug": {
         "Atomic Number": "Indium",
+        "Atomic Weight": "Indium",
         "Density": "Indium",
         "Boiling Point": "Indium",
-        "Melting Point": "Indium",
-        "Atomic Weight": "Indium"
+        "Melting Point": "Indium"
       },
       "Abundance": {
         "debug": {
@@ -1465,18 +1465,18 @@
         "Universe Abundance": 3e-10
       },
       "Atomic Number": 49,
+      "Atomic Weight": 114.818,
       "Density": 7310,
       "Boiling Point": 2072,
-      "Melting Point": 156.6,
-      "Atomic Weight": 114.818
+      "Melting Point": 156.6
     },
     {
       "debug": {
         "Atomic Number": "Tin",
+        "Atomic Weight": "Tin",
         "Density": "Tin",
         "Boiling Point": "Tin",
-        "Melting Point": "Tin",
-        "Atomic Weight": "Tin"
+        "Melting Point": "Tin"
       },
       "Abundance": {
         "debug": {
@@ -1495,18 +1495,18 @@
         "Universe Abundance": 4e-9
       },
       "Atomic Number": 50,
+      "Atomic Weight": 118.71,
       "Density": 7310,
       "Boiling Point": 2602,
-      "Melting Point": 231.93,
-      "Atomic Weight": 118.71
+      "Melting Point": 231.93
     },
     {
       "debug": {
         "Atomic Number": "Antimony",
+        "Atomic Weight": "Antimony",
         "Density": "Antimony",
         "Boiling Point": "Antimony",
-        "Melting Point": "Antimony",
-        "Atomic Weight": "Antimony"
+        "Melting Point": "Antimony"
       },
       "Abundance": {
         "debug": {
@@ -1525,18 +1525,18 @@
         "Universe Abundance": 4e-10
       },
       "Atomic Number": 51,
+      "Atomic Weight": 121.76,
       "Density": 6697,
       "Boiling Point": 1587,
-      "Melting Point": 630.63,
-      "Atomic Weight": 121.76
+      "Melting Point": 630.63
     },
     {
       "debug": {
         "Atomic Number": "Tellurium",
+        "Atomic Weight": "Tellurium",
         "Density": "Tellurium",
         "Boiling Point": "Tellurium",
-        "Melting Point": "Tellurium",
-        "Atomic Weight": "Tellurium"
+        "Melting Point": "Tellurium"
       },
       "Abundance": {
         "debug": {
@@ -1555,18 +1555,18 @@
         "Universe Abundance": 9e-9
       },
       "Atomic Number": 52,
+      "Atomic Weight": 127.6,
       "Density": 6240,
       "Boiling Point": 988,
-      "Melting Point": 449.51,
-      "Atomic Weight": 127.6
+      "Melting Point": 449.51
     },
     {
       "debug": {
         "Atomic Number": "Iodine",
+        "Atomic Weight": "Iodine",
         "Density": "Iodine",
         "Boiling Point": "Iodine",
-        "Melting Point": "Iodine",
-        "Atomic Weight": "Iodine"
+        "Melting Point": "Iodine"
       },
       "Abundance": {
         "debug": {
@@ -1585,18 +1585,18 @@
         "Universe Abundance": 1e-9
       },
       "Atomic Number": 53,
+      "Atomic Weight": 126.90447,
       "Density": 4940,
       "Boiling Point": 184.3,
-      "Melting Point": 113.7,
-      "Atomic Weight": 126.90447
+      "Melting Point": 113.7
     },
     {
       "debug": {
         "Atomic Number": "Xenon",
+        "Atomic Weight": "Xenon",
         "Density": "Xenon",
         "Boiling Point": "Xenon",
-        "Melting Point": "Xenon",
-        "Atomic Weight": "Xenon"
+        "Melting Point": "Xenon"
       },
       "Abundance": {
         "debug": {
@@ -1615,18 +1615,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 54,
+      "Atomic Weight": 131.293,
       "Density": 5.9,
       "Boiling Point": -108,
-      "Melting Point": -111.8,
-      "Atomic Weight": 131.293
+      "Melting Point": -111.8
     },
     {
       "debug": {
         "Atomic Number": "Cesium",
+        "Atomic Weight": "Cesium",
         "Density": "Cesium",
         "Boiling Point": "Cesium",
-        "Melting Point": "Cesium",
-        "Atomic Weight": "Cesium"
+        "Melting Point": "Cesium"
       },
       "Abundance": {
         "debug": {
@@ -1645,18 +1645,18 @@
         "Universe Abundance": 8e-10
       },
       "Atomic Number": 55,
+      "Atomic Weight": 132.90545196,
       "Density": 1879,
       "Boiling Point": 671,
-      "Melting Point": 28.44,
-      "Atomic Weight": 132.90545196
+      "Melting Point": 28.44
     },
     {
       "debug": {
         "Atomic Number": "Barium",
+        "Atomic Weight": "Barium",
         "Density": "Barium",
         "Boiling Point": "Barium",
-        "Melting Point": "Barium",
-        "Atomic Weight": "Barium"
+        "Melting Point": "Barium"
       },
       "Abundance": {
         "debug": {
@@ -1675,18 +1675,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 56,
+      "Atomic Weight": 137.327,
       "Density": 3510,
       "Boiling Point": 1870,
-      "Melting Point": 727,
-      "Atomic Weight": 137.327
+      "Melting Point": 727
     },
     {
       "debug": {
         "Atomic Number": "Lanthanites",
+        "Atomic Weight": "Lanthanites",
         "Density": "Lanthanites",
         "Boiling Point": "Lanthanites",
-        "Melting Point": "Lanthanites",
-        "Atomic Weight": "Lanthanites"
+        "Melting Point": "Lanthanites"
       },
       "Abundance": {
         "debug": {
@@ -1705,18 +1705,18 @@
         "Universe Abundance": "lanthanites case"
       },
       "Atomic Number": "lanthanites case",
+      "Atomic Weight": "lanthanites case",
       "Density": "lanthanites case",
       "Boiling Point": "lanthanites case",
-      "Melting Point": "lanthanites case",
-      "Atomic Weight": "lanthanites case"
+      "Melting Point": "lanthanites case"
     },
     {
       "debug": {
         "Atomic Number": "Lanthanum",
+        "Atomic Weight": "Lanthanum",
         "Density": "Lanthanum",
         "Boiling Point": "Lanthanum",
-        "Melting Point": "Lanthanum",
-        "Atomic Weight": "Lanthanum"
+        "Melting Point": "Lanthanum"
       },
       "Abundance": {
         "debug": {
@@ -1735,18 +1735,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 57,
+      "Atomic Weight": 138.90547,
       "Density": 6146,
       "Boiling Point": 3464,
-      "Melting Point": 919,
-      "Atomic Weight": 138.90547
+      "Melting Point": 919
     },
     {
       "debug": {
         "Atomic Number": "Cerium",
+        "Atomic Weight": "Cerium",
         "Density": "Cerium",
         "Boiling Point": "Cerium",
-        "Melting Point": "Cerium",
-        "Atomic Weight": "Cerium"
+        "Melting Point": "Cerium"
       },
       "Abundance": {
         "debug": {
@@ -1765,18 +1765,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 58,
+      "Atomic Weight": 140.116,
       "Density": 6689,
       "Boiling Point": 3360,
-      "Melting Point": 798,
-      "Atomic Weight": 140.116
+      "Melting Point": 798
     },
     {
       "debug": {
         "Atomic Number": "Praseodymium",
+        "Atomic Weight": "Praseodymium",
         "Density": "Praseodymium",
         "Boiling Point": "Praseodymium",
-        "Melting Point": "Praseodymium",
-        "Atomic Weight": "Praseodymium"
+        "Melting Point": "Praseodymium"
       },
       "Abundance": {
         "debug": {
@@ -1795,18 +1795,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 59,
+      "Atomic Weight": 140.90766,
       "Density": 6640,
       "Boiling Point": 3290,
-      "Melting Point": 931,
-      "Atomic Weight": 140.90766
+      "Melting Point": 931
     },
     {
       "debug": {
         "Atomic Number": "Neodymium",
+        "Atomic Weight": "Neodymium",
         "Density": "Neodymium",
         "Boiling Point": "Neodymium",
-        "Melting Point": "Neodymium",
-        "Atomic Weight": "Neodymium"
+        "Melting Point": "Neodymium"
       },
       "Abundance": {
         "debug": {
@@ -1825,18 +1825,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 60,
+      "Atomic Weight": 144.242,
       "Density": 7010,
       "Boiling Point": 3100,
-      "Melting Point": 1021,
-      "Atomic Weight": 144.242
+      "Melting Point": 1021
     },
     {
       "debug": {
         "Atomic Number": "Promethium",
+        "Atomic Weight": "Promethium",
         "Density": "Promethium",
         "Boiling Point": "Promethium",
-        "Melting Point": "Promethium",
-        "Atomic Weight": "Promethium"
+        "Melting Point": "Promethium"
       },
       "Abundance": {
         "debug": {
@@ -1855,18 +1855,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 61,
+      "Atomic Weight": 145,
       "Density": 7264,
       "Boiling Point": 3000,
-      "Melting Point": 1100,
-      "Atomic Weight": 145
+      "Melting Point": 1100
     },
     {
       "debug": {
         "Atomic Number": "Samarium",
+        "Atomic Weight": "Samarium",
         "Density": "Samarium",
         "Boiling Point": "Samarium",
-        "Melting Point": "Samarium",
-        "Atomic Weight": "Samarium"
+        "Melting Point": "Samarium"
       },
       "Abundance": {
         "debug": {
@@ -1885,18 +1885,18 @@
         "Universe Abundance": 5e-9
       },
       "Atomic Number": 62,
+      "Atomic Weight": 150.36,
       "Density": 7353,
       "Boiling Point": 1803,
-      "Melting Point": 1072,
-      "Atomic Weight": 150.36
+      "Melting Point": 1072
     },
     {
       "debug": {
         "Atomic Number": "Europium",
+        "Atomic Weight": "Europium",
         "Density": "Europium",
         "Boiling Point": "Europium",
-        "Melting Point": "Europium",
-        "Atomic Weight": "Europium"
+        "Melting Point": "Europium"
       },
       "Abundance": {
         "debug": {
@@ -1915,18 +1915,18 @@
         "Universe Abundance": 5e-10
       },
       "Atomic Number": 63,
+      "Atomic Weight": 151.964,
       "Density": 5244,
       "Boiling Point": 1527,
-      "Melting Point": 822,
-      "Atomic Weight": 151.964
+      "Melting Point": 822
     },
     {
       "debug": {
         "Atomic Number": "Gadolinium",
+        "Atomic Weight": "Gadolinium",
         "Density": "Gadolinium",
         "Boiling Point": "Gadolinium",
-        "Melting Point": "Gadolinium",
-        "Atomic Weight": "Gadolinium"
+        "Melting Point": "Gadolinium"
       },
       "Abundance": {
         "debug": {
@@ -1945,18 +1945,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 64,
+      "Atomic Weight": 157.25,
       "Density": 7901,
       "Boiling Point": 3250,
-      "Melting Point": 1313,
-      "Atomic Weight": 157.25
+      "Melting Point": 1313
     },
     {
       "debug": {
         "Atomic Number": "Terbium",
+        "Atomic Weight": "Terbium",
         "Density": "Terbium",
         "Boiling Point": "Terbium",
-        "Melting Point": "Terbium",
-        "Atomic Weight": "Terbium"
+        "Melting Point": "Terbium"
       },
       "Abundance": {
         "debug": {
@@ -1975,18 +1975,18 @@
         "Universe Abundance": 5e-10
       },
       "Atomic Number": 65,
+      "Atomic Weight": 158.92535,
       "Density": 8219,
       "Boiling Point": 3230,
-      "Melting Point": 1356,
-      "Atomic Weight": 158.92535
+      "Melting Point": 1356
     },
     {
       "debug": {
         "Atomic Number": "Dysprosium",
+        "Atomic Weight": "Dysprosium",
         "Density": "Dysprosium",
         "Boiling Point": "Dysprosium",
-        "Melting Point": "Dysprosium",
-        "Atomic Weight": "Dysprosium"
+        "Melting Point": "Dysprosium"
       },
       "Abundance": {
         "debug": {
@@ -2005,18 +2005,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 66,
+      "Atomic Weight": 162.5,
       "Density": 8551,
       "Boiling Point": 2567,
-      "Melting Point": 1412,
-      "Atomic Weight": 162.5
+      "Melting Point": 1412
     },
     {
       "debug": {
         "Atomic Number": "Holmium",
+        "Atomic Weight": "Holmium",
         "Density": "Holmium",
         "Boiling Point": "Holmium",
-        "Melting Point": "Holmium",
-        "Atomic Weight": "Holmium"
+        "Melting Point": "Holmium"
       },
       "Abundance": {
         "debug": {
@@ -2035,18 +2035,18 @@
         "Universe Abundance": 5e-10
       },
       "Atomic Number": 67,
+      "Atomic Weight": 164.93033,
       "Density": 8795,
       "Boiling Point": 2700,
-      "Melting Point": 1474,
-      "Atomic Weight": 164.93033
+      "Melting Point": 1474
     },
     {
       "debug": {
         "Atomic Number": "Erbium",
+        "Atomic Weight": "Erbium",
         "Density": "Erbium",
         "Boiling Point": "Erbium",
-        "Melting Point": "Erbium",
-        "Atomic Weight": "Erbium"
+        "Melting Point": "Erbium"
       },
       "Abundance": {
         "debug": {
@@ -2065,18 +2065,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 68,
+      "Atomic Weight": 167.259,
       "Density": 9066,
       "Boiling Point": 2868,
-      "Melting Point": 1497,
-      "Atomic Weight": 167.259
+      "Melting Point": 1497
     },
     {
       "debug": {
         "Atomic Number": "Thulium",
+        "Atomic Weight": "Thulium",
         "Density": "Thulium",
         "Boiling Point": "Thulium",
-        "Melting Point": "Thulium",
-        "Atomic Weight": "Thulium"
+        "Melting Point": "Thulium"
       },
       "Abundance": {
         "debug": {
@@ -2095,18 +2095,18 @@
         "Universe Abundance": 1e-10
       },
       "Atomic Number": 69,
+      "Atomic Weight": 168.93422,
       "Density": 9320,
       "Boiling Point": 1950,
-      "Melting Point": 1545,
-      "Atomic Weight": 168.93422
+      "Melting Point": 1545
     },
     {
       "debug": {
         "Atomic Number": "Ytterbium",
+        "Atomic Weight": "Ytterbium",
         "Density": "Ytterbium",
         "Boiling Point": "Ytterbium",
-        "Melting Point": "Ytterbium",
-        "Atomic Weight": "Ytterbium"
+        "Melting Point": "Ytterbium"
       },
       "Abundance": {
         "debug": {
@@ -2125,18 +2125,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 70,
+      "Atomic Weight": 173.045,
       "Density": 6570,
       "Boiling Point": 1196,
-      "Melting Point": 819,
-      "Atomic Weight": 173.045
+      "Melting Point": 819
     },
     {
       "debug": {
         "Atomic Number": "Lutetium",
+        "Atomic Weight": "Lutetium",
         "Density": "Lutetium",
         "Boiling Point": "Lutetium",
-        "Melting Point": "Lutetium",
-        "Atomic Weight": "Lutetium"
+        "Melting Point": "Lutetium"
       },
       "Abundance": {
         "debug": {
@@ -2155,18 +2155,18 @@
         "Universe Abundance": 1e-10
       },
       "Atomic Number": 71,
+      "Atomic Weight": 174.9668,
       "Density": 9841,
       "Boiling Point": 3402,
-      "Melting Point": 1663,
-      "Atomic Weight": 174.9668
+      "Melting Point": 1663
     },
     {
       "debug": {
         "Atomic Number": "Hafnium",
+        "Atomic Weight": "Hafnium",
         "Density": "Hafnium",
         "Boiling Point": "Hafnium",
-        "Melting Point": "Hafnium",
-        "Atomic Weight": "Hafnium"
+        "Melting Point": "Hafnium"
       },
       "Abundance": {
         "debug": {
@@ -2185,18 +2185,18 @@
         "Universe Abundance": 7e-10
       },
       "Atomic Number": 72,
+      "Atomic Weight": 178.49,
       "Density": 13310,
       "Boiling Point": 4603,
-      "Melting Point": 2233,
-      "Atomic Weight": 178.49
+      "Melting Point": 2233
     },
     {
       "debug": {
         "Atomic Number": "Tantalum",
+        "Atomic Weight": "Tantalum",
         "Density": "Tantalum",
         "Boiling Point": "Tantalum",
-        "Melting Point": "Tantalum",
-        "Atomic Weight": "Tantalum"
+        "Melting Point": "Tantalum"
       },
       "Abundance": {
         "debug": {
@@ -2215,18 +2215,18 @@
         "Universe Abundance": 8e-11
       },
       "Atomic Number": 73,
+      "Atomic Weight": 180.94788,
       "Density": 16650,
       "Boiling Point": 5458,
-      "Melting Point": 3017,
-      "Atomic Weight": 180.94788
+      "Melting Point": 3017
     },
     {
       "debug": {
         "Atomic Number": "Tungsten",
+        "Atomic Weight": "Tungsten",
         "Density": "Tungsten",
         "Boiling Point": "Tungsten",
-        "Melting Point": "Tungsten",
-        "Atomic Weight": "Tungsten"
+        "Melting Point": "Tungsten"
       },
       "Abundance": {
         "debug": {
@@ -2245,18 +2245,18 @@
         "Universe Abundance": 5e-10
       },
       "Atomic Number": 74,
+      "Atomic Weight": 183.84,
       "Density": 19250,
       "Boiling Point": 5555,
-      "Melting Point": 3422,
-      "Atomic Weight": 183.84
+      "Melting Point": 3422
     },
     {
       "debug": {
         "Atomic Number": "Rhenium",
+        "Atomic Weight": "Rhenium",
         "Density": "Rhenium",
         "Boiling Point": "Rhenium",
-        "Melting Point": "Rhenium",
-        "Atomic Weight": "Rhenium"
+        "Melting Point": "Rhenium"
       },
       "Abundance": {
         "debug": {
@@ -2275,18 +2275,18 @@
         "Universe Abundance": 2e-10
       },
       "Atomic Number": 75,
+      "Atomic Weight": 186.207,
       "Density": 21020,
       "Boiling Point": 5596,
-      "Melting Point": 3186,
-      "Atomic Weight": 186.207
+      "Melting Point": 3186
     },
     {
       "debug": {
         "Atomic Number": "Osmium",
+        "Atomic Weight": "Osmium",
         "Density": "Osmium",
         "Boiling Point": "Osmium",
-        "Melting Point": "Osmium",
-        "Atomic Weight": "Osmium"
+        "Melting Point": "Osmium"
       },
       "Abundance": {
         "debug": {
@@ -2305,18 +2305,18 @@
         "Universe Abundance": 3e-9
       },
       "Atomic Number": 76,
+      "Atomic Weight": 190.23,
       "Density": 22590,
       "Boiling Point": 5012,
-      "Melting Point": 3033,
-      "Atomic Weight": 190.23
+      "Melting Point": 3033
     },
     {
       "debug": {
         "Atomic Number": "Iridium",
+        "Atomic Weight": "Iridium",
         "Density": "Iridium",
         "Boiling Point": "Iridium",
-        "Melting Point": "Iridium",
-        "Atomic Weight": "Iridium"
+        "Melting Point": "Iridium"
       },
       "Abundance": {
         "debug": {
@@ -2335,18 +2335,18 @@
         "Universe Abundance": 2e-9
       },
       "Atomic Number": 77,
+      "Atomic Weight": 192.217,
       "Density": 22560,
       "Boiling Point": 4428,
-      "Melting Point": 2466,
-      "Atomic Weight": 192.217
+      "Melting Point": 2466
     },
     {
       "debug": {
         "Atomic Number": "Platinum",
+        "Atomic Weight": "Platinum",
         "Density": "Platinum",
         "Boiling Point": "Platinum",
-        "Melting Point": "Platinum",
-        "Atomic Weight": "Platinum"
+        "Melting Point": "Platinum"
       },
       "Abundance": {
         "debug": {
@@ -2365,18 +2365,18 @@
         "Universe Abundance": 5e-9
       },
       "Atomic Number": 78,
+      "Atomic Weight": 195.084,
       "Density": 21450,
       "Boiling Point": 3825,
-      "Melting Point": 1768.3,
-      "Atomic Weight": 195.084
+      "Melting Point": 1768.3
     },
     {
       "debug": {
         "Atomic Number": "Gold",
+        "Atomic Weight": "Gold",
         "Density": "Gold",
         "Boiling Point": "Gold",
-        "Melting Point": "Gold",
-        "Atomic Weight": "Gold"
+        "Melting Point": "Gold"
       },
       "Abundance": {
         "debug": {
@@ -2395,18 +2395,18 @@
         "Universe Abundance": 6e-10
       },
       "Atomic Number": 79,
+      "Atomic Weight": 196.966569,
       "Density": 19300,
       "Boiling Point": 2856,
-      "Melting Point": 1064.18,
-      "Atomic Weight": 196.966569
+      "Melting Point": 1064.18
     },
     {
       "debug": {
         "Atomic Number": "Mercury",
+        "Atomic Weight": "Mercury",
         "Density": "Mercury",
         "Boiling Point": "Mercury",
-        "Melting Point": "Mercury",
-        "Atomic Weight": "Mercury"
+        "Melting Point": "Mercury"
       },
       "Abundance": {
         "debug": {
@@ -2425,18 +2425,18 @@
         "Universe Abundance": 1e-9
       },
       "Atomic Number": 80,
+      "Atomic Weight": 200.592,
       "Density": 13534,
       "Boiling Point": 356.73,
-      "Melting Point": -38.83,
-      "Atomic Weight": 200.592
+      "Melting Point": -38.83
     },
     {
       "debug": {
         "Atomic Number": "Thallium",
+        "Atomic Weight": "Thallium",
         "Density": "Thallium",
         "Boiling Point": "Thallium",
-        "Melting Point": "Thallium",
-        "Atomic Weight": "Thallium"
+        "Melting Point": "Thallium"
       },
       "Abundance": {
         "debug": {
@@ -2455,18 +2455,18 @@
         "Universe Abundance": 5e-10
       },
       "Atomic Number": 81,
+      "Atomic Weight": 204.38,
       "Density": 11850,
       "Boiling Point": 1473,
-      "Melting Point": 304,
-      "Atomic Weight": 204.38
+      "Melting Point": 304
     },
     {
       "debug": {
         "Atomic Number": "Lead",
+        "Atomic Weight": "Lead",
         "Density": "Lead",
         "Boiling Point": "Lead",
-        "Melting Point": "Lead",
-        "Atomic Weight": "Lead"
+        "Melting Point": "Lead"
       },
       "Abundance": {
         "debug": {
@@ -2485,18 +2485,18 @@
         "Universe Abundance": 1e-8
       },
       "Atomic Number": 82,
+      "Atomic Weight": 207.2,
       "Density": 11340,
       "Boiling Point": 1749,
-      "Melting Point": 327.46,
-      "Atomic Weight": 207.2
+      "Melting Point": 327.46
     },
     {
       "debug": {
         "Atomic Number": "Bismuth",
+        "Atomic Weight": "Bismuth",
         "Density": "Bismuth",
         "Boiling Point": "Bismuth",
-        "Melting Point": "Bismuth",
-        "Atomic Weight": "Bismuth"
+        "Melting Point": "Bismuth"
       },
       "Abundance": {
         "debug": {
@@ -2515,18 +2515,18 @@
         "Universe Abundance": 7e-10
       },
       "Atomic Number": 83,
+      "Atomic Weight": 208.9804,
       "Density": 9780,
       "Boiling Point": 1564,
-      "Melting Point": 271.3,
-      "Atomic Weight": 208.9804
+      "Melting Point": 271.3
     },
     {
       "debug": {
         "Atomic Number": "Polonium",
+        "Atomic Weight": "Polonium",
         "Density": "Polonium",
         "Boiling Point": "Polonium",
-        "Melting Point": "Polonium",
-        "Atomic Weight": "Polonium"
+        "Melting Point": "Polonium"
       },
       "Abundance": {
         "debug": {
@@ -2545,18 +2545,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 84,
+      "Atomic Weight": 209,
       "Density": 9196,
       "Boiling Point": 962,
-      "Melting Point": 254,
-      "Atomic Weight": 209
+      "Melting Point": 254
     },
     {
       "debug": {
         "Atomic Number": "Astatine",
+        "Atomic Weight": "Astatine",
         "Density": "Astatine",
         "Boiling Point": "Astatine",
-        "Melting Point": "Astatine",
-        "Atomic Weight": "Astatine"
+        "Melting Point": "Astatine"
       },
       "Abundance": {
         "debug": {
@@ -2575,18 +2575,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 85,
+      "Atomic Weight": 210,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": 302,
-      "Atomic Weight": 210
+      "Melting Point": 302
     },
     {
       "debug": {
         "Atomic Number": "Radon",
+        "Atomic Weight": "Radon",
         "Density": "Radon",
         "Boiling Point": "Radon",
-        "Melting Point": "Radon",
-        "Atomic Weight": "Radon"
+        "Melting Point": "Radon"
       },
       "Abundance": {
         "debug": {
@@ -2605,18 +2605,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 86,
+      "Atomic Weight": 222,
       "Density": 9.73,
       "Boiling Point": -61.7,
-      "Melting Point": -71,
-      "Atomic Weight": 222
+      "Melting Point": -71
     },
     {
       "debug": {
         "Atomic Number": "Francium",
+        "Atomic Weight": "Francium",
         "Density": "Francium",
         "Boiling Point": "Francium",
-        "Melting Point": "Francium",
-        "Atomic Weight": "Francium"
+        "Melting Point": "Francium"
       },
       "Abundance": {
         "debug": {
@@ -2635,18 +2635,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 87,
+      "Atomic Weight": 223,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 223
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Radium",
+        "Atomic Weight": "Radium",
         "Density": "Radium",
         "Boiling Point": "Radium",
-        "Melting Point": "Radium",
-        "Atomic Weight": "Radium"
+        "Melting Point": "Radium"
       },
       "Abundance": {
         "debug": {
@@ -2665,18 +2665,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 88,
+      "Atomic Weight": 226,
       "Density": 5000,
       "Boiling Point": 1737,
-      "Melting Point": 700,
-      "Atomic Weight": 226
+      "Melting Point": 700
     },
     {
       "debug": {
         "Atomic Number": "Actinides",
+        "Atomic Weight": "Actinides",
         "Density": "Actinides",
         "Boiling Point": "Actinides",
-        "Melting Point": "Actinides",
-        "Atomic Weight": "Actinides"
+        "Melting Point": "Actinides"
       },
       "Abundance": {
         "debug": {
@@ -2695,18 +2695,18 @@
         "Universe Abundance": "actinides case"
       },
       "Atomic Number": "actinides case",
+      "Atomic Weight": "actinides case",
       "Density": "actinides case",
       "Boiling Point": "actinides case",
-      "Melting Point": "actinides case",
-      "Atomic Weight": "actinides case"
+      "Melting Point": "actinides case"
     },
     {
       "debug": {
         "Atomic Number": "Actinium",
+        "Atomic Weight": "Actinium",
         "Density": "Actinium",
         "Boiling Point": "Actinium",
-        "Melting Point": "Actinium",
-        "Atomic Weight": "Actinium"
+        "Melting Point": "Actinium"
       },
       "Abundance": {
         "debug": {
@@ -2725,18 +2725,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 89,
+      "Atomic Weight": 227,
       "Density": 10070,
       "Boiling Point": 3200,
-      "Melting Point": 1050,
-      "Atomic Weight": 227
+      "Melting Point": 1050
     },
     {
       "debug": {
         "Atomic Number": "Thorium",
+        "Atomic Weight": "Thorium",
         "Density": "Thorium",
         "Boiling Point": "Thorium",
-        "Melting Point": "Thorium",
-        "Atomic Weight": "Thorium"
+        "Melting Point": "Thorium"
       },
       "Abundance": {
         "debug": {
@@ -2755,18 +2755,18 @@
         "Universe Abundance": 4e-10
       },
       "Atomic Number": 90,
+      "Atomic Weight": 232.0377,
       "Density": 11724,
       "Boiling Point": 4820,
-      "Melting Point": 1750,
-      "Atomic Weight": 232.0377
+      "Melting Point": 1750
     },
     {
       "debug": {
         "Atomic Number": "Protactinium",
+        "Atomic Weight": "Protactinium",
         "Density": "Protactinium",
         "Boiling Point": "Protactinium",
-        "Melting Point": "Protactinium",
-        "Atomic Weight": "Protactinium"
+        "Melting Point": "Protactinium"
       },
       "Abundance": {
         "debug": {
@@ -2785,18 +2785,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 91,
+      "Atomic Weight": 231.03588,
       "Density": 15370,
       "Boiling Point": 4000,
-      "Melting Point": 1572,
-      "Atomic Weight": 231.03588
+      "Melting Point": 1572
     },
     {
       "debug": {
         "Atomic Number": "Uranium",
+        "Atomic Weight": "Uranium",
         "Density": "Uranium",
         "Boiling Point": "Uranium",
-        "Melting Point": "Uranium",
-        "Atomic Weight": "Uranium"
+        "Melting Point": "Uranium"
       },
       "Abundance": {
         "debug": {
@@ -2815,18 +2815,18 @@
         "Universe Abundance": 2e-10
       },
       "Atomic Number": 92,
+      "Atomic Weight": 238.02891,
       "Density": 19050,
       "Boiling Point": 3927,
-      "Melting Point": 1135,
-      "Atomic Weight": 238.02891
+      "Melting Point": 1135
     },
     {
       "debug": {
         "Atomic Number": "Neptunium",
+        "Atomic Weight": "Neptunium",
         "Density": "Neptunium",
         "Boiling Point": "Neptunium",
-        "Melting Point": "Neptunium",
-        "Atomic Weight": "Neptunium"
+        "Melting Point": "Neptunium"
       },
       "Abundance": {
         "debug": {
@@ -2845,18 +2845,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 93,
+      "Atomic Weight": 237,
       "Density": 20450,
       "Boiling Point": 4000,
-      "Melting Point": 644,
-      "Atomic Weight": 237
+      "Melting Point": 644
     },
     {
       "debug": {
         "Atomic Number": "Plutonium",
+        "Atomic Weight": "Plutonium",
         "Density": "Plutonium",
         "Boiling Point": "Plutonium",
-        "Melting Point": "Plutonium",
-        "Atomic Weight": "Plutonium"
+        "Melting Point": "Plutonium"
       },
       "Abundance": {
         "debug": {
@@ -2875,18 +2875,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 94,
+      "Atomic Weight": 244,
       "Density": 19816,
       "Boiling Point": 3230,
-      "Melting Point": 640,
-      "Atomic Weight": 244
+      "Melting Point": 640
     },
     {
       "debug": {
         "Atomic Number": "Americium",
+        "Atomic Weight": "Americium",
         "Density": "Americium",
         "Boiling Point": "Americium",
-        "Melting Point": "Americium",
-        "Atomic Weight": "Americium"
+        "Melting Point": "Americium"
       },
       "Abundance": {
         "debug": {
@@ -2905,18 +2905,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 95,
+      "Atomic Weight": 243,
       "Density": 13670,
       "Boiling Point": 2011,
-      "Melting Point": 1176,
-      "Atomic Weight": 243
+      "Melting Point": 1176
     },
     {
       "debug": {
         "Atomic Number": "Curium",
+        "Atomic Weight": "Curium",
         "Density": "Curium",
         "Boiling Point": "Curium",
-        "Melting Point": "Curium",
-        "Atomic Weight": "Curium"
+        "Melting Point": "Curium"
       },
       "Abundance": {
         "debug": {
@@ -2935,18 +2935,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 96,
+      "Atomic Weight": 247,
       "Density": 13510,
       "Boiling Point": 3110,
-      "Melting Point": 1345,
-      "Atomic Weight": 247
+      "Melting Point": 1345
     },
     {
       "debug": {
         "Atomic Number": "Berkelium",
+        "Atomic Weight": "Berkelium",
         "Density": "Berkelium",
         "Boiling Point": "Berkelium",
-        "Melting Point": "Berkelium",
-        "Atomic Weight": "Berkelium"
+        "Melting Point": "Berkelium"
       },
       "Abundance": {
         "debug": {
@@ -2965,18 +2965,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 97,
+      "Atomic Weight": 247,
       "Density": 14780,
       "Boiling Point": "Unknown",
-      "Melting Point": 1050,
-      "Atomic Weight": 247
+      "Melting Point": 1050
     },
     {
       "debug": {
         "Atomic Number": "Californium",
+        "Atomic Weight": "Californium",
         "Density": "Californium",
         "Boiling Point": "Californium",
-        "Melting Point": "Californium",
-        "Atomic Weight": "Californium"
+        "Melting Point": "Californium"
       },
       "Abundance": {
         "debug": {
@@ -2995,18 +2995,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 98,
+      "Atomic Weight": 251,
       "Density": 15100,
       "Boiling Point": "Unknown",
-      "Melting Point": 900,
-      "Atomic Weight": 251
+      "Melting Point": 900
     },
     {
       "debug": {
         "Atomic Number": "Einsteinium",
+        "Atomic Weight": "Einsteinium",
         "Density": "Einsteinium",
         "Boiling Point": "Einsteinium",
-        "Melting Point": "Einsteinium",
-        "Atomic Weight": "Einsteinium"
+        "Melting Point": "Einsteinium"
       },
       "Abundance": {
         "debug": {
@@ -3025,18 +3025,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 99,
+      "Atomic Weight": 252,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": 860,
-      "Atomic Weight": 252
+      "Melting Point": 860
     },
     {
       "debug": {
         "Atomic Number": "Fermium",
+        "Atomic Weight": "Fermium",
         "Density": "Fermium",
         "Boiling Point": "Fermium",
-        "Melting Point": "Fermium",
-        "Atomic Weight": "Fermium"
+        "Melting Point": "Fermium"
       },
       "Abundance": {
         "debug": {
@@ -3055,18 +3055,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 100,
+      "Atomic Weight": 257,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": 1527,
-      "Atomic Weight": 257
+      "Melting Point": 1527
     },
     {
       "debug": {
         "Atomic Number": "Mendelevium",
+        "Atomic Weight": "Mendelevium",
         "Density": "Mendelevium",
         "Boiling Point": "Mendelevium",
-        "Melting Point": "Mendelevium",
-        "Atomic Weight": "Mendelevium"
+        "Melting Point": "Mendelevium"
       },
       "Abundance": {
         "debug": {
@@ -3085,18 +3085,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 101,
+      "Atomic Weight": 258,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": 828,
-      "Atomic Weight": 258
+      "Melting Point": 828
     },
     {
       "debug": {
         "Atomic Number": "Nobelium",
+        "Atomic Weight": "Nobelium",
         "Density": "Nobelium",
         "Boiling Point": "Nobelium",
-        "Melting Point": "Nobelium",
-        "Atomic Weight": "Nobelium"
+        "Melting Point": "Nobelium"
       },
       "Abundance": {
         "debug": {
@@ -3115,18 +3115,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 102,
+      "Atomic Weight": 259,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": 828,
-      "Atomic Weight": 259
+      "Melting Point": 828
     },
     {
       "debug": {
         "Atomic Number": "Lawrencium",
+        "Atomic Weight": "Lawrencium",
         "Density": "Lawrencium",
         "Boiling Point": "Lawrencium",
-        "Melting Point": "Lawrencium",
-        "Atomic Weight": "Lawrencium"
+        "Melting Point": "Lawrencium"
       },
       "Abundance": {
         "debug": {
@@ -3145,18 +3145,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 103,
+      "Atomic Weight": 262,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": 1627,
-      "Atomic Weight": 262
+      "Melting Point": 1627
     },
     {
       "debug": {
         "Atomic Number": "Rutherfordium",
+        "Atomic Weight": "Rutherfordium",
         "Density": "Rutherfordium",
         "Boiling Point": "Rutherfordium",
-        "Melting Point": "Rutherfordium",
-        "Atomic Weight": "Rutherfordium"
+        "Melting Point": "Rutherfordium"
       },
       "Abundance": {
         "debug": {
@@ -3175,18 +3175,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 104,
+      "Atomic Weight": 267,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 267
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Dubnium",
+        "Atomic Weight": "Dubnium",
         "Density": "Dubnium",
         "Boiling Point": "Dubnium",
-        "Melting Point": "Dubnium",
-        "Atomic Weight": "Dubnium"
+        "Melting Point": "Dubnium"
       },
       "Abundance": {
         "debug": {
@@ -3205,18 +3205,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 105,
+      "Atomic Weight": 270,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 270
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Seaborgium",
+        "Atomic Weight": "Seaborgium",
         "Density": "Seaborgium",
         "Boiling Point": "Seaborgium",
-        "Melting Point": "Seaborgium",
-        "Atomic Weight": "Seaborgium"
+        "Melting Point": "Seaborgium"
       },
       "Abundance": {
         "debug": {
@@ -3235,18 +3235,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 106,
+      "Atomic Weight": 269,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 269
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Bohrium",
+        "Atomic Weight": "Bohrium",
         "Density": "Bohrium",
         "Boiling Point": "Bohrium",
-        "Melting Point": "Bohrium",
-        "Atomic Weight": "Bohrium"
+        "Melting Point": "Bohrium"
       },
       "Abundance": {
         "debug": {
@@ -3265,18 +3265,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 107,
+      "Atomic Weight": 270,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 270
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Hassium",
+        "Atomic Weight": "Hassium",
         "Density": "Hassium",
         "Boiling Point": "Hassium",
-        "Melting Point": "Hassium",
-        "Atomic Weight": "Hassium"
+        "Melting Point": "Hassium"
       },
       "Abundance": {
         "debug": {
@@ -3295,18 +3295,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 108,
+      "Atomic Weight": 270,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 270
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Meitnerium",
+        "Atomic Weight": "Meitnerium",
         "Density": "Meitnerium",
         "Boiling Point": "Meitnerium",
-        "Melting Point": "Meitnerium",
-        "Atomic Weight": "Meitnerium"
+        "Melting Point": "Meitnerium"
       },
       "Abundance": {
         "debug": {
@@ -3325,18 +3325,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 109,
+      "Atomic Weight": 278,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 278
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Darmstadtium",
+        "Atomic Weight": "Darmstadtium",
         "Density": "Darmstadtium",
         "Boiling Point": "Darmstadtium",
-        "Melting Point": "Darmstadtium",
-        "Atomic Weight": "Darmstadtium"
+        "Melting Point": "Darmstadtium"
       },
       "Abundance": {
         "debug": {
@@ -3355,18 +3355,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 110,
+      "Atomic Weight": 281,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 281
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Roentgenium",
+        "Atomic Weight": "Roentgenium",
         "Density": "Roentgenium",
         "Boiling Point": "Roentgenium",
-        "Melting Point": "Roentgenium",
-        "Atomic Weight": "Roentgenium"
+        "Melting Point": "Roentgenium"
       },
       "Abundance": {
         "debug": {
@@ -3385,18 +3385,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 111,
+      "Atomic Weight": 281,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 281
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Copernicium",
+        "Atomic Weight": "Copernicium",
         "Density": "Copernicium",
         "Boiling Point": "Copernicium",
-        "Melting Point": "Copernicium",
-        "Atomic Weight": "Copernicium"
+        "Melting Point": "Copernicium"
       },
       "Abundance": {
         "debug": {
@@ -3415,18 +3415,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 112,
+      "Atomic Weight": 285,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 285
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Nihonium",
+        "Atomic Weight": "Nihonium",
         "Density": "Nihonium",
         "Boiling Point": "Nihonium",
-        "Melting Point": "Nihonium",
-        "Atomic Weight": "Nihonium"
+        "Melting Point": "Nihonium"
       },
       "Abundance": {
         "debug": {
@@ -3445,18 +3445,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 113,
+      "Atomic Weight": 286,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 286
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Flerovium",
+        "Atomic Weight": "Flerovium",
         "Density": "Flerovium",
         "Boiling Point": "Flerovium",
-        "Melting Point": "Flerovium",
-        "Atomic Weight": "Flerovium"
+        "Melting Point": "Flerovium"
       },
       "Abundance": {
         "debug": {
@@ -3475,18 +3475,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 114,
+      "Atomic Weight": 289,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 289
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Moscovium",
+        "Atomic Weight": "Moscovium",
         "Density": "Moscovium",
         "Boiling Point": "Moscovium",
-        "Melting Point": "Moscovium",
-        "Atomic Weight": "Moscovium"
+        "Melting Point": "Moscovium"
       },
       "Abundance": {
         "debug": {
@@ -3505,18 +3505,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 115,
+      "Atomic Weight": 289,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 289
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Livermorium",
+        "Atomic Weight": "Livermorium",
         "Density": "Livermorium",
         "Boiling Point": "Livermorium",
-        "Melting Point": "Livermorium",
-        "Atomic Weight": "Livermorium"
+        "Melting Point": "Livermorium"
       },
       "Abundance": {
         "debug": {
@@ -3535,18 +3535,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 116,
+      "Atomic Weight": 293,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 293
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Tennessine",
+        "Atomic Weight": "Tennessine",
         "Density": "Tennessine",
         "Boiling Point": "Tennessine",
-        "Melting Point": "Tennessine",
-        "Atomic Weight": "Tennessine"
+        "Melting Point": "Tennessine"
       },
       "Abundance": {
         "debug": {
@@ -3565,18 +3565,18 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 117,
+      "Atomic Weight": 293,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 293
+      "Melting Point": "Unknown"
     },
     {
       "debug": {
         "Atomic Number": "Oganesson",
+        "Atomic Weight": "Oganesson",
         "Density": "Oganesson",
         "Boiling Point": "Oganesson",
-        "Melting Point": "Oganesson",
-        "Atomic Weight": "Oganesson"
+        "Melting Point": "Oganesson"
       },
       "Abundance": {
         "debug": {
@@ -3595,10 +3595,10 @@
         "Universe Abundance": "Unknown"
       },
       "Atomic Number": 118,
+      "Atomic Weight": 294,
       "Density": "Unknown",
       "Boiling Point": "Unknown",
-      "Melting Point": "Unknown",
-      "Atomic Weight": 294
+      "Melting Point": "Unknown"
     }
   ]
 }

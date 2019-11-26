@@ -1,21 +1,13 @@
-import { dest, series, src } from "gulp";
-import flatten from "gulp-flatten";
+import { dest, src } from "gulp";
 import jsonminify from "gulp-jsonminify";
 import del from "del";
 
-import { removeDebug } from "./helper.gulpfile";
-
 async function transferWolfram() {
-  const from = [
-    "wolfram/output-atom-tab-data/*.json",
-    "wolfram/output-atom-layout-data/*.json"
-  ];
+  const from = "wolfram/dist/*.json",
   const to = "backend/public/data/*";
   
   del.sync([to + "/**", "!" + to]);
   src(from)
-    .pipe(flatten())
-    .pipe(removeDebug())
     .pipe(jsonminify())
     .pipe(dest(to));
 }

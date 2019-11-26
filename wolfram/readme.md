@@ -9,9 +9,9 @@ key
 
 ## scripts
 
-- npm scripts
-- wolfram-data-groups/generate.sh
-- wolfram-data-groups/*/generate.sh
+- make generate
+- make build
+- make dist
 
 ## files
 

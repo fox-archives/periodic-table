@@ -11,6 +11,11 @@
   },
   "devDependencies": {
     "ava": "^2.2.0",
-    "esm": "^3.2.25"
+    "del": "^5.1.0",
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-jsonminify": "^1.1.0",
+    "gulp-plumber": "^1.2.1"
   }
 }

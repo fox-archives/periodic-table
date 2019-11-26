@@ -6,11 +6,16 @@ modern website that elegantly shows the periodic table and the properties of eac
 
 ![periodic table image](./periodic-table.png)
 
+## prerequisites
+
+need `node`, `yarn`, `make`, `wolframscript`
+
 ## setup
 
 ```sh
 git clone https://github.com/eankeen/periodic-table
-cd periodic-table && make bootstrap
+cd periodic-table
+make bootstrap
 sudo docker-compose up
 ```
 
