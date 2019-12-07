@@ -10,7 +10,7 @@ let filenames = [
 ];
 
 filenames.forEach(file => {
-  const filePath = path.resolve(__dirname, "../output-atom-layout-data", file);
+  const filePath = path.resolve(__dirname, "../build/atom-layout-data", file);
   test(`test length of ${filePath} to equal 120`, t => {
     return promisify(fs.readFile)(filePath)
       .then(text => {

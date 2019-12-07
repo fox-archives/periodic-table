@@ -11,9 +11,10 @@ build/light:
 	yarn transferFrontend
 
 build/full:
-	cd wolfram && cd wolfram-data-groups && ./generate.sh
-	cd wolfram && yarn transform
+	# cd wolfram && make generate
+	cd wolfram && make build
 	cd wolfram && yarn test
+	cd wolfram && make dist
 	yarn transferWolfram
 	cd frontend && yarn prod
 	yarn transferFrontend

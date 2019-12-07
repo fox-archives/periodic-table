@@ -2,7 +2,7 @@
 
 set -e
 
-cd ./wolfram-data-groups || exit
+cd wolfram-data-groups || exit
 
 # for each item in wolfram-data-groups (skipping nuclear properties)
 folders="basic-atom-properties material-properties \
@@ -13,7 +13,7 @@ for item in $folders; do
   if test -d "$item"; then
     # move to directory (ex. abundance-properties, etc.)
     cd "$item" || exit
-    echo GENERATING "$(echo "$item" | tr '[:lower:]' '[:upper:]')"
+    echo "GENERATING $(echo "$item" | tr '[:lower:]' '[:upper:]')"
 
     # for each item in a category of atom properties
     for item2 in *.wls; do
