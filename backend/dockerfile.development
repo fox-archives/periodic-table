@@ -7,4 +7,4 @@ COPY package.json yarn.lock ./
 RUN yarn --pure-lockfile --no-cache
 
 EXPOSE 3000
-CMD ["yarn", "start"]
+CMD ["yarn", "dev"]

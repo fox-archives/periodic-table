@@ -1,16 +1,16 @@
-import { dest, src } from 'gulp'
-import plumber from 'gulp-plumber'
-import flatten from 'gulp-flatten'
-import jsonminify from 'gulp-jsonminify'
-import del from 'del'
+import { dest, src } from "gulp"
+import plumber from "gulp-plumber"
+import flatten from "gulp-flatten"
+import jsonminify from "gulp-jsonminify"
+import del from "del"
 
-import { removeDebug } from './helper.gulpfile'
+import { removeDebug } from "./helper.gulpfile"
 
 async function makeDist() {
-  const from = 'build/atom-*-data/*.json'
-  const to = 'dist'
+  const from = "build/atom-*-data/*.json"
+  const to = "dist"
 
-  del.sync([to + '/**', '!' + to])
+  del.sync([to + "/**", "!" + to])
   src(from)
     .pipe(plumber())
     .pipe(flatten())

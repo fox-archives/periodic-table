@@ -1,6 +1,6 @@
 # main
 dist/
-backend/public/
+backend/public/**/*.json
 
 # npm
 node_modules/

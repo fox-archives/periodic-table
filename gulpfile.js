@@ -4,7 +4,7 @@ import del from "del";
 
 async function transferWolfram() {
   const from = "wolfram/dist/*.json";
-  const to = "backend/public/data/*";
+  const to = "backend/public/data";
   
   del.sync([to + "/**", "!" + to]);
   src(from)

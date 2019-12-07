@@ -1,11 +1,15 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const path = require("path");
-require("dotenv").config({ path: "../" });
+import path from "path";
+import express from "express";
+import bodyParser from "body-parser";
+import morgan from "morgan";
+import dotenv from "dotenv";
+
+dotenv.config({ path: "../" });
 
 const app = express();
-app.use(bodyParser.json()); // Allow express to parse .json requests sent in
 
+app.use(morgan('tiny'));
+app.use(bodyParser.json());
 app.use(express.static("public"));
 
 app.get("/*", (req, res) => {
