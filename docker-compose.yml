@@ -1,28 +1,45 @@
 version: "3.7"
 services:
   server:
+    container_name: periodic-table-server
     build:
       context: ./backend
-      dockerfile: dockerfile.development
-    ports:
-      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    user: 1000:1000
+    image: node:12.8-1-alpine
+    working_dir: /opt/app
+    command: npm run dev
+    expose:
+      - 3000
     environment:
       - NODE_ENV=development
     volumes:
-      - "./backend:/app"
+      - type: bind
+        source: ./backend
+        target: /opt/app
+    privileged: false
+    restart: always
     stdin_open: true
     tty: true
   client:
+    container_name: periodic-table-client
     build:
       context: ./frontend
-      dockerfile: dockerfile.development
+    user: 1000:1000
+    image: node:12.8.1-alpine
+    working_dir: /opt/app
+    command: npm run dev
     ports:
-      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+      - target: 8080
+        published: 8080
     environment:
       - NODE_ENV=development
     volumes:
-      - "./frontend:/app"
+      - type: bind
+        source: ./frontend
+        target: /opt/app
     links:
       - server
+    privileged: false
+    restart: always
     stdin_open: true
     tty: true
