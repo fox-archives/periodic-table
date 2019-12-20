@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon -r esm server.js",
-    "prod": "node -r esm server.js",
+    "start": "node -r esm server.js",
     "lint": "eslint -c .eslintrc.js *js",
     "lint:fix": "eslint -c .eslintrc.js *.js --fix"
   },
