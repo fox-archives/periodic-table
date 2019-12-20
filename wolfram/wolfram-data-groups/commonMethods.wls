@@ -165,9 +165,7 @@ iterateAtomProperty[
   };
 
   jsonFile = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]] ~~ ".json";
-  textFile = "plainOutput.txt";
   Export[jsonFile, rootData, "JSON"];
-  Export[textFile, rootData, "Text"];
 
   Print[jsonFile <> " done"];
 );
