@@ -1,9 +1,18 @@
-# main
+# all
 dist/
+node_modules/
+
+# root
+
+# frontend
+
+# backend
 backend/public/**/*.json
 
-# npm
-node_modules/
+# wolfram
+wolfram/wolfram-data-groups/*/*.json
+wolfram/build/atom-tab-data/*.json
+wolfram/dist/*.json
 
 # log
 *.log
