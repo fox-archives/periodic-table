@@ -1,6 +1,7 @@
 import fs from "fs";
 import { promisify } from "util";
 
+let DEBUG = false
 /*
   fileNames
     fileNames, corresponding to specific atom properties
@@ -9,7 +10,9 @@ import { promisify } from "util";
 */
 function atomArrayExtract(fileNames, subFileNames) {
   let final = {
-    data: Array.apply(null, Array(120)).map(() => ({ debug: {} }))
+    data: DEBUG
+      ? Array.apply(null, Array(120)).map(() => ({ debug: {} }))
+      : Array.apply(null, Array(120)).map(() => ({ }))
   };
   let promises = [];
 
@@ -23,7 +26,7 @@ function atomArrayExtract(fileNames, subFileNames) {
 
           let toAtomObject = final.data[i];
 
-          toAtomObject.debug[atomProperty] = fromAtomObject.name;
+          if (DEBUG) toAtomObject.debug[atomProperty] = fromAtomObject.name;
           toAtomObject[atomProperty] = fromAtomObject.value;
         });
       })
@@ -38,7 +41,7 @@ function atomArrayExtract(fileNames, subFileNames) {
   final.data.forEach((atomData, i, arr) => {
     Object.keys(subFileNames).forEach(key => {
       arr[i][key] = {};
-      arr[i][key].debug = {};
+      if(DEBUG) arr[i][key].debug = {};
     });
   });
   let subPromises = [];
@@ -54,7 +57,7 @@ function atomArrayExtract(fileNames, subFileNames) {
 
             let toAtomObject = final.data[i];
 
-            toAtomObject[key].debug[atomProperty] = fromAtomObject.name;
+            if (DEBUG) toAtomObject[key].debug[atomProperty] = fromAtomObject.name;
             toAtomObject[key][atomProperty] = fromAtomObject.value;
           });
         })
