@@ -1,7 +1,7 @@
 import fs from "fs";
 import { promisify } from "util";
 
-let DEBUG = false
+const DEBUG = false
 /*
   fileNames
     fileNames, corresponding to specific atom properties
@@ -12,22 +12,29 @@ function atomArrayExtract(fileNames, subFileNames) {
   let final = {
     data: DEBUG
       ? Array.apply(null, Array(120)).map(() => ({ debug: {} }))
-      : Array.apply(null, Array(120)).map(() => ({ }))
+      : Array.apply(null, Array(120)).map(() => ({ })),
+    meta: {}
   };
   let promises = [];
 
   fileNames.forEach(fileName => {
     let promise = promisify(fs.readFile)(fileName, "utf8")
       .then(fileData => {
-        let json = JSON.parse(fileData);
+        let json = JSON.parse(fileData);        
 
+        // add in 'meta'
+        final.meta[json.meta.atomPropertyNameWithSpace] = {
+          unit: json.meta.unitLong
+        }
+
+        // add properties to 'data'
         json.data.forEach((fromAtomObject, i) => {
           const atomProperty = json.meta.atomPropertyNameWithSpace;
-
           let toAtomObject = final.data[i];
 
           if (DEBUG) toAtomObject.debug[atomProperty] = fromAtomObject.name;
           toAtomObject[atomProperty] = fromAtomObject.value;
+
         });
       })
       .catch(e => {
@@ -52,6 +59,13 @@ function atomArrayExtract(fileNames, subFileNames) {
         .then((subFileData) => {
           let json = JSON.parse(subFileData);
 
+          // add in 'meta'
+          final.meta[json.meta.atomPropertyNameWithSpace] = {
+            unit: json.meta.unitLong
+          }
+
+
+          // add properties to 'data'
           json.data.forEach((fromAtomObject, i) => {
             const atomProperty = json.meta.atomPropertyNameWithSpace;
 
