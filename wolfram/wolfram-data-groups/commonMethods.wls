@@ -79,7 +79,7 @@ iterateAtomProperty[
       "longDescription" -> ElementData[1, atomPropertyPascalCase, "LongDescription"],
       "unit" -> unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["short"]],
       "unitLong" -> unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["long"]]
-      (* "missingCount" -> Count[atomsUnitData, _Missing], *)
+      (* "missingCount" -> Count[atomsUnitData, _Missing] *)
     },
     "data" -> atomArrayData
   };
