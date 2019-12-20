@@ -1,101 +1,17 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-MakeUnitReadable[rawUnit_] := (
-  unit = ToString@rawUnit;
-  Return@Which[
-    unit == "GramsPerGram",
-    "g per g",
 
-    unit == "Picometers",
-    "p",
+(*
+  import unit metadata once
+*)
+unitMappingsData = Import["unitMappings.json", "RawJSON"];
 
-    unit == "KilojoulesPerMole",
-    "kj per m",
 
-    unit == "SiemensPerMeter",
-    "s per m",
-
-    unit == "CubicMetersPerKilogram",
-    "cb^3 per kilo",
-
-    unit == "CubicMetersPerMole",
-    "cb per mole",
-
-    unit == "None",
-    "",
-
-    unit == "OhmMeters",
-    "ohm meters",
-
-    unit == "Megapascals",
-    "mgps",
-
-    unit == "Gigapascals",
-    "gpsl",
-
-    unit == "KilogramsPerCubicMeter",
-    "kpcm",
-
-    unit == "MeteresPerSecond",
-    "m / s",
-
-    unit == "WattsPerMeterKelvin",
-    "wpmk",
-
-    unit == "ReciprocalKelvins",
-    "rekl",
-
-    unit == "Barns",
-    "barn",
-
-    unit == "SquareMetersPerKilogram",
-    "smpk",
-
-    unit == "Kelvins",
-    "k",
-
-    unit == "DegreesCelsius",
-    "C",
-
-    unit == "JoulesPerKilogramKelvin",
-    "jpkk",
-
-    unit == "AtomicMassUnit",
-    "amu",
-
-    unit == "Missing[NotApplicable]",
-    "",
-
-    True,
-    unit
-  ];
-);
-
-MakeUnitLongReadable[rawUnit_] := (
-  unit = ToString@rawUnit;
-  Return@Which[
-    unit == "AtomicMassUnit",
-    "unified atomic mass unit (dalton)",
-
-    unit == "GramsPerGram",
-    "grams per gram",
-
-    unit == "DegreesCelsius",
-    "degrees celsius",
-
-    unit == "KilogramsPerCubicMeter",
-    "kilos per cubic meter",
-
-    (* if the unit is not applicable, it is unitless *)
-    unit == "Missing[NotApplicable]",
-    "",
-
-    True,
-    unit
-  ];
-);
-
+(*
+  data
+    data to return some sort of string if it is a 'failure', 'missing', etc, 'object'
+*)
 fixUnknowns[data_] := (
   If[FailureQ[data],
     Return["Failed"];
@@ -112,6 +28,7 @@ fixUnknowns[data_] := (
   Return["Error"];
 );
 
+
 (*
   atomProperty
     name of the property,
@@ -122,30 +39,21 @@ fixUnknowns[data_] := (
   actinidesCase
     spacial case value for actinites block
 *)
-
-(* TODO: defualt aguments *)
 iterateAtomProperty[
   atomProperty_,
   atomValueTransformation_,
   lanthanitesCase_:"lanthanites case",
   actinidesCase_:"actinides case"
 ] := (
-  (* AtomProperty *)
+  (* AtomProperty | Atom Property *)
   atomPropertyPascalCase = StringDelete[StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]], " "];
-  (* Atom Property *)
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
-
+  
   atomArrayData = {};
-  unit = MakeUnitReadable@ElementData[1, atomPropertyPascalCase, "Units"];
-  unitLong = MakeUnitLongReadable@ElementData[1, atomPropertyPascalCase, "Units"];
-
   For[i = 1, i < 119, i++, (
-    name = ElementData[i, "StandardName"];
-    value = atomValueTransformation@ElementData[i, atomPropertyPascalCase];
-
     atomArrayData = Append[atomArrayData, {
-      "name" -> name,
-      "value" -> value
+      "name" -> ElementData[i, "StandardName"],
+      "value" -> atomValueTransformation@ElementData[i, atomPropertyPascalCase]
     }];
 
     If[i == 56,
@@ -169,10 +77,9 @@ iterateAtomProperty[
       "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace,
       "description" -> ElementData[1, atomPropertyPascalCase, "Description"],
       "longDescription" -> ElementData[1, atomPropertyPascalCase, "LongDescription"],
+      "unit" -> unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["short"]],
+      "unitLong" -> unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["long"]]
       (* "missingCount" -> Count[atomsUnitData, _Missing], *)
-      (* get number of missing values for a particular unit *) 
-      "unit" -> unit,
-      "unitLong" -> unitLong
     },
     "data" -> atomArrayData
   };

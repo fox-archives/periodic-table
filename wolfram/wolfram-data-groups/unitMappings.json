@@ -1,0 +1,88 @@
+{
+  "mappings": {
+    "GramsPerGram": {
+      "short": "g/g",
+      "long": "grams per gram"
+    },
+    "Picometers": {
+      "short": "p",
+      "long": ""
+    },
+    "KilojoulesPerMole": {
+      "short": "kj/m",
+      "long": ""
+    },
+    "SiemensPerMeter": {
+      "short": "s/m",
+      "long": ""
+    },
+    "CubicMetersPerKilogram": {
+      "short": "cb^3 per kilo",
+      "long": ""
+    },
+    "CubicMetersPerMole": {
+      "short": "cb/mole",
+      "long": ""
+    },
+    "None": {
+      "short": "",
+      "long": ""
+    },
+    "OhmMeters": {
+      "short": "ohm meters",
+      "long": ""
+    },
+    "Megapascals": {
+      "short": "mgps",
+      "long": ""
+    },
+    "Gigapascals": {
+      "short": "gpsl",
+      "long": ""
+    },
+    "KilogramsPerCubicMeter": {
+      "short": "kpcm",
+      "long": "kilograms per cubic meter"
+    },
+    "MetersPerSecond": {
+      "short": "m/s",
+      "long": "meters per second"
+    },
+    "WattsPerMeterKelvin": {
+      "short": "wpmk",
+      "long": "wats per meter kelvin"
+    },
+    "ReciprocalKelvins": {
+      "short": "rekl",
+      "long": ""
+    },
+    "Barns": {
+      "short": "barns",
+      "long": ""
+    },
+    "SquareMetersPerKilogram": {
+      "short": "",
+      "long": ""
+    },
+    "Kelvins": {
+      "short": "",
+      "long": ""
+    },
+    "DegreesCelsius": {
+      "short": "C",
+      "long": "degrees celcius"
+    },
+    "JoulesPerKilogramKelvin": {
+      "short": "",
+      "long": ""
+    },
+    "AtomicMassUnit": {
+      "short": "",
+      "long": "unified atomic mass unit (dalton)"
+    },
+    "Missing[NotApplicable]": {
+      "short": "",
+      "long": ""
+    }
+  }
+}
