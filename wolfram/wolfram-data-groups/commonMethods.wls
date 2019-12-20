@@ -78,6 +78,19 @@ MakeUnitLongReadable[rawUnit_] := (
     unit == "AtomicMassUnit",
     "unified atomic mass unit (dalton)",
 
+    unit == "GramsPerGram",
+    "grams per gram",
+
+    unit == "DegreesCelsius",
+    "degrees celsius",
+
+    unit == "KilogramsPerCubicMeter",
+    "kilos per cubic meter",
+
+    (* if the unit is not applicable, it is unitless *)
+    unit == "Missing[NotApplicable]",
+    "",
+
     True,
     unit
   ];

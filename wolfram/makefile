@@ -1,4 +1,4 @@
-.PHONY: all generate build dist
+.PHONY: all generate build test dist
 
 all: generate build dist
 

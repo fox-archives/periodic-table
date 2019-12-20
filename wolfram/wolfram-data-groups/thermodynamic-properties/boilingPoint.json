@@ -5,7 +5,7 @@
 		"description":"boiling point",
 		"longDescription":"boiling temperature in Celsius",
 		"unit":"DegreesCelsius",
-		"unitLong":"DegreesCelsius"
+		"unitLong":"degrees celsius"
 	},
 	"data":[
 		{

@@ -5,7 +5,7 @@
 		"description":"liquid density",
 		"longDescription":"liquid density at melting point",
 		"unit":"KilogramsPerCubicMeter",
-		"unitLong":"KilogramsPerCubicMeter"
+		"unitLong":"kilos per cubic meter"
 	},
 	"data":[
 		{

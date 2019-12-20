@@ -5,7 +5,7 @@
 		"description":"density",
 		"longDescription":"density at standard temperature and pressure",
 		"unit":"KilogramsPerCubicMeter",
-		"unitLong":"KilogramsPerCubicMeter"
+		"unitLong":"kilos per cubic meter"
 	},
 	"data":[
 		{
