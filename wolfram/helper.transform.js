@@ -23,7 +23,8 @@ function atomArrayExtract(fileNames, subFileNames) {
 
         // add in 'meta'
         finalJson.meta[json.meta.atomPropertyNameWithSpace] = {
-          unit: json.meta.unitLong
+          unit: json.meta.unit,
+          unitLong: json.meta.unitLong
         }
 
         // add properties to 'data'
@@ -60,7 +61,8 @@ function atomArrayExtract(fileNames, subFileNames) {
 
           // add in 'meta'
           finalJson.meta[json.meta.atomPropertyNameWithSpace] = {
-            unit: json.meta.unitLong
+            unit: json.meta.unit,
+            unitLong: json.meta.unitLong
           }
 
           // add properties to 'data'

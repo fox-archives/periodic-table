@@ -7,7 +7,10 @@ node_modules/
 # frontend
 
 # backend
-backend/public/**/*.json
+backend/public/**/*
+!backend/public/assets/
+!backend/public/assets/*
+!backend/public/data/.gitkeep
 
 # wolfram
 wolfram/wolfram-data-groups/*/*.json

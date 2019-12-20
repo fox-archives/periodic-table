@@ -11,13 +11,13 @@ build/light:
 	yarn transferFrontend
 
 build/full:
-	# cd wolfram && make generate
+	cd frontend && yarn prod
+	yarn transferFrontend
+	cd wolfram && make generate
 	cd wolfram && make build
 	cd wolfram && yarn test
 	cd wolfram && make dist
 	yarn transferWolfram
-	cd frontend && yarn prod
-	yarn transferFrontend
 
 # release can be of major, minor, patch, premajor, preminor,
 # prepatch, and prerelease
