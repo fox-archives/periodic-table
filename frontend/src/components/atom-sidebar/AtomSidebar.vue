@@ -4,14 +4,33 @@
       <simplebar class="simplebar" data-simplebar-auto-hide="false">
         <div class="atom-info-inner">
           <div
-            v-for="atomTabDataMember in atomTraitsActiveModified"
-            :key="atomTabDataMember[0]"
+            v-for="traitPair in Object.entries(this.atomTraitsActive)"
+            :key="traitPair[0]"
             class="atom-stat"
           >
-            <p class="atom-stat-text">
-              {{ atomTabDataMember[0] }}:
-              {{ atomTabDataMember[1] }}
-              {{ unit(atomTabDataMember[0]) }}
+            <p
+              v-if="
+                typeof traitPair[1] === 'number' ||
+                  typeof traitPair[1] === 'string'
+              "
+              class="atom-stat-text"
+            >
+              {{ traitPair[0] }}:
+              {{ traitPair[1] }}
+              {{ unit(traitPair[0]) }}
+            </p>
+            <p v-else-if="typeof traitPair[1] === 'object'">
+              <label for="atom-select"></label>
+              <select name="pets" id="atom-select" v-model="selected">
+                <option
+                  v-for="actualTraitPair in Object.entries(traitPair[1])"
+                  :key="actualTraitPair[0]"
+                  :value="actualTraitPair[0]"
+                >
+                  {{ actualTraitPair[0] }}
+                </option>
+              </select>
+              {{ traitPair[1][selected] }}
             </p>
           </div>
         </div>
@@ -27,6 +46,11 @@ import "simplebar/dist/simplebar.min.css";
 
 export default {
   name: "AtomSidebar",
+  data() {
+    return {
+      selected: ''
+    }
+  },
   components: {
     simplebar
   },
@@ -35,10 +59,7 @@ export default {
       "atomTraitsUnits",
       "atomTraitsActive",
       "ready"
-    ]),
-    atomTraitsActiveModified() {
-      return Object.entries(this.atomTraitsActive);
-    }
+    ])
   },
   methods: {
     unit(traitName) {
