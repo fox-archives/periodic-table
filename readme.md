@@ -2,13 +2,16 @@
 
 ## introduction
 
-modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop.
+modern website that elegantly shows the periodic table and the properties of each element in an interactive user interface built for mobile and desktop
 
 ![periodic table image](./periodic-table.png)
 
 ## prerequisites
 
-need `node`, `yarn`, `make`, `wolframscript`
+- `node`
+- `yarn`
+- `make`
+- `wolframscript`
 
 ## setup
 
@@ -31,11 +34,3 @@ make build/light
 make release release=patch
 make deploy
 ```
-
-## todo for pipeline
-
-- add stats to see how much browser support app has
-
-## notes
-
-`sudo docker-compose up`, spins up all containers specified in respective `dockerfile.development` files.
