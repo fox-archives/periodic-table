@@ -8,27 +8,27 @@ let merge = require("webpack-merge");
 let common = require("./webpack.common.js");
 
 module.exports = merge.smart(common, {
-  mode: 'production',
-  devtool: 'source-map',
+  mode: "production",
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader',
+          "css-loader",
+          "postcss-loader",
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
-              implementation: require('sass')
+              implementation: require("sass")
             }
           }
         ]
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
       }
     ]
   },
@@ -43,10 +43,10 @@ module.exports = merge.smart(common, {
   },
   plugins: [
     new CleanWebpackPlugin({
-      cleanAfterEveryBuildPatterns: ['dist/*.*', 'dist/assets/*.*']
+      cleanAfterEveryBuildPatterns: ["dist/*.*", "dist/assets/*.*"]
     }),
     new MiniCssExtractPlugin({
-      filename: 'bundle.css'
+      filename: "bundle.css"
       // filename: '[name].[hash].bundle.css',
       // chunkFilename: '[name].[id].css'
     })

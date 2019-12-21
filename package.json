@@ -7,7 +7,9 @@
   "scripts": {
     "transferAll": "gulp --require esm transferAll",
     "transferWolfram": "gulp --require esm transferWolfram",
-    "transferFrontend": "gulp --require esm transferFrontend"
+    "transferFrontend": "gulp --require esm transferFrontend",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix"
   },
   "devDependencies": {
     "del": "^5.0.0",

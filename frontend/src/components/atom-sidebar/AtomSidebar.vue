@@ -31,7 +31,11 @@ export default {
     simplebar
   },
   computed: {
-    ...mapState("mainAtomTable", [ "atomTraitsUnits", "atomTraitsActive", "ready"]),
+    ...mapState("mainAtomTable", [
+      "atomTraitsUnits",
+      "atomTraitsActive",
+      "ready"
+    ]),
     atomTraitsActiveModified() {
       return Object.entries(this.atomTraitsActive);
     }
@@ -39,9 +43,9 @@ export default {
   methods: {
     unit(traitName) {
       try {
-        return this.atomTraitsUnits[traitName].unit
+        return this.atomTraitsUnits[traitName].unit;
       } catch {
-        return this.atomTraitsUnits[traitName]
+        return this.atomTraitsUnits[traitName];
       }
     }
   }

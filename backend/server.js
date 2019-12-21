@@ -6,15 +6,17 @@ import dotenv from "dotenv";
 dotenv.config({ path: "../" });
 
 const app = express();
-app.set('json spaces', 2)
-app.disable("strict routing")
+app.set("json spaces", 2);
+app.disable("strict routing");
 app.disable("'x-powered-by");
 
-app.use(morgan('tiny'));
+app.use(morgan("tiny"));
 app.use(express.static("public"));
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"), err => console.log(err));
+  res.sendFile(path.join(__dirname, "public", "index.html"), err =>
+    console.log(err)
+  );
 });
 
 const port = process.env.PORT || 3000;

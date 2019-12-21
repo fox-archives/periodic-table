@@ -16,6 +16,11 @@ module.exports = {
 
     "plugin/no-unsupported-browser-features": [true, {
       "severity": "warning"
+    }],
+    "at-rule-no-unknown": [true, {
+      ignoreAtRules: [
+        "function", "each", "if", "return", "include", "mixin", "for"
+      ]
     }]
   }
 };
