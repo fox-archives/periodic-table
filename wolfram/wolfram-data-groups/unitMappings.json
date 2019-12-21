@@ -5,84 +5,88 @@
       "long": "grams per gram"
     },
     "Picometers": {
-      "short": "p",
-      "long": ""
+      "short": "pm",
+      "long": "Picometer"
     },
     "KilojoulesPerMole": {
-      "short": "kj/m",
-      "long": ""
+      "short": "kJ/mol",
+      "long": "Kilojoules per Mole"
     },
     "SiemensPerMeter": {
-      "short": "s/m",
-      "long": ""
+      "short": "S/m",
+      "long": "Siemens per Meter"
     },
     "CubicMetersPerKilogram": {
-      "short": "cb^3 per kilo",
-      "long": ""
+      "short": "m^3 /kg",
+      "long": "Cubic Meters per Kilogram"
     },
     "CubicMetersPerMole": {
-      "short": "cb/mole",
-      "long": ""
+      "short": "m^3/mol",
+      "long": "Cubic Meters per Mole"
     },
     "None": {
       "short": "",
       "long": ""
     },
     "OhmMeters": {
-      "short": "ohm meters",
-      "long": ""
+      "short": "Ω meters",
+      "long": "ohm meters"
     },
     "Megapascals": {
-      "short": "mgps",
-      "long": ""
+      "short": "Mpa",
+      "long": "Megapascal"
     },
     "Gigapascals": {
-      "short": "gpsl",
-      "long": ""
+      "short": "GPa",
+      "long": "Gigapascal"
     },
     "KilogramsPerCubicMeter": {
-      "short": "kpcm",
-      "long": "kilograms per cubic meter"
+      "short": "kg/m^3",
+      "long": "Kilograms per Cubic Meter"
     },
     "MetersPerSecond": {
       "short": "m/s",
-      "long": "meters per second"
+      "long": "Meters per Second"
     },
     "WattsPerMeterKelvin": {
-      "short": "wpmk",
-      "long": "wats per meter kelvin"
+      "short": "W/mK",
+      "long": "Watts per Meter Kelvin"
     },
     "ReciprocalKelvins": {
-      "short": "rekl",
-      "long": ""
+      "short": "1/K",
+      "long": "Reciporal Kelvins"
     },
     "Barns": {
-      "short": "barns",
-      "long": ""
+      "short": "b",
+      "long": "Barn"
     },
     "SquareMetersPerKilogram": {
-      "short": "",
-      "long": ""
+      "short": "m^2/Kg",
+      "long": "Square Meters per Kilogram"
     },
     "Kelvins": {
-      "short": "",
-      "long": ""
+      "short": "K",
+      "long": "Kelvin"
     },
     "DegreesCelsius": {
-      "short": "C",
-      "long": "degrees celcius"
+      "short": "°C",
+      "long": "Degrees Celsius"
     },
     "JoulesPerKilogramKelvin": {
-      "short": "",
-      "long": ""
+      "short": "J/kg-K",
+      "long": "Joules per Kilogram Kelvin"
     },
     "AtomicMassUnit": {
-      "short": "",
-      "long": "unified atomic mass unit (dalton)"
+      "short": "u",
+      "long": "Unified Atomic Mass Unit(s)"
     },
     "Missing[NotApplicable]": {
       "short": "",
       "long": ""
+    },
+    "AtomicWeight": {
+      "short": "uz",
+      "long": "Unified Atomic Mass Unit(s)"
     }
   }
 }
