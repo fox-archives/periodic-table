@@ -1,6 +1,6 @@
 {
   "name": "periodic-table-wolfram",
-  "version": "0.12.2",
+  "version": "0.12.3",
   "main": "transform.js",
   "license": "licensed",
   "private": true,
