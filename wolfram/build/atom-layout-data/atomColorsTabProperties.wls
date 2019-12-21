@@ -1,26 +1,9 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-Import["../common-methods.wls"];
 DeleteFile["atomColorsTabProperties.json"];
 
 periodicTable = {};
-
-getType[series_]:=
-	(*Switch[
-		ToString@series,
-		"AlkaliMetals",
-		Return["blue"]
-	];*)
-	Return[series];
-	(*Which[
-		ToString@group == "1",
-			Return["red"];,
-		MissingQ@group \[Equal] True,
-			Return["Missing"];,
-		True,
-			Return["Unexpected Values"];
-	];*)
 
 For[i = 1, i < 119, i++,
 	(*type = getType[ElementData[i, "Series"]];*)
@@ -29,25 +12,25 @@ For[i = 1, i < 119, i++,
 	Switch[
 		series,
 		"Nonmetal",
-		type = "red",
-		"NobleGas",
-		type = "violet",
-		"AlkaliMetal",
-		type = "cyan",
-		"AlkalineEarthMetal",
-		type = "lime";,
-		"Metalloid",
-		type = "pink",
-		"Chalcogen",
-		type = "indigo",
-		"Halogen",
-		type = "teal",
-		"PoorMetal",
 		type = "yellow",
+		"NobleGas",
+		type = "indigo",
+		"AlkaliMetal",
+		type = "red",
+		"AlkalineEarthMetal",
+		type = "violet";,
+		"Metalloid",
+		type = "green",
+		"Chalcogen",
+		type = "yellow",
+		"Halogen",
+		type = "pink",
+		"PoorMetal",
+		type = "orange",
 		"TransitionMetal",
-		type = "grape",
-		"Lanthanide",
 		type = "blue",
+		"Lanthanide",
+		type = "cyan",
 		"Actinide",
 		type = "green"
 	];
@@ -61,8 +44,8 @@ For[i = 1, i < 119, i++,
 	(* Case for Lanthanites *)
 	If[i == 56,
 		lanth = {
-			"defaultColor" -> "blue",
-			"color" -> "blue"
+			"defaultColor" -> "cyan",
+			"color" -> "cyan"
 		};
 		periodicTable = Append[periodicTable, lanth];
 	];

@@ -14,6 +14,7 @@ backend/public/**/*
 
 # wolfram
 wolfram/wolfram-data-groups/*/*.json
+wolfram/build/atom-layout-data/atomColors*.json
 wolfram/build/atom-tab-data/*.json
 wolfram/dist/*.json
 

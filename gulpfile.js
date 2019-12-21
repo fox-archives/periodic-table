@@ -3,7 +3,7 @@ import jsonminify from "gulp-jsonminify";
 import del from "del";
 
 async function transferWolfram() {
-  const from = "wolfram/dist/*.json";
+  const from = ["wolfram/dist/*.json"];
   const to = "backend/public/data";
   
   del.sync([to + "/**", "!" + to]);

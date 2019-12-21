@@ -26,3 +26,5 @@ for item in $folders; do
 done
 
 cd ..
+
+sh ./geneate2.sh

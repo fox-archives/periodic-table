@@ -1,8 +1,7 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-Import["../common-methods.wls"];
-DeleteFile["atomLayoutColorsOrbitalBlock.json"];
+DeleteFile["atomColorsTabElectrons.json"];
 
 periodicTable = {};
 
@@ -45,4 +44,4 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["atomLayoutColorsOrbitalBlock.json", periodicTable, "JSON"];
+Export["atomColorsTabElectrons.json", periodicTable, "JSON"];
