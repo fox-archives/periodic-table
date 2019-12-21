@@ -40,21 +40,17 @@ function switchAtomTab({ state, commit }, payload) {
       axios.get(`/data/atomTab${tabToSwitchTo}.json`)
     ])
       .then(responses => {
-        {
-          let atomColorAppearanceR = responses[0];
-          let atomTraitsR = responses[1];
-
-          state.atomColors = atomColorAppearanceR.data;
-          state.atomTraits = atomTraitsR.data.data;
-        }
+        state.atomColors = responses[0].data;
+        state.atomTraits = responses[1].data.data;
+        state.atomTraitsUnits = responses[1].data.meta;
 
         switchAtomTabCleanup({ state, commit });
 
         state.ready = true;
         resolve();
       })
-      .catch(e => {
-        console.error(e);
+      .catch(err => {
+        console.error(err);
         reject();
       });
   });

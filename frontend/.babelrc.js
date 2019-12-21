@@ -3,5 +3,7 @@ module.exports = {
     "@babel/env"
   ],
   "plugins": [
+    "@babel/proposal-optional-chaining",
+    "@babel/proposal-nullish-coalescing-operator"
   ]
 };

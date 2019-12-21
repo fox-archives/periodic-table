@@ -9,7 +9,9 @@
             class="atom-stat"
           >
             <p class="atom-stat-text">
-              {{ atomTabDataMember[0] }}: {{ atomTabDataMember[1] }}
+              {{ atomTabDataMember[0] }}:
+              {{ atomTabDataMember[1] }}
+              {{ unit(atomTabDataMember[0]) }}
             </p>
           </div>
         </div>
@@ -29,9 +31,18 @@ export default {
     simplebar
   },
   computed: {
-    ...mapState("mainAtomTable", ["atomTraitsActive", "ready"]),
+    ...mapState("mainAtomTable", [ "atomTraitsUnits", "atomTraitsActive", "ready"]),
     atomTraitsActiveModified() {
       return Object.entries(this.atomTraitsActive);
+    }
+  },
+  methods: {
+    unit(traitName) {
+      try {
+        return this.atomTraitsUnits[traitName].unit
+      } catch {
+        return this.atomTraitsUnits[traitName]
+      }
     }
   }
 };

@@ -33,6 +33,7 @@ export default {
     atomSnippetActive: {},
 
     // atom sidebar data (dependent on the selected tab) for *all* elements
+    atomTraitsUnits: [],
     atomTraits: [],
     atomTraitsActive: {},
 
