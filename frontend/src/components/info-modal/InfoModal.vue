@@ -1,7 +1,7 @@
 <template>
-  <div class="info-modal">
-    <transition name="popup">
-      <div v-if="infoModalActive" class="info-modal-inner">
+  <transition name="popup">
+    <div v-if="infoModalActive" class="info-modal">
+      <div class="info-modal-inner">
         <h1>Info</h1>
         <p>
           This periodic table application was built by Edwin Kofler. The website
@@ -10,8 +10,8 @@
         </p>
         <button @click="setInfoModalActive(false)">close</button>
       </div>
-    </transition>
-  </div>
+    </div>
+  </transition>
 </template>
 
 <script>
