@@ -1,58 +1,34 @@
 <template>
   <div class="atom-info-wrapper">
     <div v-if="ready" class="atom-info">
-      <simplebar class="simplebar" data-simplebar-auto-hide="false">
+      <Simplebar class="simplebar" data-simplebar-auto-hide="false">
         <div class="atom-info-inner">
           <div
             v-for="traitPair in Object.entries(this.atomTraitsActive)"
             :key="traitPair[0]"
             class="atom-stat"
           >
-            <p
-              v-if="
-                typeof traitPair[1] === 'number' ||
-                  typeof traitPair[1] === 'string'
-              "
-              class="atom-stat-text"
-            >
-              {{ traitPair[0] }}:
-              {{ traitPair[1] }}
-              {{ unit(traitPair[0]) }}
-            </p>
-            <p v-else-if="typeof traitPair[1] === 'object'">
-              <label for="atom-select"></label>
-              <select name="pets" id="atom-select" v-model="selected">
-                <option
-                  v-for="actualTraitPair in Object.entries(traitPair[1])"
-                  :key="actualTraitPair[0]"
-                  :value="actualTraitPair[0]"
-                >
-                  {{ actualTraitPair[0] }}
-                </option>
-              </select>
-              {{ traitPair[1][selected] }}
-            </p>
+            <TraitPair
+              :traitPair="traitPair"
+            />
           </div>
         </div>
-      </simplebar>
+      </Simplebar>
     </div>
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
-import simplebar from "simplebar-vue";
+import Simplebar from "simplebar-vue";
 import "simplebar/dist/simplebar.min.css";
+import TraitPair from "@/components/atom-sidebar/TraitPair"
 
 export default {
   name: "AtomSidebar",
-  data() {
-    return {
-      selected: ''
-    }
-  },
   components: {
-    simplebar
+    Simplebar,
+    TraitPair
   },
   computed: {
     ...mapState("mainAtomTable", [
@@ -68,6 +44,25 @@ export default {
       } catch {
         return this.atomTraitsUnits[traitName];
       }
+    },
+    selected(traitName) {
+      let a = ''
+      switch (traitName) {
+        case "Abundance":
+          a = "Crust Abundance";
+          break;
+        case "Radius":
+          a = "Atomic Radius";
+          break;
+      }
+      // this.aselected = a;
+      return a;
+    },
+    change(traitName, toChange) {
+      console.log(this.atomTraitsActive);
+      console.log(this.atomTraitsActive[traitName][toChange])
+      console.log(toChange)
+      this.aselected = this.atomTraitsActive[traitName][toChange]
     }
   }
 };

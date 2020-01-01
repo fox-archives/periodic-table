@@ -1,0 +1,87 @@
+<template>
+  <div class="trait-pair">
+    <!-- {{ traitPair }} -->
+    <p
+      v-if="
+        typeof traitPair[1] === 'number' || typeof traitPair[1] === 'string'
+      "
+      class="atom-stat-text"
+    >
+      {{ traitPair[0] }}:
+      {{ traitPair[1] }}
+      {{ unit(traitPair[0]) }}
+    </p>
+    <p v-if="typeof traitPair[1] === 'object'" class="atom-status-text">
+      <label for="atom-select"></label>
+      <select
+        name="atom-selector"
+        class="select-menu"
+        id="atom-select"
+        v-model="selected"
+        @change="updateTraitPairValue($event)"
+      >
+        <option v-for="(value, name) in traitPair[1]" :key="name" :value="name">
+          {{ name }} {{ unit(name) }}
+        </option>
+      </select>
+      {{ finalValue }}
+    </p>
+  </div>
+</template>
+
+<script>
+import { mapState } from "vuex";
+
+export default {
+  props: {
+    traitPair: {
+      type: Array,
+      default: () => ["Atomic Number", 9999]
+    }
+  },
+  created() {
+    if (typeof this.traitPair[1] === "object") {
+      this.traitPairCategory = this.traitPair[0]; // this is only used if traitPair[1] is an object
+      this.selected = Object.entries(this.traitPair[1])[0][0];
+      this.updateTraitPairValue();
+    }
+  },
+  computed: {
+    ...mapState("mainAtomTable", ["atomTraitsUnits", "atomTraitsActive"])
+  },
+  watch: {
+    atomTraitsActive() {
+      if (typeof this.traitPair[1] === "object") {
+        this.updateTraitPairValue();
+      }
+    }
+  },
+  methods: {
+    unit(traitName) {
+      try {
+        return this.atomTraitsUnits[traitName].unit;
+      } catch {
+        return this.atomTraitsUnits[traitName];
+      }
+    },
+    updateTraitPairValue(event) {
+      let traitPairName = event ? event.target.value : this.selected;
+      this.finalValue = this.atomTraitsActive[this.traitPairCategory][
+        traitPairName
+      ];
+    }
+  },
+  data() {
+    return {
+      selected: "bravo",
+      finalValue: "delta", // final value used in case traitPair[1] is an object,
+      traitPairCategory: "alfa" // traitPairCategory is something like 'Abundance'. For example, if the prop traitPair is an array, it would be the value of [traitPair[0]]
+    };
+  }
+};
+</script>
+
+<style lang="scss">
+@import "~@/styles/variables.scss";
+@import "traitPair";
+</style>

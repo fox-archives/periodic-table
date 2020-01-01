@@ -1,0 +1,12 @@
+.select-menu {
+  padding: 3px;
+  border-radius: $border-radius-small;
+  background-color: $ld-background;
+  margin-right: 3px;
+  padding-top: 4px;
+}
+
+.select-menu option {
+  font-weight: normal;
+  font-family: "latoregular", Arial, sans-serif;
+}

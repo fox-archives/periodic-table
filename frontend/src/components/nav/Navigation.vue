@@ -55,13 +55,13 @@
         <info-icon class="icon feather-icon" />
       </li>
 
-      <li class="no-text">
+      <!-- <li class="no-text">
         <settings-icon class="icon feather-icon" />
-      </li>
+      </li> -->
 
-      <li class="no-text">
+      <!-- <li class="no-text">
         <search-icon class="icon feather-icon" />
-      </li>
+      </li> -->
 
       <li id="menu-mobile" class="no-text">
         <menu-icon class="icon feather-icon" />

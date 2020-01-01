@@ -9,14 +9,14 @@
     <p id="name-sm">
       ©
     </p>
-    <a href="#">About</a>
-    <a href="https://discord.gg/eZMuVnu">Discord</a>
+    <!-- <a href="#">About</a> -->
+    <!-- <a href="https://discord.gg/eZMuVnu">Discord</a> -->
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Foot"
+  name: "Footer"
 };
 </script>
 

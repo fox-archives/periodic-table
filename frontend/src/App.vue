@@ -1,8 +1,8 @@
 <template>
   <div id="content" :class="[options.themeType, options.panelLayout]">
-    <navigation />
+    <Navigation />
     <router-view />
-    <foot />
+    <Foot />
   </div>
 </template>
 
@@ -13,8 +13,8 @@ import Foot from "@/components/foot/Foot.vue";
 
 export default {
   components: {
-    navigation: Navigation,
-    foot: Foot
+    Navigation,
+    Foot
   },
   watch: {
     $route() {

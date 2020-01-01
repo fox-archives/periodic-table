@@ -1,11 +1,10 @@
-version: "3.7"
+version: '3.7'
 services:
   server:
     container_name: periodic-table-server
-    build:
-      context: ./backend
+    image: node:12.8-alpine
+    build: ./backend
     user: 1000:1000
-    image: node:12.8-1-alpine
     working_dir: /opt/app
     command: npm run dev
     expose:
@@ -22,10 +21,9 @@ services:
     tty: true
   client:
     container_name: periodic-table-client
-    build:
-      context: ./frontend
+    image: node:12.8-alpine
+    build: ./frontend
     user: 1000:1000
-    image: node:12.8.1-alpine
     working_dir: /opt/app
     command: npm run dev
     ports:
