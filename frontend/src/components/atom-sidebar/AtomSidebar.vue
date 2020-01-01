@@ -8,9 +8,7 @@
             :key="traitPair[0]"
             class="atom-stat"
           >
-            <TraitPair
-              :traitPair="traitPair"
-            />
+            <TraitPair :trait-pair="traitPair" />
           </div>
         </div>
       </Simplebar>
@@ -22,7 +20,7 @@
 import { mapState } from "vuex";
 import Simplebar from "simplebar-vue";
 import "simplebar/dist/simplebar.min.css";
-import TraitPair from "@/components/atom-sidebar/TraitPair"
+import TraitPair from "@/components/atom-sidebar/TraitPair";
 
 export default {
   name: "AtomSidebar",
@@ -46,7 +44,7 @@ export default {
       }
     },
     selected(traitName) {
-      let a = ''
+      let a = "";
       switch (traitName) {
         case "Abundance":
           a = "Crust Abundance";
@@ -60,9 +58,9 @@ export default {
     },
     change(traitName, toChange) {
       console.log(this.atomTraitsActive);
-      console.log(this.atomTraitsActive[traitName][toChange])
-      console.log(toChange)
-      this.aselected = this.atomTraitsActive[traitName][toChange]
+      console.log(this.atomTraitsActive[traitName][toChange]);
+      console.log(toChange);
+      this.aselected = this.atomTraitsActive[traitName][toChange];
     }
   }
 };

@@ -1,4 +1,4 @@
-module.exports = {
+{
   "presets": [
     "@babel/env"
   ],
@@ -6,4 +6,4 @@ module.exports = {
     "@babel/proposal-optional-chaining",
     "@babel/proposal-nullish-coalescing-operator"
   ]
-};
+}

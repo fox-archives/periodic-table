@@ -14,10 +14,10 @@
     <p v-if="typeof traitPair[1] === 'object'" class="atom-status-text">
       <label for="atom-select"></label>
       <select
-        name="atom-selector"
-        class="select-menu"
         id="atom-select"
         v-model="selected"
+        name="atom-selector"
+        class="select-menu"
         @change="updateTraitPairValue($event)"
       >
         <option v-for="(value, name) in traitPair[1]" :key="name" :value="name">
@@ -49,6 +49,13 @@ export default {
   computed: {
     ...mapState("mainAtomTable", ["atomTraitsUnits", "atomTraitsActive"])
   },
+  data() {
+    return {
+      selected: "bravo",
+      finalValue: "delta", // final value used in case traitPair[1] is an object,
+      traitPairCategory: "alfa" // traitPairCategory is something like 'Abundance'. For example, if the prop traitPair is an array, it would be the value of [traitPair[0]]
+    };
+  },
   watch: {
     atomTraitsActive() {
       if (typeof this.traitPair[1] === "object") {
@@ -70,13 +77,6 @@ export default {
         traitPairName
       ];
     }
-  },
-  data() {
-    return {
-      selected: "bravo",
-      finalValue: "delta", // final value used in case traitPair[1] is an object,
-      traitPairCategory: "alfa" // traitPairCategory is something like 'Abundance'. For example, if the prop traitPair is an array, it would be the value of [traitPair[0]]
-    };
   }
 };
 </script>

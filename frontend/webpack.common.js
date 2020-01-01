@@ -1,23 +1,13 @@
-let path = require("path");
-let VueLoaderPlugin = require("vue-loader/lib/plugin");
-let HtmlWebpackPlugin = require("html-webpack-plugin");
-let BundleAnalyzerPlugin = require("webpack-bundle-analyzer"); // eslint-disable-line
+import path from "path";
+import VueLoaderPlugin from "vue-loader/lib/plugin";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import BundleAnalyzerPlugin from "webpack-bundle-analyzer";
 
-console.log(process.env.NODE_ENV);
-
-module.exports = {
+export default {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js"
-    // filename: '[name].[hash].bundle.js',
-  },
-  optimization: {
-    // The SplitChunksPlugin extracts common dependencies into existing entry chunk or an entirely new chunk
-    //
-    // splitChunks: {
-    //   chunks: 'all'
-    // }
   },
   module: {
     rules: [

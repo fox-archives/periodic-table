@@ -1,13 +1,13 @@
-let { CleanWebpackPlugin } = require("clean-webpack-plugin");
-let MiniCssExtractPlugin = require("mini-css-extract-plugin");
-let OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-let UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-let CompressionPlugin = require("compression-webpack-plugin");
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import OptimizeCssAssetsPlugin from "optimize-css-assets-webpack-plugin";
+import TerserPlugin from "terser-webpack-plugin";
+import CompressionPlugin from "compression-webpack-plugin";
+import merge from "webpack-merge";
 
-let merge = require("webpack-merge");
-let common = require("./webpack.common.js");
+import common from "./webpack.common";
 
-module.exports = merge.smart(common, {
+export default merge.smart(common, {
   mode: "production",
   devtool: "source-map",
   module: {
@@ -34,9 +34,9 @@ module.exports = merge.smart(common, {
   },
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
+      new TerserPlugin({
         sourceMap: true
-      }), // Minify JS
+      }),
       new OptimizeCssAssetsPlugin(), // Minify CSS
       new CompressionPlugin() // Gzip JS and CSS
     ]
@@ -47,8 +47,6 @@ module.exports = merge.smart(common, {
     }),
     new MiniCssExtractPlugin({
       filename: "bundle.css"
-      // filename: '[name].[hash].bundle.css',
-      // chunkFilename: '[name].[id].css'
     })
   ]
 });

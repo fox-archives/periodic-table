@@ -1,12 +1,14 @@
-let webpack = require("webpack");
-let FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
-let DashboardPlugin = require("webpack-dashboard/plugin");
-require("dotenv").config({ path: "../" });
+import dotenv from "dotenv";
+import webpack from "webpack";
+import FriendlyErrorsWebpackPlugin from "friendly-errors-webpack-plugin";
+import DashboardPlugin from "webpack-dashboard/plugin";
+import merge from "webpack-merge";
 
-let merge = require("webpack-merge");
-let common = require("./webpack.common.js");
+import common from "./webpack.common";
 
-module.exports = merge.smart(common, {
+dotenv.config({ path: "../" });
+
+export default merge.smart(common, {
   mode: "development",
   devtool: "cheap-module-eval-source-map",
   output: {
