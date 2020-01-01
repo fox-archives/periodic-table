@@ -1,14 +1,16 @@
 <template>
   <div class="info-modal">
-    <div class="info-modal-inner">
-      <h1>Info</h1>
-      <p>
-        This periodic table application was built by Edwin Kofler. The website
-        is in active development - a feedback system will be instantiated in the
-        near future.
-      </p>
-      <button @click="setInfoModalActive(false)">close</button>
-    </div>
+    <transition name="popup">
+      <div v-if="infoModalActive" class="info-modal-inner">
+        <h1>Info</h1>
+        <p>
+          This periodic table application was built by Edwin Kofler. The website
+          is in active development - a feedback system will be instantiated in
+          the near future.
+        </p>
+        <button @click="setInfoModalActive(false)">close</button>
+      </div>
+    </transition>
   </div>
 </template>
 

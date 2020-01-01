@@ -73,7 +73,7 @@
       </li>
     </ul>
 
-    <InfoModal v-if="infoModalActive" />
+    <InfoModal />
   </nav>
 </template>
 

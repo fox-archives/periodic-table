@@ -10,7 +10,39 @@
 .info-modal-inner {
   opacity: 0.95;
   border-radius: $border-radius;
-  padding: 15px;
+  padding: 30px;
   position: relative;
   height: 100%;
+}
+
+.popup-enter-active,
+.popup-leave-active {
+  transition: all 0.15s ease-out;
+  transform: scale(1.05);
+}
+
+.popup-enter,
+.popup-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 10px;
+}
+button {
+  font-size: 1.2rem;
+  padding: 5px 6px;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  box-shadow: 2px 2px 4px $ld-shadow;
 }
