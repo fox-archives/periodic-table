@@ -11,48 +11,48 @@
 
       <router-link tag="li" to="/properties">
         <div class="inner" @click="switchAtomTabWrapper('properties')">
-          <list-icon class="icon feather-icon" />
+          <ListIcon class="icon feather-icon" />
           <h2>Properties</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/electrons">
         <div class="inner" @click="switchAtomTabWrapper('electrons')">
-          <electrons class="icon custom-icon" />
+          <ElectronsIcon class="icon custom-icon" />
           <h2>Electrons</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/orbitals">
         <div class="inner" @click="switchAtomTabWrapper('orbitals')">
-          <orbitals class="icon custom-icon" />
+          <OrbitalsIcon class="icon custom-icon" />
           <h2>Orbitals</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/isotopes">
         <div class="inner" @click="switchAtomTabWrapper('isotopes')">
-          <isotopes class="icon custom-icon" />
+          <IsotopesIcon class="icon custom-icon" />
           <h2>Isotopes</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/explore">
         <div class="inner" @click="switchAtomTabWrapper('explore')">
-          <map-icon class="icon feather-icon" />
+          <MapIcon class="icon feather-icon" />
           <h2>Explore</h2>
         </div>
       </router-link>
 
       <router-link tag="li" to="/trivia">
         <div class="inner" @click="switchAtomTabWrapper('trivia')">
-          <check-icon class="icon feather-icon" />
+          <CheckIcon class="icon feather-icon" />
           <h2>Trivia</h2>
         </div>
       </router-link>
 
-      <li id="info-nav-item" class="no-text">
-        <info-icon class="icon feather-icon" />
+      <li id="info-nav-item" class="no-text" @click="setInfoModalActive(true)">
+        <InfoIcon class="icon feather-icon" />
       </li>
 
       <!-- <li class="no-text">
@@ -64,44 +64,55 @@
       </li> -->
 
       <li id="menu-mobile" class="no-text">
-        <menu-icon class="icon feather-icon" />
+        <MenuIcon class="icon feather-icon" />
       </li>
     </ul>
+
+    <InfoModal v-if="infoModalActive" />
   </nav>
 </template>
 
 <script>
-import { mapState, mapActions } from "vuex";
+import { mapState, mapActions, mapMutations } from "vuex";
 
 // Importing to-be-used SVG icons
-import List from "@eankeen/vue-feather-icons/components/list.vue";
-import Electrons from "@/assets/svg/icons/electrons.svg";
-import Orbitals from "@/assets/svg/icons/orbitals.svg";
-import Isotopes from "@/assets/svg/icons/isotopes.svg";
-import Map1 from "@eankeen/vue-feather-icons/components/map.vue"; // Explore
-import Check from "@eankeen/vue-feather-icons/components/check.vue"; // Trivia
-import Info from "@eankeen/vue-feather-icons/components/info.vue";
+import ListIcon from "@eankeen/vue-feather-icons/components/list.vue";
+import ElectronsIcon from "@/assets/svg/icons/electrons.svg";
+import OrbitalsIcon from "@/assets/svg/icons/orbitals.svg";
+import IsotopesIcon from "@/assets/svg/icons/isotopes.svg";
+import MapIcon from "@eankeen/vue-feather-icons/components/map.vue"; // Explore
+import CheckIcon from "@eankeen/vue-feather-icons/components/check.vue"; // Trivia
+import InfoIcon from "@eankeen/vue-feather-icons/components/info.vue";
 // import Settings from "@eankeen/vue-feather-icons/components/settings.vue";
 // import Search from "@eankeen/vue-feather-icons/components/search.vue";
-import Menu from "@eankeen/vue-feather-icons/components/menu.vue";
+import MenuIcon from "@eankeen/vue-feather-icons/components/menu.vue";
+
+import InfoModal from "@/components/info-modal/InfoModal";
 
 export default {
   name: "Navigation",
   components: {
     // Icon Components
-    ListIcon: List,
-    Electrons,
-    Orbitals,
-    Isotopes,
-    MapIcon: Map1, // Explore
-    CheckIcon: Check, // Trivia
-    InfoIcon: Info,
+    ListIcon,
+    ElectronsIcon,
+    OrbitalsIcon,
+    IsotopesIcon,
+    MapIcon, // Explore
+    CheckIcon, // Trivia
+    InfoIcon,
     // SettingsIcon: Settings,
     // SearchIcon: Search,
-    MenuIcon: Menu
+    MenuIcon,
+    InfoModal
+  },
+  data() {
+    return {
+      showInfoModel: true
+    };
   },
   computed: {
-    ...mapState("mainAtomTable", ["options"])
+    ...mapState("mainAtomTable", ["options"]),
+    ...mapState("modals", ["infoModalActive"])
   },
   methods: {
     ...mapActions("mainAtomTable", ["switchAtomTab"]),
@@ -112,10 +123,11 @@ export default {
         this.switchAtomTab({ to: "Electrons" });
       } else if (atomTabToSwitchTo === "orbitals") {
         // eslint-disable-next-line
-      } else if (atomTabToSwitchTo === 'isotopes') {
+      } else if (atomTabToSwitchTo === "isotopes") {
       }
       // explore, trivia, excluded
-    }
+    },
+    ...mapMutations("modals", ["setInfoModalActive"])
   }
 };
 </script>

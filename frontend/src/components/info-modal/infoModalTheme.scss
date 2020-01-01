@@ -1,0 +1,7 @@
+@mixin infoModalThemeDefault($background, $hasShadow, $shadow, $shadowHover) {
+  @include shadow(".info-modal-inner", $hasShadow, $shadow, $shadowHover);
+
+  .info-modal-inner {
+    background-color: $background;
+  }
+}
