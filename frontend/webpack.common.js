@@ -1,7 +1,7 @@
 import path from "path";
 import VueLoaderPlugin from "vue-loader/lib/plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import BundleAnalyzerPlugin from "webpack-bundle-analyzer";
+// import BundleAnalyzerPlugin from "webpack-bundle-analyzer";
 
 export default {
   entry: "./src/index.js",

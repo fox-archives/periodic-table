@@ -10,10 +10,10 @@
     "prod": "cross-env NODE_ENV=production webpack -r esm --progress --config webpack.prod.js",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js:fix && yarn lint:css:fix",
-    "lint:js": "eslint -c .eslintrc.js **/*.{js,vue}",
-    "lint:js:fix": "eslint -c .eslintrc.js **/*.{js,vue} --fix",
-    "lint:css": "stylelint --config .stylelintrc.js **/*.scss",
-    "lint:css:fix": "stylelint --config .stylelintrc.js **/*.scss --fix"
+    "lint:js": "eslint **/*.{js,vue}",
+    "lint:js:fix": "eslint **/*.{js,vue} --fix",
+    "lint:css": "stylelint **/*.scss",
+    "lint:css:fix": "stylelint **/*.scss --fix"
   },
   "dependencies": {
     "axios": "^0.19.0",

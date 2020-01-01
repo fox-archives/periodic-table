@@ -57,6 +57,7 @@
   grid-template-rows: repeat(5, auto);
   width: 100%;
   height: 100%;
+  padding: 5px;
 }
 
 .panel-top .atom-stat {
@@ -64,8 +65,4 @@
   background-color: $oc-gray-2;
   border-radius: $border-radius-small;
   margin: 2px;
-}
-
-.panel-top .atom-info-inner {
-  padding: 5px;
 }

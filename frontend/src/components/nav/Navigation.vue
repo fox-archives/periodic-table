@@ -81,8 +81,8 @@ import Isotopes from "@/assets/svg/icons/isotopes.svg";
 import Map1 from "@eankeen/vue-feather-icons/components/map.vue"; // Explore
 import Check from "@eankeen/vue-feather-icons/components/check.vue"; // Trivia
 import Info from "@eankeen/vue-feather-icons/components/info.vue";
-import Settings from "@eankeen/vue-feather-icons/components/settings.vue";
-import Search from "@eankeen/vue-feather-icons/components/search.vue";
+// import Settings from "@eankeen/vue-feather-icons/components/settings.vue";
+// import Search from "@eankeen/vue-feather-icons/components/search.vue";
 import Menu from "@eankeen/vue-feather-icons/components/menu.vue";
 
 export default {
@@ -96,8 +96,8 @@ export default {
     MapIcon: Map1, // Explore
     CheckIcon: Check, // Trivia
     InfoIcon: Info,
-    SettingsIcon: Settings,
-    SearchIcon: Search,
+    // SettingsIcon: Settings,
+    // SearchIcon: Search,
     MenuIcon: Menu
   },
   computed: {

@@ -11,12 +11,18 @@
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint:fix"
+    }
+  },
   "devDependencies": {
     "del": "^5.0.0",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "gulp-jsonminify": "^1.1.0",
+    "husky": "^3.1.0",
     "lerna": "^3.19.0",
     "plugin-error": "^1.0.1",
     "through2": "^3.0.1"

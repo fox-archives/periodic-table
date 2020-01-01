@@ -1,13 +1,13 @@
-module.exports = {
-  extends: [
+{
+  "extends": [
     "stylelint-config-standard",
     "stylelint-prettier/recommended"
   ],
-  plugins: [
+  "plugins": [
     "stylelint-order",
     "stylelint-no-unsupported-browser-features"
   ],
-  rules: {
+  "rules": {
     "order/order": [
       "dollar-variables",
       "custom-properties",
@@ -18,9 +18,9 @@ module.exports = {
       "severity": "warning"
     }],
     "at-rule-no-unknown": [true, {
-      ignoreAtRules: [
+      "ignoreAtRules": [
         "function", "each", "if", "return", "include", "mixin", "for"
       ]
     }]
   }
-};
+}

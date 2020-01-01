@@ -39,16 +39,6 @@ export default {
       default: () => ["Atomic Number", 9999]
     }
   },
-  created() {
-    if (typeof this.traitPair[1] === "object") {
-      this.traitPairCategory = this.traitPair[0]; // this is only used if traitPair[1] is an object
-      this.selected = Object.entries(this.traitPair[1])[0][0];
-      this.updateTraitPairValue();
-    }
-  },
-  computed: {
-    ...mapState("mainAtomTable", ["atomTraitsUnits", "atomTraitsActive"])
-  },
   data() {
     return {
       selected: "bravo",
@@ -62,6 +52,16 @@ export default {
         this.updateTraitPairValue();
       }
     }
+  },
+  created() {
+    if (typeof this.traitPair[1] === "object") {
+      this.traitPairCategory = this.traitPair[0]; // this is only used if traitPair[1] is an object
+      this.selected = Object.entries(this.traitPair[1])[0][0];
+      this.updateTraitPairValue();
+    }
+  },
+  computed: {
+    ...mapState("mainAtomTable", ["atomTraitsUnits", "atomTraitsActive"])
   },
   methods: {
     unit(traitName) {
