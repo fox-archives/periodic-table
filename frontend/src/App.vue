@@ -2,19 +2,19 @@
   <div id="content" :class="[options.themeType, options.panelLayout]">
     <Navigation />
     <router-view />
-    <Foot />
+    <Footer />
   </div>
 </template>
 
 <script>
 import { mapState, mapMutations } from "vuex";
-import Navigation from "@/components/nav/Navigation.vue";
-import Foot from "@/components/foot/Foot.vue";
+import Navigation from "@/components/nav/Navigation";
+import Footer from "@/components/foot/Footer";
 
 export default {
   components: {
     Navigation,
-    Foot
+    Footer
   },
   watch: {
     $route() {

@@ -2,7 +2,7 @@
   <div id="grid-container-outer">
     <div id="grid-container" ref="idGridContainer">
       <div v-if="!ready" id="grid-container-loading-view">
-        <periodic-table-loading />
+        <PeriodicTableLoading />
       </div>
       <div
         v-if="ready"
@@ -107,7 +107,7 @@ import PeriodicTableLoading from "@/components/periodic-table/PeriodicTableLoadi
 export default {
   name: "PeriodicTable",
   components: {
-    "periodic-table-loading": PeriodicTableLoading
+    PeriodicTableLoading
   },
   data() {
     return {

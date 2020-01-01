@@ -78,7 +78,7 @@ import List from "@eankeen/vue-feather-icons/components/list.vue";
 import Electrons from "@/assets/svg/icons/electrons.svg";
 import Orbitals from "@/assets/svg/icons/orbitals.svg";
 import Isotopes from "@/assets/svg/icons/isotopes.svg";
-import Map from "@eankeen/vue-feather-icons/components/map.vue"; // Explore
+import Map1 from "@eankeen/vue-feather-icons/components/map.vue"; // Explore
 import Check from "@eankeen/vue-feather-icons/components/check.vue"; // Trivia
 import Info from "@eankeen/vue-feather-icons/components/info.vue";
 import Settings from "@eankeen/vue-feather-icons/components/settings.vue";
@@ -93,7 +93,7 @@ export default {
     Electrons,
     Orbitals,
     Isotopes,
-    MapIcon: Map, // Explore
+    MapIcon: Map1, // Explore
     CheckIcon: Check, // Trivia
     InfoIcon: Info,
     SettingsIcon: Settings,
@@ -121,10 +121,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// Variables, mixins, and common components
 @import "~@/styles/variables.scss";
-// @import "~@/styles/tags.scss";
-// Structure
 @import "navigation";
 @import "navigationMobile";
 @import "navigationThemes";

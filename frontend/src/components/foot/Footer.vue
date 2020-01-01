@@ -22,7 +22,7 @@ export default {
 
 <style scoped lang="scss">
 @import "~@/styles/variables.scss";
-@import "foot";
+@import "footer";
 
 .light-def {
   p,
