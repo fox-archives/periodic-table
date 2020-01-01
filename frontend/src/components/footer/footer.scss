@@ -21,35 +21,3 @@ a {
     text-decoration: underline;
   }
 }
-
-p {
-  display: none;
-}
-
-#name-lg {
-  display: inline;
-}
-
-// Show medium copyright notice (name 2) on browser starting from 410px
-@media (max-width: 410px) {
-  p#name1,
-  p#name3 {
-    display: none;
-  }
-
-  p#name2 {
-    display: inline;
-  }
-}
-
-// Show small copyright notice (name 3) on browser starting from 340px
-@media (max-width: 340px) {
-  p#name1,
-  p#name2 {
-    display: none;
-  }
-
-  p#name3 {
-    display: inline;
-  }
-}

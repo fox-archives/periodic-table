@@ -1,13 +1,7 @@
 <template>
   <footer id="footer">
-    <p id="name-lg">
+    <p>
       © 2019 Edwin Kofler
-    </p>
-    <p id="name-md">
-      © E. Kofler
-    </p>
-    <p id="name-sm">
-      ©
     </p>
     <!-- <a href="#">About</a> -->
     <!-- <a href="https://discord.gg/eZMuVnu">Discord</a> -->
