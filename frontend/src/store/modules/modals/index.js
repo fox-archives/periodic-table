@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    infoModalActive: true
+    infoModalActive: false
   },
   mutations: {
     setInfoModalActive(state, newValue) {

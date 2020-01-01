@@ -9,49 +9,54 @@
         </div>
       </li>
 
-      <router-link tag="li" to="/properties">
+      <router-link to="/properties">
         <div class="inner" @click="switchAtomTabWrapper('properties')">
           <ListIcon class="icon feather-icon" />
           <h2>Properties</h2>
         </div>
       </router-link>
 
-      <router-link tag="li" to="/electrons">
+      <router-link to="/electrons">
         <div class="inner" @click="switchAtomTabWrapper('electrons')">
           <ElectronsIcon class="icon custom-icon" />
           <h2>Electrons</h2>
         </div>
       </router-link>
 
-      <router-link tag="li" to="/orbitals">
+      <router-link to="/orbitals">
         <div class="inner" @click="switchAtomTabWrapper('orbitals')">
           <OrbitalsIcon class="icon custom-icon" />
           <h2>Orbitals</h2>
         </div>
       </router-link>
 
-      <router-link tag="li" to="/isotopes">
+      <router-link to="/isotopes">
         <div class="inner" @click="switchAtomTabWrapper('isotopes')">
           <IsotopesIcon class="icon custom-icon" />
           <h2>Isotopes</h2>
         </div>
       </router-link>
 
-      <router-link tag="li" to="/explore">
+      <router-link to="/explore">
         <div class="inner" @click="switchAtomTabWrapper('explore')">
           <MapIcon class="icon feather-icon" />
           <h2>Explore</h2>
         </div>
       </router-link>
 
-      <router-link tag="li" to="/trivia">
+      <router-link to="/trivia">
         <div class="inner" @click="switchAtomTabWrapper('trivia')">
           <CheckIcon class="icon feather-icon" />
           <h2>Trivia</h2>
         </div>
       </router-link>
 
-      <li id="info-nav-item" class="no-text" @click="setInfoModalActive(true)">
+      <li
+        id="info-nav-item"
+        class="no-text"
+        tabindex="0"
+        @click="setInfoModalActive(true)"
+      >
         <InfoIcon class="icon feather-icon" />
       </li>
 
