@@ -1,0 +1,8 @@
+{
+  "**/*.{js,vue}": [
+    "yarn lint:js:fix", "git add"
+  ],
+  "**/*.{css,scss}": [
+    "yarn lint:css:fix", "git add"
+  ]
+}
