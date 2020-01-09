@@ -7,22 +7,22 @@ const outputFolder = "build/atom-tab-data";
 
 // PROPERTIES TAB
 {
-  let propertiesRootFileNames = [
-    "basic-atom-properties/atomicNumber",
-    "basic-atom-properties/atomicWeight",
-    "material-properties/density",
-    "thermodynamic-properties/boilingPoint",
-    "thermodynamic-properties/meltingPoint"
+  const propertiesRootFileNames = [
+    "1-basic-atom-properties/atomicNumber",
+    "1-basic-atom-properties/atomicWeight",
+    "2-material-properties/density",
+    "3-thermodynamic-properties/boilingPoint",
+    "3-thermodynamic-properties/meltingPoint"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
-  let abundanceFileNames = [
+  const abundanceFileNames = [
     "crustAbundance",
     "humanAbundance",
     "meteoriteAbundance",
     "oceanAbundance",
     "solarAbundance",
     "universeAbundance"
-  ].map(fileName => `${dirname}/wolfram-data-groups/abundance-properties/${fileName}.json`);
+  ].map(fileName => `${dirname}/wolfram-data-groups/5-abundance-properties/${fileName}.json`);
 
   atomArrayExtract(propertiesRootFileNames, {
     "Abundance": abundanceFileNames
@@ -37,16 +37,16 @@ const outputFolder = "build/atom-tab-data";
 
 // ELECTRONS TAB
 {
-  let electronTabRootFilenames = [
-    "basic-atom-properties/atomicNumber",
-    "basic-atom-properties/atomicWeight"
+  const electronTabRootFilenames = [
+    "1-basic-atom-properties/atomicNumber",
+    "1-basic-atom-properties/atomicWeight"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
-  let radiusFileNames = [
-    "atomic-properties/atomicRadius",
-    "atomic-properties/covalentRadius",
-    "material-properties/soundSpeed",
-    "material-properties/thermalConductivity"
+  const radiusFileNames = [
+    "9-atomic-properties/atomicRadius",
+    "9-atomic-properties/covalentRadius",
+    "2-material-properties/soundSpeed",
+    "2-material-properties/thermalConductivity"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
   atomArrayExtract(electronTabRootFilenames, {
