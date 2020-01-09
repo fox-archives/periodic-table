@@ -57,9 +57,15 @@ iterateAtomProperty[
   Unevaluated[atomTransform]
 ];
 
+phaseTransform[prop_]:= (
+  If[StringContainsQ[ToString@prop, "EntityClass[Element, "],
+    Return@fixEntityClass[prop],
+    Return@fixUnknowns[prop];
+  ];
+);
 iterateAtomProperty[
   "phase",
-  Unevaluated[atomTransform]
+  Unevaluated[phaseTransform]
 ];
 
 iterateAtomProperty[

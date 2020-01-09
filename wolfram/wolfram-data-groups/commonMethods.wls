@@ -7,10 +7,11 @@
 *)
 unitMappingsData = Import["unitMappings.json", "RawJSON"];
 
-gg[data_] := (
-  Print[data];
-  Return[data];
+(* substrings out the "EntityClass[Element, " part *)
+fixEntityClass[data_] := (
+  Return@StringDrop[StringDrop[ToString@data, 21], -1];
 );
+
 
 (*
   general sanitize function independent of periodic table elements
@@ -26,6 +27,7 @@ sanitize[data_] := (
 
   Return@ToString[data];
 );
+
 
 (*
   data
@@ -44,7 +46,8 @@ fixUnknowns[data_] := (
     Return[QuantityMagnitude@data];
   ];
 
-  Return["IdkNotANumberOrSomething"];
+  (* returning `ToString[data]` fixes 4-electromagnetic-optical-properties/color.json *)
+  Return@ToString[data];
 );
 
 

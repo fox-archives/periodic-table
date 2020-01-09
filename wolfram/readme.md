@@ -43,10 +43,10 @@ files that directly generate atom data based on a *single* property. categorizat
 
 ```md
 wolfram-data-groups
-  [x] basic-atom-properties
+  [x] 1-basic-atom-properties
     [x] atomic number
     [x] atomic weight
-  [x] material-properties
+  [x] 2-material-properties
     [x] brinell hardness
     [x] bulk modulus
     [x] density
@@ -60,16 +60,78 @@ wolfram-data-groups
     [x] thermal expansion
     [x] vickers hardness
     [x] young modulus
-  [x] thermodynamic-properties
-  [x] electromagnetic-optical-properties
-  [x] abundance-properties
-  [ ] basic-chemical-properties
-  [ ] periodic-table-properties
-  [ ] crystallographic properties
-  [x] atomic-properties
-  [x] nuclear-properties
-  [ ] names-properties
-  [ ] historical-commercial-properties
+  [x] 3-thermodynamic-properties
+    [x] absolute boiling point
+    [x] absolute melting point
+    [x] abiabatic index
+    [x] boiling point
+    [x] critical pressure
+    [x] critical temperature
+    [x] curie point
+    [x] fusion heat
+    [x] melting point
+    [x] neel point
+    [x] phase
+    [x] specific heat
+    [x] superconducting point
+    [x] vaporization heat
+  [x] 4-electromagnetic-optical-properties
+    [x] color
+    [x] electrical conductivity (weird decimals though)
+    [] electrical type
+    [x] mass magnetic susceptibility
+    [x] molar magnetic susceptibility
+    [x] refractive index
+    [x] resistivity
+    [x] volume magnetic susceptibility
+  [x] 5-abundance-properties
+    [x] crust abundance
+    [x] h uman abundance
+    [x] meteorite abundnace
+    [x] ocean abundance
+    [x] solar abundance
+    [x] universe abudance
+  [x] 6-periodic-table-properties
+    [x] block
+    [x] group
+    [x] period
+    [x] series
+  [ ] 7-basic-chemical-properties
+    [ ] allotropic multiplicities
+    [ ] common compund names
+    [x] electron affinity
+    [x] electronegativity
+    [x] gas atomic multiplicities
+    [x] valence
+  [ ] 8-crystallographic properties
+  [x] 9-atomic-properties
+    [x] atomic radius
+    [x] covalent radius
+    [ ] electron configuration
+    [ ] electron configuratin string
+    [ ] electron shell configuration
+    [ ] ionization energies
+    [ ] quantum numbers
+    [x] van der waals radius
+  [x] 10-nuclear-properties
+    [x] decay mode
+    [ ] isotope abundance
+    [ ] isotop half lives
+    [ ] known isotopes
+    [ ] molar radioactivity
+    [ ] neutron cross section
+    [x] neutron mass absorption
+    [ ] specific radioactivity
+    [ ] stable isotopes
+  [ ] 11-names-related-properties
+    [x] abbreviation
+    [ ] allotrope names
+    [ ] alternate names
+    [x] cas number
+    [ ] icon color
+    [x] name
+    [x] standard name
+  [ ] 12-historical-commercial-properties
+    [ ] discovery countries
+    [ ] discovery year
 ```
-
-each atom `value` in the `.json` files should have one of 4 values
