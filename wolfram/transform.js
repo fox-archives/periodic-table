@@ -1,6 +1,6 @@
 import path from "path";
 import { fileURLToPath } from "url";
-import { atomArrayExtract, outputFile } from "./helper.transform";
+import { atomArrayExtract, outputFile } from "./transform.helper.js";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const outputFolder = "build/atom-tab-data";
