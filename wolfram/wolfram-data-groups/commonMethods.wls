@@ -7,6 +7,25 @@
 *)
 unitMappingsData = Import["unitMappings.json", "RawJSON"];
 
+gg[data_] := (
+  Print[data];
+  Return[data];
+);
+
+(*
+  general sanitize function independent of periodic table elements
+*)
+sanitize[data_] := (
+  If[FailureQ[data],
+    Return["FailureQ"];
+  ];
+  
+  If[MissingQ[data],
+    Return["MissingQ"];
+  ];
+
+  Return@ToString[data];
+);
 
 (*
   data
@@ -14,18 +33,18 @@ unitMappingsData = Import["unitMappings.json", "RawJSON"];
 *)
 fixUnknowns[data_] := (
   If[FailureQ[data],
-    Return["Failed"];
+    Return["FailureQ"];
   ];
   
   If[MissingQ[data],
-    Return["Unknown"];
+    Return["MissingQ"];
   ];
 
   If[NumberQ[QuantityMagnitude@data],
     Return[QuantityMagnitude@data];
   ];
 
-  Return["Error"];
+  Return["IdkNotANumberOrSomething"];
 );
 
 
@@ -41,51 +60,61 @@ fixUnknowns[data_] := (
 *)
 iterateAtomProperty[
   atomProperty_,
-  atomValueTransformation_,
-  lanthanitesCase_:"lanthanites case",
-  actinidesCase_:"actinides case"
+  atomValueTransformation_
 ] := (
-  (* AtomProperty | Atom Property *)
+  (* AtomProperty | Atom Property | atomProperty*)
   atomPropertyPascalCase = StringDelete[StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]], " "];
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
-  
+  atomPropertyCamelCase = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]];
+
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
-      "value" -> atomValueTransformation@ElementData[i, atomPropertyPascalCase]
+      "value" -> atomValueTransformation@ElementData[i, atomPropertyPascalCase],
+      "lowerBound" -> fixUnknowns@Min@ElementData[1, atomPropertyPascalCase, "Interval"],
+      "upperBound" -> fixUnknowns@Max@ElementData[1, atomPropertyPascalCase, "Interval"]
     }];
 
     If[i == 56,
       atomArrayData = Append[atomArrayData, {
         "name" -> "Lanthanites",
-        "value" -> lanthanitesCase
+        "value" -> "lanthanites case"
       }];
     ];
 
     If[i == 88,
       atomArrayData = Append[atomArrayData, {
         "name" -> "Actinides",
-        "value" -> actinidesCase
+        "value" -> "actinides case"
       }];
     ];
   )];
 
   rootData = {
     "meta" -> {
+      "annotations" -> {
+        "description" -> sanitize@ElementData[1, atomPropertyPascalCase, "Description"],
+        "longDescription" -> sanitize@ElementData[1, atomPropertyPascalCase, "LongDescription"],
+        "note" -> sanitize@ElementData[1, atomPropertyPascalCase, "Note"],
+        "units" -> sanitize@ElementData[1, atomPropertyPascalCase, "Units"],
+        "unitsName" -> sanitize@ElementData[1, atomPropertyPascalCase, "UnitsName"],
+        "unitsNotation" -> sanitize@ElementData[1, atomPropertyPascalCase, "UnitsNotation"],
+        "unitsStandardName" -> sanitize@ElementData[1, atomPropertyPascalCase, "UnitsStandardName"]
+      },
       "atomPropertyName" -> atomPropertyPascalCase,
       "atomPropertyNameWithSpace" -> atomPropertyPascalCaseWithSpace,
-      "description" -> ElementData[1, atomPropertyPascalCase, "Description"],
-      "longDescription" -> ElementData[1, atomPropertyPascalCase, "LongDescription"],
-      "unit" -> unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["short"]],
-      "unitLong" -> unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["long"]]
+      "atomPropertyNameCamelCase" -> atomPropertyCamelCase,
+      "atomPropertyNameLowercaseWithSpace" -> atomProperty,
+      "unit" -> sanitize@unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["short"]],
+      "unitLong" -> sanitize@unitMappingsData[["mappings"]][[ToString@ElementData[1, atomPropertyPascalCase, "Units"]]][["long"]]
       (* "missingCount" -> Count[atomsUnitData, _Missing] *)
     },
     "data" -> atomArrayData
   };
+  (* Print["rootData ", rootData]; *)
 
-  jsonFile = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]] ~~ ".json";
+  jsonFile = atomPropertyCamelCase ~~ ".json";
   Export[jsonFile, rootData, "JSON"];
-
   Print[jsonFile <> " done"];
 );
