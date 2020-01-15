@@ -12,6 +12,12 @@ build/light:
 	cd frontend && yarn prod
 	yarn transferFrontend
 
+build/wolfram:
+	cd wolfram && make build
+	cd wolfram && make dist
+	cd wolfram && yarn test
+	yarn transferWolfram
+
 build/full:
 	cd frontend && yarn prod
 	yarn transferFrontend

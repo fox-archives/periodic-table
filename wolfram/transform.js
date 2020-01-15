@@ -12,7 +12,17 @@ const outputFolder = "build/atom-tab-data";
     "1-basic-atom-properties/atomicWeight",
     "2-material-properties/density",
     "3-thermodynamic-properties/boilingPoint",
-    "3-thermodynamic-properties/meltingPoint"
+    "3-thermodynamic-properties/meltingPoint",
+    "2-material-properties/bulkModulus",
+    "2-material-properties/molarVolume",
+    "2-material-properties/soundSpeed",
+    "2-material-properties/thermalConductivity",
+    "2-material-properties/thermalExpansion",
+    "3-thermodynamic-properties/criticalPressure",
+    "3-thermodynamic-properties/criticalTemperature",
+    "3-thermodynamic-properties/fusionHeat",
+    "3-thermodynamic-properties/specificHeat",
+    "3-thermodynamic-properties/vaporizationHeat"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
   const abundanceFileNames = [
@@ -31,7 +41,7 @@ const outputFolder = "build/atom-tab-data";
       return outputFile(`${dirname}/${outputFolder}/atomTabProperties.json`, finalJson);
     })
     .catch(e => {
-      console.log(e);
+      console.error(e);
     });
 }
 
@@ -39,14 +49,15 @@ const outputFolder = "build/atom-tab-data";
 {
   const electronTabRootFilenames = [
     "1-basic-atom-properties/atomicNumber",
-    "1-basic-atom-properties/atomicWeight"
+    "1-basic-atom-properties/atomicWeight",
+    "2-material-properties/soundSpeed",
+    "2-material-properties/thermalConductivity"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
   const radiusFileNames = [
     "9-atomic-properties/atomicRadius",
     "9-atomic-properties/covalentRadius",
-    "2-material-properties/soundSpeed",
-    "2-material-properties/thermalConductivity"
+    "9-atomic-properties/vanDerWaalsRadius"
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
   atomArrayExtract(electronTabRootFilenames, {
@@ -56,6 +67,6 @@ const outputFolder = "build/atom-tab-data";
       return outputFile(`${dirname}/${outputFolder}/atomTabElectrons.json`, finalJson);
     })
     .catch(e => {
-      console.log(e);
+      console.error(e);
     });
 }

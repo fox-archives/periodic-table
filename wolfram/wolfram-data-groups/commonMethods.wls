@@ -121,14 +121,14 @@ iterateAtomProperty[
     If[i == 56,
       atomArrayData = Append[atomArrayData, {
         "name" -> "Lanthanites",
-        "value" -> "lanthanites case"
+        "value" -> ""
       }];
     ];
 
     If[i == 88,
       atomArrayData = Append[atomArrayData, {
         "name" -> "Actinides",
-        "value" -> "actinides case"
+        "value" -> ""
       }];
     ];
   )];
