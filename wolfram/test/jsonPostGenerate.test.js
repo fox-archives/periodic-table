@@ -19,22 +19,3 @@ import test from "ava";
     }
   });
 });
-
-
-[
-  "atomTabElectrons.json",
-  "atomTabProperties.json"
-].forEach(file => {
-  const filePath = path.resolve(__dirname, "../build/atom-tab-data", file);
-  test(`MissingQ, UnknownQ, etc. is NOT atom-tab-data/${file}`, async t => {
-    try {
-      const text = await fs.promises.readFile(filePath);
-      const json = JSON.parse(text);
-      json.data.forEach(atom => {
-        t.notRegex(JSON.stringify(atom), /(MissingQ|UnknownQ)/);
-      })
-    } catch (err) {
-      console.error(err);
-    }
-  });
-});

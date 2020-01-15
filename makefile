@@ -1,5 +1,7 @@
 .PHONY: all bootstrap build/light build/full release deploy
 
+default: build/full
+
 all: build/light release deploy
 
 bootstrap:
@@ -15,8 +17,8 @@ build/full:
 	yarn transferFrontend
 	cd wolfram && make generate
 	cd wolfram && make build
-	cd wolfram && yarn test
 	cd wolfram && make dist
+	cd wolfram && yarn test
 	yarn transferWolfram
 
 # release can be of major, minor, patch, premajor, preminor,

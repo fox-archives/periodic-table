@@ -4,7 +4,7 @@ import flatten from "gulp-flatten"
 import jsonminify from "gulp-jsonminify"
 import del from "del"
 
-import { removeDebug } from "./helper.gulpfile"
+import { removeDebug } from "./gulpfile.helper"
 
 async function makeDist() {
   const from = "build/atom-*-data/*.json"

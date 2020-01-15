@@ -1,6 +1,16 @@
 import fs from "fs";
 
 const DEBUG = false
+
+function fixMissingQAndUnknownQ(value) {
+  if (value === "MissingQ") {
+    return "N/A";
+  } else if (value === "UnknownQ") {
+    return "Unknown"
+  } else {
+    return value;
+  }
+}
 /*
   fileNames
     fileNames, corresponding to specific atom properties
@@ -33,7 +43,7 @@ function atomArrayExtract(fileNames, subFileNames) {
           let toAtomObject = finalJson.data[i];
 
           if (DEBUG) toAtomObject.debug[atomProperty] = fromAtomObject.name;
-          toAtomObject[atomProperty] = fromAtomObject.value;
+          toAtomObject[atomProperty] = fixMissingQAndUnknownQ(fromAtomObject.value);
 
         });
       })
@@ -72,7 +82,7 @@ function atomArrayExtract(fileNames, subFileNames) {
             let toAtomObject = finalJson.data[i];
 
             if (DEBUG) toAtomObject[key].debug[atomProperty] = fromAtomObject.name;
-            toAtomObject[key][atomProperty] = fromAtomObject.value;
+            toAtomObject[key][atomProperty] = fixMissingQAndUnknownQ(fromAtomObject.value);
           });
         })
         .catch(err => {
