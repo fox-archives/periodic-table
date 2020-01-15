@@ -8,7 +8,8 @@
   the 'Import' function, we can effectively get rid of this huge delay
 *)
 
-sourceWolframScriptsFromSuchFolders[file_] := (
+(* source wolfram-data-groups/**/*.wls *)
+sourceWolframDataGroups[file_] := (
   SetDirectory[file];
   Print["GENERATING " <> ToUpperCase[file]];
   Scan[Import, Select[FileNames[], !StringFreeQ[#, ".wls"] &]];
@@ -16,9 +17,10 @@ sourceWolframScriptsFromSuchFolders[file_] := (
   SetDirectory[".."];
 );
 SetDirectory["wolfram-data-groups"];
-Scan[sourceWolframScriptsFromSuchFolders, Sort@Select[FileNames[], DirectoryQ]];
+Scan[sourceWolframDataGroups, Sort@Select[FileNames[], DirectoryQ]];
 
-
+(* source build/atom-layout-data/*.wls *)
 SetDirectory["../build/atom-layout-data"];
+Print["GENERATING BUILD/ATOM-LAYOUT-DATA"]
 Import["./atomColorsTabElectrons.wls"];
 Import["./atomColorsTabProperties.wls"];

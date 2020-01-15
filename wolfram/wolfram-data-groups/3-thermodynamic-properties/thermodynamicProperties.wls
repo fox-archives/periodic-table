@@ -3,61 +3,65 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns@N[prop];
-);
-
 iterateAtomProperty[
   "absolute boiling point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "absolute melting point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "adiabatic index",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "boiling point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "critical pressure",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "critical temperature",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "curie point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "fusion heat",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "melting point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+neelPointLowerBound[prop_] := (
+  Return@fixUnknowns@N@Min@ElementData[i, atomPropertyPascalCase, "Interval"];
+);
+neelPointUpperBound[prop_] := (
+  Return@fixUnknowns@N@Max@ElementData[i, atomPropertyPascalCase, "Interval"];
+);
 iterateAtomProperty[
   "neel point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN],
+  Unevaluated[neelPointLowerBound],
+  Unevaluated[neelPointUpperBound]
 ];
 
-phaseTransform[prop_]:= (
+phaseAtomTransform[prop_] := (
   If[StringContainsQ[ToString@prop, "EntityClass[Element, "],
     Return@fixEntityClass[prop],
     Return@fixUnknowns[prop];
@@ -65,20 +69,20 @@ phaseTransform[prop_]:= (
 );
 iterateAtomProperty[
   "phase",
-  Unevaluated[phaseTransform]
+  Unevaluated[phaseAtomTransform]
 ];
 
 iterateAtomProperty[
   "specific heat",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "superconducting point",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "vaporization heat",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];

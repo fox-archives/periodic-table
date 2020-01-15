@@ -4,7 +4,6 @@
 DeleteFile["atomColorsTabProperties.json"];
 
 periodicTable = {};
-
 For[i = 1, i < 119, i++,
 	(*type = getType[ElementData[i, "Series"]];*)
 	series = ElementData[i, "Series"];
@@ -61,3 +60,4 @@ For[i = 1, i < 119, i++,
 ];
 
 Export["atomColorsTabProperties.json", periodicTable, "JSON"];
+Print["atomColorsTabProperties.json" <> " done"];

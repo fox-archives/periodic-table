@@ -3,36 +3,35 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns@N[prop];
+allotropicMultiplicitiesAtomTransform[prop_] := (
+  Return[prop];
 );
-
 iterateAtomProperty[
   "allotropic multiplicities",
-  Unevaluated[atomTransform]
+  Unevaluated[allotropicMultiplicitiesAtomTransform]
 ];
 
 iterateAtomProperty[
   "common compound names",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "electron affinity",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "electronegativity",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "gas atomic multiplicities",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "valence",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];

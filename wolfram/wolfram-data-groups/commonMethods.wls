@@ -3,18 +3,45 @@
 
 
 (*
-  import unit metadata once
+  import unit metadata
 *)
 unitMappingsData = Import["unitMappings.json", "RawJSON"];
+
+
+
+(*
+  helper functions *for* *Properties.wls generation
+*)
 
 (* substrings out the "EntityClass[Element, " part *)
 fixEntityClass[data_] := (
   Return@StringDrop[StringDrop[ToString@data, 21], -1];
 );
 
+(* substrings out Entity[Country, " part *)
+fixEntityCountry[data_] := (
+  Return@StringDrop[StringDrop[ToString@data, 16], -1];
+);
+
+(* substrings out DateObject[{ part *)
+fixDateObject[data_] := (
+  Return@StringDrop[StringDrop[ToString@data, 12], -24];
+);
+
+(* extract number and normalize *)
+atomTransformFixUnknownsWithN[prop_] := (
+  Return@fixUnknowns@N[prop];
+);
+
+(* normalize *)
+atomTransformFixUnknowns[prop_] := (
+  Return@fixUnknowns[prop];
+);
+
+
 
 (*
-  general sanitize function independent of periodic table elements
+  general sanitize function *for* this file only
 *)
 sanitize[data_] := (
   If[FailureQ[data],
@@ -27,6 +54,15 @@ sanitize[data_] := (
 
   Return@ToString[data];
 );
+
+lowerBoundDefault[prop_] := (
+  Return@fixUnknowns@Min@ElementData[i, atomPropertyPascalCase, "Interval"]
+);
+
+upperBoundDefault[prop_] := (
+  Return@fixUnknowns@Max@ElementData[i, atomPropertyPascalCase, "Interval"]
+);
+
 
 
 (*
@@ -51,6 +87,7 @@ fixUnknowns[data_] := (
 );
 
 
+
 (*
   atomProperty
     name of the property,
@@ -63,9 +100,11 @@ fixUnknowns[data_] := (
 *)
 iterateAtomProperty[
   atomProperty_,
-  atomValueTransformation_
+  atomValueTransformation_,
+  atomLowerBoundTransformation_:lowerBoundDefault,
+  atomUpperBoundTransformation_:upperBoundDefault
 ] := (
-  (* AtomProperty | Atom Property | atomProperty*)
+  (* AtomProperty | Atom Property | atomProperty *)
   atomPropertyPascalCase = StringDelete[StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]], " "];
   atomPropertyPascalCaseWithSpace = StringReplace[atomProperty, WordBoundary ~~ x_ :> ToUpperCase[x]];
   atomPropertyCamelCase = StringReplace[atomProperty, (" " ~~ WordBoundary) ~~ x_ :> ToUpperCase[x]];
@@ -75,8 +114,8 @@ iterateAtomProperty[
     atomArrayData = Append[atomArrayData, {
       "name" -> ElementData[i, "StandardName"],
       "value" -> atomValueTransformation@ElementData[i, atomPropertyPascalCase],
-      "lowerBound" -> fixUnknowns@Min@ElementData[1, atomPropertyPascalCase, "Interval"],
-      "upperBound" -> fixUnknowns@Max@ElementData[1, atomPropertyPascalCase, "Interval"]
+      "lowerBound" -> atomLowerBoundTransformation@ElementData[i, atomPropertyPascalCase, "Interval"],
+      "upperBound" -> atomUpperBoundTransformation@ElementData[i, atomPropertyPascalCase, "Interval"]
     }];
 
     If[i == 56,

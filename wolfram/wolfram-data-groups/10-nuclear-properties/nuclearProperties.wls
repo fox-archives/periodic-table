@@ -3,18 +3,14 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns[prop];
-);
-
 iterateAtomProperty[
   "decay mode",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "isotope abundances",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 (* iterateAtomProperty[
@@ -29,7 +25,7 @@ iterateAtomProperty[
 
 iterateAtomProperty[
   "known isotopes",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 (* iterateAtomProperty[
@@ -39,12 +35,12 @@ iterateAtomProperty[
 
 iterateAtomProperty[
   "neutron cross section",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "neutron mass absorption",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 (* iterateAtomProperty[
@@ -52,7 +48,13 @@ iterateAtomProperty[
   Unevaluated[atomTransform]
 ]; *)
 
+stableIsotopesAtomTransformMap[e_] := (
+  Return@fixUnknowns@N[e];
+);
+stableIsotopesAtomTransform[prop_] := (
+  Return@Map[stableIsotopesAtomTransformMap, prop];
+);
 iterateAtomProperty[
   "stable isotopes",
-  Unevaluated[atomTransform]
+  Unevaluated[stableIsotopesAtomTransform]
 ];

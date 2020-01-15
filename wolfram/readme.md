@@ -29,13 +29,13 @@ wolfram-data-groups
     [x] shear modulus
     [x] sound speed
     [x] thermal conductivity
-    [x] thermal expansion
+    [x] thermal expansion (long 9 decimals)
     [x] vickers hardness
     [x] young modulus
   [x] 3-thermodynamic-properties
     [x] absolute boiling point
     [x] absolute melting point
-    [x] abiabatic index
+    [x] abiabatic index (long 9 decimals)
     [x] boiling point
     [x] critical pressure
     [x] critical temperature
@@ -49,16 +49,16 @@ wolfram-data-groups
     [x] vaporization heat
   [x] 4-electromagnetic-optical-properties
     [x] color
-    [x] electrical conductivity (weird decimals though)
-    [ ] electrical type
+    [x] electrical conductivity
+    [x] electrical type
     [x] mass magnetic susceptibility
     [x] molar magnetic susceptibility
     [x] refractive index
-    [x] resistivity
-    [x] volume magnetic susceptibility
+    [x] resistivity (long 9 decimals)
+    [x] volume magnetic susceptibility (long 9 decimals)
   [x] 5-abundance-properties
     [x] crust abundance
-    [x] h uman abundance
+    [x] human abundance
     [x] meteorite abundnace
     [x] ocean abundance
     [x] solar abundance
@@ -69,7 +69,7 @@ wolfram-data-groups
     [x] period
     [x] series
   [ ] 7-basic-chemical-properties
-    [ ] allotropic multiplicities
+    [x] allotropic multiplicities
     [ ] common compund names
     [x] electron affinity
     [x] electronegativity
@@ -82,7 +82,7 @@ wolfram-data-groups
     [ ] electron configuration
     [ ] electron configuratin string
     [ ] electron shell configuration
-    [ ] ionization energies
+    [x] ionization energies
     [ ] quantum numbers
     [x] van der waals radius
   [x] 10-nuclear-properties
@@ -94,18 +94,18 @@ wolfram-data-groups
     [ ] neutron cross section
     [x] neutron mass absorption
     [ ] specific radioactivity
-    [ ] stable isotopes
-  [ ] 11-names-related-properties
+    [x] stable isotopes
+  [x] 11-names-related-properties
     [x] abbreviation
-    [ ] allotrope names
-    [ ] alternate names
+    [x] allotrope names
+    [x] alternate names
     [x] cas number
-    [ ] icon color
+    [x] icon color
     [x] name
     [x] standard name
-  [ ] 12-historical-commercial-properties
-    [ ] discovery countries
-    [ ] discovery year
+  [x] 12-historical-commercial-properties
+    [x] discovery countries
+    [x] discovery year
 ```
 
 ### build

@@ -3,66 +3,62 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns@N[prop];
-);
-
 iterateAtomProperty[
   "brinell hardness",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "bulk modulus",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "density",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "mohs hardness",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "molar volume",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "poisson ratio",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "shear modulus",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "sound speed",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "thermal conductivity",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "thermal expansion",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "vickers hardness",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "young modulus",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];

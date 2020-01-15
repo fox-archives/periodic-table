@@ -3,41 +3,46 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns@N[prop];
-);
-
 iterateAtomProperty[
   "abbreviation",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+allotripeNamesAtomTransform[prop_] := (
+  Return[prop];
+);
 iterateAtomProperty[
   "allotrope names",
-  Unevaluated[atomTransform]
+  Unevaluated[allotripeNamesAtomTransform]
 ];
 
+alternateNamesAtomTransform[prop_] := (
+  Return[prop];
+);
 iterateAtomProperty[
   "alternate names",
-  Unevaluated[atomTransform]
+  Unevaluated[alternateNamesAtomTransform]
 ];
 
 iterateAtomProperty[
   "c a s number",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+iconColorAtomTransform[prop_] := (
+  Return[List @@ prop];
+);
 iterateAtomProperty[
   "icon color",
-  Unevaluated[atomTransform]
+  Unevaluated[iconColorAtomTransform]
 ];
 
 iterateAtomProperty[
   "name",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "standard name",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];

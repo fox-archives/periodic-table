@@ -3,16 +3,12 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns[prop];
-);
-
 iterateAtomProperty[
   "atomic number",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "atomic weight",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];

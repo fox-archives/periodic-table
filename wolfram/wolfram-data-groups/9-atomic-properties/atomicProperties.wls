@@ -2,46 +2,49 @@
 (* ::Package:: *)
 
 Import["../commonMethods.wls"];
-atomTransform[prop_]:= (
-  Return@fixUnknowns@N[prop];
-);
 
 iterateAtomProperty[
   "atomic radius",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "covalent radius",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "electron configuration",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "electron configuration string",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "electron shell configuration",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+ionizationEnergiesMap[e_] := (
+  Return@fixUnknowns@N[e];
+);
+ionizationEnergiesAtomTransform[prop_] := (
+  Return@Map[ionizationEnergiesMap, prop];
+);
 iterateAtomProperty[
   "ionization energies",
-  Unevaluated[atomTransform]
+  Unevaluated[ionizationEnergiesAtomTransform]
 ];
 
 iterateAtomProperty[
   "quantum numbers",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "van der waals radius",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];

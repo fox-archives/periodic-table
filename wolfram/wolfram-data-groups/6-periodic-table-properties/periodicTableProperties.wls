@@ -3,26 +3,23 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns[prop];
-);
 
 iterateAtomProperty[
   "block",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "group",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "period",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "series",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];

@@ -3,46 +3,48 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns@N[prop];
-);
-
 iterateAtomProperty[
   "color",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "electrical conductivity",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
+electricalTypeAtomTransform[prop_] := (
+  If[StringContainsQ[ToString@prop, "EntityClass[Element, "],
+    Return@fixEntityClass[prop],
+    Return@fixUnknowns[prop];
+  ];
+);
 iterateAtomProperty[
   "electrical type",
-  Unevaluated[atomTransform]
+  Unevaluated[electricalTypeAtomTransform]
 ];
 
 iterateAtomProperty[
   "mass magnetic susceptibility",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "molar magnetic susceptibility",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "refractive index",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "resistivity",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
 iterateAtomProperty[
   "volume magnetic susceptibility",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknownsWithN]
 ];

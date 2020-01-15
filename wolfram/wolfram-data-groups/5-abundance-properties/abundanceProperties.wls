@@ -3,36 +3,32 @@
 
 Import["../commonMethods.wls"];
 
-atomTransform[prop_]:= (
-  Return@fixUnknowns[prop];
-);
-
 iterateAtomProperty[
   "crust abundance",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "human abundance",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "meteorite abundance",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "ocean abundance",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "solar abundance",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
 
 iterateAtomProperty[
   "universe abundance",
-  Unevaluated[atomTransform]
+  Unevaluated[atomTransformFixUnknowns]
 ];
