@@ -71,7 +71,7 @@ $total-rows: (7 * 2) + 5;
   // IF You change the 2.8% and 5.8%, then all the font size scaling will have to readjust
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
   grid-template-rows: 5% repeat($total-rows, 1fr);
-  padding: 10px 10px 10px 10px;
+  padding: 4px;
   border-radius: $border-radius;
   transition: all $transition-time ease-in-out;
 }
