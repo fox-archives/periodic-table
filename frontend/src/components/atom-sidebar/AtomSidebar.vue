@@ -1,31 +1,31 @@
 <template>
   <div class="atom-info-wrapper">
     <div v-if="ready" class="atom-info">
-      <Simplebar class="simplebar" data-simplebar-auto-hide="false">
-        <div class="atom-info-inner">
-          <div
-            v-for="traitPair in Object.entries(this.atomTraitsActive)"
-            :key="traitPair[0]"
-            class="atom-stat"
-          >
-            <TraitPair :trait-pair="traitPair" />
-          </div>
+      <!-- <Simplebar class="simplebar" data-simplebar-auto-hide="false"> -->
+      <div class="atom-info-inner">
+        <div
+          v-for="traitPair in Object.entries(atomTraitsActive)"
+          :key="traitPair[0]"
+          class="atom-stat"
+        >
+          <TraitPair :trait-pair="traitPair" />
         </div>
-      </Simplebar>
+      </div>
+      <!-- </Simplebar> -->
     </div>
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
-import Simplebar from "simplebar-vue";
+// import Simplebar from "simplebar-vue";
 import "simplebar/dist/simplebar.min.css";
 import TraitPair from "@/components/atom-sidebar/TraitPair";
 
 export default {
   name: "AtomSidebar",
   components: {
-    Simplebar,
+    // Simplebar,
     TraitPair
   },
   computed: {
@@ -36,13 +36,6 @@ export default {
     ])
   },
   methods: {
-    unit(traitName) {
-      try {
-        return this.atomTraitsUnits[traitName].unit;
-      } catch {
-        return this.atomTraitsUnits[traitName];
-      }
-    },
     selected(traitName) {
       let a = "";
       switch (traitName) {

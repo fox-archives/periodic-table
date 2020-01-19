@@ -21,10 +21,10 @@
         @change="updateTraitPairValue($event)"
       >
         <option v-for="(value, name) in traitPair[1]" :key="name" :value="name">
-          {{ name }} {{ unit(name) }}
+          {{ name }}
         </option>
       </select>
-      {{ finalValue }}
+      {{ finalValue }} {{ currentUnit }}
     </p>
   </div>
 </template>
@@ -43,7 +43,8 @@ export default {
     return {
       selected: "bravo",
       finalValue: "delta", // final value used in case traitPair[1] is an object,
-      traitPairCategory: "alfa" // traitPairCategory is something like 'Abundance'. For example, if the prop traitPair is an array, it would be the value of [traitPair[0]]
+      traitPairCategory: "alfa", // traitPairCategory is something like 'Abundance'. For example, if the prop traitPair is an array, it would be the value of [traitPair[0]]
+      currentUnit: "currentUnit"
     };
   },
   watch: {
@@ -65,17 +66,16 @@ export default {
   },
   methods: {
     unit(traitName) {
-      try {
-        return this.atomTraitsUnits[traitName].unit;
-      } catch {
-        return this.atomTraitsUnits[traitName];
-      }
+      return this.atomTraitsUnits[traitName].unit;
     },
     updateTraitPairValue(event) {
       let traitPairName = event ? event.target.value : this.selected;
       this.finalValue = this.atomTraitsActive[this.traitPairCategory][
         traitPairName
       ];
+
+      // update unit for dropdown
+      this.currentUnit = this.atomTraitsUnits[traitPairName].unit;
     }
   }
 };
