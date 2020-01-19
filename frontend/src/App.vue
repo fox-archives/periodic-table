@@ -47,11 +47,17 @@ export default {
   font-family: latolight, Arial, "sans-serif";
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 // The top three templates have the following IDs respectively: #nav, #display, #foot
 #content {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
-  height: 100vh;
+  height: 100%;
 }
 
 #content.dark-def {
