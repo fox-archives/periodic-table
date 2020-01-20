@@ -1,6 +1,8 @@
 import path from "path";
 import VueLoaderPlugin from "vue-loader/lib/plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import PreloadWebpackPlugin from "preload-webpack-plugin";
+
 // import BundleAnalyzerPlugin from "webpack-bundle-analyzer";
 
 export default {
@@ -58,6 +60,7 @@ export default {
       title: "A Periodic Table",
       filename: "index.html",
       template: "./index.html"
-    })
+    }),
+    new PreloadWebpackPlugin()
   ]
 };
