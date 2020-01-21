@@ -1,8 +1,9 @@
 <template>
   <div class="atom-info-wrapper">
     <div v-if="ready" class="atom-info">
+      <!-- <template > -->
       <!-- <Simplebar class="simplebar" data-simplebar-auto-hide="false"> -->
-      <div class="atom-info-inner">
+      <div v-if="isNotLanthOrAct" class="atom-info-inner">
         <div
           v-for="traitPair in Object.entries(atomTraitsActive)"
           :key="traitPair[0]"
@@ -12,6 +13,10 @@
         </div>
       </div>
       <!-- </Simplebar> -->
+      <!-- </template> -->
+      <div v-else class="ready-but-invalid">
+        Not Applicable
+      </div>
     </div>
   </div>
 </template>
@@ -31,9 +36,17 @@ export default {
   computed: {
     ...mapState("mainAtomTable", [
       "atomTraitsUnits",
+      "atomSnippetActive",
       "atomTraitsActive",
       "ready"
-    ])
+    ]),
+    isNotLanthOrAct() {
+      // console.log(this.atomSnippetActive.atomName !== 'Lanthanides' && this.atomSnippetActive.atomName !== 'Actinides')
+      return (
+        this.atomSnippetActive.atomName !== "Lanthanides" &&
+        this.atomSnippetActive.atomName !== "Actinides"
+      );
+    }
   },
   methods: {
     selected(traitName) {
