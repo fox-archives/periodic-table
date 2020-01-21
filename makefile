@@ -32,8 +32,13 @@ build/full:
 release ?= patch
 release:
 	yarn lerna version $(release) --yes
+	git checkout master
+	git merge dev
+	git checkout dev
 
 deploy:
+	git checkout master
 	cd backend && gcloud app deploy backend.yaml \
 		--project turnkey-science-250806 --verbosity=info \
 		--quiet
+	git checkout dev
