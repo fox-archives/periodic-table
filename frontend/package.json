@@ -62,6 +62,7 @@
     "postcss-loader": "^3.0.0",
     "preload-webpack-plugin": "3.0.0-beta.3",
     "prettier": "^1.18.2",
+    "resource-hints-webpack-plugin": "^0.0.2",
     "sass": "^1.22.9",
     "sass-loader": "^7.1.0",
     "simplebar": "^4.1.0",
