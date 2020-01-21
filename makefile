@@ -31,10 +31,13 @@ build/full:
 # prepatch, and prerelease
 release ?= patch
 release:
+	git checkout dev
 	yarn lerna version $(release) --yes
+	git push origin dev
 	git checkout master
 	git merge dev
 	git checkout dev
+	git push origin master
 
 deploy:
 	git checkout master

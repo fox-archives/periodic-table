@@ -11,9 +11,6 @@
       "npmClientArgs": [
         "--no-package-lock"
       ]
-    },
-    "publish": {
-      "message": "chore: release"
     }
   }
 }
