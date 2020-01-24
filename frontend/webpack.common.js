@@ -3,13 +3,16 @@ import VueLoaderPlugin from "vue-loader/lib/plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import PreloadWebpackPlugin from "preload-webpack-plugin";
 import ResourceHintWebpackPlugin from "resource-hints-webpack-plugin";
+import SriPlugin from "webpack-subresource-integrity";
+
 // import BundleAnalyzerPlugin from "webpack-bundle-analyzer";
 
 export default {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    crossOriginLoading: "anonymous" // for SriPlugin
   },
   module: {
     rules: [
@@ -62,6 +65,10 @@ export default {
       template: "./index.html"
     }),
     new PreloadWebpackPlugin(),
-    new ResourceHintWebpackPlugin()
+    new ResourceHintWebpackPlugin(),
+    new SriPlugin({
+      hashFuncNames: ["sha256"],
+      enabled: process.env.NODE_ENV === "production"
+    })
   ]
 };
