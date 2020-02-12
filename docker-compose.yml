@@ -16,7 +16,7 @@ services:
         source: ./backend
         target: /opt/app
     privileged: false
-    restart: always
+    # restart: always
     stdin_open: true
     tty: true
   client:
@@ -38,6 +38,6 @@ services:
     links:
       - server
     privileged: false
-    restart: always
+    # restart: always
     stdin_open: true
     tty: true
