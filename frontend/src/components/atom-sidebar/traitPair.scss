@@ -5,9 +5,13 @@
   margin-right: 3px;
   padding-top: 4px;
   border: 1px solid $oc-gray-6;
+  font-weight: bold;
 }
 
 .select-menu option {
-  font-weight: normal;
-  font-family: "latoregular", Arial, sans-serif;
+  font-family: "lato", Arial, sans-serif;
+}
+
+.b {
+  font-weight: bold;
 }

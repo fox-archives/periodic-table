@@ -44,7 +44,8 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: latolight, Arial, "sans-serif";
+  font-family: "lato", Arial, sans-serif;
+  font-weight: lighter;
 }
 
 html,

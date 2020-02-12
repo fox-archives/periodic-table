@@ -1,42 +1,39 @@
 /* Roboto */
 @font-face {
-  font-family: "robotobold";
+  font-family: "roboto";
   src: url("../assets/fonts/roboto-bold-webfont.woff2") format("woff2"),
     url("../assets/fonts/roboto-bold-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: bold;
 }
-
 @font-face {
-  font-family: "robotoregular";
+  font-family: "roboto";
   src: url("../assets/fonts/roboto-regular-webfont.woff2") format("woff2"),
     url("../assets/fonts/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
 }
 @font-face {
-  font-family: "robotolight";
+  font-family: "roboto";
   src: url("../assets/fonts/roboto-light-webfont.woff2") format("woff2"),
     url("../assets/fonts/roboto-light-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 /* Lato */
 @font-face {
-  font-family: "latobold";
+  font-family: "lato";
   src: url("../assets/fonts/lato-bold-webfont.woff2") format("woff2"),
     url("../assets/fonts/lato-bold-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: bold;
 }
-
 @font-face {
-  font-family: "latoregular";
+  font-family: "lato";
   src: url("../assets/fonts/lato-regular-webfont.woff2") format("woff2"),
     url("../assets/fonts/lato-regular-webfont.woff") format("woff");
   font-weight: normal;
 }
-
 @font-face {
-  font-family: "latolight";
+  font-family: "lato";
   src: url("../assets/fonts/lato-light-webfont.woff2") format("woff2"),
     url("../assets/fonts/lato-light-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: lighter;
 }

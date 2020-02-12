@@ -7,7 +7,8 @@
       "
       class="atom-stat-text"
     >
-      {{ traitPair[0] }}:
+      <span class="b">{{ traitPair[0] }}</span
+      >:
       {{ traitPair[1] }}
       {{ unit(traitPair[0]) }}
     </p>

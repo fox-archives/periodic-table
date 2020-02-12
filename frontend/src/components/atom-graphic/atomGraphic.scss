@@ -78,8 +78,8 @@
   bottom: 0;
   left: 0;
   border-radius: $border-radius;
-  font-family: robotoregular, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "roboto", Arial, sans-serif;
+  font-weight: lighter;
 }
 
 .panel-top #icon-inner {
@@ -91,7 +91,7 @@
 }
 
 #text {
-  font-family: robotoregular, Arial, sans-serif;
+  font-family: "roboto", Arial, sans-serif;
   font-weight: normal;
   font-size: calc(20vw * 0.75 * 0.48 * 0.35);
 }
