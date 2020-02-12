@@ -54,11 +54,14 @@ body {
   height: 100%;
 }
 
-// The top three templates have the following IDs respectively: #nav, #display, #foot
+// the top three templates have the following
+// ids respectively: #nav, #display, #foot
 #content {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #content.dark-def {
