@@ -1,4 +1,5 @@
 // Add 5 to rows for the "f" block elements
+// stylelint-disable-next-line plugin/no-unsupported-browser-features
 $total-columns: (18 * 2);
 $total-rows: (7 * 2) + 5;
 
@@ -69,6 +70,7 @@ $total-rows: (7 * 2) + 5;
   left: 0;
   display: grid;
   // IF You change the 2.8% and 5.8%, then all the font size scaling will have to readjust
+  // stylelint-disable-next-line plugin/no-unsupported-browser-features
   grid-template-columns: 2.8% repeat($total-columns, 1fr);
   grid-template-rows: 5% repeat($total-rows, 1fr);
   padding: 4px;

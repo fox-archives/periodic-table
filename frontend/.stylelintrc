@@ -15,8 +15,10 @@
     ],
 
     "plugin/no-unsupported-browser-features": [true, {
-      "severity": "warning"
+      "severity": "warning",
+      "ignore": ["user-select-none"]
     }],
+
     "at-rule-no-unknown": [true, {
       "ignoreAtRules": [
         "function", "each", "if", "return", "include", "mixin", "for"
