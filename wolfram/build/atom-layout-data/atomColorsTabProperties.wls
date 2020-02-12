@@ -59,5 +59,5 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["atomColorsTabProperties.json", periodicTable, "JSON"];
+Export["atomColorsTabProperties.json", <| "data" -> periodicTable |>, "JSON"];
 Print["atomColorsTabProperties.json" <> " done"];

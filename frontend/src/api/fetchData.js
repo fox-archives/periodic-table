@@ -10,10 +10,10 @@ function initAtomTab({ state, dispatch, commit }, payload) {
     axios.get("/data/labelPlacements.json")
   ])
     .then(responses => {
-      state.atomPlacements = deepFreeze(responses[0].data);
-      state.atomSnippets = responses[1].data;
-      state.labelPeriodPlacement = responses[2].data.period;
-      state.labelGroupPlacement = responses[2].data.group;
+      state.atomPlacements = deepFreeze(responses[0].data.data);
+      state.atomSnippets = responses[1].data.data;
+      state.labelPeriodPlacement = responses[2].data.data.period;
+      state.labelGroupPlacement = responses[2].data.data.group;
 
       let { currentTab } = payload;
       return dispatch("switchAtomTab", { to: currentTab.name });
@@ -40,7 +40,7 @@ function switchAtomTab({ state, commit }, payload) {
       axios.get(`/data/atomTab${tabToSwitchTo}.json`)
     ])
       .then(responses => {
-        state.atomColors = responses[0].data;
+        state.atomColors = responses[0].data.data;
         state.atomTraits = responses[1].data.data;
         state.atomTraitsUnits = responses[1].data.meta;
 

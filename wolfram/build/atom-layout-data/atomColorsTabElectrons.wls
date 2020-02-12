@@ -44,5 +44,5 @@ For[i = 1, i < 119, i++,
 	];
 ];
 
-Export["atomColorsTabElectrons.json", periodicTable, "JSON"];
+Export["atomColorsTabElectrons.json", <| "data" -> periodicTable |>, "JSON"];
 Print["atomColorsTabElectrons.json" <> " done"];

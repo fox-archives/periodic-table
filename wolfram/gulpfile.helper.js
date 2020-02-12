@@ -7,7 +7,7 @@ export function removeDebug() {
 
     let json;
     try {
-      json = JSON.parse(content);
+      json = JSON.parse(content).data;
     }
     catch(e) {
       return cb(new PluginError("helper.gulpfile.js", "could not parse JSON file", {
