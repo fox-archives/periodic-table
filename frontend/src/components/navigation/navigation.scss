@@ -1,21 +1,21 @@
-#nav {
+.nav {
   margin-bottom: 3px;
 }
 
-#nav-content {
+.nav-content {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
   user-select: none;
 }
 
-// Logo
-#logo-container {
+// logo
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#logo {
+.logo {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -25,11 +25,11 @@ a {
   text-decoration: none;
 }
 
-#info-nav-item {
+.info-nav-item {
   margin-left: auto;
 }
 
-.inner {
+.router-link-inner {
   padding: 6px 8px;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ a {
   cursor: pointer;
 }
 
-.inner:active {
+.router-link-inner:active {
   transition: createtransitions((background-color));
 }
 

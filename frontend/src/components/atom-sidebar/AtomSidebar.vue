@@ -79,23 +79,23 @@ export default {
 
 .light-def {
   @include panelTextualThemeDefault(
-    $ld-background,
-    $ld-background-accent,
-    true,
-    $ld-shadow,
-    $ld-shadow-hover,
-    $ld-text
+    $background: $theme-light-background,
+    $background-accent: $theme-light-background-accent,
+    $hasShadow: true,
+    $shadow: $theme-light-shadow,
+    $shadowHover: $theme-light-shadow-hover,
+    $text: $theme-light-text
   );
 }
 
 .dark-def {
   @include panelTextualThemeDefault(
-    $dd-background,
-    $dd-background-accent,
-    false,
-    $dd-shadow,
-    $dd-shadow-hover,
-    $dd-text
+    $background: $theme-dark-background,
+    $background-accent: $theme-dark-background-accent,
+    $hasShadow: false,
+    $shadow: $theme-dark-shadow,
+    $shadowHover: $theme-dark-shadow-hover,
+    $text: $theme-dark-text
   );
 }
 </style>

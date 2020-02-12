@@ -1,8 +1,8 @@
 <template>
-  <nav id="nav" :class="options.themeType">
-    <ul id="nav-content">
-      <li id="logo-container">
-        <div id="logo">
+  <nav class="nav" :class="options.themeType">
+    <ul class="nav-content">
+      <li class="logo-container">
+        <div class="logo">
           <a href="/">
             <img src="@/assets/placeholder.png" alt="logo" height="32px" />
           </a>
@@ -10,50 +10,61 @@
       </li>
 
       <router-link to="/properties">
-        <div class="inner" @click="switchAtomTabWrapper('properties')">
+        <div
+          class="router-link-inner"
+          @click="switchAtomTabWrapper('properties')"
+        >
           <ListIcon class="icon feather-icon" />
           <h2>Properties</h2>
         </div>
       </router-link>
 
       <router-link to="/electrons">
-        <div class="inner" @click="switchAtomTabWrapper('electrons')">
+        <div
+          class="router-link-inner"
+          @click="switchAtomTabWrapper('electrons')"
+        >
           <ElectronsIcon class="icon custom-icon" />
           <h2>Electrons</h2>
         </div>
       </router-link>
 
       <router-link to="/orbitals">
-        <div class="inner" @click="switchAtomTabWrapper('orbitals')">
+        <div
+          class="router-link-inner"
+          @click="switchAtomTabWrapper('orbitals')"
+        >
           <OrbitalsIcon class="icon custom-icon" />
           <h2>Orbitals</h2>
         </div>
       </router-link>
 
       <router-link to="/isotopes">
-        <div class="inner" @click="switchAtomTabWrapper('isotopes')">
+        <div
+          class="router-link-inner"
+          @click="switchAtomTabWrapper('isotopes')"
+        >
           <IsotopesIcon class="icon custom-icon" />
           <h2>Isotopes</h2>
         </div>
       </router-link>
 
       <router-link to="/explore">
-        <div class="inner" @click="switchAtomTabWrapper('explore')">
+        <div class="router-link-inner" @click="switchAtomTabWrapper('explore')">
           <MapIcon class="icon feather-icon" />
           <h2>Explore</h2>
         </div>
       </router-link>
 
       <router-link to="/trivia">
-        <div class="inner" @click="switchAtomTabWrapper('trivia')">
+        <div class="router-link-inner" @click="switchAtomTabWrapper('trivia')">
           <CheckIcon class="icon feather-icon" />
           <h2>Trivia</h2>
         </div>
       </router-link>
 
       <li
-        id="info-nav-item"
-        class="no-text"
+        class="info-nav-item no-text"
         tabindex="0"
         @click="setInfoModalActive(true)"
       >
@@ -145,29 +156,29 @@ export default {
 
 .light-def {
   @include navigationThemeDefault(
-    $ld-background,
-    true,
-    $ld-shadow,
-    $ld-shadow-hover,
-    $oc-gray-2,
-    $oc-gray-3,
-    $oc-gray-2,
-    $oc-gray-7,
-    $oc-gray-7
+    $background: $theme-light-background,
+    $hasShadow: true,
+    $shadow: $theme-light-shadow,
+    $shadowHover: $theme-light-shadow-hover,
+    $navItemHover: $oc-gray-2,
+    $navItemClick: $oc-gray-3,
+    $navItemActive: $oc-gray-2,
+    $heading: $oc-gray-7,
+    $icon: $oc-gray-7
   );
 }
 
 .dark-def {
   @include navigationThemeDefault(
-    $dd-background,
-    false,
-    $dd-shadow,
-    $dd-shadow-hover,
-    $oc-gray-7,
-    $oc-gray-6,
-    $oc-gray-7,
-    $oc-gray-1,
-    $oc-gray-1
+    $background: $theme-dark-background,
+    $hasShadow: false,
+    $shadow: $theme-dark-shadow,
+    $shadowHover: $theme-dark-shadow-hover,
+    $navItemHover: $oc-gray-7,
+    $navItemClick: $oc-gray-6,
+    $navItemActive: $oc-gray-7,
+    $heading: $oc-gray-1,
+    $icon: $oc-gray-1
   );
 }
 </style>

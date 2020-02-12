@@ -7,11 +7,11 @@ $total-rows: (7 * 2) + 5;
 #grid-container-outer {
   position: relative;
   border-radius: $border-radius;
-  transition: all $transition-time ease-in-out;
+  transition: all $transition-duration ease-in-out;
 }
 
 #grid-container-outer:hover {
-  transition: all $transition-time ease-in-out;
+  transition: all $transition-duration ease-in-out;
 }
 
 #grid-container-loading-view {
@@ -73,11 +73,11 @@ $total-rows: (7 * 2) + 5;
   grid-template-rows: 5% repeat($total-rows, 1fr);
   padding: 4px;
   border-radius: $border-radius;
-  transition: all $transition-time ease-in-out;
+  transition: all $transition-duration ease-in-out;
 }
 
 // I think this works
 // TODO: Check if this works
 #grid #grid-outer:hover {
-  transition: all $transition-time ease-in-out;
+  transition: all $transition-duration ease-in-out;
 }

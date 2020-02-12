@@ -292,23 +292,23 @@ export default {
 
 .light-def {
   @include periodicTableThemeDefault(
-    $ld-background,
-    true,
-    $ld-shadow,
-    $ld-shadow-hover
+    $background: $theme-light-background,
+    $hasShadow: true,
+    $shadow: $theme-light-shadow,
+    $shadowHover: $theme-light-shadow-hover
   );
 }
 
 .dark-def {
   @include periodicTableThemeDefault(
-    $dd-background,
-    false,
-    $dd-shadow,
-    $dd-shadow-hover
+    $background: $theme-dark-background,
+    $hasShadow: false,
+    $shadow: $theme-dark-shadow,
+    $shadowHover: $theme-dark-shadow-hover
   );
 }
 
-// ELEMENTS \\
+// ATOMS \\
 @import "atom";
 @import "atomTheme";
 
@@ -333,9 +333,10 @@ export default {
   @include createAtomColorClasses("", true, 7, 1);
   @include createAtomColorClasses("light-", true, 4, 5);
 
-  // dark theme does not have shadow
+  // dark theme has no shadow
 }
 
 // LABELS \\
 @import "labels";
+@import "labelsTheme";
 </style>

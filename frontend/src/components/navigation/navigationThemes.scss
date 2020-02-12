@@ -9,9 +9,8 @@
 // @param 7  $heading  The color of each heading text element
 // @param 8  $icon  The color of all icons
 
-// Note: There is no $navItem because the background of this will be the same as $background, or the background of the nav bar as a whole
-
-// Purpose: To change nav bar shadow depending on hover of nav bar, and change nav bar elements, depending on hover of each individual element
+// Note: There is no $navItem because the background of this will be the same
+// as $background, or the background of the nav bar as a whole
 @mixin navigationThemeDefault(
   $background,
   $hasShadow,
@@ -23,32 +22,31 @@
   $heading,
   $icon
 ) {
-  // Make nav bar have a shadow
-  @include shadow(".inner", $hasShadow, $shadow, $shadowHover);
+  @include shadow(".router-link-inner", $hasShadow, $shadow, $shadowHover);
   @include shadow(".no-text", $hasShadow, $shadow, $shadowHover);
 
-  // Color of main nav bar
-  .inner,
+  // color of main nav bar
+  .router-link-inner,
   .no-text {
     background-color: $background;
-    transition: all $transition-time ease-in-out;
+    transition: all $transition-duration ease-in-out;
   }
 
-  .inner:hover,
+  .router-link-inner:hover,
   .no-text:hover {
     background-color: $navItemHover;
   }
 
-  .inner:active,
+  .router-link-inner:active,
   .no-text:hover {
     background-color: $navItemClick;
   }
 
-  .router-link-active .inner {
+  .router-link-active .router-link-inner {
     background-color: $navItemActive;
   }
 
-  // Color of of headings
+  // color of of headings
   h2 {
     color: $heading;
   }
@@ -57,18 +55,15 @@
     text-decoration: none;
   }
 
-  .link:hover {
-    //text-decoration: underline;
-    //text-decoration-color: $headingUnderline;
-  }
-
-  // Icons
+  // icons
   .custom-icon {
     color: $icon;
   }
 
   .feather-icon {
-    // Should be able to remove stroke if vue-feather-icons updates to use latest version of Feather Icons
+    // TODO: fix vue feather icon stroke thing
+    // should be able to remove stroke if vue-feather-icons
+    // updates to use latest version of Feather Icons
     stroke: $icon;
     color: $icon;
     stroke-width: 1.125;

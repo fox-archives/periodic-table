@@ -1,29 +1,27 @@
 .light-def {
-  p,
-  a {
+  .footer {
+    background-color: white;
+  }
+
+  .footer-text {
     color: $oc-gray-9;
   }
 
   a {
-    text-decoration-color: $oc-gray-3;
-  }
-
-  #footer {
-    background-color: white;
+    text-decoration-color: $oc-gray-4;
   }
 }
 
 .dark-def {
-  p,
-  a {
+  .footer {
+    background-color: $oc-gray-9;
+  }
+
+  .footer-text {
     color: $oc-gray-1;
   }
 
   a {
     text-decoration-color: $oc-gray-7;
-  }
-
-  #footer {
-    background-color: $oc-gray-9;
   }
 }

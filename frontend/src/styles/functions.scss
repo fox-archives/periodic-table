@@ -1,4 +1,3 @@
-// createTransitions
 // @param 1  $transitionProperties   List of all the transitions to use. All of these transitions will have the same transition duration and timing function
 // @param 2  $isExtraTransitions  Boolean for if there is extra transitions after using the function. In other words, this is true if you are adding more transitions, either manually or with the transition function after using the transition function
 // @param 3  $transitionDuration  Specify the duration of the transition. Default is $transition-duration
@@ -21,7 +20,8 @@
           $transitionTimingFunction
       );
 
-    // Make sure you don't put a comma and space at the end if it is the last element, OR, if there will be more transitions after
+    // make sure you don't put a comma and space at the end if it is
+    // the last element, OR, if there will be more transitions after
     @if (
       (
           index($transitionProperties, $transitionProperty) !=

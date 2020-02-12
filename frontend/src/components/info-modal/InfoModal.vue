@@ -34,10 +34,10 @@ export default {
 
 .light-def {
   @include infoModalThemeDefault(
-    $ld-background,
-    true,
-    $ld-shadow,
-    $ld-shadow-hover
+    $background: $theme-light-background,
+    $hasShadow: true,
+    $shadow: $theme-light-shadow,
+    $shadowHover: $theme-light-shadow-hover
   );
 }
 </style>

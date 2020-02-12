@@ -1,0 +1,39 @@
+/* stylelint-disable no-descending-specificity */
+.light-def {
+  .light {
+    background-color: $oc-gray-0;
+  }
+
+  // label is directly hovered
+  .light:hover {
+    background-color: $oc-gray-2;
+  }
+
+  // label class modified when user hovers overdifferent
+  // periodictable element, and the labels update
+  .dark {
+    background-color: $oc-gray-2;
+  }
+
+  .label-text {
+    color: $oc-gray-9;
+  }
+}
+
+.dark-def {
+  .light {
+    background-color: $oc-gray-8;
+  }
+
+  .light:hover {
+    background-color: $oc-gray-9;
+  }
+
+  .dark {
+    background-color: $oc-gray-9;
+  }
+
+  .label-text {
+    color: $oc-gray-0;
+  }
+}

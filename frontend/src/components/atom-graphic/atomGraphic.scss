@@ -12,30 +12,40 @@
 
 .light-def {
   #visual-inner {
-    background-color: $ld-background;
+    background-color: $theme-light-background;
   }
 
   #visual-inner p {
-    color: $ld-text;
+    color: $theme-light-text;
   }
 
   @include createAtomColorClasses("", true, 2, 9);
   // add shadow to visual part of element info panel
-  @include shadow("#visual-inner", true, $ld-shadow, $ld-shadow-hover);
+  @include shadow(
+    "#visual-inner",
+    true,
+    $theme-light-shadow,
+    $theme-light-shadow-hover
+  );
 }
 
 .dark-def {
   #visual-inner {
-    background-color: $dd-background;
+    background-color: $theme-dark-background;
   }
 
   #visual-inner p {
-    color: $dd-text;
+    color: $theme-dark-text;
   }
 
   @include createAtomColorClasses("", true, 7, 1);
   // add shadow to visual part of element info panel
-  @include shadow("#visual-inner", true, $dd-shadow, $dd-shadow-hover);
+  @include shadow(
+    "#visual-inner",
+    true,
+    $theme-dark-shadow,
+    $theme-dark-shadow-hover
+  );
 }
 
 #visual-inner-inner {
