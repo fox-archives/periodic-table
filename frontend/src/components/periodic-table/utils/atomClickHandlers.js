@@ -7,6 +7,8 @@ function updateClickedAtom(index) {
   // What to do if clicking for the first time, or clicking on a different element
   // Save the index (element index, period.json index, and group index) of the clicked on element
   if (this.clickedAtom.index === -1 || this.clickedAtom.index !== index) {
+    this.setAtomLocked(true);
+
     this.setClickedAtom({
       active: true,
       index: index,
@@ -26,6 +28,8 @@ function updateClickedAtom(index) {
   }
   // If clicking on the same element twice, cancel the 'supdark-' prefix and element hold
   else if (this.clickedAtom.index === index) {
+    this.setAtomLocked(false);
+
     this.setClickedAtom({
       active: false,
       index: -1,

@@ -46,6 +46,11 @@ export default {
       active: false,
       index: -1
     },
+    // when atomLocked is true, neither atomGraphic nor atomSidebar
+    // are meant to update their views, even if user hovers over different
+    // atom. locking is turned on when user clicks on element and turned off
+    // when user clicks on that same element again
+    atomLocked: false,
 
     // atom placement data (in the css grid, and in the periodic table itself)
     // atom colors (color and deafultColor)
@@ -133,6 +138,10 @@ export default {
       } else {
         state.clickedAtom = { active, index };
       }
+    },
+
+    setAtomLocked: function(state, newValue) {
+      state.atomLocked = newValue;
     },
 
     // Purpose: To replace the state options with new ones

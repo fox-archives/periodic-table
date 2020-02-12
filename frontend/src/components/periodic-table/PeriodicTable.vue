@@ -163,6 +163,7 @@ export default {
 
       "hoveredAtom",
       "clickedAtom",
+      "atomLocked",
       "options"
     ])
   },
@@ -180,6 +181,7 @@ export default {
 
       "setHoveredAtom",
       "setClickedAtom",
+      "setAtomLocked",
       "setOptions"
     ]),
     // imported from periodic-table-specific utils
@@ -209,7 +211,7 @@ export default {
           this.setLabelColor(index, "true");
         }
 
-        this.updateActiveAtom(index);
+        // this.updateActiveAtom(index);
       } else if (hoverStatus === "hoverLeave") {
         if (this.clickedAtom.index !== index) {
           this.setColorOfOneAtom({
@@ -222,6 +224,10 @@ export default {
           this.setLabelColor(index, "false");
         }
 
+        // this.updateActiveAtom(index);
+      }
+
+      if (!this.atomLocked) {
         this.updateActiveAtom(index);
       }
     },
