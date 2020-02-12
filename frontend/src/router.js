@@ -67,7 +67,7 @@ const myRoutes = [
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "2rem",
+              fontSize: "32px",
               paddingBottom: "30vh"
             }
           },
@@ -101,7 +101,7 @@ const myRoutes = [
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "2rem",
+              fontSize: "32px",
               paddingBottom: "30vh"
             }
           },

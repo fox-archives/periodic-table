@@ -21,7 +21,7 @@ export default {
   align-items: center;
   justify-content: center;
 
-  font-size: 2rem;
+  font-size: 32px;
   padding-bottom: 30vh;
 }
 </style>
