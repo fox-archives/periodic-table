@@ -29,13 +29,13 @@ wolfram-data-groups
     [x] shear modulus
     [x] sound speed
     [x] thermal conductivity
-    [x] thermal expansion (long 9 decimals)
+    [x] thermal expansion
     [x] vickers hardness
     [x] young modulus
   [x] 3-thermodynamic-properties
     [x] absolute boiling point
     [x] absolute melting point
-    [x] abiabatic index (long 9 decimals)
+    [x] adiabatic index
     [x] boiling point
     [x] critical pressure
     [x] critical temperature

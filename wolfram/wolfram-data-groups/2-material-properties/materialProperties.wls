@@ -48,9 +48,12 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+thermalExpansionAtomTransform[prop_] := (
+  Return@fixUnknowns@N[prop, 10];
+);
 iterateAtomProperty[
   "thermal expansion",
-  Unevaluated[atomTransformFixUnknownsWithN]
+  Unevaluated[thermalExpansionAtomTransform]
 ];
 
 iterateAtomProperty[

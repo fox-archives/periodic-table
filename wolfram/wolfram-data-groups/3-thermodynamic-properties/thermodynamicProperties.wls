@@ -13,9 +13,17 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+(* stupid hack to make numbers 'look' better (no long decimals) *)
+adiabaticIndexAtomTransform[prop_] := (
+  If[
+    IntegerQ[prop * 10],
+    Return[prop],
+    Return@fixUnknowns@N[prop, 6];
+  ];
+);
 iterateAtomProperty[
   "adiabatic index",
-  Unevaluated[atomTransformFixUnknownsWithN]
+  Unevaluated[adiabaticIndexAtomTransform]
 ];
 
 iterateAtomProperty[
