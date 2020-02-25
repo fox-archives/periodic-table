@@ -13,7 +13,7 @@ import test from "ava";
       const text = await fs.promises.readFile(filePath);
       const json = JSON.parse(text);
       
-      t.is(json.length, 120);
+      t.is(json.data.length, 120);
     } catch (err) {
       console.error(err);
     }
