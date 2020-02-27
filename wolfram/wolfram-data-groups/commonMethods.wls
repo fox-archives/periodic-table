@@ -29,12 +29,12 @@ fixDateObject[data_] := (
 );
 
 (* extract number and normalize *)
-atomTransformFixUnknownsWithN[prop_] := (
+atomTransformFixUnknownsWithN[prop_, name_] := (
   Return@fixUnknowns@N[prop];
 );
 
 (* normalize *)
-atomTransformFixUnknowns[prop_] := (
+atomTransformFixUnknowns[prop_, name_] := (
   Return@fixUnknowns[prop];
 );
 
@@ -111,9 +111,10 @@ iterateAtomProperty[
 
   atomArrayData = {};
   For[i = 1, i < 119, i++, (
+    atomStandardName = ElementData[i, "StandardName"];
     atomArrayData = Append[atomArrayData, {
-      "name" -> ElementData[i, "StandardName"],
-      "value" -> atomValueTransformation@ElementData[i, atomPropertyPascalCase],
+      "name" -> atomStandardName,
+      "value" -> atomValueTransformation[ElementData[i, atomPropertyPascalCase], atomStandardName],
       "lowerBound" -> atomLowerBoundTransformation@ElementData[i, atomPropertyPascalCase, "Interval"],
       "upperBound" -> atomUpperBoundTransformation@ElementData[i, atomPropertyPascalCase, "Interval"]
     }];

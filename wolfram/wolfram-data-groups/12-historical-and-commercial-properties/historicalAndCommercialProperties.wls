@@ -6,7 +6,7 @@ Import["../commonMethods.wls"];
 discoveryContriesAtomTransformMap[e_] := (
   Return@fixUnknowns@fixEntityCountry@ToString@N[e];
 );
-discoveryCountriesAtomTransform[prop_] := (
+discoveryCountriesAtomTransform[prop_, name_] := (
   Return@Map[discoveryContriesAtomTransformMap, prop];
 );
 iterateAtomProperty[
@@ -14,7 +14,7 @@ iterateAtomProperty[
   Unevaluated[discoveryCountriesAtomTransform]
 ];
 
-discoveryYearAtomTransform[prop_] := (
+discoveryYearAtomTransform[prop_, name_] := (
   Return@fixUnknowns@ToExpression@fixDateObject[prop];
 );
 iterateAtomProperty[

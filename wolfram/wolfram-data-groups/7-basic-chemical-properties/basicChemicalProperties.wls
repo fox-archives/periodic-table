@@ -3,7 +3,7 @@
 
 Import["../commonMethods.wls"];
 
-allotropicMultiplicitiesAtomTransform[prop_] := (
+allotropicMultiplicitiesAtomTransform[prop_, name_] := (
   Return[prop];
 );
 iterateAtomProperty[

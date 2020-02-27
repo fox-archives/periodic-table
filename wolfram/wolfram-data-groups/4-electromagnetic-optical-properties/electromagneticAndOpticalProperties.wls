@@ -13,7 +13,7 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknowns]
 ];
 
-electricalTypeAtomTransform[prop_] := (
+electricalTypeAtomTransform[prop_, name_] := (
   If[StringContainsQ[ToString@prop, "EntityClass[Element, "],
     Return@fixEntityClass[prop],
     Return@fixUnknowns[prop];

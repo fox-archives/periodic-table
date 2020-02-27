@@ -51,7 +51,7 @@ iterateAtomProperty[
 stableIsotopesAtomTransformMap[e_] := (
   Return@fixUnknowns@N[e];
 );
-stableIsotopesAtomTransform[prop_] := (
+stableIsotopesAtomTransform[prop_, name_] := (
   Return@Map[stableIsotopesAtomTransformMap, prop];
 );
 iterateAtomProperty[

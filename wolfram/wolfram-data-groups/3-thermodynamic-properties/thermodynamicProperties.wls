@@ -14,7 +14,7 @@ iterateAtomProperty[
 ];
 
 (* stupid hack to make numbers 'look' better (no long decimals) *)
-adiabaticIndexAtomTransform[prop_] := (
+adiabaticIndexAtomTransform[prop_, name_] := (
   If[
     IntegerQ[prop * 10],
     Return[prop],
@@ -69,7 +69,7 @@ iterateAtomProperty[
   Unevaluated[neelPointUpperBound]
 ];
 
-phaseAtomTransform[prop_] := (
+phaseAtomTransform[prop_, name_] := (
   If[StringContainsQ[ToString@prop, "EntityClass[Element, "],
     Return@fixEntityClass[prop],
     Return@fixUnknowns[prop];

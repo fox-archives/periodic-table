@@ -8,7 +8,7 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
-allotripeNamesAtomTransform[prop_] := (
+allotripeNamesAtomTransform[prop_, name_] := (
   Return[prop];
 );
 iterateAtomProperty[
@@ -16,7 +16,7 @@ iterateAtomProperty[
   Unevaluated[allotripeNamesAtomTransform]
 ];
 
-alternateNamesAtomTransform[prop_] := (
+alternateNamesAtomTransform[prop_, name_] := (
   Return[prop];
 );
 iterateAtomProperty[
@@ -29,7 +29,7 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
-iconColorAtomTransform[prop_] := (
+iconColorAtomTransform[prop_, name_] := (
   Return[List @@ prop];
 );
 iterateAtomProperty[

@@ -31,7 +31,7 @@ iterateAtomProperty[
 ionizationEnergiesMap[e_] := (
   Return@fixUnknowns@N[e];
 );
-ionizationEnergiesAtomTransform[prop_] := (
+ionizationEnergiesAtomTransform[prop_, name_] := (
   Return@Map[ionizationEnergiesMap, prop];
 );
 iterateAtomProperty[
