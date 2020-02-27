@@ -24,7 +24,7 @@ wolfram-data-groups
     [x] density
     [x] liquid density
     [x] mohs hardness
-    [x] molar volume  
+    [x] molar volume (generic long decimals)
     [x] poisson ratio
     [x] shear modulus
     [x] sound speed
@@ -54,8 +54,8 @@ wolfram-data-groups
     [x] mass magnetic susceptibility
     [x] molar magnetic susceptibility
     [x] refractive index
-    [x] resistivity (long 9 decimals)
-    [x] volume magnetic susceptibility (long 9 decimals)
+    [x] resistivity
+    [x] volume magnetic susceptibility
   [x] 5-abundance-properties
     [x] crust abundance
     [x] human abundance
@@ -92,7 +92,7 @@ wolfram-data-groups
     [ ] known isotopes
     [ ] molar radioactivity
     [ ] neutron cross section
-    [x] neutron mass absorption
+    [x] neutron mass absorption (long decimals)
     [ ] specific radioactivity
     [x] stable isotopes
   [x] 11-names-related-properties

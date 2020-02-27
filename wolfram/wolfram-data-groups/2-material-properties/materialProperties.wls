@@ -43,13 +43,28 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+thermalConductivityAtomTransform[prop_, name_] := (
+  If[
+    MemberQ[{
+      "Krypton"
+    }, name],
+    Return@fixUnknowns[prop],
+    Return@fixUnknowns@N[prop]
+  ];
+);
 iterateAtomProperty[
   "thermal conductivity",
-  Unevaluated[atomTransformFixUnknownsWithN]
+  Unevaluated[thermalConductivityAtomTransform]
 ];
 
 thermalExpansionAtomTransform[prop_, name_] := (
-  Return@fixUnknowns@N[prop, 10];
+  If[
+    MemberQ[{
+      "Boron", "Germanium"
+    }, name],
+    Return@fixUnknowns@Round[prop, 0.00000001],
+    Return@fixUnknowns[prop]
+  ];
 );
 iterateAtomProperty[
   "thermal expansion",

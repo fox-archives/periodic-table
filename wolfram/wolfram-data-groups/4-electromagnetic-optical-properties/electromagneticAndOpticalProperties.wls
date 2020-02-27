@@ -39,12 +39,23 @@ iterateAtomProperty[
   Unevaluated[atomTransformFixUnknownsWithN]
 ];
 
+resistivityAtomTransform[prop_, name_] := (
+  If[
+    MemberQ[{
+      "Boron", "Aluminum", "Silicon", "Sulfur",
+      "Chlorine", "Copper", "Germanium", "Bromine",
+      "Silver", "Iodine", "Gold"
+    }, name],
+    Return@fixUnknowns@N[prop],
+    Return@fixUnknowns[prop]
+  ];
+);
 iterateAtomProperty[
   "resistivity",
-  Unevaluated[atomTransformFixUnknownsWithN]
+  Unevaluated[resistivityAtomTransform]
 ];
 
 iterateAtomProperty[
   "volume magnetic susceptibility",
-  Unevaluated[atomTransformFixUnknownsWithN]
+  Unevaluated[atomTransformFixUnknowns]
 ];
