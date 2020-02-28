@@ -1,5 +1,9 @@
 // navigation / layout variables
 @media (max-width: 1200px) {
+  img {
+    height: 39px;
+  }
+
   h2 {
     font-size: 16px;
   }
@@ -13,6 +17,10 @@
 @media (max-width: 1100px) {
   li {
     padding: 3px 5px;
+  }
+
+  img {
+    height: 30px;
   }
 
   h2 {

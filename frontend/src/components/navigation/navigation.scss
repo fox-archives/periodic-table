@@ -16,8 +16,12 @@
   align-items: center;
 }
 .logo {
-  padding-left: 10px;
-  padding-right: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+}
+img {
+  transform: translateY(1px);
+  height: 41px;
 }
 
 a {

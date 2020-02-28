@@ -46,7 +46,7 @@ export default {
       },
       {
         test: /\.svg$/,
-        use: ["vue-svg-icon-loader"]
+        loader: "vue-svg-icon-loader"
       }
     ]
   },

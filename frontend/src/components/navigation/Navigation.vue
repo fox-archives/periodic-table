@@ -4,7 +4,7 @@
       <li class="logo-container">
         <div class="logo">
           <a href="/">
-            <img src="@/assets/placeholder.png" alt="logo" height="32px" />
+            <img src="@/assets/svg/chemtableapp.png" alt="logo" />
           </a>
         </div>
       </li>

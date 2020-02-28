@@ -14,7 +14,6 @@ const outputFolder = "build/atom-tab-data";
     "3-thermodynamic-properties/boilingPoint",
     "3-thermodynamic-properties/meltingPoint",
     "2-material-properties/bulkModulus",
-    "2-material-properties/molarVolume",
     "2-material-properties/soundSpeed",
     "2-material-properties/thermalConductivity",
     "2-material-properties/thermalExpansion",

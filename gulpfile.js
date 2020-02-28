@@ -13,7 +13,7 @@ async function transferWolfram() {
 }
 
 async function transferFrontend() {
-  const from = "frontend/dist/{*.js,*.css,*.html,assets/*}";
+  const from = "frontend/dist/**";
   const to = "backend/public";
 
   del.sync(["backend/public/**", "!backend/public/", "!backend/public/data"]);
