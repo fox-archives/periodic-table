@@ -1,4 +1,6 @@
 import path from "path";
+import fs from "fs";
+
 import { fileURLToPath } from "url";
 import { atomArrayExtract, outputFile } from "./transform.helper.js";
 
@@ -31,13 +33,19 @@ const outputFolder = "build/atom-tab-data";
     "oceanAbundance",
     "solarAbundance",
     "universeAbundance"
-  ].map(fileName => `${dirname}/wolfram-data-groups/5-abundance-properties/${fileName}.json`);
+  ].map(
+    fileName =>
+      `${dirname}/wolfram-data-groups/5-abundance-properties/${fileName}.json`
+  );
 
   atomArrayExtract(propertiesRootFileNames, {
-    "Abundance": abundanceFileNames
+    Abundance: abundanceFileNames
   })
     .then(finalJson => {
-      return outputFile(`${dirname}/${outputFolder}/atomTabProperties.json`, finalJson);
+      return outputFile(
+        `${dirname}/${outputFolder}/atomTabProperties.json`,
+        finalJson
+      );
     })
     .catch(e => {
       console.error(e);
@@ -60,12 +68,74 @@ const outputFolder = "build/atom-tab-data";
   ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
 
   atomArrayExtract(electronTabRootFilenames, {
-    "Radius": radiusFileNames
+    Radius: radiusFileNames
   })
     .then(finalJson => {
-      return outputFile(`${dirname}/${outputFolder}/atomTabElectrons.json`, finalJson);
+      return outputFile(
+        `${dirname}/${outputFolder}/atomTabElectrons.json`,
+        finalJson
+      );
     })
     .catch(e => {
       console.error(e);
+    });
+}
+
+// GRAPHQL
+{
+  new Promise(async (resolve, reject) => {
+    const wolframDataGroupDirs = (
+      await fs.promises.readdir("wolfram-data-groups", {
+        withFileTypes: true
+      })
+    )
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+
+    const promises = [];
+    for (const dir of wolframDataGroupDirs) {
+      const fullDir = path.join("wolfram-data-groups", dir);
+      const promise = fs.promises.readdir(fullDir, {
+        withFileTypes: true
+      });
+      promises.push({
+        fullDir, promise
+      });
+    }
+    const arrayOfArrayOfDirents = await Promise.all(promises.map(obj => obj.promise));
+    const arrayOfArrayOfFiles = [];
+    for (let i = 0; i < arrayOfArrayOfDirents.length; ++i) {
+      const newArray = arrayOfArrayOfDirents[i]
+        .filter(dirent => dirent.isFile())
+        .map(dirent => path.join(promises[i].fullDir, dirent.name))
+        .filter(dirent => dirent.includes(".json"));
+      arrayOfArrayOfFiles.push(newArray)
+    }
+    let jsonFiles = arrayOfArrayOfFiles.flat()
+    resolve(jsonFiles)
+  })
+    .then(allFilenames => {
+      const electronTabRootFilenames = allFilenames.map(
+        fileName => `${dirname}/wolfram-data-groups/${fileName}.json`
+      );
+
+      const radiusFileNames = [
+        "9-atomic-properties/atomicRadius",
+        "9-atomic-properties/covalentRadius",
+        "9-atomic-properties/vanDerWaalsRadius"
+      ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
+
+      return atomArrayExtract(allFilenames, {
+        Radius: radiusFileNames
+      });
+    })
+    .then(finalJson => {
+      return outputFile(
+        `${dirname}/${outputFolder}/atomGraphql.json`,
+        finalJson
+      );
+    })
+    .catch(err => {
+      console.error(err);
     });
 }
