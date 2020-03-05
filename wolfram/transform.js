@@ -1,5 +1,6 @@
 import path from "path";
 import fs from "fs";
+import _ from "lodash";
 
 import { fileURLToPath } from "url";
 import { atomArrayExtract, outputFile } from "./transform.helper.js";
@@ -99,37 +100,51 @@ const outputFolder = "build/atom-tab-data";
         withFileTypes: true
       });
       promises.push({
-        fullDir, promise
+        fullDir,
+        promise
       });
     }
-    const arrayOfArrayOfDirents = await Promise.all(promises.map(obj => obj.promise));
+    const arrayOfArrayOfDirents = await Promise.all(
+      promises.map(obj => obj.promise)
+    );
     const arrayOfArrayOfFiles = [];
     for (let i = 0; i < arrayOfArrayOfDirents.length; ++i) {
       const newArray = arrayOfArrayOfDirents[i]
         .filter(dirent => dirent.isFile())
         .map(dirent => path.join(promises[i].fullDir, dirent.name))
         .filter(dirent => dirent.includes(".json"));
-      arrayOfArrayOfFiles.push(newArray)
+      arrayOfArrayOfFiles.push(newArray);
     }
-    let jsonFiles = arrayOfArrayOfFiles.flat()
-    resolve(jsonFiles)
+    let jsonFiles = arrayOfArrayOfFiles.flat();
+    resolve(jsonFiles);
   })
     .then(allFilenames => {
-      const electronTabRootFilenames = allFilenames.map(
+      allFilenames.map(
         fileName => `${dirname}/wolfram-data-groups/${fileName}.json`
       );
 
-      const radiusFileNames = [
-        "9-atomic-properties/atomicRadius",
-        "9-atomic-properties/covalentRadius",
-        "9-atomic-properties/vanDerWaalsRadius"
-      ].map(fileName => `${dirname}/wolfram-data-groups/${fileName}.json`);
-
-      return atomArrayExtract(allFilenames, {
-        Radius: radiusFileNames
-      });
+      return atomArrayExtract(allFilenames, {});
     })
     .then(finalJson => {
+      finalJson.data = finalJson.data.map(atomObj => {
+        const newObj = {};
+        for (let property in atomObj) {
+          if (property === "C A S Number") console.log(property, "fff");
+          console.info(property);
+          newObj[
+            property === "C A S Number" ? "casNumber" : _.camelCase(property)
+          ] = atomObj[property];
+        }
+        return newObj;
+      });
+
+      for (let property in finalJson.meta) {
+        finalJson.meta[
+          property === "C A S Number" ? "casNumber" : _.camelCase(property)
+        ] = finalJson.meta[property];
+        delete finalJson.meta[property];
+      }
+
       return outputFile(
         `${dirname}/${outputFolder}/atomGraphql.json`,
         finalJson

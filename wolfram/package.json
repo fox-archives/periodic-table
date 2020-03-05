@@ -17,6 +17,7 @@
     "gulp": "^4.0.2",
     "gulp-flatten": "^0.4.0",
     "gulp-jsonminify": "^1.1.0",
-    "gulp-plumber": "^1.2.1"
+    "gulp-plumber": "^1.2.1",
+    "lodash": "^4.17.15"
   }
 }

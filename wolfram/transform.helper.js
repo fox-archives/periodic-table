@@ -29,7 +29,12 @@ function atomArrayExtract(fileNames, subFileNames) {
   fileNames.forEach(fileName => {
     let promise = fs.promises.readFile(fileName, "utf8")
       .then(fileData => {
-        let json = JSON.parse(fileData);        
+        let json;
+        try {
+          json = JSON.parse(fileData);        
+        } catch {
+          console.error('failed to json.parse ', fileName)
+        }
 
         // add in 'meta'
         finalJson.meta[json.meta.atomPropertyNameWithSpace] = {

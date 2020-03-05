@@ -5,8 +5,8 @@
   "license": "unlicensed",
   "private": true,
   "scripts": {
-    "dev": "nodemon -r esm server.js",
-    "start": "node -r esm server.js",
+    "dev": "cross-env NODE_ENV=development nodemon -r esm server.js",
+    "start": "cross-env NODE_ENV=production node -r esm server.js",
     "lint": "yarn lint:js",
     "lint:fix": "yarn lint:js:fix",
     "lint:js": "eslint -c .eslintrc.js *js",
@@ -14,9 +14,13 @@
     "lint:staged": "lint-staged"
   },
   "dependencies": {
+    "cross-env": "^7.0.1",
     "dotenv": "^8.1.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0",
+    "lodash": "^4.17.15",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
