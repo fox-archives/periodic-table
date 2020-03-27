@@ -3,7 +3,6 @@ services:
   server:
     container_name: periodic-table-server
     image: node:12.8-alpine
-    build: ./backend
     user: 1000:1000
     working_dir: /opt/app
     command: npm run dev
@@ -22,7 +21,6 @@ services:
   client:
     container_name: periodic-table-client
     image: node:12.8-alpine
-    build: ./frontend
     user: 1000:1000
     working_dir: /opt/app
     command: npm run dev
