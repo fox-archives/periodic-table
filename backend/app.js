@@ -1,6 +1,7 @@
 import path from "path";
 import express from "express";
 import graphqlHTTP from "express-graphql";
+import helmet from "helmet";
 import morgan from "morgan";
 import dotenv from "dotenv";
 
@@ -14,6 +15,7 @@ app.disable("strict routing");
 app.disable("'x-powered-by");
 
 app.use(morgan("tiny"));
+app.use(helmet());
 app.use(express.static("public"));
 app.use(
   "/graphql",

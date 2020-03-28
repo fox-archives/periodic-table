@@ -21,6 +21,7 @@
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.6.0",
+    "helmet": "^3.22.0",
     "lodash": "^4.17.15",
     "morgan": "^1.9.1"
   },
