@@ -129,14 +129,24 @@ const outputFolder = "build/atom-tab-data";
       finalJson.data = finalJson.data.map(atomObj => {
         const newObj = {};
         for (let property in atomObj) {
-          if (property === "C A S Number") console.log(property, "fff");
-          console.info(property);
           newObj[
             property === "C A S Number" ? "casNumber" : _.camelCase(property)
           ] = atomObj[property];
+
         }
         return newObj;
       });
+
+      // check to see if any objects have only spaces, and delete those
+      // this basically filters out blank lanthanides and actinides
+      // we need to filter them out 
+      for (let i = 0; i < finalJson.data.length; ++i) {
+        console.info(finalJson.data[i])
+        if (finalJson.data[i].name === "") {
+          console.log(finalJson.data[i]);
+          finalJson.data.splice(i, 1);
+        }
+      }
 
       for (let property in finalJson.meta) {
         finalJson.meta[

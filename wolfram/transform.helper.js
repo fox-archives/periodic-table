@@ -11,13 +11,15 @@ function fixMissingQAndUnknownQ(value) {
     return value;
   }
 }
+
+
 /*
   fileNames
     fileNames, corresponding to specific atom properties
   subFileNames
     same as fileNames, but these are shown not at root, but in a sub object of toAtomObject
 */
-function atomArrayExtract(fileNames, subFileNames) {
+export function atomArrayExtract(fileNames, subFileNames) {
   let finalJson = {
     data: DEBUG
       ? Array.apply(null, Array(120)).map(() => ({ debug: {} }))
@@ -105,11 +107,12 @@ function atomArrayExtract(fileNames, subFileNames) {
     });
 }
 
+
 /*
   outputFile
     file to output-atom-tab-data json
 */
-async function outputFile(fileName, finalJsonOutput) {
+export async function outputFile(fileName, finalJsonOutput) {
   try {
     await fs.promises.writeFile(fileName, JSON.stringify(finalJsonOutput, null, 2))
     let fileNameTruncated = fileName.slice(fileName.indexOf("/"));
@@ -118,5 +121,3 @@ async function outputFile(fileName, finalJsonOutput) {
     console.log(err);
   }
 }
-
-export { atomArrayExtract, outputFile };

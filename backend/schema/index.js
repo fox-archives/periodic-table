@@ -54,6 +54,7 @@ export const rootSchema = new GraphQLSchema({
           max: { type: GraphQLInt }
         },
         resolve: (parent, args) => {
+          // console.log(args)
           let atomMin = 0;
           let atomMax = 118;
           if (args.min) atomMin = args.min;
@@ -62,7 +63,7 @@ export const rootSchema = new GraphQLSchema({
           d = d.filter(atom => atom.atomicNumber >= atomMin);
           d = d.filter(atom => atom.atomicNumber <= atomMax);
 
-          console.log(d);
+          // console.log(d);
           return d;
         }
       }

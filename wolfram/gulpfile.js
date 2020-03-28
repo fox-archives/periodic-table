@@ -10,7 +10,7 @@ async function makeDist() {
   const from = "build/atom-*-data/*.json"
   const to = "dist"
 
-  del.sync([to + "/**", "!" + to])
+  await del([to + "/**", "!" + to])
   src(from)
     .pipe(plumber())
     .pipe(flatten())
