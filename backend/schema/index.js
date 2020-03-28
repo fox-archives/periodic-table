@@ -30,11 +30,79 @@ try {
 const AtomQuery = new GraphQLObjectType({
   name: "AtomQueryType",
   fields: {
+    abbreviation: { type: GraphQLString },
+    absoluteBoilingPoint: { type: GraphQLFloat },
+    absoluteMeltingPoint: { type: GraphQLFloat },
+    adiabaticIndex: { type: GraphQLFloat },
+    // allotropeNames: { type: GraphQLFloat },
+    // allotropicMultiplicities,
+    // alternateNames,
     atomicNumber: { type: GraphQLInt },
+    atomicRadius: { type: GraphQLInt },
     atomicWeight: { type: GraphQLFloat },
+    block: { type: GraphQLString },
+    boilingPoint: { type: GraphQLFloat },
+    // brinellHardness: { type: },
+    bulkModulus: { type: GraphQLFloat },
+    casNumber: { type: GraphQLString },
+    color: { type: GraphQLString },
+    covalentRadius: { type: GraphQLInt },
+    criticalPressure: { type: GraphQLFloat },
+    criticalTemperature: { type: GraphQLFloat },
+    crustAbundance: { type: GraphQLFloat },
+    curiePoint: { type: GraphQLInt },
     decayMode: { type: GraphQLString },
-    neuronMassAbsorption: { type: GraphQLFloat },
-    name: { type: GraphQLString }
+    density: { type: GraphQLFloat },
+    // discovery Countries,
+    discoveryYear: { type: GraphQLInt },
+    electricalConductivity: { type: GraphQLFloat },
+    electricalType: { type: GraphQLString },
+    electronAffinity: { type: GraphQLFloat },
+    // electronConfiguration,
+    // electronConfigurationString,
+    electronegativity: { type: GraphQLFloat },
+    // electronShellConfiguration,
+    fusionHeat: { type: GraphQLFloat },
+    gasAtomicMultiplicities: { type: GraphQLInt },
+    group: { type: GraphQLInt },
+    humanAbundance: { type: GraphQLFloat },
+    // iconColor,
+    // ionizationEnergies,
+    // isotopeAbundances,
+    // knownIsotopes,
+    massMagneticSusceptibility: { type: GraphQLFloat },
+    meltingPoint: { type: GraphQLFloat },
+    meteoriteAbundance: { type: GraphQLFloat },
+    mohsHardness: { type: GraphQLFloat },
+    molarMagneticSusceptibility: { type: GraphQLFloat },
+    molarVolume: { type: GraphQLFloat },
+    name: { type: GraphQLString },
+    neelPoint: { type: GraphQLFloat },
+    neuronMassAbsorption: { type: GraphQLString },
+    oceanAbundance: { type: GraphQLFloat },
+    period: { type: GraphQLInt },
+    phase: { type: GraphQLString },
+    poissonRatio: { type: GraphQLFloat },
+    // quantumNumbers,
+    refractiveIndex: { type: GraphQLFloat },
+    resistivity: { type: GraphQLFloat },
+    series: { type: GraphQLString },
+    shearModulus: { type: GraphQLFloat },
+    solarAbundance: { type: GraphQLFloat },
+    soundSpeed: { type: GraphQLFloat },
+    specificHeat: { type: GraphQLFloat },
+    // stableIsotopes,
+    standardName: { type: GraphQLString },
+    superconductingPoint: { type: GraphQLFloat },
+    thermalConductivity: { type: GraphQLFloat },
+    thermalExpansion: { type: GraphQLFloat },
+    universeAbundance: { type: GraphQLFloat },
+    valence: { type: GraphQLInt },
+    vanDerWaalsRadius: { type: GraphQLInt },
+    vaporizationHeat: { type: GraphQLFloat },
+    vickersHardness: { type: GraphQLFloat },
+    volumeMagneticSusceptibility: { type: GraphQLFloat },
+    youngModulus: { type: GraphQLFloat }
   }
 });
 
@@ -54,7 +122,6 @@ export const rootSchema = new GraphQLSchema({
           max: { type: GraphQLInt }
         },
         resolve: (parent, args) => {
-          // console.log(args)
           let atomMin = 0;
           let atomMax = 118;
           if (args.min) atomMin = args.min;
@@ -63,7 +130,6 @@ export const rootSchema = new GraphQLSchema({
           d = d.filter(atom => atom.atomicNumber >= atomMin);
           d = d.filter(atom => atom.atomicNumber <= atomMax);
 
-          // console.log(d);
           return d;
         }
       }

@@ -1,14 +1,12 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: "babel-eslint",
   env: {
-    "node": true
+    node: true
   },
-  plugins: [
-    'babel',
-    'prettier'
-  ],
+  plugins: ["babel", "prettier"],
   extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended'
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ]
 };
