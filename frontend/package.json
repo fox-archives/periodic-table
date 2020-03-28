@@ -8,6 +8,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server -r esm --progress --config webpack.dev.js",
     "dev:dash": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server -r esm --progress --config webpack.dev.js",
     "prod": "cross-env NODE_ENV=production webpack -r esm --progress --config webpack.prod.js",
+    "test": "",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:fix": "yarn lint:js:fix && yarn lint:css:fix",
     "lint:js": "eslint '**/*.{js,vue}'",
@@ -15,7 +16,7 @@
     "lint:css": "stylelint '**/*.scss'",
     "lint:css:fix": "stylelint '**/*.scss' --fix",
     "lint:staged": "lint-staged --concurrent false --debug",
-    "test:cypress": "cypress run"
+    "test:cy": "cypress run"
   },
   "dependencies": {
     "lodash": "^4.17.15",

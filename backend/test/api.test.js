@@ -1,6 +1,20 @@
 import fetch from "node-fetch";
 
+import { app } from "../app";
+import { config } from "../config";
+
+const port = process.env.TEST_PORT || config.TEST_PORT || 5005;
+
 describe("test api", () => {
+  let server;
+  beforeAll(done => {
+    server = app.listen(port, done);
+  });
+  afterAll(done => {
+    server.close();
+    done();
+  });
+
   test("calling many elements works without error", async () => {
     const query = `{
 source,
@@ -66,7 +80,7 @@ atoms {
   youngModulus
 }}`;
 
-    const raw = await fetch("http://localhost:3000/graphql", {
+    const raw = await fetch(`http://localhost:${port}/graphql`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

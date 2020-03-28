@@ -7,6 +7,7 @@ import merge from "webpack-merge";
 import common from "./webpack.common";
 
 dotenv.config({ path: "../" });
+const isTest = process.env.NODE_ENV === "test";
 
 export default merge.smart(common, {
   mode: "development",
@@ -45,7 +46,7 @@ export default merge.smart(common, {
   plugins: [
     // Need to instantiate this when declaring hot: true as a property of the webpack-dev-server
     new webpack.HotModuleReplacementPlugin(),
-    new FriendlyErrorsWebpackPlugin(),
+    ...[isTest ? [] : [new FriendlyErrorsWebpackPlugin()]],
     new DashboardPlugin()
   ],
   devServer: {

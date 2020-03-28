@@ -4,10 +4,13 @@ default: build/full
 
 all: build/light release deploy
 
+# core
 bootstrap:
 	yarn install
 	yarn lerna bootstrap
 
+
+# build
 build/light:
 	cd frontend && yarn prod
 	yarn transferFrontend
@@ -27,6 +30,19 @@ build/full:
 	cd wolfram && yarn test
 	yarn transferWolfram
 
+
+# common
+lint:
+	yarn lerna run lint
+
+lint-fix:
+	yarn lerna run lint:fix
+
+test:
+	yarn lerna run test
+
+
+# core (final)
 # release can be of major, minor, patch, premajor, preminor,
 # prepatch, and prerelease
 release ?= patch
