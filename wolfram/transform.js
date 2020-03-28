@@ -141,10 +141,17 @@ const outputFolder = "build/atom-tab-data";
       // this basically filters out blank lanthanides and actinides
       // we need to filter them out 
       for (let i = 0; i < finalJson.data.length; ++i) {
-        console.info(finalJson.data[i])
         if (finalJson.data[i].name === "") {
-          console.log(finalJson.data[i]);
           finalJson.data.splice(i, 1);
+        }
+      }
+
+      // ensure "N/A" has been replaced with null
+      for (let i = 0; i < finalJson.data.length; ++i) {
+        for (let property in finalJson.data[i]) {
+          if (finalJson.data[i][property] === "N/A") {
+            finalJson.data[i][property] = null
+          }
         }
       }
 
