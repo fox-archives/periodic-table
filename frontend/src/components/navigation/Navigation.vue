@@ -132,7 +132,7 @@ export default {
   },
   methods: {
     ...mapActions("mainAtomTable", ["switchAtomTab"]),
-    switchAtomTabWrapper: function(atomTabToSwitchTo) {
+    switchAtomTabWrapper: function (atomTabToSwitchTo) {
       if (atomTabToSwitchTo === "properties") {
         this.switchAtomTab({ to: "Properties" });
       } else if (atomTabToSwitchTo === "electrons") {

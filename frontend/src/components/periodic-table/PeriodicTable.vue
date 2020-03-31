@@ -195,11 +195,11 @@ export default {
     updateClickedAtom,
 
     // Converts the period / group label 'g-3', 'p-4' to just the number '3', and '4'
-    labelClassToNone: function(labelNumber) {
+    labelClassToNone: function (labelNumber) {
       return labelNumber.substring(2);
     },
 
-    updateAtom: function(payload) {
+    updateAtom: function (payload) {
       let { index, hoverStatus } = payload;
       this.setHoveredAtom(index);
 
@@ -236,7 +236,7 @@ export default {
       }
     },
 
-    formatPage: function() {
+    formatPage: function () {
       // This changes the CSS variable to size the element text
       // Recall the CSS variables are declared in periodicTable.scss
       let updateAtomFontSizes = () => {
@@ -270,8 +270,9 @@ export default {
             stretchVertically: true
           };
           this.periodicTableWidth = {
-            "--periodicTableWidth": `${idGridContainer.height /
-              periodicTableRatio}px`
+            "--periodicTableWidth": `${
+              idGridContainer.height / periodicTableRatio
+            }px`
           };
           updateAtomFontSizes();
           return;

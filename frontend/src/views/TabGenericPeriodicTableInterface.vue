@@ -41,7 +41,7 @@ export default {
     ...mapActions("mainAtomTable", ["initAtomTab"]),
     ...mapMutations("mainAtomTable", ["setOptions"]),
     // Purpose: To update the panelLayout depending on the size of the viewport (greater than or less than 1100 px)
-    updateInfoLocation: function() {
+    updateInfoLocation: function () {
       if (window.innerWidth < 1300) {
         this.setOptions({ panelLayout: "panel-top" });
       } else {

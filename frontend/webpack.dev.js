@@ -12,7 +12,7 @@ export default merge.smart(common, {
   mode: "development",
   devtool: "cheap-module-eval-source-map",
   output: {
-    publicPath: "/",
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -25,10 +25,10 @@ export default merge.smart(common, {
           {
             loader: "sass-loader",
             options: {
-              implementation: require("sass"),
-            },
-          },
-        ],
+              implementation: require("sass")
+            }
+          }
+        ]
       },
       {
         test: /\.css$/,
@@ -36,17 +36,17 @@ export default merge.smart(common, {
           "vue-style-loader",
           "css-loader",
           {
-            loader: "postcss-loader",
-          },
-        ],
-      },
-    ],
+            loader: "postcss-loader"
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     // Need to instantiate this when declaring hot: true as a property of the webpack-dev-server
     new webpack.HotModuleReplacementPlugin(),
     // ...(isTest ? [] : [new FriendlyErrorsWebpackPlugin()]),
-    new DashboardPlugin(),
+    new DashboardPlugin()
   ],
   devServer: {
     open: false,
@@ -58,14 +58,14 @@ export default merge.smart(common, {
     quiet: true,
 
     proxy: {
-      changeOrigin: true,
-      ignorePath: true,
+      "changeOrigin": true,
+      "ignorePath": true,
       "/assets": {
-        target: "http://server:3000",
+        target: "http://server:3000"
       },
       "/data": {
-        target: "http://server:3000",
-      },
-    },
-  },
+        target: "http://server:3000"
+      }
+    }
+  }
 });

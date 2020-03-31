@@ -83,12 +83,12 @@ export default {
     setColorOfAllButOneGroup,
     setColorOfAllAtoms,
 
-    setReady: function(state, bool) {
+    setReady: function (state, bool) {
       state.ready = bool;
     },
 
     // ## PERIODIC TABLE ELEMENT STUFF ## \\
-    updateActiveAtom: function(state, index) {
+    updateActiveAtom: function (state, index) {
       // Update Store variables with Element information according to index
       // Purpose: To change all properties of active element only when element is on 'clicked' mode
       // @param #int 'index':
@@ -106,7 +106,7 @@ export default {
     // @param #object 'payload' contains properties:
     //   (req)  .periodExclude  Exclude changing color of particular period (-1 to not exclude any period)
     //   (req)  .groupExclude   Exclude changing color of particular group (-1 to not exclude any group)
-    clearLabelExcept: function(state, payload) {
+    clearLabelExcept: function (state, payload) {
       for (let i = 0; i < state.labelPeriodPlacement.length; i++) {
         if (i !== payload.periodExclude) {
           state.labelPeriodPlacement[i].color = "light";
@@ -119,7 +119,7 @@ export default {
       }
     },
 
-    setHoveredAtom: function(state, newIndex) {
+    setHoveredAtom: function (state, newIndex) {
       state.hoveredAtom.index = newIndex;
     },
 
@@ -129,7 +129,7 @@ export default {
     //   (opt) .index #int Integer of the clicked element (placement in the atomPlacements array)
     //   (opt) .period #int
     //   (opt) .group #int
-    setClickedAtom: function(state, newProperties) {
+    setClickedAtom: function (state, newProperties) {
       let { active, index } = newProperties;
       let { period, group } = newProperties;
 
@@ -140,7 +140,7 @@ export default {
       }
     },
 
-    setAtomLocked: function(state, newValue) {
+    setAtomLocked: function (state, newValue) {
       state.atomLocked = newValue;
     },
 
@@ -149,7 +149,7 @@ export default {
     //   (req) .themeType #String  The theme that is active
     //   (opt) .panelLayout #String  Location of element information box (the thing that gets changed on element hover etc.)
     //   (opt) Any other properties of options
-    setOptions: function(state, newProperties) {
+    setOptions: function (state, newProperties) {
       // Payload contains an object containing properties
       // These properties should replace the properties the atomSnippetActive object (from the vuex state) has
       for (let property in newProperties) {
