@@ -3,9 +3,9 @@ services:
   server:
     container_name: periodic-table-server
     image: node:12.8-alpine
-    user: 1000:1000
-    working_dir: /opt/app
-    command: npm run dev
+    user: ${UID}:$GID
+    working_dir: ${PWD}/backend
+    command: yarn dev
     # expose:
     #   - 3000
     ports:
@@ -16,16 +16,16 @@ services:
     volumes:
       - type: bind
         source: ./backend
-        target: /opt/app
+        target: ${PWD}/backend
     privileged: false
     stdin_open: true
     tty: true
   client:
     container_name: periodic-table-client
     image: node:12.8-alpine
-    user: 1000:1000
-    working_dir: /opt/app
-    command: npm run dev
+    user: ${UID}:$GID
+    working_dir: ${PWD}/frontend
+    command: yarn dev
     ports:
       - target: 8080
         published: 8080
@@ -34,7 +34,7 @@ services:
     volumes:
       - type: bind
         source: ./frontend
-        target: /opt/app
+        target: ${PWD}/frontend
     links:
       - server
     privileged: false

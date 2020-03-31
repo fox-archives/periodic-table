@@ -1,4 +1,4 @@
-.PHONY: all bootstrap build/light build/full release deploy
+.PHONY: all bootstrap up build/light build/full release deploy
 
 default: build/full
 
@@ -9,6 +9,9 @@ bootstrap:
 	yarn install
 	yarn lerna bootstrap
 
+# up
+up:
+	UID="$(shell id -u)" GID="$(shell id -g)" docker-compose up
 
 # build
 build/light:
