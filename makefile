@@ -11,6 +11,11 @@ bootstrap:
 
 # up
 up:
+	# we assign UID and GID because UID and GID are 'shell variables' not environmental
+	# variables. docker-compose only does the templating interpolation with environmental
+	# variables
+	# we use shell id -u instead of getting the user's $UID and $GID shell variables because
+	# the shell variables are only defined in bash and zsh (not sh)
 	UID="$(shell id -u)" GID="$(shell id -g)" docker-compose up
 
 # build
