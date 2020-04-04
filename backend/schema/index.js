@@ -22,11 +22,6 @@ try {
   console.error(err);
 }
 
-// const radiusNestedAtomQuery = new GraphQLObjectType({
-//   name: "radiusNestedAtomQueryType",
-//   fields: {}
-// });
-
 const AtomQuery = new GraphQLObjectType({
   name: "AtomQueryType",
   fields: {
