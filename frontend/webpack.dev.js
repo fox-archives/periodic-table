@@ -65,6 +65,9 @@ export default merge.smart(common, {
       },
       "/data": {
         target: "http://server:3000"
+      },
+      "/graphql": {
+        target: "http://server:3000"
       }
     }
   }

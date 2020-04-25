@@ -146,10 +146,6 @@ export default {
         });
       }, 100)
     );
-
-    setTimeout(() => {
-      document.getElementsByClassName("zz-loading")[0].remove();
-    }, 300);
   },
   destroy() {
     // TODO: destroy event listeners

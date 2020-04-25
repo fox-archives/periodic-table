@@ -4,7 +4,7 @@
     <TriviaItem
       v-for="triviaItem in triviaItems"
       :key="triviaItem.name"
-      :name="triviaItem[triviaItemsScoped]"
+      :name="triviaItem.name"
     >
       <TriviaItemsScoped
         v-for="triviaItemScoped in triviaItem.triviaItemsScoped"

@@ -9,7 +9,7 @@ import atomGraphicProperties from "@/components/atom-graphic/AtomGraphicProperti
 
 Vue.use(VueRouter);
 
-const myRoutes = [
+const routes = [
   {
     path: "/",
     redirect: "/properties"
@@ -122,7 +122,15 @@ const myRoutes = [
   }
 ];
 
-export default new VueRouter({
-  routes: myRoutes,
+let router = new VueRouter({
+  routes,
   mode: "history"
 });
+
+router.afterEach(() => {
+  setTimeout(() => {
+    if (document.getElementsByClassName("zz-loading"))
+      document.getElementsByClassName("zz-loading")[0].remove();
+  }, 300);
+});
+export default router;

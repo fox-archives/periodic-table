@@ -27,6 +27,9 @@ export default {
       labelPeriodPlacement: ""
     },
 
+    // PERIODIC TABLE
+    staticPeriodicTable: [],
+
     // ATOM
     // shared atom data across all tabs (from atomEssential.json)
     atomSnippets: [],
@@ -158,6 +161,10 @@ export default {
           state.options[property] = newProperties[property];
         }
       }
+    },
+
+    setStaticPeriodicTable: function (state, newState) {
+      this.staticPeriodicTable = newState;
     }
   },
   actions: {

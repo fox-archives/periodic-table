@@ -25,6 +25,34 @@ export default {
     "periodic-table": PeriodicTable
   },
   created() {
+    // let query = `{
+    //    atoms {
+    //      atomicNumber
+    //      standardName
+    //      abbreviation
+    //      atomicWeight
+    //    }
+    // }`
+    // console.log(JSON.stringify(query))
+    // let graphqlDataRaw = await fetch('/graphql', {
+    //   method: 'POST',
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json"
+    //   },
+    //   body: JSON.stringify({ query })
+    // })
+    // let graphQlData = await graphqlDataRaw.json()
+    // this.setStaticPeriodicTable(graphQlData)
+
+    // let staticLabelPlacementRaw = await fetch(`/graphql`, {
+    //   method: 'POST',
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json"
+    //   },
+    //   body: JSON.stringify({ stati})
+    // })
     this.initAtomTab({
       currentTab: this.$route
     }).then(() => {});
@@ -39,7 +67,7 @@ export default {
   },
   methods: {
     ...mapActions("mainAtomTable", ["initAtomTab"]),
-    ...mapMutations("mainAtomTable", ["setOptions"]),
+    ...mapMutations("mainAtomTable", ["setOptions", "setStaticPeriodicTable"]),
     // Purpose: To update the panelLayout depending on the size of the viewport (greater than or less than 1100 px)
     updateInfoLocation: function () {
       if (window.innerWidth < 1300) {

@@ -31,7 +31,7 @@ function initAtomTab({ state, dispatch, commit }, payload) {
         commit("updateActiveAtom", state.clickedAtom.index);
       }
     })
-    .catch(e => console.error(e));
+    .catch(err => console.error(err));
 }
 
 // executes when we switch a tab (and want all data to update)
